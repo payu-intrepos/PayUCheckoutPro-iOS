@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.dependency            'PayUIndia-Networking', '1.0.3'
   s.dependency            'PayUIndia-Custom-Browser', '6.0'
   s.dependency            'Socket.IO-Client-Swift', '15.1.0'
-  s.dependency            'PayUIndia-CoreSDK', '4.0.0'
+  s.dependency            'PayUIndia-PG-SDK', '4.0.0'
   s.dependency            'PayUIndia-AssetLibrary', '1.0.0'
   s.dependency            'PayUIndia-CheckoutProBase', '1.0.0-beta1'
 
