@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
-// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBase
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name PayUCheckoutProBase
 import Foundation
 @_exported import PayUCheckoutProBase
 import Swift
@@ -50,7 +50,7 @@ import UIKit
   @objc public var options: [PayUCheckoutProBase.PaymentOption]?
   @objc public var isDirectPaymentMode: Swift.Bool
   @objc public init(modeName: Swift.String? = nil, subHeading: Swift.String? = nil, offerDetail: Swift.String? = nil, paymentType: PayUCheckoutProBase.PaymentType, options: [PayUCheckoutProBase.PaymentOption]? = nil)
-  @objc convenience public init(paymentType: PayUCheckoutProBase.PaymentType, paymentOptionID: Swift.String? = nil)
+  @objc public convenience init(paymentType: PayUCheckoutProBase.PaymentType, paymentOptionID: Swift.String? = nil)
   @objc public class func getPaymentModeFrom(paymentModes: [PayUCheckoutProBase.PaymentMode]?, paymentType: PayUCheckoutProBase.PaymentType) -> PayUCheckoutProBase.PaymentMode?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
@@ -219,18 +219,3 @@ public typealias CheckEligibilityCompletion = (PayUCheckoutProBase.CheckEligibil
   public var failureMsg: Swift.String?
   @objc deinit
 }
-extension PayUCheckoutProBase.Environment : Swift.Equatable {}
-extension PayUCheckoutProBase.Environment : Swift.Hashable {}
-extension PayUCheckoutProBase.Environment : Swift.RawRepresentable {}
-extension PayUCheckoutProBase.CardType : Swift.Equatable {}
-extension PayUCheckoutProBase.CardType : Swift.Hashable {}
-extension PayUCheckoutProBase.CardType : Swift.RawRepresentable {}
-extension PayUCheckoutProBase.CardScheme : Swift.Equatable {}
-extension PayUCheckoutProBase.CardScheme : Swift.Hashable {}
-extension PayUCheckoutProBase.CardScheme : Swift.RawRepresentable {}
-extension PayUCheckoutProBase.PaymentType : Swift.Equatable {}
-extension PayUCheckoutProBase.PaymentType : Swift.Hashable {}
-extension PayUCheckoutProBase.PaymentType : Swift.RawRepresentable {}
-extension PayUCheckoutProBase.ScreenState : Swift.Equatable {}
-extension PayUCheckoutProBase.ScreenState : Swift.Hashable {}
-extension PayUCheckoutProBase.ScreenState : Swift.RawRepresentable {}

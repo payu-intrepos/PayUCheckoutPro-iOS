@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
-// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutPro
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name PayUCheckoutPro
 import Foundation
 import PayUAssetLibrary
 import PayUBizCoreSDK
@@ -140,7 +140,7 @@ public enum PopTipActionAnimation {
 @objc @_inheritsConvenienceInitializers open class PopTip : UIKit.UIView {
   open var text: Swift.String? {
     get
-    set
+    set(value)
   }
   open var font: UIKit.UIFont
   @objc dynamic open var textColor: UIKit.UIColor
@@ -178,7 +178,7 @@ public enum PopTipActionAnimation {
   @objc dynamic open var constrainInContainerView: Swift.Bool
   open var from: CoreGraphics.CGRect {
     get
-    set
+    set(value)
   }
   open var isVisible: Swift.Bool {
     get
@@ -190,7 +190,7 @@ public enum PopTipActionAnimation {
   @objc dynamic open var startActionAnimationOnShow: Swift.Bool
   open var swipeRemoveGestureDirection: UIKit.UISwipeGestureRecognizer.Direction {
     get
-    set
+    set(value)
   }
   open var tapHandler: ((PayUCheckoutPro.PopTip) -> Swift.Void)?
   open var tapOutsideHandler: ((PayUCheckoutPro.PopTip) -> Swift.Void)?
@@ -261,16 +261,18 @@ public enum ReachabilityError : Swift.Error {
   case UnableToGetInitialFlags
 }
 @available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
+public var ReachabilityChangedNotification: Foundation.NSNotification.Name
 extension NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
+  public static var reachabilityChanged: Foundation.Notification.Name
 }
 public class Reachability {
   public typealias NetworkReachable = (PayUCheckoutPro.Reachability) -> ()
   public typealias NetworkUnreachable = (PayUCheckoutPro.Reachability) -> ()
   @available(*, unavailable, renamed: "Connection")
   public enum NetworkStatus : Swift.CustomStringConvertible {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
+    case notReachable
+    case reachableViaWiFi
+    case reachableViaWWAN
     public var description: Swift.String {
       get
     }
@@ -281,7 +283,9 @@ public class Reachability {
     public func hash(into hasher: inout Swift.Hasher)
   }
   public enum Connection : Swift.CustomStringConvertible {
-    case none, wifi, cellular
+    case none
+    case wifi
+    case cellular
     public var description: Swift.String {
       get
     }
@@ -307,8 +311,8 @@ public class Reachability {
     get
   }
   required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
-  convenience public init?(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
-  convenience public init?(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  public convenience init?(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
+  public convenience init?(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
   @objc deinit
 }
 extension Reachability {
@@ -344,10 +348,10 @@ public enum PayUPaymentApp {
   case gpayOmni
   case new
   case unknown
-  public static let PHONEPE: Swift.String
-  public static let GPAY: Swift.String
-  public static let PAYTM: Swift.String
-  public static let BHIM: Swift.String
+  public static var PHONEPE: Swift.String
+  public static var GPAY: Swift.String
+  public static var PAYTM: Swift.String
+  public static var BHIM: Swift.String
 }
 extension PayUPaymentApp {
   public static func from(collectApp: PayUCheckoutPro.PayUSupportedCollectApp) -> PayUCheckoutPro.PayUPaymentApp
@@ -383,10 +387,10 @@ extension PayUPaymentApp : Swift.Equatable {
   @objc deinit
 }
 extension UIDevice {
-  public static let payuModelName: Swift.String
+  public static var payuModelName: Swift.String
 }
 extension NSRegularExpression {
-  convenience public init(_ pattern: Swift.String)
+  public convenience init(_ pattern: Swift.String)
   public func matches(_ string: Swift.String) -> Swift.Bool
 }
 @objc public protocol PayUCheckoutProDelegate : AnyObject {
@@ -419,12 +423,12 @@ public typealias PayUResponseType = Swift.Result<Swift.Dictionary<Swift.String, 
 public enum PayUValidationError {
 }
 public enum PayUSDKError {
-  public static let socketURLError: Swift.String
-  public static let decodingError: Swift.String
-  public static let dataUnavailable: Swift.String
-  public static let backButtonTxnCancelled: Swift.String
-  public static let unknownErrorMsg: Swift.String
-  public static let internetUnavailable: Swift.String
+  public static var socketURLError: Swift.String
+  public static var decodingError: Swift.String
+  public static var dataUnavailable: Swift.String
+  public static var backButtonTxnCancelled: Swift.String
+  public static var unknownErrorMsg: Swift.String
+  public static var internetUnavailable: Swift.String
 }
 public enum PayUError : Foundation.LocalizedError {
   case error(_: Swift.String)
@@ -436,16 +440,16 @@ public enum PayUError : Foundation.LocalizedError {
   public static func == (lhs: PayUCheckoutPro.PayUError, rhs: PayUCheckoutPro.PayUError) -> Swift.Bool
 }
 @_hasMissingDesignatedInitializers public class PayUUPIAnalytics {
-  public static let shared: PayUCheckoutPro.PayUUPIAnalytics
+  public static var shared: PayUCheckoutPro.PayUUPIAnalytics
   public var analyticsString: Swift.String?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class PayUUPICore {
-  public static let shared: PayUCheckoutPro.PayUUPICore
+  public static var shared: PayUCheckoutPro.PayUUPICore
   public var environment: PayUCheckoutPro.NetworkEnvironment
   public var logLevel: PayULogger.PayULogLevel {
     get
-    set
+    set(value)
   }
   public var paymentCompletion: ((PayUCheckoutPro.PayUResponseType) -> Swift.Void)?
   public var backPressed: (() -> Swift.Void)?
@@ -475,7 +479,7 @@ public enum PayUError : Foundation.LocalizedError {
 }
 @_inheritsConvenienceInitializers @objcMembers public class BizWrapper : PayUCheckoutProBase.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
   @objc override public init(paymentParam: PayUCheckoutProBase.PayUPaymentParams)
-  @objc convenience public init(paymentParam: PayUCheckoutProBase.PayUPaymentParams, paymentModesOrder: [PayUCheckoutProBase.PaymentMode]?)
+  @objc public convenience init(paymentParam: PayUCheckoutProBase.PayUPaymentParams, paymentModesOrder: [PayUCheckoutProBase.PaymentMode]?)
   @objc deinit
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBase.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUCheckoutProBase.PaymentOption, screenState: PayUCheckoutProBase.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBase.ErrorCompletion)
@@ -524,42 +528,42 @@ public enum PayUCoreAPI : Swift.String {
   case finishTxn
   case cancelTxn
   public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
     get
   }
-  public init?(rawValue: Swift.String)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentParamConstant : ObjectiveC.NSObject {
-  @objc public static let udf1: Swift.String
-  @objc public static let udf2: Swift.String
-  @objc public static let udf3: Swift.String
-  @objc public static let udf4: Swift.String
-  @objc public static let udf5: Swift.String
+  @objc public static var udf1: Swift.String
+  @objc public static var udf2: Swift.String
+  @objc public static var udf3: Swift.String
+  @objc public static var udf4: Swift.String
+  @objc public static var udf5: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentResponseConstant : ObjectiveC.NSObject {
-  @objc public static let payuResponse: Swift.String
-  @objc public static let merchantResponse: Swift.String
+  @objc public static var payuResponse: Swift.String
+  @objc public static var merchantResponse: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class HashConstant : ObjectiveC.NSObject {
-  @objc public static let hashString: Swift.String
-  @objc public static let hashName: Swift.String
-  @objc public static let payment: Swift.String
-  @objc public static let paymentRelatedDetailForMobileSDK: Swift.String
-  @objc public static let vasForMobileSDK: Swift.String
-  @objc public static let checkIsDomestic: Swift.String
-  @objc public static let olaEligibility: Swift.String
-  @objc public static let validateVPA: Swift.String
+  @objc public static var hashString: Swift.String
+  @objc public static var hashName: Swift.String
+  @objc public static var payment: Swift.String
+  @objc public static var paymentRelatedDetailForMobileSDK: Swift.String
+  @objc public static var vasForMobileSDK: Swift.String
+  @objc public static var checkIsDomestic: Swift.String
+  @objc public static var olaEligibility: Swift.String
+  @objc public static var validateVPA: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BankCodes : ObjectiveC.NSObject {
-  @objc public static let paytmWallet: Swift.String
-  @objc public static let phonePeWallet: Swift.String
-  @objc public static let gPayUPI: Swift.String
+  @objc public static var paytmWallet: Swift.String
+  @objc public static var phonePeWallet: Swift.String
+  @objc public static var gPayUPI: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
@@ -569,21 +573,3 @@ public struct PayUSupportedCollectApp {
   public init?(withItem item: PayUCheckoutPro.PayUItemTypeInPaymentHandlesAPI)
   public init(appName: Swift.String, handles: [Swift.String])
 }
-extension PayUCheckoutPro.NetworkEnvironment : Swift.Equatable {}
-extension PayUCheckoutPro.NetworkEnvironment : Swift.Hashable {}
-extension PayUCheckoutPro.NetworkEnvironment : Swift.RawRepresentable {}
-extension PayUCheckoutPro.PopTipDirection : Swift.Equatable {}
-extension PayUCheckoutPro.PopTipDirection : Swift.Hashable {}
-extension PayUCheckoutPro.PopTipEntranceAnimation : Swift.Equatable {}
-extension PayUCheckoutPro.PopTipEntranceAnimation : Swift.Hashable {}
-extension PayUCheckoutPro.PopTipExitAnimation : Swift.Equatable {}
-extension PayUCheckoutPro.PopTipExitAnimation : Swift.Hashable {}
-@available(*, unavailable, renamed: "Connection")
-extension PayUCheckoutPro.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
-extension PayUCheckoutPro.Reachability.NetworkStatus : Swift.Hashable {}
-extension PayUCheckoutPro.Reachability.Connection : Swift.Equatable {}
-extension PayUCheckoutPro.Reachability.Connection : Swift.Hashable {}
-extension PayUCheckoutPro.PayUCoreAPI : Swift.Equatable {}
-extension PayUCheckoutPro.PayUCoreAPI : Swift.Hashable {}
-extension PayUCheckoutPro.PayUCoreAPI : Swift.RawRepresentable {}
