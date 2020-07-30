@@ -7,20 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DD29CFC824B73F3D006FA4B2 /* PayUAssetLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFC724B73F3D006FA4B2 /* PayUAssetLibrary.framework */; };
-		DD29CFC924B73F3D006FA4B2 /* PayUAssetLibrary.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFC724B73F3D006FA4B2 /* PayUAssetLibrary.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DD29CFCB24B7405D006FA4B2 /* PayUCheckoutPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFCA24B7405C006FA4B2 /* PayUCheckoutPro.framework */; };
-		DD29CFCC24B7405D006FA4B2 /* PayUCheckoutPro.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFCA24B7405C006FA4B2 /* PayUCheckoutPro.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DD29CFCE24B7406D006FA4B2 /* PayUCheckoutProBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFCD24B7406D006FA4B2 /* PayUCheckoutProBase.framework */; };
-		DD29CFCF24B7406D006FA4B2 /* PayUCheckoutProBase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DD29CFCD24B7406D006FA4B2 /* PayUCheckoutProBase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DD5EC42024B5A8190006F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC41E24B5A8190006F3CD /* Main.storyboard */; };
 		DD5EC42524B5A81C0006F3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC42324B5A81C0006F3CD /* LaunchScreen.storyboard */; };
 		DD5EC51E24B5B6420006F3CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51924B5B6420006F3CD /* ViewController.m */; };
 		DD5EC51F24B5B6420006F3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51A24B5B6420006F3CD /* main.m */; };
 		DD5EC52024B5B6420006F3CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51B24B5B6420006F3CD /* AppDelegate.m */; };
 		DD5EC52A24B5B6510006F3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC52824B5B6510006F3CD /* Assets.xcassets */; };
-		DDBD7C4F24B6D37000614F11 /* PayUBizCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD7C4924B6D37000614F11 /* PayUBizCoreSDK.framework */; };
-		DDBD7C5024B6D37000614F11 /* PayUBizCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DDBD7C4924B6D37000614F11 /* PayUBizCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DDBD7C7324B6F97E00614F11 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBD7C7124B6F97D00614F11 /* Utils.m */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DD29CFCF24B7406D006FA4B2 /* PayUCheckoutProBase.framework in Embed Frameworks */,
-				DD29CFC924B73F3D006FA4B2 /* PayUAssetLibrary.framework in Embed Frameworks */,
-				DDBD7C5024B6D37000614F11 /* PayUBizCoreSDK.framework in Embed Frameworks */,
-				DD29CFCC24B7405D006FA4B2 /* PayUCheckoutPro.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,9 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DD29CFC724B73F3D006FA4B2 /* PayUAssetLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayUAssetLibrary.framework; path = "/Users/umang.arya/PayU/Repo/CheckoutPro Gitlab/one-payu-ui-sdk-ios/App/SwiftSampleApp/CheckoutProSwiftSampleApp/../../../Dependency/AssetLibrary/PayUAssetLibrary/Framework/PayUAssetLibrary-Release-iphoneuniversal/PayUAssetLibrary.framework"; sourceTree = "<absolute>"; };
-		DD29CFCA24B7405C006FA4B2 /* PayUCheckoutPro.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayUCheckoutPro.framework; path = "../../../Dependency/OnePayUUISDK/Framework/PayUCheckoutPro-Release-iphoneuniversal/PayUCheckoutPro.framework"; sourceTree = "<group>"; };
-		DD29CFCD24B7406D006FA4B2 /* PayUCheckoutProBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayUCheckoutProBase.framework; path = "../../../Dependency/OnePayUBaseSDK/Framework/PayUCheckoutProBase-Release-iphoneuniversal/PayUCheckoutProBase.framework"; sourceTree = "<group>"; };
 		DD5EC41224B5A8190006F3CD /* CheckoutProObjCSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutProObjCSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EC41F24B5A8190006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5EC42424B5A81C0006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +40,6 @@
 		DD5EC51D24B5B6420006F3CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DD5EC52824B5B6510006F3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5EC52924B5B6510006F3CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDBD7C4924B6D37000614F11 /* PayUBizCoreSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PayUBizCoreSDK.framework; path = "/Users/umang.arya/PayU/Repo/CheckoutPro Gitlab/one-payu-ui-sdk-ios/App/SwiftSampleApp/CheckoutProSwiftWithoutFrameworkSampleApp/../../../Dependency/OnePayUBizSDKWrapper/Dependency/Biz SDK/PayUBizCoreSDK.framework"; sourceTree = "<absolute>"; };
 		DDBD7C7124B6F97D00614F11 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		DDBD7C7224B6F97D00614F11 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,10 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD29CFCE24B7406D006FA4B2 /* PayUCheckoutProBase.framework in Frameworks */,
-				DD29CFC824B73F3D006FA4B2 /* PayUAssetLibrary.framework in Frameworks */,
-				DDBD7C4F24B6D37000614F11 /* PayUBizCoreSDK.framework in Frameworks */,
-				DD29CFCB24B7405D006FA4B2 /* PayUCheckoutPro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,10 +111,6 @@
 		DDBD7C4824B6D37000614F11 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DD29CFCD24B7406D006FA4B2 /* PayUCheckoutProBase.framework */,
-				DD29CFCA24B7405C006FA4B2 /* PayUCheckoutPro.framework */,
-				DDBD7C4924B6D37000614F11 /* PayUBizCoreSDK.framework */,
-				DD29CFC724B73F3D006FA4B2 /* PayUAssetLibrary.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
