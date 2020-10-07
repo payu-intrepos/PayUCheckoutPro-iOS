@@ -8,11 +8,18 @@
 
 import UIKit
 import CommonCrypto
-import PayUCheckoutPro
-import PayUCheckoutProBase
-import PayUBizCoreSDK
+import PayUCheckoutProKit
+import PayUCheckoutProBaseKit
+import PayUBizCoreKit
 
 class Utils: NSObject {
+    
+    class func txnId() -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyMMddHHmmss"
+        let txnID = "iOS" + formatter.string(from: Date())
+        return txnID
+    }
     
     class func stringyfy(environment: Any?) -> String {
         guard let environment = environment as? Environment else {

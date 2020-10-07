@@ -7,8 +7,8 @@
 //
 
 import UIKit
-import PayUCheckoutPro
-import PayUCheckoutProBase
+import PayUCheckoutProKit
+import PayUCheckoutProBaseKit
 
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
@@ -47,8 +47,9 @@ class MerchantViewController: UIViewController {
                    ["ol4Spy", "J0ZXw2z9", Environment.production],
                    ["obScKz", "Ml7XBCdR", Environment.test],
                    ["gtKFFx", "eCwWELxi", Environment.test],
-                   ["Rl8Pdr", "wsl9kqyy", Environment.test],]
-    
+                   ["Rl8Pdr", "wsl9kqyy", Environment.test],
+                   ["smsplus", "350", Environment.test]]
+
     let indexKeySalt = 0
     var amount: String = "10"
     var productInfo: String = "Nokia"
@@ -65,7 +66,7 @@ class MerchantViewController: UIViewController {
     var showCancelDialogOnCheckoutScreen: Bool = true
     var showCancelDialogOnPaymentScreen: Bool = true
     var orderDetail: String = "[{\"GST\":\"5%\"},{\"Delivery Date\":\"25 Dec\"},{\"Status\":\"In Progress\"}]"
-    var l1Option: String = "[{\"NetBanking\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
+    var l1Option: String = "[{\"NetBanking\":\"\"},{\"emi\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
     var autoOTPSelect: Bool = true
     var surePayCount: String = "2"
     var merchantResponseTimeout: String = "4"
@@ -82,7 +83,7 @@ class MerchantViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        txnIDTextField.text = "txnID123"
+        txnIDTextField.text = Utils.txnId()
         self.registerKeyboardNotification()
     }
     
@@ -130,8 +131,8 @@ extension MerchantViewController {
         secondaryColorTextFieldTapped()
     }
     
-    private func getPaymentParam() -> PayUPaymentParams{
-        let paymentParam = PayUPaymentParams(key: keyTextField.text ?? "",
+    private func getPaymentParam() -> PayUPaymentParam{
+        let paymentParam = PayUPaymentParam(key: keyTextField.text ?? "",
                                              transactionId: txnIDTextField.text ?? "",
                                              amount: amountTextField.text ?? "",
                                              productInfo: productInfoTextField.text ?? "",
@@ -140,8 +141,14 @@ extension MerchantViewController {
                                              phone: phoneTextField.text ?? "",
                                              surl: surlTextField.text ?? "",
                                              furl: furlTextField.text ?? "",
-                                             environment: .production)
+                                             environment: Utils.environment(environment: environmentTextField.text ?? ""))
         paymentParam.userCredential = userCredentialTextField.text
+        
+        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
+        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
+        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
+        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
+        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
 
 //        paymentParam.environment = .test
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
@@ -186,6 +193,8 @@ extension MerchantViewController {
                     paymentMode = PaymentMode(paymentType: .upi, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
                 } else if eachPreferredPaymentMode.keys.first?.lowercased() == "Wallet".lowercased() {
                     paymentMode = PaymentMode(paymentType: .wallet, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
+                } else if eachPreferredPaymentMode.keys.first?.lowercased() == "emi".lowercased() {
+                    paymentMode = PaymentMode(paymentType: .emi, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
                 }
                 if let paymentMode = paymentMode {
                     preferredPaymentModes.append(paymentMode)

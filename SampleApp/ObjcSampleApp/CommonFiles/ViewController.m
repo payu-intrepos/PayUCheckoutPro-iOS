@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-#import <PayUCheckoutPro/PayUCheckoutPro-Swift.h>
-#import <PayUCheckoutProBase/PayUCheckoutProBase-Swift.h>
+#import <PayUCheckoutProKit/PayUCheckoutProKit.h>
+#import <PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.h>
+#import "Utils.h"
 
 @interface ViewController () <PayUCheckoutProDelegate>
 
@@ -24,17 +25,17 @@
 
 #pragma mark Helper Methods
 
-- (PayUPaymentParams *) paymentParam {
-    PayUPaymentParams *paymentParam = [[PayUPaymentParams alloc] initWithKey:@"3TnMpV"
-                                                               transactionId:@"txnID"
-                                                                      amount:@"43"
-                                                                 productInfo:@"Nokia"
-                                                                   firstName:@"Umang"
-                                                                       email:@"umang@arya.com"
-                                                                       phone:@"9876543210"
-                                                                        surl:@"https://payu.herokuapp.com/success"
-                                                                        furl:@"https://payu.herokuapp.com/failure"
-                                                                 environment:EnvironmentProduction];
+- (PayUPaymentParam *) paymentParam {
+    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"3TnMpV"
+                                                             transactionId:[Utils getTransactionID]
+                                                                    amount:@"1"
+                                                               productInfo:@"Nokia"
+                                                                 firstName:@"Umang"
+                                                                     email:@"umang@arya.com"
+                                                                     phone:@"9876543210"
+                                                                      surl:@"https://payu.herokuapp.com/ios_success"
+                                                                      furl:@"https://payu.herokuapp.com/ios_failure"
+                                                               environment:EnvironmentProduction];
     paymentParam.userCredential = @"umang:arya";
     return paymentParam;
 }
@@ -54,7 +55,9 @@
     config.merchantName = @"Umang Enterprises";
 
     config.paymentModesOrder = [self getPreferredPaymentMode];
-
+    config.autoSelectOtp = true;
+    config.merchantResponseTimeout = 8;
+    config.surePayCount = 2;
     [PayUCheckoutPro openOn:self paymentParam:[self paymentParam] config:config delegate:self];
 }
 
@@ -75,20 +78,24 @@
 
 - (void)onPaymentSuccessWithResponse:(id _Nullable)response {
     // handle success scenario
+    [Utils presentAlertOn:self title:@"Success" message:[NSString stringWithFormat:@"%@",response]];
 }
 
 - (void)onPaymentFailureWithResponse:(id _Nullable)response {
     // handle failure scenario
+    [Utils presentAlertOn:self title:@"Failure" message:[NSString stringWithFormat:@"%@",response]];
 }
 
 - (void)onError:(NSError * _Nullable)error {
     // handle error scenario
+    [Utils presentAlertOn:self title:@"Error" message:[NSString stringWithFormat:@"%@",error.localizedDescription]];
 }
 
 - (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated {
     // handle txn cancelled scenario
     // isTxnInitiated == YES, means user cancelled the txn when on reaching bankPage
     // isTxnInitiated == NO, means user cancelled the txn before reaching the bankPage
+    [Utils presentAlertOn:self title:@"Cancel" message:[NSString stringWithFormat:@"%d",isTxnInitiated]];
 }
 
 @end

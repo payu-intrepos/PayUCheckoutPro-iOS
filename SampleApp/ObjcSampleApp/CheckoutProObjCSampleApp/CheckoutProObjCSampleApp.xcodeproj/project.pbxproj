@@ -13,6 +13,7 @@
 		DD5EC51F24B5B6420006F3CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51A24B5B6420006F3CD /* main.m */; };
 		DD5EC52024B5B6420006F3CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51B24B5B6420006F3CD /* AppDelegate.m */; };
 		DD5EC52A24B5B6510006F3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC52824B5B6510006F3CD /* Assets.xcassets */; };
+		DD82CEA1252DAD0800FA70C7 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DD82CEA0252DAD0800FA70C7 /* Utils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		DD5EC51D24B5B6420006F3CD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DD5EC52824B5B6510006F3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD5EC52924B5B6510006F3CD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD82CE9F252DAD0800FA70C7 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		DD82CEA0252DAD0800FA70C7 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		DD5EC51724B5B6420006F3CD /* CommonFiles */ = {
 			isa = PBXGroup;
 			children = (
+				DD82CE9F252DAD0800FA70C7 /* Utils.h */,
+				DD82CEA0252DAD0800FA70C7 /* Utils.m */,
 				DD5EC51824B5B6420006F3CD /* AppDelegate.h */,
 				DD5EC51B24B5B6420006F3CD /* AppDelegate.m */,
 				DD5EC51A24B5B6420006F3CD /* main.m */,
@@ -184,6 +189,7 @@
 				DD5EC51F24B5B6420006F3CD /* main.m in Sources */,
 				DD5EC51E24B5B6420006F3CD /* ViewController.m in Sources */,
 				DD5EC52024B5B6420006F3CD /* AppDelegate.m in Sources */,
+				DD82CEA1252DAD0800FA70C7 /* Utils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
