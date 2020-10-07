@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
                           }
   
   s.ios.deployment_target = "10.0"
-  s.vendored_frameworks = 'PayUCheckoutPro/PayUCheckoutPro.framework'
+  s.vendored_frameworks = 'PayUCheckoutPro/PayUCheckoutProKit.framework'
 
   s.dependency            'PayUIndia-CheckoutProBase', '2.0.0-beta1'
   s.dependency            'PayUIndia-AssetLibrary', '2.0.0-beta1'
