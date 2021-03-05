@@ -192,6 +192,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import PayUCheckoutProBaseKit;
 @import QuartzCore;
 @import UIKit;
 #endif
@@ -240,6 +241,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)vasForMobileSDK SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull checkIsDomestic;)
 + (NSString * _Nonnull)checkIsDomestic SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull getBinInfo;)
++ (NSString * _Nonnull)getBinInfo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull olaEligibility;)
 + (NSString * _Nonnull)olaEligibility SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull validateVPA;)
@@ -250,6 +253,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)eligibleBinsForEMI SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull deleteUserCard;)
 + (NSString * _Nonnull)deleteUserCard SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull offerDetail;)
++ (NSString * _Nonnull)offerDetail SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -259,29 +264,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PayUPaymentParam;
 @class PayUCheckoutProConfig;
 @protocol PayUCheckoutProDelegate;
+@class BaseLayer;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-@class PaymentMode;
-@class UIColor;
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit21PayUCheckoutProConfig")
-@interface PayUCheckoutProConfig : NSObject
-@property (nonatomic, copy) NSString * _Nullable merchantName;
-@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
-@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
-@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
-@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
-- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
-@property (nonatomic) BOOL autoSelectOtp;
-@property (nonatomic) NSUInteger surePayCount;
-@property (nonatomic) NSTimeInterval merchantResponseTimeout;
++ (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -294,6 +282,8 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
@@ -321,6 +311,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
@@ -407,6 +398,10 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 
@@ -627,6 +622,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import PayUCheckoutProBaseKit;
 @import QuartzCore;
 @import UIKit;
 #endif
@@ -675,6 +671,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)vasForMobileSDK SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull checkIsDomestic;)
 + (NSString * _Nonnull)checkIsDomestic SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull getBinInfo;)
++ (NSString * _Nonnull)getBinInfo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull olaEligibility;)
 + (NSString * _Nonnull)olaEligibility SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull validateVPA;)
@@ -685,6 +683,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)eligibleBinsForEMI SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull deleteUserCard;)
 + (NSString * _Nonnull)deleteUserCard SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull offerDetail;)
++ (NSString * _Nonnull)offerDetail SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -694,29 +694,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PayUPaymentParam;
 @class PayUCheckoutProConfig;
 @protocol PayUCheckoutProDelegate;
+@class BaseLayer;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-@class PaymentMode;
-@class UIColor;
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit21PayUCheckoutProConfig")
-@interface PayUCheckoutProConfig : NSObject
-@property (nonatomic, copy) NSString * _Nullable merchantName;
-@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
-@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
-@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
-@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
-- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
-@property (nonatomic) BOOL autoSelectOtp;
-@property (nonatomic) NSUInteger surePayCount;
-@property (nonatomic) NSTimeInterval merchantResponseTimeout;
++ (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -729,6 +712,8 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
@@ -756,6 +741,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
@@ -842,6 +828,10 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 
@@ -1065,6 +1055,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import PayUCheckoutProBaseKit;
 @import QuartzCore;
 @import UIKit;
 #endif
@@ -1113,6 +1104,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)vasForMobileSDK SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull checkIsDomestic;)
 + (NSString * _Nonnull)checkIsDomestic SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull getBinInfo;)
++ (NSString * _Nonnull)getBinInfo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull olaEligibility;)
 + (NSString * _Nonnull)olaEligibility SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull validateVPA;)
@@ -1123,6 +1116,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)eligibleBinsForEMI SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull deleteUserCard;)
 + (NSString * _Nonnull)deleteUserCard SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull offerDetail;)
++ (NSString * _Nonnull)offerDetail SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1132,29 +1127,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PayUPaymentParam;
 @class PayUCheckoutProConfig;
 @protocol PayUCheckoutProDelegate;
+@class BaseLayer;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-@class PaymentMode;
-@class UIColor;
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit21PayUCheckoutProConfig")
-@interface PayUCheckoutProConfig : NSObject
-@property (nonatomic, copy) NSString * _Nullable merchantName;
-@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
-@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
-@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
-@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
-- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
-@property (nonatomic) BOOL autoSelectOtp;
-@property (nonatomic) NSUInteger surePayCount;
-@property (nonatomic) NSTimeInterval merchantResponseTimeout;
++ (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1167,6 +1145,8 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
@@ -1194,6 +1174,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
@@ -1280,6 +1261,10 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 
@@ -1500,6 +1485,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
+@import PayUCheckoutProBaseKit;
 @import QuartzCore;
 @import UIKit;
 #endif
@@ -1548,6 +1534,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)vasForMobileSDK SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull checkIsDomestic;)
 + (NSString * _Nonnull)checkIsDomestic SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull getBinInfo;)
++ (NSString * _Nonnull)getBinInfo SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull olaEligibility;)
 + (NSString * _Nonnull)olaEligibility SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull validateVPA;)
@@ -1558,6 +1546,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)eligibleBinsForEMI SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull deleteUserCard;)
 + (NSString * _Nonnull)deleteUserCard SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull offerDetail;)
++ (NSString * _Nonnull)offerDetail SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1567,29 +1557,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PayUPaymentParam;
 @class PayUCheckoutProConfig;
 @protocol PayUCheckoutProDelegate;
+@class BaseLayer;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class UIImage;
-@class PaymentMode;
-@class UIColor;
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit21PayUCheckoutProConfig")
-@interface PayUCheckoutProConfig : NSObject
-@property (nonatomic, copy) NSString * _Nullable merchantName;
-@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
-@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
-@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
-@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
-@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
-- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
-@property (nonatomic) BOOL autoSelectOtp;
-@property (nonatomic) NSUInteger surePayCount;
-@property (nonatomic) NSTimeInterval merchantResponseTimeout;
++ (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1602,6 +1575,8 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
@@ -1629,6 +1604,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
@@ -1715,6 +1691,10 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
+
+
+
+
 
 
 

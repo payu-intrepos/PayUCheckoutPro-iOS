@@ -9,6 +9,7 @@ import PayUCheckoutProBaseKit
 import PayUCustomBrowser
 import PayULoggerKit
 import PayUNetworkingKit
+import PayUParamsKit
 import PayUUPICoreKit
 import Swift
 import SwiftUI
@@ -243,27 +244,13 @@ extension Reachability {
   @objc func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
-  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam, config: PayUCheckoutProKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc deinit
-  @objc override dynamic public init()
-}
-@objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutProConfig : ObjectiveC.NSObject {
-  @objc public var merchantName: Swift.String?
-  @objc public var merchantLogo: UIKit.UIImage?
-  @objc public var paymentModesOrder: [PayUCheckoutProBaseKit.PaymentMode]?
-  @objc public var cartDetails: [[Swift.String : Swift.String]]?
-  @objc public var showExitConfirmationOnCheckoutScreen: Swift.Bool
-  @objc public var showExitConfirmationOnPaymentScreen: Swift.Bool
-  @objc public func customiseUI(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor)
-  @objc public var autoSelectOtp: Swift.Bool
-  @objc public var surePayCount: Swift.UInt
-  @objc public var merchantResponseTimeout: Foundation.TimeInterval
+  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc deinit
   @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
-  @objc override public init(paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam)
-  @objc convenience public init(paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam, paymentModesOrder: [PayUCheckoutProBaseKit.PaymentMode]?)
+  @objc override public init(paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.OnePayUBaseConfig?)
   @objc deinit
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUCheckoutProBaseKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
@@ -273,6 +260,7 @@ extension Reachability {
   @objc override public func checkEligibility(paymentOption: PayUCheckoutProBaseKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUCheckoutProBaseKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
+  @objc override public func offerDetail(paymentOptions: [PayUCheckoutProBaseKit.PaymentOption], onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
   @objc public func payUConnectionError(_ notification: [Swift.AnyHashable : Any]!)
@@ -303,11 +291,13 @@ extension Reachability {
   @objc public static let paymentRelatedDetailForMobileSDK: Swift.String
   @objc public static let vasForMobileSDK: Swift.String
   @objc public static let checkIsDomestic: Swift.String
+  @objc public static let getBinInfo: Swift.String
   @objc public static let olaEligibility: Swift.String
   @objc public static let validateVPA: Swift.String
   @objc public static let getEmiAmountAccordingToInterest: Swift.String
   @objc public static let eligibleBinsForEMI: Swift.String
   @objc public static let deleteUserCard: Swift.String
+  @objc public static let offerDetail: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }

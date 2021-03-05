@@ -215,6 +215,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit15BaseAPIResponse")
 @end
 
 @class PayUPaymentParam;
+@class OnePayUBaseConfig;
 @protocol OnePayUBaseLayerDelegate;
 @protocol OnePayUBaseIndividualPaymentDelegate;
 @class FetchPaymentOptionResponse;
@@ -229,9 +230,10 @@ enum ScreenState : NSInteger;
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 @interface BaseLayer : NSObject
 @property (nonatomic, strong) PayUPaymentParam * _Nonnull basePaymentParam;
+@property (nonatomic, strong) OnePayUBaseConfig * _Nonnull config;
 @property (nonatomic, weak) id <OnePayUBaseLayerDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <OnePayUBaseIndividualPaymentDelegate> _Nullable individualPaymentDelegate;
-- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(OnePayUBaseConfig * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
@@ -239,6 +241,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)emiDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)offerDetailWithPaymentOptions:(NSArray<PaymentOption *> * _Nonnull)paymentOptions onCompletion:(void (^ _Nonnull)(NSArray<PaymentOption *> * _Nullable, NSError * _Nullable))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -319,16 +322,36 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10ImageParam")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
+@property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 @interface NextStep : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUOfferDetails;
+@class UIColor;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
+@interface OnePayUBaseConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchantName;
+@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
+@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
+@property (nonatomic, copy) NSArray<PayUOfferDetails *> * _Nullable offerDetails;
+@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
+@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
+@property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
+@property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
+- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -350,6 +373,28 @@ SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit24OnePayUBaseLayerDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit21PayUCheckoutProConfig")
+@interface PayUCheckoutProConfig : OnePayUBaseConfig
+@property (nonatomic) BOOL autoSelectOtp;
+@property (nonatomic) NSUInteger surePayCount;
+@property (nonatomic) NSTimeInterval merchantResponseTimeout;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUOfferDetails")
+@interface PayUOfferDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerDescription;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerKey;
+- (nullable instancetype)initWithTitle:(NSString * _Nonnull)title offerDescription:(NSString * _Nonnull)offerDescription offerKey:(NSString * _Nonnull)offerKey paymentTypes:(NSArray<NSNumber *> * _Nonnull)paymentTypes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PayUSIParams;
+
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
 @property (nonatomic, copy) NSString * _Nonnull key;
@@ -364,6 +409,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable userCredential;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalParam;
 @property (nonatomic) enum Environment environment;
+@property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -381,6 +427,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 - (nonnull instancetype)initWithModeName:(NSString * _Nullable)modeName subHeading:(NSString * _Nullable)subHeading offerDetail:(NSString * _Nullable)offerDetail paymentType:(enum PaymentType)paymentType options:(NSArray<PaymentOption *> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithPaymentType:(enum PaymentType)paymentType paymentOptionID:(NSString * _Nullable)paymentOptionID;
 + (PaymentMode * _Nullable)getPaymentModeFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<PaymentOption *> * _Nullable)getAllPaymentOptionsFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -389,11 +436,11 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 
 typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
-  PaymentTypeSavedCard = 1,
-  PaymentTypeNetBanking = 2,
-  PaymentTypeUpi = 3,
-  PaymentTypeWallet = 4,
-  PaymentTypeEmi = 5,
+  PaymentTypeNetBanking = 1,
+  PaymentTypeUpi = 2,
+  PaymentTypeWallet = 3,
+  PaymentTypeEmi = 4,
+  PaymentTypeSavedCard = 5,
   PaymentTypeOther = 6,
 };
 
@@ -647,6 +694,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit15BaseAPIResponse")
 @end
 
 @class PayUPaymentParam;
+@class OnePayUBaseConfig;
 @protocol OnePayUBaseLayerDelegate;
 @protocol OnePayUBaseIndividualPaymentDelegate;
 @class FetchPaymentOptionResponse;
@@ -661,9 +709,10 @@ enum ScreenState : NSInteger;
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 @interface BaseLayer : NSObject
 @property (nonatomic, strong) PayUPaymentParam * _Nonnull basePaymentParam;
+@property (nonatomic, strong) OnePayUBaseConfig * _Nonnull config;
 @property (nonatomic, weak) id <OnePayUBaseLayerDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <OnePayUBaseIndividualPaymentDelegate> _Nullable individualPaymentDelegate;
-- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(OnePayUBaseConfig * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
@@ -671,6 +720,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)emiDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)offerDetailWithPaymentOptions:(NSArray<PaymentOption *> * _Nonnull)paymentOptions onCompletion:(void (^ _Nonnull)(NSArray<PaymentOption *> * _Nullable, NSError * _Nullable))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -751,16 +801,36 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10ImageParam")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
+@property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 @interface NextStep : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUOfferDetails;
+@class UIColor;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
+@interface OnePayUBaseConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchantName;
+@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
+@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
+@property (nonatomic, copy) NSArray<PayUOfferDetails *> * _Nullable offerDetails;
+@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
+@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
+@property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
+@property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
+- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -782,6 +852,28 @@ SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit24OnePayUBaseLayerDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit21PayUCheckoutProConfig")
+@interface PayUCheckoutProConfig : OnePayUBaseConfig
+@property (nonatomic) BOOL autoSelectOtp;
+@property (nonatomic) NSUInteger surePayCount;
+@property (nonatomic) NSTimeInterval merchantResponseTimeout;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUOfferDetails")
+@interface PayUOfferDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerDescription;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerKey;
+- (nullable instancetype)initWithTitle:(NSString * _Nonnull)title offerDescription:(NSString * _Nonnull)offerDescription offerKey:(NSString * _Nonnull)offerKey paymentTypes:(NSArray<NSNumber *> * _Nonnull)paymentTypes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PayUSIParams;
+
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
 @property (nonatomic, copy) NSString * _Nonnull key;
@@ -796,6 +888,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable userCredential;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalParam;
 @property (nonatomic) enum Environment environment;
+@property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -813,6 +906,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 - (nonnull instancetype)initWithModeName:(NSString * _Nullable)modeName subHeading:(NSString * _Nullable)subHeading offerDetail:(NSString * _Nullable)offerDetail paymentType:(enum PaymentType)paymentType options:(NSArray<PaymentOption *> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithPaymentType:(enum PaymentType)paymentType paymentOptionID:(NSString * _Nullable)paymentOptionID;
 + (PaymentMode * _Nullable)getPaymentModeFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<PaymentOption *> * _Nullable)getAllPaymentOptionsFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -821,11 +915,11 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 
 typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
-  PaymentTypeSavedCard = 1,
-  PaymentTypeNetBanking = 2,
-  PaymentTypeUpi = 3,
-  PaymentTypeWallet = 4,
-  PaymentTypeEmi = 5,
+  PaymentTypeNetBanking = 1,
+  PaymentTypeUpi = 2,
+  PaymentTypeWallet = 3,
+  PaymentTypeEmi = 4,
+  PaymentTypeSavedCard = 5,
   PaymentTypeOther = 6,
 };
 
@@ -1082,6 +1176,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit15BaseAPIResponse")
 @end
 
 @class PayUPaymentParam;
+@class OnePayUBaseConfig;
 @protocol OnePayUBaseLayerDelegate;
 @protocol OnePayUBaseIndividualPaymentDelegate;
 @class FetchPaymentOptionResponse;
@@ -1096,9 +1191,10 @@ enum ScreenState : NSInteger;
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 @interface BaseLayer : NSObject
 @property (nonatomic, strong) PayUPaymentParam * _Nonnull basePaymentParam;
+@property (nonatomic, strong) OnePayUBaseConfig * _Nonnull config;
 @property (nonatomic, weak) id <OnePayUBaseLayerDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <OnePayUBaseIndividualPaymentDelegate> _Nullable individualPaymentDelegate;
-- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(OnePayUBaseConfig * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
@@ -1106,6 +1202,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)emiDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)offerDetailWithPaymentOptions:(NSArray<PaymentOption *> * _Nonnull)paymentOptions onCompletion:(void (^ _Nonnull)(NSArray<PaymentOption *> * _Nullable, NSError * _Nullable))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1186,16 +1283,36 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10ImageParam")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
+@property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 @interface NextStep : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUOfferDetails;
+@class UIColor;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
+@interface OnePayUBaseConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchantName;
+@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
+@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
+@property (nonatomic, copy) NSArray<PayUOfferDetails *> * _Nullable offerDetails;
+@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
+@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
+@property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
+@property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
+- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1217,6 +1334,28 @@ SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit24OnePayUBaseLayerDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit21PayUCheckoutProConfig")
+@interface PayUCheckoutProConfig : OnePayUBaseConfig
+@property (nonatomic) BOOL autoSelectOtp;
+@property (nonatomic) NSUInteger surePayCount;
+@property (nonatomic) NSTimeInterval merchantResponseTimeout;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUOfferDetails")
+@interface PayUOfferDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerDescription;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerKey;
+- (nullable instancetype)initWithTitle:(NSString * _Nonnull)title offerDescription:(NSString * _Nonnull)offerDescription offerKey:(NSString * _Nonnull)offerKey paymentTypes:(NSArray<NSNumber *> * _Nonnull)paymentTypes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PayUSIParams;
+
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
 @property (nonatomic, copy) NSString * _Nonnull key;
@@ -1231,6 +1370,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable userCredential;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalParam;
 @property (nonatomic) enum Environment environment;
+@property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1248,6 +1388,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 - (nonnull instancetype)initWithModeName:(NSString * _Nullable)modeName subHeading:(NSString * _Nullable)subHeading offerDetail:(NSString * _Nullable)offerDetail paymentType:(enum PaymentType)paymentType options:(NSArray<PaymentOption *> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithPaymentType:(enum PaymentType)paymentType paymentOptionID:(NSString * _Nullable)paymentOptionID;
 + (PaymentMode * _Nullable)getPaymentModeFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<PaymentOption *> * _Nullable)getAllPaymentOptionsFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1256,11 +1397,11 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 
 typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
-  PaymentTypeSavedCard = 1,
-  PaymentTypeNetBanking = 2,
-  PaymentTypeUpi = 3,
-  PaymentTypeWallet = 4,
-  PaymentTypeEmi = 5,
+  PaymentTypeNetBanking = 1,
+  PaymentTypeUpi = 2,
+  PaymentTypeWallet = 3,
+  PaymentTypeEmi = 4,
+  PaymentTypeSavedCard = 5,
   PaymentTypeOther = 6,
 };
 
@@ -1514,6 +1655,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit15BaseAPIResponse")
 @end
 
 @class PayUPaymentParam;
+@class OnePayUBaseConfig;
 @protocol OnePayUBaseLayerDelegate;
 @protocol OnePayUBaseIndividualPaymentDelegate;
 @class FetchPaymentOptionResponse;
@@ -1528,9 +1670,10 @@ enum ScreenState : NSInteger;
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 @interface BaseLayer : NSObject
 @property (nonatomic, strong) PayUPaymentParam * _Nonnull basePaymentParam;
+@property (nonatomic, strong) OnePayUBaseConfig * _Nonnull config;
 @property (nonatomic, weak) id <OnePayUBaseLayerDelegate> _Nullable delegate;
 @property (nonatomic, weak) id <OnePayUBaseIndividualPaymentDelegate> _Nullable individualPaymentDelegate;
-- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(OnePayUBaseConfig * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
@@ -1538,6 +1681,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)emiDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)offerDetailWithPaymentOptions:(NSArray<PaymentOption *> * _Nonnull)paymentOptions onCompletion:(void (^ _Nonnull)(NSArray<PaymentOption *> * _Nullable, NSError * _Nullable))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1618,16 +1762,36 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10ImageParam")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
+@property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 @interface NextStep : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUOfferDetails;
+@class UIColor;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
+@interface OnePayUBaseConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable merchantName;
+@property (nonatomic, strong) UIImage * _Nullable merchantLogo;
+@property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
+@property (nonatomic, copy) NSArray<PayUOfferDetails *> * _Nullable offerDetails;
+@property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
+@property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
+@property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
+@property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
+- (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1649,6 +1813,28 @@ SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit24OnePayUBaseLayerDelegate_")
 @end
 
 
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit21PayUCheckoutProConfig")
+@interface PayUCheckoutProConfig : OnePayUBaseConfig
+@property (nonatomic) BOOL autoSelectOtp;
+@property (nonatomic) NSUInteger surePayCount;
+@property (nonatomic) NSTimeInterval merchantResponseTimeout;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+
+SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUOfferDetails")
+@interface PayUOfferDetails : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull title;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerDescription;
+@property (nonatomic, readonly, copy) NSString * _Nonnull offerKey;
+- (nullable instancetype)initWithTitle:(NSString * _Nonnull)title offerDescription:(NSString * _Nonnull)offerDescription offerKey:(NSString * _Nonnull)offerKey paymentTypes:(NSArray<NSNumber *> * _Nonnull)paymentTypes;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class PayUSIParams;
+
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
 @property (nonatomic, copy) NSString * _Nonnull key;
@@ -1663,6 +1849,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable userCredential;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull additionalParam;
 @property (nonatomic) enum Environment environment;
+@property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1680,6 +1867,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 - (nonnull instancetype)initWithModeName:(NSString * _Nullable)modeName subHeading:(NSString * _Nullable)subHeading offerDetail:(NSString * _Nullable)offerDetail paymentType:(enum PaymentType)paymentType options:(NSArray<PaymentOption *> * _Nullable)options OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithPaymentType:(enum PaymentType)paymentType paymentOptionID:(NSString * _Nullable)paymentOptionID;
 + (PaymentMode * _Nullable)getPaymentModeFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
++ (NSArray<PaymentOption *> * _Nullable)getAllPaymentOptionsFromPaymentModes:(NSArray<PaymentMode *> * _Nullable)paymentModes paymentType:(enum PaymentType)paymentType SWIFT_WARN_UNUSED_RESULT;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1688,11 +1876,11 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 
 typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
-  PaymentTypeSavedCard = 1,
-  PaymentTypeNetBanking = 2,
-  PaymentTypeUpi = 3,
-  PaymentTypeWallet = 4,
-  PaymentTypeEmi = 5,
+  PaymentTypeNetBanking = 1,
+  PaymentTypeUpi = 2,
+  PaymentTypeWallet = 3,
+  PaymentTypeEmi = 4,
+  PaymentTypeSavedCard = 5,
   PaymentTypeOther = 6,
 };
 
