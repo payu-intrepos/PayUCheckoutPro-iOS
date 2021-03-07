@@ -60,7 +60,6 @@
 			children = (
 				DD5EC41424B5A8190006F3CD /* CheckoutProObjCSampleApp */,
 				DD5EC41324B5A8190006F3CD /* Products */,
-				DDBD7C4824B6D37000614F11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,13 +105,6 @@
 			);
 			name = SwiftObjcCommonFiles;
 			path = ../../../SwiftObjcCommonFiles;
-			sourceTree = "<group>";
-		};
-		DDBD7C4824B6D37000614F11 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

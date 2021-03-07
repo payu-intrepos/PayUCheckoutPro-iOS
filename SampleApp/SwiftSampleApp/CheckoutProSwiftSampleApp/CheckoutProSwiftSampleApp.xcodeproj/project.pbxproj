@@ -55,7 +55,6 @@
 			children = (
 				DD5EC45E24B5A9390006F3CD /* CheckoutProSwiftSampleApp */,
 				DD5EC45D24B5A9390006F3CD /* Products */,
-				DD5EC4F824B5B3EE0006F3CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,13 +96,6 @@
 			);
 			name = CommonFiles;
 			path = ../../CommonFiles;
-			sourceTree = "<group>";
-		};
-		DD5EC4F824B5B3EE0006F3CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

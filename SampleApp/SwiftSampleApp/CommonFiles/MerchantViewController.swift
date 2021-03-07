@@ -9,6 +9,7 @@
 import UIKit
 import PayUCheckoutProKit
 import PayUCheckoutProBaseKit
+import PayUParamsKit
 
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
@@ -25,6 +26,16 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var userCredentialTextField: UITextField!
     @IBOutlet weak var txnIDTextField: UITextField!
     
+    //SI
+    @IBOutlet weak var siSwitch: UISwitch!
+    @IBOutlet weak var billingIntervalTf: UITextField!
+    @IBOutlet weak var siEndDateTf: UITextField!
+    @IBOutlet weak var siStartDateTf: UITextField!
+    @IBOutlet weak var recurringPeriodTf: UITextField!
+    @IBOutlet weak var recurringAmountTf: UITextField!
+    @IBOutlet weak var remarksTextField: UITextField!
+    @IBOutlet weak var freeTrialSwitch: UISwitch!
+    
     // Customization
     @IBOutlet weak var primaryColorTextField: UITextField!
     @IBOutlet weak var secondaryColorTextField: UITextField!
@@ -34,6 +45,8 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var showCancelDialogOnPaymentScreenSwitch: UISwitch!
     @IBOutlet weak var orderDetailTextView: UITextView!
     @IBOutlet weak var l1OptionTextView: UITextView!
+    @IBOutlet weak var offerDetailTextView: UITextView!
+    
     
     // CB Configuration
     @IBOutlet weak var autoOTPSelectSwitch: UISwitch!
@@ -42,6 +55,7 @@ class MerchantViewController: UIViewController {
     
     // MARK: - Variables -
     let keySalt = [["3TnMpV", "g0nGFe03", Environment.production],
+                   ["V2yqBC", "dEzD8BBD", Environment.production],
                    ["0MQaQP", "13p0PXZk", Environment.production],
                    ["smsplus", "1b1b0", Environment.production],
                    ["ol4Spy", "J0ZXw2z9", Environment.production],
@@ -50,7 +64,7 @@ class MerchantViewController: UIViewController {
                    ["Rl8Pdr", "wsl9kqyy", Environment.test],
                    ["smsplus", "350", Environment.test]]
 
-    let indexKeySalt = 0
+    let indexKeySalt = 1
     var amount: String = "10"
     var productInfo: String = "Nokia"
     var surl: String = "https://payu.herokuapp.com/ios_success"
@@ -58,7 +72,7 @@ class MerchantViewController: UIViewController {
     var firstName: String = "Umang"
     var email: String = "umang@arya.com"
     var phoneNumber: String = "9876543210"
-    var userCredential: String = "umang:arya"
+    var userCredential: String = "umang:arya123"
     var primaryColor: String = "#053ac1"
     var secondaryColor: String = "#ffffff"
     var merchantName: String = "Gabbar"
@@ -67,10 +81,19 @@ class MerchantViewController: UIViewController {
     var showCancelDialogOnPaymentScreen: Bool = true
     var orderDetail: String = "[{\"GST\":\"5%\"},{\"Delivery Date\":\"25 Dec\"},{\"Status\":\"In Progress\"}]"
     var l1Option: String = "[{\"NetBanking\":\"\"},{\"emi\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
+    var offerDetail: String = "[[\"20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards\",\"Get 20% instant discount on all cards. Max 100 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards\",\"CARD_OFFER@8401\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"CARD_OFFER_2@7283\",\"NetBanking\",], [\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"CASHBACK@8405\",\"NetBanking,Cards\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"MOBILE_UPI@6925\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"MOBILE_UPI@6925\",\"NetBanking\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"CARD_OFFER_2@7283\",\"Cards,NetBanking\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"CARD_OFFER@8401\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"nb@10\",\"NetBanking\",], [\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"cardnb@5\",\"Cards,NetBanking\",],]"
     var autoOTPSelect: Bool = true
     var surePayCount: String = "2"
     var merchantResponseTimeout: String = "4"
-    
+    var recurringAmount = "11"
+    var recurringPeriod: PayUBillingCycle = .monthly
+    var siStartDate:Date = Date()
+    var siEndDate:Date = Date()
+    var billingInterval = "1"
+    var isFreeTrial = false
+    var remarksText: String? = nil
+    var datePicker : UIDatePicker!
+    let toolBar = UIToolbar()
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -79,6 +102,7 @@ class MerchantViewController: UIViewController {
         setUpValuesInTextFields()
         updateButtonColor()
         dismissKeyboardOnTapOutsideTextField()
+        setUpDatePicker()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -91,6 +115,75 @@ class MerchantViewController: UIViewController {
         super.viewWillDisappear(animated)
         unRegisterKeyboardNotification()
     }
+    
+    func setUpDatePicker(){
+        // DatePicker
+        self.datePicker = UIDatePicker(frame:CGRect(x: 0, y: 0, width: view.frame.size.width, height: 200))
+        self.datePicker?.backgroundColor = UIColor.white
+        self.datePicker?.datePickerMode = UIDatePicker.Mode.date
+        datePicker?.center = view.center
+        if #available(iOS 13.4, *) {
+            datePicker?.preferredDatePickerStyle = .wheels
+        }
+        // ToolBar
+        toolBar.barStyle = .default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = UIColor(red: 92/255, green: 216/255, blue: 255/255, alpha: 1)
+        toolBar.sizeToFit()
+        
+        // Adding Button ToolBar
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(self.cancelClick))
+        toolBar.setItems([cancelButton, spaceButton], animated: true)
+        toolBar.isUserInteractionEnabled = true
+        siStartDateTf?.inputAccessoryView = toolBar
+        siEndDateTf?.inputAccessoryView = toolBar
+        //add datepicker to textField
+        siStartDateTf?.inputView = datePicker
+        siEndDateTf?.inputView = datePicker
+        self.toolBar.isHidden = false
+        //Default current date
+        siStartDateTf?.text =  Date().dateString
+        siEndDateTf?.text =  Date().dateString
+        self.datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
+    }
+    
+   
+    @objc func cancelClick () {
+        self.siStartDateTf.resignFirstResponder()
+        self.siEndDateTf.resignFirstResponder()
+    }
+        
+    @objc func handleDatePicker(sender: UIDatePicker) {
+        if siStartDateTf.isFirstResponder{
+            self.siStartDateTf.text = sender.date.dateString
+            self.siStartDate = sender.date
+        }
+        else if siEndDateTf.isFirstResponder{
+            self.siEndDateTf.text = sender.date.dateString
+            self.siEndDate = sender.date
+        }
+    }
+    
+
+    @IBAction func billingCycleBtnAxn(_ sender: Any) {
+        let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        for billingCycle in PayUBillingCycle.allCases{
+            sheet.addAction(UIAlertAction(title: PPKUtils.billingCycleToString(billingCycle), style: .default, handler: { (action) in
+                self.recurringPeriod = billingCycle
+                self.recurringPeriodTf.text = action.title
+            }))
+            }
+        sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        if let popoverController = sheet.popoverPresentationController {
+            popoverController.sourceView = self.view
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                popoverController.sourceRect = CGRect.init(x:self.view.bounds.midX-150, y:self.view.bounds.midY-100,width:0,height:0)
+            }
+        }
+        self.present(sheet, animated: true, completion: nil)
+    }
+    
 }
 
 // MARK: - Private Methods -
@@ -124,9 +217,15 @@ extension MerchantViewController {
         showCancelDialogOnPaymentScreenSwitch.isOn = showCancelDialogOnPaymentScreen
         orderDetailTextView.text = orderDetail
         l1OptionTextView.text = l1Option
+        offerDetailTextView.text = offerDetail
         autoOTPSelectSwitch.isOn = autoOTPSelect
         surePayCountTextField.text = surePayCount
         merchantResponseTimeoutTextField.text = merchantResponseTimeout
+        recurringAmountTf.text = recurringAmount
+        recurringPeriodTf.text = PPKUtils.billingCycleToString(recurringPeriod)
+        billingIntervalTf.text = billingInterval
+        remarksTextField.text = remarksText
+        freeTrialSwitch.isOn = isFreeTrial
         primaryColorTextFieldTapped()
         secondaryColorTextFieldTapped()
     }
@@ -142,6 +241,19 @@ extension MerchantViewController {
                                              surl: surlTextField.text ?? "",
                                              furl: furlTextField.text ?? "",
                                              environment: Utils.environment(environment: environmentTextField.text ?? ""))
+        if let recurringAmount = self.recurringAmountTf.text,
+            let frequency = billingIntervalTf.text,
+            let frequencyInt = Int(frequency),
+            siSwitch.isOn{
+            let siInfo = PayUSIParams(billingAmount: recurringAmount,
+                                      paymentStartDate: self.siStartDate,
+                                      paymentEndDate: self.siEndDate,
+                                      billingCycle: recurringPeriod,
+                                      billingInterval: NSNumber(value: frequencyInt))
+            siInfo.remarks = remarksTextField.text?.isEmpty ?? true ? nil : remarksTextField.text
+            siInfo.isFreeTrial = freeTrialSwitch.isOn
+            paymentParam.siParam = siInfo
+        }
         paymentParam.userCredential = userCredentialTextField.text
         
         paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
@@ -162,6 +274,7 @@ extension MerchantViewController {
         config.merchantLogo = UIImage(named: logoNameTextField.text ?? "")
         config.paymentModesOrder = getPreferredPaymentMode()
         config.cartDetails = cartDetails()
+        config.offerDetails = offerDetails()
         if let primary = Utils.hexStringToUIColor(hex: primaryColorTextField.text ?? ""), let secondary = Utils.hexStringToUIColor(hex: secondaryColorTextField.text ?? "") {
             config.customiseUI(primaryColor: primary, secondaryColor: secondary)
         }
@@ -184,19 +297,7 @@ extension MerchantViewController {
         if let preferredPaymentModesJSON = Utils.JSONFrom(string: l1OptionTextView.text) as? [[String : String]] {
             var preferredPaymentModes: [PaymentMode] = []
             for eachPreferredPaymentMode in preferredPaymentModesJSON {
-                var paymentMode: PaymentMode?
-                if eachPreferredPaymentMode.keys.first?.lowercased() == "Cards".lowercased() {
-                    paymentMode = PaymentMode(paymentType: .ccdc)
-                } else if eachPreferredPaymentMode.keys.first?.lowercased() == "NetBanking".lowercased() {
-                    paymentMode = PaymentMode(paymentType: .netBanking, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
-                } else if eachPreferredPaymentMode.keys.first?.lowercased() == "UPI".lowercased() {
-                    paymentMode = PaymentMode(paymentType: .upi, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
-                } else if eachPreferredPaymentMode.keys.first?.lowercased() == "Wallet".lowercased() {
-                    paymentMode = PaymentMode(paymentType: .wallet, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
-                } else if eachPreferredPaymentMode.keys.first?.lowercased() == "emi".lowercased() {
-                    paymentMode = PaymentMode(paymentType: .emi, paymentOptionID: eachPreferredPaymentMode.values.first ?? "")
-                }
-                if let paymentMode = paymentMode {
+                if let paymentMode = Utils.paymentModeFrom(paymentType: eachPreferredPaymentMode.keys.first?.lowercased(), paymentOptionID: eachPreferredPaymentMode.values.first) {
                     preferredPaymentModes.append(paymentMode)
                 }
             }
@@ -208,6 +309,24 @@ extension MerchantViewController {
     func cartDetails() -> [[String: String]]? {
         if let cartDetails = Utils.JSONFrom(string: orderDetailTextView.text) as? [[String : String]] {
             return cartDetails
+        }
+        return nil
+    }
+    
+    func offerDetails() -> [PayUOfferDetails]? {
+        if let offerJSON = Utils.JSONFrom(string: offerDetailTextView.text) as? [[String]] {
+            var offerDetails = [PayUOfferDetails]()
+            for eachOfferJSON in offerJSON {
+                let paymentTypesStringArray = eachOfferJSON[3].components(separatedBy: ",")
+                let paymentTypesArray = paymentTypesStringArray.compactMap{Utils.paymentTypeFrom(paymentType: $0)}
+                if let offerDetailObj = PayUOfferDetails(title: eachOfferJSON[0],
+                                                         offerDescription:eachOfferJSON[1],
+                                                         offerKey: eachOfferJSON[2],
+                                                         paymentTypes: paymentTypesArray) {
+                    offerDetails.append(offerDetailObj)
+                }
+            }
+            return offerDetails
         }
         return nil
     }
@@ -225,14 +344,14 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // handle success scenario
         navigationController?.popToViewController(self, animated: true)
         showAlert(title: "Success", message: "\(response ?? "")")
-        
+        print("response\n",response ?? "")
     }
     
     func onPaymentFailure(response: Any?) {
         // handle failure scenario
         navigationController?.popToViewController(self, animated: true)
         showAlert(title: "Failure", message: "\(response ?? "")")
-        
+        print("response\n",response ?? "")
     }
     
     func onPaymentCancel(isTxnInitiated: Bool) {
