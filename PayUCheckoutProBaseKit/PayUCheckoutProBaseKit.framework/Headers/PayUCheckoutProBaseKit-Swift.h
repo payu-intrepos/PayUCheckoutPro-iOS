@@ -272,7 +272,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit4CCDC")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
+typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
   CardSchemeMasterCard = 0,
   CardSchemeVisa = 1,
   CardSchemeJcb = 2,
@@ -286,7 +286,7 @@ typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
   CardSchemeUnknown = 10,
 };
 
-typedef SWIFT_ENUM(NSInteger, CardType, closed) {
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
   CardTypeCc = 0,
   CardTypeDc = 1,
 };
@@ -307,7 +307,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit3EMI")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, Environment, closed) {
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentProduction = 0,
   EnvironmentTest = 1,
 };
@@ -436,7 +436,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, PaymentType, closed) {
+typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
   PaymentTypeNetBanking = 1,
   PaymentTypeUpi = 2,
@@ -452,7 +452,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9SavedCard")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, ScreenState, closed) {
+typedef SWIFT_ENUM(NSInteger, ScreenState, open) {
   ScreenStateNone = 0,
   ScreenStatePhoneNumberScreen = 1,
   ScreenStateVpaEntry = 2,
@@ -753,7 +753,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit4CCDC")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
+typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
   CardSchemeMasterCard = 0,
   CardSchemeVisa = 1,
   CardSchemeJcb = 2,
@@ -767,7 +767,7 @@ typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
   CardSchemeUnknown = 10,
 };
 
-typedef SWIFT_ENUM(NSInteger, CardType, closed) {
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
   CardTypeCc = 0,
   CardTypeDc = 1,
 };
@@ -788,7 +788,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit3EMI")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, Environment, closed) {
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentProduction = 0,
   EnvironmentTest = 1,
 };
@@ -917,7 +917,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, PaymentType, closed) {
+typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
   PaymentTypeNetBanking = 1,
   PaymentTypeUpi = 2,
@@ -933,7 +933,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9SavedCard")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, ScreenState, closed) {
+typedef SWIFT_ENUM(NSInteger, ScreenState, open) {
   ScreenStateNone = 0,
   ScreenStatePhoneNumberScreen = 1,
   ScreenStateVpaEntry = 2,
@@ -1237,7 +1237,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit4CCDC")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
+typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
   CardSchemeMasterCard = 0,
   CardSchemeVisa = 1,
   CardSchemeJcb = 2,
@@ -1251,7 +1251,7 @@ typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
   CardSchemeUnknown = 10,
 };
 
-typedef SWIFT_ENUM(NSInteger, CardType, closed) {
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
   CardTypeCc = 0,
   CardTypeDc = 1,
 };
@@ -1272,7 +1272,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit3EMI")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, Environment, closed) {
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentProduction = 0,
   EnvironmentTest = 1,
 };
@@ -1401,7 +1401,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, PaymentType, closed) {
+typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
   PaymentTypeNetBanking = 1,
   PaymentTypeUpi = 2,
@@ -1417,7 +1417,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9SavedCard")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, ScreenState, closed) {
+typedef SWIFT_ENUM(NSInteger, ScreenState, open) {
   ScreenStateNone = 0,
   ScreenStatePhoneNumberScreen = 1,
   ScreenStateVpaEntry = 2,
@@ -1718,7 +1718,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit4CCDC")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
+typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
   CardSchemeMasterCard = 0,
   CardSchemeVisa = 1,
   CardSchemeJcb = 2,
@@ -1732,7 +1732,7 @@ typedef SWIFT_ENUM(NSInteger, CardScheme, closed) {
   CardSchemeUnknown = 10,
 };
 
-typedef SWIFT_ENUM(NSInteger, CardType, closed) {
+typedef SWIFT_ENUM(NSInteger, CardType, open) {
   CardTypeCc = 0,
   CardTypeDc = 1,
 };
@@ -1753,7 +1753,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit3EMI")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, Environment, closed) {
+typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentProduction = 0,
   EnvironmentTest = 1,
 };
@@ -1882,7 +1882,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit11PaymentMode")
 @end
 
 
-typedef SWIFT_ENUM(NSInteger, PaymentType, closed) {
+typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeCcdc = 0,
   PaymentTypeNetBanking = 1,
   PaymentTypeUpi = 2,
@@ -1898,7 +1898,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9SavedCard")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-typedef SWIFT_ENUM(NSInteger, ScreenState, closed) {
+typedef SWIFT_ENUM(NSInteger, ScreenState, open) {
   ScreenStateNone = 0,
   ScreenStatePhoneNumberScreen = 1,
   ScreenStateVpaEntry = 2,
