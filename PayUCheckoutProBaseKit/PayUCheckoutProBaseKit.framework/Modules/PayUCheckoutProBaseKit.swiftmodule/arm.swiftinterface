@@ -92,6 +92,8 @@ import UIKit
   @objc public var unavailableReason: Swift.String?
   @objc public var offerDetail: Swift.String?
   @objc public var paymentOptionID: Swift.String?
+  public var additionalCharge: Swift.Double?
+  @objc public var isDown: Swift.Bool
   @objc public var customObj: Any?
   @objc public var paymentType: PayUCheckoutProBaseKit.PaymentType {
     @objc get
@@ -114,6 +116,14 @@ import UIKit
   @objc public var cardAlias: Swift.String?
   @objc public var shouldSaveCard: Swift.Bool
   public var cardBinInfo: PayUCheckoutProBaseKit.CardBinInfo?
+  override public var additionalCharge: Swift.Double? {
+    get
+    set
+  }
+  @objc override public var isDown: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc deinit
   @objc override dynamic public init()
 }
@@ -148,6 +158,8 @@ import UIKit
 }
 @objcMembers public class CardBinInfo {
   @objc public init()
+  public var additionalCharge: Swift.Double?
+  @objc public var isDown: Swift.Bool
   public var cardScheme: PayUCheckoutProBaseKit.CardScheme?
   @objc public var cardSchemeRawValue: Swift.String?
   public var cardType: PayUCheckoutProBaseKit.CardType?
