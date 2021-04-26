@@ -53,7 +53,7 @@ podName="PayUIndia-CheckoutProBase"
 podVersion="2.2.0"
 
 podSpec="${podName}.podspec"
-tag="${podName}__${podVersion}"
+tag="${podName}_${podVersion}"
 
 podLibLint ${podSpec} &&
 createLocalTag ${tag} &&
