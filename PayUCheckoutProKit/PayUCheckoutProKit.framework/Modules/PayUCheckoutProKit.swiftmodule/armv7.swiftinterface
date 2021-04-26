@@ -295,6 +295,7 @@ extension Reachability {
   @objc public static let eligibleBinsForEMI: Swift.String
   @objc public static let deleteUserCard: Swift.String
   @objc public static let offerDetail: Swift.String
+  @objc public static let getCheckoutDetails: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
@@ -302,6 +303,7 @@ extension Reachability {
   @objc public static let paytmWallet: Swift.String
   @objc public static let phonePeWallet: Swift.String
   @objc public static let gPayUPI: Swift.String
+  @objc public static let intent: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
