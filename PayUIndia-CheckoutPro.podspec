@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.dependency            'PayUIndia-CheckoutProBase', '~> 2.2.1'
   s.dependency            'PayUIndia-AssetLibrary', '~> 2.1'
-  s.dependency            'PayUIndia-PG-SDK', '~> 5.3'
+  s.dependency            'PayUIndia-PG-SDK', '~> 6.0'
   s.dependency            'PayUIndia-UPICore', '~> 4.0'
   s.dependency            'PayUIndia-Custom-Browser', '~> 6.0'
   
