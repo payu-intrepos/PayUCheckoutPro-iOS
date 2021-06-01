@@ -10,7 +10,7 @@ import UIKit
 import PayUCheckoutProKit
 import PayUCheckoutProBaseKit
 import PayUParamsKit
-
+import PayUBizCoreKit
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
     @IBOutlet weak var keyTextField: UITextField!
@@ -64,7 +64,7 @@ class MerchantViewController: UIViewController {
                    ["Rl8Pdr", "wsl9kqyy", Environment.test],
                    ["smsplus", "350", Environment.test]]
 
-    let indexKeySalt = 1
+    let indexKeySalt = 0
     var amount: String = "10"
     var productInfo: String = "Nokia"
     var surl: String = "https://payu.herokuapp.com/ios_success"
@@ -364,17 +364,25 @@ extension MerchantViewController: PayUCheckoutProDelegate {
     }
     
     
+    /// Use this function to provide hashes
+    /// - Parameters:
+    /// - param: Dictionary that contains key as HashConstant.hashName & HashConstant.hashString
+    /// - onCompletion: Once you fetch the hash from server, pass that hash with key as param[HashConstant.hashName]
     func generateHash(for param: DictOfString, onCompletion: @escaping PayUHashGenerationCompletion) {
-        let commandName = (param[HashConstant.hashName] ?? "")
-        let hashStringWithoutSalt = (param[HashConstant.hashString] ?? "")
-        // get hash for "commandName" from server
-        // get hash for "hashStringWithoutSalt" from server
+     // Send this string to your backend and append the salt at the end and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
+     let hashStringWithoutSalt = param[HashConstant.hashString] ?? ""
+     // Or you can send below string hashName to your backend and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
+     let hashName = param[HashConstant.hashName] ?? ""
+     
+     // Set the hash in below string which is fetched from your server
+//     let hashFetchedFromServer = ""
+     
+//     onCompletion([hashName : hashFetchedFromServer])
         
-        
-        
-        // After fetching hash set its value in below variable "hashValue"
-        let hashValue = "hashValue"
-        onCompletion([commandName : hashValue])
+        // we are updated hash locally only for demo purpose, please generate hash from server
+        print(hashStringWithoutSalt + (saltTextField.text ?? ""))
+        let localHash = PayUDontUseThisClass().getHash(hashStringWithoutSalt + (saltTextField.text ?? "")) ?? ""
+        onCompletion([hashName : localHash])
     }
     
     func showAlert(title: String, message: String) {
