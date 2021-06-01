@@ -178,27 +178,27 @@ public class Reachability {
   public typealias NetworkReachable = (PayUCheckoutProKit.Reachability) -> ()
   public typealias NetworkUnreachable = (PayUCheckoutProKit.Reachability) -> ()
   @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible {
+  public enum NetworkStatus : Swift.CustomStringConvertible, Swift.Equatable {
     case notReachable, reachableViaWiFi, reachableViaWWAN
     public var description: Swift.String {
       get
     }
-    public static func == (a: PayUCheckoutProKit.Reachability.NetworkStatus, b: PayUCheckoutProKit.Reachability.NetworkStatus) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PayUCheckoutProKit.Reachability.NetworkStatus, b: PayUCheckoutProKit.Reachability.NetworkStatus) -> Swift.Bool
   }
-  public enum Connection : Swift.CustomStringConvertible {
+  public enum Connection : Swift.CustomStringConvertible, Swift.Equatable {
     case none, wifi, cellular
     public var description: Swift.String {
       get
     }
-    public static func == (a: PayUCheckoutProKit.Reachability.Connection, b: PayUCheckoutProKit.Reachability.Connection) -> Swift.Bool
     public var hashValue: Swift.Int {
       get
     }
     public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: PayUCheckoutProKit.Reachability.Connection, b: PayUCheckoutProKit.Reachability.Connection) -> Swift.Bool
   }
   public var whenReachable: PayUCheckoutProKit.Reachability.NetworkReachable?
   public var whenUnreachable: PayUCheckoutProKit.Reachability.NetworkUnreachable?
@@ -317,8 +317,5 @@ extension PayUCheckoutProKit.PopTipEntranceAnimation : Swift.Hashable {}
 extension PayUCheckoutProKit.PopTipExitAnimation : Swift.Equatable {}
 extension PayUCheckoutProKit.PopTipExitAnimation : Swift.Hashable {}
 @available(*, unavailable, renamed: "Connection")
-extension PayUCheckoutProKit.Reachability.NetworkStatus : Swift.Equatable {}
-@available(*, unavailable, renamed: "Connection")
 extension PayUCheckoutProKit.Reachability.NetworkStatus : Swift.Hashable {}
-extension PayUCheckoutProKit.Reachability.Connection : Swift.Equatable {}
 extension PayUCheckoutProKit.Reachability.Connection : Swift.Hashable {}
