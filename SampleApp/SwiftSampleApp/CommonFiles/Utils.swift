@@ -14,6 +14,14 @@ import PayUBizCoreKit
 
 class Utils: NSObject {
     
+    class func sha512Hex(string: String) -> String {
+        PayUDontUseThisClass().getHash(string)
+    }
+    
+    class func hmacsha1(of string: String, secret: String) -> String {
+        PayUDontUseThisClass.hmacsha1(string, secret: secret)
+    }
+
     class func txnId() -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyMMddHHmmss"
