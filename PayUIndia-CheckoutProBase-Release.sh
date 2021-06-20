@@ -32,7 +32,7 @@ createRemoteTag() {
 }
 
 podLibLint() {
-	command="pod lib lint $1"
+	command="pod lib lint $1 --allow-warnings"
 	echo "Executing ---- ${command}"
 	eval "$command"
 }
@@ -50,7 +50,7 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-CheckoutProBase"
-podVersion="2.2.1"
+podVersion="2.4.0"
 
 podSpec="${podName}.podspec"
 tag="${podName}_${podVersion}"

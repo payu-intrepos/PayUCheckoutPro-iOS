@@ -249,13 +249,16 @@ extension Reachability {
   @objc deinit
   @objc override dynamic public init()
 }
-@_inheritsConvenienceInitializers @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
+@objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
+  @objc public var mcpAPIResponse: PayUParamsKit.PayUModelMultiCurrencyPayment?
   @objc override public init(paymentParam: PayUCheckoutProBaseKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.OnePayUBaseConfig?)
   @objc deinit
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUCheckoutProBaseKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc override public func cancelCurrentPayment() -> Swift.Bool
   override public func getBinInfoOf(cardNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
+  override public func fetchMCPLookupData(cardBinInfo: PayUCheckoutProBaseKit.CardBinInfo, onCompletion: @escaping () -> ())
+  @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUCheckoutProBaseKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
@@ -268,6 +271,7 @@ extension Reachability {
   @objc public func payUSuccessResponse(_ payUResponse: Any!, surlResponse: Any!)
   @objc public func payUFailureResponse(_ payUResponse: Any!, furlResponse: Any!)
   @objc public func shouldDismissVCOnBackPress()
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentParamConstant : ObjectiveC.NSObject {
   @objc public static let udf1: Swift.String
@@ -275,6 +279,7 @@ extension Reachability {
   @objc public static let udf3: Swift.String
   @objc public static let udf4: Swift.String
   @objc public static let udf5: Swift.String
+  @objc public static let merchantAccessKey: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
@@ -299,6 +304,7 @@ extension Reachability {
   @objc public static let deleteUserCard: Swift.String
   @objc public static let offerDetail: Swift.String
   @objc public static let getCheckoutDetails: Swift.String
+  @objc public static let mcpLookup: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
