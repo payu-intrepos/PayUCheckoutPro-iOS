@@ -382,7 +382,9 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // we are updated hash locally only for demo purpose, please generate hash from server
         print(hashStringWithoutSalt + (saltTextField.text ?? ""))
         let localHash = PayUDontUseThisClass().getHash(hashStringWithoutSalt + (saltTextField.text ?? "")) ?? ""
-        onCompletion([hashName : localHash])
+        if hashName != "get_checkout_details"{
+            onCompletion([hashName : localHash])
+        }
     }
     
     func showAlert(title: String, message: String) {
