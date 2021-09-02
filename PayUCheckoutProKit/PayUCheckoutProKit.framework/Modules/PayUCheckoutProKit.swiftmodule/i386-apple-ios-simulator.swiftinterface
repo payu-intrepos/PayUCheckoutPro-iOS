@@ -1,18 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 import Foundation
 import PayUAssetLibraryKit
 import PayUBizCoreKit
 import PayUCheckoutProBaseKit
 @_exported import PayUCheckoutProKit
+import PayUCrashReporter
 import PayUCustomBrowser
 import PayULoggerKit
+import PayUNetworkReachability
 import PayUNetworkingKit
 import PayUParamsKit
 import PayUUPICoreKit
 import Swift
-import SystemConfiguration
 import UIKit
 extension PopTip {
   public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
@@ -31,10 +32,10 @@ public enum PopTipDirection {
   case autoVertical
   case none
   public static func == (a: PayUCheckoutProKit.PopTipDirection, b: PayUCheckoutProKit.PopTipDirection) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipEntranceAnimation {
   case scale
@@ -43,10 +44,10 @@ public enum PopTipEntranceAnimation {
   case custom
   case none
   public static func == (a: PayUCheckoutProKit.PopTipEntranceAnimation, b: PayUCheckoutProKit.PopTipEntranceAnimation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipExitAnimation {
   case scale
@@ -54,10 +55,10 @@ public enum PopTipExitAnimation {
   case custom
   case none
   public static func == (a: PayUCheckoutProKit.PopTipExitAnimation, b: PayUCheckoutProKit.PopTipExitAnimation) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipActionAnimation {
   case bounce(CoreGraphics.CGFloat?)
@@ -87,17 +88,17 @@ public enum PopTipActionAnimation {
   @objc dynamic open var edgeInsets: UIKit.UIEdgeInsets
   @objc dynamic open var arrowSize: CoreGraphics.CGSize
   @objc dynamic open var arrowRadius: CoreGraphics.CGFloat
-  @objc dynamic open var animationIn: Foundation.TimeInterval
-  @objc dynamic open var animationOut: Foundation.TimeInterval
-  @objc dynamic open var delayIn: Foundation.TimeInterval
-  @objc dynamic open var delayOut: Foundation.TimeInterval
+  @objc dynamic open var animationIn: Swift.Double
+  @objc dynamic open var animationOut: Swift.Double
+  @objc dynamic open var delayIn: Swift.Double
+  @objc dynamic open var delayOut: Swift.Double
   open var entranceAnimation: PayUCheckoutProKit.PopTipEntranceAnimation
   open var exitAnimation: PayUCheckoutProKit.PopTipExitAnimation
   open var actionAnimation: PayUCheckoutProKit.PopTipActionAnimation
-  @objc dynamic open var actionAnimationIn: Foundation.TimeInterval
-  @objc dynamic open var actionAnimationOut: Foundation.TimeInterval
-  @objc dynamic open var actionDelayIn: Foundation.TimeInterval
-  @objc dynamic open var actionDelayOut: Foundation.TimeInterval
+  @objc dynamic open var actionAnimationIn: Swift.Double
+  @objc dynamic open var actionAnimationOut: Swift.Double
+  @objc dynamic open var actionDelayIn: Swift.Double
+  @objc dynamic open var actionDelayOut: Swift.Double
   @objc dynamic open var edgeMargin: CoreGraphics.CGFloat
   @objc dynamic open var bubbleOffset: CoreGraphics.CGFloat
   @objc dynamic open var arrowOffset: CoreGraphics.CGFloat
@@ -159,81 +160,7 @@ public enum PopTipActionAnimation {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-public enum ReachabilityError : Swift.Error {
-  case FailedToCreateWithAddress(Darwin.sockaddr_in)
-  case FailedToCreateWithHostname(Swift.String)
-  case UnableToSetCallback
-  case UnableToSetDispatchQueue
-  case UnableToGetInitialFlags
-}
-@available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
-public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension NSNotification.Name {
-  public static let reachabilityChanged: Foundation.Notification.Name
-}
-public class Reachability {
-  public typealias NetworkReachable = (PayUCheckoutProKit.Reachability) -> ()
-  public typealias NetworkUnreachable = (PayUCheckoutProKit.Reachability) -> ()
-  @available(*, unavailable, renamed: "Connection")
-  public enum NetworkStatus : Swift.CustomStringConvertible, Swift.Equatable {
-    case notReachable, reachableViaWiFi, reachableViaWWAN
-    public var description: Swift.String {
-      get
-    }
-    public var hashValue: Swift.Int {
-      get
-    }
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: PayUCheckoutProKit.Reachability.NetworkStatus, b: PayUCheckoutProKit.Reachability.NetworkStatus) -> Swift.Bool
-  }
-  public enum Connection : Swift.CustomStringConvertible, Swift.Equatable {
-    case none, wifi, cellular
-    public var description: Swift.String {
-      get
-    }
-    public var hashValue: Swift.Int {
-      get
-    }
-    public func hash(into hasher: inout Swift.Hasher)
-    public static func == (a: PayUCheckoutProKit.Reachability.Connection, b: PayUCheckoutProKit.Reachability.Connection) -> Swift.Bool
-  }
-  public var whenReachable: PayUCheckoutProKit.Reachability.NetworkReachable?
-  public var whenUnreachable: PayUCheckoutProKit.Reachability.NetworkUnreachable?
-  final public let reachableOnWWAN: Swift.Bool
-  public var allowsCellularConnection: Swift.Bool
-  public var notificationCenter: Foundation.NotificationCenter
-  public var currentReachabilityString: Swift.String {
-    get
-  }
-  @available(*, unavailable, renamed: "connection")
-  public var currentReachabilityStatus: PayUCheckoutProKit.Reachability.Connection {
-    get
-  }
-  public var connection: PayUCheckoutProKit.Reachability.Connection {
-    get
-  }
-  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
-  convenience public init?(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
-  convenience public init?(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil)
-  @objc deinit
-}
-extension Reachability {
-  public func startNotifier() throws
-  public func stopNotifier()
-  public var isReachable: Swift.Bool {
-    get
-  }
-  public var isReachableViaWWAN: Swift.Bool {
-    get
-  }
-  public var isReachableViaWiFi: Swift.Bool {
-    get
-  }
-  public var description: Swift.String {
-    get
-  }
-}
-@objc public protocol PayUCheckoutProDelegate : AnyObject {
+@objc public protocol PayUCheckoutProDelegate {
   @objc func onPaymentSuccess(response: Any?)
   @objc func onPaymentFailure(response: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -242,9 +169,11 @@ extension Reachability {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
   @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc deinit
+  @objc public static func sdkCrash()
   @objc override dynamic public init()
+  @objc deinit
 }
 @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
   @objc public var mcpAPIResponse: PayUParamsKit.PayUModelMultiCurrencyPayment?
@@ -277,14 +206,14 @@ extension Reachability {
   @objc public static let udf4: Swift.String
   @objc public static let udf5: Swift.String
   @objc public static let merchantAccessKey: Swift.String
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentResponseConstant : ObjectiveC.NSObject {
   @objc public static let payuResponse: Swift.String
   @objc public static let merchantResponse: Swift.String
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class HashConstant : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
@@ -302,16 +231,16 @@ extension Reachability {
   @objc public static let offerDetail: Swift.String
   @objc public static let getCheckoutDetails: Swift.String
   @objc public static let mcpLookup: Swift.String
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BankCodes : ObjectiveC.NSObject {
   @objc public static let paytmWallet: Swift.String
   @objc public static let phonePeWallet: Swift.String
   @objc public static let gPayUPI: Swift.String
   @objc public static let intent: Swift.String
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension PayUCheckoutProKit.PopTipDirection : Swift.Equatable {}
 extension PayUCheckoutProKit.PopTipDirection : Swift.Hashable {}
@@ -319,6 +248,3 @@ extension PayUCheckoutProKit.PopTipEntranceAnimation : Swift.Equatable {}
 extension PayUCheckoutProKit.PopTipEntranceAnimation : Swift.Hashable {}
 extension PayUCheckoutProKit.PopTipExitAnimation : Swift.Equatable {}
 extension PayUCheckoutProKit.PopTipExitAnimation : Swift.Hashable {}
-@available(*, unavailable, renamed: "Connection")
-extension PayUCheckoutProKit.Reachability.NetworkStatus : Swift.Hashable {}
-extension PayUCheckoutProKit.Reachability.Connection : Swift.Hashable {}
