@@ -25,9 +25,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var environmentTextField: UITextField!
     @IBOutlet weak var userCredentialTextField: UITextField!
     @IBOutlet weak var txnIDTextField: UITextField!
-    @IBOutlet weak var merchantAccessKeyTextField: UITextField!
-    @IBOutlet weak var merchantSecretKeyTextField: UITextField!
-
+    
     //SI
     @IBOutlet weak var siSwitch: UISwitch!
     @IBOutlet weak var billingIntervalTf: UITextField!
@@ -58,17 +56,15 @@ class MerchantViewController: UIViewController {
     // MARK: - Variables -
     let keySalt = [["3TnMpV", "g0nGFe03", Environment.production],
                    ["V2yqBC", "dEzD8BBD", Environment.production],
-                   ["0MQaQP", "7tVMWdl6", Environment.production],
+                   ["0MQaQP", "13p0PXZk", Environment.production],
                    ["smsplus", "1b1b0", Environment.production],
                    ["ol4Spy", "J0ZXw2z9", Environment.production],
                    ["obScKz", "Ml7XBCdR", Environment.test],
                    ["gtKFFx", "eCwWELxi", Environment.test],
                    ["Rl8Pdr", "wsl9kqyy", Environment.test],
-                   ["smsplus", "350", Environment.test],
-                   ["IUIaFM", "67njRYSI", Environment.test],
-                   ["F53fW7", "PPIzLXEo", Environment.test]]
+                   ["smsplus", "350", Environment.test]]
 
-    let indexKeySalt = 9
+    let indexKeySalt = 0
     var amount: String = "10"
     var productInfo: String = "Nokia"
     var surl: String = "https://payu.herokuapp.com/ios_success"
@@ -98,9 +94,6 @@ class MerchantViewController: UIViewController {
     var remarksText: String? = nil
     var datePicker : UIDatePicker!
     let toolBar = UIToolbar()
-    var merchantAccessKey: String = "E5ABOXOWAAZNXB6JEF5Z"
-    let merchantSecretKey = "e425e539233044146a2d185a346978794afd7c66"
-
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -235,8 +228,6 @@ extension MerchantViewController {
         freeTrialSwitch.isOn = isFreeTrial
         primaryColorTextFieldTapped()
         secondaryColorTextFieldTapped()
-        merchantAccessKeyTextField.text = merchantAccessKey
-        merchantSecretKeyTextField.text = merchantSecretKey
     }
     
     private func getPaymentParam() -> PayUPaymentParam{
@@ -270,7 +261,6 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
-        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
 
 //        paymentParam.environment = .test
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
@@ -379,21 +369,22 @@ extension MerchantViewController: PayUCheckoutProDelegate {
     /// - param: Dictionary that contains key as HashConstant.hashName & HashConstant.hashString
     /// - onCompletion: Once you fetch the hash from server, pass that hash with key as param[HashConstant.hashName]
     func generateHash(for param: DictOfString, onCompletion: @escaping PayUHashGenerationCompletion) {
-        let commandName = (param[HashConstant.hashName] ?? "")
-        let hashStringWithoutSalt = (param[HashConstant.hashString] ?? "")
-        // get hash for "commandName" from server
-        // get hash for "hashStringWithoutSalt" from server
+     // Send this string to your backend and append the salt at the end and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
+     let hashStringWithoutSalt = param[HashConstant.hashString] ?? ""
+     // Or you can send below string hashName to your backend and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
+     let hashName = param[HashConstant.hashName] ?? ""
+     
+     // Set the hash in below string which is fetched from your server
+//     let hashFetchedFromServer = ""
+     
+//     onCompletion([hashName : hashFetchedFromServer])
         
-        
-        
-        // After fetching hash set its value in below variable "hashValue"
-        var hashValue = ""
-        if commandName == HashConstant.mcpLookup {
-            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
-        } else {
-            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
+        // we are updated hash locally only for demo purpose, please generate hash from server
+        print(hashStringWithoutSalt + (saltTextField.text ?? ""))
+        let localHash = PayUDontUseThisClass().getHash(hashStringWithoutSalt + (saltTextField.text ?? "")) ?? ""
+        if hashName != "get_checkout_details"{
+            onCompletion([hashName : localHash])
         }
-        onCompletion([commandName : hashValue])
     }
     
     func showAlert(title: String, message: String) {

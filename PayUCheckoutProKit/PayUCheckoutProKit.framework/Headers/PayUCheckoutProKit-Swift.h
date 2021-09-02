@@ -277,7 +277,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -717,7 +719,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1160,7 +1164,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1600,7 +1606,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
