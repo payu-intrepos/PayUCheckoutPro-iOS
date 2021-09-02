@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.2.4 (swiftlang-1103.0.32.9 clang-1103.0.32.53)
 // swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 import Foundation
 import PayUAssetLibraryKit
@@ -32,10 +32,10 @@ public enum PopTipDirection {
   case autoVertical
   case none
   public static func == (a: PayUCheckoutProKit.PopTipDirection, b: PayUCheckoutProKit.PopTipDirection) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipEntranceAnimation {
   case scale
@@ -44,10 +44,10 @@ public enum PopTipEntranceAnimation {
   case custom
   case none
   public static func == (a: PayUCheckoutProKit.PopTipEntranceAnimation, b: PayUCheckoutProKit.PopTipEntranceAnimation) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipExitAnimation {
   case scale
@@ -55,10 +55,10 @@ public enum PopTipExitAnimation {
   case custom
   case none
   public static func == (a: PayUCheckoutProKit.PopTipExitAnimation, b: PayUCheckoutProKit.PopTipExitAnimation) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum PopTipActionAnimation {
   case bounce(CoreGraphics.CGFloat?)
@@ -88,17 +88,17 @@ public enum PopTipActionAnimation {
   @objc dynamic open var edgeInsets: UIKit.UIEdgeInsets
   @objc dynamic open var arrowSize: CoreGraphics.CGSize
   @objc dynamic open var arrowRadius: CoreGraphics.CGFloat
-  @objc dynamic open var animationIn: Swift.Double
-  @objc dynamic open var animationOut: Swift.Double
-  @objc dynamic open var delayIn: Swift.Double
-  @objc dynamic open var delayOut: Swift.Double
+  @objc dynamic open var animationIn: Foundation.TimeInterval
+  @objc dynamic open var animationOut: Foundation.TimeInterval
+  @objc dynamic open var delayIn: Foundation.TimeInterval
+  @objc dynamic open var delayOut: Foundation.TimeInterval
   open var entranceAnimation: PayUCheckoutProKit.PopTipEntranceAnimation
   open var exitAnimation: PayUCheckoutProKit.PopTipExitAnimation
   open var actionAnimation: PayUCheckoutProKit.PopTipActionAnimation
-  @objc dynamic open var actionAnimationIn: Swift.Double
-  @objc dynamic open var actionAnimationOut: Swift.Double
-  @objc dynamic open var actionDelayIn: Swift.Double
-  @objc dynamic open var actionDelayOut: Swift.Double
+  @objc dynamic open var actionAnimationIn: Foundation.TimeInterval
+  @objc dynamic open var actionAnimationOut: Foundation.TimeInterval
+  @objc dynamic open var actionDelayIn: Foundation.TimeInterval
+  @objc dynamic open var actionDelayOut: Foundation.TimeInterval
   @objc dynamic open var edgeMargin: CoreGraphics.CGFloat
   @objc dynamic open var bubbleOffset: CoreGraphics.CGFloat
   @objc dynamic open var arrowOffset: CoreGraphics.CGFloat
@@ -160,7 +160,7 @@ public enum PopTipActionAnimation {
   @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
-@objc public protocol PayUCheckoutProDelegate {
+@objc public protocol PayUCheckoutProDelegate : AnyObject {
   @objc func onPaymentSuccess(response: Any?)
   @objc func onPaymentFailure(response: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -172,8 +172,8 @@ public enum PopTipActionAnimation {
   @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func sdkCrash()
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate {
   @objc public var mcpAPIResponse: PayUParamsKit.PayUModelMultiCurrencyPayment?
@@ -206,14 +206,14 @@ public enum PopTipActionAnimation {
   @objc public static let udf4: Swift.String
   @objc public static let udf5: Swift.String
   @objc public static let merchantAccessKey: Swift.String
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentResponseConstant : ObjectiveC.NSObject {
   @objc public static let payuResponse: Swift.String
   @objc public static let merchantResponse: Swift.String
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class HashConstant : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
@@ -231,16 +231,16 @@ public enum PopTipActionAnimation {
   @objc public static let offerDetail: Swift.String
   @objc public static let getCheckoutDetails: Swift.String
   @objc public static let mcpLookup: Swift.String
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BankCodes : ObjectiveC.NSObject {
   @objc public static let paytmWallet: Swift.String
   @objc public static let phonePeWallet: Swift.String
   @objc public static let gPayUPI: Swift.String
   @objc public static let intent: Swift.String
-  @objc override dynamic public init()
   @objc deinit
+  @objc override dynamic public init()
 }
 extension PayUCheckoutProKit.PopTipDirection : Swift.Equatable {}
 extension PayUCheckoutProKit.PopTipDirection : Swift.Hashable {}
