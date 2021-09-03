@@ -15,11 +15,11 @@ import PayUParamsKit
 import PayUUPICoreKit
 import Swift
 import UIKit
-extension PopTip {
+extension PayUPopTip {
   public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
   public func performExitAnimation(completion: @escaping () -> Swift.Void)
 }
-extension PopTip {
+extension PayUPopTip {
   public class func pathWith(rect: CoreGraphics.CGRect, frame: CoreGraphics.CGRect, direction: PayUCheckoutProKit.PopTipDirection, arrowSize: CoreGraphics.CGSize, arrowPosition: CoreGraphics.CGPoint, arrowRadius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat = 0, radius: CoreGraphics.CGFloat = 0) -> UIKit.UIBezierPath
 }
 public enum PopTipDirection {
@@ -66,7 +66,7 @@ public enum PopTipActionAnimation {
   case pulse(CoreGraphics.CGFloat?)
   case none
 }
-@objc @_inheritsConvenienceInitializers open class PopTip : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers open class PayUPopTip : UIKit.UIView {
   open var text: Swift.String? {
     get
     set
@@ -121,11 +121,11 @@ public enum PopTipActionAnimation {
     get
     set
   }
-  open var tapHandler: ((PayUCheckoutProKit.PopTip) -> Swift.Void)?
-  open var tapOutsideHandler: ((PayUCheckoutProKit.PopTip) -> Swift.Void)?
-  open var swipeOutsideHandler: ((PayUCheckoutProKit.PopTip) -> Swift.Void)?
-  open var appearHandler: ((PayUCheckoutProKit.PopTip) -> Swift.Void)?
-  open var dismissHandler: ((PayUCheckoutProKit.PopTip) -> Swift.Void)?
+  open var tapHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  open var tapOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  open var swipeOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  open var appearHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  open var dismissHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
   open var entranceAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
   open var exitAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
   open var arrowPosition: CoreGraphics.CGPoint {
