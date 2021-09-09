@@ -7,6 +7,8 @@ ${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
 ${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUAssetLibraryKit/PayUAssetLibraryKit.framework/PayUAssetLibraryKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.framework/PayUCheckoutProBaseKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCrashReporter/PayUCrashReporter.framework/PayUCrashReporter
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCustomBrowser/PayUCustomBrowser.framework/PayUCustomBrowser
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNetworkReachability/PayUNetworkReachability.framework/PayUNetworkReachability
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUBizCoreKit/PayUBizCoreKit.framework/PayUBizCoreKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit/PayUParamsKit.framework/PayUParamsKit

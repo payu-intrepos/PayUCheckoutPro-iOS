@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E56F3DF18C53CB0285B946B /* Pods_CheckoutProObjCSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F901520EA7F40E2D6C9315 /* Pods_CheckoutProObjCSampleApp.framework */; };
 		DD5EC42024B5A8190006F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC41E24B5A8190006F3CD /* Main.storyboard */; };
 		DD5EC42524B5A81C0006F3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC42324B5A81C0006F3CD /* LaunchScreen.storyboard */; };
 		DD5EC51E24B5B6420006F3CD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC51924B5B6420006F3CD /* ViewController.m */; };
@@ -30,6 +31,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3992176951C0E4CC8EA69A75 /* Pods-CheckoutProObjCSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProObjCSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CheckoutProObjCSampleApp/Pods-CheckoutProObjCSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		6A8AC4D5C0B37A1C43EFEC7A /* Pods-CheckoutProObjCSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProObjCSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CheckoutProObjCSampleApp/Pods-CheckoutProObjCSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C0F901520EA7F40E2D6C9315 /* Pods_CheckoutProObjCSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutProObjCSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EC41224B5A8190006F3CD /* CheckoutProObjCSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutProObjCSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EC41F24B5A8190006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5EC42424B5A81C0006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,17 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E56F3DF18C53CB0285B946B /* Pods_CheckoutProObjCSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C07118818088D827102E9997 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A8AC4D5C0B37A1C43EFEC7A /* Pods-CheckoutProObjCSampleApp.debug.xcconfig */,
+				3992176951C0E4CC8EA69A75 /* Pods-CheckoutProObjCSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DD5EC40924B5A8190006F3CD = {
 			isa = PBXGroup;
 			children = (
 				DD5EC41424B5A8190006F3CD /* CheckoutProObjCSampleApp */,
 				DD5EC41324B5A8190006F3CD /* Products */,
+				C07118818088D827102E9997 /* Pods */,
+				EDBE920FD89A9DF1B40AE2CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +124,14 @@
 			path = ../../../SwiftObjcCommonFiles;
 			sourceTree = "<group>";
 		};
+		EDBE920FD89A9DF1B40AE2CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0F901520EA7F40E2D6C9315 /* Pods_CheckoutProObjCSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,10 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5EC42B24B5A81C0006F3CD /* Build configuration list for PBXNativeTarget "CheckoutProObjCSampleApp" */;
 			buildPhases = (
+				767EF237812426075FE0AEFD /* [CP] Check Pods Manifest.lock */,
 				DD5EC40E24B5A8190006F3CD /* Sources */,
 				DD5EC40F24B5A8190006F3CD /* Frameworks */,
 				DD5EC41024B5A8190006F3CD /* Resources */,
 				DDBD7C5B24B6D37000614F11 /* Embed Frameworks */,
+				B8293C18E06E052BBD5A6004 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		767EF237812426075FE0AEFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CheckoutProObjCSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8293C18E06E052BBD5A6004 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckoutProObjCSampleApp/Pods-CheckoutProObjCSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CheckoutProObjCSampleApp/Pods-CheckoutProObjCSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckoutProObjCSampleApp/Pods-CheckoutProObjCSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD5EC40E24B5A8190006F3CD /* Sources */ = {
@@ -319,6 +388,7 @@
 		};
 		DD5EC42C24B5A81C0006F3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A8AC4D5C0B37A1C43EFEC7A /* Pods-CheckoutProObjCSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +411,7 @@
 		};
 		DD5EC42D24B5A81C0006F3CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3992176951C0E4CC8EA69A75 /* Pods-CheckoutProObjCSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

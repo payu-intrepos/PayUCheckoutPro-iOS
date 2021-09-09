@@ -1,21 +1,27 @@
 PODS:
-  - PayUIndia-AssetLibrary (2.2.0)
-  - PayUIndia-CheckoutPro (2.4.0):
-    - PayUIndia-AssetLibrary (~> 2.1)
-    - PayUIndia-CheckoutProBase (~> 2.0)
+  - PayUIndia-AssetLibrary (2.3.0)
+  - PayUIndia-CheckoutPro (2.5.0):
+    - PayUIndia-AssetLibrary (~> 2.3)
+    - PayUIndia-CheckoutProBase (~> 2.5)
+    - PayUIndia-CrashReporter (~> 1.0)
     - PayUIndia-Custom-Browser (~> 7.0)
-    - PayUIndia-PG-SDK (~> 6.0)
-    - PayUIndia-UPICore (~> 4.0)
-  - PayUIndia-CheckoutProBase (2.4.0):
-    - PayUIndia-PayUParams (~> 1.0)
+    - PayUIndia-NetworkReachability (~> 1.0)
+    - PayUIndia-PayUParams (~> 2.0)
+    - PayUIndia-PG-SDK (~> 6.2)
+    - PayUIndia-UPICore (~> 4.1)
+  - PayUIndia-CheckoutProBase (2.5.0):
+    - PayUIndia-PayUParams (~> 2.0)
+  - PayUIndia-CrashReporter (1.0.0)
   - PayUIndia-Custom-Browser (7.0.0)
   - PayUIndia-Logger (2.0.1)
   - PayUIndia-Networking (2.0.1):
     - PayUIndia-Logger (= 2.0.1)
-  - PayUIndia-PayUParams (1.2.0)
-  - PayUIndia-PG-SDK (6.2.0):
-    - PayUIndia-PayUParams (~> 1.0)
-  - PayUIndia-UPICore (4.0.0):
+  - PayUIndia-NetworkReachability (1.0.1)
+  - PayUIndia-PayUParams (2.0.1)
+  - PayUIndia-PG-SDK (6.2.2):
+    - PayUIndia-NetworkReachability (~> 1.0)
+    - PayUIndia-PayUParams (~> 2.0)
+  - PayUIndia-UPICore (4.1.0):
     - PayUIndia-Networking (~> 2.0)
     - Socket.IO-Client-Swift (= 15.1.0)
   - Socket.IO-Client-Swift (15.1.0):
@@ -30,9 +36,11 @@ SPEC REPOS:
     - PayUIndia-AssetLibrary
     - PayUIndia-CheckoutPro
     - PayUIndia-CheckoutProBase
+    - PayUIndia-CrashReporter
     - PayUIndia-Custom-Browser
     - PayUIndia-Logger
     - PayUIndia-Networking
+    - PayUIndia-NetworkReachability
     - PayUIndia-PayUParams
     - PayUIndia-PG-SDK
     - PayUIndia-UPICore
@@ -40,18 +48,20 @@ SPEC REPOS:
     - Starscream
 
 SPEC CHECKSUMS:
-  PayUIndia-AssetLibrary: 9b85c00a2635d3ac240949cd32221d52dd08dab7
-  PayUIndia-CheckoutPro: 925e490bfd1489f5c563587fd02aee43c4447496
-  PayUIndia-CheckoutProBase: ce3eab4c105ca52356985fe17139353f99b6cd5d
+  PayUIndia-AssetLibrary: 4c257cf5f2e93c5f8245de7401a1ea635854c311
+  PayUIndia-CheckoutPro: bf85a7881255b7456d0d5ce3974edcd3b28e8fbd
+  PayUIndia-CheckoutProBase: 5d1f5cea7dc8f6ac3baa8779ea4773e4f62d1ab8
+  PayUIndia-CrashReporter: e4e6a68b2a2f59fb826331db0799f0167f596593
   PayUIndia-Custom-Browser: ffa6e718d4617d59680cef8364222ecb77e9e1fb
   PayUIndia-Logger: 818c08ae963753d86ff89682daf3ced672896b1c
   PayUIndia-Networking: 355cde94811c667e1da83aa7ebe0b38e0c918b9f
-  PayUIndia-PayUParams: fbd61b156202fc141709d192edd131729cb5b934
-  PayUIndia-PG-SDK: 6aeda561fdf58471485b9abb16291e4256dc8ec9
-  PayUIndia-UPICore: 3c9281c94b00f7c896b40a2cd180466bf1dd8015
+  PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
+  PayUIndia-PayUParams: 284b80ae30e4f40444fdba7035ab2c0c05fb118b
+  PayUIndia-PG-SDK: 7767af9dda4b0dc2cebd3f0ddd4efe3adf472112
+  PayUIndia-UPICore: 9e0b3e07ae78225fc611b11a88cc000fc669f52d
   Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
 PODFILE CHECKSUM: 2249146791ad778d86d531dac25ceb92a8513f3f
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.2
