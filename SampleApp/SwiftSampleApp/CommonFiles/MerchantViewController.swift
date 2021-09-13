@@ -25,7 +25,9 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var environmentTextField: UITextField!
     @IBOutlet weak var userCredentialTextField: UITextField!
     @IBOutlet weak var txnIDTextField: UITextField!
-    
+    @IBOutlet weak var merchantAccessKeyTextField: UITextField!
+    @IBOutlet weak var merchantSecretKeyTextField: UITextField!
+
     //SI
     @IBOutlet weak var siSwitch: UISwitch!
     @IBOutlet weak var billingIntervalTf: UITextField!
@@ -56,16 +58,19 @@ class MerchantViewController: UIViewController {
     // MARK: - Variables -
     let keySalt = [["3TnMpV", "g0nGFe03", Environment.production],
                    ["V2yqBC", "dEzD8BBD", Environment.production],
-                   ["0MQaQP", "13p0PXZk", Environment.production],
+                   ["0MQaQP", "7tVMWdl6", Environment.production],
                    ["smsplus", "1b1b0", Environment.production],
                    ["ol4Spy", "J0ZXw2z9", Environment.production],
                    ["obScKz", "Ml7XBCdR", Environment.test],
                    ["gtKFFx", "eCwWELxi", Environment.test],
                    ["Rl8Pdr", "wsl9kqyy", Environment.test],
-                   ["smsplus", "350", Environment.test]]
+                   ["smsplus", "350", Environment.test],
+                   ["IUIaFM", "67njRYSI", Environment.test],
+                   ["F53fW7", "PPIzLXEo", Environment.test]]
 
     let indexKeySalt = 0
-    var amount: String = "10"
+    var amount: String = "1"
+
     var productInfo: String = "Nokia"
     var surl: String = "https://payu.herokuapp.com/ios_success"
     var furl: String = "https://payu.herokuapp.com/ios_failure"
@@ -81,11 +86,11 @@ class MerchantViewController: UIViewController {
     var showCancelDialogOnPaymentScreen: Bool = true
     var orderDetail: String = "[{\"GST\":\"5%\"},{\"Delivery Date\":\"25 Dec\"},{\"Status\":\"In Progress\"}]"
     var l1Option: String = "[{\"NetBanking\":\"\"},{\"emi\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
-    var offerDetail: String = "[[\"20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards\",\"Get 20% instant discount on all cards. Max 100 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards 20% off on cards\",\"CARD_OFFER@8401\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"CARD_OFFER_2@7283\",\"NetBanking\",], [\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"CASHBACK@8405\",\"NetBanking,Cards\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"MOBILE_UPI@6925\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"MOBILE_UPI@6925\",\"NetBanking\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"CARD_OFFER_2@7283\",\"Cards,NetBanking\",], [\"20% off on cards\",\"Get 20% instant discount on all cards. Max 100\",\"CARD_OFFER@8401\",\"Cards\",], [\"10% off on netbanking\",\"Get 10% instant discount on all netbanking. Max 100\",\"nb@10\",\"NetBanking\",], [\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"cardnb@5\",\"Cards,NetBanking\",],]"
+    var offerDetail: String = "[[\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"cardnb@5\",\"Cards,NetBanking\",],[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"CASHBACK@8405\",\"Cards,NetBanking\"],[\"offer on cards and netbanking\",\"offer on cards and netbanking\",\"cardNBOfferKey@8645\",\"Cards,NetBanking\"],[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"cardOfferKey@8643\",\"Cards,NetBanking\"],]"
     var autoOTPSelect: Bool = true
     var surePayCount: String = "2"
     var merchantResponseTimeout: String = "4"
-    var recurringAmount = "11"
+    var recurringAmount = "1"
     var recurringPeriod: PayUBillingCycle = .monthly
     var siStartDate:Date = Date()
     var siEndDate:Date = Date()
@@ -94,6 +99,9 @@ class MerchantViewController: UIViewController {
     var remarksText: String? = nil
     var datePicker : UIDatePicker!
     let toolBar = UIToolbar()
+    var merchantAccessKey: String = "E5ABOXOWAAZNXB6JEF5Z"
+    let merchantSecretKey = "e425e539233044146a2d185a346978794afd7c66"
+
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -228,6 +236,8 @@ extension MerchantViewController {
         freeTrialSwitch.isOn = isFreeTrial
         primaryColorTextFieldTapped()
         secondaryColorTextFieldTapped()
+        merchantAccessKeyTextField.text = merchantAccessKey
+        merchantSecretKeyTextField.text = merchantSecretKey
     }
     
     private func getPaymentParam() -> PayUPaymentParam{
@@ -261,12 +271,22 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
 
 //        paymentParam.environment = .test
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
 //        paymentParam.additionalParam[HashConstant.vasForMobileSDK] = "6a71a10f33e61ca88307b2e0f97d6ed94cc1a7daf7ba8883dda1bd1079ec3f8c526354e1f9b4ef0f59c90248d91c30fbb58971fcc291e0a7beddf7cc3783966b"
 //        paymentParam.additionalParam[HashConstant.payment] = "f43bd495b110ebe63038bb8152b0083cb3bd227e9db8dab6d3fb8c2cb38c3fece787bba76adf755405b549f00b3264d996233ec02fce973f8ff24ba1e7751cbe"
         return paymentParam
+    }
+    
+    @IBAction open func appCrash(){
+        let array = [Int]()
+        print(array[1])
+    }
+    
+    @IBAction open func sdkCrash(){
+        PayUCheckoutPro.sdkCrash()
     }
     
     private func addCheckoutProConfigurations(config: PayUCheckoutProConfig) {
@@ -364,27 +384,22 @@ extension MerchantViewController: PayUCheckoutProDelegate {
     }
     
     
-    /// Use this function to provide hashes
-    /// - Parameters:
-    /// - param: Dictionary that contains key as HashConstant.hashName & HashConstant.hashString
-    /// - onCompletion: Once you fetch the hash from server, pass that hash with key as param[HashConstant.hashName]
     func generateHash(for param: DictOfString, onCompletion: @escaping PayUHashGenerationCompletion) {
-     // Send this string to your backend and append the salt at the end and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
-     let hashStringWithoutSalt = param[HashConstant.hashString] ?? ""
-     // Or you can send below string hashName to your backend and send the sha512 back to us, do not calculate the hash at your client side, for security is reasons, hash has to be calculated at the server side
-     let hashName = param[HashConstant.hashName] ?? ""
-     
-     // Set the hash in below string which is fetched from your server
-//     let hashFetchedFromServer = ""
-     
-//     onCompletion([hashName : hashFetchedFromServer])
+        let commandName = (param[HashConstant.hashName] ?? "")
+        let hashStringWithoutSalt = (param[HashConstant.hashString] ?? "")
+        // get hash for "commandName" from server
+        // get hash for "hashStringWithoutSalt" from server
         
-        // we are updated hash locally only for demo purpose, please generate hash from server
-        print(hashStringWithoutSalt + (saltTextField.text ?? ""))
-        let localHash = PayUDontUseThisClass().getHash(hashStringWithoutSalt + (saltTextField.text ?? "")) ?? ""
-        if hashName != "get_checkout_details"{
-            onCompletion([hashName : localHash])
+        
+        
+        // After fetching hash set its value in below variable "hashValue"
+        var hashValue = ""
+        if commandName == HashConstant.mcpLookup {
+            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
+        } else {
+            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
         }
+        onCompletion([commandName : hashValue])
     }
     
     func showAlert(title: String, message: String) {
