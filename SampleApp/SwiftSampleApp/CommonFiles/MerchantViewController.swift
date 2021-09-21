@@ -58,16 +58,7 @@ class MerchantViewController: UIViewController {
     // MARK: - Variables -
     // Please add your salt here. Check salts from https://payumobile.gitbook.io/sdk-integration/test-merchant-list
     let keySalt = [["3TnMpV", "<Please_add_test_salt_here>", Environment.production],
-                   ["V2yqBC", "<Please_add_test_salt_here>", Environment.production],
-                   ["0MQaQP", "<Please_add_test_salt_here>", Environment.production],
-                   ["smsplus", "<Please_add_test_salt_here>", Environment.production],
-                   ["ol4Spy", "<Please_add_test_salt_here>", Environment.production],
-                   ["obScKz", "<Please_add_test_salt_here>", Environment.test],
-                   ["gtKFFx", "<Please_add_test_salt_here>", Environment.test],
-                   ["Rl8Pdr", "<Please_add_test_salt_here>", Environment.test],
-                   ["smsplus", "<Please_add_test_salt_here>", Environment.test],
-                   ["IUIaFM", "<Please_add_test_salt_here>", Environment.test],
-                   ["F53fW7", "<Please_add_test_salt_here>", Environment.test]]
+                   ["gtKFFx", "<Please_add_test_salt_here>", Environment.test]]
 
     let indexKeySalt = 0
     var amount: String = "1"
