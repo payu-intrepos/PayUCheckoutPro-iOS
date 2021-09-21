@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Utils : NSObject
 
++ (NSString *) getHash:(NSString *)input;
+
 + (NSString *) getTransactionID;
 
 + (void)presentAlertOn:(UIViewController *)controller title:(NSString *)title message:(NSString *)message;

@@ -1,6 +1,6 @@
 PODS:
   - PayUIndia-AssetLibrary (2.3.0)
-  - PayUIndia-CheckoutPro (2.5.0):
+  - PayUIndia-CheckoutPro (2.5.1):
     - PayUIndia-AssetLibrary (~> 2.3)
     - PayUIndia-CheckoutProBase (~> 2.5)
     - PayUIndia-CrashReporter (~> 1.0)
@@ -49,7 +49,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   PayUIndia-AssetLibrary: 4c257cf5f2e93c5f8245de7401a1ea635854c311
-  PayUIndia-CheckoutPro: bf85a7881255b7456d0d5ce3974edcd3b28e8fbd
+  PayUIndia-CheckoutPro: 04d21f289d20534a5990eb2c9c627334c2059ab6
   PayUIndia-CheckoutProBase: 5d1f5cea7dc8f6ac3baa8779ea4773e4f62d1ab8
   PayUIndia-CrashReporter: e4e6a68b2a2f59fb826331db0799f0167f596593
   PayUIndia-Custom-Browser: ffa6e718d4617d59680cef8364222ecb77e9e1fb

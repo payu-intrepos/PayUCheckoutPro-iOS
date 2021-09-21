@@ -295,39 +295,11 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 
 
 
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
-@interface PaymentParamConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
-+ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
-+ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
-+ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
-+ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
-+ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
-+ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
-@interface PaymentResponseConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
-+ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
-+ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIColor;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
-@interface PopTip : UIView
+SWIFT_CLASS("_TtC18PayUCheckoutProKit10PayUPopTip")
+@interface PayUPopTip : UIView
 /// The <code>UIColor</code> of the text
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// The <code>NSTextAlignment</code> of the text
@@ -414,6 +386,34 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 
 
 
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
+@interface PaymentParamConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
++ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
++ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
++ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
++ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
++ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
++ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
+@interface PaymentResponseConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
++ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
++ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -737,39 +737,11 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 
 
 
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
-@interface PaymentParamConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
-+ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
-+ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
-+ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
-+ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
-+ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
-+ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
-@interface PaymentResponseConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
-+ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
-+ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIColor;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
-@interface PopTip : UIView
+SWIFT_CLASS("_TtC18PayUCheckoutProKit10PayUPopTip")
+@interface PayUPopTip : UIView
 /// The <code>UIColor</code> of the text
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// The <code>NSTextAlignment</code> of the text
@@ -856,6 +828,34 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 
 
 
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
+@interface PaymentParamConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
++ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
++ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
++ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
++ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
++ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
++ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
+@interface PaymentResponseConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
++ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
++ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -1182,39 +1182,11 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 
 
 
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
-@interface PaymentParamConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
-+ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
-+ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
-+ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
-+ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
-+ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
-+ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
-@interface PaymentResponseConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
-+ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
-+ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIColor;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
-@interface PopTip : UIView
+SWIFT_CLASS("_TtC18PayUCheckoutProKit10PayUPopTip")
+@interface PayUPopTip : UIView
 /// The <code>UIColor</code> of the text
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// The <code>NSTextAlignment</code> of the text
@@ -1301,6 +1273,34 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 
 
 
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
+@interface PaymentParamConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
++ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
++ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
++ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
++ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
++ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
++ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
+@interface PaymentResponseConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
++ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
++ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 
@@ -1624,39 +1624,11 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 
 
 
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
-@interface PaymentParamConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
-+ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
-+ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
-+ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
-+ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
-+ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
-+ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
-@interface PaymentResponseConstant : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
-+ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
-+ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class UIColor;
 @class NSCoder;
 
-SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
-@interface PopTip : UIView
+SWIFT_CLASS("_TtC18PayUCheckoutProKit10PayUPopTip")
+@interface PayUPopTip : UIView
 /// The <code>UIColor</code> of the text
 @property (nonatomic, strong) UIColor * _Nonnull textColor;
 /// The <code>NSTextAlignment</code> of the text
@@ -1743,6 +1715,34 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit6PopTip")
 
 
 
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit20PaymentParamConstant")
+@interface PaymentParamConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf1;)
++ (NSString * _Nonnull)udf1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf2;)
++ (NSString * _Nonnull)udf2 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf3;)
++ (NSString * _Nonnull)udf3 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf4;)
++ (NSString * _Nonnull)udf4 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull udf5;)
++ (NSString * _Nonnull)udf5 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantAccessKey;)
++ (NSString * _Nonnull)merchantAccessKey SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit23PaymentResponseConstant")
+@interface PaymentResponseConstant : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull payuResponse;)
++ (NSString * _Nonnull)payuResponse SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull merchantResponse;)
++ (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 

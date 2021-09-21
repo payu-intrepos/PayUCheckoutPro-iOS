@@ -127,7 +127,7 @@
     
     
     // After fetching hash set its value in below variable "hashValue"
-    NSString *hashValue = @"hashValue";
+    NSString *hashValue = [Utils getHash:[NSString stringWithFormat:@"%@%@",hashStringWithoutSalt,@"<Please_add_test_salt_here>"]];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
     onCompletion(dict);
 }

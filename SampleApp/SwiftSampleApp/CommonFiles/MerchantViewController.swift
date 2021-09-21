@@ -56,17 +56,18 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var merchantResponseTimeoutTextField: UITextField!
     
     // MARK: - Variables -
-    let keySalt = [["3TnMpV", "g0nGFe03", Environment.production],
-                   ["V2yqBC", "dEzD8BBD", Environment.production],
-                   ["0MQaQP", "7tVMWdl6", Environment.production],
-                   ["smsplus", "1b1b0", Environment.production],
-                   ["ol4Spy", "J0ZXw2z9", Environment.production],
-                   ["obScKz", "Ml7XBCdR", Environment.test],
-                   ["gtKFFx", "eCwWELxi", Environment.test],
-                   ["Rl8Pdr", "wsl9kqyy", Environment.test],
-                   ["smsplus", "350", Environment.test],
-                   ["IUIaFM", "67njRYSI", Environment.test],
-                   ["F53fW7", "PPIzLXEo", Environment.test]]
+    // Please add your salt here. Check salts from https://payumobile.gitbook.io/sdk-integration/test-merchant-list
+    let keySalt = [["3TnMpV", "<Please_add_test_salt_here>", Environment.production],
+                   ["V2yqBC", "<Please_add_test_salt_here>", Environment.production],
+                   ["0MQaQP", "<Please_add_test_salt_here>", Environment.production],
+                   ["smsplus", "<Please_add_test_salt_here>", Environment.production],
+                   ["ol4Spy", "<Please_add_test_salt_here>", Environment.production],
+                   ["obScKz", "<Please_add_test_salt_here>", Environment.test],
+                   ["gtKFFx", "<Please_add_test_salt_here>", Environment.test],
+                   ["Rl8Pdr", "<Please_add_test_salt_here>", Environment.test],
+                   ["smsplus", "<Please_add_test_salt_here>", Environment.test],
+                   ["IUIaFM", "<Please_add_test_salt_here>", Environment.test],
+                   ["F53fW7", "<Please_add_test_salt_here>", Environment.test]]
 
     let indexKeySalt = 0
     var amount: String = "1"
