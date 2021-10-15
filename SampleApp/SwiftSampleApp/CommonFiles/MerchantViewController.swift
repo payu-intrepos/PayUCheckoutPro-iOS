@@ -257,7 +257,7 @@ extension MerchantViewController {
             paymentParam.siParam = siInfo
         }
         paymentParam.userCredential = userCredentialTextField.text
-        
+        paymentParam.enableNativeOTP = true
         paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
         paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
