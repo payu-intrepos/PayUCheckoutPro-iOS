@@ -1,6 +1,6 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/PayUIndia-CheckoutProBase
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit" "${PODS_ROOT}/PayUIndia-PayUParams/PayUParamsKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCheckoutProBaseKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit" "${PODS_ROOT}/PayUIndia-PayUParams/PayUParamsKit" "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase" "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 OTHER_LDFLAGS = $(inherited) -framework "PayUParamsKit"
 PODS_BUILD_DIR = ${BUILD_DIR}

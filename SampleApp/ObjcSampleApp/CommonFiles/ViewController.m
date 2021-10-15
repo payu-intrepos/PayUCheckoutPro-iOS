@@ -38,6 +38,7 @@
                                                                       furl:@"https://payu.herokuapp.com/ios_failure"
                                                                environment:EnvironmentProduction];
     paymentParam.userCredential = @"umang:arya";
+    
     paymentParam.siParam = [self siParams];
     return paymentParam;
 }

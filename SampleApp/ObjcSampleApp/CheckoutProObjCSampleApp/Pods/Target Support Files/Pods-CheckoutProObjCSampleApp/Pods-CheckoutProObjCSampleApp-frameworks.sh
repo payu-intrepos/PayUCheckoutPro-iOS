@@ -113,6 +113,7 @@ install_dsym() {
       rsync --delete -av "${RSYNC_PROTECT_TMP_FILES[@]}" --links --filter "- CVS/" --filter "- .svn/" --filter "- .git/" --filter "- .hg/" --filter "- Headers" --filter "- PrivateHeaders" --filter "- Modules" "${DERIVED_FILES_DIR}/${basename}.dSYM" "${DWARF_DSYM_FOLDER_PATH}"
     else
       # The dSYM was not stripped at all, in this case touch a fake folder so the input/output paths from Xcode do not reexecute this script because the file is missing.
+      mkdir -p "${DWARF_DSYM_FOLDER_PATH}"
       touch "${DWARF_DSYM_FOLDER_PATH}/${basename}.dSYM"
     fi
   fi
@@ -175,34 +176,38 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/PayUIndia-CheckoutPro/PayUCheckoutProKit/PayUCheckoutProKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-Logger/Dependencies/PayULoggerKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-Networking/Dependencies/PayUNetworkingKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-UPICore/Dependencies/PayUUPICoreKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUAssetLibraryKit/PayUAssetLibraryKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCrashReporter/PayUCrashReporter.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCustomBrowser/PayUCustomBrowser.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNetworkReachability/PayUNetworkReachability.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUBizCoreKit/PayUBizCoreKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit/PayUParamsKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NativeOtpAssist/PayUNativeOtpAssist.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NetworkReachability/PayUNetworkReachability.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Networking/PayUNetworkingKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PG-SDK/PayUBizCoreKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams/PayUParamsKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPICore/PayUUPICoreKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/PayUIndia-CheckoutPro/PayUCheckoutProKit/PayUCheckoutProKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-Logger/Dependencies/PayULoggerKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-Networking/Dependencies/PayUNetworkingKit.framework"
-  install_framework "${PODS_ROOT}/PayUIndia-UPICore/Dependencies/PayUUPICoreKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUAssetLibraryKit/PayUAssetLibraryKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCrashReporter/PayUCrashReporter.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCustomBrowser/PayUCustomBrowser.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNetworkReachability/PayUNetworkReachability.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUBizCoreKit/PayUBizCoreKit.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit/PayUParamsKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NativeOtpAssist/PayUNativeOtpAssist.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NetworkReachability/PayUNetworkReachability.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Networking/PayUNetworkingKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PG-SDK/PayUBizCoreKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams/PayUParamsKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPICore/PayUUPICoreKit.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

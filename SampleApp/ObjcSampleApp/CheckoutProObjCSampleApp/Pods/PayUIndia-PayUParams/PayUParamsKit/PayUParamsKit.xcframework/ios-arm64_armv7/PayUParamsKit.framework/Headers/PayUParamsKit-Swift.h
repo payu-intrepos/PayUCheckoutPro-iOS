@@ -317,12 +317,27 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentTest = 1,
 };
 
+
+SWIFT_CLASS("_TtC13PayUParamsKit8NeftRtgs")
+@interface NeftRtgs : PaymentOption
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC13PayUParamsKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
 @property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit9PPKHashes")
+@interface PPKHashes : NSObject
+@property (nonatomic, copy) NSString * _Nullable paymentOptionsHash;
+@property (nonatomic, copy) NSString * _Nullable paymentHash;
+@property (nonatomic, copy) NSString * _Nullable validateVPAHash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -336,6 +351,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 + (NSDate * _Nullable)dateFrom:(NSString * _Nonnull)dateString SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)dateStringFrom:(NSDate * _Nonnull)date formater:(NSString * _Nonnull)formater SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getJSONIndividualObjectForKey:(NSString * _Nullable)key value:(NSString * _Nullable)value SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getJSONStringFrom:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -362,11 +378,28 @@ typedef SWIFT_ENUM(NSInteger, PayUBillingCycle, open) {
 };
 
 
-SWIFT_CLASS("_TtC13PayUParamsKit10PayUHashes")
-@interface PayUHashes : NSObject
-@property (nonatomic, copy) NSString * _Nullable paymentOptionsHash;
-@property (nonatomic, copy) NSString * _Nullable paymentHash;
-@property (nonatomic, copy) NSString * _Nullable validateVPAHash;
+SWIFT_CLASS("_TtC13PayUParamsKit11PayUBinData")
+@interface PayUBinData : NSObject
+@property (nonatomic, copy) NSString * _Nullable issuingBank;
+@property (nonatomic, copy) NSString * _Nullable category;
+@property (nonatomic, copy) NSString * _Nullable cardType;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUResendOtp;
+@class PayUSubmitOtp;
+@class PayUOneClick;
+
+SWIFT_CLASS("_TtC13PayUParamsKit12PayUMetaData")
+@interface PayUMetaData : NSObject
+@property (nonatomic, strong) PayUResendOtp * _Nullable resendOtp;
+@property (nonatomic, strong) PayUSubmitOtp * _Nullable submitOtp;
+@property (nonatomic, strong) PayUOneClick * _Nullable oneClick;
+@property (nonatomic, copy) NSString * _Nullable txnStatus;
+@property (nonatomic, copy) NSString * _Nullable referenceId;
+@property (nonatomic, copy) NSString * _Nullable txnId;
+@property (nonatomic, copy) NSString * _Nullable unmappedStatus;
+@property (nonatomic, copy) NSString * _Nullable message;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -406,6 +439,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit29PayUModelMultiCurrencyPayment")
 @end
 
 
+SWIFT_CLASS("_TtC13PayUParamsKit12PayUOneClick")
+@interface PayUOneClick : NSObject
+@property (nonatomic, copy) NSString * _Nullable consentStatus;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13PayUParamsKit24PayUPaymentCreateRequest")
 @interface PayUPaymentCreateRequest : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -413,6 +453,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit24PayUPaymentCreateRequest")
 
 @class PayUSIParams;
 @class PayUUserDefines;
+@class PayUVSCParams;
 
 SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
@@ -430,8 +471,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic) enum Environment paymentEnvironment;
 @property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 @property (nonatomic, strong) PaymentOption * _Nullable paymentOption;
-@property (nonatomic, strong) PayUHashes * _Nullable hashes;
+@property (nonatomic, strong) PPKHashes * _Nullable hashes;
 @property (nonatomic, strong) PayUUserDefines * _Nullable udfs;
+@property (nonatomic, strong) PayUVSCParams * _Nullable vscParams;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -440,6 +482,86 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 
 SWIFT_CLASS("_TtC13PayUParamsKit22PayUPaymentValidations")
 @interface PayUPaymentValidations : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit14PayUPostToBank")
+@interface PayUPostToBank : NSObject
+@property (nonatomic, copy) NSString * _Nullable md;
+@property (nonatomic, copy) NSString * _Nullable paReq;
+@property (nonatomic, copy) NSString * _Nullable termUrl;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUResendOtp")
+@interface PayUResendOtp : NSObject
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit10PayUResult")
+@interface PayUResult : NSObject
+@property (nonatomic, copy) NSString * _Nullable otpPostUrl;
+@property (nonatomic, copy) NSString * _Nullable acsTemplate;
+@property (nonatomic, copy) NSString * _Nullable issuerUrl;
+@property (nonatomic, strong) PayUPostToBank * _Nullable postToBank;
+@property (nonatomic, copy) NSString * _Nullable mihpayid;
+@property (nonatomic, copy) NSString * _Nullable mode;
+@property (nonatomic, copy) NSString * _Nullable status;
+@property (nonatomic, copy) NSString * _Nullable key;
+@property (nonatomic, copy) NSString * _Nullable txnid;
+@property (nonatomic, copy) NSString * _Nullable amount;
+@property (nonatomic, copy) NSString * _Nullable addedon;
+@property (nonatomic, copy) NSString * _Nullable productinfo;
+@property (nonatomic, copy) NSString * _Nullable firstname;
+@property (nonatomic, copy) NSString * _Nullable lastname;
+@property (nonatomic, copy) NSString * _Nullable address1;
+@property (nonatomic, copy) NSString * _Nullable address2;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable state;
+@property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable zipcode;
+@property (nonatomic, copy) NSString * _Nullable email;
+@property (nonatomic, copy) NSString * _Nullable phone;
+@property (nonatomic, copy) NSString * _Nullable udf1;
+@property (nonatomic, copy) NSString * _Nullable udf2;
+@property (nonatomic, copy) NSString * _Nullable udf3;
+@property (nonatomic, copy) NSString * _Nullable udf4;
+@property (nonatomic, copy) NSString * _Nullable udf5;
+@property (nonatomic, copy) NSString * _Nullable udf6;
+@property (nonatomic, copy) NSString * _Nullable udf7;
+@property (nonatomic, copy) NSString * _Nullable udf8;
+@property (nonatomic, copy) NSString * _Nullable udf9;
+@property (nonatomic, copy) NSString * _Nullable udf10;
+@property (nonatomic, copy) NSString * _Nullable card_token;
+@property (nonatomic, copy) NSString * _Nullable card_no;
+@property (nonatomic, copy) NSString * _Nullable field1;
+@property (nonatomic, copy) NSString * _Nullable field2;
+@property (nonatomic, copy) NSString * _Nullable field3;
+@property (nonatomic, copy) NSString * _Nullable field4;
+@property (nonatomic, copy) NSString * _Nullable field5;
+@property (nonatomic, copy) NSString * _Nullable field6;
+@property (nonatomic, copy) NSString * _Nullable field7;
+@property (nonatomic, copy) NSString * _Nullable field8;
+@property (nonatomic, copy) NSString * _Nullable field9;
+@property (nonatomic, copy) NSString * _Nullable field10;
+@property (nonatomic, copy) NSString * _Nullable payment_source;
+@property (nonatomic, copy) NSString * _Nullable PG_TYPE;
+@property (nonatomic, copy) NSString * _Nullable error;
+@property (nonatomic, copy) NSString * _Nullable error_Message;
+@property (nonatomic, copy) NSString * _Nullable net_amount_debit;
+@property (nonatomic, copy) NSString * _Nullable unmappedstatus;
+@property (nonatomic, copy) NSString * _Nullable bank_ref_no;
+@property (nonatomic, copy) NSString * _Nullable bank_ref_num;
+@property (nonatomic, copy) NSString * _Nullable bankcode;
+@property (nonatomic, copy) NSString * _Nullable surl;
+@property (nonatomic, copy) NSString * _Nullable curl;
+@property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable card_hash;
+@property (nonatomic, copy) NSString * _Nullable partnerToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -460,6 +582,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit12PayUSIParams")
 @end
 
 
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUSubmitOtp")
+@interface PayUSubmitOtp : NSObject
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13PayUParamsKit15PayUUserDefines")
 @interface PayUUserDefines : NSObject
 @property (nonatomic, copy) NSString * _Nullable udf1;
@@ -468,6 +597,31 @@ SWIFT_CLASS("_TtC13PayUParamsKit15PayUUserDefines")
 @property (nonatomic, copy) NSString * _Nullable udf4;
 @property (nonatomic, copy) NSString * _Nullable udf5;
 @property (nonatomic, copy) NSString * _Nullable udf6;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUVSCParams")
+@interface PayUVSCParams : NSObject
+@property (nonatomic, copy) NSString * _Nullable userConsent;
+@property (nonatomic, copy) NSString * _Nullable userDeviceID;
+@property (nonatomic, copy) NSString * _Nullable vscAuthCode;
+@property (nonatomic, copy) NSString * _Nullable merchantAppID;
+@property (nonatomic, copy) NSString * _Nullable transactionID;
+@property (nonatomic, copy) NSString * _Nullable cardAlias;
+@property (nonatomic, copy) NSString * _Nullable partnerToken;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit17PayUVerifyPayment")
+@interface PayUVerifyPayment : NSObject
+@property (nonatomic, strong) PayUBinData * _Nullable binData;
+@property (nonatomic, strong) PayUMetaData * _Nullable metaData;
+@property (nonatomic, strong) PayUResult * _Nullable result;
+@property (nonatomic, copy) NSString * _Nullable status;
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic, copy) NSString * _Nullable error;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -499,7 +653,8 @@ typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeWallet = 3,
   PaymentTypeEmi = 4,
   PaymentTypeSavedCard = 5,
-  PaymentTypeOther = 6,
+  PaymentTypeNeftRtgs = 6,
+  PaymentTypeOther = 7,
 };
 
 
@@ -850,12 +1005,27 @@ typedef SWIFT_ENUM(NSInteger, Environment, open) {
   EnvironmentTest = 1,
 };
 
+
+SWIFT_CLASS("_TtC13PayUParamsKit8NeftRtgs")
+@interface NeftRtgs : PaymentOption
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class PayUBeneficiaryParams;
 
 SWIFT_CLASS("_TtC13PayUParamsKit10NetBanking")
 @interface NetBanking : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable maskedAccountNumber;
 @property (nonatomic, strong) PayUBeneficiaryParams * _Nullable beneficiaryParams;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit9PPKHashes")
+@interface PPKHashes : NSObject
+@property (nonatomic, copy) NSString * _Nullable paymentOptionsHash;
+@property (nonatomic, copy) NSString * _Nullable paymentHash;
+@property (nonatomic, copy) NSString * _Nullable validateVPAHash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -869,6 +1039,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit8PPKUtils")
 + (NSDate * _Nullable)dateFrom:(NSString * _Nonnull)dateString SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nullable)dateStringFrom:(NSDate * _Nonnull)date formater:(NSString * _Nonnull)formater SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)getJSONIndividualObjectForKey:(NSString * _Nullable)key value:(NSString * _Nullable)value SWIFT_WARN_UNUSED_RESULT;
++ (NSString * _Nullable)getJSONStringFrom:(NSDictionary<NSString *, id> * _Nonnull)json SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -895,11 +1066,28 @@ typedef SWIFT_ENUM(NSInteger, PayUBillingCycle, open) {
 };
 
 
-SWIFT_CLASS("_TtC13PayUParamsKit10PayUHashes")
-@interface PayUHashes : NSObject
-@property (nonatomic, copy) NSString * _Nullable paymentOptionsHash;
-@property (nonatomic, copy) NSString * _Nullable paymentHash;
-@property (nonatomic, copy) NSString * _Nullable validateVPAHash;
+SWIFT_CLASS("_TtC13PayUParamsKit11PayUBinData")
+@interface PayUBinData : NSObject
+@property (nonatomic, copy) NSString * _Nullable issuingBank;
+@property (nonatomic, copy) NSString * _Nullable category;
+@property (nonatomic, copy) NSString * _Nullable cardType;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class PayUResendOtp;
+@class PayUSubmitOtp;
+@class PayUOneClick;
+
+SWIFT_CLASS("_TtC13PayUParamsKit12PayUMetaData")
+@interface PayUMetaData : NSObject
+@property (nonatomic, strong) PayUResendOtp * _Nullable resendOtp;
+@property (nonatomic, strong) PayUSubmitOtp * _Nullable submitOtp;
+@property (nonatomic, strong) PayUOneClick * _Nullable oneClick;
+@property (nonatomic, copy) NSString * _Nullable txnStatus;
+@property (nonatomic, copy) NSString * _Nullable referenceId;
+@property (nonatomic, copy) NSString * _Nullable txnId;
+@property (nonatomic, copy) NSString * _Nullable unmappedStatus;
+@property (nonatomic, copy) NSString * _Nullable message;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -939,6 +1127,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit29PayUModelMultiCurrencyPayment")
 @end
 
 
+SWIFT_CLASS("_TtC13PayUParamsKit12PayUOneClick")
+@interface PayUOneClick : NSObject
+@property (nonatomic, copy) NSString * _Nullable consentStatus;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13PayUParamsKit24PayUPaymentCreateRequest")
 @interface PayUPaymentCreateRequest : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -946,6 +1141,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit24PayUPaymentCreateRequest")
 
 @class PayUSIParams;
 @class PayUUserDefines;
+@class PayUVSCParams;
 
 SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @interface PayUPaymentParam : NSObject
@@ -963,8 +1159,9 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic) enum Environment paymentEnvironment;
 @property (nonatomic, strong) PayUSIParams * _Nullable siParam;
 @property (nonatomic, strong) PaymentOption * _Nullable paymentOption;
-@property (nonatomic, strong) PayUHashes * _Nullable hashes;
+@property (nonatomic, strong) PPKHashes * _Nullable hashes;
 @property (nonatomic, strong) PayUUserDefines * _Nullable udfs;
+@property (nonatomic, strong) PayUVSCParams * _Nullable vscParams;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -973,6 +1170,86 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 
 SWIFT_CLASS("_TtC13PayUParamsKit22PayUPaymentValidations")
 @interface PayUPaymentValidations : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit14PayUPostToBank")
+@interface PayUPostToBank : NSObject
+@property (nonatomic, copy) NSString * _Nullable md;
+@property (nonatomic, copy) NSString * _Nullable paReq;
+@property (nonatomic, copy) NSString * _Nullable termUrl;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUResendOtp")
+@interface PayUResendOtp : NSObject
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit10PayUResult")
+@interface PayUResult : NSObject
+@property (nonatomic, copy) NSString * _Nullable otpPostUrl;
+@property (nonatomic, copy) NSString * _Nullable acsTemplate;
+@property (nonatomic, copy) NSString * _Nullable issuerUrl;
+@property (nonatomic, strong) PayUPostToBank * _Nullable postToBank;
+@property (nonatomic, copy) NSString * _Nullable mihpayid;
+@property (nonatomic, copy) NSString * _Nullable mode;
+@property (nonatomic, copy) NSString * _Nullable status;
+@property (nonatomic, copy) NSString * _Nullable key;
+@property (nonatomic, copy) NSString * _Nullable txnid;
+@property (nonatomic, copy) NSString * _Nullable amount;
+@property (nonatomic, copy) NSString * _Nullable addedon;
+@property (nonatomic, copy) NSString * _Nullable productinfo;
+@property (nonatomic, copy) NSString * _Nullable firstname;
+@property (nonatomic, copy) NSString * _Nullable lastname;
+@property (nonatomic, copy) NSString * _Nullable address1;
+@property (nonatomic, copy) NSString * _Nullable address2;
+@property (nonatomic, copy) NSString * _Nullable city;
+@property (nonatomic, copy) NSString * _Nullable state;
+@property (nonatomic, copy) NSString * _Nullable country;
+@property (nonatomic, copy) NSString * _Nullable zipcode;
+@property (nonatomic, copy) NSString * _Nullable email;
+@property (nonatomic, copy) NSString * _Nullable phone;
+@property (nonatomic, copy) NSString * _Nullable udf1;
+@property (nonatomic, copy) NSString * _Nullable udf2;
+@property (nonatomic, copy) NSString * _Nullable udf3;
+@property (nonatomic, copy) NSString * _Nullable udf4;
+@property (nonatomic, copy) NSString * _Nullable udf5;
+@property (nonatomic, copy) NSString * _Nullable udf6;
+@property (nonatomic, copy) NSString * _Nullable udf7;
+@property (nonatomic, copy) NSString * _Nullable udf8;
+@property (nonatomic, copy) NSString * _Nullable udf9;
+@property (nonatomic, copy) NSString * _Nullable udf10;
+@property (nonatomic, copy) NSString * _Nullable card_token;
+@property (nonatomic, copy) NSString * _Nullable card_no;
+@property (nonatomic, copy) NSString * _Nullable field1;
+@property (nonatomic, copy) NSString * _Nullable field2;
+@property (nonatomic, copy) NSString * _Nullable field3;
+@property (nonatomic, copy) NSString * _Nullable field4;
+@property (nonatomic, copy) NSString * _Nullable field5;
+@property (nonatomic, copy) NSString * _Nullable field6;
+@property (nonatomic, copy) NSString * _Nullable field7;
+@property (nonatomic, copy) NSString * _Nullable field8;
+@property (nonatomic, copy) NSString * _Nullable field9;
+@property (nonatomic, copy) NSString * _Nullable field10;
+@property (nonatomic, copy) NSString * _Nullable payment_source;
+@property (nonatomic, copy) NSString * _Nullable PG_TYPE;
+@property (nonatomic, copy) NSString * _Nullable error;
+@property (nonatomic, copy) NSString * _Nullable error_Message;
+@property (nonatomic, copy) NSString * _Nullable net_amount_debit;
+@property (nonatomic, copy) NSString * _Nullable unmappedstatus;
+@property (nonatomic, copy) NSString * _Nullable bank_ref_no;
+@property (nonatomic, copy) NSString * _Nullable bank_ref_num;
+@property (nonatomic, copy) NSString * _Nullable bankcode;
+@property (nonatomic, copy) NSString * _Nullable surl;
+@property (nonatomic, copy) NSString * _Nullable curl;
+@property (nonatomic, copy) NSString * _Nullable furl;
+@property (nonatomic, copy) NSString * _Nullable card_hash;
+@property (nonatomic, copy) NSString * _Nullable partnerToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -993,6 +1270,13 @@ SWIFT_CLASS("_TtC13PayUParamsKit12PayUSIParams")
 @end
 
 
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUSubmitOtp")
+@interface PayUSubmitOtp : NSObject
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC13PayUParamsKit15PayUUserDefines")
 @interface PayUUserDefines : NSObject
 @property (nonatomic, copy) NSString * _Nullable udf1;
@@ -1001,6 +1285,31 @@ SWIFT_CLASS("_TtC13PayUParamsKit15PayUUserDefines")
 @property (nonatomic, copy) NSString * _Nullable udf4;
 @property (nonatomic, copy) NSString * _Nullable udf5;
 @property (nonatomic, copy) NSString * _Nullable udf6;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit13PayUVSCParams")
+@interface PayUVSCParams : NSObject
+@property (nonatomic, copy) NSString * _Nullable userConsent;
+@property (nonatomic, copy) NSString * _Nullable userDeviceID;
+@property (nonatomic, copy) NSString * _Nullable vscAuthCode;
+@property (nonatomic, copy) NSString * _Nullable merchantAppID;
+@property (nonatomic, copy) NSString * _Nullable transactionID;
+@property (nonatomic, copy) NSString * _Nullable cardAlias;
+@property (nonatomic, copy) NSString * _Nullable partnerToken;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13PayUParamsKit17PayUVerifyPayment")
+@interface PayUVerifyPayment : NSObject
+@property (nonatomic, strong) PayUBinData * _Nullable binData;
+@property (nonatomic, strong) PayUMetaData * _Nullable metaData;
+@property (nonatomic, strong) PayUResult * _Nullable result;
+@property (nonatomic, copy) NSString * _Nullable status;
+@property (nonatomic, copy) NSString * _Nullable message;
+@property (nonatomic, copy) NSString * _Nullable error;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1032,7 +1341,8 @@ typedef SWIFT_ENUM(NSInteger, PaymentType, open) {
   PaymentTypeWallet = 3,
   PaymentTypeEmi = 4,
   PaymentTypeSavedCard = 5,
-  PaymentTypeOther = 6,
+  PaymentTypeNeftRtgs = 6,
+  PaymentTypeOther = 7,
 };
 
 

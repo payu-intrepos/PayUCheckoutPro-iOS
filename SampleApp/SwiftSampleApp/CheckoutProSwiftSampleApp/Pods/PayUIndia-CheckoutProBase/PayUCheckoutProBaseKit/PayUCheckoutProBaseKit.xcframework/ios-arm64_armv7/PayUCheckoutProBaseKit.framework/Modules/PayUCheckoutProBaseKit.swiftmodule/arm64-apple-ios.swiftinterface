@@ -18,6 +18,7 @@ import UIKit
 @objc @_inheritsConvenienceInitializers @objcMembers open class OnePayUBaseConfig : ObjectiveC.NSObject {
   @objc public var merchantName: Swift.String?
   @objc public var merchantLogo: UIKit.UIImage?
+  public var shouldShowMerchantSummary: Swift.Bool?
   @objc public var paymentModesOrder: [PayUParamsKit.PaymentMode]?
   @objc public var cartDetails: [[Swift.String : Swift.String]]?
   @objc public var offerDetails: [PayUCheckoutProBaseKit.PayUOfferDetails]?

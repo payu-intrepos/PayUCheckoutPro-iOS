@@ -28,6 +28,10 @@ import UIKit
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class NeftRtgs : PayUParamsKit.PaymentOption {
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class CCDC : PayUParamsKit.PaymentOption, Foundation.NSCopying {
   @objc public var cardNumber: Swift.String?
   @objc public var expiryMonth: Foundation.NSNumber?
@@ -146,6 +150,7 @@ import UIKit
   case wallet
   case emi
   case savedCard
+  case neftRtgs
   case other
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -188,6 +193,19 @@ import UIKit
   @objc public var lookupId: Swift.String?
   @objc override dynamic public init()
   @objc deinit
+}
+public enum PPKError : Swift.Error {
+  case noInternet
+  case withImage(message: Swift.String?, image: UIKit.UIImage?)
+  case withCode(message: Swift.String?, code: Swift.Int?)
+}
+extension PPKError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public var errorCode: Swift.Int? {
+    get
+  }
 }
 @objc public class PayUBeneficiaryParams : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var beneficiaryName: Swift.String
@@ -275,6 +293,7 @@ import UIKit
   @objc public class func dateFrom(_ dateString: Swift.String) -> Foundation.Date?
   @objc public class func dateStringFrom(_ date: Foundation.Date, formater: Swift.String = Constants.yyyyMMdd) -> Swift.String?
   @objc public class func getJSONIndividualObject(forKey key: Swift.String?, value: Swift.String?) -> Swift.String
+  @objc public class func getJSONString(from json: [Swift.String : Any]) -> Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -316,8 +335,12 @@ import UIKit
   @objc public var paymentEnvironment: PayUParamsKit.Environment
   @objc public var siParam: PayUParamsKit.PayUSIParams?
   @objc public var paymentOption: PayUParamsKit.PaymentOption?
-  @objc public var hashes: PayUParamsKit.PayUHashes?
+  @objc public var hashes: PayUParamsKit.PPKHashes?
   @objc public var udfs: PayUParamsKit.PayUUserDefines?
+  public var skipCVV: Swift.Bool?
+  public var enableNativeOTP: Swift.Bool?
+  public var enableOneClick: Swift.Bool?
+  @objc public var vscParams: PayUParamsKit.PayUVSCParams?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc override dynamic public init()
   @objc deinit
@@ -331,14 +354,110 @@ import UIKit
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class PayUHashes : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class PPKHashes : ObjectiveC.NSObject {
   @objc public var paymentOptionsHash: Swift.String?
   @objc public var paymentHash: Swift.String?
   @objc public var validateVPAHash: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUVerifyPayment : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var binData: PayUParamsKit.PayUBinData?
+  @objc public var metaData: PayUParamsKit.PayUMetaData?
+  @objc public var result: PayUParamsKit.PayUResult?
+  @objc public var status: Swift.String?
+  @objc public var message: Swift.String?
+  @objc public var error: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUBinData : ObjectiveC.NSObject, Swift.Codable {
+  public var pureS2SSupported: Swift.Bool?
+  @objc public var issuingBank: Swift.String?
+  @objc public var category: Swift.String?
+  @objc public var cardType: Swift.String?
+  public var isDomestic: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUMetaData : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var resendOtp: PayUParamsKit.PayUResendOtp?
+  @objc public var submitOtp: PayUParamsKit.PayUSubmitOtp?
+  @objc public var oneClick: PayUParamsKit.PayUOneClick?
+  @objc public var txnStatus: Swift.String?
+  @objc public var referenceId: Swift.String?
+  @objc public var txnId: Swift.String?
+  @objc public var unmappedStatus: Swift.String?
+  @objc public var message: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUResendOtp : ObjectiveC.NSObject, Swift.Codable {
+  public var attemptsLeft: Swift.Int?
+  public var isSupported: Swift.Bool?
+  @objc public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUSubmitOtp : ObjectiveC.NSObject, Swift.Codable {
+  public var attemptsLeft: Swift.Int?
+  @objc public var status: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUOneClick : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var consentStatus: Swift.String?
+  public var attempted: Swift.Bool?
+  public var approved: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUResult : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var otpPostUrl: Swift.String?
+  @objc public var acsTemplate: Swift.String?
+  @objc public var issuerUrl: Swift.String?
+  @objc public var postToBank: PayUParamsKit.PayUPostToBank?
+  @objc public var mihpayid: Swift.String?
+  @objc public var mode: Swift.String?, status: Swift.String?, key: Swift.String?, txnid: Swift.String?, amount: Swift.String?, addedon: Swift.String?, productinfo: Swift.String?, firstname: Swift.String?, lastname: Swift.String?, address1: Swift.String?
+  @objc public var address2: Swift.String?, city: Swift.String?, state: Swift.String?, country: Swift.String?, zipcode: Swift.String?, email: Swift.String?, phone: Swift.String?, udf1: Swift.String?, udf2: Swift.String?, udf3: Swift.String?, udf4: Swift.String?, udf5: Swift.String?, udf6: Swift.String?, udf7: Swift.String?, udf8: Swift.String?, udf9: Swift.String?, udf10: Swift.String?, card_token: Swift.String?, card_no: Swift.String?, field1: Swift.String?, field2: Swift.String?, field3: Swift.String?, field4: Swift.String?, field5: Swift.String?, field6: Swift.String?, field7: Swift.String?, field8: Swift.String?, field9: Swift.String?, field10: Swift.String?, payment_source: Swift.String?, PG_TYPE: Swift.String?, error: Swift.String?, error_Message: Swift.String?, net_amount_debit: Swift.String?, unmappedstatus: Swift.String?, bank_ref_no: Swift.String?, bank_ref_num: Swift.String?, bankcode: Swift.String?, surl: Swift.String?, curl: Swift.String?, furl: Swift.String?, card_hash: Swift.String?, partnerToken: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class PayUPostToBank : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var md: Swift.String?
+  @objc public var paReq: Swift.String?
+  @objc public var termUrl: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
 @_inheritsConvenienceInitializers @objc public class PayUPaymentValidations : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc open class PayUVSCParams : ObjectiveC.NSObject {
+  @objc public var userConsent: Swift.String?
+  @objc public var userDeviceID: Swift.String?
+  @objc public var vscAuthCode: Swift.String?
+  @objc public var merchantAppID: Swift.String?
+  @objc public var transactionID: Swift.String?
+  @objc public var cardAlias: Swift.String?
+  @objc public var partnerToken: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }

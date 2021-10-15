@@ -11,6 +11,7 @@
  */
 #import <Foundation/Foundation.h>
 #import "PayUBasePaymentModel.h"
+#import "PayUEligibilityStatus.h"
 @interface PayUModelEMI : PayUBasePaymentModel
 
 @property (strong, nonatomic) NSString * bankName;
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) NSString * minAmount;
 @property (strong, nonatomic) NSString * paymentType;
 @property (strong, nonatomic) NSNumber * tenure;
+@property (strong, nonatomic) PayUEligibilityStatus * eligibility;
 /*!
  * This method returns model objects array.
  * @return [obj array] [NSArray type]
@@ -35,8 +37,10 @@
 
 +(NSArray *)getEMIArrayForCFFromDict:(NSDictionary *) JSON withDownStaus:(NSDictionary *)downJSON;
 
-+ (NSDictionary *)getEMIDictFromEMIModelArray:(NSArray *)emiArray;
++(NSDictionary *)getEMIDictionaryForCFFromDict:(NSDictionary *) JSON withDownStaus:(NSDictionary *)downJSON;
 
-+ (NSDictionary *)getEligibleNoCostEMIDictFromEMIModelArray:(NSArray *)emiArray WRTToAmount:(NSString *) amount;
++(NSDictionary *)getEMIDictFromEMIModelArray:(NSArray *)emiArray;
+
++(NSDictionary *)getEligibleNoCostEMIDictFromEMIModelArray:(NSArray *)emiArray WRTToAmount:(NSString *) amount;
 
 @end

@@ -1,14 +1,16 @@
 ${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks.sh
-${PODS_ROOT}/PayUIndia-CheckoutPro/PayUCheckoutProKit/PayUCheckoutProKit.framework
-${PODS_ROOT}/PayUIndia-Logger/Dependencies/PayULoggerKit.framework
-${PODS_ROOT}/PayUIndia-Networking/Dependencies/PayUNetworkingKit.framework
-${PODS_ROOT}/PayUIndia-UPICore/Dependencies/PayUUPICoreKit.framework
 ${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework
 ${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUAssetLibraryKit/PayUAssetLibraryKit.framework/PayUAssetLibraryKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.framework/PayUCheckoutProBaseKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCrashReporter/PayUCrashReporter.framework/PayUCrashReporter
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUCustomBrowser/PayUCustomBrowser.framework/PayUCustomBrowser
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUNetworkReachability/PayUNetworkReachability.framework/PayUNetworkReachability
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUBizCoreKit/PayUBizCoreKit.framework/PayUBizCoreKit
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUParamsKit/PayUParamsKit.framework/PayUParamsKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework/PayUAnalytics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework/PayUAssetLibraryKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework/PayUCheckoutProKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework/PayUCheckoutProBaseKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework/PayUCrashReporter
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework/PayUCustomBrowser
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework/PayULoggerKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NativeOtpAssist/PayUNativeOtpAssist.framework/PayUNativeOtpAssist
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-NetworkReachability/PayUNetworkReachability.framework/PayUNetworkReachability
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Networking/PayUNetworkingKit.framework/PayUNetworkingKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PG-SDK/PayUBizCoreKit.framework/PayUBizCoreKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-PayUParams/PayUParamsKit.framework/PayUParamsKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPICore/PayUUPICoreKit.framework/PayUUPICoreKit
