@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 import Foundation
 import PayUAssetLibraryKit
@@ -17,12 +17,16 @@ import PayUUPICoreKit
 import Swift
 import SwiftUI
 import UIKit
-extension PayUPopTip {
-  public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
-  public func performExitAnimation(completion: @escaping () -> Swift.Void)
+import _Concurrency
+@objc extension Foundation.NSNotification {
+  @objc public static let payuRefreshSodexoView: Foundation.Notification.Name
 }
-extension PayUPopTip {
-  public class func pathWith(rect: CoreGraphics.CGRect, frame: CoreGraphics.CGRect, direction: PayUCheckoutProKit.PopTipDirection, arrowSize: CoreGraphics.CGSize, arrowPosition: CoreGraphics.CGPoint, arrowRadius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat = 0, radius: CoreGraphics.CGFloat = 0) -> UIKit.UIBezierPath
+extension PayUCheckoutProKit.PayUPopTip {
+  @_Concurrency.MainActor(unsafe) public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public func performExitAnimation(completion: @escaping () -> Swift.Void)
+}
+extension PayUCheckoutProKit.PayUPopTip {
+  @_Concurrency.MainActor(unsafe) public class func pathWith(rect: CoreGraphics.CGRect, frame: CoreGraphics.CGRect, direction: PayUCheckoutProKit.PopTipDirection, arrowSize: CoreGraphics.CGSize, arrowPosition: CoreGraphics.CGPoint, arrowRadius: CoreGraphics.CGFloat, borderWidth: CoreGraphics.CGFloat = 0, radius: CoreGraphics.CGFloat = 0) -> UIKit.UIBezierPath
 }
 public enum PopTipDirection {
   case up
@@ -68,101 +72,101 @@ public enum PopTipActionAnimation {
   case pulse(CoreGraphics.CGFloat?)
   case none
 }
-@objc @_inheritsConvenienceInitializers open class PayUPopTip : UIKit.UIView {
-  open var text: Swift.String? {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class PayUPopTip : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) open var text: Swift.String? {
     get
     set
   }
-  open var font: UIKit.UIFont
-  @objc dynamic open var textColor: UIKit.UIColor
-  @objc dynamic open var textAlignment: UIKit.NSTextAlignment
-  @objc dynamic open var bubbleColor: UIKit.UIColor
-  @objc dynamic open var tipBorderColor: UIKit.UIColor
-  @objc dynamic open var tipBorderWidth: CoreGraphics.CGFloat
-  @objc dynamic open var tipCornerRadius: CoreGraphics.CGFloat
-  @objc dynamic open var isRounded: Swift.Bool
-  @objc dynamic open var tipShadowColor: UIKit.UIColor
-  @objc dynamic open var tipShadowOffset: CoreGraphics.CGSize
-  @objc dynamic open var tipShadowRadius: Swift.Float
-  @objc dynamic open var tipShadowOpacity: Swift.Float
-  @objc dynamic open var offset: CoreGraphics.CGFloat
-  @objc dynamic open var padding: CoreGraphics.CGFloat
-  @objc dynamic open var edgeInsets: UIKit.UIEdgeInsets
-  @objc dynamic open var arrowSize: CoreGraphics.CGSize
-  @objc dynamic open var arrowRadius: CoreGraphics.CGFloat
-  @objc dynamic open var animationIn: Swift.Double
-  @objc dynamic open var animationOut: Swift.Double
-  @objc dynamic open var delayIn: Swift.Double
-  @objc dynamic open var delayOut: Swift.Double
-  open var entranceAnimation: PayUCheckoutProKit.PopTipEntranceAnimation
-  open var exitAnimation: PayUCheckoutProKit.PopTipExitAnimation
-  open var actionAnimation: PayUCheckoutProKit.PopTipActionAnimation
-  @objc dynamic open var actionAnimationIn: Swift.Double
-  @objc dynamic open var actionAnimationOut: Swift.Double
-  @objc dynamic open var actionDelayIn: Swift.Double
-  @objc dynamic open var actionDelayOut: Swift.Double
-  @objc dynamic open var edgeMargin: CoreGraphics.CGFloat
-  @objc dynamic open var bubbleOffset: CoreGraphics.CGFloat
-  @objc dynamic open var arrowOffset: CoreGraphics.CGFloat
-  @objc dynamic open var maskColor: UIKit.UIColor
-  @objc dynamic open var shouldShowMask: Swift.Bool
-  @objc dynamic open var constrainInContainerView: Swift.Bool
-  open var from: CoreGraphics.CGRect {
+  @_Concurrency.MainActor(unsafe) open var font: UIKit.UIFont
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var textColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var textAlignment: UIKit.NSTextAlignment
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var bubbleColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipBorderColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipBorderWidth: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipCornerRadius: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var isRounded: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipShadowColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipShadowOffset: CoreGraphics.CGSize
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipShadowRadius: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var tipShadowOpacity: Swift.Float
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var offset: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var padding: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var edgeInsets: UIKit.UIEdgeInsets
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var arrowSize: CoreGraphics.CGSize
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var arrowRadius: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationIn: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var animationOut: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var delayIn: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var delayOut: Swift.Double
+  @_Concurrency.MainActor(unsafe) open var entranceAnimation: PayUCheckoutProKit.PopTipEntranceAnimation
+  @_Concurrency.MainActor(unsafe) open var exitAnimation: PayUCheckoutProKit.PopTipExitAnimation
+  @_Concurrency.MainActor(unsafe) open var actionAnimation: PayUCheckoutProKit.PopTipActionAnimation
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionAnimationIn: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionAnimationOut: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionDelayIn: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var actionDelayOut: Swift.Double
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var edgeMargin: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var bubbleOffset: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var arrowOffset: CoreGraphics.CGFloat
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var maskColor: UIKit.UIColor
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldShowMask: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var constrainInContainerView: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var from: CoreGraphics.CGRect {
     get
     set
   }
-  open var isVisible: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) open var isVisible: Swift.Bool {
     get
   }
-  @objc dynamic open var shouldDismissOnTap: Swift.Bool
-  @objc dynamic open var shouldDismissOnTapOutside: Swift.Bool
-  @objc dynamic open var shouldConsiderOriginatingFrameAsPopTip: Swift.Bool
-  @objc dynamic open var shouldDismissOnSwipeOutside: Swift.Bool
-  @objc dynamic open var startActionAnimationOnShow: Swift.Bool
-  open var swipeRemoveGestureDirection: UIKit.UISwipeGestureRecognizer.Direction {
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldDismissOnTap: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldDismissOnTapOutside: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldConsiderOriginatingFrameAsPopTip: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var shouldDismissOnSwipeOutside: Swift.Bool
+  @objc @_Concurrency.MainActor(unsafe) dynamic open var startActionAnimationOnShow: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var swipeRemoveGestureDirection: UIKit.UISwipeGestureRecognizer.Direction {
     get
     set
   }
-  open var tapHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
-  open var tapOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
-  open var swipeOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
-  open var appearHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
-  open var dismissHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
-  open var entranceAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
-  open var exitAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
-  open var arrowPosition: CoreGraphics.CGPoint {
+  @_Concurrency.MainActor(unsafe) open var tapHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var tapOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var swipeOutsideHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var appearHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var dismissHandler: ((PayUCheckoutProKit.PayUPopTip) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var entranceAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var exitAnimationHandler: ((@escaping () -> Swift.Void) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) open var arrowPosition: CoreGraphics.CGPoint {
     get
   }
-  weak open var containerView: UIKit.UIView? {
+  @_Concurrency.MainActor(unsafe) weak open var containerView: UIKit.UIView? {
     get
   }
-  open var direction: PayUCheckoutProKit.PopTipDirection {
+  @_Concurrency.MainActor(unsafe) open var direction: PayUCheckoutProKit.PopTipDirection {
     get
   }
-  open var isAnimating: Swift.Bool {
+  @_Concurrency.MainActor(unsafe) open var isAnimating: Swift.Bool {
     get
   }
-  open var backgroundMask: UIKit.UIView? {
+  @_Concurrency.MainActor(unsafe) open var backgroundMask: UIKit.UIView? {
     get
   }
-  open var tapGestureRecognizer: UIKit.UITapGestureRecognizer? {
+  @_Concurrency.MainActor(unsafe) open var tapGestureRecognizer: UIKit.UITapGestureRecognizer? {
     get
   }
-  @objc override dynamic open func draw(_ rect: CoreGraphics.CGRect)
-  open func show(text: Swift.String, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreGraphics.CGFloat, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
-  open func show(attributedText: Foundation.NSAttributedString, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreGraphics.CGFloat, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
-  open func show(customView: UIKit.UIView, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func draw(_ rect: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) open func show(text: Swift.String, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreGraphics.CGFloat, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
+  @_Concurrency.MainActor(unsafe) open func show(attributedText: Foundation.NSAttributedString, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreGraphics.CGFloat, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
+  @_Concurrency.MainActor(unsafe) open func show(customView: UIKit.UIView, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, duration: Foundation.TimeInterval? = nil)
   @available(iOS 13.0, *)
-  open func show<V>(rootView: V, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, parent: UIKit.UIViewController, duration: Foundation.TimeInterval? = nil) where V : SwiftUI.View
-  open func update(text: Swift.String)
-  open func update(attributedText: Foundation.NSAttributedString)
-  open func update(customView: UIKit.UIView)
-  @objc open func hide(forced: Swift.Bool = false)
-  open func startActionAnimation()
-  open func stopActionAnimation(_ completion: (() -> Swift.Void)? = nil)
+  @_Concurrency.MainActor(unsafe) open func show<V>(rootView: V, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreGraphics.CGRect, parent: UIKit.UIViewController, duration: Foundation.TimeInterval? = nil) where V : SwiftUI.View
+  @_Concurrency.MainActor(unsafe) open func update(text: Swift.String)
+  @_Concurrency.MainActor(unsafe) open func update(attributedText: Foundation.NSAttributedString)
+  @_Concurrency.MainActor(unsafe) open func update(customView: UIKit.UIView)
+  @objc @_Concurrency.MainActor(unsafe) open func hide(forced: Swift.Bool = false)
+  @_Concurrency.MainActor(unsafe) open func startActionAnimation()
+  @_Concurrency.MainActor(unsafe) open func stopActionAnimation(_ completion: (() -> Swift.Void)? = nil)
   @objc deinit
-  @objc override dynamic public init(frame: CoreGraphics.CGRect)
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
 @objc public protocol PayUCheckoutProDelegate {
   @objc func onPaymentSuccess(response: Any?)
@@ -191,6 +195,7 @@ public enum PopTipActionAnimation {
   override public func getBinInfoOf(cardNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
   override public func fetchMCPLookupData(cardBinInfo: PayUParamsKit.CardBinInfo, onCompletion: @escaping () -> ())
   @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
+  @objc override public func getBalanceFromSodexo(_ sourceId: Swift.String)
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
@@ -209,6 +214,7 @@ public enum PopTipActionAnimation {
   @objc public func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
   @objc public func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
 }
+public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.PayUModelSodexoCardDetail?, _ errorMessage: Swift.String?) -> ()
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentParamConstant : ObjectiveC.NSObject {
   @objc public static let udf1: Swift.String
   @objc public static let udf2: Swift.String
@@ -216,6 +222,7 @@ public enum PopTipActionAnimation {
   @objc public static let udf4: Swift.String
   @objc public static let udf5: Swift.String
   @objc public static let merchantAccessKey: Swift.String
+  @objc public static let sourceId: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
@@ -241,6 +248,7 @@ public enum PopTipActionAnimation {
   @objc public static let offerDetail: Swift.String
   @objc public static let getCheckoutDetails: Swift.String
   @objc public static let mcpLookup: Swift.String
+  @objc public static let checkBalance: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
