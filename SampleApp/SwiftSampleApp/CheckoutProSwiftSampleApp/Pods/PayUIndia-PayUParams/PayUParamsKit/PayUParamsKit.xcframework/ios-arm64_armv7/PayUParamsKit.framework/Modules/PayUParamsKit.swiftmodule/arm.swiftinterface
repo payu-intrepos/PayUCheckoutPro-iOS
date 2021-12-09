@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 import Foundation
 @_exported import PayUParamsKit
 import Swift
 import UIKit
+import _Concurrency
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentOption : ObjectiveC.NSObject {
   @objc public var title: Swift.String?
   @objc public var unavailableReason: Swift.String?
@@ -25,10 +26,20 @@ import UIKit
 @objc @_inheritsConvenienceInitializers @objcMembers public class NetBanking : PayUParamsKit.PaymentOption {
   @objc public var maskedAccountNumber: Swift.String?
   @objc public var beneficiaryParams: PayUParamsKit.PayUBeneficiaryParams?
+  @objc public var verificationModes: [Swift.String]?
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class NeftRtgs : PayUParamsKit.PaymentOption {
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class Sodexo : PayUParamsKit.CCDC {
+  @objc public var sourceId: Swift.String?
+  public var cardBalance: Swift.Double?
+  @objc public var cardType: Swift.String?
+  public var isNewCard: Swift.Bool?
+  @objc public var apiStatus: PayUParamsKit.ApiStatus
   @objc override dynamic public init()
   @objc deinit
 }
@@ -89,7 +100,6 @@ import UIKit
   public var interestCharged: Swift.Double?
   @objc public var type: PayUParamsKit.EMIType
   public init(month: Swift.Int? = nil, bankShortName: Swift.String, title: Swift.String, paymentOptionId: Swift.String, type: PayUParamsKit.EMIType)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class Wallet : PayUParamsKit.PaymentOption {
@@ -119,6 +129,7 @@ import UIKit
 @objc public enum CardType : Swift.Int {
   case cc
   case dc
+  case sodexo
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -137,6 +148,7 @@ import UIKit
   case laser
   case stateBankMaestro
   case unknown
+  case sodexo
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -151,6 +163,7 @@ import UIKit
   case emi
   case savedCard
   case neftRtgs
+  case sodexo
   case other
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -168,6 +181,16 @@ import UIKit
     get
   }
 }
+@objc public enum ApiStatus : Swift.Int {
+  case success
+  case failed
+  case inProgress
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc @objcMembers public class PaymentMode : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var modeName: Swift.String?
   @objc public var subHeading: Swift.String?
@@ -177,12 +200,12 @@ import UIKit
   @objc public var isDirectPaymentMode: Swift.Bool
   @objc public var modes: [PayUParamsKit.PaymentMode]?
   @objc public var iconName: Swift.String?
+  public var isDown: Swift.Bool?
   @objc public init(modeName: Swift.String? = nil, subHeading: Swift.String? = nil, offerDetail: Swift.String? = nil, paymentType: PayUParamsKit.PaymentType, options: [PayUParamsKit.PaymentOption]? = nil, modes: [PayUParamsKit.PaymentMode]? = nil, iconName: Swift.String? = nil)
   @objc convenience public init(paymentType: PayUParamsKit.PaymentType, paymentOptionID: Swift.String? = nil)
   @objc public class func getPaymentModeFrom(paymentModes: [PayUParamsKit.PaymentMode]?, paymentType: PayUParamsKit.PaymentType) -> PayUParamsKit.PaymentMode?
   @objc public class func getAllPaymentOptionsFrom(paymentModes: [PayUParamsKit.PaymentMode]?, paymentType: PayUParamsKit.PaymentType) -> [PayUParamsKit.PaymentOption]?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelMCPConversion : ObjectiveC.NSObject {
@@ -199,7 +222,7 @@ public enum PPKError : Swift.Error {
   case withImage(message: Swift.String?, image: UIKit.UIImage?)
   case withCode(message: Swift.String?, code: Swift.Int?)
 }
-extension PPKError : Foundation.LocalizedError {
+extension PayUParamsKit.PPKError : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
@@ -212,9 +235,9 @@ extension PPKError : Foundation.LocalizedError {
   @objc public var beneficiaryAccountNumber: Swift.String
   @objc public var beneficiaryIFSC: Swift.String
   @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
-  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType)
+  @objc public var verficationMode: Swift.String?
+  @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: Swift.String? = nil)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum BeneficiaryAccountType : Swift.Int, Swift.CaseIterable {
@@ -224,6 +247,19 @@ extension PPKError : Foundation.LocalizedError {
   public typealias AllCases = [PayUParamsKit.BeneficiaryAccountType]
   public typealias RawValue = Swift.Int
   public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum VerificationModeType : Swift.Int, Swift.CaseIterable {
+  case debitCard
+  case netBanking
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PayUParamsKit.VerificationModeType]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [PayUParamsKit.VerificationModeType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -251,8 +287,8 @@ extension PPKError : Foundation.LocalizedError {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayUPaymentCreateRequest : ObjectiveC.NSObject {
-  public typealias completionBlockForCreateRequestWithPaymentParam = (Foundation.NSMutableURLRequest?, Swift.String?, Swift.String?) -> Swift.Void
-  public func createRequest(param: PayUParamsKit.PayUPaymentParam, completion: (Foundation.NSMutableURLRequest?, Swift.String?, Swift.String?) -> Swift.Void)
+  public typealias completionBlockForCreateRequestWithPaymentParam = (_ request: Foundation.NSMutableURLRequest?, _ postParam: Swift.String?, _ error: Swift.String?) -> Swift.Void
+  public func createRequest(param: PayUParamsKit.PayUPaymentParam, completion: (_ request: Foundation.NSMutableURLRequest?, _ postParam: Swift.String?, _ error: Swift.String?) -> Swift.Void)
   public func getURLRequest(withPostParam postParam: Swift.String?, with paramURL: Foundation.URL?, httpHeaderField headerFields: [Swift.String : Swift.String]?, httpMethod: Swift.String?) -> Foundation.NSMutableURLRequest?
   @objc override dynamic public init()
   @objc deinit
@@ -267,7 +303,6 @@ extension PPKError : Foundation.LocalizedError {
   @objc public var remarks: Swift.String?
   @objc public init(billingAmount: Swift.String, paymentStartDate: Foundation.Date, paymentEndDate: Foundation.Date, billingCycle: PayUParamsKit.PayUBillingCycle, billingInterval: Foundation.NSNumber)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum PayUBillingCycle : Swift.Int, Swift.CaseIterable {
@@ -342,7 +377,6 @@ extension PPKError : Foundation.LocalizedError {
   public var enableOneClick: Swift.Bool?
   @objc public var vscParams: PayUParamsKit.PayUVSCParams?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public enum Environment : Swift.Int {
@@ -473,9 +507,15 @@ extension PayUParamsKit.PaymentType : Swift.RawRepresentable {}
 extension PayUParamsKit.EMIType : Swift.Equatable {}
 extension PayUParamsKit.EMIType : Swift.Hashable {}
 extension PayUParamsKit.EMIType : Swift.RawRepresentable {}
+extension PayUParamsKit.ApiStatus : Swift.Equatable {}
+extension PayUParamsKit.ApiStatus : Swift.Hashable {}
+extension PayUParamsKit.ApiStatus : Swift.RawRepresentable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.Equatable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.Hashable {}
 extension PayUParamsKit.BeneficiaryAccountType : Swift.RawRepresentable {}
+extension PayUParamsKit.VerificationModeType : Swift.Equatable {}
+extension PayUParamsKit.VerificationModeType : Swift.Hashable {}
+extension PayUParamsKit.VerificationModeType : Swift.RawRepresentable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.Equatable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.Hashable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.RawRepresentable {}

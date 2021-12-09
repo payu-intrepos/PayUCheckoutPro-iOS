@@ -10,7 +10,7 @@ import UIKit
 import PayUCheckoutProKit
 import PayUCheckoutProBaseKit
 import PayUParamsKit
-import PayUBizCoreKit
+
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
     @IBOutlet weak var keyTextField: UITextField!
@@ -45,22 +45,36 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var logoNameTextField: UITextField!
     @IBOutlet weak var showCancelDialogOnCheckoutScreenSwitch: UISwitch!
     @IBOutlet weak var showCancelDialogOnPaymentScreenSwitch: UISwitch!
+    @IBOutlet weak var enableNativeOTPSwitch: UISwitch!
     @IBOutlet weak var orderDetailTextView: UITextView!
     @IBOutlet weak var l1OptionTextView: UITextView!
     @IBOutlet weak var offerDetailTextView: UITextView!
-    
+    @IBOutlet weak var customNotesDetailTextView: UITextView!
     
     // CB Configuration
     @IBOutlet weak var autoOTPSelectSwitch: UISwitch!
     @IBOutlet weak var surePayCountTextField: UITextField!
     @IBOutlet weak var merchantResponseTimeoutTextField: UITextField!
     
-    // MARK: - Variables -
-    // Please add your salt here. Check salts from https://payumobile.gitbook.io/sdk-integration/test-merchant-list
-    let keySalt = [["3TnMpV", "<Please_add_test_salt_here>", Environment.production],
-                   ["gtKFFx", "<Please_add_test_salt_here>", Environment.test]]
+    // Sodexo Card Configuration
+    @IBOutlet weak var sodexoCardSourceIdTextField: UITextField!
+    @IBOutlet weak var sodexoCardBalanceAPITimeoutTextField: UITextField!
 
-    let indexKeySalt = 0
+    // MARK: - Variables -
+    let keySalt = [["smsplus", "admin", Environment.production],
+                   ["3TnMpV", "g0nGFe03", Environment.production],
+                   ["V2yqBC", "dEzD8BBD", Environment.production],
+                   ["0MQaQP", "7tVMWdl6", Environment.production],
+                   ["smsplus", "1b1b0", Environment.production],
+                   ["ol4Spy", "J0ZXw2z9", Environment.production],
+                   ["obScKz", "Ml7XBCdR", Environment.test],
+                   ["gtKFFx", "eCwWELxi", Environment.test],
+                   ["Rl8Pdr", "wsl9kqyy", Environment.test],
+                   ["smsplus", "350", Environment.test],
+                   ["IUIaFM", "67njRYSI", Environment.test],
+                   ["F53fW7", "PPIzLXEo", Environment.test]]
+
+    let indexKeySalt = 1
     var amount: String = "1"
 
     var productInfo: String = "Nokia"
@@ -78,10 +92,12 @@ class MerchantViewController: UIViewController {
     var showCancelDialogOnPaymentScreen: Bool = true
     var orderDetail: String = "[{\"GST\":\"5%\"},{\"Delivery Date\":\"25 Dec\"},{\"Status\":\"In Progress\"}]"
     var l1Option: String = "[{\"NetBanking\":\"\"},{\"emi\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
-    var offerDetail: String = "[[\"5% off on cards and netbanking\",\"Get 5% instant discount on all cards and nb. Max 100\",\"cardnb@5\",\"Cards,NetBanking\",],[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"CASHBACK@8405\",\"Cards,NetBanking\"],[\"offer on cards and netbanking\",\"offer on cards and netbanking\",\"cardNBOfferKey@8645\",\"Cards,NetBanking\"],[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"cardOfferKey@8643\",\"Cards,NetBanking\"],]"
+    var offerDetail: String = "[[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"CardsOfferKey@11311\",\"Cards,NetBanking\"],]"
+    var customNotes: String = "[{\"Hi, This is a custom note for payment modes.\":[]},{\"Hi, This is a custom note for payment options.\":[\"Cards\",\"NetBanking\",\"upi\",\"Wallet\",\"Sodexo\",\"NeftRtgs\",\"emi\",\"SavedCard\"]}]"
     var autoOTPSelect: Bool = true
     var surePayCount: String = "2"
     var merchantResponseTimeout: String = "4"
+    var sodexoResponseTimeout: String = "4"
     var recurringAmount = "1"
     var recurringPeriod: PayUBillingCycle = .monthly
     var siStartDate:Date = Date()
@@ -93,7 +109,8 @@ class MerchantViewController: UIViewController {
     let toolBar = UIToolbar()
     var merchantAccessKey: String = "E5ABOXOWAAZNXB6JEF5Z"
     let merchantSecretKey = "e425e539233044146a2d185a346978794afd7c66"
-
+    let sodexoSourceId = "src_80ab1159-e4b3-49c6-8dfc-83414429393a"
+    
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -218,9 +235,11 @@ extension MerchantViewController {
         orderDetailTextView.text = orderDetail
         l1OptionTextView.text = l1Option
         offerDetailTextView.text = offerDetail
+        customNotesDetailTextView.text = customNotes
         autoOTPSelectSwitch.isOn = autoOTPSelect
         surePayCountTextField.text = surePayCount
         merchantResponseTimeoutTextField.text = merchantResponseTimeout
+        sodexoCardBalanceAPITimeoutTextField.text = sodexoResponseTimeout
         recurringAmountTf.text = recurringAmount
         recurringPeriodTf.text = PPKUtils.billingCycleToString(recurringPeriod)
         billingIntervalTf.text = billingInterval
@@ -230,6 +249,7 @@ extension MerchantViewController {
         secondaryColorTextFieldTapped()
         merchantAccessKeyTextField.text = merchantAccessKey
         merchantSecretKeyTextField.text = merchantSecretKey
+        sodexoCardSourceIdTextField.text = sodexoSourceId
     }
     
     private func getPaymentParam() -> PayUPaymentParam{
@@ -257,7 +277,7 @@ extension MerchantViewController {
             paymentParam.siParam = siInfo
         }
         paymentParam.userCredential = userCredentialTextField.text
-        paymentParam.enableNativeOTP = true
+        paymentParam.enableNativeOTP = self.enableNativeOTPSwitch.isOn
         paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
         paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
@@ -269,6 +289,7 @@ extension MerchantViewController {
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
 //        paymentParam.additionalParam[HashConstant.vasForMobileSDK] = "6a71a10f33e61ca88307b2e0f97d6ed94cc1a7daf7ba8883dda1bd1079ec3f8c526354e1f9b4ef0f59c90248d91c30fbb58971fcc291e0a7beddf7cc3783966b"
 //        paymentParam.additionalParam[HashConstant.payment] = "f43bd495b110ebe63038bb8152b0083cb3bd227e9db8dab6d3fb8c2cb38c3fece787bba76adf755405b549f00b3264d996233ec02fce973f8ff24ba1e7751cbe"
+        
         return paymentParam
     }
     
@@ -303,6 +324,33 @@ extension MerchantViewController {
             let merchantResponseTimeout = TimeInterval(merchantResponseTimeoutStr) {
             config.merchantResponseTimeout = merchantResponseTimeout
         }
+        
+        // Sodexo Configurations
+        if let sodexoCardBalanceAPITimeoutStr = sodexoCardBalanceAPITimeoutTextField.text,
+           let sodexoCardBalanceAPITimeout = TimeInterval(sodexoCardBalanceAPITimeoutStr) {
+            config.sodexoCardBalanceAPITimeout = sodexoCardBalanceAPITimeout
+        }
+
+        // Custom Notes Configurations
+        config.customNotes = getCustomNotes()
+    }
+
+    func getCustomNotes() -> [PayUCustomNote]? {
+        if let notesJSON = Utils.JSONFrom(string: customNotesDetailTextView.text) as? [[String: Any]] {
+            var customNotes = [PayUCustomNote]()
+            for json in notesJSON {
+                for (key, value) in json {
+                    if let paymentModes = (value as? [String])?.compactMap({ Utils.paymentTypeFrom(paymentType: $0)}) {
+                        let customNote = PayUCustomNote()
+                        customNote.note = key
+                        customNote.noteCategories =  paymentModes
+                        customNotes.append(customNote)
+                    }
+                }
+            }
+            return customNotes
+        }
+        return nil
     }
     
     func getPreferredPaymentMode() -> [PaymentMode]? {
