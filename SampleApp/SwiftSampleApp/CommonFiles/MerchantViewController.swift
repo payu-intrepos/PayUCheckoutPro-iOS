@@ -61,18 +61,8 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var sodexoCardBalanceAPITimeoutTextField: UITextField!
 
     // MARK: - Variables -
-    let keySalt = [["smsplus", "admin", Environment.production],
-                   ["3TnMpV", "g0nGFe03", Environment.production],
-                   ["V2yqBC", "dEzD8BBD", Environment.production],
-                   ["0MQaQP", "7tVMWdl6", Environment.production],
-                   ["smsplus", "1b1b0", Environment.production],
-                   ["ol4Spy", "J0ZXw2z9", Environment.production],
-                   ["obScKz", "Ml7XBCdR", Environment.test],
-                   ["gtKFFx", "eCwWELxi", Environment.test],
-                   ["Rl8Pdr", "wsl9kqyy", Environment.test],
-                   ["smsplus", "350", Environment.test],
-                   ["IUIaFM", "67njRYSI", Environment.test],
-                   ["F53fW7", "PPIzLXEo", Environment.test]]
+    let keySalt = [["3TnMpV", "Please_add_test_salt_here", Environment.production],
+                   ["gtKFFx", "Please_add_test_salt_here", Environment.test]]
 
     let indexKeySalt = 1
     var amount: String = "1"

@@ -21,10 +21,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKv-iz-eIp">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1619"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1582"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="yv9-cd-QhT">
-                                                <rect key="frame" x="8" y="8" width="398" height="1603"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="1566"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="skO-2v-n7o">
                                                         <rect key="frame" x="0.0" y="0.0" width="398" height="34"/>
@@ -819,18 +819,18 @@
                                                             </switch>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rvz-wG-TRQ">
-                                                        <rect key="frame" x="0.0" y="1573" width="398" height="30"/>
+                                                    <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rvz-wG-TRQ">
+                                                        <rect key="frame" x="0.0" y="1566" width="398" height="0.0"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3xT-z5-1mE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="196.5" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="196.5" height="0.0"/>
                                                                 <state key="normal" title="App Crash"/>
                                                                 <connections>
                                                                     <action selector="appCrash" destination="Njd-OJ-4Bx" eventType="touchUpInside" id="J9E-OI-ymd"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bky-ur-Ij6">
-                                                                <rect key="frame" x="201.5" y="0.0" width="196.5" height="30"/>
+                                                                <rect key="frame" x="201.5" y="0.0" width="196.5" height="0.0"/>
                                                                 <state key="normal" title="SDK Crash"/>
                                                                 <connections>
                                                                     <action selector="sdkCrash" destination="Njd-OJ-4Bx" eventType="touchUpInside" id="5O1-tO-hbc"/>
