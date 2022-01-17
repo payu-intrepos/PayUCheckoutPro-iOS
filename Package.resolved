@@ -1,0 +1,106 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PayUIndia-Custom-Browser",
+        "repositoryURL": "https://github.com/payu-intrepos/iOS-Custom-Browser",
+        "state": {
+          "branch": null,
+          "revision": "c350226424b7633e874e3f826ddb65e00ab27332",
+          "version": "8.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-PG-SDK",
+        "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK",
+        "state": {
+          "branch": null,
+          "revision": "9826c758557a87a65869baff1a174c51db81935c",
+          "version": "7.1.0"
+        }
+      },
+      {
+        "package": "PayUIndia-PayUParams",
+        "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS",
+        "state": {
+          "branch": null,
+          "revision": "731685185033b93f893e6194019ca15f6e79ad90",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "PayUIndia-UPIKit",
+        "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
+        "state": {
+          "branch": null,
+          "revision": "49bac84bf6ac4aff21ea1b51982b7bc7bca21b1b",
+          "version": "6.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-Analytics",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS",
+        "state": {
+          "branch": null,
+          "revision": "f2e3ba194d45302bc7e5f6986a47894323bdfb94",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-AssetLibrary",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAssetLibrary-iOS",
+        "state": {
+          "branch": null,
+          "revision": "0ca2187e27b8e9038680c6c42ecc3554c12f6215",
+          "version": "3.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-CrashReporter",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS",
+        "state": {
+          "branch": null,
+          "revision": "a4ffe60807d35a830a06196dab83e07d09e10612",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-NativeOtpAssist",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS",
+        "state": {
+          "branch": null,
+          "revision": "a3ecd6c421064599926e20e3a578f48eedb222ae",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "PayUIndia-NetworkReachability",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS",
+        "state": {
+          "branch": null,
+          "revision": "4c023a01a4e1cd03641b538c3495a496724effec",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "SocketIO",
+        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift",
+        "state": {
+          "branch": null,
+          "revision": "75f046388e5031004a05d1c5191f85cf58f9071c",
+          "version": "17.0.0"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/ShubhGar/Starscream",
+        "state": {
+          "branch": null,
+          "revision": "12202be2d18098d2c29e1433a921675f35522a20",
+          "version": "5.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
