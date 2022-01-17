@@ -1,6 +1,0 @@
-framework module PayUCrashReporter {
-    umbrella header "PayUCrashReporter.h"
-
-    export *
-    module * { export * }
-}

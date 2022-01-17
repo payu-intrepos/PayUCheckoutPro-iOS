@@ -1,1 +1,0 @@
-# PayUNetworkReachability-iOS

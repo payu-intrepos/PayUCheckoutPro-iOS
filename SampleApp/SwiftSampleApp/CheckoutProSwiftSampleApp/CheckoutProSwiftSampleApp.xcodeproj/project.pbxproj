@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		DD5EC4B524B5ABCE0006F3CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC4B224B5ABCE0006F3CD /* Utils.swift */; };
 		DD5EC4B624B5ABCE0006F3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC4B324B5ABCE0006F3CD /* AppDelegate.swift */; };
 		DDC3C37E24BEA46300DAE75D /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3C37D24BEA46300DAE75D /* MerchantViewController.swift */; };
+		E8F75B442795ECF0007DF5F1 /* PayUIndia-CheckoutPro in Frameworks */ = {isa = PBXBuildFile; productRef = E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634EB2B923AA6B33C8241846 /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
+				E8F75B442795ECF0007DF5F1 /* PayUIndia-CheckoutPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,13 +137,15 @@
 				DD5EC45A24B5A9390006F3CD /* Resources */,
 				DD5EC50B24B5B3EF0006F3CD /* Embed Frameworks */,
 				DD2BCF6324B7F3550002275F /* Slicing Script */,
-				829685242F016077CAA04214 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CheckoutProSwiftSampleApp;
+			packageProductDependencies = (
+				E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */,
+			);
 			productName = CheckoutProSwiftSampleApp;
 			productReference = DD5EC45C24B5A9390006F3CD /* CheckoutProSwiftSampleApp.app */;
 			productType = "com.apple.product-type.application";
@@ -170,6 +174,9 @@
 				Base,
 			);
 			mainGroup = DD5EC45324B5A9390006F3CD;
+			packageReferences = (
+				E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */,
+			);
 			productRefGroup = DD5EC45D24B5A9390006F3CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -193,23 +200,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		829685242F016077CAA04214 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AB5DE311DBE2AFF1DA13686E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,7 +238,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+			shellScript = "APP_PATH=\"dd${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -471,6 +461,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */;
+			productName = "PayUIndia-CheckoutPro";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD5EC45424B5A9390006F3CD /* Project object */;
 }

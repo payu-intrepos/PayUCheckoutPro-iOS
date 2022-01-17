@@ -33,7 +33,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "324d215f0ef01a58b97fbd2b4c1c62f6d730cdad",
+          "revision": "f06f1cf9e6b882bb863b34e30b125065378ec8c1",
           "version": "6.0.0"
         }
       },
@@ -56,6 +56,15 @@
         }
       },
       {
+        "package": "PayUCheckoutProKit",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUCheckoutPro-iOS",
+        "state": {
+          "branch": "master",
+          "revision": "af0fcef2276acaf8136b93330d263b10cc815ccf",
+          "version": null
+        }
+      },
+      {
         "package": "PayUIndia-CrashReporter",
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git",
         "state": {
@@ -69,7 +78,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
         "state": {
           "branch": null,
-          "revision": "a3ecd6c421064599926e20e3a578f48eedb222ae",
+          "revision": "7ad292dce36d9d02d76a3d624e79b5ff0a12f0d4",
           "version": "2.0.0"
         }
       },
