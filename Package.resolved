@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "PayUIndia-PayUParams",
+        "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "731685185033b93f893e6194019ca15f6e79ad90",
+          "version": "3.1.0"
+        }
+      },
+      {
         "package": "PayUIndia-UPIKit",
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
         "state": {
@@ -65,8 +74,17 @@
         }
       },
       {
+        "package": "PayUIndia-NetworkReachability",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "4c023a01a4e1cd03641b538c3495a496724effec",
+          "version": "2.0.0"
+        }
+      },
+      {
         "package": "SocketIO",
-        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift.git",
+        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift",
         "state": {
           "branch": null,
           "revision": "75f046388e5031004a05d1c5191f85cf58f9071c",
