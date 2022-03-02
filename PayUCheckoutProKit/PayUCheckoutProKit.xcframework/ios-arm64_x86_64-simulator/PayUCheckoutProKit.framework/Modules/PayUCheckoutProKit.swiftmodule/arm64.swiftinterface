@@ -207,7 +207,7 @@ public enum PopTipActionAnimation {
   @objc public func payUTransactionCancel()
   @objc public func payUSuccessResponse(_ payUResponse: Any!, surlResponse: Any!)
   @objc public func payUFailureResponse(_ payUResponse: Any!, furlResponse: Any!)
-  @objc public func shouldDismissVCOnBackPress()
+  @objc public func shouldShowCancelAlert() -> Swift.Bool
   @objc public func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc public func onPaymentFailure(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -223,6 +223,18 @@ public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.P
   @objc public static let udf5: Swift.String
   @objc public static let merchantAccessKey: Swift.String
   @objc public static let sourceId: Swift.String
+  @objc public static let paymentType: Swift.String
+  @objc public static let cardType: Swift.String
+  @objc public static let cc: Swift.String
+  @objc public static let dc: Swift.String
+  @objc public static let card: Swift.String
+  @objc public static let nb: Swift.String
+  @objc public static let upi: Swift.String
+  @objc public static let wallet: Swift.String
+  @objc public static let emi: Swift.String
+  @objc public static let neftrtgs: Swift.String
+  @objc public static let sodexo: Swift.String
+  @objc public static let lazypay: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
