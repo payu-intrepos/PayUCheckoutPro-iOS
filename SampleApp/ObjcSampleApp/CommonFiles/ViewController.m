@@ -27,7 +27,7 @@
 #pragma mark Helper Methods
 
 - (PayUPaymentParam *) paymentParam {
-    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"V2yqBC"
+    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"gtKFFx"
                                                              transactionId:[Utils getTransactionID]
                                                                     amount:@"1"
                                                                productInfo:@"Nokia"
@@ -36,7 +36,7 @@
                                                                      phone:@"9876543210"
                                                                       surl:@"https://payu.herokuapp.com/ios_success"
                                                                       furl:@"https://payu.herokuapp.com/ios_failure"
-                                                               environment:EnvironmentProduction];
+                                                               environment:EnvironmentTest];
     paymentParam.userCredential = @"umang:arya";
     
     paymentParam.siParam = [self siParams];
@@ -50,6 +50,29 @@
                                                             billingCycle:PayUBillingCycleDaily
                                                          billingInterval: [NSNumber numberWithInt:12]];
     return siParams;
+}
+
+- (NSMutableArray *) enforcePaymentList {
+    NSMutableArray * array = [NSMutableArray new];
+
+    NSDictionary *nbEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.nb};
+    NSDictionary *ccdcEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.card, PaymentParamConstant.cardType: PaymentParamConstant.cc}; //CardType : PaymentParamConstant.cc or PaymentParamConstant.dc
+    NSDictionary *upiEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.upi};
+    NSDictionary *walletEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.wallet};
+    NSDictionary *emiEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.emi};
+    NSDictionary *neftEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.neftrtgs};
+    NSDictionary *sodexoEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.sodexo};
+    NSDictionary *otherEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.lazypay};
+    
+    [array addObject:nbEnforcement];
+    [array addObject:ccdcEnforcement];
+    [array addObject:upiEnforcement];
+    [array addObject:walletEnforcement];
+    [array addObject:emiEnforcement];
+    [array addObject:neftEnforcement];
+    [array addObject:sodexoEnforcement];
+    [array addObject:otherEnforcement];
+    return array;
 }
 
 - (NSArray<PaymentMode *> *) getPreferredPaymentMode {
@@ -109,12 +132,20 @@
 - (IBAction)nextButtonTapped:(id)sender {
     PayUCheckoutProConfig *config = [PayUCheckoutProConfig new];
     config.merchantName = @"Umang Enterprises";
-
     config.paymentModesOrder = [self getPreferredPaymentMode];
     config.autoSelectOtp = true;
     config.merchantResponseTimeout = 8;
-    config.surePayCount = 2;
     config.offerDetails = [self getOfferDetails];
+   
+    // Enforce Payment Configurations
+
+    /* // Uncomment below code to set enforcement on other payment modes
+     config.enforcePaymentList = [self enforcePaymentList];
+     */
+    
+    // CB Configurations
+    config.autoSubmitOtp = YES;
+    
     [PayUCheckoutPro openOn:self paymentParam:[self paymentParam] config:config delegate:self];
 }
 

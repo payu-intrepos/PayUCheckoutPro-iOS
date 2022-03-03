@@ -1,4 +1,5 @@
 # PayUNativeOtpAssist-iOS
+    PayUIndia-NativeOtpAssist
 Native OTP Assist SDK for IOS
 Integration Document: https://payumobile.gitbook.io/sdk-integration/ios/native-otp-assist
 

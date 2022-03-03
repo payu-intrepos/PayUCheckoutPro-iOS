@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
 import CoreTelephony
 import Foundation
@@ -12,7 +12,8 @@ import Swift
 import SystemConfiguration
 import UIKit
 import WebKit
-extension PPKError {
+import _Concurrency
+extension PayUParamsKit.PayUError {
   public var formattedErrorCode: Swift.String {
     get
   }
@@ -27,11 +28,11 @@ extension PPKError {
   }
 }
 @objc public protocol PayUOtpAssistAPIProtocol {
-  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
-  @objc func initiatePayment(postData: Swift.String, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
-  @objc func submitOTP(otp: Swift.String, completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
-  @objc func resendOTP(completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
-  @objc func cancelTransaction(completion: @escaping (PayUParamsKit.PayUVerifyPayment?, Swift.Error?) -> ())
+  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> ())
+  @objc func initiatePayment(postData: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> ())
+  @objc func submitOTP(otp: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> ())
+  @objc func resendOTP(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> ())
+  @objc func cancelTransaction(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> ())
 }
 @objc public protocol PayUOtpAssistDelegate {
   @objc func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
@@ -48,9 +49,9 @@ extension PPKError {
   @objc override dynamic public init()
   @objc deinit
 }
-extension UIDevice {
-  public static let modelName: Swift.String
-  public static let signalStrength: Swift.Int?
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
+  @_Concurrency.MainActor(unsafe) public static let signalStrength: Swift.Int?
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssist : ObjectiveC.NSObject {
   @objc public static func open(parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)

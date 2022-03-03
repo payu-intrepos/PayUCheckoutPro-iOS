@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		634EB2B923AA6B33C8241846 /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C4100D79A75F2D5A096B5EC /* Pods_CheckoutProSwiftSampleApp.framework */; };
+		A743555727D09E1E00B1870B /* PayUIndia-CheckoutPro in Frameworks */ = {isa = PBXBuildFile; productRef = A743555627D09E1E00B1870B /* PayUIndia-CheckoutPro */; };
 		DD5EC46724B5A9390006F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46524B5A9390006F3CD /* Main.storyboard */; };
 		DD5EC46C24B5A93B0006F3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46A24B5A93B0006F3CD /* LaunchScreen.storyboard */; };
 		DD5EC4AE24B5ABC00006F3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC4AC24B5ABC00006F3CD /* Assets.xcassets */; };
 		DD5EC4B524B5ABCE0006F3CD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC4B224B5ABCE0006F3CD /* Utils.swift */; };
 		DD5EC4B624B5ABCE0006F3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5EC4B324B5ABCE0006F3CD /* AppDelegate.swift */; };
 		DDC3C37E24BEA46300DAE75D /* MerchantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC3C37D24BEA46300DAE75D /* MerchantViewController.swift */; };
-		E8F75B442795ECF0007DF5F1 /* PayUIndia-CheckoutPro in Frameworks */ = {isa = PBXBuildFile; productRef = E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +50,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				634EB2B923AA6B33C8241846 /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
-				E8F75B442795ECF0007DF5F1 /* PayUIndia-CheckoutPro in Frameworks */,
+				A743555727D09E1E00B1870B /* PayUIndia-CheckoutPro in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +144,7 @@
 			);
 			name = CheckoutProSwiftSampleApp;
 			packageProductDependencies = (
-				E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */,
+				A743555627D09E1E00B1870B /* PayUIndia-CheckoutPro */,
 			);
 			productName = CheckoutProSwiftSampleApp;
 			productReference = DD5EC45C24B5A9390006F3CD /* CheckoutProSwiftSampleApp.app */;
@@ -175,7 +175,7 @@
 			);
 			mainGroup = DD5EC45324B5A9390006F3CD;
 			packageReferences = (
-				E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */,
+				A743555527D09E1E00B1870B /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */,
 			);
 			productRefGroup = DD5EC45D24B5A9390006F3CD /* Products */;
 			projectDirPath = "";
@@ -463,20 +463,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */ = {
+		A743555527D09E1E00B1870B /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS";
 			requirement = {
-				branch = master;
-				kind = branch;
+				kind = exactVersion;
+				version = 4.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E8F75B432795ECF0007DF5F1 /* PayUIndia-CheckoutPro */ = {
+		A743555627D09E1E00B1870B /* PayUIndia-CheckoutPro */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E8F75B422795ECF0007DF5F1 /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */;
+			package = A743555527D09E1E00B1870B /* XCRemoteSwiftPackageReference "PayUCheckoutPro-iOS" */;
 			productName = "PayUIndia-CheckoutPro";
 		};
 /* End XCSwiftPackageProductDependency section */
