@@ -25,7 +25,7 @@ let package = Package(
         .package(name: "PayUIndia-PG-SDK",url: "https://github.com/payu-intrepos/iOS-SDK.git", .exact("8.1.0")),
         .package(name: "PayUIndia-Custom-Browser",url: "https://github.com/payu-intrepos/iOS-Custom-Browser.git", .exact("9.0.0")),
         .package(name: "PayUIndia-NativeOtpAssist",url: "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git", from: "2.1.0"),
-        .package(name: "PayUIndia-UPIKit",url: "https://github.com/payu-intrepos/payu-upi-ios-sdk.git", .exact("6.0.0")),
+        .package(name: "PayUIndia-UPIKit",url: "https://github.com/payu-intrepos/payu-upi-ios-sdk.git", .exact("6.0.1")),
     ],
     targets: [
             .binaryTarget(name: "PayUIndia-CheckoutProBase", path: "./PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.xcframework"),
