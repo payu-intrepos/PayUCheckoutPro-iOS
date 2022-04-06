@@ -23,11 +23,13 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var environmentTextField: UITextField!
+    @IBOutlet weak var splitPayTF: UITextField!
     @IBOutlet weak var userCredentialTextField: UITextField!
     @IBOutlet weak var txnIDTextField: UITextField!
     @IBOutlet weak var merchantAccessKeyTextField: UITextField!
     @IBOutlet weak var merchantSecretKeyTextField: UITextField!
 
+    @IBOutlet weak var splitPayStackView: UIStackView!
     //SI
     @IBOutlet weak var siSwitch: UISwitch!
     @IBOutlet weak var billingIntervalTf: UITextField!
@@ -45,6 +47,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var logoNameTextField: UITextField!
     @IBOutlet weak var showCancelDialogOnCheckoutScreenSwitch: UISwitch!
     @IBOutlet weak var showCancelDialogOnPaymentScreenSwitch: UISwitch!
+    @IBOutlet weak var splitPaySwitch: UISwitch!
     @IBOutlet weak var enableNativeOTPSwitch: UISwitch!
     @IBOutlet weak var orderDetailTextView: UITextView!
     @IBOutlet weak var l1OptionTextView: UITextView!
@@ -53,6 +56,7 @@ class MerchantViewController: UIViewController {
     
     // CB Configuration
     @IBOutlet weak var autoOTPSelectSwitch: UISwitch!
+    @IBOutlet weak var surePayCountTextField: UITextField!
     @IBOutlet weak var merchantResponseTimeoutTextField: UITextField!
     @IBOutlet weak var autoOTPSubmitSwitch: UISwitch!
 
@@ -74,8 +78,8 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
 
     // MARK: - Variables -
-    let keySalt = [["cyA04w", "CJOdS6HB", Environment.production],
-                   ["gtKFFx", "CJOdS6HB", Environment.test]]
+    let keySalt = [["3TnMpV", "<Please enter your salt here>", Environment.production],
+                   ["gtKFFx", "<Please enter your salt here>", Environment.test]]
 
     let indexKeySalt = 0
     var amount: String = "1"
@@ -87,7 +91,7 @@ class MerchantViewController: UIViewController {
     var email: String = "umang@arya.com"
     var phoneNumber: String = "9876543210"
     var userCredential: String = "umang:arya123"
-    var primaryColor: String = "#053ac1"
+    var primaryColor: String = "#25272C"
     var secondaryColor: String = "#ffffff"
     var merchantName: String = "Gabbar"
     var logoName: String = "Logo"
@@ -97,7 +101,9 @@ class MerchantViewController: UIViewController {
     var l1Option: String = "[{\"NetBanking\":\"\"},{\"EMI\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
     var offerDetail: String = "[[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"CardsOfferKey@11311\",\"Cards,NetBanking\"],]"
     var customNotes: String = "[{\"Hi, This is a custom note for payment modes.\":[]},{\"Hi, This is a custom note for payment options.\":[\"Cards\",\"NetBanking\",\"upi\",\"Wallet\",\"Sodexo\",\"NeftRtgs\",\"EMI\",\"SavedCard\"]}]"
+    var splitPayRequest: String = "{\"type\":\"absolute\",\"splitInfo\":{\"imAJ7I\":{\"aggregatorSubTxnId\":\"Testchild123\",\"aggregatorSubAmt\":\"5\"},\"qOoYIv\":{\"aggregatorSubTxnId\":\"Testchild098\",\"aggregatorSubAmt\":\"5\"}}}"
     var autoOTPSelect: Bool = true
+    var surePayCount: String = "2"
     var merchantResponseTimeout: String = "4"
     var sodexoResponseTimeout: String = "4"
     var recurringAmount = "1"
@@ -111,8 +117,8 @@ class MerchantViewController: UIViewController {
     let toolBar = UIToolbar()
     var merchantAccessKey: String = "E5ABOXOWAAZNXB6JEF5Z"
     let merchantSecretKey = "e425e539233044146a2d185a346978794afd7c66"
-    let sodexoSourceId = "src_80ab1159-e4b3-49c6-8dfc-83414429393a"
-    
+    let sodexoSourceId = "src_b0d97b32-3900-421a-bc25-5c9924dbc171"
+
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -184,7 +190,10 @@ class MerchantViewController: UIViewController {
         }
     }
     
-
+    @IBAction func enableSplitPay(_ sender: UISwitch) {
+        splitPayStackView.isHidden = !sender.isOn
+    }
+    
     @IBAction func billingCycleBtnAxn(_ sender: Any) {
         let sheet = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         for billingCycle in PayUBillingCycle.allCases{
@@ -239,6 +248,7 @@ extension MerchantViewController {
         offerDetailTextView.text = offerDetail
         customNotesDetailTextView.text = customNotes
         autoOTPSelectSwitch.isOn = autoOTPSelect
+        surePayCountTextField.text = surePayCount
         merchantResponseTimeoutTextField.text = merchantResponseTimeout
         sodexoCardBalanceAPITimeoutTextField.text = sodexoResponseTimeout
         recurringAmountTf.text = recurringAmount
@@ -251,6 +261,7 @@ extension MerchantViewController {
         merchantAccessKeyTextField.text = merchantAccessKey
         merchantSecretKeyTextField.text = merchantSecretKey
         sodexoCardSourceIdTextField.text = sodexoSourceId
+        splitPayTF.text = splitPayRequest
     }
     
     private func getPaymentParam() -> PayUPaymentParam{
@@ -281,21 +292,24 @@ extension MerchantViewController {
 
             paymentParam.siParam = siInfo
         }
+        if splitPaySwitch.isOn {
+            paymentParam.splitPaymentDetails = splitPayTF.text
+        }
         paymentParam.userCredential = userCredentialTextField.text
-        paymentParam.enableNativeOTP = false
-//        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
-//        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
-//        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
-//        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
-//        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
-//        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
+        paymentParam.enableNativeOTP = self.enableNativeOTPSwitch.isOn
+        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
+        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
+        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
+        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
+        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
 
 //        paymentParam.environment = .test
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
 //        paymentParam.additionalParam[HashConstant.vasForMobileSDK] = "6a71a10f33e61ca88307b2e0f97d6ed94cc1a7daf7ba8883dda1bd1079ec3f8c526354e1f9b4ef0f59c90248d91c30fbb58971fcc291e0a7beddf7cc3783966b"
 //        paymentParam.additionalParam[HashConstant.payment] = "f43bd495b110ebe63038bb8152b0083cb3bd227e9db8dab6d3fb8c2cb38c3fece787bba76adf755405b549f00b3264d996233ec02fce973f8ff24ba1e7751cbe"
         
-//        paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
+        paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
 
         return paymentParam
     }
@@ -329,7 +343,10 @@ extension MerchantViewController {
         // CB Configurations
         config.autoSelectOtp = autoOTPSelectSwitch.isOn
         config.autoSubmitOtp = autoOTPSubmitSwitch.isOn
-
+        if let surePayCountStr = surePayCountTextField.text,
+            let surePayCount = UInt(surePayCountStr) {
+            config.surePayCount = surePayCount
+        }
         if let merchantResponseTimeoutStr = merchantResponseTimeoutTextField.text,
             let merchantResponseTimeout = TimeInterval(merchantResponseTimeoutStr) {
             config.merchantResponseTimeout = merchantResponseTimeout
@@ -354,66 +371,66 @@ extension MerchantViewController {
     func getEnforcePaymentModesList() -> [[String: Any]]? {
         var enforcePaymentList = [[String: Any]]()
   
-//        var nbEnforcement = [String: Any]()
-//        nbEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.nb
-//
-//        var ccdcEnforcement = [String: Any]()
-//        ccdcEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.card
-//
-//        if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
-//            let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
-//            ccdcEnforcement[PaymentParamConstant.cardType] = cardType
-//        }
-//
-//        var upiEnforcement = [String: Any]()
-//        upiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.upi
-//
-//        var walletEnforcement = [String: Any]()
-//        walletEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.wallet
-//
-//        var emiEnforcement = [String: Any]()
-//        emiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.emi
-//
-//        var neftRtgsEnforcement = [String: Any]()
-//        neftRtgsEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.neftrtgs
-//
-//        var sodexoEnforcement = [String: Any]()
-//        sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
-//
-//        var otherEnforcement = [String: Any]()
-//        otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
+        var nbEnforcement = [String: Any]()
+        nbEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.nb
+   
+        var ccdcEnforcement = [String: Any]()
+        ccdcEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.card
+       
+        if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
+            let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
+            ccdcEnforcement[PaymentParamConstant.cardType] = cardType
+        }
+    
+        var upiEnforcement = [String: Any]()
+        upiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.upi
 
-//        if enforceNBSwitch.isOn {
-//            enforcePaymentList.append(nbEnforcement)
-//        }
-//
-//        if enforceCardsSwitch.isOn {
-//            enforcePaymentList.append(ccdcEnforcement)
-//        }
-//
-//        if enforceUPISwitch.isOn {
-//            enforcePaymentList.append(upiEnforcement)
-//        }
-//
-//        if enforceWalletSwitch.isOn {
-//            enforcePaymentList.append(walletEnforcement)
-//        }
-//
-//        if enforceEMISwitch.isOn {
-//            enforcePaymentList.append(emiEnforcement)
-//        }
-//
-//        if enforceNeftRtgsSwitch.isOn {
-//            enforcePaymentList.append(neftRtgsEnforcement)
-//        }
-//
-//        if enforceSodexoSwitch.isOn {
-//            enforcePaymentList.append(sodexoEnforcement)
-//        }
-//
-//        if enforceOtherSwitch.isOn {
-//            enforcePaymentList.append(otherEnforcement)
-//        }
+        var walletEnforcement = [String: Any]()
+        walletEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.wallet
+
+        var emiEnforcement = [String: Any]()
+        emiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.emi
+
+        var neftRtgsEnforcement = [String: Any]()
+        neftRtgsEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.neftrtgs
+
+        var sodexoEnforcement = [String: Any]()
+        sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
+
+        var otherEnforcement = [String: Any]()
+        otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
+
+        if enforceNBSwitch.isOn {
+            enforcePaymentList.append(nbEnforcement)
+        }
+
+        if enforceCardsSwitch.isOn {
+            enforcePaymentList.append(ccdcEnforcement)
+        }
+
+        if enforceUPISwitch.isOn {
+            enforcePaymentList.append(upiEnforcement)
+        }
+
+        if enforceWalletSwitch.isOn {
+            enforcePaymentList.append(walletEnforcement)
+        }
+
+        if enforceEMISwitch.isOn {
+            enforcePaymentList.append(emiEnforcement)
+        }
+
+        if enforceNeftRtgsSwitch.isOn {
+            enforcePaymentList.append(neftRtgsEnforcement)
+        }
+
+        if enforceSodexoSwitch.isOn {
+            enforcePaymentList.append(sodexoEnforcement)
+        }
+
+        if enforceOtherSwitch.isOn {
+            enforcePaymentList.append(otherEnforcement)
+        }
 
         return enforcePaymentList
     }
@@ -501,15 +518,16 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // handle txn cancelled scenario
         // isTxnInitiated == YES, means user cancelled the txn when on reaching bankPage
         // isTxnInitiated == NO, means user cancelled the txn before reaching the bankPage
-        navigationController?.popToViewController(self, animated: true)
+//        navigationController?.popToViewController(self, animated: true)
         let completeResponse = "isTxnInitiated = \(isTxnInitiated)"
-        showAlert(title: "Cancelled", message: "\(completeResponse)")
+//        showAlert(title: "Cancelled", message: "\(completeResponse)")
     }
     
     
     func generateHash(for param: DictOfString, onCompletion: @escaping PayUHashGenerationCompletion) {
         let commandName = (param[HashConstant.hashName] ?? "")
         let hashStringWithoutSalt = (param[HashConstant.hashString] ?? "")
+        let postSalt = param[HashConstant.postSalt]
         // get hash for "commandName" from server
         // get hash for "hashStringWithoutSalt" from server
         
@@ -519,6 +537,9 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         var hashValue = ""
         if commandName == HashConstant.mcpLookup {
             hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
+        } else if let postSalt = postSalt{
+            let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
+            hashValue = Utils.sha512Hex(string: hashString)
         } else {
             hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
         }

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23A0AFE66982366A9722005A /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3175454224D3AB7F9792F6 /* Pods_CheckoutProSwiftSampleApp.framework */; };
+		A09C2914A26E4D98E8F3CD1E /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */; };
 		DD5EC46724B5A9390006F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46524B5A9390006F3CD /* Main.storyboard */; };
 		DD5EC46C24B5A93B0006F3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46A24B5A93B0006F3CD /* LaunchScreen.storyboard */; };
 		DD5EC4AE24B5ABC00006F3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC4AC24B5ABC00006F3CD /* Assets.xcassets */; };
@@ -30,9 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01B180E460D8442CEF809482 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.release.xcconfig"; sourceTree = "<group>"; };
-		4A3175454224D3AB7F9792F6 /* Pods_CheckoutProSwiftSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutProSwiftSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6A15B8A77E33D35A39E5BCB /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutProSwiftSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		DD5EC45C24B5A9390006F3CD /* CheckoutProSwiftSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutProSwiftSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EC46624B5A9390006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5EC46B24B5A93B0006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,17 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A0AFE66982366A9722005A /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
+				A09C2914A26E4D98E8F3CD1E /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		239B96CEB10EC62D91B11C8A /* Frameworks */ = {
+		37A6B4BAD8D4BE6C707315AB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4A3175454224D3AB7F9792F6 /* Pods_CheckoutProSwiftSampleApp.framework */,
+				7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 				DD5EC45E24B5A9390006F3CD /* CheckoutProSwiftSampleApp */,
 				DD5EC45D24B5A9390006F3CD /* Products */,
 				E6F56D2D778620C20F299243 /* Pods */,
-				239B96CEB10EC62D91B11C8A /* Frameworks */,
+				37A6B4BAD8D4BE6C707315AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +116,8 @@
 		E6F56D2D778620C20F299243 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D6A15B8A77E33D35A39E5BCB /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */,
-				01B180E460D8442CEF809482 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */,
+				111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */,
+				B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -129,13 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5EC47024B5A93B0006F3CD /* Build configuration list for PBXNativeTarget "CheckoutProSwiftSampleApp" */;
 			buildPhases = (
-				F54D32C70987A27B7B28FD5D /* [CP] Check Pods Manifest.lock */,
+				B963CF87666204B15A16F719 /* [CP] Check Pods Manifest.lock */,
 				DD5EC45824B5A9390006F3CD /* Sources */,
 				DD5EC45924B5A9390006F3CD /* Frameworks */,
 				DD5EC45A24B5A9390006F3CD /* Resources */,
 				DD5EC50B24B5B3EF0006F3CD /* Embed Frameworks */,
 				DD2BCF6324B7F3550002275F /* Slicing Script */,
-				EE597B49C55F418B654DFA87 /* [CP] Embed Pods Frameworks */,
+				5846D6264A411555F5D3F280 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,25 +193,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		DD2BCF6324B7F3550002275F /* Slicing Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Slicing Script";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APP_PATH=\"dd${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
-		};
-		EE597B49C55F418B654DFA87 /* [CP] Embed Pods Frameworks */ = {
+		5846D6264A411555F5D3F280 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -228,7 +210,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F54D32C70987A27B7B28FD5D /* [CP] Check Pods Manifest.lock */ = {
+		B963CF87666204B15A16F719 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,6 +231,24 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		DD2BCF6324B7F3550002275F /* Slicing Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Slicing Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"dd${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -401,7 +401,7 @@
 		};
 		DD5EC47124B5A93B0006F3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A15B8A77E33D35A39E5BCB /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */;
+			baseConfigurationReference = 111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,7 +426,7 @@
 		};
 		DD5EC47224B5A93B0006F3CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B180E460D8442CEF809482 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */;
+			baseConfigurationReference = B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
