@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 import Foundation
 import PayUAssetLibraryKit
@@ -247,6 +247,7 @@ public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.P
 @objc @_inheritsConvenienceInitializers @objcMembers public class HashConstant : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
   @objc public static let hashName: Swift.String
+  @objc public static let postSalt: Swift.String
   @objc public static let payment: Swift.String
   @objc public static let paymentRelatedDetailForMobileSDK: Swift.String
   @objc public static let vasForMobileSDK: Swift.String

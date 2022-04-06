@@ -74,10 +74,10 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
 
     // MARK: - Variables -
-    let keySalt = [["3TnMpV", "Please_add_test_salt_here", Environment.production],
-                   ["gtKFFx", "Please_add_test_salt_here", Environment.test]]
+    let keySalt = [["cyA04w", "CJOdS6HB", Environment.production],
+                   ["gtKFFx", "CJOdS6HB", Environment.test]]
 
-    let indexKeySalt = 1
+    let indexKeySalt = 0
     var amount: String = "1"
 
     var productInfo: String = "Nokia"
@@ -282,20 +282,20 @@ extension MerchantViewController {
             paymentParam.siParam = siInfo
         }
         paymentParam.userCredential = userCredentialTextField.text
-        paymentParam.enableNativeOTP = self.enableNativeOTPSwitch.isOn
-        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
-        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
-        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
-        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
-        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
-        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
+        paymentParam.enableNativeOTP = false
+//        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
+//        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
+//        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
+//        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
+//        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+//        paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
 
 //        paymentParam.environment = .test
 //        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
 //        paymentParam.additionalParam[HashConstant.vasForMobileSDK] = "6a71a10f33e61ca88307b2e0f97d6ed94cc1a7daf7ba8883dda1bd1079ec3f8c526354e1f9b4ef0f59c90248d91c30fbb58971fcc291e0a7beddf7cc3783966b"
 //        paymentParam.additionalParam[HashConstant.payment] = "f43bd495b110ebe63038bb8152b0083cb3bd227e9db8dab6d3fb8c2cb38c3fece787bba76adf755405b549f00b3264d996233ec02fce973f8ff24ba1e7751cbe"
         
-        paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
+//        paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
 
         return paymentParam
     }
@@ -354,66 +354,66 @@ extension MerchantViewController {
     func getEnforcePaymentModesList() -> [[String: Any]]? {
         var enforcePaymentList = [[String: Any]]()
   
-        var nbEnforcement = [String: Any]()
-        nbEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.nb
-   
-        var ccdcEnforcement = [String: Any]()
-        ccdcEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.card
-       
-        if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
-            let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
-            ccdcEnforcement[PaymentParamConstant.cardType] = cardType
-        }
-    
-        var upiEnforcement = [String: Any]()
-        upiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.upi
+//        var nbEnforcement = [String: Any]()
+//        nbEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.nb
+//
+//        var ccdcEnforcement = [String: Any]()
+//        ccdcEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.card
+//
+//        if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
+//            let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
+//            ccdcEnforcement[PaymentParamConstant.cardType] = cardType
+//        }
+//
+//        var upiEnforcement = [String: Any]()
+//        upiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.upi
+//
+//        var walletEnforcement = [String: Any]()
+//        walletEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.wallet
+//
+//        var emiEnforcement = [String: Any]()
+//        emiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.emi
+//
+//        var neftRtgsEnforcement = [String: Any]()
+//        neftRtgsEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.neftrtgs
+//
+//        var sodexoEnforcement = [String: Any]()
+//        sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
+//
+//        var otherEnforcement = [String: Any]()
+//        otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
 
-        var walletEnforcement = [String: Any]()
-        walletEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.wallet
-
-        var emiEnforcement = [String: Any]()
-        emiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.emi
-
-        var neftRtgsEnforcement = [String: Any]()
-        neftRtgsEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.neftrtgs
-
-        var sodexoEnforcement = [String: Any]()
-        sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
-
-        var otherEnforcement = [String: Any]()
-        otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
-
-        if enforceNBSwitch.isOn {
-            enforcePaymentList.append(nbEnforcement)
-        }
-
-        if enforceCardsSwitch.isOn {
-            enforcePaymentList.append(ccdcEnforcement)
-        }
-
-        if enforceUPISwitch.isOn {
-            enforcePaymentList.append(upiEnforcement)
-        }
-
-        if enforceWalletSwitch.isOn {
-            enforcePaymentList.append(walletEnforcement)
-        }
-
-        if enforceEMISwitch.isOn {
-            enforcePaymentList.append(emiEnforcement)
-        }
-
-        if enforceNeftRtgsSwitch.isOn {
-            enforcePaymentList.append(neftRtgsEnforcement)
-        }
-
-        if enforceSodexoSwitch.isOn {
-            enforcePaymentList.append(sodexoEnforcement)
-        }
-
-        if enforceOtherSwitch.isOn {
-            enforcePaymentList.append(otherEnforcement)
-        }
+//        if enforceNBSwitch.isOn {
+//            enforcePaymentList.append(nbEnforcement)
+//        }
+//
+//        if enforceCardsSwitch.isOn {
+//            enforcePaymentList.append(ccdcEnforcement)
+//        }
+//
+//        if enforceUPISwitch.isOn {
+//            enforcePaymentList.append(upiEnforcement)
+//        }
+//
+//        if enforceWalletSwitch.isOn {
+//            enforcePaymentList.append(walletEnforcement)
+//        }
+//
+//        if enforceEMISwitch.isOn {
+//            enforcePaymentList.append(emiEnforcement)
+//        }
+//
+//        if enforceNeftRtgsSwitch.isOn {
+//            enforcePaymentList.append(neftRtgsEnforcement)
+//        }
+//
+//        if enforceSodexoSwitch.isOn {
+//            enforcePaymentList.append(sodexoEnforcement)
+//        }
+//
+//        if enforceOtherSwitch.isOn {
+//            enforcePaymentList.append(otherEnforcement)
+//        }
 
         return enforcePaymentList
     }

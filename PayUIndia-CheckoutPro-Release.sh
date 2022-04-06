@@ -50,10 +50,10 @@ podTrunkPush() {
 }
 
 podName="PayUIndia-CheckoutPro"
-podVersion="4.2.0"
+podVersion="4.3.0"
 
 podSpec="${podName}.podspec"
-tag="${podName}_${podVersion}"
+tag="${podVersion}"
 
 podLibLint ${podSpec} &&
 createLocalTag ${tag} &&

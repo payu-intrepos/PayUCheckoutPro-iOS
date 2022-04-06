@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/iOS-Custom-Browser.git",
         "state": {
           "branch": null,
-          "revision": "c350226424b7633e874e3f826ddb65e00ab27332",
-          "version": "8.0.0"
+          "revision": "896b46d7b91ef014428405d727d557bbc6d8354e",
+          "version": "9.0.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK.git",
         "state": {
           "branch": null,
-          "revision": "9826c758557a87a65869baff1a174c51db81935c",
-          "version": "7.1.0"
+          "revision": "405033b8bcc9c67a5114113537951556557f650c",
+          "version": "8.2.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "731685185033b93f893e6194019ca15f6e79ad90",
-          "version": "3.1.0"
+          "revision": "7113badcd2f748a4be5b85084020ae0d7a626ad4",
+          "version": "3.3.0"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "f06f1cf9e6b882bb863b34e30b125065378ec8c1",
-          "version": "6.0.0"
+          "revision": "3c229d2ad27a63a385948a71112839a61400d6c5",
+          "version": "6.0.2"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
         "state": {
           "branch": null,
-          "revision": "f2e3ba194d45302bc7e5f6986a47894323bdfb94",
-          "version": "2.0.0"
+          "revision": "4fff00a59f22f327ca88cbfaf749aebdd9e4b1c0",
+          "version": "2.1.1"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAssetLibrary-iOS.git",
         "state": {
           "branch": null,
-          "revision": "0ca2187e27b8e9038680c6c42ecc3554c12f6215",
-          "version": "3.0.0"
+          "revision": "9d8c556cd30fcbd0a06eda9bcecee8ef2e00e5e1",
+          "version": "3.1.1"
         }
       },
       {
@@ -60,8 +60,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git",
         "state": {
           "branch": null,
-          "revision": "a4ffe60807d35a830a06196dab83e07d09e10612",
-          "version": "2.0.0"
+          "revision": "b342e44234a247752a5fa945851f9107e5efaf99",
+          "version": "2.0.1"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
         "state": {
           "branch": null,
-          "revision": "7ad292dce36d9d02d76a3d624e79b5ff0a12f0d4",
-          "version": "2.0.0"
+          "revision": "318b96337d1997c8472ddd1c870e3321de8d6925",
+          "version": "2.1.0"
         }
       },
       {
@@ -78,26 +78,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS.git",
         "state": {
           "branch": null,
-          "revision": "4c023a01a4e1cd03641b538c3495a496724effec",
-          "version": "2.0.0"
-        }
-      },
-      {
-        "package": "SocketIO",
-        "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift.git",
-        "state": {
-          "branch": null,
-          "revision": "5044cefc9f326b2db89ceed9cb8fe51f429cf289",
-          "version": "18.0.0"
-        }
-      },
-      {
-        "package": "Starscream",
-        "repositoryURL": "https://github.com/ShubhGar/Starscream",
-        "state": {
-          "branch": null,
-          "revision": "12202be2d18098d2c29e1433a921675f35522a20",
-          "version": "5.0.0"
+          "revision": "c477d6c84e609c24193e4fb76cadc40935d1838b",
+          "version": "2.0.1"
         }
       }
     ]

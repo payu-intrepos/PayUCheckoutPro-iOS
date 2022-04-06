@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "0934fcc1d123b613753d6de3187b361cb90df4b1",
-          "version": "3.2.0"
+          "revision": "d172d763c87ede1e2f5def385236b0c8cfdbcaa3",
+          "version": "3.2.1"
         }
       },
       {
@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
         "state": {
           "branch": null,
-          "revision": "7080d44a92754020e30a7ec742f95200db8afdab",
-          "version": "2.1.0"
+          "revision": "4fff00a59f22f327ca88cbfaf749aebdd9e4b1c0",
+          "version": "2.1.1"
         }
       },
       {
@@ -51,8 +51,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUAssetLibrary-iOS.git",
         "state": {
           "branch": null,
-          "revision": "2ca7041529579e937e098bee64191a585ee4c2a0",
-          "version": "3.1.0"
+          "revision": "9d8c556cd30fcbd0a06eda9bcecee8ef2e00e5e1",
+          "version": "3.1.1"
         }
       },
       {
@@ -69,8 +69,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git",
         "state": {
           "branch": null,
-          "revision": "a4ffe60807d35a830a06196dab83e07d09e10612",
-          "version": "2.0.0"
+          "revision": "b342e44234a247752a5fa945851f9107e5efaf99",
+          "version": "2.0.1"
         }
       },
       {
@@ -78,8 +78,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
         "state": {
           "branch": null,
-          "revision": "318b96337d1997c8472ddd1c870e3321de8d6925",
-          "version": "2.1.0"
+          "revision": "c5127e3b75d3f00d1837e824288b3c90c1474d22",
+          "version": "2.1.1"
         }
       },
       {
@@ -87,8 +87,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNetworkReachability-iOS.git",
         "state": {
           "branch": null,
-          "revision": "4c023a01a4e1cd03641b538c3495a496724effec",
-          "version": "2.0.0"
+          "revision": "c477d6c84e609c24193e4fb76cadc40935d1838b",
+          "version": "2.0.1"
         }
       },
       {
@@ -96,7 +96,7 @@
         "repositoryURL": "https://github.com/ShubhGar/socket.io-client-swift.git",
         "state": {
           "branch": null,
-          "revision": "5044cefc9f326b2db89ceed9cb8fe51f429cf289",
+          "revision": "d1bfe5823c0df186569f3ef70c909a8a28a2f72d",
           "version": "18.0.0"
         }
       },
@@ -105,8 +105,8 @@
         "repositoryURL": "https://github.com/ShubhGar/Starscream",
         "state": {
           "branch": null,
-          "revision": "12202be2d18098d2c29e1433a921675f35522a20",
-          "version": "5.0.0"
+          "revision": "74d6b3b60f1e86aea1b60e7442035a3be10d811d",
+          "version": "5.0.1"
         }
       }
     ]
