@@ -518,9 +518,9 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // handle txn cancelled scenario
         // isTxnInitiated == YES, means user cancelled the txn when on reaching bankPage
         // isTxnInitiated == NO, means user cancelled the txn before reaching the bankPage
-//        navigationController?.popToViewController(self, animated: true)
+        navigationController?.popToViewController(self, animated: true)
         let completeResponse = "isTxnInitiated = \(isTxnInitiated)"
-//        showAlert(title: "Cancelled", message: "\(completeResponse)")
+        showAlert(title: "Cancelled", message: "\(completeResponse)")
     }
     
     
