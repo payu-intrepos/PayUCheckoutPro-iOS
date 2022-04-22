@@ -52,7 +52,8 @@ let package = Package(
                 "PayUIndia-AssetLibrary",
                 "PayUIndia-PG-SDK",
                 "PayUIndia-NativeOtpAssist",
-                "PayUIndia-Custom-Browser"
+                "PayUIndia-Custom-Browser",
+                "PayUIndia-CardScanner"
             ],
             path: "Wrappers/PayUIndia-CheckoutProWrapper"
         ),
