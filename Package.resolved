@@ -65,6 +65,15 @@
         }
       },
       {
+        "package": "PayUIndia-CardScanner",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUIndia-CardScanner-iOS.git",
+        "state": {
+          "branch": null,
+          "revision": "54d6e1474f5f7ce89871f22d5093950a5376d50e",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "PayUIndia-NativeOtpAssist",
         "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
         "state": {
