@@ -1,0 +1,4 @@
+framework module PayUCardScannerKit {
+  header "PayUCardScannerKit-Swift.h"
+  requires objc
+}

@@ -1,0 +1,83 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCardScannerKit
+import AVFoundation
+import Foundation
+import Swift
+import UIKit
+import VideoToolbox
+import Vision
+import _Concurrency
+@_inheritsConvenienceInitializers @objc public class PUCardRecognizer : ObjectiveC.NSObject {
+  @objc public var number: PayUCardScannerKit.PUTextRecognizer?
+  @objc public var expiryMonth: PayUCardScannerKit.PUTextRecognizer?
+  @objc public var expiryYear: PayUCardScannerKit.PUTextRecognizer?
+  @objc public var name: PayUCardScannerKit.PUTextRecognizer?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class PUTextRecognizer : ObjectiveC.NSObject {
+  @objc final public let text: Swift.String
+  @objc public var confidence: PayUCardScannerKit.PUTextConfidence
+  @objc public init(with text: Swift.String, confidence: PayUCardScannerKit.PUTextConfidence)
+  @objc deinit
+}
+@objc public enum PUTextConfidence : Swift.Int {
+  case low
+  case mid
+  case high
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public class PUError : ObjectiveC.NSObject, Foundation.LocalizedError {
+  @objc public enum Kind : Swift.Int {
+    case cameraSetup, photoProcessing, authorizationDenied, capture, userCancelled, cameraPermissionNotPresent
+    public init?(rawValue: Swift.Int)
+    public typealias RawValue = Swift.Int
+    public var rawValue: Swift.Int {
+      get
+    }
+  }
+  @objc public var kind: PayUCardScannerKit.PUError.Kind
+  @objc public var underlyingError: Swift.Error?
+  @objc public var errorDescription: Swift.String? {
+    @objc get
+  }
+  @objc public init(kind: PayUCardScannerKit.PUError.Kind, underlyingError: Swift.Error?)
+  @objc deinit
+}
+public struct PURegex : Swift.ExpressibleByStringLiteral {
+  public typealias StringLiteralType = Swift.String
+  public init(stringLiteral value: PayUCardScannerKit.PURegex.StringLiteralType)
+  public init(_ string: Swift.String)
+  public func matches(in string: Swift.String) -> [Swift.String]
+  public func hasMatch(in string: Swift.String) -> Swift.Bool
+  public func firstMatch(in string: Swift.String) -> Swift.String?
+  public func replacingOccurrences(in string: Swift.String, with replacement: Swift.String = "") -> Swift.String?
+  public func captures(in string: Swift.String) -> [Swift.String]
+  public typealias ExtendedGraphemeClusterLiteralType = PayUCardScannerKit.PURegex.StringLiteralType
+  public typealias UnicodeScalarLiteralType = PayUCardScannerKit.PURegex.StringLiteralType
+}
+infix operator =~ : DefaultPrecedence
+infix operator !~ : DefaultPrecedence
+extension PayUCardScannerKit.PURegex {
+  public static func =~ (string: Swift.String, regex: PayUCardScannerKit.PURegex) -> Swift.Bool
+  public static func =~ (regex: PayUCardScannerKit.PURegex, string: Swift.String) -> Swift.Bool
+  public static func !~ (string: Swift.String, regex: PayUCardScannerKit.PURegex) -> Swift.Bool
+  public static func !~ (regex: PayUCardScannerKit.PURegex, string: Swift.String) -> Swift.Bool
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, *)
+@objc public class PUCardScanner : ObjectiveC.NSObject {
+  @objc public static let shared: PayUCardScannerKit.PUCardScanner
+  @objc public func openScanner(from vc: UIKit.UIViewController, completion: @escaping ((PayUCardScannerKit.PUCardRecognizer?, PayUCardScannerKit.PUError?) -> Swift.Void))
+  @objc deinit
+}
+extension PayUCardScannerKit.PUTextConfidence : Swift.Equatable {}
+extension PayUCardScannerKit.PUTextConfidence : Swift.Hashable {}
+extension PayUCardScannerKit.PUTextConfidence : Swift.RawRepresentable {}
+extension PayUCardScannerKit.PUError.Kind : Swift.Equatable {}
+extension PayUCardScannerKit.PUError.Kind : Swift.Hashable {}
+extension PayUCardScannerKit.PUError.Kind : Swift.RawRepresentable {}
