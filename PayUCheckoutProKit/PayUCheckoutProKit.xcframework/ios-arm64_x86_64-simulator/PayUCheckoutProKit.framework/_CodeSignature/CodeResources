@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		Y2x3GgKVMNfe4gM0a574Cq4HZb4=
+		EYr+VoUOQMTMiy0/K9fBy06CfiY=
 		</data>
 		<key>AuthenticationViewController.nib</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		bNtVeksiSoSgzfa7QCFI38WAMAA=
+		hTGZOKw3nhPkPxdtOhSsifZV7p4=
 		</data>
 		<key>ManageSavedOptionsView.nib</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		5lTpBE3AB58m8ECGdOswW1p/x/s=
+		61At3EoFm75JJbbEx09f1jhnFYE=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qRXTmry4oioJrSbRsKwCQIN+Xxo=
+		HGnJhPFhfRjID+g1HYefysYk8WE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -203,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TDHjwZhCRokmYjwHgsulj0xO0E/ERyzJSCasIlmGT44=
+			U6VkW1656fKl4F8EK0Dh80Xv/UqZR+FgF1LPemh/HIo=
 			</data>
 		</dict>
 		<key>AuthenticationViewController.nib</key>
@@ -357,7 +357,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UclOjbBn4l7LtBDtmhJH6XNgzToEssNb1W1MVgJh3nQ=
+			RIxvUwxNwpAMEoiw1SHJI9sT1lq+IUZp1Ep+hUMQT7M=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -378,7 +378,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vit01umpjaDDiiLNKT2WyjD58Yt4OIjUZYdvDPMx0Tc=
+			otpIHQnfWIx1MOmpbj3F/aVFdCxsvnyh4Uno6PmZru8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
