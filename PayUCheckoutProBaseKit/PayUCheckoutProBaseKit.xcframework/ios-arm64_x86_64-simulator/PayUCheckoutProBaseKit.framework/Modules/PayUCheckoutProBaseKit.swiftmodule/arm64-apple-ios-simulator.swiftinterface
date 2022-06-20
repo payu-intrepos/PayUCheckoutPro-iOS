@@ -6,21 +6,11 @@ import PayUParamsKit
 import Swift
 import UIKit
 import _Concurrency
-@objc public class PayUOfferDetails : ObjectiveC.NSObject {
-  @objc final public let title: Swift.String
-  @objc final public let offerDescription: Swift.String
-  @objc final public let offerKey: Swift.String
-  final public let paymentTypes: [PayUParamsKit.PaymentType]
-  @objc convenience public init?(title: Swift.String, offerDescription: Swift.String, offerKey: Swift.String, paymentTypes: [Foundation.NSNumber])
-  public init?(title: Swift.String, offerDescription: Swift.String, offerKey: Swift.String, paymentTypes: [PayUParamsKit.PaymentType])
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @objcMembers open class OnePayUBaseConfig : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers open class OnePayUBaseConfig : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var merchantName: Swift.String?
   @objc public var merchantLogo: UIKit.UIImage?
-  public var shouldShowMerchantSummary: Swift.Bool?
+  @objc public var merchantLogoURL: Swift.String?
   @objc public var paymentModesOrder: [PayUParamsKit.PaymentMode]?
-  @objc public var offerDetails: [PayUCheckoutProBaseKit.PayUOfferDetails]?
   @objc public var cartDetails: [[Swift.String : Swift.String]]?
   @objc public var showExitConfirmationOnCheckoutScreen: Swift.Bool
   @objc public var showExitConfirmationOnPaymentScreen: Swift.Bool
@@ -31,6 +21,9 @@ import _Concurrency
     @objc get
   }
   @objc public func customiseUI(primaryColor: UIKit.UIColor, secondaryColor: UIKit.UIColor)
+  @objc public func setPrimaryColor(_ color: UIKit.UIColor?)
+  @objc public func setSecondaryColor(_ color: UIKit.UIColor?)
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -55,6 +48,7 @@ import _Concurrency
   @objc public var sodexoCardBalanceAPITimeout: Swift.Double
   @objc public var customNotes: [PayUCheckoutProBaseKit.PayUCustomNote]?
   @objc public var enforcePaymentList: [[Swift.String : Any]]?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -74,7 +68,8 @@ public typealias ErrorCompletion = (_ error: Swift.Error?) -> ()
 public typealias ImageCompletion = (_ image: UIKit.UIImage?) -> ()
 public typealias CheckEligibilityCompletion = (_ response: PayUCheckoutProBaseKit.CheckEligibilityResponse) -> ()
 public typealias EMICompletion = (_ emi: PayUParamsKit.PaymentMode?, _ error: Swift.Error?) -> ()
-public typealias OfferCompletion = (_ paymentOptions: [PayUParamsKit.PaymentOption]?, _ error: Swift.Error?) -> ()
+public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOfferDetail?, _ error: Swift.Error?) -> ()
+public typealias OfferCompletion = (_ offerDetail: PayUParamsKit.PayUModelOfferDetail?, _ error: Swift.Error?) -> ()
 public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMultiCurrencyPayment?, _ error: Swift.Error?) -> ()
 public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSCInfo?, _ errorMessage: Swift.String?) -> ()
 @objc public protocol OnePayUBaseLayerDelegate {
@@ -106,7 +101,8 @@ public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSC
   @objc open func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc open func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc open func offerDetail(paymentOptions: [PayUParamsKit.PaymentOption], onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc open func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc open func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc deinit
 }
 @objc public enum ScreenState : Swift.Int {

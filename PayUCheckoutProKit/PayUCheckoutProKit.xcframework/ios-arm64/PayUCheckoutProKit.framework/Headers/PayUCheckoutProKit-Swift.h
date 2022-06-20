@@ -233,10 +233,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 
 
 
+
 SWIFT_CLASS("_TtC18PayUCheckoutProKit12HashConstant")
 @interface HashConstant : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashString;)
 + (NSString * _Nonnull)hashString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashType;)
++ (NSString * _Nonnull)hashType SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull V1;)
++ (NSString * _Nonnull)V1 SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull V2;)
++ (NSString * _Nonnull)V2 SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashName;)
 + (NSString * _Nonnull)hashName SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull postSalt;)
@@ -269,6 +276,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)mcpLookup SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull checkBalance;)
 + (NSString * _Nonnull)checkBalance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkConfiguration;)
++ (NSString * _Nonnull)sdkConfiguration SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -304,7 +313,6 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 @end
-
 
 @class UIColor;
 @class NSCoder;
@@ -449,6 +457,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
