@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A09C2914A26E4D98E8F3CD1E /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */; };
+		6EDAD41041568D190F6D077F /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E704C13C727A6C3F74A453F /* Pods_CheckoutProSwiftSampleApp.framework */; };
 		DD5EC46724B5A9390006F3CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46524B5A9390006F3CD /* Main.storyboard */; };
 		DD5EC46C24B5A93B0006F3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC46A24B5A93B0006F3CD /* LaunchScreen.storyboard */; };
 		DD5EC4AE24B5ABC00006F3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD5EC4AC24B5ABC00006F3CD /* Assets.xcassets */; };
@@ -30,9 +30,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
-		7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutProSwiftSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		3E6C7382F777FF3DB5C4452A /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		9E704C13C727A6C3F74A453F /* Pods_CheckoutProSwiftSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CheckoutProSwiftSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9CC886E9C09ECD597EEDCF9 /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DD5EC45C24B5A9390006F3CD /* CheckoutProSwiftSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CheckoutProSwiftSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD5EC46624B5A9390006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD5EC46B24B5A93B0006F3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,17 +48,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A09C2914A26E4D98E8F3CD1E /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
+				6EDAD41041568D190F6D077F /* Pods_CheckoutProSwiftSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37A6B4BAD8D4BE6C707315AB /* Frameworks */ = {
+		02679ED1CC09ED93AF2D0B3A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7528852E0FE127D70E88F1FB /* Pods_CheckoutProSwiftSampleApp.framework */,
+				9E704C13C727A6C3F74A453F /* Pods_CheckoutProSwiftSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 				DD5EC45E24B5A9390006F3CD /* CheckoutProSwiftSampleApp */,
 				DD5EC45D24B5A9390006F3CD /* Products */,
 				E6F56D2D778620C20F299243 /* Pods */,
-				37A6B4BAD8D4BE6C707315AB /* Frameworks */,
+				02679ED1CC09ED93AF2D0B3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,8 +116,8 @@
 		E6F56D2D778620C20F299243 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */,
-				B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */,
+				C9CC886E9C09ECD597EEDCF9 /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */,
+				3E6C7382F777FF3DB5C4452A /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -129,13 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD5EC47024B5A93B0006F3CD /* Build configuration list for PBXNativeTarget "CheckoutProSwiftSampleApp" */;
 			buildPhases = (
-				B963CF87666204B15A16F719 /* [CP] Check Pods Manifest.lock */,
+				6BF91FAFE6165D105133E220 /* [CP] Check Pods Manifest.lock */,
 				DD5EC45824B5A9390006F3CD /* Sources */,
 				DD5EC45924B5A9390006F3CD /* Frameworks */,
 				DD5EC45A24B5A9390006F3CD /* Resources */,
 				DD5EC50B24B5B3EF0006F3CD /* Embed Frameworks */,
 				DD2BCF6324B7F3550002275F /* Slicing Script */,
-				5846D6264A411555F5D3F280 /* [CP] Embed Pods Frameworks */,
+				075ED7FB057D72D4085E74A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +193,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5846D6264A411555F5D3F280 /* [CP] Embed Pods Frameworks */ = {
+		075ED7FB057D72D4085E74A9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,7 +210,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B963CF87666204B15A16F719 /* [CP] Check Pods Manifest.lock */ = {
+		6BF91FAFE6165D105133E220 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,7 +401,7 @@
 		};
 		DD5EC47124B5A93B0006F3CD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 111C16A5C9617DDD70FDDE0D /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */;
+			baseConfigurationReference = C9CC886E9C09ECD597EEDCF9 /* Pods-CheckoutProSwiftSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -426,7 +426,7 @@
 		};
 		DD5EC47224B5A93B0006F3CD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B408B18B9FD54D01121644C3 /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */;
+			baseConfigurationReference = 3E6C7382F777FF3DB5C4452A /* Pods-CheckoutProSwiftSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

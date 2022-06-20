@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <PayUCheckoutProKit/PayUCheckoutProKit.h>
 #import <PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.h>
+#import <PayUBizCoreKit/PayUBizCoreKit.h>
 #import <PayUParamsKit/PayUParamsKit.h>
 #import "Utils.h"
 
@@ -27,52 +28,19 @@
 #pragma mark Helper Methods
 
 - (PayUPaymentParam *) paymentParam {
-    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"gtKFFx"
+    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"<key>"
                                                              transactionId:[Utils getTransactionID]
-                                                                    amount:@"1"
+                                                                    amount:@"10000"
                                                                productInfo:@"Nokia"
                                                                  firstName:@"Umang"
                                                                      email:@"umang@arya.com"
                                                                      phone:@"9876543210"
                                                                       surl:@"https://payu.herokuapp.com/ios_success"
                                                                       furl:@"https://payu.herokuapp.com/ios_failure"
-                                                               environment:EnvironmentTest];
+                                                               environment:EnvironmentProduction];
     paymentParam.userCredential = @"umang:arya";
-    
-    paymentParam.siParam = [self siParams];
+    paymentParam.userToken = @"test";
     return paymentParam;
-}
-
-- (PayUSIParams *) siParams {
-    PayUSIParams *siParams = [[PayUSIParams alloc] initWithBillingAmount:@"123"
-                                                        paymentStartDate:[[NSDate date] dateByAddingTimeInterval:123111]
-                                                          paymentEndDate:[[NSDate date] dateByAddingTimeInterval:42312312]
-                                                            billingCycle:PayUBillingCycleDaily
-                                                         billingInterval: [NSNumber numberWithInt:12]];
-    return siParams;
-}
-
-- (NSMutableArray *) enforcePaymentList {
-    NSMutableArray * array = [NSMutableArray new];
-
-    NSDictionary *nbEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.nb};
-    NSDictionary *ccdcEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.card, PaymentParamConstant.cardType: PaymentParamConstant.cc}; //CardType : PaymentParamConstant.cc or PaymentParamConstant.dc
-    NSDictionary *upiEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.upi};
-    NSDictionary *walletEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.wallet};
-    NSDictionary *emiEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.emi};
-    NSDictionary *neftEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.neftrtgs};
-    NSDictionary *sodexoEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.sodexo};
-    NSDictionary *otherEnforcement = @{PaymentParamConstant.paymentType: PaymentParamConstant.lazypay};
-    
-    [array addObject:nbEnforcement];
-    [array addObject:ccdcEnforcement];
-    [array addObject:upiEnforcement];
-    [array addObject:walletEnforcement];
-    [array addObject:emiEnforcement];
-    [array addObject:neftEnforcement];
-    [array addObject:sodexoEnforcement];
-    [array addObject:otherEnforcement];
-    return array;
 }
 
 - (NSArray<PaymentMode *> *) getPreferredPaymentMode {
@@ -83,69 +51,16 @@
     ];
 }
 
-- (NSArray<PayUOfferDetails *> *) getOfferDetails {
-    return @[
-        [[PayUOfferDetails alloc] initWithTitle:@"20% off on cards"
-                               offerDescription:@"Get 20% instant discount on all cards. Max 100"
-                                       offerKey:@"card@20"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"10% off on netbanking"
-                               offerDescription:@"Get 10% instant discount on all netbanking. Max 100"
-                                       offerKey:@"nb@10"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"5% off on cards and netbanking"
-                               offerDescription:@"Get 5% instant discount on all cards and nb. Max 100"
-                                       offerKey:@"cardnb@5"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking],
-                                                 [NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"20% off on cards"
-                               offerDescription:@"Get 20% instant discount on all cards. Max 100"
-                                       offerKey:@"card@20"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"10% off on netbanking"
-                               offerDescription:@"Get 10% instant discount on all netbanking. Max 100"
-                                       offerKey:@"nb@10"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"5% off on cards and netbanking"
-                               offerDescription:@"Get 5% instant discount on all cards and nb. Max 100"
-                                       offerKey:@"cardnb@5"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking],
-                                                 [NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"20% off on cards"
-                               offerDescription:@"Get 20% instant discount on all cards. Max 100"
-                                       offerKey:@"card@20"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"10% off on netbanking"
-                               offerDescription:@"Get 10% instant discount on all netbanking. Max 100"
-                                       offerKey:@"nb@10"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking], nil]],
-        [[PayUOfferDetails alloc] initWithTitle:@"5% off on cards and netbanking"
-                               offerDescription:@"Get 5% instant discount on all cards and nb. Max 100"
-                                       offerKey:@"cardnb@5"
-                                   paymentTypes:[[NSArray alloc] initWithObjects:[NSNumber numberWithInt:PaymentTypeNetBanking],
-                                                 [NSNumber numberWithInt:PaymentTypeCcdc], nil]],
-    ];
-}
-
 #pragma mark IBAction methods
 
 - (IBAction)nextButtonTapped:(id)sender {
     PayUCheckoutProConfig *config = [PayUCheckoutProConfig new];
     config.merchantName = @"Umang Enterprises";
+
     config.paymentModesOrder = [self getPreferredPaymentMode];
     config.autoSelectOtp = true;
     config.merchantResponseTimeout = 8;
-    config.offerDetails = [self getOfferDetails];
-   
-    // Enforce Payment Configurations
-
-    /* // Uncomment below code to set enforcement on other payment modes
-     config.enforcePaymentList = [self enforcePaymentList];
-     */
-    
-    // CB Configurations
-    config.autoSubmitOtp = YES;
-    
+    config.surePayCount = 2;
     [PayUCheckoutPro openOn:self paymentParam:[self paymentParam] config:config delegate:self];
 }
 
@@ -154,12 +69,37 @@
 - (void)generateHashFor:(NSDictionary<NSString *,NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *,NSString *> * _Nonnull))onCompletion {
     NSString *commandName = [param objectForKey:HashConstant.hashName];
     NSString *hashStringWithoutSalt = [param objectForKey:HashConstant.hashString];
+    NSString *postSalt = [param objectForKey:HashConstant.postSalt];
+    NSString *hashType = [param objectForKey:HashConstant.hashType];
+    NSString *salt = @"<salt>";
+    NSString *secret = @"<merchant_secret>";
     // get hash for "commandName" from server
     // get hash for "hashStringWithoutSalt" from server
-    
-    
     // After fetching hash set its value in below variable "hashValue"
-    NSString *hashValue = [Utils getHash:[NSString stringWithFormat:@"%@%@",hashStringWithoutSalt,@"<Please_add_test_salt_here>"]];
+    // NSString *hashValue = @"hashValue";
+
+    if ([hashType isEqualToString:@"V2"]) {
+        NSString *signedString = [param objectForKey:KEY_SIGNING_STRING];
+        NSString *signature = @"<hmacSHA256 hash for signedString with Key salt>";
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:signature, KEY_SIGNATURE, nil];
+        onCompletion(dict);
+        return;
+    }
+    if ([commandName isEqualToString:HashConstant.mcpLookup]) {
+        NSString *hashValue = @"<hmacsha1 hash for hashStringWithoutSalt and secret>";
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
+        onCompletion(dict);
+        return;
+    }
+    if (postSalt && ![postSalt isEqualToString:@""]) {
+        NSString *hashString = [NSString stringWithFormat:@"%@%@|%@",hashStringWithoutSalt,salt,postSalt];
+        NSString *hashValue = @"<hmacsha512 hash for hashString and salt>";
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
+        onCompletion(dict);
+        return;
+    }
+    
+    NSString *hashValue = @"<hmacsha512 hash for hashStringWithoutSalt and salt>";
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
     onCompletion(dict);
 }

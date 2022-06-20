@@ -226,6 +226,101 @@ import _Concurrency
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
+@objc public class PayUModelAllOfferDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var clientID: Swift.Int, mid: Swift.Int
+  @objc public var offerAmount: Swift.Double
+  @objc public var offers: [PayUParamsKit.Offer]?
+  @objc public var skusDetail: Swift.String?
+  @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUModelAllOfferDetail?
+  @objc public init(clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, offers: [PayUParamsKit.Offer]?, skusDetail: Swift.String?)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class Offer : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?
+  @objc public var tnc: Swift.String?
+  @objc public var tncLink: Swift.String?
+  @objc public var minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double
+  @objc public var offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?
+  @objc public var discountDetail: PayUParamsKit.OfferDiscountDetail?
+  @objc public var isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool
+  @objc public var creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?
+  @objc public var netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?
+  @objc public var emi: PayUParamsKit.EmiDetail?
+  @objc public var skuDetail: Swift.String?
+  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: Swift.String?)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class CcdcDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var networks: [PayUParamsKit.NetworkDetail]?, banks: [PayUParamsKit.NetworkDetail]?
+  @objc public var title: Swift.String?, paymentCode: Swift.String?
+  @objc public init(networks: [PayUParamsKit.NetworkDetail]?, banks: [PayUParamsKit.NetworkDetail]?, title: Swift.String?, paymentCode: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class NetworkDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var code: Swift.String?, title: Swift.String?
+  @objc public init(code: Swift.String?, title: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class OfferDiscountDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var discountType: Swift.String?
+  @objc public var discount: Swift.Double, discountPercentage: Swift.Double, discountedAmount: Swift.Double, maxDiscount: Swift.Double
+  @objc public init(discountType: Swift.String?, discountPercentage: Swift.Double, discount: Swift.Double, discountedAmount: Swift.Double, maxDiscount: Swift.Double)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class EmiDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var debitCard: PayUParamsKit.EmiCcdcDetail?, creditCard: PayUParamsKit.EmiCcdcDetail?
+  @objc public init(debitCard: PayUParamsKit.EmiCcdcDetail?, creditCard: PayUParamsKit.EmiCcdcDetail?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class EmiCcdcDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var banks: [PayUParamsKit.EmiBankDetail]?
+  @objc public init(banks: [PayUParamsKit.EmiBankDetail]?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class EmiBankDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var bankCode: Swift.String?
+  @objc public var tenureOption: [PayUParamsKit.TenureOption]?
+  @objc public init(bankCode: Swift.String?, tenureOption: [PayUParamsKit.TenureOption]?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class TenureOption : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var title: Swift.String?, paymentCode: Swift.String?
+  @objc public var discountDetail: PayUParamsKit.TenureOptionDiscountDetail?
+  @objc public init(title: Swift.String?, paymentCode: Swift.String?, discountDetail: PayUParamsKit.TenureOptionDiscountDetail?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class TenureOptionDiscountDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var discountPercentage: Swift.Double, discount: Swift.Double, discountedAmount: Swift.Double
+  @objc public init(discountPercentage: Swift.Double, discount: Swift.Double, discountedAmount: Swift.Double)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class BankDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var title: Swift.String?, paymentCode: Swift.String?
+  @objc public init(title: Swift.String?, paymentCode: Swift.String?)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers @objcMembers open class PayUAddressDetails : ObjectiveC.NSObject {
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
@@ -248,9 +343,54 @@ import _Concurrency
   @objc override dynamic public init()
   @objc deinit
 }
+@objc public class PayUModelOfferDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var paymentID: Swift.Int, clientID: Swift.Int, mid: Swift.Int
+  @objc public var offerAmount: Swift.Double
+  @objc public var paymentCode: Swift.String?, category: Swift.String?
+  @objc public var isValid: Swift.Bool
+  @objc public var offerDiscount: PayUParamsKit.OfferDiscount?
+  @objc public var offerDetail: PayUParamsKit.OfferDetail?
+  @objc public var skusDetail: Swift.String?
+  @objc public var failureReason: Swift.String?
+  @objc public var autoApply: Swift.Bool
+  @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUModelOfferDetail?
+  @objc public init(paymentID: Swift.Int, clientID: Swift.Int, mid: Swift.Int, offerAmount: Swift.Double, paymentCode: Swift.String?, category: Swift.String?, isValid: Swift.Bool, offerDiscount: PayUParamsKit.OfferDiscount?, offerDetail: PayUParamsKit.OfferDetail?, skusDetail: Swift.String?, failureReason: Swift.String?, autoApply: Swift.Bool)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class OfferDetail : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var offerID: Swift.Int
+  @objc public var offerKey: Swift.String?, offerType: Swift.String?, title: Swift.String?, offerDetailDescription: Swift.String?
+  @objc public var validFrom: Swift.String?, validTo: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?
+  @objc public var discountType: Swift.String?
+  @objc public var offerPercentage: Swift.Double, maxDiscountPerTxn: Swift.Double, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double
+  @objc public var status: Swift.String?
+  @objc public var isNce: Swift.Bool, disallowTransactionInvalidOffer: Swift.Bool
+  @objc public init(offerID: Swift.Int, offerKey: Swift.String?, offerType: Swift.String?, title: Swift.String?, offerDetailDescription: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, discountType: Swift.String?, offerPercentage: Swift.Double, maxDiscountPerTxn: Swift.Double, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, status: Swift.String?, isNce: Swift.Bool, disallowTransactionInvalidOffer: Swift.Bool)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class OfferDiscount : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var offerKey: Swift.String?, offerType: Swift.String?
+  @objc public var discount: Swift.Double, discountedAmount: Swift.Double
+  @objc public var discountType: Swift.String?
+  @objc public init(offerKey: Swift.String?, offerType: Swift.String?, discount: Swift.Double, discountedAmount: Swift.Double, discountType: Swift.String?)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PPKValidator : ObjectiveC.NSObject {
   @objc override dynamic public init()
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PayUBaseModel : ObjectiveC.NSObject, Swift.Codable {
+  @objc public class func getObject(json: [Swift.String : Any]) -> Any?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public enum PayUErrorType : Swift.Int {
   case error
@@ -313,6 +453,14 @@ import _Concurrency
   public var rawValue: Swift.Int {
     get
   }
+}
+@_inheritsConvenienceInitializers @objc open class PayURequestHeaderParams : ObjectiveC.NSObject {
+  @objc public var date: Swift.String?
+  @objc public var digest: Swift.String?
+  @objc public var signingString: Swift.String?
+  @objc public var error: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers open class PayUModelIFSCInfo : ObjectiveC.NSObject {
   @objc public var bank: Swift.String?
@@ -395,6 +543,7 @@ extension Swift.Dictionary {
   @objc public class func escape(_ string: Swift.String) -> Swift.String
   @objc public class func mappedValueOfPaymentType(_ paymentType: Swift.String?) -> Swift.String?
   @objc public class func query(_ parameters: [Swift.String : Any], shouldEscape: Swift.Bool) -> Swift.String
+  public class func getObject<T>(for type: T.Type, json: [Swift.String : Any]) -> T? where T : Swift.Decodable
   @objc override dynamic public init()
   @objc deinit
 }
@@ -433,6 +582,7 @@ extension Swift.Dictionary {
     @objc public static let INSTRUMENT_ID: Swift.String
     @objc public static let TXN_S2S_FLOW: Swift.String
     @objc public static let USER_CREDENTIALS: Swift.String
+    @objc public static let USER_TOKEN: Swift.String
     @objc public static let UDF_1: Swift.String
     @objc public static let UDF_2: Swift.String
     @objc public static let UDF_3: Swift.String
@@ -540,6 +690,7 @@ extension Swift.Dictionary {
   @objc public var surl: Swift.String
   @objc public var furl: Swift.String
   @objc public var userCredential: Swift.String?
+  @objc public var userToken: Swift.String?
   @objc public var additionalParam: [Swift.String : Any]
   @objc public var paymentEnvironment: PayUParamsKit.Environment
   @objc public var siParam: PayUParamsKit.PayUSIParams?
@@ -665,6 +816,15 @@ extension Swift.Dictionary {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
+}
+@objc public class PayUSDKConfiguration : PayUParamsKit.PayUBaseModel {
+  @objc public var key: Swift.String?
+  @objc public var value: Any?
+  @objc public var createdOn: Swift.String?
+  @objc public var active: Swift.Int
+  @objc public var merchantId: Swift.Int
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUPaymentValidations : ObjectiveC.NSObject {
   public func validatePaymentDetails(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> (isValidDetails: Swift.Bool, errorMessage: Swift.String)

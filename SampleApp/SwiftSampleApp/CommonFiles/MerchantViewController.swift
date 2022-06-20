@@ -10,7 +10,7 @@ import UIKit
 import PayUCheckoutProKit
 import PayUCheckoutProBaseKit
 import PayUParamsKit
-
+import PayUBizCoreKit
 class MerchantViewController: UIViewController {
     // MARK: - Outlets -
     @IBOutlet weak var keyTextField: UITextField!
@@ -28,7 +28,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var txnIDTextField: UITextField!
     @IBOutlet weak var merchantAccessKeyTextField: UITextField!
     @IBOutlet weak var merchantSecretKeyTextField: UITextField!
-
+    
     @IBOutlet weak var splitPayStackView: UIStackView!
     //SI
     @IBOutlet weak var siSwitch: UISwitch!
@@ -56,14 +56,14 @@ class MerchantViewController: UIViewController {
     
     // CB Configuration
     @IBOutlet weak var autoOTPSelectSwitch: UISwitch!
-    @IBOutlet weak var surePayCountTextField: UITextField!
+    @IBOutlet weak var userTokenTextField: UITextField!
     @IBOutlet weak var merchantResponseTimeoutTextField: UITextField!
     @IBOutlet weak var autoOTPSubmitSwitch: UISwitch!
-
+    
     // Sodexo Card Configuration
     @IBOutlet weak var sodexoCardSourceIdTextField: UITextField!
     @IBOutlet weak var sodexoCardBalanceAPITimeoutTextField: UITextField!
-
+    
     // Enforcement
     @IBOutlet weak var enforceCardsSwitch: UISwitch!
     @IBOutlet weak var enforceNBSwitch: UISwitch!
@@ -76,7 +76,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforceCardTypeTextField: UITextField!
     @IBOutlet weak var enableEnforcementSwitch: UISwitch!
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
-
+    
     // MARK: - Variables -
     let keySalt = [["3TnMpV", "<Please enter your salt here>", Environment.production],
                    ["gtKFFx", "<Please enter your salt here>", Environment.test]]
@@ -103,7 +103,7 @@ class MerchantViewController: UIViewController {
     var customNotes: String = "[{\"Hi, This is a custom note for payment modes.\":[]},{\"Hi, This is a custom note for payment options.\":[\"Cards\",\"NetBanking\",\"upi\",\"Wallet\",\"Sodexo\",\"NeftRtgs\",\"EMI\",\"SavedCard\"]}]"
     var splitPayRequest: String = "{\"type\":\"absolute\",\"splitInfo\":{\"imAJ7I\":{\"aggregatorSubTxnId\":\"Testchild123\",\"aggregatorSubAmt\":\"5\"},\"qOoYIv\":{\"aggregatorSubTxnId\":\"Testchild098\",\"aggregatorSubAmt\":\"5\"}}}"
     var autoOTPSelect: Bool = true
-    var surePayCount: String = "2"
+    var userToken: String = "anshul_bajpai_token"
     var merchantResponseTimeout: String = "4"
     var sodexoResponseTimeout: String = "4"
     var recurringAmount = "1"
@@ -118,7 +118,7 @@ class MerchantViewController: UIViewController {
     var merchantAccessKey: String = "E5ABOXOWAAZNXB6JEF5Z"
     let merchantSecretKey = "e425e539233044146a2d185a346978794afd7c66"
     let sodexoSourceId = "src_b0d97b32-3900-421a-bc25-5c9924dbc171"
-
+    
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
     override func viewDidLoad() {
@@ -173,12 +173,12 @@ class MerchantViewController: UIViewController {
         self.datePicker.addTarget(self, action: #selector(handleDatePicker(sender:)), for: .valueChanged)
     }
     
-   
+    
     @objc func cancelClick () {
         self.siStartDateTf.resignFirstResponder()
         self.siEndDateTf.resignFirstResponder()
     }
-        
+    
     @objc func handleDatePicker(sender: UIDatePicker) {
         if siStartDateTf.isFirstResponder{
             self.siStartDateTf.text = sender.date.dateString
@@ -201,7 +201,7 @@ class MerchantViewController: UIViewController {
                 self.recurringPeriod = billingCycle
                 self.recurringPeriodTf.text = action.title
             }))
-            }
+        }
         sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         if let popoverController = sheet.popoverPresentationController {
             popoverController.sourceView = self.view
@@ -248,7 +248,7 @@ extension MerchantViewController {
         offerDetailTextView.text = offerDetail
         customNotesDetailTextView.text = customNotes
         autoOTPSelectSwitch.isOn = autoOTPSelect
-        surePayCountTextField.text = surePayCount
+        userTokenTextField.text = userToken
         merchantResponseTimeoutTextField.text = merchantResponseTimeout
         sodexoCardBalanceAPITimeoutTextField.text = sodexoResponseTimeout
         recurringAmountTf.text = recurringAmount
@@ -266,19 +266,19 @@ extension MerchantViewController {
     
     private func getPaymentParam() -> PayUPaymentParam{
         let paymentParam = PayUPaymentParam(key: keyTextField.text ?? "",
-                                             transactionId: txnIDTextField.text ?? "",
-                                             amount: amountTextField.text ?? "",
-                                             productInfo: productInfoTextField.text ?? "",
-                                             firstName: firstNameTextField.text ?? "",
-                                             email: emailTextField.text ?? "",
-                                             phone: phoneTextField.text ?? "",
-                                             surl: surlTextField.text ?? "",
-                                             furl: furlTextField.text ?? "",
-                                             environment: Utils.environment(environment: environmentTextField.text ?? ""))
+                                            transactionId: txnIDTextField.text ?? "",
+                                            amount: amountTextField.text ?? "",
+                                            productInfo: productInfoTextField.text ?? "",
+                                            firstName: firstNameTextField.text ?? "",
+                                            email: emailTextField.text ?? "",
+                                            phone: phoneTextField.text ?? "",
+                                            surl: surlTextField.text ?? "",
+                                            furl: furlTextField.text ?? "",
+                                            environment: Utils.environment(environment: environmentTextField.text ?? ""))
         if let recurringAmount = self.recurringAmountTf.text,
-            let frequency = billingIntervalTf.text,
-            let frequencyInt = Int(frequency),
-            siSwitch.isOn{
+           let frequency = billingIntervalTf.text,
+           let frequencyInt = Int(frequency),
+           siSwitch.isOn{
             let siInfo = PayUSIParams(billingAmount: recurringAmount,
                                       paymentStartDate: self.siStartDate,
                                       paymentEndDate: self.siEndDate,
@@ -289,7 +289,7 @@ extension MerchantViewController {
             
             siInfo.billingLimit = "ON"
             siInfo.billingRule = "MAX"
-
+            
             paymentParam.siParam = siInfo
         }
         if splitPaySwitch.isOn {
@@ -303,14 +303,10 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
-
-//        paymentParam.environment = .test
-//        paymentParam.additionalParam[HashConstant.paymentRelatedDetailForMobileSDK] = "0b497efc50edf4f5927890d50825916c3f6ec1a1a7d6b2f27cc273bd91f508624e1fd2ecc51f050f9a0ae9d1bbd48e0021fa3dd390d44b6afdf9ea6eb957492c"
-//        paymentParam.additionalParam[HashConstant.vasForMobileSDK] = "6a71a10f33e61ca88307b2e0f97d6ed94cc1a7daf7ba8883dda1bd1079ec3f8c526354e1f9b4ef0f59c90248d91c30fbb58971fcc291e0a7beddf7cc3783966b"
-//        paymentParam.additionalParam[HashConstant.payment] = "f43bd495b110ebe63038bb8152b0083cb3bd227e9db8dab6d3fb8c2cb38c3fece787bba76adf755405b549f00b3264d996233ec02fce973f8ff24ba1e7751cbe"
+        paymentParam.userToken = userTokenTextField.text
         
         paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
-
+        
         return paymentParam
     }
     
@@ -333,7 +329,6 @@ extension MerchantViewController {
         config.merchantLogo = UIImage(named: logoNameTextField.text ?? "")
         config.paymentModesOrder = getPreferredPaymentMode()
         config.cartDetails = cartDetails()
-        config.offerDetails = offerDetails()
         if let primary = Utils.hexStringToUIColor(hex: primaryColorTextField.text ?? ""), let secondary = Utils.hexStringToUIColor(hex: secondaryColorTextField.text ?? "") {
             config.customiseUI(primaryColor: primary, secondaryColor: secondary)
         }
@@ -343,12 +338,8 @@ extension MerchantViewController {
         // CB Configurations
         config.autoSelectOtp = autoOTPSelectSwitch.isOn
         config.autoSubmitOtp = autoOTPSubmitSwitch.isOn
-        if let surePayCountStr = surePayCountTextField.text,
-            let surePayCount = UInt(surePayCountStr) {
-            config.surePayCount = surePayCount
-        }
         if let merchantResponseTimeoutStr = merchantResponseTimeoutTextField.text,
-            let merchantResponseTimeout = TimeInterval(merchantResponseTimeoutStr) {
+           let merchantResponseTimeout = TimeInterval(merchantResponseTimeoutStr) {
             config.merchantResponseTimeout = merchantResponseTimeout
         }
         
@@ -357,7 +348,7 @@ extension MerchantViewController {
            let sodexoCardBalanceAPITimeout = TimeInterval(sodexoCardBalanceAPITimeoutStr) {
             config.sodexoCardBalanceAPITimeout = sodexoCardBalanceAPITimeout
         }
-
+        
         // Custom Notes Configurations
         config.customNotes = getCustomNotes()
         
@@ -367,74 +358,74 @@ extension MerchantViewController {
         }
         
     }
-
+    
     func getEnforcePaymentModesList() -> [[String: Any]]? {
         var enforcePaymentList = [[String: Any]]()
-  
+        
         var nbEnforcement = [String: Any]()
         nbEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.nb
-   
+        
         var ccdcEnforcement = [String: Any]()
         ccdcEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.card
-       
+        
         if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
             let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
             ccdcEnforcement[PaymentParamConstant.cardType] = cardType
         }
-    
+        
         var upiEnforcement = [String: Any]()
         upiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.upi
-
+        
         var walletEnforcement = [String: Any]()
         walletEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.wallet
-
+        
         var emiEnforcement = [String: Any]()
         emiEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.emi
-
+        
         var neftRtgsEnforcement = [String: Any]()
         neftRtgsEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.neftrtgs
-
+        
         var sodexoEnforcement = [String: Any]()
         sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
-
+        
         var otherEnforcement = [String: Any]()
         otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
-
+        
         if enforceNBSwitch.isOn {
             enforcePaymentList.append(nbEnforcement)
         }
-
+        
         if enforceCardsSwitch.isOn {
             enforcePaymentList.append(ccdcEnforcement)
         }
-
+        
         if enforceUPISwitch.isOn {
             enforcePaymentList.append(upiEnforcement)
         }
-
+        
         if enforceWalletSwitch.isOn {
             enforcePaymentList.append(walletEnforcement)
         }
-
+        
         if enforceEMISwitch.isOn {
             enforcePaymentList.append(emiEnforcement)
         }
-
+        
         if enforceNeftRtgsSwitch.isOn {
             enforcePaymentList.append(neftRtgsEnforcement)
         }
-
+        
         if enforceSodexoSwitch.isOn {
             enforcePaymentList.append(sodexoEnforcement)
         }
-
+        
         if enforceOtherSwitch.isOn {
             enforcePaymentList.append(otherEnforcement)
         }
-
+        
         return enforcePaymentList
     }
-
+    
     func getCustomNotes() -> [PayUCustomNote]? {
         if let notesJSON = Utils.JSONFrom(string: customNotesDetailTextView.text) as? [[String: Any]] {
             var customNotes = [PayUCustomNote]()
@@ -473,23 +464,6 @@ extension MerchantViewController {
         return nil
     }
     
-    func offerDetails() -> [PayUOfferDetails]? {
-        if let offerJSON = Utils.JSONFrom(string: offerDetailTextView.text) as? [[String]] {
-            var offerDetails = [PayUOfferDetails]()
-            for eachOfferJSON in offerJSON {
-                let paymentTypesStringArray = eachOfferJSON[3].components(separatedBy: ",")
-                let paymentTypesArray = paymentTypesStringArray.compactMap{Utils.paymentTypeFrom(paymentType: $0)}
-                if let offerDetailObj = PayUOfferDetails(title: eachOfferJSON[0],
-                                                         offerDescription:eachOfferJSON[1],
-                                                         offerKey: eachOfferJSON[2],
-                                                         paymentTypes: paymentTypesArray) {
-                    offerDetails.append(offerDetailObj)
-                }
-            }
-            return offerDetails
-        }
-        return nil
-    }
 }
 
 // MARK: - PayUCheckoutPro Delegate Methods -
@@ -535,13 +509,23 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
-        if commandName == HashConstant.mcpLookup {
-            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
+        if let hashType = param[HashConstant.hashType], hashType == "V2" {
+            let signedString = param[KEY_SIGNING_STRING]
+            
+            let signature = "<hmacSHA256 hash for signedString with Key salt>"
+            
+            let hashDict = [KEY_SIGNATURE: signature]
+            
+            onCompletion(hashDict)
+            return
+        }
+        else if commandName == HashConstant.mcpLookup {
+            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else if let postSalt = postSalt{
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = Utils.sha512Hex(string: hashString)
+            hashValue = "<hmacsha512 hash for hashString and salt>"
         } else {
-            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
+            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
         }
         onCompletion([commandName : hashValue])
     }

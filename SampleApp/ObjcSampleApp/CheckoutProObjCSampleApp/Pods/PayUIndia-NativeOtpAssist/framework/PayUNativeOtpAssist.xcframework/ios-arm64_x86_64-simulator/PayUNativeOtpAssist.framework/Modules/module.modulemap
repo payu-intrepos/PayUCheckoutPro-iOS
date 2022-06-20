@@ -1,5 +1,5 @@
 framework module PayUNativeOtpAssist {
-  umbrella header "PayUNativeOtpAssist.h"
+  umbrella header "PayuNativeOtpAssist.h"
 
   export *
   module * { export * }

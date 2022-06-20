@@ -6,9 +6,9 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class PUABaseAnalytics, PUAAnalyticsDataManagerCompanion, NSString, NSData, PUAAnalyticsDataManager, PUAAnalyticsResponseCompanion, PUAAnalyticsResponse, PUAKotlinEnumCompanion, PUAKotlinEnum<E>, PUAAnalyticsType, PUAKotlinArray<T>, PUAKtor_client_coreHttpRequestBuilder, PUAClevertapAnalyticsCompanion, PUAAnalyticsConfig, PUAClevertapAnalytics, PUAPayUAnalyticsCompanion, PUAPayUAnalytics, PUAPayUDeviceAnalyticsCompanion, PUAPayUDeviceAnalytics, PUAKotlinUnit, PUAPayUAnalyticsConstant, PUAKtor_httpHeadersBuilder, PUAKtor_client_coreHttpRequestBuilderCompanion, PUAKtor_client_coreHttpRequestData, PUAKtor_httpURLBuilder, PUAKtor_httpHttpMethod, PUAKotlinThrowable, PUAKotlinException, PUAKotlinRuntimeException, PUAKotlinIllegalStateException, PUAKotlinx_serialization_coreSerializersModule, PUAKotlinx_serialization_coreSerialKind, PUAKotlinNothing, PUAKtor_utilsStringValuesBuilder, PUAKtor_httpUrl, PUAKtor_httpOutgoingContent, PUAKtor_utilsAttributeKey<T>, PUAKtor_httpURLProtocol, PUAKtor_httpParametersBuilder, PUAKtor_httpURLBuilderCompanion, PUAKotlinCancellationException, PUAKtor_httpHttpMethodCompanion, PUAKtor_httpUrlCompanion, PUAKtor_httpContentType, PUAKtor_httpHttpStatusCode, PUAKtor_httpURLProtocolCompanion, PUAKtor_httpUrlEncodingOption, PUAKtor_httpHeaderValueParam, PUAKtor_httpHeaderValueWithParametersCompanion, PUAKtor_httpHeaderValueWithParameters, PUAKtor_httpContentTypeCompanion, PUAKtor_httpHttpStatusCodeCompanion, PUAKotlinx_coroutines_coreAtomicDesc, PUAKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, PUAKotlinx_coroutines_coreAtomicOp<__contravariant T>, PUAKotlinx_coroutines_coreOpDescriptor, PUAKotlinx_coroutines_coreLockFreeLinkedListNode, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
+@class PUABaseAnalytics, NSString, NSData, PUAAnalyticsResponseCompanion, PUAAnalyticsResponse, PUAKotlinEnumCompanion, PUAKotlinEnum<E>, PUAAnalyticsType, PUAKotlinArray<T>, PUAAnalyticsConfig, PUAKtor_client_coreHttpRequestBuilder, PUAKtor_client_coreHttpResponse, PUAKotlinUnit, PUAAnalyticsDataManager, PUAKotlinx_serialization_jsonJsonElement, PUAClevertapResponseCompanion, PUAClevertapResponse, PUAPayUAnalyticsConstant, PUAKotlinThrowable, PUAKotlinException, PUAKotlinRuntimeException, PUAKotlinIllegalStateException, PUAKtor_httpHeadersBuilder, PUAKtor_client_coreHttpRequestBuilderCompanion, PUAKtor_client_coreHttpRequestData, PUAKtor_httpURLBuilder, PUAKtor_httpHttpMethod, PUAKtor_client_coreHttpClientCall, PUAKtor_utilsGMTDate, PUAKtor_httpHttpStatusCode, PUAKtor_httpHttpProtocolVersion, PUAKotlinx_serialization_jsonJsonElementCompanion, PUAKotlinx_serialization_coreSerializersModule, PUAKotlinx_serialization_coreSerialKind, PUAKotlinNothing, PUAKtor_utilsStringValuesBuilder, PUAKtor_httpUrl, PUAKtor_httpOutgoingContent, PUAKtor_utilsAttributeKey<T>, PUAKtor_httpURLProtocol, PUAKtor_httpParametersBuilder, PUAKtor_httpURLBuilderCompanion, PUAKotlinCancellationException, PUAKtor_httpHttpMethodCompanion, PUAKtor_client_coreHttpClientCallCompanion, PUAKtor_client_coreTypeInfo, PUAKtor_client_coreHttpClient, PUAKtor_ioMemory, PUAKtor_ioIoBuffer, PUAKotlinByteArray, PUAKtor_ioByteReadPacket, PUAKtor_ioByteOrder, PUAKtor_utilsGMTDateCompanion, PUAKtor_utilsWeekDay, PUAKtor_utilsMonth, PUAKtor_httpHttpStatusCodeCompanion, PUAKtor_httpHttpProtocolVersionCompanion, PUAKtor_httpUrlCompanion, PUAKtor_httpContentType, PUAKtor_httpURLProtocolCompanion, PUAKtor_httpUrlEncodingOption, PUAKtor_client_coreHttpClientEngineConfig, PUAKtor_client_coreHttpClientConfig<T>, PUAKotlinx_coroutines_coreCoroutineDispatcher, PUAKtor_client_coreHttpReceivePipeline, PUAKtor_client_coreHttpRequestPipeline, PUAKtor_client_coreHttpResponsePipeline, PUAKtor_client_coreHttpSendPipeline, PUAKtor_ioMemoryCompanion, PUAKtor_ioBufferCompanion, PUAKtor_ioBuffer, PUAKtor_ioChunkBuffer, PUAKtor_ioChunkBufferCompanion, PUAKotlinCharArray, PUAKtor_ioIoBufferCompanion, PUAKotlinByteIterator, PUAKtor_ioAbstractInputCompanion, PUAKtor_ioAbstractInput, PUAKtor_ioByteReadPacketBaseCompanion, PUAKtor_ioByteReadPacketBase, PUAKtor_ioByteReadPacketPlatformBase, PUAKtor_ioByteReadPacketCompanion, PUAKtor_ioByteOrderCompanion, PUAKtor_utilsWeekDayCompanion, PUAKtor_utilsMonthCompanion, PUAKtor_httpHeaderValueParam, PUAKtor_httpHeaderValueWithParametersCompanion, PUAKtor_httpHeaderValueWithParameters, PUAKtor_httpContentTypeCompanion, PUAKotlinx_coroutines_coreAtomicDesc, PUAKotlinx_coroutines_coreLockFreeLinkedListNodePrepareOp, PUAKotlinKTypeProjection, PUAKtor_client_coreHttpResponseData, PUAKtor_client_coreProxyConfig, PUAKotlinAbstractCoroutineContextElement, PUAKotlinx_coroutines_coreCoroutineDispatcherKey, PUAKtor_utilsPipelinePhase, PUAKtor_utilsPipeline<TSubject, TContext>, PUAKtor_client_coreHttpReceivePipelinePhases, PUAKtor_client_coreHttpRequestPipelinePhases, PUAKtor_client_coreHttpResponsePipelinePhases, PUAKtor_client_coreHttpResponseContainer, PUAKtor_client_coreHttpSendPipelinePhases, PUAKotlinCharIterator, PUAKotlinx_coroutines_coreAtomicOp<__contravariant T>, PUAKotlinx_coroutines_coreOpDescriptor, PUAKotlinx_coroutines_coreLockFreeLinkedListNode, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeAbstractAtomicDesc, PUAKotlinKVariance, PUAKotlinKTypeProjectionCompanion, PUAKotlinAbstractCoroutineContextKey<B, E>, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc<T>, PUAKotlinx_coroutines_coreLockFreeLinkedListNodeRemoveFirstDesc<T>;
 
-@protocol PUAOnEventsLogListener, PUAKotlinx_serialization_coreKSerializer, PUAKotlinComparable, PUAKotlinx_serialization_coreEncoder, PUAKotlinx_serialization_coreSerialDescriptor, PUAKotlinx_serialization_coreSerializationStrategy, PUAKotlinx_serialization_coreDecoder, PUAKotlinx_serialization_coreDeserializationStrategy, PUAKotlinIterator, PUAKtor_httpHttpMessageBuilder, PUAKtor_client_coreHttpClientEngineCapability, PUAKtor_utilsAttributes, PUAKotlinx_coroutines_coreJob, PUAKotlinx_serialization_coreCompositeEncoder, PUAKotlinAnnotation, PUAKotlinx_serialization_coreCompositeDecoder, PUAKtor_utilsStringValues, PUAKotlinMapEntry, PUAKtor_httpHeaders, PUAKotlinx_coroutines_coreChildHandle, PUAKotlinx_coroutines_coreChildJob, PUAKotlinx_coroutines_coreDisposableHandle, PUAKotlinSequence, PUAKotlinx_coroutines_coreSelectClause0, PUAKotlinCoroutineContextKey, PUAKotlinCoroutineContextElement, PUAKotlinCoroutineContext, PUAKotlinx_serialization_coreSerializersModuleCollector, PUAKotlinKClass, PUAKtor_httpParameters, PUAKotlinx_coroutines_coreParentJob, PUAKotlinx_coroutines_coreSelectInstance, PUAKotlinSuspendFunction0, PUAKotlinKDeclarationContainer, PUAKotlinKAnnotatedElement, PUAKotlinKClassifier, PUAKotlinContinuation, PUAKotlinFunction;
+@protocol PUAOnEventsLogListener, PUAKotlinx_serialization_coreKSerializer, PUAKotlinComparable, PUAKotlinx_serialization_coreEncoder, PUAKotlinx_serialization_coreSerialDescriptor, PUAKotlinx_serialization_coreSerializationStrategy, PUAKotlinx_serialization_coreDecoder, PUAKotlinx_serialization_coreDeserializationStrategy, PUAKotlinIterator, PUAKtor_httpHttpMessageBuilder, PUAKtor_client_coreHttpClientEngineCapability, PUAKtor_utilsAttributes, PUAKotlinx_coroutines_coreJob, PUAKtor_httpHeaders, PUAKtor_httpHttpMessage, PUAKotlinCoroutineContext, PUAKotlinx_coroutines_coreCoroutineScope, PUAKtor_ioByteReadChannel, PUAKotlinx_serialization_coreCompositeEncoder, PUAKotlinAnnotation, PUAKotlinx_serialization_coreCompositeDecoder, PUAKtor_utilsStringValues, PUAKotlinMapEntry, PUAKotlinx_coroutines_coreChildHandle, PUAKotlinx_coroutines_coreChildJob, PUAKotlinx_coroutines_coreDisposableHandle, PUAKotlinSequence, PUAKotlinx_coroutines_coreSelectClause0, PUAKotlinCoroutineContextKey, PUAKotlinCoroutineContextElement, PUAKtor_utilsTypeInfo, PUAKtor_client_coreHttpRequest, PUAKtor_ioReadSession, PUAKotlinSuspendFunction1, PUAKotlinAppendable, PUAKotlinx_serialization_coreSerializersModuleCollector, PUAKotlinKClass, PUAKtor_httpParameters, PUAKotlinx_coroutines_coreParentJob, PUAKotlinx_coroutines_coreSelectInstance, PUAKotlinSuspendFunction0, PUAKotlinKType, PUAKtor_ioCloseable, PUAKtor_client_coreHttpClientEngine, PUAKtor_ioObjectPool, PUAKtor_ioInput, PUAKtor_ioOutput, PUAKotlinFunction, PUAKotlinKDeclarationContainer, PUAKotlinKAnnotatedElement, PUAKotlinKClassifier, PUAKotlinContinuation, PUAKtor_client_coreHttpClientFeature, PUAKotlinContinuationInterceptor, PUAKotlinx_coroutines_coreRunnable, PUAKotlinSuspendFunction2;
 
 NS_ASSUME_NONNULL_BEGIN
 #pragma clang diagnostic push
@@ -155,7 +155,6 @@ __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AnalyticsDataManager")))
 @interface PUAAnalyticsDataManager : PUABase <PUAOnEventsLogListener>
 - (instancetype)initWithBaseAnalytics:(PUABaseAnalytics *)baseAnalytics __attribute__((swift_name("init(baseAnalytics:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) PUAAnalyticsDataManagerCompanion *companion __attribute__((swift_name("companion")));
 - (NSString *)nativeStr:(NSString *)receiver __attribute__((swift_name("nativeStr(_:)")));
 - (void)cancelTimer __attribute__((swift_name("cancelTimer()")));
 - (void)logMsg:(NSString *)msg __attribute__((swift_name("log(msg:)")));
@@ -167,23 +166,13 @@ __attribute__((swift_name("AnalyticsDataManager")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AnalyticsDataManager.Companion")))
-@interface PUAAnalyticsDataManagerCompanion : PUABase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) PUAAnalyticsDataManagerCompanion *shared __attribute__((swift_name("shared")));
-- (PUAAnalyticsDataManager *)getInstanceBaseAnalytics:(PUABaseAnalytics *)baseAnalytics __attribute__((swift_name("getInstance(baseAnalytics:)")));
-@property PUAAnalyticsDataManager * _Nullable INSTANCE __attribute__((swift_name("INSTANCE")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("AnalyticsConfig")))
 @interface PUAAnalyticsConfig : PUABase
 - (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
 + (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
 @property NSString * _Nullable ctAccountId __attribute__((swift_name("ctAccountId")));
 @property NSString * _Nullable ctPassCode __attribute__((swift_name("ctPassCode")));
+@property NSString *initiatorIdentifier __attribute__((swift_name("initiatorIdentifier")));
 @property BOOL isProduction __attribute__((swift_name("isProduction")));
 @end;
 
@@ -244,13 +233,19 @@ __attribute__((swift_name("AnalyticsType")))
 
 __attribute__((swift_name("BaseAnalytics")))
 @interface PUABaseAnalytics : PUABase <PUAOnEventsLogListener>
-- (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithUrl:(NSString *)url analyticsConfig:(PUAAnalyticsConfig *)analyticsConfig __attribute__((swift_name("init(url:analyticsConfig:)"))) __attribute__((objc_designated_initializer));
 - (void)cancelTimer __attribute__((swift_name("cancelTimer()")));
 - (PUAKtor_client_coreHttpRequestBuilder *)getRequestBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder postData:(NSString *)postData __attribute__((swift_name("getRequest(builder:postData:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)handleResponseResponse:(PUAKtor_client_coreHttpResponse *)response completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("handleResponse(response:completionHandler:)")));
 - (void)logEventData:(NSString *)eventData __attribute__((swift_name("log(eventData:)")));
-- (void)onEventsLoggedFailed __attribute__((swift_name("onEventsLoggedFailed()")));
-- (void)onEventsLoggedSuccessfulResponse:(NSString *)response __attribute__((swift_name("onEventsLoggedSuccessful(response:)")));
+- (void)logJson:(NSDictionary<NSString *, id> *)json __attribute__((swift_name("log(json:)")));
 - (void)pushAllPendingEvents __attribute__((swift_name("pushAllPendingEvents()")));
+@property (readonly) PUAAnalyticsConfig *analyticsConfig __attribute__((swift_name("analyticsConfig")));
 @property PUAAnalyticsDataManager *analyticsDataManager __attribute__((swift_name("analyticsDataManager")));
 @property NSString *analyticsFileName __attribute__((swift_name("analyticsFileName")));
 @property int64_t timerDelay __attribute__((swift_name("timerDelay")));
@@ -260,60 +255,75 @@ __attribute__((swift_name("BaseAnalytics")))
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("ClevertapAnalytics")))
 @interface PUAClevertapAnalytics : PUABaseAnalytics
-- (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@property (class, readonly, getter=companion) PUAClevertapAnalyticsCompanion *companion __attribute__((swift_name("companion")));
+- (instancetype)initWithUrl:(NSString *)url analyticsConfig:(PUAAnalyticsConfig *)analyticsConfig __attribute__((swift_name("init(url:analyticsConfig:)"))) __attribute__((objc_designated_initializer));
 - (PUAKtor_client_coreHttpRequestBuilder *)getRequestBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder postData:(NSString *)postData __attribute__((swift_name("getRequest(builder:postData:)")));
-@property (readonly) PUAAnalyticsConfig *analyticsConfig __attribute__((swift_name("analyticsConfig")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)handleResponseResponse:(PUAKtor_client_coreHttpResponse *)response completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("handleResponse(response:completionHandler:)")));
+- (void)onEventsLoggedFailed __attribute__((swift_name("onEventsLoggedFailed()")));
+- (void)onEventsLoggedSuccessfulResponse:(NSString *)response __attribute__((swift_name("onEventsLoggedSuccessful(response:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("ClevertapAnalytics.Companion")))
-@interface PUAClevertapAnalyticsCompanion : PUABase
+__attribute__((swift_name("ClevertapResponse")))
+@interface PUAClevertapResponse : PUABase
+- (instancetype)initWithStatus:(NSString * _Nullable)status processed:(PUAInt * _Nullable)processed unprocessed:(NSArray<PUAKotlinx_serialization_jsonJsonElement *> * _Nullable)unprocessed __attribute__((swift_name("init(status:processed:unprocessed:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAClevertapResponseCompanion *companion __attribute__((swift_name("companion")));
+- (NSString * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (PUAInt * _Nullable)component2 __attribute__((swift_name("component2()")));
+- (NSArray<PUAKotlinx_serialization_jsonJsonElement *> * _Nullable)component3 __attribute__((swift_name("component3()")));
+- (PUAClevertapResponse *)doCopyStatus:(NSString * _Nullable)status processed:(PUAInt * _Nullable)processed unprocessed:(NSArray<PUAKotlinx_serialization_jsonJsonElement *> * _Nullable)unprocessed __attribute__((swift_name("doCopy(status:processed:unprocessed:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) PUAInt * _Nullable processed __attribute__((swift_name("processed")));
+@property (readonly) NSString * _Nullable status __attribute__((swift_name("status")));
+@property (readonly) NSArray<PUAKotlinx_serialization_jsonJsonElement *> * _Nullable unprocessed __attribute__((swift_name("unprocessed")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("ClevertapResponse.Companion")))
+@interface PUAClevertapResponseCompanion : PUABase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) PUAClevertapAnalyticsCompanion *shared __attribute__((swift_name("shared")));
-- (PUAClevertapAnalytics *)getInstanceUrl:(NSString *)url analyticsConfig:(PUAAnalyticsConfig *)analyticsConfig __attribute__((swift_name("getInstance(url:analyticsConfig:)")));
+@property (class, readonly, getter=shared) PUAClevertapResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<PUAKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PayUAnalytics")))
 @interface PUAPayUAnalytics : PUABaseAnalytics
-- (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
-@property (class, readonly, getter=companion) PUAPayUAnalyticsCompanion *companion __attribute__((swift_name("companion")));
+- (instancetype)initWithUrl:(NSString *)url analyticsConfig:(PUAAnalyticsConfig *)analyticsConfig __attribute__((swift_name("init(url:analyticsConfig:)"))) __attribute__((objc_designated_initializer));
 - (PUAKtor_client_coreHttpRequestBuilder *)getRequestBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder postData:(NSString *)postData __attribute__((swift_name("getRequest(builder:postData:)")));
-- (void)onEventsLoggedSuccessfulResponse:(NSString *)response __attribute__((swift_name("onEventsLoggedSuccessful(response:)")));
-@end;
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PayUAnalytics.Companion")))
-@interface PUAPayUAnalyticsCompanion : PUABase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) PUAPayUAnalyticsCompanion *shared __attribute__((swift_name("shared")));
-- (PUAPayUAnalytics *)getInstanceUrl:(NSString *)url __attribute__((swift_name("getInstance(url:)")));
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)handleResponseResponse:(PUAKtor_client_coreHttpResponse *)response completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("handleResponse(response:completionHandler:)")));
+- (void)onEventsLoggedFailed __attribute__((swift_name("onEventsLoggedFailed()")));
+- (void)onEventsLoggedSuccessfulResponse:(NSString *)response __attribute__((swift_name("onEventsLoggedSuccessful(response:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("PayUDeviceAnalytics")))
 @interface PUAPayUDeviceAnalytics : PUABaseAnalytics
-- (instancetype)initWithUrl:(NSString *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) PUAPayUDeviceAnalyticsCompanion *companion __attribute__((swift_name("companion")));
+- (instancetype)initWithUrl:(NSString *)url analyticsConfig:(PUAAnalyticsConfig *)analyticsConfig __attribute__((swift_name("init(url:analyticsConfig:)"))) __attribute__((objc_designated_initializer));
 - (PUAKtor_client_coreHttpRequestBuilder *)getRequestBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder postData:(NSString *)postData __attribute__((swift_name("getRequest(builder:postData:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)handleResponseResponse:(PUAKtor_client_coreHttpResponse *)response completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("handleResponse(response:completionHandler:)")));
 - (void)logEventData:(NSString *)eventData __attribute__((swift_name("log(eventData:)")));
+- (void)onEventsLoggedFailed __attribute__((swift_name("onEventsLoggedFailed()")));
 - (void)onEventsLoggedSuccessfulResponse:(NSString *)response __attribute__((swift_name("onEventsLoggedSuccessful(response:)")));
 - (BOOL)shouldLogMsg:(NSString *)msg __attribute__((swift_name("shouldLog(msg:)")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("PayUDeviceAnalytics.Companion")))
-@interface PUAPayUDeviceAnalyticsCompanion : PUABase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) PUAPayUDeviceAnalyticsCompanion *shared __attribute__((swift_name("shared")));
-- (PUAPayUDeviceAnalytics *)getInstanceUrl:(NSString *)url __attribute__((swift_name("getInstance(url:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -357,6 +367,11 @@ __attribute__((swift_name("PayUAnalyticsConstant")))
 + (instancetype)payUAnalyticsConstant __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) PUAPayUAnalyticsConstant *shared __attribute__((swift_name("shared")));
 @property (readonly) NSString *CLEVERTAP_ERROR_MESSAGE __attribute__((swift_name("CLEVERTAP_ERROR_MESSAGE")));
+@property (readonly) NSString *EVENT __attribute__((swift_name("EVENT")));
+@property (readonly) NSString *EVENT_NAME __attribute__((swift_name("EVENT_NAME")));
+@property (readonly) NSString *IDENTITY __attribute__((swift_name("IDENTITY")));
+@property (readonly) NSString *PARTIAL __attribute__((swift_name("PARTIAL")));
+@property (readonly) NSString *PARTIAL_STATUS __attribute__((swift_name("PARTIAL_STATUS")));
 @property (readonly) NSString *PA_ANALYTICS_BUFFER_KEY __attribute__((swift_name("PA_ANALYTICS_BUFFER_KEY")));
 @property (readonly) NSString *PA_CLEVERTAP_URL __attribute__((swift_name("PA_CLEVERTAP_URL")));
 @property (readonly) NSString *PA_COMMAND_NAME __attribute__((swift_name("PA_COMMAND_NAME")));
@@ -374,6 +389,10 @@ __attribute__((swift_name("PayUAnalyticsConstant")))
 @property (readonly) NSString *PA_TEST_URL __attribute__((swift_name("PA_TEST_URL")));
 @property (readonly) int64_t PA_TIMER_DELAY __attribute__((swift_name("PA_TIMER_DELAY")));
 @property (readonly) NSString *PA_TXN_ID __attribute__((swift_name("PA_TXN_ID")));
+@property (readonly) NSString *SUCCESS __attribute__((swift_name("SUCCESS")));
+@property (readonly) NSString *TS __attribute__((swift_name("TS")));
+@property (readonly) NSString *TYPE __attribute__((swift_name("TYPE")));
+@property (readonly) NSString *c1 __attribute__((swift_name("c1")));
 @end;
 
 __attribute__((swift_name("Kotlinx_serialization_coreSerializationStrategy")))
@@ -414,33 +433,6 @@ __attribute__((swift_name("KotlinArray")))
 - (id<PUAKotlinIterator>)iterator __attribute__((swift_name("iterator()")));
 - (void)setIndex:(int32_t)index value:(T _Nullable)value __attribute__((swift_name("set(index:value:)")));
 @property (readonly) int32_t size __attribute__((swift_name("size")));
-@end;
-
-__attribute__((swift_name("Ktor_httpHttpMessageBuilder")))
-@protocol PUAKtor_httpHttpMessageBuilder
-@required
-@property (readonly) PUAKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_client_coreHttpRequestBuilder")))
-@interface PUAKtor_client_coreHttpRequestBuilder : PUABase <PUAKtor_httpHttpMessageBuilder>
-- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
-+ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
-@property (class, readonly, getter=companion) PUAKtor_client_coreHttpRequestBuilderCompanion *companion __attribute__((swift_name("companion")));
-- (PUAKtor_client_coreHttpRequestData *)build __attribute__((swift_name("build()")));
-- (id _Nullable)getCapabilityOrNullKey:(id<PUAKtor_client_coreHttpClientEngineCapability>)key __attribute__((swift_name("getCapabilityOrNull(key:)")));
-- (void)setAttributesBlock:(void (^)(id<PUAKtor_utilsAttributes>))block __attribute__((swift_name("setAttributes(block:)")));
-- (void)setCapabilityKey:(id<PUAKtor_client_coreHttpClientEngineCapability>)key capability:(id)capability __attribute__((swift_name("setCapability(key:capability:)")));
-- (PUAKtor_client_coreHttpRequestBuilder *)takeFromBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFrom(builder:)")));
-- (PUAKtor_client_coreHttpRequestBuilder *)takeFromWithExecutionContextBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFromWithExecutionContext(builder:)")));
-- (void)urlBlock:(void (^)(PUAKtor_httpURLBuilder *, PUAKtor_httpURLBuilder *))block __attribute__((swift_name("url(block:)")));
-@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
-@property id body __attribute__((swift_name("body")));
-@property (readonly) id<PUAKotlinx_coroutines_coreJob> executionContext __attribute__((swift_name("executionContext")));
-@property (readonly) PUAKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
-@property PUAKtor_httpHttpMethod *method __attribute__((swift_name("method")));
-@property (readonly) PUAKtor_httpURLBuilder *url __attribute__((swift_name("url")));
 @end;
 
 __attribute__((swift_name("KotlinThrowable")))
@@ -494,6 +486,58 @@ __attribute__((swift_name("KotlinCancellationException")))
 - (instancetype)initWithCause:(PUAKotlinThrowable * _Nullable)cause __attribute__((swift_name("init(cause:)"))) __attribute__((objc_designated_initializer));
 @end;
 
+__attribute__((swift_name("Ktor_httpHttpMessageBuilder")))
+@protocol PUAKtor_httpHttpMessageBuilder
+@required
+@property (readonly) PUAKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestBuilder")))
+@interface PUAKtor_client_coreHttpRequestBuilder : PUABase <PUAKtor_httpHttpMessageBuilder>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpRequestBuilderCompanion *companion __attribute__((swift_name("companion")));
+- (PUAKtor_client_coreHttpRequestData *)build __attribute__((swift_name("build()")));
+- (id _Nullable)getCapabilityOrNullKey:(id<PUAKtor_client_coreHttpClientEngineCapability>)key __attribute__((swift_name("getCapabilityOrNull(key:)")));
+- (void)setAttributesBlock:(void (^)(id<PUAKtor_utilsAttributes>))block __attribute__((swift_name("setAttributes(block:)")));
+- (void)setCapabilityKey:(id<PUAKtor_client_coreHttpClientEngineCapability>)key capability:(id)capability __attribute__((swift_name("setCapability(key:capability:)")));
+- (PUAKtor_client_coreHttpRequestBuilder *)takeFromBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFrom(builder:)")));
+- (PUAKtor_client_coreHttpRequestBuilder *)takeFromWithExecutionContextBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder __attribute__((swift_name("takeFromWithExecutionContext(builder:)")));
+- (void)urlBlock:(void (^)(PUAKtor_httpURLBuilder *, PUAKtor_httpURLBuilder *))block __attribute__((swift_name("url(block:)")));
+@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property id body __attribute__((swift_name("body")));
+@property (readonly) id<PUAKotlinx_coroutines_coreJob> executionContext __attribute__((swift_name("executionContext")));
+@property (readonly) PUAKtor_httpHeadersBuilder *headers __attribute__((swift_name("headers")));
+@property PUAKtor_httpHttpMethod *method __attribute__((swift_name("method")));
+@property (readonly) PUAKtor_httpURLBuilder *url __attribute__((swift_name("url")));
+@end;
+
+__attribute__((swift_name("Ktor_httpHttpMessage")))
+@protocol PUAKtor_httpHttpMessage
+@required
+@property (readonly) id<PUAKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineScope")))
+@protocol PUAKotlinx_coroutines_coreCoroutineScope
+@required
+@property (readonly) id<PUAKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpResponse")))
+@interface PUAKtor_client_coreHttpResponse : PUABase <PUAKtor_httpHttpMessage, PUAKotlinx_coroutines_coreCoroutineScope>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) PUAKtor_client_coreHttpClientCall *call __attribute__((swift_name("call")));
+@property (readonly) id<PUAKtor_ioByteReadChannel> content __attribute__((swift_name("content")));
+@property (readonly) PUAKtor_utilsGMTDate *requestTime __attribute__((swift_name("requestTime")));
+@property (readonly) PUAKtor_utilsGMTDate *responseTime __attribute__((swift_name("responseTime")));
+@property (readonly) PUAKtor_httpHttpStatusCode *status __attribute__((swift_name("status")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *version __attribute__((swift_name("version")));
+@end;
+
 __attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("KotlinUnit")))
 @interface PUAKotlinUnit : PUABase
@@ -502,6 +546,13 @@ __attribute__((swift_name("KotlinUnit")))
 + (instancetype)unit __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) PUAKotlinUnit *shared __attribute__((swift_name("shared")));
 - (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonElement")))
+@interface PUAKotlinx_serialization_jsonJsonElement : PUABase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property (class, readonly, getter=companion) PUAKotlinx_serialization_jsonJsonElementCompanion *companion __attribute__((swift_name("companion")));
 @end;
 
 __attribute__((swift_name("Kotlinx_serialization_coreEncoder")))
@@ -723,6 +774,272 @@ __attribute__((swift_name("Ktor_httpHttpMethod")))
 @property (readonly) NSString *value __attribute__((swift_name("value")));
 @end;
 
+__attribute__((swift_name("Ktor_utilsStringValues")))
+@protocol PUAKtor_utilsStringValues
+@required
+- (BOOL)containsName:(NSString *)name __attribute__((swift_name("contains(name:)")));
+- (BOOL)containsName:(NSString *)name value:(NSString *)value __attribute__((swift_name("contains(name:value:)")));
+- (NSSet<id<PUAKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
+- (void)forEachBody:(void (^)(NSString *, NSArray<NSString *> *))body __attribute__((swift_name("forEach(body:)")));
+- (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
+- (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
+- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
+- (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
+@property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
+@end;
+
+__attribute__((swift_name("Ktor_httpHeaders")))
+@protocol PUAKtor_httpHeaders <PUAKtor_utilsStringValues>
+@required
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientCall")))
+@interface PUAKtor_client_coreHttpClientCall : PUABase <PUAKotlinx_coroutines_coreCoroutineScope>
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpClientCallCompanion *companion __attribute__((swift_name("companion")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)getResponseContentWithCompletionHandler:(void (^)(id<PUAKtor_ioByteReadChannel> _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("getResponseContent(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveInfo:(PUAKtor_client_coreTypeInfo *)info completionHandler:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receive(info:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)receiveInfo:(id<PUAKtor_utilsTypeInfo>)info completionHandler_:(void (^)(id _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("receive(info:completionHandler_:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) BOOL allowDoubleReceive __attribute__((swift_name("allowDoubleReceive")));
+@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) PUAKtor_client_coreHttpClient * _Nullable client __attribute__((swift_name("client")));
+@property (readonly) id<PUAKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@property (readonly) id<PUAKtor_client_coreHttpRequest> request __attribute__((swift_name("request")));
+@property (readonly) PUAKtor_client_coreHttpResponse *response __attribute__((swift_name("response")));
+@end;
+
+__attribute__((swift_name("Ktor_ioByteReadChannel")))
+@protocol PUAKtor_ioByteReadChannel
+@required
+- (BOOL)cancelCause_:(PUAKotlinThrowable * _Nullable)cause __attribute__((swift_name("cancel(cause_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)discardMax:(int64_t)max completionHandler:(void (^)(PUALong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("discard(max:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)peekToDestination:(PUAKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max completionHandler:(void (^)(PUALong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(PUAKtor_ioIoBuffer *)dst completionHandler:(void (^)(PUAInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(PUAKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(PUAInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(PUAInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readAvailableDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(PUAInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readAvailable(dst:offset:length:completionHandler__:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readBooleanWithCompletionHandler:(void (^)(PUABoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readBoolean(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readByteWithCompletionHandler:(void (^)(PUAByte * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readByte(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readDoubleWithCompletionHandler:(void (^)(PUADouble * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readDouble(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFloatWithCompletionHandler:(void (^)(PUAFloat * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFloat(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(PUAKtor_ioIoBuffer *)dst n:(int32_t)n completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:n:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(PUAKotlinByteArray *)dst offset:(int32_t)offset length:(int32_t)length completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(void *)dst offset:(int32_t)offset length:(int32_t)length completionHandler_:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler_:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readFullyDst:(void *)dst offset:(int64_t)offset length:(int64_t)length completionHandler__:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readFully(dst:offset:length:completionHandler__:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readIntWithCompletionHandler:(void (^)(PUAInt * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readInt(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readLongWithCompletionHandler:(void (^)(PUALong * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readLong(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readPacketSize:(int32_t)size headerSizeHint:(int32_t)headerSizeHint completionHandler:(void (^)(PUAKtor_ioByteReadPacket * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readPacket(size:headerSizeHint:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readRemainingLimit:(int64_t)limit headerSizeHint:(int32_t)headerSizeHint completionHandler:(void (^)(PUAKtor_ioByteReadPacket * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readRemaining(limit:headerSizeHint:completionHandler:)")));
+- (void)readSessionConsumer:(void (^)(id<PUAKtor_ioReadSession>))consumer __attribute__((swift_name("readSession(consumer:)"))) __attribute__((deprecated("Use read { } instead.")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readShortWithCompletionHandler:(void (^)(PUAShort * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readShort(completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readSuspendableSessionConsumer:(id<PUAKotlinSuspendFunction1>)consumer completionHandler:(void (^)(PUAKotlinUnit * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readSuspendableSession(consumer:completionHandler:)"))) __attribute__((deprecated("Use read { } instead.")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readUTF8LineLimit:(int32_t)limit completionHandler:(void (^)(NSString * _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("readUTF8Line(limit:completionHandler:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)readUTF8LineToOut:(id<PUAKotlinAppendable>)out limit:(int32_t)limit completionHandler:(void (^)(PUABoolean * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("readUTF8LineTo(out:limit:completionHandler:)")));
+@property (readonly) int32_t availableForRead __attribute__((swift_name("availableForRead")));
+@property (readonly) PUAKotlinThrowable * _Nullable closedCause __attribute__((swift_name("closedCause")));
+@property (readonly) BOOL isClosedForRead __attribute__((swift_name("isClosedForRead")));
+@property (readonly) BOOL isClosedForWrite __attribute__((swift_name("isClosedForWrite")));
+@property PUAKtor_ioByteOrder *readByteOrder __attribute__((swift_name("readByteOrder"))) __attribute__((unavailable("Setting byte order is no longer supported. Read/write in big endian and use reverseByteOrder() extensions.")));
+@property (readonly) int64_t totalBytesRead __attribute__((swift_name("totalBytesRead")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsGMTDate")))
+@interface PUAKtor_utilsGMTDate : PUABase <PUAKotlinComparable>
+@property (class, readonly, getter=companion) PUAKtor_utilsGMTDateCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)compareToOther:(PUAKtor_utilsGMTDate *)other __attribute__((swift_name("compareTo(other:)")));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (PUAKtor_utilsWeekDay *)component4 __attribute__((swift_name("component4()")));
+- (int32_t)component5 __attribute__((swift_name("component5()")));
+- (int32_t)component6 __attribute__((swift_name("component6()")));
+- (PUAKtor_utilsMonth *)component7 __attribute__((swift_name("component7()")));
+- (int32_t)component8 __attribute__((swift_name("component8()")));
+- (int64_t)component9 __attribute__((swift_name("component9()")));
+- (PUAKtor_utilsGMTDate *)doCopySeconds:(int32_t)seconds minutes:(int32_t)minutes hours:(int32_t)hours dayOfWeek:(PUAKtor_utilsWeekDay *)dayOfWeek dayOfMonth:(int32_t)dayOfMonth dayOfYear:(int32_t)dayOfYear month:(PUAKtor_utilsMonth *)month year:(int32_t)year timestamp:(int64_t)timestamp __attribute__((swift_name("doCopy(seconds:minutes:hours:dayOfWeek:dayOfMonth:dayOfYear:month:year:timestamp:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t dayOfMonth __attribute__((swift_name("dayOfMonth")));
+@property (readonly) PUAKtor_utilsWeekDay *dayOfWeek __attribute__((swift_name("dayOfWeek")));
+@property (readonly) int32_t dayOfYear __attribute__((swift_name("dayOfYear")));
+@property (readonly) int32_t hours __attribute__((swift_name("hours")));
+@property (readonly) int32_t minutes __attribute__((swift_name("minutes")));
+@property (readonly) PUAKtor_utilsMonth *month __attribute__((swift_name("month")));
+@property (readonly) int32_t seconds __attribute__((swift_name("seconds")));
+@property (readonly) int64_t timestamp __attribute__((swift_name("timestamp")));
+@property (readonly) int32_t year __attribute__((swift_name("year")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpStatusCode")))
+@interface PUAKtor_httpHttpStatusCode : PUABase
+- (instancetype)initWithValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("init(value:description:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAKtor_httpHttpStatusCodeCompanion *companion __attribute__((swift_name("companion")));
+- (int32_t)component1 __attribute__((swift_name("component1()")));
+- (NSString *)component2 __attribute__((swift_name("component2()")));
+- (PUAKtor_httpHttpStatusCode *)doCopyValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("doCopy(value:description:)")));
+- (PUAKtor_httpHttpStatusCode *)descriptionValue:(NSString *)value __attribute__((swift_name("description(value:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *description_ __attribute__((swift_name("description_")));
+@property (readonly) int32_t value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpProtocolVersion")))
+@interface PUAKtor_httpHttpProtocolVersion : PUABase
+- (instancetype)initWithName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("init(name:major:minor:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAKtor_httpHttpProtocolVersionCompanion *companion __attribute__((swift_name("companion")));
+- (NSString *)component1 __attribute__((swift_name("component1()")));
+- (int32_t)component2 __attribute__((swift_name("component2()")));
+- (int32_t)component3 __attribute__((swift_name("component3()")));
+- (PUAKtor_httpHttpProtocolVersion *)doCopyName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("doCopy(name:major:minor:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) int32_t major __attribute__((swift_name("major")));
+@property (readonly) int32_t minor __attribute__((swift_name("minor")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_serialization_jsonJsonElement.Companion")))
+@interface PUAKotlinx_serialization_jsonJsonElementCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKotlinx_serialization_jsonJsonElementCompanion *shared __attribute__((swift_name("shared")));
+- (id<PUAKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end;
+
 __attribute__((swift_name("Kotlinx_serialization_coreCompositeEncoder")))
 @protocol PUAKotlinx_serialization_coreCompositeEncoder
 @required
@@ -793,30 +1110,11 @@ __attribute__((swift_name("KotlinNothing")))
 @interface PUAKotlinNothing : PUABase
 @end;
 
-__attribute__((swift_name("Ktor_utilsStringValues")))
-@protocol PUAKtor_utilsStringValues
-@required
-- (BOOL)containsName:(NSString *)name __attribute__((swift_name("contains(name:)")));
-- (BOOL)containsName:(NSString *)name value:(NSString *)value __attribute__((swift_name("contains(name:value:)")));
-- (NSSet<id<PUAKotlinMapEntry>> *)entries __attribute__((swift_name("entries()")));
-- (void)forEachBody:(void (^)(NSString *, NSArray<NSString *> *))body __attribute__((swift_name("forEach(body:)")));
-- (NSString * _Nullable)getName:(NSString *)name __attribute__((swift_name("get(name:)")));
-- (NSArray<NSString *> * _Nullable)getAllName:(NSString *)name __attribute__((swift_name("getAll(name:)")));
-- (BOOL)isEmpty __attribute__((swift_name("isEmpty()")));
-- (NSSet<NSString *> *)names __attribute__((swift_name("names()")));
-@property (readonly) BOOL caseInsensitiveName __attribute__((swift_name("caseInsensitiveName")));
-@end;
-
 __attribute__((swift_name("KotlinMapEntry")))
 @protocol PUAKotlinMapEntry
 @required
 @property (readonly) id _Nullable key __attribute__((swift_name("key")));
 @property (readonly) id _Nullable value __attribute__((swift_name("value")));
-@end;
-
-__attribute__((swift_name("Ktor_httpHeaders")))
-@protocol PUAKtor_httpHeaders <PUAKtor_utilsStringValues>
-@required
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -956,6 +1254,437 @@ __attribute__((swift_name("Ktor_httpHttpMethod.Companion")))
 @property (readonly) PUAKtor_httpHttpMethod *Put __attribute__((swift_name("Put")));
 @end;
 
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClientCall.Companion")))
+@interface PUAKtor_client_coreHttpClientCallCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_client_coreHttpClientCallCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsAttributeKey<id> *CustomResponse __attribute__((swift_name("CustomResponse"))) __attribute__((deprecated("This is going to be removed. Please file a ticket with clarification why and what for do you need it.")));
+@end;
+
+__attribute__((swift_name("Ktor_utilsTypeInfo")))
+@protocol PUAKtor_utilsTypeInfo
+@required
+@property (readonly) id<PUAKotlinKType> _Nullable kotlinType __attribute__((swift_name("kotlinType")));
+@property (readonly) id<PUAKotlinKType> reifiedType __attribute__((swift_name("reifiedType")));
+@property (readonly) id<PUAKotlinKClass> type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreTypeInfo")))
+@interface PUAKtor_client_coreTypeInfo : PUABase <PUAKtor_utilsTypeInfo>
+- (instancetype)initWithType:(id<PUAKotlinKClass>)type reifiedType:(id<PUAKotlinKType>)reifiedType kotlinType:(id<PUAKotlinKType> _Nullable)kotlinType __attribute__((swift_name("init(type:reifiedType:kotlinType:)"))) __attribute__((objc_designated_initializer)) __attribute__((deprecated("This was moved to another package.")));
+- (id<PUAKotlinKClass>)component1 __attribute__((swift_name("component1()")));
+- (id<PUAKotlinKType>)component2 __attribute__((swift_name("component2()")));
+- (id<PUAKotlinKType> _Nullable)component3 __attribute__((swift_name("component3()")));
+- (PUAKtor_client_coreTypeInfo *)doCopyType:(id<PUAKotlinKClass>)type reifiedType:(id<PUAKotlinKType>)reifiedType kotlinType:(id<PUAKotlinKType> _Nullable)kotlinType __attribute__((swift_name("doCopy(type:reifiedType:kotlinType:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<PUAKotlinKType> _Nullable kotlinType __attribute__((swift_name("kotlinType")));
+@property (readonly) id<PUAKotlinKType> reifiedType __attribute__((swift_name("reifiedType")));
+@property (readonly) id<PUAKotlinKClass> type __attribute__((swift_name("type")));
+@end;
+
+__attribute__((swift_name("Ktor_ioCloseable")))
+@protocol PUAKtor_ioCloseable
+@required
+- (void)close __attribute__((swift_name("close()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClient")))
+@interface PUAKtor_client_coreHttpClient : PUABase <PUAKotlinx_coroutines_coreCoroutineScope, PUAKtor_ioCloseable>
+- (instancetype)initWithEngine:(id<PUAKtor_client_coreHttpClientEngine>)engine userConfig:(PUAKtor_client_coreHttpClientConfig<PUAKtor_client_coreHttpClientEngineConfig *> *)userConfig __attribute__((swift_name("init(engine:userConfig:)"))) __attribute__((objc_designated_initializer));
+- (void)close __attribute__((swift_name("close()")));
+- (PUAKtor_client_coreHttpClient *)configBlock:(void (^)(PUAKtor_client_coreHttpClientConfig<id> *))block __attribute__((swift_name("config(block:)")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeBuilder:(PUAKtor_client_coreHttpRequestBuilder *)builder completionHandler:(void (^)(PUAKtor_client_coreHttpClientCall * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(builder:completionHandler:)"))) __attribute__((unavailable("Unbound [HttpClientCall] is deprecated. Consider using [request<HttpResponse>(builder)] instead.")));
+- (BOOL)isSupportedCapability:(id<PUAKtor_client_coreHttpClientEngineCapability>)capability __attribute__((swift_name("isSupported(capability:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) id<PUAKotlinCoroutineContext> coroutineContext __attribute__((swift_name("coroutineContext")));
+@property (readonly) PUAKotlinx_coroutines_coreCoroutineDispatcher *dispatcher __attribute__((swift_name("dispatcher"))) __attribute__((unavailable("[dispatcher] is deprecated. Use coroutineContext instead.")));
+@property (readonly) id<PUAKtor_client_coreHttpClientEngine> engine __attribute__((swift_name("engine")));
+@property (readonly) PUAKtor_client_coreHttpClientEngineConfig *engineConfig __attribute__((swift_name("engineConfig")));
+@property (readonly) PUAKtor_client_coreHttpReceivePipeline *receivePipeline __attribute__((swift_name("receivePipeline")));
+@property (readonly) PUAKtor_client_coreHttpRequestPipeline *requestPipeline __attribute__((swift_name("requestPipeline")));
+@property (readonly) PUAKtor_client_coreHttpResponsePipeline *responsePipeline __attribute__((swift_name("responsePipeline")));
+@property (readonly) PUAKtor_client_coreHttpSendPipeline *sendPipeline __attribute__((swift_name("sendPipeline")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpRequest")))
+@protocol PUAKtor_client_coreHttpRequest <PUAKtor_httpHttpMessage, PUAKotlinx_coroutines_coreCoroutineScope>
+@required
+@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) PUAKtor_client_coreHttpClientCall *call __attribute__((swift_name("call")));
+@property (readonly) PUAKtor_httpOutgoingContent *content __attribute__((swift_name("content")));
+@property (readonly) PUAKtor_httpHttpMethod *method __attribute__((swift_name("method")));
+@property (readonly) PUAKtor_httpUrl *url __attribute__((swift_name("url")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioMemory")))
+@interface PUAKtor_ioMemory : PUABase
+- (instancetype)initWithPointer:(void *)pointer size:(int64_t)size __attribute__((swift_name("init(pointer:size:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAKtor_ioMemoryCompanion *companion __attribute__((swift_name("companion")));
+- (void)doCopyToDestination:(PUAKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length destinationOffset:(int32_t)destinationOffset __attribute__((swift_name("doCopyTo(destination:offset:length:destinationOffset:)")));
+- (void)doCopyToDestination:(PUAKtor_ioMemory *)destination offset:(int64_t)offset length:(int64_t)length destinationOffset_:(int64_t)destinationOffset __attribute__((swift_name("doCopyTo(destination:offset:length:destinationOffset_:)")));
+- (int8_t)loadAtIndex:(int32_t)index __attribute__((swift_name("loadAt(index:)")));
+- (int8_t)loadAtIndex_:(int64_t)index __attribute__((swift_name("loadAt(index_:)")));
+- (PUAKtor_ioMemory *)sliceOffset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("slice(offset:length:)")));
+- (PUAKtor_ioMemory *)sliceOffset:(int64_t)offset length_:(int64_t)length __attribute__((swift_name("slice(offset:length_:)")));
+- (void)storeAtIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("storeAt(index:value:)")));
+- (void)storeAtIndex:(int64_t)index value_:(int8_t)value __attribute__((swift_name("storeAt(index:value_:)")));
+@property (readonly) void *pointer __attribute__((swift_name("pointer")));
+@property (readonly) int64_t size __attribute__((swift_name("size")));
+@property (readonly) int32_t size32 __attribute__((swift_name("size32")));
+@end;
+
+__attribute__((swift_name("Ktor_ioBuffer")))
+@interface PUAKtor_ioBuffer : PUABase
+- (instancetype)initWithMemory:(PUAKtor_ioMemory *)memory __attribute__((swift_name("init(memory:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAKtor_ioBufferCompanion *companion __attribute__((swift_name("companion")));
+- (void)commitWrittenCount:(int32_t)count __attribute__((swift_name("commitWritten(count:)")));
+- (int32_t)discardCount:(int32_t)count __attribute__((swift_name("discard(count:)"))) __attribute__((unavailable("Use discardExact instead.")));
+- (int64_t)discardCount_:(int64_t)count __attribute__((swift_name("discard(count_:)"))) __attribute__((unavailable("Use discardExact instead.")));
+- (void)discardExactCount:(int32_t)count __attribute__((swift_name("discardExact(count:)")));
+- (PUAKtor_ioBuffer *)duplicate __attribute__((swift_name("duplicate()")));
+- (void)duplicateToCopy:(PUAKtor_ioBuffer *)copy __attribute__((swift_name("duplicateTo(copy:)")));
+- (int8_t)readByte __attribute__((swift_name("readByte()")));
+- (void)reserveEndGapEndGap:(int32_t)endGap __attribute__((swift_name("reserveEndGap(endGap:)")));
+- (void)reserveStartGapStartGap:(int32_t)startGap __attribute__((swift_name("reserveStartGap(startGap:)")));
+- (void)reset __attribute__((swift_name("reset()")));
+- (void)resetForRead __attribute__((swift_name("resetForRead()")));
+- (void)resetForWrite __attribute__((swift_name("resetForWrite()")));
+- (void)resetForWriteLimit:(int32_t)limit __attribute__((swift_name("resetForWrite(limit:)")));
+- (void)rewindCount:(int32_t)count __attribute__((swift_name("rewind(count:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (int32_t)tryPeekByte __attribute__((swift_name("tryPeekByte()")));
+- (int32_t)tryReadByte __attribute__((swift_name("tryReadByte()")));
+- (void)writeByteValue:(int8_t)value __attribute__((swift_name("writeByte(value:)")));
+@property id _Nullable attachment __attribute__((swift_name("attachment"))) __attribute__((deprecated("Will be removed. Inherit Buffer and add required fields instead.")));
+@property (readonly) int32_t capacity __attribute__((swift_name("capacity")));
+@property (readonly) int32_t endGap __attribute__((swift_name("endGap")));
+@property (readonly) int32_t limit __attribute__((swift_name("limit")));
+@property (readonly) PUAKtor_ioMemory *memory __attribute__((swift_name("memory")));
+@property (readonly) int32_t readPosition __attribute__((swift_name("readPosition")));
+@property (readonly) int32_t readRemaining __attribute__((swift_name("readRemaining")));
+@property (readonly) int32_t startGap __attribute__((swift_name("startGap")));
+@property (readonly) int32_t writePosition __attribute__((swift_name("writePosition")));
+@property (readonly) int32_t writeRemaining __attribute__((swift_name("writeRemaining")));
+@end;
+
+__attribute__((swift_name("Ktor_ioChunkBuffer")))
+@interface PUAKtor_ioChunkBuffer : PUAKtor_ioBuffer
+- (instancetype)initWithMemory:(PUAKtor_ioMemory *)memory origin:(PUAKtor_ioChunkBuffer * _Nullable)origin parentPool:(id<PUAKtor_ioObjectPool> _Nullable)parentPool __attribute__((swift_name("init(memory:origin:parentPool:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithMemory:(PUAKtor_ioMemory *)memory __attribute__((swift_name("init(memory:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_ioChunkBufferCompanion *companion __attribute__((swift_name("companion")));
+- (PUAKtor_ioChunkBuffer * _Nullable)cleanNext __attribute__((swift_name("cleanNext()")));
+- (PUAKtor_ioChunkBuffer *)duplicate __attribute__((swift_name("duplicate()")));
+- (void)releasePool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("release(pool:)")));
+- (void)reset __attribute__((swift_name("reset()")));
+@property (getter=next_) PUAKtor_ioChunkBuffer * _Nullable next __attribute__((swift_name("next")));
+@property (readonly) PUAKtor_ioChunkBuffer * _Nullable origin __attribute__((swift_name("origin")));
+@property (readonly) int32_t referenceCount __attribute__((swift_name("referenceCount")));
+@end;
+
+__attribute__((swift_name("Ktor_ioInput")))
+@protocol PUAKtor_ioInput <PUAKtor_ioCloseable>
+@required
+- (int64_t)discardN:(int64_t)n __attribute__((swift_name("discard(n:)")));
+- (int64_t)peekToDestination:(PUAKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
+- (int8_t)readByte __attribute__((swift_name("readByte()")));
+- (int32_t)tryPeek __attribute__((swift_name("tryPeek()")));
+@property PUAKtor_ioByteOrder *byteOrder __attribute__((swift_name("byteOrder"))) __attribute__((unavailable("Not supported anymore. All operations are big endian by default. Use readXXXLittleEndian or readXXX then X.reverseByteOrder() instead.")));
+@property (readonly) BOOL endOfInput __attribute__((swift_name("endOfInput")));
+@end;
+
+__attribute__((swift_name("KotlinAppendable")))
+@protocol PUAKotlinAppendable
+@required
+- (id<PUAKotlinAppendable>)appendValue:(unichar)value __attribute__((swift_name("append(value:)")));
+- (id<PUAKotlinAppendable>)appendValue_:(id _Nullable)value __attribute__((swift_name("append(value_:)")));
+- (id<PUAKotlinAppendable>)appendValue:(id _Nullable)value startIndex:(int32_t)startIndex endIndex:(int32_t)endIndex __attribute__((swift_name("append(value:startIndex:endIndex:)")));
+@end;
+
+__attribute__((swift_name("Ktor_ioOutput")))
+@protocol PUAKtor_ioOutput <PUAKotlinAppendable, PUAKtor_ioCloseable>
+@required
+- (id<PUAKotlinAppendable>)appendCsq:(PUAKotlinCharArray *)csq start:(int32_t)start end:(int32_t)end __attribute__((swift_name("append(csq:start:end:)")));
+- (void)flush __attribute__((swift_name("flush()")));
+- (void)writeByteV:(int8_t)v __attribute__((swift_name("writeByte(v:)")));
+@property PUAKtor_ioByteOrder *byteOrder __attribute__((swift_name("byteOrder"))) __attribute__((deprecated("Write with writeXXXLittleEndian or do X.reverseByteOrder() and then writeXXX instead.")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioIoBuffer")))
+@interface PUAKtor_ioIoBuffer : PUAKtor_ioChunkBuffer <PUAKtor_ioInput, PUAKtor_ioOutput>
+- (instancetype)initWithMemory:(PUAKtor_ioMemory *)memory origin:(PUAKtor_ioChunkBuffer * _Nullable)origin __attribute__((swift_name("init(memory:origin:)"))) __attribute__((objc_designated_initializer)) __attribute__((deprecated("Use Buffer instead.")));
+- (instancetype)initWithContent:(void *)content contentCapacity:(int32_t)contentCapacity __attribute__((swift_name("init(content:contentCapacity:)"))) __attribute__((objc_designated_initializer)) __attribute__((deprecated("Use Buffer instead.")));
+- (instancetype)initWithMemory:(PUAKtor_ioMemory *)memory origin:(PUAKtor_ioChunkBuffer * _Nullable)origin parentPool:(id<PUAKtor_ioObjectPool> _Nullable)parentPool __attribute__((swift_name("init(memory:origin:parentPool:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_ioIoBufferCompanion *companion __attribute__((swift_name("companion")));
+- (id<PUAKotlinAppendable>)appendValue:(unichar)c __attribute__((swift_name("append(value:)")));
+- (id<PUAKotlinAppendable>)appendCsq:(PUAKotlinCharArray *)csq start:(int32_t)start end:(int32_t)end __attribute__((swift_name("append(csq:start:end:)")));
+- (id<PUAKotlinAppendable>)appendValue_:(id _Nullable)csq __attribute__((swift_name("append(value_:)")));
+- (id<PUAKotlinAppendable>)appendValue:(id _Nullable)csq startIndex:(int32_t)start endIndex:(int32_t)end __attribute__((swift_name("append(value:startIndex:endIndex:)")));
+- (int32_t)appendCharsCsq:(PUAKotlinCharArray *)csq start:(int32_t)start end:(int32_t)end __attribute__((swift_name("appendChars(csq:start:end:)")));
+- (int32_t)appendCharsCsq:(id)csq start:(int32_t)start end_:(int32_t)end __attribute__((swift_name("appendChars(csq:start:end_:)")));
+- (void)close __attribute__((swift_name("close()")));
+- (PUAKtor_ioIoBuffer *)duplicate __attribute__((swift_name("duplicate()")));
+- (void)flush __attribute__((swift_name("flush()")));
+- (PUAKtor_ioIoBuffer *)makeView __attribute__((swift_name("makeView()")));
+- (int64_t)peekToDestination:(PUAKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
+- (int32_t)readDirectBlock:(PUAInt *(^)(id))block __attribute__((swift_name("readDirect(block:)")));
+- (void)releasePool_:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("release(pool_:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+- (int32_t)tryPeek __attribute__((swift_name("tryPeek()")));
+- (int32_t)writeDirectBlock:(PUAInt *(^)(id))block __attribute__((swift_name("writeDirect(block:)")));
+@property PUAKtor_ioByteOrder *byteOrder __attribute__((swift_name("byteOrder"))) __attribute__((unavailable("Not supported anymore. All operations are big endian by default.")));
+@property (readonly) BOOL endOfInput __attribute__((swift_name("endOfInput")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinByteArray")))
+@interface PUAKotlinByteArray : PUABase
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(PUAByte *(^)(PUAInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (int8_t)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (PUAKotlinByteIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(int8_t)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end;
+
+__attribute__((swift_name("Ktor_ioAbstractInput")))
+@interface PUAKtor_ioAbstractInput : PUABase <PUAKtor_ioInput>
+- (instancetype)initWithHead:(PUAKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer)) __attribute__((deprecated("AbstractInput is deprecated and will be merged with Input in 2.0.0")));
+@property (class, readonly, getter=companion) PUAKtor_ioAbstractInputCompanion *companion __attribute__((swift_name("companion")));
+- (BOOL)canRead __attribute__((swift_name("canRead()")));
+- (void)close __attribute__((swift_name("close()")));
+- (void)closeSource __attribute__((swift_name("closeSource()")));
+- (int32_t)discardN_:(int32_t)n __attribute__((swift_name("discard(n_:)")));
+- (int64_t)discardN:(int64_t)n __attribute__((swift_name("discard(n:)")));
+- (void)discardExactN:(int32_t)n __attribute__((swift_name("discardExact(n:)")));
+- (PUAKtor_ioChunkBuffer * _Nullable)ensureNextHeadCurrent:(PUAKtor_ioChunkBuffer *)current __attribute__((swift_name("ensureNextHead(current:)")));
+- (PUAKtor_ioChunkBuffer * _Nullable)fill __attribute__((swift_name("fill()")));
+- (int32_t)fillDestination:(PUAKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("fill(destination:offset:length:)")));
+- (void)fixGapAfterReadCurrent:(PUAKtor_ioChunkBuffer *)current __attribute__((swift_name("fixGapAfterRead(current:)")));
+- (BOOL)hasBytesN:(int32_t)n __attribute__((swift_name("hasBytes(n:)")));
+- (void)markNoMoreChunksAvailable __attribute__((swift_name("markNoMoreChunksAvailable()")));
+- (int64_t)peekToDestination:(PUAKtor_ioMemory *)destination destinationOffset:(int64_t)destinationOffset offset:(int64_t)offset min:(int64_t)min max:(int64_t)max __attribute__((swift_name("peekTo(destination:destinationOffset:offset:min:max:)")));
+- (PUAKtor_ioChunkBuffer * _Nullable)prepareReadHeadMinSize:(int32_t)minSize __attribute__((swift_name("prepareReadHead(minSize:)")));
+- (int8_t)readByte __attribute__((swift_name("readByte()")));
+- (NSString *)readTextMin:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(min:max:)")));
+- (int32_t)readTextOut:(id<PUAKotlinAppendable>)out min:(int32_t)min max:(int32_t)max __attribute__((swift_name("readText(out:min:max:)")));
+- (NSString *)readTextExactExactCharacters:(int32_t)exactCharacters __attribute__((swift_name("readTextExact(exactCharacters:)")));
+- (void)readTextExactOut:(id<PUAKotlinAppendable>)out exactCharacters:(int32_t)exactCharacters __attribute__((swift_name("readTextExact(out:exactCharacters:)")));
+- (void)release_ __attribute__((swift_name("release()")));
+- (int32_t)tryPeek __attribute__((swift_name("tryPeek()")));
+- (void)updateHeadRemainingRemaining:(int32_t)remaining __attribute__((swift_name("updateHeadRemaining(remaining:)"))) __attribute__((unavailable("Not supported anymore.")));
+@property PUAKtor_ioByteOrder *byteOrder __attribute__((swift_name("byteOrder"))) __attribute__((unavailable("Not supported anymore. All operations are big endian by default.")));
+@property (readonly) BOOL endOfInput __attribute__((swift_name("endOfInput")));
+@property (readonly) id<PUAKtor_ioObjectPool> pool __attribute__((swift_name("pool")));
+@property (readonly) int64_t remaining __attribute__((swift_name("remaining")));
+@end;
+
+__attribute__((swift_name("Ktor_ioByteReadPacketBase")))
+@interface PUAKtor_ioByteReadPacketBase : PUAKtor_ioAbstractInput
+- (instancetype)initWithHead:(PUAKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer)) __attribute__((deprecated("Will be removed in the future releases. Use Input or AbstractInput instead.")));
+@property (class, readonly, getter=companion) PUAKtor_ioByteReadPacketBaseCompanion *companion __attribute__((swift_name("companion")));
+@end;
+
+__attribute__((swift_name("Ktor_ioByteReadPacketPlatformBase")))
+@interface PUAKtor_ioByteReadPacketPlatformBase : PUAKtor_ioByteReadPacketBase
+- (instancetype)initWithHead:(PUAKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable("Will be removed in future releases.")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteReadPacket")))
+@interface PUAKtor_ioByteReadPacket : PUAKtor_ioByteReadPacketPlatformBase <PUAKtor_ioInput>
+- (instancetype)initWithHead:(PUAKtor_ioChunkBuffer *)head pool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:pool:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithHead:(PUAKtor_ioChunkBuffer *)head remaining:(int64_t)remaining pool:(id<PUAKtor_ioObjectPool>)pool __attribute__((swift_name("init(head:remaining:pool:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_ioByteReadPacketCompanion *companion __attribute__((swift_name("companion")));
+- (void)closeSource __attribute__((swift_name("closeSource()")));
+- (PUAKtor_ioByteReadPacket *)doCopy __attribute__((swift_name("doCopy()")));
+- (PUAKtor_ioChunkBuffer * _Nullable)fill __attribute__((swift_name("fill()")));
+- (int32_t)fillDestination:(PUAKtor_ioMemory *)destination offset:(int32_t)offset length:(int32_t)length __attribute__((swift_name("fill(destination:offset:length:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((swift_name("Ktor_ioReadSession")))
+@protocol PUAKtor_ioReadSession
+@required
+- (int32_t)discardN_:(int32_t)n __attribute__((swift_name("discard(n_:)")));
+- (PUAKtor_ioIoBuffer * _Nullable)requestAtLeast:(int32_t)atLeast __attribute__((swift_name("request(atLeast:)")));
+@property (readonly) int32_t availableForRead __attribute__((swift_name("availableForRead")));
+@end;
+
+__attribute__((swift_name("KotlinFunction")))
+@protocol PUAKotlinFunction
+@required
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction1")))
+@protocol PUAKotlinSuspendFunction1 <PUAKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteOrder")))
+@interface PUAKtor_ioByteOrder : PUAKotlinEnum<PUAKtor_ioByteOrder *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_ioByteOrderCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) PUAKtor_ioByteOrder *bigEndian __attribute__((swift_name("bigEndian")));
+@property (class, readonly) PUAKtor_ioByteOrder *littleEndian __attribute__((swift_name("littleEndian")));
++ (PUAKotlinArray<PUAKtor_ioByteOrder *> *)values __attribute__((swift_name("values()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsGMTDate.Companion")))
+@interface PUAKtor_utilsGMTDateCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_utilsGMTDateCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsGMTDate *START __attribute__((swift_name("START")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsWeekDay")))
+@interface PUAKtor_utilsWeekDay : PUAKotlinEnum<PUAKtor_utilsWeekDay *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_utilsWeekDayCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) PUAKtor_utilsWeekDay *monday __attribute__((swift_name("monday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *tuesday __attribute__((swift_name("tuesday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *wednesday __attribute__((swift_name("wednesday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *thursday __attribute__((swift_name("thursday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *friday __attribute__((swift_name("friday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *saturday __attribute__((swift_name("saturday")));
+@property (class, readonly) PUAKtor_utilsWeekDay *sunday __attribute__((swift_name("sunday")));
++ (PUAKotlinArray<PUAKtor_utilsWeekDay *> *)values __attribute__((swift_name("values()")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsMonth")))
+@interface PUAKtor_utilsMonth : PUAKotlinEnum<PUAKtor_utilsMonth *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_utilsMonthCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly) PUAKtor_utilsMonth *january __attribute__((swift_name("january")));
+@property (class, readonly) PUAKtor_utilsMonth *february __attribute__((swift_name("february")));
+@property (class, readonly) PUAKtor_utilsMonth *march __attribute__((swift_name("march")));
+@property (class, readonly) PUAKtor_utilsMonth *april __attribute__((swift_name("april")));
+@property (class, readonly) PUAKtor_utilsMonth *may __attribute__((swift_name("may")));
+@property (class, readonly) PUAKtor_utilsMonth *june __attribute__((swift_name("june")));
+@property (class, readonly) PUAKtor_utilsMonth *july __attribute__((swift_name("july")));
+@property (class, readonly) PUAKtor_utilsMonth *august __attribute__((swift_name("august")));
+@property (class, readonly) PUAKtor_utilsMonth *september __attribute__((swift_name("september")));
+@property (class, readonly) PUAKtor_utilsMonth *october __attribute__((swift_name("october")));
+@property (class, readonly) PUAKtor_utilsMonth *november __attribute__((swift_name("november")));
+@property (class, readonly) PUAKtor_utilsMonth *december __attribute__((swift_name("december")));
++ (PUAKotlinArray<PUAKtor_utilsMonth *> *)values __attribute__((swift_name("values()")));
+@property (readonly) NSString *value __attribute__((swift_name("value")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpStatusCode.Companion")))
+@interface PUAKtor_httpHttpStatusCodeCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_httpHttpStatusCodeCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKtor_httpHttpStatusCode *)fromValueValue:(int32_t)value __attribute__((swift_name("fromValue(value:)")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Accepted __attribute__((swift_name("Accepted")));
+@property (readonly) PUAKtor_httpHttpStatusCode *BadGateway __attribute__((swift_name("BadGateway")));
+@property (readonly) PUAKtor_httpHttpStatusCode *BadRequest __attribute__((swift_name("BadRequest")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Conflict __attribute__((swift_name("Conflict")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Continue __attribute__((swift_name("Continue")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Created __attribute__((swift_name("Created")));
+@property (readonly) PUAKtor_httpHttpStatusCode *ExpectationFailed __attribute__((swift_name("ExpectationFailed")));
+@property (readonly) PUAKtor_httpHttpStatusCode *FailedDependency __attribute__((swift_name("FailedDependency")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Forbidden __attribute__((swift_name("Forbidden")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Found __attribute__((swift_name("Found")));
+@property (readonly) PUAKtor_httpHttpStatusCode *GatewayTimeout __attribute__((swift_name("GatewayTimeout")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Gone __attribute__((swift_name("Gone")));
+@property (readonly) PUAKtor_httpHttpStatusCode *InsufficientStorage __attribute__((swift_name("InsufficientStorage")));
+@property (readonly) PUAKtor_httpHttpStatusCode *InternalServerError __attribute__((swift_name("InternalServerError")));
+@property (readonly) PUAKtor_httpHttpStatusCode *LengthRequired __attribute__((swift_name("LengthRequired")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Locked __attribute__((swift_name("Locked")));
+@property (readonly) PUAKtor_httpHttpStatusCode *MethodNotAllowed __attribute__((swift_name("MethodNotAllowed")));
+@property (readonly) PUAKtor_httpHttpStatusCode *MovedPermanently __attribute__((swift_name("MovedPermanently")));
+@property (readonly) PUAKtor_httpHttpStatusCode *MultiStatus __attribute__((swift_name("MultiStatus")));
+@property (readonly) PUAKtor_httpHttpStatusCode *MultipleChoices __attribute__((swift_name("MultipleChoices")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NoContent __attribute__((swift_name("NoContent")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NonAuthoritativeInformation __attribute__((swift_name("NonAuthoritativeInformation")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NotAcceptable __attribute__((swift_name("NotAcceptable")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NotFound __attribute__((swift_name("NotFound")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NotImplemented __attribute__((swift_name("NotImplemented")));
+@property (readonly) PUAKtor_httpHttpStatusCode *NotModified __attribute__((swift_name("NotModified")));
+@property (readonly) PUAKtor_httpHttpStatusCode *OK __attribute__((swift_name("OK")));
+@property (readonly) PUAKtor_httpHttpStatusCode *PartialContent __attribute__((swift_name("PartialContent")));
+@property (readonly) PUAKtor_httpHttpStatusCode *PayloadTooLarge __attribute__((swift_name("PayloadTooLarge")));
+@property (readonly) PUAKtor_httpHttpStatusCode *PaymentRequired __attribute__((swift_name("PaymentRequired")));
+@property (readonly) PUAKtor_httpHttpStatusCode *PermanentRedirect __attribute__((swift_name("PermanentRedirect")));
+@property (readonly) PUAKtor_httpHttpStatusCode *PreconditionFailed __attribute__((swift_name("PreconditionFailed")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Processing __attribute__((swift_name("Processing")));
+@property (readonly) PUAKtor_httpHttpStatusCode *ProxyAuthenticationRequired __attribute__((swift_name("ProxyAuthenticationRequired")));
+@property (readonly) PUAKtor_httpHttpStatusCode *RequestHeaderFieldTooLarge __attribute__((swift_name("RequestHeaderFieldTooLarge")));
+@property (readonly) PUAKtor_httpHttpStatusCode *RequestTimeout __attribute__((swift_name("RequestTimeout")));
+@property (readonly) PUAKtor_httpHttpStatusCode *RequestURITooLong __attribute__((swift_name("RequestURITooLong")));
+@property (readonly) PUAKtor_httpHttpStatusCode *RequestedRangeNotSatisfiable __attribute__((swift_name("RequestedRangeNotSatisfiable")));
+@property (readonly) PUAKtor_httpHttpStatusCode *ResetContent __attribute__((swift_name("ResetContent")));
+@property (readonly) PUAKtor_httpHttpStatusCode *SeeOther __attribute__((swift_name("SeeOther")));
+@property (readonly) PUAKtor_httpHttpStatusCode *ServiceUnavailable __attribute__((swift_name("ServiceUnavailable")));
+@property (readonly) PUAKtor_httpHttpStatusCode *SwitchProxy __attribute__((swift_name("SwitchProxy")));
+@property (readonly) PUAKtor_httpHttpStatusCode *SwitchingProtocols __attribute__((swift_name("SwitchingProtocols")));
+@property (readonly) PUAKtor_httpHttpStatusCode *TemporaryRedirect __attribute__((swift_name("TemporaryRedirect")));
+@property (readonly) PUAKtor_httpHttpStatusCode *TooManyRequests __attribute__((swift_name("TooManyRequests")));
+@property (readonly) PUAKtor_httpHttpStatusCode *Unauthorized __attribute__((swift_name("Unauthorized")));
+@property (readonly) PUAKtor_httpHttpStatusCode *UnprocessableEntity __attribute__((swift_name("UnprocessableEntity")));
+@property (readonly) PUAKtor_httpHttpStatusCode *UnsupportedMediaType __attribute__((swift_name("UnsupportedMediaType")));
+@property (readonly) PUAKtor_httpHttpStatusCode *UpgradeRequired __attribute__((swift_name("UpgradeRequired")));
+@property (readonly) PUAKtor_httpHttpStatusCode *UseProxy __attribute__((swift_name("UseProxy")));
+@property (readonly) PUAKtor_httpHttpStatusCode *VariantAlsoNegotiates __attribute__((swift_name("VariantAlsoNegotiates")));
+@property (readonly) PUAKtor_httpHttpStatusCode *VersionNotSupported __attribute__((swift_name("VersionNotSupported")));
+@property (readonly) NSArray<PUAKtor_httpHttpStatusCode *> *allStatusCodes __attribute__((swift_name("allStatusCodes")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_httpHttpProtocolVersion.Companion")))
+@interface PUAKtor_httpHttpProtocolVersionCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_httpHttpProtocolVersionCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKtor_httpHttpProtocolVersion *)fromValueName:(NSString *)name major:(int32_t)major minor:(int32_t)minor __attribute__((swift_name("fromValue(name:major:minor:)")));
+- (PUAKtor_httpHttpProtocolVersion *)parseValue:(id)value __attribute__((swift_name("parse(value:)")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *HTTP_1_0 __attribute__((swift_name("HTTP_1_0")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *HTTP_1_1 __attribute__((swift_name("HTTP_1_1")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *HTTP_2_0 __attribute__((swift_name("HTTP_2_0")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *QUIC __attribute__((swift_name("QUIC")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *SPDY_3 __attribute__((swift_name("SPDY_3")));
+@end;
+
 __attribute__((swift_name("Kotlinx_serialization_coreSerializersModuleCollector")))
 @protocol PUAKotlinx_serialization_coreSerializersModuleCollector
 @required
@@ -1032,22 +1761,6 @@ __attribute__((swift_name("Ktor_httpContentType")))
 @end;
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_httpHttpStatusCode")))
-@interface PUAKtor_httpHttpStatusCode : PUABase
-- (instancetype)initWithValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("init(value:description:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) PUAKtor_httpHttpStatusCodeCompanion *companion __attribute__((swift_name("companion")));
-- (int32_t)component1 __attribute__((swift_name("component1()")));
-- (NSString *)component2 __attribute__((swift_name("component2()")));
-- (PUAKtor_httpHttpStatusCode *)doCopyValue:(int32_t)value description:(NSString *)description __attribute__((swift_name("doCopy(value:description:)")));
-- (PUAKtor_httpHttpStatusCode *)descriptionValue:(NSString *)value __attribute__((swift_name("description(value:)")));
-- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
-- (NSUInteger)hash __attribute__((swift_name("hash()")));
-- (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString *description_ __attribute__((swift_name("description_")));
-@property (readonly) int32_t value __attribute__((swift_name("value")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
 __attribute__((swift_name("Ktor_httpURLProtocol.Companion")))
 @interface PUAKtor_httpURLProtocolCompanion : PUABase
 + (instancetype)alloc __attribute__((unavailable));
@@ -1094,11 +1807,6 @@ __attribute__((swift_name("Kotlinx_coroutines_coreSelectInstance")))
 @property (readonly) BOOL isSelected __attribute__((swift_name("isSelected")));
 @end;
 
-__attribute__((swift_name("KotlinFunction")))
-@protocol PUAKotlinFunction
-@required
-@end;
-
 __attribute__((swift_name("KotlinSuspendFunction0")))
 @protocol PUAKotlinSuspendFunction0 <PUAKotlinFunction>
 @required
@@ -1108,6 +1816,285 @@ __attribute__((swift_name("KotlinSuspendFunction0")))
  Other uncaught Kotlin exceptions are fatal.
 */
 - (void)invokeWithCompletionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(completionHandler:)")));
+@end;
+
+__attribute__((swift_name("KotlinKType")))
+@protocol PUAKotlinKType
+@required
+@property (readonly) NSArray<PUAKotlinKTypeProjection *> *arguments __attribute__((swift_name("arguments")));
+@property (readonly) id<PUAKotlinKClassifier> _Nullable classifier __attribute__((swift_name("classifier")));
+@property (readonly) BOOL isMarkedNullable __attribute__((swift_name("isMarkedNullable")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngine")))
+@protocol PUAKtor_client_coreHttpClientEngine <PUAKotlinx_coroutines_coreCoroutineScope, PUAKtor_ioCloseable>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeData:(PUAKtor_client_coreHttpRequestData *)data completionHandler:(void (^)(PUAKtor_client_coreHttpResponseData * _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(data:completionHandler:)")));
+- (void)installClient:(PUAKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
+@property (readonly) PUAKtor_client_coreHttpClientEngineConfig *config __attribute__((swift_name("config")));
+@property (readonly) PUAKotlinx_coroutines_coreCoroutineDispatcher *dispatcher __attribute__((swift_name("dispatcher")));
+@property (readonly) NSSet<id<PUAKtor_client_coreHttpClientEngineCapability>> *supportedCapabilities __attribute__((swift_name("supportedCapabilities")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientEngineConfig")))
+@interface PUAKtor_client_coreHttpClientEngineConfig : PUABase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+@property BOOL pipelining __attribute__((swift_name("pipelining")));
+@property PUAKtor_client_coreProxyConfig * _Nullable proxy __attribute__((swift_name("proxy")));
+@property (readonly) PUAKotlinNothing *response __attribute__((swift_name("response"))) __attribute__((unavailable("Response config is deprecated. See [HttpPlainText] feature for charset configuration")));
+@property int32_t threadsCount __attribute__((swift_name("threadsCount")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpClientConfig")))
+@interface PUAKtor_client_coreHttpClientConfig<T> : PUABase
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (PUAKtor_client_coreHttpClientConfig<T> *)clone __attribute__((swift_name("clone()")));
+- (void)engineBlock:(void (^)(T))block __attribute__((swift_name("engine(block:)")));
+- (void)installClient:(PUAKtor_client_coreHttpClient *)client __attribute__((swift_name("install(client:)")));
+- (void)installFeature:(id<PUAKtor_client_coreHttpClientFeature>)feature configure:(void (^)(id))configure __attribute__((swift_name("install(feature:configure:)")));
+- (void)installKey:(NSString *)key block:(void (^)(PUAKtor_client_coreHttpClient *))block __attribute__((swift_name("install(key:block:)")));
+- (void)plusAssignOther:(PUAKtor_client_coreHttpClientConfig<T> *)other __attribute__((swift_name("plusAssign(other:)")));
+@property BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@property BOOL expectSuccess __attribute__((swift_name("expectSuccess")));
+@property BOOL followRedirects __attribute__((swift_name("followRedirects")));
+@property BOOL useDefaultTransformers __attribute__((swift_name("useDefaultTransformers")));
+@end;
+
+__attribute__((swift_name("KotlinAbstractCoroutineContextElement")))
+@interface PUAKotlinAbstractCoroutineContextElement : PUABase <PUAKotlinCoroutineContextElement>
+- (instancetype)initWithKey:(id<PUAKotlinCoroutineContextKey>)key __attribute__((swift_name("init(key:)"))) __attribute__((objc_designated_initializer));
+@property (readonly) id<PUAKotlinCoroutineContextKey> key __attribute__((swift_name("key")));
+@end;
+
+__attribute__((swift_name("KotlinContinuationInterceptor")))
+@protocol PUAKotlinContinuationInterceptor <PUAKotlinCoroutineContextElement>
+@required
+- (id<PUAKotlinContinuation>)interceptContinuationContinuation:(id<PUAKotlinContinuation>)continuation __attribute__((swift_name("interceptContinuation(continuation:)")));
+- (void)releaseInterceptedContinuationContinuation:(id<PUAKotlinContinuation>)continuation __attribute__((swift_name("releaseInterceptedContinuation(continuation:)")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher")))
+@interface PUAKotlinx_coroutines_coreCoroutineDispatcher : PUAKotlinAbstractCoroutineContextElement <PUAKotlinContinuationInterceptor>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (instancetype)initWithKey:(id<PUAKotlinCoroutineContextKey>)key __attribute__((swift_name("init(key:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKotlinx_coroutines_coreCoroutineDispatcherKey *companion __attribute__((swift_name("companion")));
+- (void)dispatchContext:(id<PUAKotlinCoroutineContext>)context block:(id<PUAKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatch(context:block:)")));
+- (void)dispatchYieldContext:(id<PUAKotlinCoroutineContext>)context block:(id<PUAKotlinx_coroutines_coreRunnable>)block __attribute__((swift_name("dispatchYield(context:block:)")));
+- (id<PUAKotlinContinuation>)interceptContinuationContinuation:(id<PUAKotlinContinuation>)continuation __attribute__((swift_name("interceptContinuation(continuation:)")));
+- (BOOL)isDispatchNeededContext:(id<PUAKotlinCoroutineContext>)context __attribute__((swift_name("isDispatchNeeded(context:)")));
+- (PUAKotlinx_coroutines_coreCoroutineDispatcher *)plusOther_:(PUAKotlinx_coroutines_coreCoroutineDispatcher *)other __attribute__((swift_name("plus(other_:)"))) __attribute__((unavailable("Operator '+' on two CoroutineDispatcher objects is meaningless. CoroutineDispatcher is a coroutine context element and `+` is a set-sum operator for coroutine contexts. The dispatcher to the right of `+` just replaces the dispatcher to the left.")));
+- (void)releaseInterceptedContinuationContinuation:(id<PUAKotlinContinuation>)continuation __attribute__((swift_name("releaseInterceptedContinuation(continuation:)")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@end;
+
+__attribute__((swift_name("Ktor_utilsPipeline")))
+@interface PUAKtor_utilsPipeline<TSubject, TContext> : PUABase
+- (instancetype)initWithPhase:(PUAKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<PUAKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhases:(PUAKotlinArray<PUAKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer));
+- (void)addPhasePhase:(PUAKtor_utilsPipelinePhase *)phase __attribute__((swift_name("addPhase(phase:)")));
+- (void)afterIntercepted __attribute__((swift_name("afterIntercepted()")));
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)executeContext:(TContext)context subject:(TSubject)subject completionHandler:(void (^)(TSubject _Nullable, NSError * _Nullable))completionHandler __attribute__((swift_name("execute(context:subject:completionHandler:)")));
+- (void)insertPhaseAfterReference:(PUAKtor_utilsPipelinePhase *)reference phase:(PUAKtor_utilsPipelinePhase *)phase __attribute__((swift_name("insertPhaseAfter(reference:phase:)")));
+- (void)insertPhaseBeforeReference:(PUAKtor_utilsPipelinePhase *)reference phase:(PUAKtor_utilsPipelinePhase *)phase __attribute__((swift_name("insertPhaseBefore(reference:phase:)")));
+- (void)interceptPhase:(PUAKtor_utilsPipelinePhase *)phase block:(id<PUAKotlinSuspendFunction2>)block __attribute__((swift_name("intercept(phase:block:)")));
+- (void)mergeFrom:(PUAKtor_utilsPipeline<TSubject, TContext> *)from __attribute__((swift_name("merge(from:)")));
+@property (readonly) id<PUAKtor_utilsAttributes> attributes __attribute__((swift_name("attributes")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@property (readonly, getter=isEmpty_) BOOL isEmpty __attribute__((swift_name("isEmpty")));
+@property (readonly) NSArray<PUAKtor_utilsPipelinePhase *> *items __attribute__((swift_name("items")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpReceivePipeline")))
+@interface PUAKtor_client_coreHttpReceivePipeline : PUAKtor_utilsPipeline<PUAKtor_client_coreHttpResponse *, PUAKtor_client_coreHttpClientCall *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(PUAKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<PUAKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(PUAKotlinArray<PUAKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpReceivePipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestPipeline")))
+@interface PUAKtor_client_coreHttpRequestPipeline : PUAKtor_utilsPipeline<id, PUAKtor_client_coreHttpRequestBuilder *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(PUAKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<PUAKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(PUAKotlinArray<PUAKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpRequestPipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponsePipeline")))
+@interface PUAKtor_client_coreHttpResponsePipeline : PUAKtor_utilsPipeline<PUAKtor_client_coreHttpResponseContainer *, PUAKtor_client_coreHttpClientCall *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(PUAKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<PUAKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(PUAKotlinArray<PUAKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpResponsePipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpSendPipeline")))
+@interface PUAKtor_client_coreHttpSendPipeline : PUAKtor_utilsPipeline<id, PUAKtor_client_coreHttpRequestBuilder *>
+- (instancetype)initWithDevelopmentMode:(BOOL)developmentMode __attribute__((swift_name("init(developmentMode:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithPhase:(PUAKtor_utilsPipelinePhase *)phase interceptors:(NSArray<id<PUAKotlinSuspendFunction2>> *)interceptors __attribute__((swift_name("init(phase:interceptors:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+- (instancetype)initWithPhases:(PUAKotlinArray<PUAKtor_utilsPipelinePhase *> *)phases __attribute__((swift_name("init(phases:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly, getter=companion) PUAKtor_client_coreHttpSendPipelinePhases *companion __attribute__((swift_name("companion")));
+@property (readonly) BOOL developmentMode __attribute__((swift_name("developmentMode")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioMemory.Companion")))
+@interface PUAKtor_ioMemoryCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioMemoryCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioMemory *Empty __attribute__((swift_name("Empty")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioBuffer.Companion")))
+@interface PUAKtor_ioBufferCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioBufferCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioBuffer *Empty __attribute__((swift_name("Empty")));
+@property (readonly) int32_t ReservedSize __attribute__((swift_name("ReservedSize")));
+@end;
+
+__attribute__((swift_name("Ktor_ioObjectPool")))
+@protocol PUAKtor_ioObjectPool <PUAKtor_ioCloseable>
+@required
+- (id)borrow __attribute__((swift_name("borrow()")));
+- (void)dispose __attribute__((swift_name("dispose()")));
+- (void)recycleInstance:(id)instance __attribute__((swift_name("recycle(instance:)")));
+@property (readonly) int32_t capacity __attribute__((swift_name("capacity")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioChunkBuffer.Companion")))
+@interface PUAKtor_ioChunkBufferCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioChunkBufferCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioChunkBuffer *Empty __attribute__((swift_name("Empty")));
+@property (readonly) id<PUAKtor_ioObjectPool> EmptyPool __attribute__((swift_name("EmptyPool")));
+@property (readonly) id<PUAKtor_ioObjectPool> Pool __attribute__((swift_name("Pool")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinCharArray")))
+@interface PUAKotlinCharArray : PUABase
++ (instancetype)arrayWithSize:(int32_t)size __attribute__((swift_name("init(size:)")));
++ (instancetype)arrayWithSize:(int32_t)size init:(id (^)(PUAInt *))init __attribute__((swift_name("init(size:init:)")));
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (unichar)getIndex:(int32_t)index __attribute__((swift_name("get(index:)")));
+- (PUAKotlinCharIterator *)iterator __attribute__((swift_name("iterator()")));
+- (void)setIndex:(int32_t)index value:(unichar)value __attribute__((swift_name("set(index:value:)")));
+@property (readonly) int32_t size __attribute__((swift_name("size")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioIoBuffer.Companion")))
+@interface PUAKtor_ioIoBufferCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioIoBufferCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioIoBuffer *Empty __attribute__((swift_name("Empty")));
+@property (readonly) id<PUAKtor_ioObjectPool> EmptyPool __attribute__((swift_name("EmptyPool")));
+@property (readonly) id<PUAKtor_ioObjectPool> NoPool __attribute__((swift_name("NoPool")));
+@property (readonly) id<PUAKtor_ioObjectPool> Pool __attribute__((swift_name("Pool")));
+@property (readonly) int32_t ReservedSize __attribute__((swift_name("ReservedSize")));
+@end;
+
+__attribute__((swift_name("KotlinByteIterator")))
+@interface PUAKotlinByteIterator : PUABase <PUAKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (PUAByte *)next __attribute__((swift_name("next()")));
+- (int8_t)nextByte __attribute__((swift_name("nextByte()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioAbstractInput.Companion")))
+@interface PUAKtor_ioAbstractInputCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioAbstractInputCompanion *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteReadPacketBase.Companion")))
+@interface PUAKtor_ioByteReadPacketBaseCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioByteReadPacketBaseCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioByteReadPacket *Empty __attribute__((swift_name("Empty"))) __attribute__((unavailable("Use ByteReadPacket.Empty instead")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteReadPacket.Companion")))
+@interface PUAKtor_ioByteReadPacketCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioByteReadPacketCompanion *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_ioByteReadPacket *Empty __attribute__((swift_name("Empty")));
+@property (readonly) int32_t ReservedSize __attribute__((swift_name("ReservedSize")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_ioByteOrder.Companion")))
+@interface PUAKtor_ioByteOrderCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_ioByteOrderCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKtor_ioByteOrder *)nativeOrder __attribute__((swift_name("nativeOrder()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsWeekDay.Companion")))
+@interface PUAKtor_utilsWeekDayCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_utilsWeekDayCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKtor_utilsWeekDay *)fromOrdinal:(int32_t)ordinal __attribute__((swift_name("from(ordinal:)")));
+- (PUAKtor_utilsWeekDay *)fromValue:(NSString *)value __attribute__((swift_name("from(value:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsMonth.Companion")))
+@interface PUAKtor_utilsMonthCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_utilsMonthCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKtor_utilsMonth *)fromOrdinal:(int32_t)ordinal __attribute__((swift_name("from(ordinal:)")));
+- (PUAKtor_utilsMonth *)fromValue:(NSString *)value __attribute__((swift_name("from(value:)")));
 @end;
 
 __attribute__((objc_subclassing_restricted))
@@ -1143,69 +2130,6 @@ __attribute__((swift_name("Ktor_httpContentType.Companion")))
 @property (class, readonly, getter=shared) PUAKtor_httpContentTypeCompanion *shared __attribute__((swift_name("shared")));
 - (PUAKtor_httpContentType *)parseValue:(NSString *)value __attribute__((swift_name("parse(value:)")));
 @property (readonly) PUAKtor_httpContentType *Any __attribute__((swift_name("Any")));
-@end;
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("Ktor_httpHttpStatusCode.Companion")))
-@interface PUAKtor_httpHttpStatusCodeCompanion : PUABase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) PUAKtor_httpHttpStatusCodeCompanion *shared __attribute__((swift_name("shared")));
-- (PUAKtor_httpHttpStatusCode *)fromValueValue:(int32_t)value __attribute__((swift_name("fromValue(value:)")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Accepted __attribute__((swift_name("Accepted")));
-@property (readonly) PUAKtor_httpHttpStatusCode *BadGateway __attribute__((swift_name("BadGateway")));
-@property (readonly) PUAKtor_httpHttpStatusCode *BadRequest __attribute__((swift_name("BadRequest")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Conflict __attribute__((swift_name("Conflict")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Continue __attribute__((swift_name("Continue")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Created __attribute__((swift_name("Created")));
-@property (readonly) PUAKtor_httpHttpStatusCode *ExpectationFailed __attribute__((swift_name("ExpectationFailed")));
-@property (readonly) PUAKtor_httpHttpStatusCode *FailedDependency __attribute__((swift_name("FailedDependency")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Forbidden __attribute__((swift_name("Forbidden")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Found __attribute__((swift_name("Found")));
-@property (readonly) PUAKtor_httpHttpStatusCode *GatewayTimeout __attribute__((swift_name("GatewayTimeout")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Gone __attribute__((swift_name("Gone")));
-@property (readonly) PUAKtor_httpHttpStatusCode *InsufficientStorage __attribute__((swift_name("InsufficientStorage")));
-@property (readonly) PUAKtor_httpHttpStatusCode *InternalServerError __attribute__((swift_name("InternalServerError")));
-@property (readonly) PUAKtor_httpHttpStatusCode *LengthRequired __attribute__((swift_name("LengthRequired")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Locked __attribute__((swift_name("Locked")));
-@property (readonly) PUAKtor_httpHttpStatusCode *MethodNotAllowed __attribute__((swift_name("MethodNotAllowed")));
-@property (readonly) PUAKtor_httpHttpStatusCode *MovedPermanently __attribute__((swift_name("MovedPermanently")));
-@property (readonly) PUAKtor_httpHttpStatusCode *MultiStatus __attribute__((swift_name("MultiStatus")));
-@property (readonly) PUAKtor_httpHttpStatusCode *MultipleChoices __attribute__((swift_name("MultipleChoices")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NoContent __attribute__((swift_name("NoContent")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NonAuthoritativeInformation __attribute__((swift_name("NonAuthoritativeInformation")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NotAcceptable __attribute__((swift_name("NotAcceptable")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NotFound __attribute__((swift_name("NotFound")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NotImplemented __attribute__((swift_name("NotImplemented")));
-@property (readonly) PUAKtor_httpHttpStatusCode *NotModified __attribute__((swift_name("NotModified")));
-@property (readonly) PUAKtor_httpHttpStatusCode *OK __attribute__((swift_name("OK")));
-@property (readonly) PUAKtor_httpHttpStatusCode *PartialContent __attribute__((swift_name("PartialContent")));
-@property (readonly) PUAKtor_httpHttpStatusCode *PayloadTooLarge __attribute__((swift_name("PayloadTooLarge")));
-@property (readonly) PUAKtor_httpHttpStatusCode *PaymentRequired __attribute__((swift_name("PaymentRequired")));
-@property (readonly) PUAKtor_httpHttpStatusCode *PermanentRedirect __attribute__((swift_name("PermanentRedirect")));
-@property (readonly) PUAKtor_httpHttpStatusCode *PreconditionFailed __attribute__((swift_name("PreconditionFailed")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Processing __attribute__((swift_name("Processing")));
-@property (readonly) PUAKtor_httpHttpStatusCode *ProxyAuthenticationRequired __attribute__((swift_name("ProxyAuthenticationRequired")));
-@property (readonly) PUAKtor_httpHttpStatusCode *RequestHeaderFieldTooLarge __attribute__((swift_name("RequestHeaderFieldTooLarge")));
-@property (readonly) PUAKtor_httpHttpStatusCode *RequestTimeout __attribute__((swift_name("RequestTimeout")));
-@property (readonly) PUAKtor_httpHttpStatusCode *RequestURITooLong __attribute__((swift_name("RequestURITooLong")));
-@property (readonly) PUAKtor_httpHttpStatusCode *RequestedRangeNotSatisfiable __attribute__((swift_name("RequestedRangeNotSatisfiable")));
-@property (readonly) PUAKtor_httpHttpStatusCode *ResetContent __attribute__((swift_name("ResetContent")));
-@property (readonly) PUAKtor_httpHttpStatusCode *SeeOther __attribute__((swift_name("SeeOther")));
-@property (readonly) PUAKtor_httpHttpStatusCode *ServiceUnavailable __attribute__((swift_name("ServiceUnavailable")));
-@property (readonly) PUAKtor_httpHttpStatusCode *SwitchProxy __attribute__((swift_name("SwitchProxy")));
-@property (readonly) PUAKtor_httpHttpStatusCode *SwitchingProtocols __attribute__((swift_name("SwitchingProtocols")));
-@property (readonly) PUAKtor_httpHttpStatusCode *TemporaryRedirect __attribute__((swift_name("TemporaryRedirect")));
-@property (readonly) PUAKtor_httpHttpStatusCode *TooManyRequests __attribute__((swift_name("TooManyRequests")));
-@property (readonly) PUAKtor_httpHttpStatusCode *Unauthorized __attribute__((swift_name("Unauthorized")));
-@property (readonly) PUAKtor_httpHttpStatusCode *UnprocessableEntity __attribute__((swift_name("UnprocessableEntity")));
-@property (readonly) PUAKtor_httpHttpStatusCode *UnsupportedMediaType __attribute__((swift_name("UnsupportedMediaType")));
-@property (readonly) PUAKtor_httpHttpStatusCode *UpgradeRequired __attribute__((swift_name("UpgradeRequired")));
-@property (readonly) PUAKtor_httpHttpStatusCode *UseProxy __attribute__((swift_name("UseProxy")));
-@property (readonly) PUAKtor_httpHttpStatusCode *VariantAlsoNegotiates __attribute__((swift_name("VariantAlsoNegotiates")));
-@property (readonly) PUAKtor_httpHttpStatusCode *VersionNotSupported __attribute__((swift_name("VersionNotSupported")));
-@property (readonly) NSArray<PUAKtor_httpHttpStatusCode *> *allStatusCodes __attribute__((swift_name("allStatusCodes")));
 @end;
 
 __attribute__((swift_name("Kotlinx_coroutines_coreAtomicDesc")))
@@ -1247,6 +2171,168 @@ __attribute__((swift_name("KotlinContinuation")))
 @required
 - (void)resumeWithResult:(id _Nullable)result __attribute__((swift_name("resumeWith(result:)")));
 @property (readonly) id<PUAKotlinCoroutineContext> context __attribute__((swift_name("context")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKTypeProjection")))
+@interface PUAKotlinKTypeProjection : PUABase
+- (instancetype)initWithVariance:(PUAKotlinKVariance * _Nullable)variance type:(id<PUAKotlinKType> _Nullable)type __attribute__((swift_name("init(variance:type:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) PUAKotlinKTypeProjectionCompanion *companion __attribute__((swift_name("companion")));
+- (PUAKotlinKVariance * _Nullable)component1 __attribute__((swift_name("component1()")));
+- (id<PUAKotlinKType> _Nullable)component2 __attribute__((swift_name("component2()")));
+- (PUAKotlinKTypeProjection *)doCopyVariance:(PUAKotlinKVariance * _Nullable)variance type:(id<PUAKotlinKType> _Nullable)type __attribute__((swift_name("doCopy(variance:type:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id<PUAKotlinKType> _Nullable type __attribute__((swift_name("type")));
+@property (readonly) PUAKotlinKVariance * _Nullable variance __attribute__((swift_name("variance")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponseData")))
+@interface PUAKtor_client_coreHttpResponseData : PUABase
+- (instancetype)initWithStatusCode:(PUAKtor_httpHttpStatusCode *)statusCode requestTime:(PUAKtor_utilsGMTDate *)requestTime headers:(id<PUAKtor_httpHeaders>)headers version:(PUAKtor_httpHttpProtocolVersion *)version body:(id)body callContext:(id<PUAKotlinCoroutineContext>)callContext __attribute__((swift_name("init(statusCode:requestTime:headers:version:body:callContext:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) id body __attribute__((swift_name("body")));
+@property (readonly) id<PUAKotlinCoroutineContext> callContext __attribute__((swift_name("callContext")));
+@property (readonly) id<PUAKtor_httpHeaders> headers __attribute__((swift_name("headers")));
+@property (readonly) PUAKtor_utilsGMTDate *requestTime __attribute__((swift_name("requestTime")));
+@property (readonly) PUAKtor_utilsGMTDate *responseTime __attribute__((swift_name("responseTime")));
+@property (readonly) PUAKtor_httpHttpStatusCode *statusCode __attribute__((swift_name("statusCode")));
+@property (readonly) PUAKtor_httpHttpProtocolVersion *version __attribute__((swift_name("version")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreProxyConfig")))
+@interface PUAKtor_client_coreProxyConfig : PUABase
+- (instancetype)initWithUrl:(PUAKtor_httpUrl *)url __attribute__((swift_name("init(url:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) PUAKtor_httpUrl *url __attribute__((swift_name("url")));
+@end;
+
+__attribute__((swift_name("Ktor_client_coreHttpClientFeature")))
+@protocol PUAKtor_client_coreHttpClientFeature
+@required
+- (void)installFeature:(id)feature scope:(PUAKtor_client_coreHttpClient *)scope __attribute__((swift_name("install(feature:scope:)")));
+- (id)prepareBlock:(void (^)(id))block __attribute__((swift_name("prepare(block:)")));
+@property (readonly) PUAKtor_utilsAttributeKey<id> *key __attribute__((swift_name("key")));
+@end;
+
+__attribute__((swift_name("KotlinAbstractCoroutineContextKey")))
+@interface PUAKotlinAbstractCoroutineContextKey<B, E> : PUABase <PUAKotlinCoroutineContextKey>
+- (instancetype)initWithBaseKey:(id<PUAKotlinCoroutineContextKey>)baseKey safeCast:(E _Nullable (^)(id<PUAKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Kotlinx_coroutines_coreCoroutineDispatcher.Key")))
+@interface PUAKotlinx_coroutines_coreCoroutineDispatcherKey : PUAKotlinAbstractCoroutineContextKey<id<PUAKotlinContinuationInterceptor>, PUAKotlinx_coroutines_coreCoroutineDispatcher *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithBaseKey:(id<PUAKotlinCoroutineContextKey>)baseKey safeCast:(id<PUAKotlinCoroutineContextElement> _Nullable (^)(id<PUAKotlinCoroutineContextElement>))safeCast __attribute__((swift_name("init(baseKey:safeCast:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
++ (instancetype)key __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKotlinx_coroutines_coreCoroutineDispatcherKey *shared __attribute__((swift_name("shared")));
+@end;
+
+__attribute__((swift_name("Kotlinx_coroutines_coreRunnable")))
+@protocol PUAKotlinx_coroutines_coreRunnable
+@required
+- (void)run __attribute__((swift_name("run()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_utilsPipelinePhase")))
+@interface PUAKtor_utilsPipelinePhase : PUABase
+- (instancetype)initWithName:(NSString *)name __attribute__((swift_name("init(name:)"))) __attribute__((objc_designated_initializer));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@end;
+
+__attribute__((swift_name("KotlinSuspendFunction2")))
+@protocol PUAKotlinSuspendFunction2 <PUAKotlinFunction>
+@required
+
+/**
+ @note This method converts instances of CancellationException to errors.
+ Other uncaught Kotlin exceptions are fatal.
+*/
+- (void)invokeP1:(id _Nullable)p1 p2:(id _Nullable)p2 completionHandler:(void (^)(id _Nullable_result, NSError * _Nullable))completionHandler __attribute__((swift_name("invoke(p1:p2:completionHandler:)")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpReceivePipeline.Phases")))
+@interface PUAKtor_client_coreHttpReceivePipelinePhases : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_client_coreHttpReceivePipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsPipelinePhase *After __attribute__((swift_name("After")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) PUAKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpRequestPipeline.Phases")))
+@interface PUAKtor_client_coreHttpRequestPipelinePhases : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_client_coreHttpRequestPipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Render __attribute__((swift_name("Render")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Send __attribute__((swift_name("Send")));
+@property (readonly) PUAKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Transform __attribute__((swift_name("Transform")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponsePipeline.Phases")))
+@interface PUAKtor_client_coreHttpResponsePipelinePhases : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_client_coreHttpResponsePipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsPipelinePhase *After __attribute__((swift_name("After")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Parse __attribute__((swift_name("Parse")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Receive __attribute__((swift_name("Receive")));
+@property (readonly) PUAKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Transform __attribute__((swift_name("Transform")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpResponseContainer")))
+@interface PUAKtor_client_coreHttpResponseContainer : PUABase
+- (instancetype)initWithExpectedType:(id<PUAKtor_utilsTypeInfo>)expectedType response:(id)response __attribute__((swift_name("init(expectedType:response:)"))) __attribute__((objc_designated_initializer));
+- (instancetype)initWithExpectedType:(PUAKtor_client_coreTypeInfo *)expectedType response_:(id)response __attribute__((swift_name("init(expectedType:response_:)"))) __attribute__((objc_designated_initializer));
+- (PUAKtor_client_coreTypeInfo *)component1 __attribute__((swift_name("component1()")));
+- (id)component2 __attribute__((swift_name("component2()")));
+- (PUAKtor_client_coreHttpResponseContainer *)doCopyExpectedType:(PUAKtor_client_coreTypeInfo *)expectedType response:(id)response __attribute__((swift_name("doCopy(expectedType:response:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) PUAKtor_client_coreTypeInfo *expectedType __attribute__((swift_name("expectedType")));
+@property (readonly) id response __attribute__((swift_name("response")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("Ktor_client_coreHttpSendPipeline.Phases")))
+@interface PUAKtor_client_coreHttpSendPipelinePhases : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)phases __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKtor_client_coreHttpSendPipelinePhases *shared __attribute__((swift_name("shared")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Before __attribute__((swift_name("Before")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Engine __attribute__((swift_name("Engine")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Monitoring __attribute__((swift_name("Monitoring")));
+@property (readonly) PUAKtor_utilsPipelinePhase *Receive __attribute__((swift_name("Receive")));
+@property (readonly) PUAKtor_utilsPipelinePhase *State __attribute__((swift_name("State")));
+@end;
+
+__attribute__((swift_name("KotlinCharIterator")))
+@interface PUAKotlinCharIterator : PUABase <PUAKotlinIterator>
+- (instancetype)init __attribute__((swift_name("init()"))) __attribute__((objc_designated_initializer));
++ (instancetype)new __attribute__((availability(swift, unavailable, message="use object initializers instead")));
+- (id)next __attribute__((swift_name("next()")));
+- (unichar)nextChar __attribute__((swift_name("nextChar()")));
 @end;
 
 __attribute__((swift_name("Kotlinx_coroutines_coreAtomicOp")))
@@ -1302,6 +2388,31 @@ __attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNode.Abstrac
 - (id)updatedNextAffected:(PUAKotlinx_coroutines_coreLockFreeLinkedListNode *)affected next:(PUAKotlinx_coroutines_coreLockFreeLinkedListNode *)next __attribute__((swift_name("updatedNext(affected:next:)")));
 @property (readonly) PUAKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable affectedNode __attribute__((swift_name("affectedNode")));
 @property (readonly) PUAKotlinx_coroutines_coreLockFreeLinkedListNode * _Nullable originalNext __attribute__((swift_name("originalNext")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKVariance")))
+@interface PUAKotlinKVariance : PUAKotlinEnum<PUAKotlinKVariance *>
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
+- (instancetype)initWithName:(NSString *)name ordinal:(int32_t)ordinal __attribute__((swift_name("init(name:ordinal:)"))) __attribute__((objc_designated_initializer)) __attribute__((unavailable));
+@property (class, readonly) PUAKotlinKVariance *invariant __attribute__((swift_name("invariant")));
+@property (class, readonly) PUAKotlinKVariance *in __attribute__((swift_name("in")));
+@property (class, readonly) PUAKotlinKVariance *out __attribute__((swift_name("out")));
++ (PUAKotlinArray<PUAKotlinKVariance *> *)values __attribute__((swift_name("values()")));
+@end;
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("KotlinKTypeProjection.Companion")))
+@interface PUAKotlinKTypeProjectionCompanion : PUABase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) PUAKotlinKTypeProjectionCompanion *shared __attribute__((swift_name("shared")));
+- (PUAKotlinKTypeProjection *)contravariantType:(id<PUAKotlinKType>)type __attribute__((swift_name("contravariant(type:)")));
+- (PUAKotlinKTypeProjection *)covariantType:(id<PUAKotlinKType>)type __attribute__((swift_name("covariant(type:)")));
+- (PUAKotlinKTypeProjection *)invariantType:(id<PUAKotlinKType>)type __attribute__((swift_name("invariant(type:)")));
+@property (readonly) PUAKotlinKTypeProjection *STAR __attribute__((swift_name("STAR")));
 @end;
 
 __attribute__((swift_name("Kotlinx_coroutines_coreLockFreeLinkedListNodeAddLastDesc")))

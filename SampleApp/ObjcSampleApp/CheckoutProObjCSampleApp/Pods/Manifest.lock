@@ -1,40 +1,42 @@
 PODS:
-  - PayUIndia-Analytics (2.1.0):
+  - PayUIndia-Analytics (3.0.0):
     - PayUIndia-NetworkReachability (~> 1.0)
   - PayUIndia-AssetLibrary (3.1.0)
   - PayUIndia-CardScanner (1.0.0)
-  - PayUIndia-CheckoutPro (4.4.0):
+  - PayUIndia-CheckoutPro (5.0.0):
+    - PayUIndia-Analytics (= 3.0)
     - PayUIndia-AssetLibrary (~> 3.1)
     - PayUIndia-CardScanner (~> 1.0)
-    - PayUIndia-CheckoutProBase (~> 4.4)
-    - PayUIndia-CrashReporter (~> 1.0)
-    - PayUIndia-Custom-Browser (~> 9.0)
+    - PayUIndia-CheckoutProBase (~> 5.0)
+    - PayUIndia-CrashReporter (~> 2.1)
+    - PayUIndia-Custom-Browser (~> 9.1)
     - PayUIndia-NativeOtpAssist (~> 2.1)
     - PayUIndia-NetworkReachability (~> 1.0)
-    - PayUIndia-PayUParams (~> 3.4)
-    - PayUIndia-PG-SDK (~> 8.3)
-    - PayUIndia-UPICore (~> 6.1)
-  - PayUIndia-CheckoutProBase (4.4.0):
-    - PayUIndia-PayUParams (~> 3.4)
-  - PayUIndia-CrashReporter (1.0.0)
-  - PayUIndia-Custom-Browser (9.0.1)
+    - PayUIndia-PayUParams (~> 4.0)
+    - PayUIndia-PG-SDK (~> 8.4)
+    - PayUIndia-UPICore (~> 6.2)
+  - PayUIndia-CheckoutProBase (5.0.0):
+    - PayUIndia-PayUParams (~> 4.0)
+  - PayUIndia-CrashReporter (2.1.0)
+  - PayUIndia-Custom-Browser (9.1.0):
+    - PayUIndia-Analytics (= 3.0)
   - PayUIndia-Logger (4.0.0)
-  - PayUIndia-NativeOtpAssist (2.1.0):
-    - PayUIndia-Analytics (= 2.1)
-    - PayUIndia-CrashReporter (~> 1.0)
+  - PayUIndia-NativeOtpAssist (2.1.1):
+    - PayUIndia-Analytics (~> 3.0)
+    - PayUIndia-CrashReporter (~> 2.1)
     - PayUIndia-NetworkReachability (~> 1.0)
-    - PayUIndia-PayUParams (~> 3.2)
+    - PayUIndia-PayUParams (~> 4.0)
   - PayUIndia-Networking (4.0.0):
     - PayUIndia-Logger (= 4.0.0)
   - PayUIndia-NetworkReachability (1.0.1)
-  - PayUIndia-PayUParams (3.4.0)
-  - PayUIndia-PG-SDK (8.3.0):
-    - PayUIndia-CrashReporter (~> 1.0)
+  - PayUIndia-PayUParams (4.0.0)
+  - PayUIndia-PG-SDK (8.4.0):
+    - PayUIndia-CrashReporter (~> 2.1)
     - PayUIndia-NetworkReachability (~> 1.0)
-    - PayUIndia-PayUParams (~> 3.4)
-  - PayUIndia-UPICore (6.1.0):
+    - PayUIndia-PayUParams (~> 4.0)
+  - PayUIndia-UPICore (6.2.0):
     - PayUIndia-Networking (~> 4.0)
-    - PayUIndia-PayUParams (~> 3.4)
+    - PayUIndia-PayUParams (~> 4.0)
     - Socket.IO-Client-Swift (= 15.1.0)
   - Socket.IO-Client-Swift (15.1.0):
     - Starscream (~> 3.1)
@@ -63,20 +65,20 @@ SPEC REPOS:
     - Starscream
 
 SPEC CHECKSUMS:
-  PayUIndia-Analytics: 982bacc816cf6e847a479e6b597349489ca4527a
+  PayUIndia-Analytics: a23768b29283ef781783f38a99c1cf2235020d58
   PayUIndia-AssetLibrary: cdc99061c0a3e27f252d51f0c66173432926e599
   PayUIndia-CardScanner: 42a10e1112f1bc954fdb407dd6de472fbf31fa27
-  PayUIndia-CheckoutPro: 11d8fc5f9c50e0240e741b2a55c6f1bd3c2bfdf9
-  PayUIndia-CheckoutProBase: 555e107c0001b40d6c461e7b0eda642c8bfc36de
-  PayUIndia-CrashReporter: e4e6a68b2a2f59fb826331db0799f0167f596593
-  PayUIndia-Custom-Browser: 619f3ba391286e99a4cbfa6f5e7e119628a45735
+  PayUIndia-CheckoutPro: 23b42800b97fc4457a2272da43c2c5f912804df1
+  PayUIndia-CheckoutProBase: 9e96d9f43909a0b3330332204ed1ae32204fdb78
+  PayUIndia-CrashReporter: 597caf134e85f9b3bde7d2045cae2def1b86c544
+  PayUIndia-Custom-Browser: 7b91187b9502fdf9eeaf945251c5354bc7346f60
   PayUIndia-Logger: e353d9dd576bac593e428dfbadedf337cbb48b78
-  PayUIndia-NativeOtpAssist: c9308a1a0b64230d875a8c1f61a758abf8831fff
+  PayUIndia-NativeOtpAssist: 3daa931e215e02a9d611602bc342511933b99d11
   PayUIndia-Networking: bf53f743484256303e24d4e763e6097f04af769c
   PayUIndia-NetworkReachability: 99e69781b3be99d7b713075ab7b73e6d73a153e4
-  PayUIndia-PayUParams: 81c76293f298364edae7da1753e0aeefcbd76386
-  PayUIndia-PG-SDK: 1b488d1a470332b9ae12699aec8600a6bcd5e283
-  PayUIndia-UPICore: f209918f9add093618c4923531c9c52efd885006
+  PayUIndia-PayUParams: bf197d794b42ec0c15eb45cba0465713fa2f6bf7
+  PayUIndia-PG-SDK: ae15948a85e9b2ed983a8bb3afbd2571af1bb845
+  PayUIndia-UPICore: 7b95cb848894523f6fd9b289e802737916c9122f
   Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayUParamsKit-Swift.h</key>
 		<data>
-		40Xu6R0mtx0WhAa8GNg0utxWZmg=
+		MbhaLcYX3oJHkJ7kfMEcCgqpIwg=
 		</data>
 		<key>Headers/PayUParamsKit.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		x1VT8sf8eHIBzx9/OENAnrMChdE=
+		wnhfjVvNLoC4Oz8rI1/J8XgBKTo=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		MKaS+ZZLakn4A+3Hduyd/FNKrxA=
+		dXNS0UU2x4jZWP96FKLsfJHQ8wE=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		DWubNimuy2fIqmlLGPQp73M+kvA=
+		IcOlI+TzrWdDVIMWvqpuJ5915nA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			We4lBd3px1B80UzojtvcUG+BIqG/t7yUYCgAZ3CTWDA=
+			C2o7rQ5vg05XxIdlCYTbtHVpygT7gsEK8oySEhWkrkM=
 			</data>
 		</dict>
 		<key>Headers/PayUParamsKit.h</key>
@@ -60,14 +60,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vK3x7fIwMs/av+CmqR1KLK/QfPmCBqv5OrRpePka0KI=
+			mAVzprefaU4K9GkpYjTOnUnmoe1nyLQzMaZrFvgrKks=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xvhdmA7C9HCUuroCjariMwzMVHYcR1Cd2rZ+xM9A7j4=
+			9SWe5/KOBGtHt2iBTpOhV+8Q+21g8g3gCV3XDiFXaIM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

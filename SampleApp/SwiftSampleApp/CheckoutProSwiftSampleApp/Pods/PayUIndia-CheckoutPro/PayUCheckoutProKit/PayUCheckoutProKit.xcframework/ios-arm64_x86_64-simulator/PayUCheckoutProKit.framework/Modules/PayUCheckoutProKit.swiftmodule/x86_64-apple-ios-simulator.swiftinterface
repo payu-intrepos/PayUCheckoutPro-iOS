@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 import Foundation
+import PayUAnalytics
 import PayUAssetLibraryKit
 import PayUBizCoreKit
 import PayUCardScannerKit
@@ -201,7 +202,8 @@ public enum PopTipActionAnimation {
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc override public func offerDetail(paymentOptions: [PayUParamsKit.PaymentOption], onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc override public func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc override public func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
   @objc public func payUConnectionError(_ notification: [Swift.AnyHashable : Any]!)
@@ -209,6 +211,7 @@ public enum PopTipActionAnimation {
   @objc public func payUSuccessResponse(_ payUResponse: Any!, surlResponse: Any!)
   @objc public func payUFailureResponse(_ payUResponse: Any!, furlResponse: Any!)
   @objc public func shouldShowCancelAlert() -> Swift.Bool
+  @objc public func loadInitialData()
   @objc public func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc public func onPaymentFailure(merchantResponse: Swift.String?, payUResponse: Swift.String?)
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool)
@@ -216,6 +219,11 @@ public enum PopTipActionAnimation {
   @objc public func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
 }
 public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.PayUModelSodexoCardDetail?, _ errorMessage: Swift.String?) -> ()
+extension Foundation.NSNumber {
+  public var double: Swift.Double {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class PaymentParamConstant : ObjectiveC.NSObject {
   @objc public static let udf1: Swift.String
   @objc public static let udf2: Swift.String
@@ -247,6 +255,9 @@ public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.P
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class HashConstant : ObjectiveC.NSObject {
   @objc public static let hashString: Swift.String
+  @objc public static let hashType: Swift.String
+  @objc public static let V1: Swift.String
+  @objc public static let V2: Swift.String
   @objc public static let hashName: Swift.String
   @objc public static let postSalt: Swift.String
   @objc public static let payment: Swift.String
@@ -263,6 +274,7 @@ public typealias SodexoCheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.P
   @objc public static let getCheckoutDetails: Swift.String
   @objc public static let mcpLookup: Swift.String
   @objc public static let checkBalance: Swift.String
+  @objc public static let sdkConfiguration: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
