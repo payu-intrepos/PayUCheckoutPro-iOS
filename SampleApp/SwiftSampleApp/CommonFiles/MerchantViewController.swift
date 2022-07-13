@@ -512,7 +512,7 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         if let hashType = param[HashConstant.hashType], hashType == "V2" {
             let signedString = param[KEY_SIGNING_STRING]
             
-            let signature = "<hmacSHA256 hash for signedString with Key salt>"
+            let signature = PayUDontUseThisClass.hmacSHA256(signedString, withKey: (saltTextField.text ?? "")) ?? ""
             
             let hashDict = [KEY_SIGNATURE: signature]
             
@@ -520,12 +520,12 @@ extension MerchantViewController: PayUCheckoutProDelegate {
             return
         }
         else if commandName == HashConstant.mcpLookup {
-            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
         } else if let postSalt = postSalt{
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = "<hmacsha512 hash for hashString and salt>"
+            hashValue = Utils.sha512Hex(string: hashString)
         } else {
-            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
+            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
         }
         onCompletion([commandName : hashValue])
     }
