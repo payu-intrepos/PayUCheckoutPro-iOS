@@ -287,6 +287,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)payuRefreshSodexoView SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuSelectedOffer;)
 + (NSNotificationName _Nonnull)payuSelectedOffer SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuFetchedAsset;)
++ (NSNotificationName _Nonnull)payuFetchedAsset SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

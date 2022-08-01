@@ -66,7 +66,7 @@
 		</data>
 		<key>FooterView.nib</key>
 		<data>
-		yDS1TvUNkWmysVq8DY7gxWGmkY4=
+		tJbJeI8tBdYwLlfMyBSW9GMFIiQ=
 		</data>
 		<key>HeaderView.nib</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Headers/PayUCheckoutProKit-Swift.h</key>
 		<data>
-		lGz4bozr1zSUEDi1UbZpTEYBjr0=
+		jB769CXAEY4prUu2pXhd6qSjIk0=
 		</data>
 		<key>Headers/PayUCheckoutProKit.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		l+QqjDhzfA7AOZGAL7d9fpQxIog=
+		ovETYH4FVSctJ/5ZCpEt94FDQyE=
 		</data>
 		<key>ManageSavedOptionsView.nib</key>
 		<data>
@@ -94,11 +94,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		G+ldp2GRacXyVcpEJIJPH5S3h2o=
+		lSoHic4gsJQhTVVdrE667u518JY=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		fhp1GHNfpz/IJuzMO8L4WN1+Lac=
+		qnsNQ70Ftz41a51Ni8BsjSq5YOA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -304,7 +304,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jUBT13KCR0xMoHjGDxxnYQAUZp7D6p28e4XZV/mvzYo=
+			eB1AlrDjZYzvelN3kBqaJpQ3UyE6MTnIP3WuyN4Vuis=
 			</data>
 		</dict>
 		<key>HeaderView.nib</key>
@@ -318,7 +318,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MWDIv7bo5hzQ0AI4K55ucFRioa/U8Z+exqqoygazv80=
+			ZzuWvZL9eH7Ce1aWLCMrslsZ3h7zSlEKBTwcm7VuvNs=
 			</data>
 		</dict>
 		<key>Headers/PayUCheckoutProKit.h</key>
@@ -346,14 +346,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gcwofae/4OwCZqEkk5Mi+f93Sh382KPv7vvX5NTtY34=
+			KaOsESxQmfWgrPd8e18Jw4hl+sK9U0PlHvccj6zhZ4w=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			72nrt0qiyMTv18MrwE10UOV1TGtIR+ssZZCX/ntSP1I=
+			3FCzrAdUL5AP4I4WlcUg7/p/cYRlU3uKkyTXQABtWQM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

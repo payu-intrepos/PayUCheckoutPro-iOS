@@ -258,6 +258,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)offerDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
 - (void)validateOfferDetailWithCategory:(NSString * _Nonnull)category paymentCode:(NSString * _Nonnull)paymentCode onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
+- (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "168afe39bcae9ecf8a84b083e744628ea5c44e6a",
-          "version": "4.1.0"
+          "revision": "945afd9940a3ce6909dcf6e5a77cd4aa52655d6a",
+          "version": "4.1.1"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "8b1d32edef177d88e35b47d15fddc142bc9b0495",
-          "version": "6.3.0"
+          "revision": "601a16647c6c0db785dfea9dd8274238dc14c80f",
+          "version": "6.3.1"
         }
       },
       {
