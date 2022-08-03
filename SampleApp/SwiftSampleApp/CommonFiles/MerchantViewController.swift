@@ -510,22 +510,16 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
         if let hashType = param[HashConstant.hashType], hashType == "V2" {
-            let signedString = param[KEY_SIGNING_STRING]
             
-            let signature = PayUDontUseThisClass.hmacSHA256(signedString, withKey: (saltTextField.text ?? "")) ?? ""
-            
-            let hashDict = [KEY_SIGNATURE: signature]
-            
-            onCompletion(hashDict)
-            return
+            hashValue = "<hmacSHA256 hash for hashStringWithoutSalt with salt>"
         }
         else if commandName == HashConstant.mcpLookup {
-            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
-        } else if let postSalt = postSalt{
+            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+        } else if let postSalt = postSalt {
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = Utils.sha512Hex(string: hashString)
+            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else {
-            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
+            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
         }
         onCompletion([commandName : hashValue])
     }

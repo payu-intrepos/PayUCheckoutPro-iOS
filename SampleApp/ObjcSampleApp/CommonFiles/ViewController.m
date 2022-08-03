@@ -73,33 +73,25 @@
     NSString *hashType = [param objectForKey:HashConstant.hashType];
     NSString *salt = @"<salt>";
     NSString *secret = @"<merchant_secret>";
+    NSString *hashValue;
     // get hash for "commandName" from server
     // get hash for "hashStringWithoutSalt" from server
     // After fetching hash set its value in below variable "hashValue"
     // NSString *hashValue = @"hashValue";
 
     if ([hashType isEqualToString:@"V2"]) {
-        NSString *signedString = [param objectForKey:KEY_SIGNING_STRING];
-        NSString *signature = @"<hmacSHA256 hash for signedString with Key salt>";
-        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:signature, KEY_SIGNATURE, nil];
-        onCompletion(dict);
-        return;
+        hashValue = @"<hmacSHA256 hash for hashStringWithoutSalt with salt>";
     }
-    if ([commandName isEqualToString:HashConstant.mcpLookup]) {
-        NSString *hashValue = @"<hmacsha1 hash for hashStringWithoutSalt and secret>";
-        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
-        onCompletion(dict);
-        return;
+    else if ([commandName isEqualToString:HashConstant.mcpLookup]) {
+        hashValue = @"<hmacsha1 hash for hashStringWithoutSalt and secret>";
     }
-    if (postSalt && ![postSalt isEqualToString:@""]) {
+    else if (postSalt && ![postSalt isEqualToString:@""]) {
         NSString *hashString = [NSString stringWithFormat:@"%@%@|%@",hashStringWithoutSalt,salt,postSalt];
-        NSString *hashValue = @"<hmacsha512 hash for hashString and salt>";
-        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
-        onCompletion(dict);
-        return;
+        hashValue = @"<hmacsha512 hash for hashString and salt>";
     }
-    
-    NSString *hashValue = @"<hmacsha512 hash for hashStringWithoutSalt and salt>";
+    else {
+        hashValue = @"<hmacsha512 hash for hashStringWithoutSalt and salt>";
+    }
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
     onCompletion(dict);
 }
