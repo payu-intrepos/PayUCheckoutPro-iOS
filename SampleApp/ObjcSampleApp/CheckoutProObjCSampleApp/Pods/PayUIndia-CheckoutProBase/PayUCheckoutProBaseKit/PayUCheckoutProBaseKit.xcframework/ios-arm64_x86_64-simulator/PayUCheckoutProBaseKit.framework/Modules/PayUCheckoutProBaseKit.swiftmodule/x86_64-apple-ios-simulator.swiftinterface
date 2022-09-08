@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
 @_exported import PayUCheckoutProBaseKit
 import PayUParamsKit
@@ -72,6 +72,8 @@ public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOf
 public typealias OfferCompletion = (_ offerDetail: PayUParamsKit.PayUModelOfferDetail?, _ error: Swift.Error?) -> ()
 public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMultiCurrencyPayment?, _ error: Swift.Error?) -> ()
 public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSCInfo?, _ errorMessage: Swift.String?) -> ()
+public typealias FetchAssetCompletion = (_ assets: PayUParamsKit.PayUModelFetchAssets?, _ error: Swift.Error?) -> ()
+public typealias AddEnableCompletion = (_ isAdEnable: Swift.Bool?) -> ()
 @objc public protocol OnePayUBaseLayerDelegate {
   @objc func paymentSuccess(response: Any?)
   @objc func paymentFailure(response: Any?)
@@ -103,6 +105,7 @@ public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSC
   @objc open func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc open func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc open func postAdsImpressionEvent(requestId: Swift.String?)
   @objc deinit
 }
 @objc public enum ScreenState : Swift.Int {

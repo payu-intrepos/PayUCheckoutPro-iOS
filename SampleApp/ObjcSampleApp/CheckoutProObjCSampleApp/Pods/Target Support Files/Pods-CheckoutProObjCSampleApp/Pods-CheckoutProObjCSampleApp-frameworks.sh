@@ -176,8 +176,6 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework"
@@ -194,8 +192,6 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-UPICore/PayUUPICoreKit.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework"

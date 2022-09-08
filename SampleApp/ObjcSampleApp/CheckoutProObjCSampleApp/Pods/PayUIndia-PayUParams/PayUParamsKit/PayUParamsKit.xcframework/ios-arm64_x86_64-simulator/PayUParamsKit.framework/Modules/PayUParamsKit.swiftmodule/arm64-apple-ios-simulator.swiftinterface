@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 import Foundation
 @_exported import PayUParamsKit
@@ -11,6 +11,7 @@ import _Concurrency
   @objc public var unavailableReason: Swift.String?
   @objc public var offerDetail: Swift.String?
   @objc public var paymentOptionID: Swift.String?
+  public var priority: Swift.Int?
   @objc public var isDown: Swift.Bool
   @objc public var customObj: Any?
   public var convienienceFee: Swift.Double?
@@ -89,6 +90,7 @@ import _Concurrency
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class UPI : PayUParamsKit.PaymentOption {
+  public var isTezOmni: Swift.Bool?
   public var isCollect: Swift.Bool?
   @objc public var vpa: Swift.String?
   @objc public var scheme: Swift.String?
@@ -557,6 +559,7 @@ extension Swift.Dictionary {
   @objc public static let INSTRUMENT_TYPE: Swift.String
   @objc public static let DEVICE_TYPE_IOS: Swift.String
   @_inheritsConvenienceInitializers @objc public class Params : ObjectiveC.NSObject {
+    @objc public static let payid: Swift.String
     @objc public static let PG: Swift.String
     @objc public static let BANK_CODE: Swift.String
     @objc public static let SDK_PLATFORM: Swift.String
@@ -830,6 +833,20 @@ extension Swift.Dictionary {
   public func validatePaymentDetails(_ paymentParam: PayUParamsKit.PayUPaymentParam) -> (isValidDetails: Swift.Bool, errorMessage: Swift.String)
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public class PayUModelFetchAssets : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var path: Swift.String?
+  @objc public var title: Swift.String?
+  @objc public var fallBackText: Swift.String?
+  @objc public var checkboxTitle: Swift.String?
+  @objc public var targetUrl: Swift.String?
+  @objc public var requestId: Swift.String?
+  @objc public var source: Swift.String?
+  @objc public class func getObject(json: [Swift.String : Any]) -> PayUParamsKit.PayUModelFetchAssets?
+  @objc public init(path: Swift.String?, title: Swift.String?, fallBackText: Swift.String?, checkboxTitle: Swift.String?, targetUrl: Swift.String?, requestId: Swift.String?, source: Swift.String?)
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
 @_inheritsConvenienceInitializers @objc open class PayUVSCParams : ObjectiveC.NSObject {
   @objc public var userConsent: Swift.String?
