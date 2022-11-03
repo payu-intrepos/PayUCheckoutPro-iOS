@@ -24,6 +24,7 @@ import _Concurrency
   @objc public static let payuRefreshSodexoView: Foundation.Notification.Name
   @objc public static let payuSelectedOffer: Foundation.Notification.Name
   @objc public static let payuFetchedAsset: Foundation.Notification.Name
+  @objc public static let payuQuickFetchLoading: Foundation.Notification.Name
 }
 extension PayUCheckoutProKit.PayUPopTip {
   @_Concurrency.MainActor(unsafe) public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
@@ -206,6 +207,11 @@ public enum PopTipActionAnimation {
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)
+  @objc override public func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc override public func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc override public func logout()
+  @objc override public func fetchQuickPayOption(token: Swift.String, mobileNumber: Swift.String)
   @objc override public func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)

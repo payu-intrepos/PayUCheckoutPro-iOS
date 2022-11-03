@@ -291,6 +291,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)payuSelectedOffer SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuFetchedAsset;)
 + (NSNotificationName _Nonnull)payuFetchedAsset SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuQuickFetchLoading;)
++ (NSNotificationName _Nonnull)payuQuickFetchLoading SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -463,6 +465,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
@@ -775,6 +778,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)payuSelectedOffer SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuFetchedAsset;)
 + (NSNotificationName _Nonnull)payuFetchedAsset SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuQuickFetchLoading;)
++ (NSNotificationName _Nonnull)payuQuickFetchLoading SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -947,6 +952,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 
