@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -407,7 +407,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3033;
 				DEVELOPMENT_TEAM = 3T2M5UN5C5;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)/**";
 				INFOPLIST_FILE = "$(SRCROOT)/../../SwiftObjcCommonFiles/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

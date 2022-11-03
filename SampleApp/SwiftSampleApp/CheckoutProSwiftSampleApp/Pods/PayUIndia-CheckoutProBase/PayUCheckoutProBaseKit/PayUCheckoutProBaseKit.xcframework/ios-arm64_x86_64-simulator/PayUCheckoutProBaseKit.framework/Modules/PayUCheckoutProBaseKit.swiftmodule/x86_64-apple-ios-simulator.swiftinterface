@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
 @_exported import PayUCheckoutProBaseKit
 import PayUParamsKit
@@ -34,8 +34,8 @@ import _Concurrency
 }
 @objc @_inheritsConvenienceInitializers public class FetchPaymentOptionResponse : PayUCheckoutProBaseKit.BaseAPIResponse, Foundation.NSCopying {
   @objc override dynamic public init()
-  public var quickPaymentOption: [PayUParamsKit.PaymentMode]?
-  public var otherPaymentOption: [PayUParamsKit.PaymentMode]?
+  public var quickPaymentModes: [PayUParamsKit.PaymentMode]?
+  public var otherPaymentModes: [PayUParamsKit.PaymentMode]?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
@@ -56,6 +56,9 @@ import _Concurrency
   public var paymentOption: PayUParamsKit.PaymentOption?
   public var isForCardScheme: Swift.Bool
   public var isForCurrency: Swift.Bool
+  public var objectHash: Swift.Int
+  public var imageURL: Foundation.URL?
+  public var imageUpdatedOn: Swift.Double?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -72,8 +75,10 @@ public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOf
 public typealias OfferCompletion = (_ offerDetail: PayUParamsKit.PayUModelOfferDetail?, _ error: Swift.Error?) -> ()
 public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMultiCurrencyPayment?, _ error: Swift.Error?) -> ()
 public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSCInfo?, _ errorMessage: Swift.String?) -> ()
-public typealias FetchAssetCompletion = (_ assets: PayUParamsKit.PayUModelFetchAssets?, _ error: Swift.Error?) -> ()
-public typealias AddEnableCompletion = (_ isAdEnable: Swift.Bool?) -> ()
+public typealias FetchAssetCompletion = (_ assets: PayUParamsKit.PayUModelFetchAssets?, _ error: Swift.String?) -> ()
+public typealias GetStringCompletion = (_ successString: Swift.String?, _ error: Swift.String?) -> ()
+public typealias FetchQuickPayOptionCompletion = (_ quickPayOption: PayUParamsKit.PayUQuickPayOption?, _ error: Swift.String?) -> ()
+public typealias EnableCompletion = (_ isEnable: Swift.Bool?) -> ()
 @objc public protocol OnePayUBaseLayerDelegate {
   @objc func paymentSuccess(response: Any?)
   @objc func paymentFailure(response: Any?)
@@ -106,6 +111,11 @@ public typealias AddEnableCompletion = (_ isAdEnable: Swift.Bool?) -> ()
   @objc open func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc open func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc open func postAdsImpressionEvent(requestId: Swift.String?)
+  @objc open func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc open func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc open func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  @objc open func logout()
+  @objc open func fetchQuickPayOption(token: Swift.String, mobileNumber: Swift.String)
   @objc deinit
 }
 @objc public enum ScreenState : Swift.Int {
@@ -115,6 +125,8 @@ public typealias AddEnableCompletion = (_ isAdEnable: Swift.Bool?) -> ()
   case upiIntentProcessing
   case upiCollectProcessing
   case currencySelection
+  case addCard
+  case bankDetails
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
