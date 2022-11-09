@@ -304,6 +304,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
 + (void)openOn:(UIViewController * _Nonnull)parentVC paymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(PayUCheckoutProConfig * _Nullable)config delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
++ (void)openOn:(UIViewController * _Nonnull)parentVC params:(id _Nullable)params delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 + (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 + (void)sdkCrash;
@@ -318,6 +319,34 @@ SWIFT_PROTOCOL("_TtP18PayUCheckoutProKit23PayUCheckoutProDelegate_")
 - (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated;
 - (void)onError:(NSError * _Nullable)error;
 - (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit47PayUHybridCheckoutProDelegateResponseMethodName")
+@interface PayUHybridCheckoutProDelegateResponseMethodName : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull onPaymentSuccess;)
++ (NSString * _Nonnull)onPaymentSuccess SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull onPaymentFailure;)
++ (NSString * _Nonnull)onPaymentFailure SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull onPaymentCancel;)
++ (NSString * _Nonnull)onPaymentCancel SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull onError;)
++ (NSString * _Nonnull)onError SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull generateHash;)
++ (NSString * _Nonnull)generateHash SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC18PayUCheckoutProKit48PayUHybridCheckoutProDelegateResponseTransformer")
+@interface PayUHybridCheckoutProDelegateResponseTransformer : NSObject
+- (id _Nullable)onError:(NSError * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)onPaymentFailureWithResponse:(id _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (id _Nullable)onPaymentSuccessWithResponse:(id _Nullable)response SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion SWIFT_WARN_UNUSED_RESULT;
+- (void)hashGeneratedWithArgs:(id _Nullable)args errorCallback:(void (^ _Nonnull)(NSError * _Nullable))errorCallback;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class UIColor;
@@ -463,6 +492,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)merchantResponse SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
 
 
 

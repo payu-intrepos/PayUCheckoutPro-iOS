@@ -173,6 +173,25 @@ public enum PopTipActionAnimation {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreGraphics.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
 }
+@_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseMethodName : ObjectiveC.NSObject {
+  @objc public static let onPaymentSuccess: Swift.String
+  @objc public static let onPaymentFailure: Swift.String
+  @objc public static let onPaymentCancel: Swift.String
+  @objc public static let onError: Swift.String
+  @objc public static let generateHash: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseTransformer : ObjectiveC.NSObject {
+  @objc public func onError(_ error: Swift.Error?) -> Any?
+  @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool) -> Any?
+  @objc public func onPaymentFailure(response: Any?) -> Any?
+  @objc public func onPaymentSuccess(response: Any?) -> Any?
+  @objc public func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion) -> PayUCheckoutProBaseKit.DictOfString
+  @objc public func hashGenerated(args: Any?, errorCallback: @escaping ((Swift.Error?) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol PayUCheckoutProDelegate {
   @objc func onPaymentSuccess(response: Any?)
   @objc func onPaymentFailure(response: Any?)
@@ -182,6 +201,7 @@ public enum PopTipActionAnimation {
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
   @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func sdkCrash()
