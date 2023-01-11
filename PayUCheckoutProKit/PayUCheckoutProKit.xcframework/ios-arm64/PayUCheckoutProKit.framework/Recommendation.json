@@ -1,0 +1,217 @@
+{
+  "result": {
+    "savedPaymentOptions": {
+      "upi": [
+        {
+          "pgId": 3,
+          "pgTitle": "GooglePay",
+          "pgDetails": "amabhishek@okhdfcbank",
+          "ibiboCode": "TEZ",
+          "pgDisplay": false,
+          "pgUP": true
+        },
+        {
+          "pgId": 4,
+          "pgTitle": "PhonePe",
+          "pgDetails": "8982227204@ybl",
+          "ibiboCode": "UPI",
+          "pgDisplay": false,
+          "pgUP": true
+        }
+      ],
+      "cashcard": [
+        {
+          "pgId": 7,
+          "pgTitle": "Paytm",
+          "pgDetails": "-",
+          "ibiboCode": "PAYTM",
+          "pgDisplay": true,
+          "pgUP": true
+        },
+        {
+          "pgId": 2,
+          "pgTitle": "PhonePe/BHIM UPI",
+          "pgDetails": "-",
+          "ibiboCode": "PHONEPE",
+          "pgDisplay": true,
+          "pgUP": true
+        },
+        {
+          "pgId": 13,
+          "pgTitle": "Amazon Pay",
+          "pgDetails": "-",
+          "ibiboCode": "AMZPAY",
+          "pgDisplay": true,
+          "pgUP": true
+        }
+      ],
+      "cc": [
+        {
+          "pgId": 3,
+          "pgTitle": "ICICI-XXXXXXXXXXX2733",
+          "ibiboCode": "Mastercard",
+          "pgDisplay": true,
+          "userCredentials": "7898:7700691189",
+          "pgUP": true
+        },
+        {
+          "pgId": 4,
+          "pgTitle": "null-XXXXXXXXXXX2733",
+          "ibiboCode": "Rupay",
+          "pgDisplay": true,
+          "userCredentials": "7898:7700691190",
+          "pgUP": true
+        }
+      ],
+      "dc": [
+        {
+          "pgId": 2,
+          "pgTitle": "null-459150XXXXXX2867",
+          "ibiboCode": "VISA",
+          "pgDisplay": true,
+          "userCredentials": "7898:7700691100",
+          "pgUP": true
+        }
+      ],
+      "nb": [
+        {
+          "pgId": 8,
+          "pgTitle": "Axis Bank",
+          "pgDetails": "-",
+          "ibiboCode": "AXIB",
+          "pgDisplay": true,
+          "pgUP": true
+        },
+        {
+          "pgId": 5,
+          "pgTitle": "State Bank of India",
+          "pgDetails": "-",
+          "ibiboCode": "SBIB",
+          "pgDisplay": true,
+          "pgUP": true
+        },
+        {
+          "pgId": 15,
+          "pgTitle": "Union Bank of India",
+          "pgDetails": "-",
+          "ibiboCode": "UBIB",
+          "pgDisplay": true,
+          "pgUP": true
+        }
+      ],
+      "emi": [],
+      "mc": [],
+      "pgRecency": []
+    },
+    "paymentOptions": {
+      "upi": [
+        "UPITPV",
+        "INTENT",
+        "TEZTPV",
+        "TEZOMNI",
+        "TEZ",
+        "PP_UPI",
+        "UPI"
+      ],
+      "cashcard": [
+        "OLAM",
+        "YESW",
+        "TPAY",
+        "FREC"
+      ],
+      "creditcard": [
+        "AMEX",
+        "AMEX_DI",
+        "DINR",
+        "CC"
+      ],
+      "debitcard": [
+        "SMAE",
+        "SMAST",
+        "VISA"
+      ],
+      "nb": [
+        "PSBNB",
+        "FEDB",
+        "BOMB",
+        "CABB"
+      ],
+      "emi": [
+        {
+          "dc": [
+            "HDFC",
+            "ICICI"
+            
+          ]
+        },
+        {
+          "cc": [
+            "SBI",
+            "BOB"
+          ]
+        },
+        {
+          "cardless": [
+            "AXIS",
+            "ICICI"
+          ]
+        }
+      ]
+    },
+    "tiles": [
+      {
+        "id": "1",
+        "paymode": "upi",
+        "ibiboCode": "UPITPV",
+        "action": "Redirect",
+        "tag": "Promoted",
+        "userInfo": "",
+        "paymentInfo": "",
+        "eligibilityCheck": "",
+        "eligibleAmount": "",
+        "title": "UDF1",
+        "msg": "UDF2"
+      },
+      {
+        "id": "2",
+        "paymode": "Cashcard",
+        "ibiboCode": "OLAM",
+        "action": "Redirect",
+        "tag": "Offer",
+        "userInfo": "",
+        "paymentInfo": "9876543210",
+        "eligibilityCheck": "",
+        "eligibleAmount": "",
+        "title": "OLAM",
+        "msg": "Pay using your OLAM wallet"
+      },
+      {
+        "id": "3",
+        "paymode": "creditcard",
+        "ibiboCode": "AMEX",
+        "action": "Redirect to L2",
+        "tag": "Promoted",
+        "userInfo": "",
+        "paymentInfo": "",
+        "eligibilityCheck": "",
+        "eligibleAmount": "",
+        "title": "UDF1",
+        "msg": "UDF2"
+      },
+      {
+        "id": "4",
+        "paymode": "debitcard",
+        "ibiboCode": "SMAE",
+        "action": "Redirect",
+        "tag": "",
+        "userInfo": "",
+        "paymentInfo": "",
+        "eligibilityCheck": "",
+        "eligibleAmount": "",
+        "title": "",
+        "msg": ""
+      }
+    ]
+  }
+}
+
