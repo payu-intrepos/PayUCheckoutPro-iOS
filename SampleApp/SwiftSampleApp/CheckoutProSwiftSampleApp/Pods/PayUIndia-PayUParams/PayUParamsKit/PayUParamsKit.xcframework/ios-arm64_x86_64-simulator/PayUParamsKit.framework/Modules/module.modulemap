@@ -6,6 +6,6 @@ framework module PayUParamsKit {
 }
 
 module PayUParamsKit.Swift {
-    header "PayUParamsKit-Swift.h"
-    requires objc
+  header "PayUParamsKit-Swift.h"
+  requires objc
 }

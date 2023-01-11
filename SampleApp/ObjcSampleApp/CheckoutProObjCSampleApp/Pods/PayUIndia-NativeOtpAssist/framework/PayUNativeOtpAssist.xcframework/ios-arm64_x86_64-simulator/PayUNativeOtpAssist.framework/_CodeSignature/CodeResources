@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		2X1PK0NlNdrAVbzJACNkxgeFmiY=
+		5e/0kh6zwpmQI+CDzUJaaYWnTGY=
 		</data>
 		<key>Base.storyboardc/Info.plist</key>
 		<data>
@@ -14,19 +14,19 @@
 		</data>
 		<key>Base.storyboardc/JBe-vD-ZqW-view-xDG-3u-oRH.nib/objects-13.0+.nib</key>
 		<data>
-		A6HguxXBUozFiTY2EQ9PixSlblg=
+		UzEM+PqMCEPwqq4+fYmG+pWmTFQ=
 		</data>
 		<key>Base.storyboardc/JBe-vD-ZqW-view-xDG-3u-oRH.nib/runtime.nib</key>
 		<data>
-		dHpT6HVxsKISUtBUkVhXdvTaVgs=
+		2yQMQxb6JHPFC/bztidItm2Gevc=
 		</data>
 		<key>Base.storyboardc/MeA-hw-7fO-view-Ane-Ps-sgL.nib/objects-13.0+.nib</key>
 		<data>
-		JBxu2Esnns9uulEyFjTpg0aopm4=
+		wlAylWpjRiircIbMJa0BFztxfaU=
 		</data>
 		<key>Base.storyboardc/MeA-hw-7fO-view-Ane-Ps-sgL.nib/runtime.nib</key>
 		<data>
-		Q4L2+jNsGtG6Hk9iWWo8fNcQdsI=
+		pZQ/ofKychi3MZMYM2KSTtJSUwY=
 		</data>
 		<key>Base.storyboardc/PayUAlertViewController.nib/objects-13.0+.nib</key>
 		<data>
@@ -62,23 +62,23 @@
 		</data>
 		<key>Base.storyboardc/QW0-iK-AEp-view-2Bw-ks-G57.nib/objects-13.0+.nib</key>
 		<data>
-		Dg9ILO3nHmfHuRY6KOMZfiKHu9M=
+		CD270mFUwCtm5p1usJZBOVv7jAI=
 		</data>
 		<key>Base.storyboardc/QW0-iK-AEp-view-2Bw-ks-G57.nib/runtime.nib</key>
 		<data>
-		wQLKPJkSCnrTpvgH6Dbb5rTJ1pk=
+		a7Es8CHmbtZkbKMm7J8W4by9C3U=
 		</data>
 		<key>Base.storyboardc/qio-1y-XHm-view-EIZ-j0-24b.nib/objects-13.0+.nib</key>
 		<data>
-		JhyNjgvh5EaNWLItJ61uV49y4EI=
+		mkD2yTnMgy3mSLxPKQA6LWRZh/4=
 		</data>
 		<key>Base.storyboardc/qio-1y-XHm-view-EIZ-j0-24b.nib/runtime.nib</key>
 		<data>
-		zjAocTLetsGMXdPpFe21mM3A6HM=
+		RVd9R1Cxpjj6BLABwlGXtf1ifJA=
 		</data>
 		<key>Headers/PayUNativeOtpAssist-Swift.h</key>
 		<data>
-		p1KfxSgbfiCHvoVU0ad8y1NMaSE=
+		GYcm7efdsnc5h45blAs4xMnKsBg=
 		</data>
 		<key>Headers/PayuNativeOtpAssist.h</key>
 		<data>
@@ -86,40 +86,128 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cHBho4vkygYh+U6MdqGax4jxngc=
+		ZfylNPU8XXV8lnRvspvP7MmGLUM=
+		</data>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		fzwH3sHjRq8PMHDitOeL1W0+n1I=
+		</data>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		WpEkEfBPdDKIG4JpyQ2mxxfNIBA=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		PnAtbM/QrZbl6KAssZhXs/cVtDE=
+		UpVq1XDoeyOlYGlqbZOZ+vedNMc=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		jTKrMi2QF6WrSw6Z19xLpRmmnrs=
+		WpEkEfBPdDKIG4JpyQ2mxxfNIBA=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		r9aV/FDJ4bThCEUrVw0yOSATKiY=
+		HgZpbOwZV9NZ5lxggR6A/ZtFRls=
+		</data>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		fzwH3sHjRq8PMHDitOeL1W0+n1I=
+		</data>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		LGpvS7DaPMGJtL0xLolC66N+H5I=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		f2+XqMVp8t+6q9Me2Bl1N6PjaWM=
+		D+GcxjqniGIE4JmbzFDHUJz+1+E=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5EoV6aF4cny1A64U0OkO9x/OrOM=
+		LGpvS7DaPMGJtL0xLolC66N+H5I=
 		</data>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6XdU8h65IIa0lMjWnxFZgrGNf3k=
+		BmMEJN9Cx/pSZzfmsypqASqMAnM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		tUG9SwAqUTY2lJ5sByG97o6CJTM=
+		ijmok8t91VPOenJCn50PQq6lar8=
 		</data>
 		<key>PayUOTPSnackBar.nib</key>
 		<data>
-		vW/51wCddOfNF/uXJi1KzXxL5eU=
+		vTYGFPFhLZilBCjIIyy89IP0c4s=
 		</data>
+		<key>bn-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			JaVGp+3oN0F/YGhjNB5XeAEZoC0=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zmV6UqBSo6r1NOz798vd5O4zTBA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>gu-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			435n+1x/5Ntk1eL/XXemiX65lis=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			9cPw+ELpnzmZYvfXRJdkvpwMpDg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>kn-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nx+/qhNXOgweVvhRQyDkkognuU8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>mr-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			lmxepPWHpV5uQreHvaRdRDGGM0s=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ta-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mnUQ7nc+GNSgzdXRSP2G3Ov6qhM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>te-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zAcd5pqyVoQNB8XtLditaFdLamg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -127,7 +215,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rS/63EzTwQajTIGsHn37TnXap8/Pb9Ze5d5YdhmplpQ=
+			ZWmKtsiD6Chgf1ZbX7h68fPHG2iaqtt0zGKk0yFfHzc=
 			</data>
 		</dict>
 		<key>Base.storyboardc/Info.plist</key>
@@ -141,28 +229,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mvZXkoAjEp28de4CWpmd+KZUpocjVvprRcJCid0VgIo=
+			1HcdJ00xmOhEBGdQWV5QrE3ItheYHdAy5slBCilr3uU=
 			</data>
 		</dict>
 		<key>Base.storyboardc/JBe-vD-ZqW-view-xDG-3u-oRH.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hIdy4Yos/Zs5JalXVWYCkM7YJUc1r5y9tLvHLCf/rPw=
+			N65E3qjFyhl/08t/dMg197bqZXsSqO3dac6B6qVb4m0=
 			</data>
 		</dict>
 		<key>Base.storyboardc/MeA-hw-7fO-view-Ane-Ps-sgL.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FhHPOdzIvP8g2H/om4xO3lyueInpD6rQu1ELdBvsvmw=
+			zNsz8Yjl/6XzkyCd2lcWDNasIPPLlMpMPLARTKDiM2s=
 			</data>
 		</dict>
 		<key>Base.storyboardc/MeA-hw-7fO-view-Ane-Ps-sgL.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pFU1fXrJ+TBK1mWw/zmdGlY8zyo7AN9g2vlIT7X0kqY=
+			8o+sa7xOtYyoiDPHcoAApy600Z8Y9oqB1aAFw8a/KwU=
 			</data>
 		</dict>
 		<key>Base.storyboardc/PayUAlertViewController.nib/objects-13.0+.nib</key>
@@ -225,35 +313,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8MYesdL4vKOTWdriMQ0A/FHFZltlB0Ttqh4ggKa4HSk=
+			wrzOaPDycG9IYGonLNIlgDl7O/zhAr3+KK63bR5oPIc=
 			</data>
 		</dict>
 		<key>Base.storyboardc/QW0-iK-AEp-view-2Bw-ks-G57.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BllrudQQ/quiPS4hxLQv0fv4p3fLUq2lBLZcfFqXLXA=
+			kaijP5IID3MY88kHyf5zr6sak+RBzGhQKZyscSjVyxE=
 			</data>
 		</dict>
 		<key>Base.storyboardc/qio-1y-XHm-view-EIZ-j0-24b.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hjXe23cURcbPRVDLuMrS86bhM+OxqWYqV1Ql3DCxTro=
+			8DURqdshEP5dk2T10pvsVSutmLR6ynrIE688dIiEl+w=
 			</data>
 		</dict>
 		<key>Base.storyboardc/qio-1y-XHm-view-EIZ-j0-24b.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RDrsv1L+qOfnCEImbjPzdpFIfgHEBc3fsxls7DLkl58=
+			JQucUzgvR3YabHlwqp4JzSYcyo6kXebR0n0XwY8JbLE=
 			</data>
 		</dict>
 		<key>Headers/PayUNativeOtpAssist-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GKxnj5e3aRJIbbUlM5/rd4cAB8HQMjl3loF3D+wy7Zk=
+			0DLz0UVhYQvaZV75Cwc58QhSftIbj+HShsOXiZjip38=
 			</data>
 		</dict>
 		<key>Headers/PayuNativeOtpAssist.h</key>
@@ -263,61 +351,161 @@
 			02ErFNMJc3p3t2z9cdXXikHnL2S3DJLRxQtxV3VDUew=
 			</data>
 		</dict>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5iIyIEPraaSfrtfDio76mFXQzb8RFPZ8gnrdxIvUtl8=
+			</data>
+		</dict>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RnyRcOkilvXXQS1LPn83x3xAvcwyeP4WoV8j9jar0Uo=
+			</data>
+		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3G291xRN7rm1z0UCd/TyPUnm/qPqgFncOrto3qXYsts=
+			2YsQeOPtM2KQTtNyzOwAaGEvTolU+iv7p3AlRvzUED0=
 			</data>
 		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yFEAN4q0MOyXq97/myq+qsNbalp//HLOY/OmrvvgHbw=
+			RnyRcOkilvXXQS1LPn83x3xAvcwyeP4WoV8j9jar0Uo=
 			</data>
 		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OSCEsIPB5fpUWg6TUR6Y9yKeGFNxqSGj5ac1VvGrWZA=
+			2zh7t0B+jWHZbbzdSy/bAD1esY6OTiJXL9ia24fWgi4=
+			</data>
+		</dict>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5iIyIEPraaSfrtfDio76mFXQzb8RFPZ8gnrdxIvUtl8=
+			</data>
+		</dict>
+		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Wv23b1pubdcUlV7WehZOSlQx1ljyG7+/OQYzexNGls4=
 			</data>
 		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/qaaomXGthkler3AbUUDDgDJbrRQyxuc8OYji/bCu3w=
+			ZU3lVGNGYxoWnFNubT61N6lJFWKDwr3s+9wYnDe/K2I=
 			</data>
 		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z3u9zFDbfYQ9jOc0gQs31xOkXRxdeUWQ7camDaLIzVE=
+			Wv23b1pubdcUlV7WehZOSlQx1ljyG7+/OQYzexNGls4=
 			</data>
 		</dict>
 		<key>Modules/PayUNativeOtpAssist.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1GPPvVcMKqZvJzMEWCRGBNxlvA95JqwuUv+MQ4pER24=
+			AR6IDY8Oe0zOwx+2OnfNbyziUtQGzfSpTPiET/hJuso=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Wb6T2Dd7CWbVQVNdljU+ewFpeI6G1uVmXDxlqI9F0j4=
+			nMNBcDWuZZp2XOe4qMy+30huYQhsLH/Qpp4RrbOCcMA=
 			</data>
 		</dict>
 		<key>PayUOTPSnackBar.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nwb9w1wSshRAc8WGOXIHIl4yxVzlRtfPtlQWxk6LIA4=
+			O2pzQ/smGhdhQ4jGSHDkmdj+LdaQMuuxu0GaCT0unZ4=
 			</data>
+		</dict>
+		<key>bn-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qoRT4UZeBUedwGdujLAytz/SzRRQWfDPkWYS9zhVyWc=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kmHsztpgjvF0JW5f3HdMHm49z1M0CcG8OT1JDQHHE/E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>gu-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4OL+K3jZ/5DWPZosLdH/YxUhXiEhbnUpOPuLMPC4hlw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hi.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s96+LyST+Evtq8oYvtjl5PTAITdO/7ZJ14ewEVPOwcI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>kn-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eH/NgaIERFAyQMotwDMcgy+VXEzabm9j/sbkvxDTXsU=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>mr-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MlUxecJxQMN2SrFvNm3ixVs6l6xixPMQaPr787EzsfA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>ta-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TPDnsj5Aq8MWkqccONU/zt2Bv9bW/0aeWa+W9g3BJgY=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>te-IN.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/tLvU56cxdpZArGwgOYmZkkXIRkJdTkJcVmCZwcwkAQ=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>

@@ -6,6 +6,6 @@ framework module PayUAssetLibraryKit {
 }
 
 module PayUAssetLibraryKit.Swift {
-    header "PayUAssetLibraryKit-Swift.h"
-    requires objc
+  header "PayUAssetLibraryKit-Swift.h"
+  requires objc
 }

@@ -72,7 +72,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforceUPISwitch: UISwitch!
     @IBOutlet weak var enforceSodexoSwitch: UISwitch!
     @IBOutlet weak var enforceNeftRtgsSwitch: UISwitch!
-    @IBOutlet weak var enforceOtherSwitch: UISwitch!
+    @IBOutlet weak var enforceBNPLSwitch: UISwitch!
     @IBOutlet weak var enforceCardTypeTextField: UITextField!
     @IBOutlet weak var enableEnforcementSwitch: UISwitch!
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
@@ -98,7 +98,7 @@ class MerchantViewController: UIViewController {
     var showCancelDialogOnCheckoutScreen: Bool = true
     var showCancelDialogOnPaymentScreen: Bool = true
     var orderDetail: String = "[{\"GST\":\"5%\"},{\"Delivery Date\":\"25 Dec\"},{\"Status\":\"In Progress\"}]"
-    var l1Option: String = "[{\"NetBanking\":\"\"},{\"EMI\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
+    var l1Option: String = "[{\"NetBanking\":\"\"},{\"BNPL\":\"\"},{\"EMI\":\"\"},{\"UPI\":\"TEZ\"},{\"Wallet\":\"PHONEPE\"}]"
     var offerDetail: String = "[[\"Cashback on cards and netbanking\",\"Cashback on cards and netbanking\",\"CardsOfferKey@11311\",\"Cards,NetBanking\"],]"
     var customNotes: String = "[{\"Hi, This is a custom note for payment modes.\":[]},{\"Hi, This is a custom note for payment options.\":[\"Cards\",\"NetBanking\",\"upi\",\"Wallet\",\"Sodexo\",\"NeftRtgs\",\"EMI\",\"SavedCard\"]}]"
     var splitPayRequest: String = "{\"type\":\"absolute\",\"splitInfo\":{\"imAJ7I\":{\"aggregatorSubTxnId\":\"Testchild123\",\"aggregatorSubAmt\":\"5\"},\"qOoYIv\":{\"aggregatorSubTxnId\":\"Testchild098\",\"aggregatorSubAmt\":\"5\"}}}"
@@ -388,8 +388,8 @@ extension MerchantViewController {
         var sodexoEnforcement = [String: Any]()
         sodexoEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.sodexo
         
-        var otherEnforcement = [String: Any]()
-        otherEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.lazypay
+        var bnplEnforcement = [String: Any]()
+        bnplEnforcement[PaymentParamConstant.paymentType] = PaymentParamConstant.bnpl
         
         if enforceNBSwitch.isOn {
             enforcePaymentList.append(nbEnforcement)
@@ -419,8 +419,8 @@ extension MerchantViewController {
             enforcePaymentList.append(sodexoEnforcement)
         }
         
-        if enforceOtherSwitch.isOn {
-            enforcePaymentList.append(otherEnforcement)
+        if enforceBNPLSwitch.isOn {
+            enforcePaymentList.append(bnplEnforcement)
         }
         
         return enforcePaymentList

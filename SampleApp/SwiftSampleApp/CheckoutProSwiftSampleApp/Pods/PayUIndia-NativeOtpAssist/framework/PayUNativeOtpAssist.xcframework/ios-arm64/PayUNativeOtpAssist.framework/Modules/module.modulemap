@@ -6,6 +6,6 @@ framework module PayUNativeOtpAssist {
 }
 
 module PayUNativeOtpAssist.Swift {
-    header "PayUNativeOtpAssist-Swift.h"
-    requires objc
+  header "PayUNativeOtpAssist-Swift.h"
+  requires objc
 }
