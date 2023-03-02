@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -234,7 +234,7 @@ public enum PopTipActionAnimation {
   @objc override public func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
-  @objc override public func fetchQuickPayOption(token: Swift.String, mobileNumber: Swift.String)
+  @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc override public func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
@@ -272,6 +272,7 @@ extension Foundation.NSNumber {
   @objc public static let nb: Swift.String
   @objc public static let upi: Swift.String
   @objc public static let wallet: Swift.String
+  @objc public static let cashcard: Swift.String
   @objc public static let emi: Swift.String
   @objc public static let neftrtgs: Swift.String
   @objc public static let sodexo: Swift.String
