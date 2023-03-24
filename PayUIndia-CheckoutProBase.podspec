@@ -1,6 +1,16 @@
+# Supress warning messages.
+original_verbose, $VERBOSE = $VERBOSE, nil
+
+# Read file
+vars_from_file = File.read("../Dependency/PayUParamsKit/GitHub/Version.txt")
+eval(vars_from_file)
+
+# Activate warning messages again.
+$VERBOSE = original_verbose
+
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-CheckoutProBase"
-  s.version             = "5.7.0"
+  s.version             = CHECKOUT_PRO_BASE_POD_VERSION
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -15,6 +25,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "11.0"
   s.vendored_frameworks = 'PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.xcframework'
 
-  s.dependency            'PayUIndia-PayUParams', '~> 4.6'
+  CHECKOUT_PRO_BASE_PODSPEC_DEPENDENCIES.each do |dependency|
+    dependency
+  end
 
 end
