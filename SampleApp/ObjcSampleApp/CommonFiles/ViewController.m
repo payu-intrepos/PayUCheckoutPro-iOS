@@ -28,7 +28,7 @@
 #pragma mark Helper Methods
 
 - (PayUPaymentParam *) paymentParam {
-    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"<key>"
+    PayUPaymentParam *paymentParam = [[PayUPaymentParam alloc] initWithKey:@"3TnMpV"
                                                              transactionId:[Utils getTransactionID]
                                                                     amount:@"10000"
                                                                productInfo:@"Nokia"
@@ -71,27 +71,33 @@
     NSString *hashStringWithoutSalt = [param objectForKey:HashConstant.hashString];
     NSString *postSalt = [param objectForKey:HashConstant.postSalt];
     NSString *hashType = [param objectForKey:HashConstant.hashType];
-    NSString *salt = @"<salt>";
+    NSString *salt = @"g0nGFe03";
     NSString *secret = @"<merchant_secret>";
-    NSString *hashValue;
     // get hash for "commandName" from server
     // get hash for "hashStringWithoutSalt" from server
     // After fetching hash set its value in below variable "hashValue"
     // NSString *hashValue = @"hashValue";
 
     if ([hashType isEqualToString:@"V2"]) {
-        hashValue = @"<hmacSHA256 hash for hashStringWithoutSalt with salt>";
+        NSString *hashValue = [PayUDontUseThisClass hmacSHA256:hashStringWithoutSalt withKey:salt];
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
+        onCompletion(dict);
+        return;
     }
-    else if ([commandName isEqualToString:HashConstant.mcpLookup]) {
-        hashValue = @"<hmacsha1 hash for hashStringWithoutSalt and secret>";
+    if ([commandName isEqualToString:HashConstant.mcpLookup]) {
+        NSString *hashValue = [PayUDontUseThisClass hmacsha1:hashStringWithoutSalt secret:secret];
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
+        onCompletion(dict);
+        return;
     }
-    else if (postSalt && ![postSalt isEqualToString:@""]) {
-        NSString *hashString = [NSString stringWithFormat:@"%@%@|%@",hashStringWithoutSalt,salt,postSalt];
-        hashValue = @"<hmacsha512 hash for hashString and salt>";
+    if (postSalt && ![postSalt isEqualToString:@""]) {
+        NSString *hashValue = [Utils getHash:[NSString stringWithFormat:@"%@%@|%@",hashStringWithoutSalt,salt,postSalt]];
+        NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
+        onCompletion(dict);
+        return;
     }
-    else {
-        hashValue = @"<hmacsha512 hash for hashStringWithoutSalt and salt>";
-    }
+    
+    NSString *hashValue = [Utils getHash:[NSString stringWithFormat:@"%@%@",hashStringWithoutSalt,salt]];
     NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:hashValue, commandName, nil];
     onCompletion(dict);
 }

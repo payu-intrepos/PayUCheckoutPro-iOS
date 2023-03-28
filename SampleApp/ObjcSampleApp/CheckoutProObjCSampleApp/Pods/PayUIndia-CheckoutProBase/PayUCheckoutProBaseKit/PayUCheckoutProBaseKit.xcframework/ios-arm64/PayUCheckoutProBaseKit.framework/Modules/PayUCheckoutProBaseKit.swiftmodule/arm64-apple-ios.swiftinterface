@@ -62,6 +62,7 @@ import _StringProcessing
   public var objectHash: Swift.Int
   public var imageURL: Foundation.URL?
   public var imageUpdatedOn: Swift.Double?
+  public var imageName: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -80,7 +81,7 @@ public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMulti
 public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSCInfo?, _ errorMessage: Swift.String?) -> Swift.Void
 public typealias FetchAssetCompletion = (_ assets: PayUParamsKit.PayUModelFetchAssets?, _ error: Swift.String?) -> Swift.Void
 public typealias GetStringCompletion = (_ successString: Swift.String?, _ error: Swift.String?) -> Swift.Void
-public typealias FetchQuickPayOptionCompletion = (_ quickPayOption: [PayUParamsKit.PaymentMode]?, _ error: Swift.String?) -> Swift.Void
+public typealias FetchQuickPayAndRecommendationOptionsCompletion = (_ savedOptions: PayUParamsKit.PayUSavedPaymentOptions?, _ recommendationOptions: [PayUParamsKit.PayUTiles]?, _ error: Swift.String?) -> Swift.Void
 public typealias EnableCompletion = (_ isEnable: Swift.Bool?) -> Swift.Void
 public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayULanguage], _ selectedLanguage: PayUParamsKit.PayULanguageCode) -> Swift.Void
 @objc public protocol OnePayUBaseLayerDelegate {
@@ -119,7 +120,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc open func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc open func logout()
-  @objc open func fetchQuickPayOption(token: Swift.String, mobileNumber: Swift.String)
+  @objc open func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc open func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
   @objc deinit
 }

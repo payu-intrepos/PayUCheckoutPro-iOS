@@ -303,6 +303,7 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
+        paymentParam.additionalParam[PaymentParamConstant.walletURN] = "100001"
         paymentParam.userToken = userTokenTextField.text
         
         paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
@@ -505,21 +506,17 @@ extension MerchantViewController: PayUCheckoutProDelegate {
         // get hash for "commandName" from server
         // get hash for "hashStringWithoutSalt" from server
         
-        
-        
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
-        if let hashType = param[HashConstant.hashType], hashType == "V2" {
-            
-            hashValue = "<hmacSHA256 hash for hashStringWithoutSalt with salt>"
-        }
-        else if commandName == HashConstant.mcpLookup {
-            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+        if let hashType = param[HashConstant.hashType], hashType == HashConstant.V2 {
+            hashValue = PayUDontUseThisClass.hmacSHA256(hashStringWithoutSalt, withKey: saltTextField.text ?? "")
+        } else if commandName == HashConstant.mcpLookup {
+            hashValue = Utils.hmacsha1(of: hashStringWithoutSalt, secret: (merchantSecretKeyTextField.text ?? ""))
         } else if let postSalt = postSalt {
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+            hashValue = Utils.sha512Hex(string: hashString)
         } else {
-            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
+            hashValue = Utils.sha512Hex(string: (hashStringWithoutSalt + (saltTextField.text ?? "")))
         }
         onCompletion([commandName : hashValue])
     }
