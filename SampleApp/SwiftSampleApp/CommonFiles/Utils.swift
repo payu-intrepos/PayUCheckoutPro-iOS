@@ -6,18 +6,18 @@
 //  Copyright © 2020 PayU Payments Pvt Ltd. All rights reserved.
 //
 
-import UIKit
 import CommonCrypto
-import PayUCheckoutProKit
-import PayUCheckoutProBaseKit
 import PayUBizCoreKit
+import PayUCheckoutProBaseKit
+import PayUCheckoutProKit
+import UIKit
 
 class Utils: NSObject {
-    
+
     class func sha512Hex(string: String) -> String {
         PayUDontUseThisClass().getHash(string)
     }
-    
+
     class func hmacsha1(of string: String, secret: String) -> String {
         PayUDontUseThisClass.hmacsha1(string, secret: secret)
     }
@@ -28,7 +28,7 @@ class Utils: NSObject {
         let txnID = "iOS" + formatter.string(from: Date())
         return txnID
     }
-    
+
     class func stringyfy(environment: Any?) -> String {
         guard let environment = environment as? Environment else {
             return ENVIRONMENT_PRODUCTION
@@ -40,24 +40,24 @@ class Utils: NSObject {
             return ENVIRONMENT_PRODUCTION
         }
     }
-    
+
     class func environment(environment: String) -> Environment {
         if environment == ENVIRONMENT_TEST {
-            return  Environment.test
+            return Environment.test
         } else {
-            return  Environment.production
+            return Environment.production
         }
     }
-    
+
     class func JSONFrom(string: String) -> Any? {
-        guard let data = string.data(using: .utf8) else { return nil}
+        guard let data = string.data(using: .utf8) else { return nil }
         do {
             return try JSONSerialization.jsonObject(with: data, options: [])
         } catch {
             return nil
         }
     }
-    
+
     class func paymentModeFrom(paymentType: String?, paymentOptionID: String?) -> PaymentMode? {
         var paymentMode: PaymentMode?
         if paymentType == "Cards".lowercased() {
@@ -73,32 +73,32 @@ class Utils: NSObject {
         }
         return paymentMode
     }
-    
+
     class func paymentTypeFrom(paymentType: String?) -> PaymentType? {
-        if (paymentType?.caseInsensitiveCompare("Cards") == .orderedSame) {
+        if paymentType?.caseInsensitiveCompare("Cards") == .orderedSame {
             return .ccdc
-        } else if (paymentType?.caseInsensitiveCompare("NetBanking") == .orderedSame) {
+        } else if paymentType?.caseInsensitiveCompare("NetBanking") == .orderedSame {
             return .netBanking
-        } else if (paymentType?.caseInsensitiveCompare("UPI") == .orderedSame) {
+        } else if paymentType?.caseInsensitiveCompare("UPI") == .orderedSame {
             return .upi
-        } else if (paymentType?.caseInsensitiveCompare("Wallet") == .orderedSame) {
+        } else if paymentType?.caseInsensitiveCompare("Wallet") == .orderedSame {
             return .wallet
-        } else if (paymentType?.caseInsensitiveCompare("emi") == .orderedSame) {
+        } else if paymentType?.caseInsensitiveCompare("emi") == .orderedSame {
             return .emi
         } else {
             return nil
         }
     }
-    
-    class func hexStringToUIColor(hex: String) -> UIColor? {
-        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
 
-        if (cString.hasPrefix("#")) {
+    class func hexStringToUIColor(hex: String) -> UIColor? {
+        var cString: String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+        if cString.hasPrefix("#") {
             cString.remove(at: cString.startIndex)
         }
         cString = String(cString.prefix(6))
 
-        var rgbValue:UInt64 = 0
+        var rgbValue: UInt64 = 0
         Scanner(string: cString).scanHexInt64(&rgbValue)
 
         return UIColor(
@@ -110,8 +110,8 @@ class Utils: NSObject {
     }
 }
 
-extension Date{
-    var dateString:String{
+extension Date {
+    var dateString: String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         return formatter.string(from: self)
