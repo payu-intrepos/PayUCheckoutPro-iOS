@@ -78,7 +78,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
     
     // MARK: - Variables -
-    let keySalt = [["3TnMpV", "<Please enter your salt here>", Environment.production],
+    let keySalt = [["smsplus", "1b1b0", Environment.production],
                    ["gtKFFx", "<Please enter your salt here>", Environment.test]]
 
     let indexKeySalt = 0
@@ -89,7 +89,7 @@ class MerchantViewController: UIViewController {
     var furl: String = "https://payu.herokuapp.com/ios_failure"
     var firstName: String = "Umang"
     var email: String = "umang@arya.com"
-    var phoneNumber: String = "9876543210"
+    var phoneNumber: String = "9811924582"
     var userCredential: String = "umang:arya123"
     var primaryColor: String = "#25272C"
     var secondaryColor: String = "#ffffff"
@@ -303,7 +303,7 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
-        paymentParam.additionalParam[PaymentParamConstant.walletURN] = "100001"
+        paymentParam.additionalParam[PaymentParamConstant.walletURN] = "10000"
         paymentParam.userToken = userTokenTextField.text
         
         paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
