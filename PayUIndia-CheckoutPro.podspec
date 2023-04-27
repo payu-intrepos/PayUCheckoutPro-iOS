@@ -1,16 +1,6 @@
-# Supress warning messages.
-original_verbose, $VERBOSE = $VERBOSE, nil
-
-# Read file
-vars_from_file = File.read("../Dependency/PayUParamsKit/GitHub/Version.txt")
-eval(vars_from_file)
-
-# Activate warning messages again.
-$VERBOSE = original_verbose
-
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-CheckoutPro"
-  s.version             = CHECKOUT_PRO_POD_VERSION
+  s.version             = "5.9.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -24,9 +14,17 @@ Pod::Spec.new do |s|
   
   s.ios.deployment_target = "11.0"
   s.vendored_frameworks = 'PayUCheckoutProKit/PayUCheckoutProKit.xcframework'
-  
-  CHECKOUT_PRO_PODSPEC_DEPENDENCIES.each do |dependency|
-    dependency
-  end
+
+  s.dependency            'PayUIndia-CheckoutProBase', '~> 5.9'
+  s.dependency            'PayUIndia-AssetLibrary', '~> 3.3'
+  s.dependency            'PayUIndia-PG-SDK', '~> 9.2'
+  s.dependency            'PayUIndia-UPICore', '~> 7.1'
+  s.dependency            'PayUIndia-Custom-Browser', '~> 9.2'
+  s.dependency            'PayUIndia-PayUParams', '~> 4.8'
+  s.dependency            'PayUIndia-CrashReporter', '~> 2.1'
+  s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
+  s.dependency            'PayUIndia-NativeOtpAssist', '~> 2.1'
+  s.dependency            'PayUIndia-CardScanner', '~> 1.0'
+  s.dependency            'PayUIndia-Analytics', '3.0'
 
 end
