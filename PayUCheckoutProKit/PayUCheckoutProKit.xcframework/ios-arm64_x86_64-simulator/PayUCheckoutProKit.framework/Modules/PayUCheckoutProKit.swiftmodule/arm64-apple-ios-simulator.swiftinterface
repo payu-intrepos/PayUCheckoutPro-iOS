@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -185,12 +185,12 @@ public enum PopTipActionAnimation {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseTransformer : ObjectiveC.NSObject {
-  @objc public func onError(_ error: (any Swift.Error)?) -> Any?
+  @objc public func onError(_ error: Swift.Error?) -> Any?
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool) -> Any?
   @objc public func onPaymentFailure(response: Any?) -> Any?
   @objc public func onPaymentSuccess(response: Any?) -> Any?
   @objc public func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion) -> PayUCheckoutProBaseKit.DictOfString
-  @objc public func hashGenerated(args: Any?, errorCallback: @escaping (((any Swift.Error)?) -> Swift.Void))
+  @objc public func hashGenerated(args: Any?, errorCallback: @escaping ((Swift.Error?) -> Swift.Void))
   @objc override dynamic public init()
   @objc deinit
 }
@@ -198,14 +198,14 @@ public enum PopTipActionAnimation {
   @objc func onPaymentSuccess(response: Any?)
   @objc func onPaymentFailure(response: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
-  @objc func onError(_ error: (any Swift.Error)?)
+  @objc func onError(_ error: Swift.Error?)
   @objc func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
-  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func start()
-  @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func sdkCrash()
   @objc override dynamic public init()
   @objc deinit
