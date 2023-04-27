@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
@@ -23,7 +23,7 @@ import _StringProcessing
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class PaymentOption : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers @objcMembers public class PaymentOption : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var title: Swift.String?
   @objc public var subTitle: Swift.String?
   @objc public var unavailableReason: Swift.String?
@@ -42,20 +42,25 @@ import _StringProcessing
   public var imageUpdatedOn: Swift.Double?
   @objc public var flowType: Swift.String?
   @objc public var phoneNumber: Swift.String?
+  @objc public var header: Swift.String?
+  public var isEligible: Swift.Bool?
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
   @objc override dynamic public init()
+  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class NetBanking : PayUParamsKit.PaymentOption {
   @objc public var maskedAccountNumber: Swift.String?
   @objc public var beneficiaryParams: PayUParamsKit.PayUBeneficiaryParams?
   @objc public var verificationModes: [Swift.String]?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class NeftRtgs : PayUParamsKit.PaymentOption {
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -65,10 +70,11 @@ import _StringProcessing
   @objc public var cardType: Swift.String?
   @objc public var isNewCard: Swift.Bool
   @objc public var apiStatus: PayUParamsKit.ApiStatus
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class CCDC : PayUParamsKit.PaymentOption, Foundation.NSCopying {
+@objc @_inheritsConvenienceInitializers @objcMembers public class CCDC : PayUParamsKit.PaymentOption {
   @objc public var cardNumber: Swift.String?
   @objc public var expiryMonth: Foundation.NSNumber?
   @objc public var expiryYear: Foundation.NSNumber?
@@ -100,7 +106,7 @@ import _StringProcessing
     @objc get
     @objc set
   }
-  @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -116,6 +122,7 @@ import _StringProcessing
   @objc public var maskedAccountNumber: Swift.String?
   @objc public var beneficiaryParams: PayUParamsKit.PayUBeneficiaryParams?
   @objc public var verificationModes: [Swift.String]?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -125,6 +132,7 @@ import _StringProcessing
   @objc public var vpa: Swift.String?
   @objc public var scheme: Swift.String?
   @objc public var handlers: [Swift.String]?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -135,6 +143,7 @@ import _StringProcessing
   @objc public var scheme: Swift.String?
   @objc public var handlers: [Swift.String]?
   @objc public var apps: [Swift.String]?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -160,10 +169,20 @@ import _StringProcessing
 @objc @_inheritsConvenienceInitializers @objcMembers public class Wallet : PayUParamsKit.CCDC {
   @objc public var maskedAccountNumber: Swift.String?
   @objc public var twidCustomerHash: Swift.String?
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class BNPL : PayUParamsKit.PaymentOption {
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class CLW : PayUParamsKit.PaymentOption {
+  @objc public var walletUrn: Swift.String?
+  public var balance: Swift.Double?
+  @objc public var apiStatus: PayUParamsKit.ApiStatus
+  @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
 }
@@ -227,6 +246,7 @@ import _StringProcessing
   case other
   case savedNetbanking
   case savedUPI
+  case clw
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -559,13 +579,13 @@ import _StringProcessing
   @objc deinit
 }
 @objc public class PayUQuickPayResult : PayUParamsKit.PayUBaseModel {
-  @objc public var savedPaymentOptions: PayUParamsKit.PayUPaymentSavedOptions?
-  @objc public var paymentOptions: [PayUParamsKit.PaymentOptions]?
+  @objc public var savedPaymentOptions: PayUParamsKit.PayUSavedPaymentOptions?
+  @objc public var paymentOptions: [PayUParamsKit.PaymentOptionIbiboCodes]?
   @objc public var tiles: [PayUParamsKit.PayUTiles]?
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
-@objc public class PayUPaymentSavedOptions : PayUParamsKit.PayUBaseModel {
+@objc public class PayUSavedPaymentOptions : PayUParamsKit.PayUBaseModel {
   @objc public var cc: [PayUParamsKit.SupportedPaymentOptions]?
   @objc public var emi: [PayUParamsKit.SupportedPaymentOptions]?
   @objc public var nb: [PayUParamsKit.SupportedPaymentOptions]?
@@ -578,31 +598,28 @@ import _StringProcessing
 }
 @objc public class SupportedPaymentOptions : PayUParamsKit.PayUBaseModel {
   @objc public var pgId: Swift.Double
-  @objc public var pgTitle: Swift.String?
-  @objc public var pgDetails: Swift.String?
-  @objc public var ibiboCode: Swift.String?
-  @objc public var pgDisplay: Swift.Bool
-  @objc public var userCredentials: Swift.String?
-  @objc public var pgUP: Swift.Bool
+  @objc public var pgTitle: Swift.String?, pgDetails: Swift.String?, ibiboCode: Swift.String?, userCredentials: Swift.String?, paymentMode: Swift.String?
+  @objc public var pgDisplay: Swift.Bool, pgUP: Swift.Bool, tokenTxn: Swift.Bool
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 @objc public class PayUTiles : PayUParamsKit.PayUBaseModel {
   @objc public var id: Swift.String?
-  @objc public var paymode: Swift.String?
+  @objc public var paymentMode: Swift.String?
   @objc public var ibiboCode: Swift.String?
   @objc public var action: Swift.String?
   @objc public var tag: Swift.String?
   @objc public var userInfo: Swift.String?
   @objc public var paymentInfo: Swift.String?
-  @objc public var eligibilityCheck: Swift.String?
+  @objc public var eligibilityCheck: Swift.Bool
   @objc public var eligibleAmount: Swift.String?
   @objc public var title: Swift.String?
   @objc public var msg: Swift.String?
+  @objc public var bankCode: Swift.String?
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
-@objc public class PaymentOptions : PayUParamsKit.PayUBaseModel {
+@objc public class PaymentOptionIbiboCodes : PayUParamsKit.PayUBaseModel {
   @objc public var upi: [Swift.String]?
   @objc public var cashcard: [Swift.String]?
   @objc public var creditcard: [Swift.String]?
@@ -719,6 +736,7 @@ extension Swift.Dictionary {
     @objc public static let payid: Swift.String
     @objc public static let PG: Swift.String
     @objc public static let BANK_CODE: Swift.String
+    @objc public static let WALLET_URN: Swift.String
     @objc public static let SDK_PLATFORM: Swift.String
     @objc public static let KEY: Swift.String
     @objc public static let OFFER_KEY: Swift.String

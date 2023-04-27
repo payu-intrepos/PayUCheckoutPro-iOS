@@ -303,7 +303,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)verifyOtpWithMobileNumber:(NSString * _Nonnull)mobileNumber otp:(NSString * _Nonnull)otp uuid:(NSString * _Nonnull)uuid onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
 - (void)resendMobileVerificationCodeWithUuid:(NSString * _Nonnull)uuid mobileNumber:(NSString * _Nonnull)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
 - (void)logout;
-- (void)fetchQuickPayOptionWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
+- (void)fetchRecommendedAndQuickPayOptionsWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

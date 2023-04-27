@@ -234,7 +234,7 @@ public enum PopTipActionAnimation {
   @objc override public func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
-  @objc override public func fetchQuickPayOption(token: Swift.String, mobileNumber: Swift.String)
+  @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc override public func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
@@ -272,6 +272,7 @@ extension Foundation.NSNumber {
   @objc public static let nb: Swift.String
   @objc public static let upi: Swift.String
   @objc public static let wallet: Swift.String
+  @objc public static let cashcard: Swift.String
   @objc public static let emi: Swift.String
   @objc public static let neftrtgs: Swift.String
   @objc public static let sodexo: Swift.String
