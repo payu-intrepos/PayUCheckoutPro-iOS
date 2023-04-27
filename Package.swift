@@ -3,12 +3,12 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "4.6.0"
+let VERSION_PARAM_KIT: PackageDescription.Version = "4.8.0"
 let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.0"
 let VERSION_CRASH_REPORTER: PackageDescription.Version = "2.1.0"
 let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.0.1"
 let VERSION_ASSET_LIBRARY: PackageDescription.Version = "3.3.0"
-let VERSION_PG_SDK: PackageDescription.Version = "9.0.0"
+let VERSION_PG_SDK: PackageDescription.Version = "9.2.0"
 let VERSION_CUSTOM_BROWSER: PackageDescription.Version = "9.2.0"
 let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "2.1.3"
 let VERSION_UPI_KIT: PackageDescription.Version = "7.1.1"
