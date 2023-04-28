@@ -14,68 +14,62 @@ let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "2.1.3"
 let VERSION_UPI_KIT: PackageDescription.Version = "7.1.1"
 let VERSION_CARD_SCANNER: PackageDescription.Version = "1.0.0"
 
-
-
-
-
 let package = Package(
+    name: "PayUCheckoutProKit",
+    platforms: [.iOS(.v11)],
 
-name: "PayUCheckoutProKit",
-platforms: [.iOS(.v11)],
+    products: [
+        .library(
+            name: "PayUIndia-CheckoutProBase",
+            targets: ["PayUIndia-CheckoutProBaseTarget"]
+        ),
+        .library(
+            name: "PayUIndia-CheckoutPro",
+            targets: ["PayUIndia-CheckoutProTarget"]
+        ),
+    ],
 
-products: [
-.library(
-name: "PayUIndia-CheckoutProBase",
-targets: ["PayUIndia-CheckoutProBaseTarget"]
-),
-.library(
-name: "PayUIndia-CheckoutPro",
-targets: ["PayUIndia-CheckoutProTarget"]
-)
-],
+    dependencies: [
+        .package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: VERSION_PARAM_KIT),
+        .package(name: "PayUIndia-NetworkReachability", url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS.git", from: VERSION_NETWORK_REACHABILITY),
+        .package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS.git", from: VERSION_ANALYTICS_KIT),
+        .package(name: "PayUIndia-CrashReporter", url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git", from: VERSION_CRASH_REPORTER),
+        .package(name: "PayUIndia-AssetLibrary", url: "https://github.com/payu-intrepos/PayUAssetLibrary-iOS.git", from: VERSION_ASSET_LIBRARY),
+        .package(name: "PayUIndia-PG-SDK", url: "https://github.com/payu-intrepos/iOS-SDK.git", from: VERSION_PG_SDK),
+        .package(name: "PayUIndia-Custom-Browser", url: "https://github.com/payu-intrepos/iOS-Custom-Browser.git", from: VERSION_CUSTOM_BROWSER),
+        .package(name: "PayUIndia-NativeOtpAssist", url: "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git", from: VERSION_NATIVE_OTP_ASSIST),
+        .package(name: "PayUIndia-UPIKit", url: "https://github.com/payu-intrepos/payu-upi-ios-sdk.git", from: VERSION_UPI_KIT),
+        .package(name: "PayUIndia-CardScanner", url: "https://github.com/payu-intrepos/PayUIndia-CardScanner-iOS.git", from: VERSION_CARD_SCANNER),
+    ],
 
-dependencies: [
-.package(name: "PayUIndia-PayUParams", url: "https://github.com/payu-intrepos/payu-params-iOS.git", from: VERSION_PARAM_KIT),
-.package(name: "PayUIndia-NetworkReachability", url: "https://github.com/payu-intrepos/PayUNetworkReachability-iOS.git", from: VERSION_NETWORK_REACHABILITY),
-.package(name: "PayUIndia-Analytics", url: "https://github.com/payu-intrepos/PayUAnalytics-iOS.git", from: VERSION_ANALYTICS_KIT),
-.package(name: "PayUIndia-CrashReporter", url: "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git", from: VERSION_CRASH_REPORTER),
-.package(name: "PayUIndia-AssetLibrary", url: "https://github.com/payu-intrepos/PayUAssetLibrary-iOS.git", from: VERSION_ASSET_LIBRARY),
-.package(name: "PayUIndia-PG-SDK", url: "https://github.com/payu-intrepos/iOS-SDK.git", from: VERSION_PG_SDK),
-.package(name: "PayUIndia-Custom-Browser", url: "https://github.com/payu-intrepos/iOS-Custom-Browser.git", from: VERSION_CUSTOM_BROWSER),
-.package(name: "PayUIndia-NativeOtpAssist", url: "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git", from: VERSION_NATIVE_OTP_ASSIST),
-.package(name: "PayUIndia-UPIKit", url: "https://github.com/payu-intrepos/payu-upi-ios-sdk.git", from: VERSION_UPI_KIT),
-.package(name: "PayUIndia-CardScanner", url: "https://github.com/payu-intrepos/PayUIndia-CardScanner-iOS.git", from: VERSION_CARD_SCANNER)
-],
-
-targets: [
-.binaryTarget(name: "PayUCheckoutProBaseKit", path: "./PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.xcframework"),
-.binaryTarget(name: "PayUCheckoutProKit", path: "./PayUCheckoutProKit/PayUCheckoutProKit.xcframework"),
-.target(
-name: "PayUIndia-CheckoutProBaseTarget",
-dependencies: [
-.product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
-"PayUCheckoutProBaseKit"
-],
-path: "Wrappers/PayUIndia-CheckoutProBaseWrapper"
-),
-.target(
-name: "PayUIndia-CheckoutProTarget",
-dependencies: [
-.product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
-.product(name: "PayUIndia-UPICore", package: "PayUIndia-UPIKit"),
-"PayUCheckoutProKit",
-"PayUCheckoutProBaseKit",
-"PayUIndia-Analytics",
-"PayUIndia-NetworkReachability",
-"PayUIndia-CrashReporter",
-"PayUIndia-AssetLibrary",
-"PayUIndia-PG-SDK",
-"PayUIndia-NativeOtpAssist",
-"PayUIndia-Custom-Browser",
-"PayUIndia-CardScanner"
-],
-path: "Wrappers/PayUIndia-CheckoutProWrapper"
-)
-]
-
+    targets: [
+        .binaryTarget(name: "PayUCheckoutProBaseKit", path: "./PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.xcframework"),
+        .binaryTarget(name: "PayUCheckoutProKit", path: "./PayUCheckoutProKit/PayUCheckoutProKit.xcframework"),
+        .target(
+            name: "PayUIndia-CheckoutProBaseTarget",
+            dependencies: [
+                .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
+                "PayUCheckoutProBaseKit",
+            ],
+            path: "Wrappers/PayUIndia-CheckoutProBaseWrapper"
+        ),
+        .target(
+            name: "PayUIndia-CheckoutProTarget",
+            dependencies: [
+                .product(name: "PayUIndia-PayUParams", package: "PayUIndia-PayUParams"),
+                .product(name: "PayUIndia-UPICore", package: "PayUIndia-UPIKit"),
+                "PayUCheckoutProKit",
+                "PayUCheckoutProBaseKit",
+                "PayUIndia-Analytics",
+                "PayUIndia-NetworkReachability",
+                "PayUIndia-CrashReporter",
+                "PayUIndia-AssetLibrary",
+                "PayUIndia-PG-SDK",
+                "PayUIndia-NativeOtpAssist",
+                "PayUIndia-Custom-Browser",
+                "PayUIndia-CardScanner",
+            ],
+            path: "Wrappers/PayUIndia-CheckoutProWrapper"
+        ),
+    ]
 )
