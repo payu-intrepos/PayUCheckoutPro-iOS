@@ -13,6 +13,7 @@ let VERSION_CUSTOM_BROWSER: PackageDescription.Version = "9.2.0"
 let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "2.1.3"
 let VERSION_UPI_KIT: PackageDescription.Version = "7.1.1"
 let VERSION_CARD_SCANNER: PackageDescription.Version = "1.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "1.0.0"
 
 let package = Package(
     name: "PayUCheckoutProKit",
@@ -40,6 +41,7 @@ let package = Package(
         .package(name: "PayUIndia-NativeOtpAssist", url: "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git", from: VERSION_NATIVE_OTP_ASSIST),
         .package(name: "PayUIndia-UPIKit", url: "https://github.com/payu-intrepos/payu-upi-ios-sdk.git", from: VERSION_UPI_KIT),
         .package(name: "PayUIndia-CardScanner", url: "https://github.com/payu-intrepos/PayUIndia-CardScanner-iOS.git", from: VERSION_CARD_SCANNER),
+        .package(name: "PayUIndia-CommonUI", url: "https://github.com/payu-intrepos/PayUCommonUI-iOS", from: VERSION_COMMON_UI)
     ],
 
     targets: [
@@ -68,6 +70,7 @@ let package = Package(
                 "PayUIndia-NativeOtpAssist",
                 "PayUIndia-Custom-Browser",
                 "PayUIndia-CardScanner",
+                "PayUIndia-CommonUI"
             ],
             path: "Wrappers/PayUIndia-CheckoutProWrapper"
         ),

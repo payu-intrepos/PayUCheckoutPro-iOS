@@ -56,6 +56,15 @@
         }
       },
       {
+        "package": "PayUIndia-CommonUI",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
+        "state": {
+          "branch": null,
+          "revision": "2f9d9dccbb2f1d9838a3ee7a2a2ccaf7e0325fac",
+          "version": "1.0.0"
+        }
+      },
+      {
         "package": "PayUIndia-CrashReporter",
         "repositoryURL": "https://github.com/payu-intrepos/PayUCrashReporter-iOS.git",
         "state": {
