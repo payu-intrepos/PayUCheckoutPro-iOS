@@ -206,7 +206,6 @@ public enum PopTipActionAnimation {
   @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc public static func sdkCrash()
   @objc override dynamic public init()
   @objc deinit
 }

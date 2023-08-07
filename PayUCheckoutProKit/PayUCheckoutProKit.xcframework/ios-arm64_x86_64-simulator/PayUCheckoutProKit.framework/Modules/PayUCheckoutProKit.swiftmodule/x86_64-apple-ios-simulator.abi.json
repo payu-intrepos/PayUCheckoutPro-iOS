@@ -10838,29 +10838,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "sdkCrash",
-            "printedName": "sdkCrash()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@PayUCheckoutProKit@objc(cs)PayUCheckoutPro(cm)sdkCrash",
-            "mangledName": "$s18PayUCheckoutProKit0abC0C8sdkCrashyyFZ",
-            "moduleName": "PayUCheckoutProKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -23757,28 +23734,28 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 5891,
+      "offset": 5827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 6363,
+      "offset": 6299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 6405,
+      "offset": 6341,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 6457,
+      "offset": 6393,
       "length": 5,
       "value": "false"
     },

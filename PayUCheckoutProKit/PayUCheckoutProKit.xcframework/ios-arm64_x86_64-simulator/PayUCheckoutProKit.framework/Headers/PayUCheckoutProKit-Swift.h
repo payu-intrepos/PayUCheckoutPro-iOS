@@ -345,7 +345,6 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 + (void)openOn:(UIViewController * _Nonnull)parentVC params:(id _Nullable)params delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 + (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-+ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -907,7 +906,6 @@ SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 + (void)openOn:(UIViewController * _Nonnull)parentVC params:(id _Nullable)params delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
 + (void)start;
 + (void)openOn:(UIViewController * _Nonnull)parentVC apiLayer:(BaseLayer * _Nonnull)apiLayer delegate:(id <PayUCheckoutProDelegate> _Nonnull)delegate;
-+ (void)sdkCrash;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
