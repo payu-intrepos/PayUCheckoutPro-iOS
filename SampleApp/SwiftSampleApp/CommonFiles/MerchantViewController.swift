@@ -327,7 +327,6 @@ extension MerchantViewController {
     }
 
     @IBAction open func sdkCrash() {
-        PayUCheckoutPro.sdkCrash()
     }
 
     @IBAction open func enableEnforcementSwitch(_ sender: UISwitch) {
@@ -518,14 +517,11 @@ extension MerchantViewController: PayUCheckoutProDelegate {
 
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
-        if let hashType = param[HashConstant.hashType], hashType == "V2" {
-
-            hashValue = "<hmacSHA256 hash for hashStringWithoutSalt with salt>"
-        } else if commandName == HashConstant.mcpLookup {
+        if commandName == HashConstant.mcpLookup {
             hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else if let postSalt = postSalt {
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and secret>"
         } else {
             hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
         }

@@ -17,6 +17,7 @@ import _StringProcessing
   @objc public var showExitConfirmationOnCheckoutScreen: Swift.Bool
   @objc public var showExitConfirmationOnPaymentScreen: Swift.Bool
   @objc public var merchantLanguage: PayUParamsKit.PayULanguageCode
+  @objc final public let showUserCancellationDialogue: Swift.Bool
   @objc public var primaryColor: UIKit.UIColor? {
     @objc get
   }
@@ -143,6 +144,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
 @_inheritsConvenienceInitializers @objc public class NextStep : ObjectiveC.NSObject {
   public var screenState: PayUCheckoutProBaseKit.ScreenState
   public var paymentOptions: [PayUParamsKit.PaymentOption]
+  public var associatedValue: Any?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -152,6 +154,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   public var apiFailed: Swift.Bool?
   public var successMsg: Swift.String?
   public var failureMsg: Swift.String?
+  public var paymentOptions: [PayUParamsKit.PaymentOption]?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayUCustomNote : ObjectiveC.NSObject {

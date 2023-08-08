@@ -15,6 +15,7 @@ import _StringProcessing
   case mobileCardTenure
   case mobileCardNumberTenure
   case mobileTenure
+  case mobilePanTenure
   case mobile
   case cardNumberTenure
   public init?(rawValue: Swift.Int)
@@ -141,6 +142,7 @@ import _StringProcessing
   public var isCollect: Swift.Bool?
   @objc public var vpa: Swift.String?
   @objc public var scheme: Swift.String?
+  @objc public var imageCode: Swift.String?
   @objc public var handlers: [Swift.String]?
   @objc public var apps: [Swift.String]?
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -161,6 +163,7 @@ import _StringProcessing
   @objc public var isCardlessEMI: Swift.Bool
   @objc public var isNoCostEMI: Swift.Bool
   @objc public var cardDetailsType: PayUParamsKit.PayUCardDetailsType
+  @objc public var pan: Swift.String?
   public init(month: Swift.Int? = nil, bankShortName: Swift.String, title: Swift.String, paymentOptionId: Swift.String, type: PayUParamsKit.EMIType)
   @objc public init(bankShortName: Swift.String, type: PayUParamsKit.EMIType)
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -202,6 +205,7 @@ import _StringProcessing
   public var isAtmPinCard: Swift.Bool?
   public var isSISupported: Swift.Bool?
   public var isZeroRedirectSupported: Swift.Bool?
+  @objc public var emis: [PayUParamsKit.EMI]?
   @objc deinit
 }
 @objc public enum CardType : Swift.Int {
@@ -547,7 +551,6 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc open class PayURequestHeaderParams : ObjectiveC.NSObject {
   @objc public var date: Swift.String?
-  @objc public var digest: Swift.String?
   @objc public var signingString: Swift.String?
   @objc public var error: Swift.String?
   @objc override dynamic public init()
@@ -841,8 +844,28 @@ extension Swift.Dictionary {
     @objc public static let TRID: Swift.String
     @objc public static let TOKEN_REF_NO: Swift.String
     @objc public static let SDK_RETRY: Swift.String
+    @objc public static let PAN: Swift.String
     @objc override dynamic public init()
     @objc deinit
+  }
+  public enum Regex {
+    public static let FOR_RUPAY: Swift.String
+    public static let FOR_LASER_1: Swift.String
+    public static let FOR_LASER_2: Swift.String
+    public static let FOR_MAESTRO_1: Swift.String
+    public static let FOR_MAESTRO_2: Swift.String
+    public static let FOR_MAESTRO_3: Swift.String
+    public static let FOR_MASTER_CARD_TYPE: Swift.String
+    public static let FOR_AMEX: Swift.String
+    public static let FOR_DINR_1: Swift.String
+    public static let FOR_DINR_2: Swift.String
+    public static let FOR_DINR_3: Swift.String
+    public static let FOR_JCB: Swift.String
+    public static let AMOUNT: Swift.String
+    public static let EMAIL: Swift.String
+    public static let PAN: Swift.String
+    public static let PHONE: Swift.String
+    public static let VPA: Swift.String
   }
   @objc override dynamic public init()
   @objc deinit
@@ -856,10 +879,12 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   case cardMobileTenureEligibility
   case cardnumMobileTenureEligibility
   case mobileTenureEligibility
+  case mobilePanTenureEligibility
   case cardnumTenureEligibility
   case bankRedirection
   case mobileRedirection
   case fullCardRedirection
+  case mobile
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
@@ -913,6 +938,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var noteCategory: Swift.String?
   @objc public var splitPaymentDetails: Swift.String?
   @objc public var isRetryPayment: Swift.Bool
+  @objc public var subventionAmount: Swift.String?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit

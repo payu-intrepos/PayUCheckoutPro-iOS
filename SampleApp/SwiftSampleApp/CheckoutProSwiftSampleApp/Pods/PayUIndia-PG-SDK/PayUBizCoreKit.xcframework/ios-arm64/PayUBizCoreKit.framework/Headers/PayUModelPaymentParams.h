@@ -120,6 +120,7 @@
 
 // Param for NetBanking, StoredCard, CashCard, EMI
 @property (strong, nonatomic) NSString * bankCode;
+@property (strong, nonatomic) NSString * pan;
 @property (assign, nonatomic) PayUCardDetailsType cardDetailsType;
 
 //This param is for GetTransactionInfo API
@@ -148,7 +149,6 @@
 @property (strong, nonatomic) NSString *paymentStatus;
 @property (strong, nonatomic) NSString *currency;
 @property (strong, nonatomic) NSString *date;
-@property (strong, nonatomic) NSString *digest;
 @property (strong, nonatomic) NSString *authorization;
 
 @property (strong, nonatomic) NSString * ownerName;
@@ -238,6 +238,9 @@
 @property (strong, nonatomic) NSString * payUId;
 @property (strong, nonatomic) NSString * phoneOtp;
 @property (strong, nonatomic) NSString * loginUuid;
+
+//GV
+@property (strong, nonatomic) NSString * gvUserToken;
 
 // Get Checkout API Filters
 @property (assign, nonatomic) PayUModelGetCheckoutAPIFilters * getCheckoutAPIFilters;

@@ -41,7 +41,7 @@ install_framework()
 
   if [ -L "${source}" ]; then
     echo "Symlinked..."
-    source="$(readlink "${source}")"
+    source="$(readlink -f "${source}")"
   fi
 
   if [ -d "${source}/${BCSYMBOLMAP_DIR}" ]; then
@@ -181,6 +181,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CommonUI/PayUCommonUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework"
@@ -197,6 +198,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CommonUI/PayUCommonUI.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework"

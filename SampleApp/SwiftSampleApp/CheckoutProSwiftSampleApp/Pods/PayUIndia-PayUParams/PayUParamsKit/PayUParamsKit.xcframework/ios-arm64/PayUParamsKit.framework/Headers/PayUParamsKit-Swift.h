@@ -359,6 +359,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3CLW")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class EMI;
 
 SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @interface CardBinInfo : NSObject
@@ -368,6 +369,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit11CardBinInfo")
 @property (nonatomic, copy) NSString * _Nullable cardTypeRawValue;
 @property (nonatomic, copy) NSString * _Nullable bankName;
 @property (nonatomic, copy) NSString * _Nullable bin;
+@property (nonatomic, copy) NSArray<EMI *> * _Nullable emis;
 @end
 
 typedef SWIFT_ENUM(NSInteger, CardScheme, open) {
@@ -647,6 +649,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)TOKEN_REF_NO SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull SDK_RETRY;)
 + (NSString * _Nonnull)SDK_RETRY SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull PAN;)
++ (NSString * _Nonnull)PAN SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -664,6 +668,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3EMI")
 @property (nonatomic) BOOL isCardlessEMI;
 @property (nonatomic) BOOL isNoCostEMI;
 @property (nonatomic) enum PayUCardDetailsType cardDetailsType;
+@property (nonatomic, copy) NSString * _Nullable pan;
 - (nonnull instancetype)initWithBankShortName:(NSString * _Nonnull)bankShortName type:(enum EMIType)type OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -937,8 +942,9 @@ typedef SWIFT_ENUM(NSInteger, PayUCardDetailsType, open) {
   PayUCardDetailsTypeMobileCardTenure = 3,
   PayUCardDetailsTypeMobileCardNumberTenure = 4,
   PayUCardDetailsTypeMobileTenure = 5,
-  PayUCardDetailsTypeMobile = 6,
-  PayUCardDetailsTypeCardNumberTenure = 7,
+  PayUCardDetailsTypeMobilePanTenure = 6,
+  PayUCardDetailsTypeMobile = 7,
+  PayUCardDetailsTypeCardNumberTenure = 8,
 };
 
 
@@ -1125,6 +1131,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit16PayUPaymentParam")
 @property (nonatomic, copy) NSString * _Nullable noteCategory;
 @property (nonatomic, copy) NSString * _Nullable splitPaymentDetails;
 @property (nonatomic) BOOL isRetryPayment;
+@property (nonatomic, copy) NSString * _Nullable subventionAmount;
 - (nonnull instancetype)initWithKey:(NSString * _Nonnull)key transactionId:(NSString * _Nonnull)transactionId amount:(NSString * _Nonnull)amount productInfo:(NSString * _Nonnull)productInfo firstName:(NSString * _Nonnull)firstName email:(NSString * _Nonnull)email phone:(NSString * _Nonnull)phone surl:(NSString * _Nonnull)surl furl:(NSString * _Nonnull)furl environment:(enum Environment)environment OBJC_DESIGNATED_INITIALIZER;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -1172,7 +1179,6 @@ SWIFT_CLASS("_TtC13PayUParamsKit18PayUQuickPayResult")
 SWIFT_CLASS("_TtC13PayUParamsKit23PayURequestHeaderParams")
 @interface PayURequestHeaderParams : NSObject
 @property (nonatomic, copy) NSString * _Nullable date;
-@property (nonatomic, copy) NSString * _Nullable digest;
 @property (nonatomic, copy) NSString * _Nullable signingString;
 @property (nonatomic, copy) NSString * _Nullable error;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -1502,6 +1508,7 @@ SWIFT_CLASS("_TtC13PayUParamsKit3UPI")
 @interface UPI : PaymentOption
 @property (nonatomic, copy) NSString * _Nullable vpa;
 @property (nonatomic, copy) NSString * _Nullable scheme;
+@property (nonatomic, copy) NSString * _Nullable imageCode;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable handlers;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable apps;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;

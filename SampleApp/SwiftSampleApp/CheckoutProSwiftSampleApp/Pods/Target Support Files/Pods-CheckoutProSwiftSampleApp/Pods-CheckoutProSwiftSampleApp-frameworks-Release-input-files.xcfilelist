@@ -4,6 +4,7 @@ ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framew
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework/PayUCardScannerKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework/PayUCheckoutProKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutProBase/PayUCheckoutProBaseKit.framework/PayUCheckoutProBaseKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CommonUI/PayUCommonUI.framework/PayUCommonUI
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CrashReporter/PayUCrashReporter.framework/PayUCrashReporter
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Custom-Browser/PayUCustomBrowser.framework/PayUCustomBrowser
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Logger/PayULoggerKit.framework/PayULoggerKit
