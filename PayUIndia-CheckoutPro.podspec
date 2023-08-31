@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-CheckoutPro"
-  s.version             = "7.1.0"
+  s.version             = "7.2.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -13,14 +13,14 @@ Pod::Spec.new do |s|
                           }
   
   s.ios.deployment_target = "11.0"
-  s.vendored_frameworks = 'PayUCheckoutProKit/PayUCheckoutProKit.xcframework'
+  s.vendored_frameworks = 'PayUCheckoutPro/PayUCheckoutProKit.xcframework'
 
-  s.dependency            'PayUIndia-CheckoutProBase', '~> 7.1'
+  s.dependency            'PayUIndia-CheckoutProBase', '~> 7.2'
   s.dependency            'PayUIndia-AssetLibrary', '~> 3.3'
-  s.dependency            'PayUIndia-PG-SDK', '~> 10.1'
+  s.dependency            'PayUIndia-PG-SDK', '~> 10.2'
   s.dependency            'PayUIndia-UPICore', '~> 8.1'
   s.dependency            'PayUIndia-Custom-Browser', '~> 10.1'
-  s.dependency            'PayUIndia-PayUParams', '~> 5.0'
+  s.dependency            'PayUIndia-PayUParams', '~> 5.1'
   s.dependency            'PayUIndia-CrashReporter', '~> 2.1'
   s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
   s.dependency            'PayUIndia-NativeOtpAssist', '~> 3.0'
