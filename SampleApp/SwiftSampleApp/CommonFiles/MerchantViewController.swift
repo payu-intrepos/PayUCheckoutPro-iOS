@@ -313,6 +313,7 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+        paymentParam.additionalParam[PaymentParamConstant.walletURN] = "100100"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
         paymentParam.userToken = userTokenTextField.text
 
