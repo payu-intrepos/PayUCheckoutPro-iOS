@@ -3,6 +3,7 @@
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import PayUCheckoutProBaseKit
+import PayUCommonUI
 import PayUParamsKit
 import Swift
 import UIKit
@@ -12,12 +13,15 @@ import _StringProcessing
   @objc public var merchantName: Swift.String?
   @objc public var merchantLogo: UIKit.UIImage?
   @objc public var merchantLogoURL: Swift.String?
+  @objc public var showMerchantLogo: Swift.Bool
   @objc public var paymentModesOrder: [PayUParamsKit.PaymentMode]?
   @objc public var cartDetails: [[Swift.String : Swift.String]]?
   @objc public var showExitConfirmationOnCheckoutScreen: Swift.Bool
   @objc public var showExitConfirmationOnPaymentScreen: Swift.Bool
   @objc public var merchantLanguage: PayUParamsKit.PayULanguageCode
   @objc final public let showUserCancellationDialogue: Swift.Bool
+  @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
+  @objc public var enableSavedCard: Swift.Bool
   @objc public var primaryColor: UIKit.UIColor? {
     @objc get
   }

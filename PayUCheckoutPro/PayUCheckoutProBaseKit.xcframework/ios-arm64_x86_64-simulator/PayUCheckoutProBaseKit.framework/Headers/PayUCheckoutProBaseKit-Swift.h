@@ -335,6 +335,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUFontFamily;
 @class UIColor;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
@@ -342,12 +343,15 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic, copy) NSString * _Nullable merchantName;
 @property (nonatomic, strong) UIImage * _Nullable merchantLogo;
 @property (nonatomic, copy) NSString * _Nullable merchantLogoURL;
+@property (nonatomic) BOOL showMerchantLogo;
 @property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
 @property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
 @property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
+@property (nonatomic) BOOL enableSavedCard;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
 - (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
@@ -753,6 +757,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit8NextStep")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class PayUFontFamily;
 @class UIColor;
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
@@ -760,12 +765,15 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic, copy) NSString * _Nullable merchantName;
 @property (nonatomic, strong) UIImage * _Nullable merchantLogo;
 @property (nonatomic, copy) NSString * _Nullable merchantLogoURL;
+@property (nonatomic) BOOL showMerchantLogo;
 @property (nonatomic, copy) NSArray<PaymentMode *> * _Nullable paymentModesOrder;
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nullable cartDetails;
 @property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
 @property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
+@property (nonatomic) BOOL enableSavedCard;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
 - (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;

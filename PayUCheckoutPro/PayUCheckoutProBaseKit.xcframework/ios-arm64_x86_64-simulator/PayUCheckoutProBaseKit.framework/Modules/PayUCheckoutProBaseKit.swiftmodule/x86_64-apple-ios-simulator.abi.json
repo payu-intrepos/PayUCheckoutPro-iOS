@@ -6,13 +6,20 @@
     "children": [
       {
         "kind": "Import",
-        "name": "PayUParamsKit",
-        "printedName": "PayUParamsKit",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProBaseKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProBaseKit"
       },
       {
         "kind": "Import",
@@ -371,6 +378,99 @@
                 "declKind": "Accessor",
                 "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC15merchantLogoURLSSSgvM",
                 "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC15merchantLogoURLSSSgvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "showMerchantLogo",
+            "printedName": "showMerchantLogo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)showMerchantLogo",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC16showMerchantLogoSbvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)showMerchantLogo",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC16showMerchantLogoSbvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)setShowMerchantLogo:",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC16showMerchantLogoSbvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC16showMerchantLogoSbvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC16showMerchantLogoSbvM",
                 "moduleName": "PayUCheckoutProBaseKit",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -1028,6 +1128,216 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fontfamily",
+            "printedName": "fontfamily",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUCommonUI.PayUFontFamily?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUFontFamily",
+                    "printedName": "PayUCommonUI.PayUFontFamily",
+                    "usr": "c:@M@PayUCommonUI@objc(cs)PayUFontFamily"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)fontfamily",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC10fontfamily0A9UCommonUI0A11UFontFamilyCSgvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUCommonUI.PayUFontFamily?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUFontFamily",
+                        "printedName": "PayUCommonUI.PayUFontFamily",
+                        "usr": "c:@M@PayUCommonUI@objc(cs)PayUFontFamily"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)fontfamily",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC10fontfamily0A9UCommonUI0A11UFontFamilyCSgvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUCommonUI.PayUFontFamily?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUFontFamily",
+                        "printedName": "PayUCommonUI.PayUFontFamily",
+                        "usr": "c:@M@PayUCommonUI@objc(cs)PayUFontFamily"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)setFontfamily:",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC10fontfamily0A9UCommonUI0A11UFontFamilyCSgvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC10fontfamily0A9UCommonUI0A11UFontFamilyCSgvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC10fontfamily0A9UCommonUI0A11UFontFamilyCSgvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableSavedCard",
+            "printedName": "enableSavedCard",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)enableSavedCard",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC15enableSavedCardSbvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)enableSavedCard",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC15enableSavedCardSbvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)setEnableSavedCard:",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC15enableSavedCardSbvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC15enableSavedCardSbvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC15enableSavedCardSbvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -7806,23 +8116,37 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 542,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 606,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
-      "kind": "BooleanLiteral",
-      "offset": 724,
+      "offset": 445,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 608,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 672,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 790,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 878,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",

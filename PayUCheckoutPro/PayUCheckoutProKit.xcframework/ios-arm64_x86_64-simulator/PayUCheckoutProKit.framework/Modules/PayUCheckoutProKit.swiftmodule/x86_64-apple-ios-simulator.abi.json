@@ -10234,13 +10234,20 @@
       },
       {
         "kind": "Import",
-        "name": "PayUCheckoutProBaseKit",
-        "printedName": "PayUCheckoutProBaseKit",
+        "name": "PayUBizCoreKit",
+        "printedName": "PayUBizCoreKit",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCheckoutProBaseKit",
+        "printedName": "PayUCheckoutProBaseKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProKit"
       },
       {
         "kind": "Import",
@@ -10405,6 +10412,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProKit"
       },
       {
         "kind": "Import",
@@ -11309,6 +11323,13 @@
         "kind": "Import",
         "name": "PayUCheckoutProBaseKit",
         "printedName": "PayUCheckoutProBaseKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProKit"
       },
@@ -18828,7 +18849,7 @@
       "kind": "IntegerLiteral",
       "offset": 1829,
       "length": 2,
-      "value": "20"
+      "value": "10"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/Constants.swift",
@@ -20667,14 +20688,14 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/ViewControllers\/PaymentOptionsViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 31261,
+      "offset": 31806,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/ViewControllers\/PaymentOptionsViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 31281,
+      "offset": 31826,
       "length": 1,
       "value": "0"
     },
@@ -20933,133 +20954,119 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1409,
-      "length": 21,
-      "value": "\"ViewDetailsExpanded\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1469,
-      "length": 22,
-      "value": "\"ViewDetailsCollapsed\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1522,
+      "offset": 1402,
       "length": 14,
       "value": "\"iconDropDown\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1567,
+      "offset": 1447,
       "length": 14,
       "value": "\"merchantLogo\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1602,
+      "offset": 1482,
       "length": 4,
       "value": "\"on\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1628,
+      "offset": 1508,
       "length": 5,
       "value": "\"off\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1658,
+      "offset": 1538,
       "length": 8,
       "value": "\"delete\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1693,
+      "offset": 1573,
       "length": 10,
       "value": "\"OfferTag\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1731,
+      "offset": 1611,
       "length": 11,
       "value": "\"noCostEMI\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1779,
+      "offset": 1659,
       "length": 20,
       "value": "\"checkCircleOutline\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1828,
+      "offset": 1708,
       "length": 12,
       "value": "\"MultiOffer\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1872,
+      "offset": 1752,
       "length": 15,
       "value": "\"currentlyDown\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1916,
+      "offset": 1796,
       "length": 12,
       "value": "\"lowBalance\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1953,
+      "offset": 1833,
       "length": 8,
       "value": "\"sodexo\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1988,
+      "offset": 1868,
       "length": 10,
       "value": "\"currency\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2029,
+      "offset": 1909,
       "length": 14,
       "value": "\"sodexoCardBG\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2068,
+      "offset": 1948,
       "length": 8,
       "value": "\"camera\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2105,
+      "offset": 1985,
       "length": 13,
       "value": "\"yellow-info\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Constants\/ImageConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2182,
+      "offset": 2062,
       "length": 2,
       "value": "\"\""
     },
@@ -21906,7 +21913,7 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Views\/CustomView\/ToolTip\/PayUPopTip.swift",
       "kind": "BooleanLiteral",
-      "offset": 35330,
+      "offset": 35354,
       "length": 5,
       "value": "false"
     },
@@ -21941,35 +21948,35 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/ManageSavedOptions\/ViewControllers\/SavedOptionViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 16686,
+      "offset": 16592,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Views\/CustomLabels\/OfferLabel.swift",
       "kind": "FloatLiteral",
-      "offset": 1151,
+      "offset": 1163,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Views\/CustomLabels\/OfferLabel.swift",
       "kind": "FloatLiteral",
-      "offset": 1201,
+      "offset": 1213,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Views\/CustomLabels\/OfferLabel.swift",
       "kind": "FloatLiteral",
-      "offset": 1249,
+      "offset": 1261,
       "length": 3,
       "value": "7.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Views\/CustomLabels\/OfferLabel.swift",
       "kind": "FloatLiteral",
-      "offset": 1298,
+      "offset": 1310,
       "length": 3,
       "value": "7.0"
     },
@@ -22179,14 +22186,14 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Extensions\/UI\/ViewExtentions\/UIViewExtention.swift",
       "kind": "FloatLiteral",
-      "offset": 10739,
+      "offset": 10102,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Extensions\/UI\/ViewExtentions\/UIViewExtention.swift",
       "kind": "FloatLiteral",
-      "offset": 11079,
+      "offset": 10442,
       "length": 4,
       "value": "0.25"
     },
@@ -23523,119 +23530,119 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 2104,
+      "offset": 3117,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 4979,
+      "offset": 6072,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 5390,
+      "offset": 6483,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 6585,
+      "offset": 7678,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 6628,
+      "offset": 7721,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 9417,
+      "offset": 10542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 9535,
+      "offset": 10660,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11829,
+      "offset": 13174,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11859,
+      "offset": 13204,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11891,
+      "offset": 13236,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11924,
+      "offset": 13269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 11962,
+      "offset": 13307,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13096,
+      "offset": 14441,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13140,
+      "offset": 14485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13178,
+      "offset": 14523,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13212,
+      "offset": 14557,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/PaymentsOptions\/Cells\/PaymentOptionTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 13246,
+      "offset": 14591,
       "length": 5,
       "value": "false"
     },
@@ -23726,28 +23733,28 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderContentVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 3100,
+      "offset": 3158,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderContentVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 6338,
+      "offset": 6392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderContentVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 7227,
+      "offset": 7281,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderContentVC.swift",
       "kind": "BooleanLiteral",
-      "offset": 8203,
+      "offset": 8257,
       "length": 4,
       "value": "true"
     },
@@ -23761,21 +23768,21 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Modules\/CC:DC\/ViewControllers\/AddCardViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 20217,
+      "offset": 20315,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 5968,
+      "offset": 5976,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 6440,
+      "offset": 6448,
       "length": 5,
       "value": "false"
     },
@@ -23789,7 +23796,14 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
       "kind": "BooleanLiteral",
-      "offset": 6534,
+      "offset": 6524,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/PayUCheckoutPro.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6576,
       "length": 5,
       "value": "false"
     },
@@ -23852,175 +23866,175 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2479,
+      "offset": 2704,
       "length": 2,
       "value": "32"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2523,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2581,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2637,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2709,
-      "length": 3,
-      "value": "120"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 2748,
       "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2806,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2862,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2934,
+      "length": 2,
+      "value": "70"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2972,
+      "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2811,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2849,
+      "offset": 3125,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2886,
-      "length": 2,
-      "value": "40"
+      "offset": 3162,
+      "length": 1,
+      "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 2921,
-      "length": 2,
-      "value": "10"
+      "offset": 3196,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3031,
+      "offset": 3418,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3115,
-      "length": 3,
-      "value": "108"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3167,
+      "offset": 3618,
       "length": 2,
-      "value": "44"
+      "value": "37"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3219,
+      "offset": 3670,
       "length": 2,
-      "value": "48"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 3269,
+      "offset": 3720,
       "length": 2,
-      "value": "23"
+      "value": "18"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 4497,
+      "offset": 4960,
       "length": 2,
-      "value": "78"
+      "value": "43"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5215,
+      "offset": 5312,
       "length": 2,
-      "value": "32"
+      "value": "20"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5257,
+      "offset": 5354,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "IntegerLiteral",
-      "offset": 5985,
+      "offset": 5939,
+      "length": 2,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5982,
+      "length": 2,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6050,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 6027,
+      "offset": 6092,
       "length": 4,
       "value": "12.2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 6078,
+      "offset": 6159,
       "length": 4,
-      "value": "12.0"
+      "value": "36.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "FloatLiteral",
-      "offset": 6126,
-      "length": 3,
-      "value": "0.0"
+      "offset": 6200,
+      "length": 4,
+      "value": "24.0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 6743,
+      "offset": 6818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7274,
+      "offset": 7349,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUUISDK\/OnePayUUISDK\/Base\/HeaderViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 7317,
+      "offset": 7392,
       "length": 5,
       "value": "false"
     },
@@ -24153,14 +24167,14 @@
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBizSDKWrapper\/OnePayUBizSDKWrapper\/BizWrapper.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1298,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBizSDKWrapper\/OnePayUBizSDKWrapper\/BizWrapper.swift",
       "kind": "BooleanLiteral",
-      "offset": 1328,
+      "offset": 1348,
       "length": 5,
       "value": "false"
     },
