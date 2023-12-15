@@ -347,6 +347,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
 @property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
+@property (nonatomic, readonly) BOOL showUserCancellationDialogue;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
 - (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;
@@ -763,6 +764,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic) BOOL showExitConfirmationOnCheckoutScreen;
 @property (nonatomic) BOOL showExitConfirmationOnPaymentScreen;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
+@property (nonatomic, readonly) BOOL showUserCancellationDialogue;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
 - (void)customiseUIWithPrimaryColor:(UIColor * _Nonnull)primaryColor secondaryColor:(UIColor * _Nonnull)secondaryColor;

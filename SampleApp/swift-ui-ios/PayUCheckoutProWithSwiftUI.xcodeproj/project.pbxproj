@@ -13,6 +13,7 @@
 		A74853B829A3330700249D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74853B729A3330700249D2D /* Assets.xcassets */; };
 		A74853BB29A3330700249D2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74853BA29A3330700249D2D /* Preview Assets.xcassets */; };
 		A74853C229A3429B00249D2D /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74853C129A3429B00249D2D /* Utils.swift */; };
+		E80460DF2B2C444300B29205 /* ProductCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E80460DE2B2C444300B29205 /* ProductCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A74853BA29A3330700249D2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A74853C129A3429B00249D2D /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B7AB9DC7C99ABC48EEE594CA /* Pods-PayUCheckoutProWithSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayUCheckoutProWithSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-PayUCheckoutProWithSwiftUI/Pods-PayUCheckoutProWithSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
+		E80460DE2B2C444300B29205 /* ProductCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				A74853B329A3330500249D2D /* PayUCheckoutProWithSwiftUIApp.swift */,
 				A74853C129A3429B00249D2D /* Utils.swift */,
+				E80460DE2B2C444300B29205 /* ProductCardView.swift */,
 				A74853B529A3330500249D2D /* ContentView.swift */,
 				A74853B729A3330700249D2D /* Assets.xcassets */,
 				A74853B929A3330700249D2D /* Preview Content */,
@@ -210,6 +213,7 @@
 			files = (
 				A74853B629A3330500249D2D /* ContentView.swift in Sources */,
 				A74853B429A3330500249D2D /* PayUCheckoutProWithSwiftUIApp.swift in Sources */,
+				E80460DF2B2C444300B29205 /* ProductCardView.swift in Sources */,
 				A74853C229A3429B00249D2D /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,7 +353,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +386,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

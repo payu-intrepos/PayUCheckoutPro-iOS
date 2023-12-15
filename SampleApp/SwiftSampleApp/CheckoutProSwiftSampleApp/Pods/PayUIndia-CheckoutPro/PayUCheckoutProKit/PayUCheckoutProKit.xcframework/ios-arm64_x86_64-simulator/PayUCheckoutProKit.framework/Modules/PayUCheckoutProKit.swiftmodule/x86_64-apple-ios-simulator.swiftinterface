@@ -3,12 +3,12 @@
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
-import PayUAnalytics
 import PayUAssetLibraryKit
 import PayUBizCoreKit
 import PayUCardScannerKit
 import PayUCheckoutProBaseKit
 @_exported import PayUCheckoutProKit
+import PayUCommonUI
 import PayUCrashReporter
 import PayUCustomBrowser
 import PayULoggerKit
@@ -206,7 +206,6 @@ public enum PopTipActionAnimation {
   @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc public static func sdkCrash()
   @objc override dynamic public init()
   @objc deinit
 }

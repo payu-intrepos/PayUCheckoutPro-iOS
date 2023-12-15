@@ -982,6 +982,57 @@
           },
           {
             "kind": "Var",
+            "name": "showUserCancellationDialogue",
+            "printedName": "showUserCancellationDialogue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)showUserCancellationDialogue",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC28showUserCancellationDialogueSbvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)showUserCancellationDialogue",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC28showUserCancellationDialogueSbvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "primaryColor",
             "printedName": "primaryColor",
             "children": [
@@ -6469,6 +6520,113 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "associatedValue",
+            "printedName": "associatedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvp",
+            "mangledName": "$s22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvg",
+                "mangledName": "$s22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Any?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvs",
+                "mangledName": "$s22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit8NextStepC15associatedValueypSgvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -6562,13 +6720,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "PayUParamsKit",
+        "printedName": "PayUParamsKit",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProBaseKit",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProBaseKit"
       },
       {
         "kind": "TypeDecl",
@@ -7040,6 +7205,140 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "paymentOptions",
+            "printedName": "paymentOptions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PaymentOption]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PaymentOption]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentOption",
+                        "printedName": "PayUParamsKit.PaymentOption",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvp",
+            "mangledName": "$s22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PaymentOption]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PaymentOption]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentOption",
+                            "printedName": "PayUParamsKit.PaymentOption",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvg",
+                "mangledName": "$s22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[PayUParamsKit.PaymentOption]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[PayUParamsKit.PaymentOption]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PaymentOption",
+                            "printedName": "PayUParamsKit.PaymentOption",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvs",
+                "mangledName": "$s22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit24CheckEligibilityResponseC14paymentOptionsSay0a7UParamsE013PaymentOptionCGSgvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -7476,6 +7775,13 @@
       "offset": 606,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 724,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",

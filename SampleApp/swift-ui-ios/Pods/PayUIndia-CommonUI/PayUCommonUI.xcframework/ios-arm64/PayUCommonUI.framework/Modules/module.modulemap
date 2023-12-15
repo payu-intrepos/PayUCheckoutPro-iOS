@@ -1,0 +1,11 @@
+framework module PayUCommonUI {
+  umbrella header "PayUCommonUI.h"
+
+  export *
+  module * { export * }
+}
+
+module PayUCommonUI.Swift {
+  header "PayUCommonUI-Swift.h"
+  requires objc
+}

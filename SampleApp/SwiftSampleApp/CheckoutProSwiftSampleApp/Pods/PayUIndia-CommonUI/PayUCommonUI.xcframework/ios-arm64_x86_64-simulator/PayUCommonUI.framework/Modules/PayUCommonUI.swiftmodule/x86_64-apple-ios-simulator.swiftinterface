@@ -1,0 +1,233 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCommonUI
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Foundation
+import PayUAnalytics
+@_exported import PayUCommonUI
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PayULoaderView : PayUCommonUI.PayUBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public func updateDescriptionMessage(_ message: Swift.String)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIColor {
+  public class var onePayUUIShadowColor: UIKit.UIColor {
+    get
+  }
+  public class var onePayUUISecondaryText: UIKit.UIColor {
+    get
+  }
+  public class var onePayUUIGrey: UIKit.UIColor {
+    get
+  }
+  public class var onePayUUIDefaultColor: UIKit.UIColor {
+    get
+  }
+}
+@objc public class PayUAnalyticsManager : ObjectiveC.NSObject {
+  @objc required public init(analyticsAdditionalInfo: PayUCommonUI.PayUAnalyticsAdditionalInfo)
+  public func logEvent<T>(withEventName eventName: Swift.String, eventData: T, startDate: Foundation.Date?) where T : Swift.Encodable
+  @objc public func logEvent(withEventName eventName: Swift.String, eventData: [Swift.String : Any], startDate: Foundation.Date?)
+  @objc public func log(json: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @IBDesignable @_Concurrency.MainActor(unsafe) public class PayULogoView : UIKit.UIView, QuartzCore.CAAnimationDelegate {
+  @objc deinit
+}
+extension PayUCommonUI.PayULogoView {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func animationDidStop(_ anim: QuartzCore.CAAnimation, finished flag: Swift.Bool)
+}
+@_hasMissingDesignatedInitializers public class PayUAnalyticsUtils {
+  public static func getJSON<T>(from object: T) -> [Swift.String : Any]? where T : Swift.Encodable
+  public static func getFilteredJSON(from json: [Swift.String : Any]) -> [Swift.String : Any]
+  public static func getTimeDiffInSeconds(from startDate: Foundation.Date?) -> Swift.Double
+  public static func getEventInfoJSON(withEventName event: Swift.String, eventData: [Swift.String : Any], startDate: Foundation.Date?, analyticsAdditionalInfo: PayUCommonUI.PayUAnalyticsAdditionalInfo?) -> [Swift.String : Any]
+  @objc deinit
+}
+@objc public class PayUFontFamily : ObjectiveC.NSObject {
+  @objc public var regular: Swift.String
+  @objc public var medium: Swift.String
+  @objc public var semibold: Swift.String
+  @objc public var bold: Swift.String
+  @objc public init(regular: Swift.String, medium: Swift.String, semibold: Swift.String, bold: Swift.String)
+  @objc public static func set(fontFamily: PayUCommonUI.PayUFontFamily)
+  @objc public static func reset()
+  @objc deinit
+}
+public enum PayUAnalyticsKey : Swift.String, Swift.Codable {
+  case merchantName
+  case merchantIdentifier
+  case time
+  case timeMS
+  case device
+  case deviceId
+  case amount
+  case transactionIdentifier
+  case enforced
+  case offerTagShown
+  case offerApplied
+  case vpaVerified
+  case ctaType
+  case ctaPage
+  case ctaName
+  case type
+  case identity
+  case ts
+  case eventName
+  case eventData
+  case sectionName
+  case deviceName
+  case deviceVersion
+  case sdkVersion
+  case isOn
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayUAnalyticsSectionName : Swift.String, Swift.Codable {
+  case quickOptions
+  case moreOptions
+  case leftSidebar
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayUAnalyticsValue : Swift.String, Swift.Codable {
+  case event
+  case iOS
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayUAnalyticsCTAType : Swift.String, Swift.Codable {
+  case action
+  case view
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayUAnalyticsBoolValue : Swift.String, Swift.Codable {
+  case yes
+  case no
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum PayUAnalyticsStatusValue : Swift.String, Swift.Codable {
+  case completed
+  case failed
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class PayUAnalyticsAdditionalInfo : ObjectiveC.NSObject {
+  @objc public var transactionId: Swift.String?
+  @objc public var transactionAmount: Swift.String?
+  @objc public var merchantKey: Swift.String?
+  @objc public var merchantName: Swift.String?
+  @objc public var enforcedValue: Swift.String?
+  @objc public var sdkVersion: Swift.String?
+  @objc public var ctaName: Swift.String?
+  @objc public var url: Swift.String?
+  @objc public var urlLoadingState: Swift.String?
+  @objc public var initiatorIdentifier: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc @_Concurrency.MainActor(unsafe) public class PayUCustomOverlay : PayUCommonUI.PayUBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public var animationDuration: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var superViewFrame: CoreFoundation.CGRect?
+  @objc @_Concurrency.MainActor(unsafe) public func showOverlay(onView: UIKit.UIView, subView: UIKit.UIView, disableOnSwipe: Swift.Bool = false, disableOnTap: Swift.Bool = false)
+  @objc @_Concurrency.MainActor(unsafe) public func hideOverlayView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class PayUBaseView : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) public var onViewDismissed: (() -> Swift.Void)?
+  @objc @_Concurrency.MainActor(unsafe) public var onHeightChanged: ((CoreFoundation.CGFloat) -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @objc deinit
+}
+extension UIKit.UIFont {
+  public var payuSDKFont: UIKit.UIFont {
+    get
+  }
+}
+extension UIKit.UIButton {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func payuCustomizeFont()
+}
+extension UIKit.UILabel {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func payuCustomizeFont()
+}
+extension UIKit.UITextField {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func payuCustomizeFont()
+}
+extension UIKit.UITextView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func payuCustomizeFont()
+}
+@_inheritsConvenienceInitializers @objc public class PayUUIConfigurations : ObjectiveC.NSObject {
+  @objc public var primaryColor: UIKit.UIColor
+  @objc public var secondaryColor: UIKit.UIColor
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc extension UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func addPayULogo()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func removePayULogo()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(message: Swift.String = "", backgroundColor: UIKit.UIColor = .white, alpha: CoreFoundation.CGFloat = 1.0)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func showPayULoader(with message: Swift.String = "", and backgroundColor: UIKit.UIColor = .white)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func hidePayULoader()
+}
+@_hasMissingDesignatedInitializers @objc @_Concurrency.MainActor(unsafe) public class PayUUserCancellationView : PayUCommonUI.PayUBaseView {
+  @objc @_Concurrency.MainActor(unsafe) public init(frame: CoreFoundation.CGRect, viewModel: PayUCommonUI.PayUUserCancellationViewModel, uiConfigurations: PayUCommonUI.PayUUIConfigurations)
+  @objc deinit
+}
+extension PayUCommonUI.PayUUserCancellationView : UIKit.UITableViewDataSource, UIKit.UITableViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, numberOfRowsInSection section: Swift.Int) -> Swift.Int
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, cellForRowAt indexPath: Foundation.IndexPath) -> UIKit.UITableViewCell
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForHeaderInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, viewForFooterInSection section: Swift.Int) -> UIKit.UIView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func tableView(_ tableView: UIKit.UITableView, didSelectRowAt indexPath: Foundation.IndexPath)
+}
+@objc public class PayUUserCancellationViewModel : ObjectiveC.NSObject {
+  @objc public init(reasonList: [Swift.String]? = nil, headerText: Swift.String? = nil, analyticsAdditionalInfo: PayUCommonUI.PayUAnalyticsAdditionalInfo)
+  @objc deinit
+}
+extension PayUCommonUI.PayUAnalyticsKey : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsKey : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsKey : Swift.RawRepresentable {}
+extension PayUCommonUI.PayUAnalyticsSectionName : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsSectionName : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsSectionName : Swift.RawRepresentable {}
+extension PayUCommonUI.PayUAnalyticsValue : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsValue : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsValue : Swift.RawRepresentable {}
+extension PayUCommonUI.PayUAnalyticsCTAType : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsCTAType : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsCTAType : Swift.RawRepresentable {}
+extension PayUCommonUI.PayUAnalyticsBoolValue : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsBoolValue : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsBoolValue : Swift.RawRepresentable {}
+extension PayUCommonUI.PayUAnalyticsStatusValue : Swift.Equatable {}
+extension PayUCommonUI.PayUAnalyticsStatusValue : Swift.Hashable {}
+extension PayUCommonUI.PayUAnalyticsStatusValue : Swift.RawRepresentable {}

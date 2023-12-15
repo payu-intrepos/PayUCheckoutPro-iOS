@@ -14,7 +14,7 @@
 		</data>
 		<key>Headers/PayUConstants.h</key>
 		<data>
-		l4Uo24iKHQpqb3+GQ/u6Uj0us7Y=
+		AXdW3NKaXsJemLm4kVfrXuKV0qI=
 		</data>
 		<key>Headers/PayUCreatePostParam.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Headers/PayUModelPaymentParams.h</key>
 		<data>
-		wc+k+eT2nNzvluO8myJgT+Tnov0=
+		oIwFo4RcuIla4GO0pLQYS/c2/zY=
 		</data>
 		<key>Headers/PayUModelPaymentRelatedDetail.h</key>
 		<data>
@@ -134,7 +134,7 @@
 		</data>
 		<key>Headers/PayUModelSupportedApps.h</key>
 		<data>
-		vIq6Otqg3VhLLe6biRq6KcgA1II=
+		u5wiv0NCzmp6Yk4FyHLQqqpM+Eg=
 		</data>
 		<key>Headers/PayUModelTaxSpecification.h</key>
 		<data>
@@ -174,11 +174,11 @@
 		</data>
 		<key>Headers/PayUUtils.h</key>
 		<data>
-		4HrWWkcDqmFcDUYt57D7SZo74QY=
+		WPLnJvwug2nngwlZE7uQmmYFA7I=
 		</data>
 		<key>Headers/PayUValidations.h</key>
 		<data>
-		PoR/EoMaTgZxe3bSE9n2Y2m+3FM=
+		RqBGoxnELFqmWdH8iG+zhoV3A1c=
 		</data>
 		<key>Headers/PayUWSManager.h</key>
 		<data>
@@ -190,7 +190,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Jqh4pgMq8/B4C0/Lu3HGiaSXYNY=
+		vBPtcVg9pfyDWl3uXSGaGT9moC0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -221,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GUgUpBKdkeIBZijYUrCsdwKYrqXR3zDvryZa+jCkajA=
+			H7wGd0PnPd/s6NshMUBLzC4QqD4wFvUSwG/egManfm0=
 			</data>
 		</dict>
 		<key>Headers/PayUCreatePostParam.h</key>
@@ -396,7 +396,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zrm8m/7cc8bs18vexL4N1qhg4ZTSRY1mWwDXXYoyuEA=
+			ec/x5ToTjEiiS1+hYXCHkR3zrFmXFe/m+kqt/suNEYg=
 			</data>
 		</dict>
 		<key>Headers/PayUModelPaymentRelatedDetail.h</key>
@@ -431,7 +431,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0dFLfRttS8FMWVOllnwy+W96yTwrJATg5Vg1A9qeBSE=
+			Ge9mPXTc+93cgzJs3bxz8qcQc1DkVQa/MVZBsHPOlM8=
 			</data>
 		</dict>
 		<key>Headers/PayUModelTaxSpecification.h</key>
@@ -501,14 +501,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oyvoJ8sX7lbD32AORDhq8R5XZDhLUvv+oDebelj3Lw4=
+			cl9mj9kH1+DxFabl5O6eoeUkXGAJoW7BjmX8rQNDM1U=
 			</data>
 		</dict>
 		<key>Headers/PayUValidations.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mEQOZ0IqWcT15z8wbSaHvkCwFLngRzrMm4nSJFEhcKU=
+			WEeBDaVVfKUIHV0DZI9djl+BBDIKjpdhTpmDz7SLens=
 			</data>
 		</dict>
 		<key>Headers/PayUWSManager.h</key>

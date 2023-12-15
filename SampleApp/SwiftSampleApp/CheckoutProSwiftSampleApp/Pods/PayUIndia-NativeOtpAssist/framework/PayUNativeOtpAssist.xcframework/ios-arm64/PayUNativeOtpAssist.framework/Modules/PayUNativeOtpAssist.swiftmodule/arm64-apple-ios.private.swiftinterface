@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreTelephony
 import Foundation
 import PayUAnalytics
+import PayUCommonUI
 import PayUCrashReporter
 @_exported import PayUNativeOtpAssist
 import PayUNetworkReachability
@@ -45,10 +46,12 @@ extension PayUParamsKit.PayUError {
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssistConfig : ObjectiveC.NSObject {
   @objc public var themeColor: UIKit.UIColor
+  @objc public var secondaryColor: UIKit.UIColor
   @objc public var merchantLogo: UIKit.UIImage?
   @objc public var shouldShowMerchantSummary: Swift.Bool
   @objc public var merchantResponseTimeout: Swift.Int64
   @objc public var merchantLanguage: PayUParamsKit.PayULanguageCode
+  @objc final public let showUserCancellationDialogue: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }

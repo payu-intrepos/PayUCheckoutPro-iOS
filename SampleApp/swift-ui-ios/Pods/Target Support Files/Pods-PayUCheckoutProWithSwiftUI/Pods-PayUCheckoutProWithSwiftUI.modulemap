@@ -1,0 +1,6 @@
+framework module Pods_PayUCheckoutProWithSwiftUI {
+  umbrella header "Pods-PayUCheckoutProWithSwiftUI-umbrella.h"
+
+  export *
+  module * { export * }
+}

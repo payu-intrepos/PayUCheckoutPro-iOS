@@ -90,8 +90,8 @@ class MerchantViewController: UIViewController {
     var amount: String = "1"
 
     var productInfo: String = "Nokia"
-    var surl: String = "https://payu.herokuapp.com/ios_success"
-    var furl: String = "https://payu.herokuapp.com/ios_failure"
+    var surl: String = "https://cbjs.payu.in/sdk/success"
+    var furl: String = "https://cbjs.payu.in/sdk/failure"
     var firstName: String = "Umang"
     var email: String = "umang@arya.com"
     var phoneNumber: String = "9876543210"
@@ -313,6 +313,7 @@ extension MerchantViewController {
         paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
         paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
         paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+        paymentParam.additionalParam[PaymentParamConstant.walletURN] = "100100"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
         paymentParam.userToken = userTokenTextField.text
 
@@ -327,7 +328,6 @@ extension MerchantViewController {
     }
 
     @IBAction open func sdkCrash() {
-        PayUCheckoutPro.sdkCrash()
     }
 
     @IBAction open func enableEnforcementSwitch(_ sender: UISwitch) {
@@ -518,14 +518,11 @@ extension MerchantViewController: PayUCheckoutProDelegate {
 
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
-        if let hashType = param[HashConstant.hashType], hashType == "V2" {
-
-            hashValue = "<hmacSHA256 hash for hashStringWithoutSalt with salt>"
-        } else if commandName == HashConstant.mcpLookup {
+        if commandName == HashConstant.mcpLookup {
             hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else if let postSalt = postSalt {
             let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
-            hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
+            hashValue = "<hmacsha512 hash for hashStringWithoutSalt and secret>"
         } else {
             hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
         }

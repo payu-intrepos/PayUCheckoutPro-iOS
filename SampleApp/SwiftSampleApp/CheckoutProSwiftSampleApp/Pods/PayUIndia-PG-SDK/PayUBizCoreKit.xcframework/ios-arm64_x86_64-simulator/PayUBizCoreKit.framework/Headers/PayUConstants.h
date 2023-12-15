@@ -332,7 +332,7 @@
 #define     PARAM_MERCHANT                                      @"merchant_param"
 
 //Global vault
-#define     PARAM_CLIENT_SIMPL                                  @"simpl"
+#define     PARAM_CLIENT_PAYU                                   @"payu"
 #define     PARAM_CLIENT_TYPE                                   @"clientType"
 #define     PARAM_UUID                                          @"uuid"
 #define     PARAM_RESPONSE_CODE                                 @"responseCode"
@@ -853,6 +853,7 @@ typedef NS_ENUM(NSUInteger, PayUAPIVersion) {
 // Date Format Constant
 #define     DATE_FORMAT                                         @"yyyy-MM-dd"
 #define     FULL_DATE_FORMAT                                    @"EEE, dd MMM yyyy HH:mm:ss"
+#define     DATE_TIME_FORMAT                                    @"yyyy-MM-dd HH:mm:ss"
 
 // Offer Details Constants
 #define     PARAM_USER_TOKEN                                    @"userToken"

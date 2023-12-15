@@ -1,0 +1,1184 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUAssetLibrary",
+        "printedName": "PayUAssetLibrary",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "memoryCapacityInMB",
+            "printedName": "memoryCapacityInMB",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cpy)memoryCapacityInMB",
+            "mangledName": "$s19PayUAssetLibraryKit0abC0C18memoryCapacityInMBSivpZ",
+            "moduleName": "PayUAssetLibraryKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)memoryCapacityInMB",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C18memoryCapacityInMBSivgZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)setMemoryCapacityInMB:",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C18memoryCapacityInMBSivsZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0abC0C18memoryCapacityInMBSivMZ",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C18memoryCapacityInMBSivMZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "diskCapacityInMB",
+            "printedName": "diskCapacityInMB",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cpy)diskCapacityInMB",
+            "mangledName": "$s19PayUAssetLibraryKit0abC0C16diskCapacityInMBSivpZ",
+            "moduleName": "PayUAssetLibraryKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)diskCapacityInMB",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C16diskCapacityInMBSivgZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)setDiskCapacityInMB:",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C16diskCapacityInMBSivsZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0abC0C16diskCapacityInMBSivMZ",
+                "mangledName": "$s19PayUAssetLibraryKit0abC0C16diskCapacityInMBSivMZ",
+                "moduleName": "PayUAssetLibraryKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(of:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIImage?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)imageOf:onCompletion:",
+            "mangledName": "$s19PayUAssetLibraryKit0abC0C5image2of12onCompletionySS_ySo7UIImageCSgctFZ",
+            "moduleName": "PayUAssetLibraryKit",
+            "static": true,
+            "objc_name": "imageOf:onCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "image",
+            "printedName": "image(from:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PayUAssetInfo",
+                "printedName": "PayUAssetLibraryKit.PayUAssetInfo",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(UIKit.UIImage?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(cm)imageFrom:onCompletion:",
+            "mangledName": "$s19PayUAssetLibraryKit0abC0C5image4from12onCompletionyAA0aB4InfoC_ySo7UIImageCSgctFZ",
+            "moduleName": "PayUAssetLibraryKit",
+            "static": true,
+            "objc_name": "imageFrom:onCompletion:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUAssetLibrary",
+                "printedName": "PayUAssetLibraryKit.PayUAssetLibrary",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary(im)init",
+            "mangledName": "$s19PayUAssetLibraryKit0abC0CACycfc",
+            "moduleName": "PayUAssetLibraryKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetLibrary",
+        "mangledName": "$s19PayUAssetLibraryKit0abC0C",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUAssetInfo",
+        "printedName": "PayUAssetInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "url",
+            "printedName": "url",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(py)url",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC3url10Foundation3URLVvp",
+            "moduleName": "PayUAssetLibraryKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)url",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC3url10Foundation3URLVvg",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "URL",
+                    "printedName": "Foundation.URL",
+                    "usr": "s:10Foundation3URLV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)setUrl:",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC3url10Foundation3URLVvs",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0aB4InfoC3url10Foundation3URLVvM",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC3url10Foundation3URLVvM",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedOn",
+            "printedName": "updatedOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(py)updatedOn",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC9updatedOnSdvp",
+            "moduleName": "PayUAssetLibraryKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)updatedOn",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC9updatedOnSdvg",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)setUpdatedOn:",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC9updatedOnSdvs",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0aB4InfoC9updatedOnSdvM",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC9updatedOnSdvM",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "objectHashValue",
+            "printedName": "objectHashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(py)objectHashValue",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC15objectHashValueSivp",
+            "moduleName": "PayUAssetLibraryKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)objectHashValue",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC15objectHashValueSivg",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)setObjectHashValue:",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC15objectHashValueSivs",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0aB4InfoC15objectHashValueSivM",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC15objectHashValueSivM",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pdfImageSize",
+            "printedName": "pdfImageSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(py)pdfImageSize",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC12pdfImageSizeSo6CGSizeVvp",
+            "moduleName": "PayUAssetLibraryKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)pdfImageSize",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC12pdfImageSizeSo6CGSizeVvg",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)setPdfImageSize:",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC12pdfImageSizeSo6CGSizeVvs",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUAssetLibraryKit0aB4InfoC12pdfImageSizeSo6CGSizeVvM",
+                "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC12pdfImageSizeSo6CGSizeVvM",
+                "moduleName": "PayUAssetLibraryKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(url:updatedOn:objectHashValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUAssetInfo",
+                "printedName": "PayUAssetLibraryKit.PayUAssetInfo",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)initWithUrl:updatedOn:objectHashValue:",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC3url9updatedOn15objectHashValueAC10Foundation3URLV_SdSitcfc",
+            "moduleName": "PayUAssetLibraryKit",
+            "objc_name": "initWithUrl:updatedOn:objectHashValue:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUAssetInfo",
+                "printedName": "PayUAssetLibraryKit.PayUAssetInfo",
+                "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo(im)init",
+            "mangledName": "$s19PayUAssetLibraryKit0aB4InfoCACycfc",
+            "moduleName": "PayUAssetLibraryKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUAssetLibraryKit@objc(cs)PayUAssetInfo",
+        "mangledName": "$s19PayUAssetLibraryKit0aB4InfoC",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUAssetLibraryKit"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
+      "kind": "IntegerLiteral",
+      "offset": 439,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
+      "kind": "IntegerLiteral",
+      "offset": 551,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 772,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 785,
+      "length": 3,
+      "value": "512"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 216,
+      "length": 13,
+      "value": "\"PayUAssetLibraryKit.PayUAssetInfo\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "Dictionary",
+      "offset": 208,
+      "length": 2421,
+      "value": "[(\"SBHB\", \"SBIB\"), (\"SBPB\", \"SBIB\"), (\"SBTB\", \"SBIB\"), (\"SBI\", \"SBIB\"), (\"SBDB\", \"SBIB\"), (\"SBBJB\", \"SBIB\"), (\"SBINBTPV\", \"SBIB\"), (\"SBMB\", \"SBIB\"), (\"SBNCORP\", \"SBIB\"), (\"BBCB\", \"BBRB\"), (\"CPNB\", \"PNBB\"), (\"AXISCNB\", \"AXIB\"), (\"AXNBTPV\", \"AXIB\"), (\"CITIRDR\", \"CITNB\"), (\"CORP\", \"CRPB\"), (\"CRBP\", \"CRPB\"), (\"CSBNBTPV\", \"CSBN\"), (\"DBSB\", \"DBS\"), (\"DCBCORP\", \"DCBB\"), (\"DLSBCORP\", \"DLSB\"), (\"DLSNBTPV\", \"DLSB\"), (\"HDFCCONB\", \"HDFB\"), (\"HDFCD\", \"HDFB\"), (\"HDFNBTPV\", \"HDFB\"), (\"ICICB\", \"ICIB\"), (\"ICICICNB\", \"ICIB\"), (\"ICINBTPV\", \"ICIB\"), (\"IDBC\", \"IDBB\"), (\"IDFNBTPV\", \"IDFCNB\"), (\"IOB\", \"INOB\"), (\"IOBNBTPV\", \"INOB\"), (\"KRVBC\", \"KRVB\"), (\"KVBNBTPV\", \"KRVB\"), (\"LVBNBTPV\", \"LVBD\"), (\"LVCB\", \"LVBD\"), (\"LVRB\", \"LVBD\"), (\"OBCNBTPV\", \"OBCB\"), (\"PNBNBTPV\", \"PNBB\"), (\"RTN\", \"RBL\"), (\"SCBNB\", \"SDCB\"), (\"SVCNB\", \"SVCB\"), (\"SYNDB\", \"SYDB\"), (\"UBIBC\", \"UBIB\"), (\"YESNBTPV\", \"YESB\"), (\"CABB\", \"CANB\"), (\"AMON\", \"AIRNB\"), (\"CPMC\", \"CITNB\"), (\"PPINAPP\", \"PHONEPE\"), (\"PPINTENT\", \"PHONEPE\"), (\"PPSDKLES\", \"PHONEPE\"), (\"TEZ\", \"GPAY\"), (\"AXISNBC\", \"AXIB\"), (\"KTKBCORP\", \"162B\"), (\"UCONB\", \"UCOB\"), (\"AXIS\", \"AXIB\"), (\"BOB\", \"BBRB\"), (\"CITI\", \"CITNB\"), (\"HDFC\", \"HDFB\"), (\"ICICI\", \"ICIB\"), (\"INDUS\", \"INIB\"), (\"KOTAK\", \"162B\"), (\"SCB\", \"SDCB\"), (\"YES\", \"YESB\"), (\"IDFBENCC\", \"IDFCNB\"), (\"TMBLENCC\", \"TMBB\"), (\"IBKLENCC\", \"IDBB\"), (\"SCBLENCC\", \"SDCB\"), (\"YESBENCC\", \"YESB\"), (\"IOBAENCC\", \"INOB\"), (\"MAHBENCC\", \"BOMB\"), (\"RATNENCC\", \"RBL\"), (\"ICICENCC\", \"ICIB\"), (\"ORBCENCC\", \"OBCB\"), (\"UTBIENCC\", \"UNIB\"), (\"HDFCENCC\", \"HDFB\"), (\"KKBKENCC\", \"162B\"), (\"CITIENCC\", \"CITNB\"), (\"FDRLENCC\", \"FEDB\"), (\"CBINENCC\", \"CBIB\"), (\"UTIBENCC\", \"AXIB\"), (\"PUNBENCC\", \"PNBB\"), (\"DEUTENCC\", \"DSHB\"), (\"ANDBENCC\", \"ADBB\"), (\"SIBLENCC\", \"SOIB\"), (\"CNRBENCC\", \"CANB\"), (\"BARBENCC\", \"BBRB\"), (\"KARBENCC\", \"KRKB\"), (\"INDBENCC\", \"INIB\"), (\"SBINENCC\", \"SBIB\"), (\"CIUBENCC\", \"CUBB\"), (\"MAST\", \"MASTERCARD\"), (\"MAES\", \"MESTRO\"), (\"SMAE\", \"MESTRO\"), (\"DINR\", \"DINERSCLUB\"), (\"ICICID\", \"ICIB\"), (\"AXISD\", \"AXIB\"), (\"ONE CARD\", \"ONEC\"), (\"AU BANK\", \"AUBLENCC\"), (\"AUSF\", \"AUBLENCC\"), (\"SBID\", \"SBIB\"), (\"BOBD\", \"BBRB\"), (\"KOTAKD\", \"162B\"), (\"FEDED\", \"FEDB\")]"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2680,
+      "length": 9,
+      "value": "\"default\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2746,
+      "length": 11,
+      "value": "\"updatedOn\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2798,
+      "length": 29,
+      "value": "\"payu_savedRequestReferences\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 2867,
+      "length": 26,
+      "value": "\"payu_image_fetcher_queue\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2930,
+      "length": 7,
+      "value": "1048576"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/CacheManager\/PayUCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6192,
+      "length": 1,
+      "value": "0"
+    }
+  ]
+}

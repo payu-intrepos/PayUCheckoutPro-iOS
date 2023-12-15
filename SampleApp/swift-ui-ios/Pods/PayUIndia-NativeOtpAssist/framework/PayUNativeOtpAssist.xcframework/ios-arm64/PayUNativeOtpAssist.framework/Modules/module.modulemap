@@ -1,0 +1,11 @@
+framework module PayUNativeOtpAssist {
+  umbrella header "PayuNativeOtpAssist.h"
+
+  export *
+  module * { export * }
+}
+
+module PayUNativeOtpAssist.Swift {
+  header "PayUNativeOtpAssist-Swift.h"
+  requires objc
+}

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "CBConstant.h"
-#import "PUCBReviewOrderConfig.h"
 
 /*!
  * This class is used to store some data that is available for all classes.
@@ -31,12 +30,10 @@
 @property (nonatomic, assign) BOOL isAutoOTPSelect;
 @property (nonatomic, assign) BOOL isAutoOTPSubmit;
 @property (nonatomic, assign) BOOL shouldShowPayULoader;
+@property (nonatomic, assign) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) NSString *paymentURL, *paymentPostParam;
 @property (nonatomic, strong) NSString *htmlData;
 @property (nonatomic, assign) NSTimeInterval merchantResponseTimeout; //Default timeout is 5 seconds.
-
-@property (nonatomic, strong) PUCBReviewOrderConfig *reviewOrderConfig DEPRECATED_MSG_ATTRIBUTE("This feature is no longer supported by the SDK");
-@property (nonatomic, assign) NSUInteger surePayCount DEPRECATED_MSG_ATTRIBUTE("This feature is no longer supported by the SDK");
 
 @end
 
