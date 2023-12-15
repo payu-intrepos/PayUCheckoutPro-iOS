@@ -13,8 +13,8 @@ import PayUParamsKit
 import SwiftUI
 import UIKit
 
-let keySalt = [["3TnMpV", "g0nGFe03", Environment.production],
-               ["gtKFFx", "4R38IvwiV57FwVpsgOvTXBdLE4tHUXFW", Environment.test]]
+let keySalt = [["3TnMpV", "g0nGFe03", PayUParamsKit.Environment.production],
+               ["gtKFFx", "4R38IvwiV57FwVpsgOvTXBdLE4tHUXFW", PayUParamsKit.Environment.test]]
 let indexKeySalt = 1
 
 struct ContentView: View {
@@ -33,106 +33,108 @@ struct ContentView: View {
     @State var ccdc = ""
 
     var body: some View {
-
-        VStack {
-            HStack {
-                Text("Key")
-                    .padding()
-                TextField("key", text: $key)
-                    .padding()
-                    .frame(width: 250, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-            }
-            HStack {
-                Text("salt")
-                    .padding()
-                TextField("salt", text: $salt)
-                    .padding()
-                    .frame(width: 250, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-            }
-            HStack {
-                Text("env")
-                    .padding()
-                TextField("environment", text: $environment)
-                    .padding()
-                    .frame(width: 250, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-
-            }
-            Toggle("Enable Enforcement", isOn: $isDisplayed)
-                .onChange(of: isDisplayed) { value in
-                    // action...
-                    print(value)
+        NavigationStack {
+            VStack {
+                HStack {
+                    Text("Key")
+                        .padding()
+                    TextField("key", text: $key)
+                        .padding()
+                        .frame(width: 250, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
                 }
-                .padding()
-                .frame(width: 300, height: 50)
-
-            if isDisplayed == true {
-
-                Toggle("Enforce NetBanking", isOn: $isNetBanking)
-                    .onChange(of: isNetBanking) { value in
+                HStack {
+                    Text("salt")
+                        .padding()
+                    TextField("salt", text: $salt)
+                        .padding()
+                        .frame(width: 250, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                }
+                HStack {
+                    Text("env")
+                        .padding()
+                    TextField("environment", text: $environment)
+                        .padding()
+                        .frame(width: 250, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                }
+                Toggle("Enable Enforcement", isOn: $isDisplayed)
+                    .onChange(of: isDisplayed) { value in
                         // action...
                         print(value)
                     }
                     .padding()
                     .frame(width: 300, height: 50)
-
-                Toggle("Enforce Cards", isOn: $isCards)
-                    .onChange(of: isCards) { value in
-                        // action...
-                        print(value)
-                    }
-                    .padding()
-                    .frame(width: 300, height: 50)
-
-                TextField("Credit/Debit", text: $ccdc)
-                    .padding()
-                    .frame(width: 250, height: 50)
-                    .background(Color.black.opacity(0.05))
-                    .cornerRadius(10)
-
-                Toggle("Enforce EMI", isOn: $isEMI)
-                    .onChange(of: isEMI) { value in
-                        // action...
-                        print(value)
-                    }
-                    .padding()
-                    .frame(width: 300, height: 50)
-
-                Toggle("Enforce UPI", isOn: $isUPI)
-                    .onChange(of: isUPI) { value in
-                        // action...
-                        print(value)
-                    }
-                    .padding()
-                    .frame(width: 300, height: 50)
-
-                Toggle("Enforce Wallet", isOn: $isWallet)
-                    .onChange(of: isWallet) { value in
-                        // action...
-                        print(value)
-                    }
-                    .padding()
-                    .frame(width: 300, height: 50)
+                
+                if isDisplayed == true {
+                    
+                    Toggle("Enforce NetBanking", isOn: $isNetBanking)
+                        .onChange(of: isNetBanking) { value in
+                            // action...
+                            print(value)
+                        }
+                        .padding()
+                        .frame(width: 300, height: 50)
+                    
+                    Toggle("Enforce Cards", isOn: $isCards)
+                        .onChange(of: isCards) { value in
+                            // action...
+                            print(value)
+                        }
+                        .padding()
+                        .frame(width: 300, height: 50)
+                    
+                    TextField("Credit/Debit", text: $ccdc)
+                        .padding()
+                        .frame(width: 250, height: 50)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                    
+                    Toggle("Enforce EMI", isOn: $isEMI)
+                        .onChange(of: isEMI) { value in
+                            // action...
+                            print(value)
+                        }
+                        .padding()
+                        .frame(width: 300, height: 50)
+                    
+                    Toggle("Enforce UPI", isOn: $isUPI)
+                        .onChange(of: isUPI) { value in
+                            // action...
+                            print(value)
+                        }
+                        .padding()
+                        .frame(width: 300, height: 50)
+                    
+                    Toggle("Enforce Wallet", isOn: $isWallet)
+                        .onChange(of: isWallet) { value in
+                            // action...
+                            print(value)
+                        }
+                        .padding()
+                        .frame(width: 300, height: 50)
+                }
+                
+                NavigationLink(destination: ProductCardView(title: "Intorduction to Swift UI", description: "SwiftUI is a declarative programming framework for developing user interfaces for iOS and macOS applications. To see how it compares to existing framework, let's see how user interfaces are built before SwiftUI was introduced.", image: Image("books"), price: 100.00, peopleCount: 1, ingredientCount: 500, category: "Books"){
+                    openCheckoutPro()
+                }) {
+                    Text("Purchase")
+                }
+                
+                .foregroundColor(.white)
+                .frame(width: 250, height: 50)
+                .background(Color.blue)
+                .cornerRadius(10)
+                
             }
-
-            Button(action: {
-                openCheckoutPro()
-            }) {
-                Text("Open CheckoutPro")
-            }
-            .foregroundColor(.white)
-            .frame(width: 250, height: 50)
-            .background(Color.blue)
-            .cornerRadius(10)
-
+            .padding()
         }
-        .padding()
-
+        .navigationTitle("PayU")
     }
 
     func openCheckoutPro() {
@@ -148,7 +150,7 @@ struct ContentView: View {
         let paymentParam = PayUPaymentParam(
             key: key,
             transactionId: Utils.txnId(),
-            amount: "1",
+            amount: "100",
             productInfo: "new",
             firstName: "abc",
             email: "abc@email.com",
@@ -287,13 +289,10 @@ class PayUCheckoutProDelegateClass: PayUCheckoutProDelegate {
 
         // After fetching hash set its value in below variable "hashValue"
         var hashValue = ""
-        if let hashType = param[HashConstant.hashType], hashType == "V2" {
-
-            hashValue = "<hmacSHA256 hash for hashStringWithoutSalt with salt>"
-        } else if commandName == HashConstant.mcpLookup {
+        if commandName == HashConstant.mcpLookup {
             hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else if let postSalt = postSalt {
-            let hashString = hashStringWithoutSalt + (saltTextField.text ?? "") + postSalt
+            let hashString = hashStringWithoutSalt + salt + postSalt
             hashValue = "<hmacsha1 hash for hashStringWithoutSalt and secret>"
         } else {
             hashValue = "<hmacsha512 hash for hashStringWithoutSalt and salt>"
