@@ -249,6 +249,7 @@ public enum PopTipActionAnimation {
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool)
   @objc public func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
   @objc public func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
+  @objc public func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping ([Swift.String : Swift.String]) -> Swift.Void)
 }
 public typealias CheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.PayUModelSodexoCardDetail?, _ errorMessage: Swift.String?) -> Swift.Void
 extension Foundation.NSNumber {

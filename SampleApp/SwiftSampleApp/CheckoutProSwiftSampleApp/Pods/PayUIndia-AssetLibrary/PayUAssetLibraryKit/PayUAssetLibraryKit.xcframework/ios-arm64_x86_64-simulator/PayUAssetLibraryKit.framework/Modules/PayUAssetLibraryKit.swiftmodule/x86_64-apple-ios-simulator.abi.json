@@ -1097,105 +1097,84 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
       "kind": "IntegerLiteral",
       "offset": 439,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary.swift",
       "kind": "IntegerLiteral",
       "offset": 551,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 772,
       "length": 3,
       "value": "512"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 785,
       "length": 3,
       "value": "512"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Models\/PayUAssetInfo.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 13,
       "value": "\"PayUAssetLibraryKit.PayUAssetInfo\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "Dictionary",
       "offset": 208,
       "length": 2421,
       "value": "[(\"SBHB\", \"SBIB\"), (\"SBPB\", \"SBIB\"), (\"SBTB\", \"SBIB\"), (\"SBI\", \"SBIB\"), (\"SBDB\", \"SBIB\"), (\"SBBJB\", \"SBIB\"), (\"SBINBTPV\", \"SBIB\"), (\"SBMB\", \"SBIB\"), (\"SBNCORP\", \"SBIB\"), (\"BBCB\", \"BBRB\"), (\"CPNB\", \"PNBB\"), (\"AXISCNB\", \"AXIB\"), (\"AXNBTPV\", \"AXIB\"), (\"CITIRDR\", \"CITNB\"), (\"CORP\", \"CRPB\"), (\"CRBP\", \"CRPB\"), (\"CSBNBTPV\", \"CSBN\"), (\"DBSB\", \"DBS\"), (\"DCBCORP\", \"DCBB\"), (\"DLSBCORP\", \"DLSB\"), (\"DLSNBTPV\", \"DLSB\"), (\"HDFCCONB\", \"HDFB\"), (\"HDFCD\", \"HDFB\"), (\"HDFNBTPV\", \"HDFB\"), (\"ICICB\", \"ICIB\"), (\"ICICICNB\", \"ICIB\"), (\"ICINBTPV\", \"ICIB\"), (\"IDBC\", \"IDBB\"), (\"IDFNBTPV\", \"IDFCNB\"), (\"IOB\", \"INOB\"), (\"IOBNBTPV\", \"INOB\"), (\"KRVBC\", \"KRVB\"), (\"KVBNBTPV\", \"KRVB\"), (\"LVBNBTPV\", \"LVBD\"), (\"LVCB\", \"LVBD\"), (\"LVRB\", \"LVBD\"), (\"OBCNBTPV\", \"OBCB\"), (\"PNBNBTPV\", \"PNBB\"), (\"RTN\", \"RBL\"), (\"SCBNB\", \"SDCB\"), (\"SVCNB\", \"SVCB\"), (\"SYNDB\", \"SYDB\"), (\"UBIBC\", \"UBIB\"), (\"YESNBTPV\", \"YESB\"), (\"CABB\", \"CANB\"), (\"AMON\", \"AIRNB\"), (\"CPMC\", \"CITNB\"), (\"PPINAPP\", \"PHONEPE\"), (\"PPINTENT\", \"PHONEPE\"), (\"PPSDKLES\", \"PHONEPE\"), (\"TEZ\", \"GPAY\"), (\"AXISNBC\", \"AXIB\"), (\"KTKBCORP\", \"162B\"), (\"UCONB\", \"UCOB\"), (\"AXIS\", \"AXIB\"), (\"BOB\", \"BBRB\"), (\"CITI\", \"CITNB\"), (\"HDFC\", \"HDFB\"), (\"ICICI\", \"ICIB\"), (\"INDUS\", \"INIB\"), (\"KOTAK\", \"162B\"), (\"SCB\", \"SDCB\"), (\"YES\", \"YESB\"), (\"IDFBENCC\", \"IDFCNB\"), (\"TMBLENCC\", \"TMBB\"), (\"IBKLENCC\", \"IDBB\"), (\"SCBLENCC\", \"SDCB\"), (\"YESBENCC\", \"YESB\"), (\"IOBAENCC\", \"INOB\"), (\"MAHBENCC\", \"BOMB\"), (\"RATNENCC\", \"RBL\"), (\"ICICENCC\", \"ICIB\"), (\"ORBCENCC\", \"OBCB\"), (\"UTBIENCC\", \"UNIB\"), (\"HDFCENCC\", \"HDFB\"), (\"KKBKENCC\", \"162B\"), (\"CITIENCC\", \"CITNB\"), (\"FDRLENCC\", \"FEDB\"), (\"CBINENCC\", \"CBIB\"), (\"UTIBENCC\", \"AXIB\"), (\"PUNBENCC\", \"PNBB\"), (\"DEUTENCC\", \"DSHB\"), (\"ANDBENCC\", \"ADBB\"), (\"SIBLENCC\", \"SOIB\"), (\"CNRBENCC\", \"CANB\"), (\"BARBENCC\", \"BBRB\"), (\"KARBENCC\", \"KRKB\"), (\"INDBENCC\", \"INIB\"), (\"SBINENCC\", \"SBIB\"), (\"CIUBENCC\", \"CUBB\"), (\"MAST\", \"MASTERCARD\"), (\"MAES\", \"MESTRO\"), (\"SMAE\", \"MESTRO\"), (\"DINR\", \"DINERSCLUB\"), (\"ICICID\", \"ICIB\"), (\"AXISD\", \"AXIB\"), (\"ONE CARD\", \"ONEC\"), (\"AU BANK\", \"AUBLENCC\"), (\"AUSF\", \"AUBLENCC\"), (\"SBID\", \"SBIB\"), (\"BOBD\", \"BBRB\"), (\"KOTAKD\", \"162B\"), (\"FEDED\", \"FEDB\")]"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "StringLiteral",
       "offset": 2680,
       "length": 9,
       "value": "\"default\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "StringLiteral",
       "offset": 2746,
       "length": 11,
       "value": "\"updatedOn\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "StringLiteral",
       "offset": 2798,
       "length": 29,
       "value": "\"payu_savedRequestReferences\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2865,
-      "length": 23,
-      "value": "\"payu_dictionary_queue\""
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2928,
+      "offset": 2867,
       "length": 26,
       "value": "\"payu_image_fetcher_queue\""
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2994,
-      "length": 26,
-      "value": "\"payu_cache_manager_queue\""
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3062,
-      "length": 28,
-      "value": "\"payu_network_manager_queue\""
-    },
-    {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/Constants\/PayUAssetConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3127,
+      "offset": 2930,
       "length": 7,
       "value": "1048576"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Git\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/CacheManager\/PayUCacheManager.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/AssetLibrary\/PayUAssetLibrary\/PayUAssetLibrary\/CacheManager\/PayUCacheManager.swift",
       "kind": "IntegerLiteral",
       "offset": 6192,
       "length": 1,

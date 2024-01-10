@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayUParamsKit-Swift.h</key>
 		<data>
-		Nd1k2W3+UXympwi0UwTpCjKdgN8=
+		BECy0z9vv7sw2sglI1lvYoqXEpY=
 		</data>
 		<key>Headers/PayUParamsKit.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		fyJ5+zt7juIcPyRzkqDw83qkNjs=
+		88o7Kax4G0QzpAzbueiDbpilNoI=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		BeuVdahmpLzLMMF2hZHNoYYKFRU=
+		3PoUgr8iZkChp2wX7VO2sEna5Vg=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		0dr9pFaHrOZCrAA/LDcpW08Kq0M=
+		ct6AXGG4Tu9Ute7zQHaQndHkMbI=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		0dr9pFaHrOZCrAA/LDcpW08Kq0M=
+		ct6AXGG4Tu9Ute7zQHaQndHkMbI=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qQdSU3YSR+hagjSQ3NoQsJ/CJBQ=
+		IjnIRu8sybhzCewM04uQi2iED+8=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		BeuVdahmpLzLMMF2hZHNoYYKFRU=
+		3PoUgr8iZkChp2wX7VO2sEna5Vg=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		kHGHklEGSTa0Q+NJH0M5XN001wE=
+		ce3QszxXrz0aQ1Yoc9NCQDeAMA0=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		kHGHklEGSTa0Q+NJH0M5XN001wE=
+		ce3QszxXrz0aQ1Yoc9NCQDeAMA0=
 		</data>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ywQCGMt8WEIK+5/4pJi4zBqlkQk=
+		EP1+REtAbtSYb7okWEwr+tH2524=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yZ82mX0ZZjQgYJtm6/FEBTwn+sVuvHbXjKLu4uDWJAQ=
+			2v3ef+epPSfDWzGMMAGOn9ZJLenVcrdJARd1G0hmCPM=
 			</data>
 		</dict>
 		<key>Headers/PayUParamsKit.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vs6Xfl7Oyf7g8w/rQMjZOOnVdSpPCL3LQrMM2ZjqGiI=
+			PG03MmpphDqxZiiZF10Cy8cSKikOTrEeAK/st9Y7FG0=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVhK6Bq3mYDhpgOKFJcVCJO5XIrb9Y2nZFLiiw7uLMM=
+			af2/OxMfSH+jlL6sOKBpbVgmySC4lI0wNeA+kmlDq68=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DVhK6Bq3mYDhpgOKFJcVCJO5XIrb9Y2nZFLiiw7uLMM=
+			af2/OxMfSH+jlL6sOKBpbVgmySC4lI0wNeA+kmlDq68=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8gqbxMHU4r11uqWAiuFyWAyX6e4U3FnOZhlz/UwmNAs=
+			w50gJnHjms6CWfHMsFFynJJpptE8sThASGgylY3gZDY=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vs6Xfl7Oyf7g8w/rQMjZOOnVdSpPCL3LQrMM2ZjqGiI=
+			PG03MmpphDqxZiiZF10Cy8cSKikOTrEeAK/st9Y7FG0=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9mIA4HUnetKl1xDYxDmC8sx2jE/c/jHN6LiapHtOevI=
+			Or12wvlAu9kf7T8Ay+0kwNCQVimumSI+g0TgMoBSt5M=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9mIA4HUnetKl1xDYxDmC8sx2jE/c/jHN6LiapHtOevI=
+			Or12wvlAu9kf7T8Ay+0kwNCQVimumSI+g0TgMoBSt5M=
 			</data>
 		</dict>
 		<key>Modules/PayUParamsKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DaAdi11nS8l9poaWN8Hm3adx6IsG3dr2BTHEXTgxW8g=
+			NHoJY7u6AiGXcN16qVFohse68UoCWLTml843c54pcRI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

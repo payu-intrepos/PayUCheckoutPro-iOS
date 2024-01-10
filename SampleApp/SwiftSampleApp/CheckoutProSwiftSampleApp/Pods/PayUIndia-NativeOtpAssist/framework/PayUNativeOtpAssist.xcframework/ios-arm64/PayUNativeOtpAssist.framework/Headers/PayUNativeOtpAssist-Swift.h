@@ -230,6 +230,7 @@ using UInt = size_t;
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import Foundation;
 @import ObjectiveC;
 @import PayUParamsKit;
 #endif
@@ -286,6 +287,8 @@ SWIFT_CLASS("_TtC19PayUNativeOtpAssist13PayUOtpAssist")
 @end
 
 @class PayUVerifyPayment;
+@class NSHTTPCookie;
+@class PayUModelAPIResponse;
 
 SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist24PayUOtpAssistAPIProtocol_")
 @protocol PayUOtpAssistAPIProtocol
@@ -294,10 +297,13 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist24PayUOtpAssistAPIProtocol_")
 - (void)submitOTPWithOtp:(NSString * _Nonnull)otp completion:(void (^ _Nonnull)(PayUVerifyPayment * _Nullable, NSError * _Nullable))completion;
 - (void)resendOTPWithCompletion:(void (^ _Nonnull)(PayUVerifyPayment * _Nullable, NSError * _Nullable))completion;
 - (void)cancelTransactionWithCompletion:(void (^ _Nonnull)(PayUVerifyPayment * _Nullable, NSError * _Nullable))completion;
+- (void)cancelWebViewTransactionWithCookies:(NSArray<NSHTTPCookie *> * _Nonnull)cookies completion:(void (^ _Nonnull)(id _Nullable, NSError * _Nullable))completion;
+- (void)checkTransactionStatusWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam completion:(void (^ _Nonnull)(PayUModelAPIResponse * _Nullable, NSError * _Nullable))completion;
 @end
 
 @class UIColor;
 @class UIImage;
+@class PayUFontFamily;
 
 SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @interface PayUOtpAssistConfig : NSObject
@@ -307,7 +313,9 @@ SWIFT_CLASS("_TtC19PayUNativeOtpAssist19PayUOtpAssistConfig")
 @property (nonatomic) BOOL shouldShowMerchantSummary;
 @property (nonatomic) int64_t merchantResponseTimeout;
 @property (nonatomic) enum PayULanguageCode merchantLanguage;
+@property (nonatomic) BOOL shouldShowSecureWebView;
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
+@property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -325,6 +333,29 @@ SWIFT_PROTOCOL("_TtP19PayUNativeOtpAssist21PayUOtpAssistDelegate_")
 /// :returns: Bool,  When you want to handle fallback scenarios then return ‘false’ otherwise return ‘true’.
 /// The default value is ‘true’
 - (BOOL)shouldHandleFallbackWithPayUAcsRequest:(PayUAcsRequest * _Nonnull)payUAcsRequest SWIFT_WARN_UNUSED_RESULT;
+@required
+/// It’s an optional callback method, to collect hash.
+/// You just need to change the return value to false.
+/// :param: [String: String], It contains hashName and hashString,
+/// hashName is used to identify the callback,
+/// hashString is the string which merchant app will use to generate hash by appending the PayU’s provided salt .
+/// :onCompletion: [String: String],  When you get the hash from your server,
+/// then use this callback to send the hash back to PayU’s SDK
+- (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
+@end
+
+
+SWIFT_CLASS("_TtC19PayUNativeOtpAssist26PayUOtpAssistHashConstants")
+@interface PayUOtpAssistHashConstants : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashString;)
++ (NSString * _Nonnull)hashString SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashType;)
++ (NSString * _Nonnull)hashType SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull hashName;)
++ (NSString * _Nonnull)hashName SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull postSalt;)
++ (NSString * _Nonnull)postSalt SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

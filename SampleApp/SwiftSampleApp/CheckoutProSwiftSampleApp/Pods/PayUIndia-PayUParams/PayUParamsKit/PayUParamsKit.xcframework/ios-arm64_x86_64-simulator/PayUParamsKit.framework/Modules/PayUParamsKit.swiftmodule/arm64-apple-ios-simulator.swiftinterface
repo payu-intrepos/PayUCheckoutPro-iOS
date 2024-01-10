@@ -45,6 +45,7 @@ import _StringProcessing
   @objc public var phoneNumber: Swift.String?
   @objc public var header: Swift.String?
   public var isEligible: Swift.Bool?
+  @objc public var isSecureWebViewTxn: Swift.Bool
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -183,6 +184,7 @@ import _StringProcessing
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class CLW : PayUParamsKit.PaymentOption {
   @objc public var walletUrn: Swift.String?
+  @objc public var loadAmount: Swift.String?
   public var balance: Swift.Double?
   @objc public var apiStatus: PayUParamsKit.ApiStatus
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
@@ -326,8 +328,8 @@ import _StringProcessing
   @objc public var netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?
   @objc public var bnpl: [PayUParamsKit.BnplBankDetail]?
   @objc public var emi: PayUParamsKit.EmiDetail?
-  @objc public var skuDetail: Swift.String?
-  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BnplBankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: Swift.String?)
+  @objc public var skuDetail: Swift.String?, offerCategory: Swift.String?
+  @objc public init(offerKey: Swift.String?, type: Swift.String?, title: Swift.String?, offerDescription: Swift.String?, tnc: Swift.String?, tncLink: Swift.String?, minTxnAmount: Swift.Double, maxTxnAmount: Swift.Double, offerType: Swift.String?, validFrom: Swift.String?, validTo: Swift.String?, discountDetail: PayUParamsKit.OfferDiscountDetail?, isNoCostEmi: Swift.Bool, isSubvented: Swift.Bool, isSkuOffer: Swift.Bool, isAcrossSkuQuantity: Swift.Bool, creditCard: [PayUParamsKit.CcdcDetail]?, debitCard: [PayUParamsKit.CcdcDetail]?, netBanking: [PayUParamsKit.BankDetail]?, wallet: [PayUParamsKit.BankDetail]?, upi: [PayUParamsKit.BankDetail]?, bnpl: [PayUParamsKit.BnplBankDetail]?, emi: PayUParamsKit.EmiDetail?, skuDetail: Swift.String?, offerCategory: Swift.String?)
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
@@ -491,6 +493,7 @@ import _StringProcessing
   case error
   case unknownError
   case noInternet
+  case invalidHash
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -505,12 +508,23 @@ import _StringProcessing
   @objc public var description: Swift.String {
     @objc get
   }
+  @objc public var errorDescription: Swift.String? {
+    @objc get
+  }
   public static func == (lhs: PayUParamsKit.PayUError, rhs: PayUParamsKit.PayUError) -> Swift.Bool
   public class func noInternet() -> PayUParamsKit.PayUError
+  public class func invalidHash() -> PayUParamsKit.PayUError
   public class func unknownError() -> PayUParamsKit.PayUError
   public class func error(_ message: Swift.String) -> PayUParamsKit.PayUError
   public class func error(message: Swift.String?, image: UIKit.UIImage?) -> PayUParamsKit.PayUError
   public class func error(message: Swift.String?, code: Swift.Int?) -> PayUParamsKit.PayUError
+  @objc deinit
+}
+@objc public class PayUModelAPIResponse : PayUParamsKit.PayUBaseModel {
+  @objc public var status: Swift.Int
+  @objc public var msg: Swift.String?
+  @objc public var result: Any?
+  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
 }
 @objc public class PayUBeneficiaryParams : ObjectiveC.NSObject, Foundation.NSCopying {
@@ -713,6 +727,7 @@ extension Swift.Dictionary {
   @objc public class func dateStringFrom(_ date: Foundation.Date, formater: Swift.String = Constants.yyyyMMdd) -> Swift.String?
   @objc public class func getJSONIndividualObject(forKey key: Swift.String?, value: Swift.String?) -> Swift.String
   @objc public class func getJSONString(from json: [Swift.String : Any]) -> Swift.String?
+  @objc public class func getJSON(from string: Swift.String) -> [Swift.String : Any]?
   @objc public class func convertJsonToPostParam(_ json: [Swift.String : Swift.String]) -> Swift.String
   @objc public class func isSITransaction(_ params: PayUParamsKit.PayUPaymentParam) -> Swift.Bool
   @objc public class func getSIPostParams(_ siParam: PayUParamsKit.PayUSIParams?) -> [Swift.String : Swift.String]
@@ -740,8 +755,10 @@ extension Swift.Dictionary {
     @objc public static let PG: Swift.String
     @objc public static let BANK_CODE: Swift.String
     @objc public static let WALLET_URN: Swift.String
+    @objc public static let LOAD_AMOUNT: Swift.String
     @objc public static let SDK_PLATFORM: Swift.String
     @objc public static let KEY: Swift.String
+    @objc public static let COMMAND: Swift.String
     @objc public static let OFFER_KEY: Swift.String
     @objc public static let TXNID: Swift.String
     @objc public static let AMOUNT: Swift.String
@@ -845,6 +862,10 @@ extension Swift.Dictionary {
     @objc public static let TOKEN_REF_NO: Swift.String
     @objc public static let SDK_RETRY: Swift.String
     @objc public static let PAN: Swift.String
+    @objc public static let VAR1: Swift.String
+    @objc public static let STATUS: Swift.String
+    @objc public static let SEAMLESS_SDK: Swift.String
+    @objc public static let ADDITIONAL_PARAM: Swift.String
     @objc override dynamic public init()
     @objc deinit
   }
@@ -866,6 +887,23 @@ extension Swift.Dictionary {
     public static let PAN: Swift.String
     public static let PHONE: Swift.String
     public static let VPA: Swift.String
+  }
+  @_hasMissingDesignatedInitializers public class Commands {
+    public static let CHECK_SECURE_TXN_STATUS: Swift.String
+    @objc deinit
+  }
+  public enum URLs : Swift.String {
+    case payment
+    case cancelTransaction
+    case webService
+    case analytics
+    case checkStatus
+    public func getURL(isProduction: Swift.Bool) -> Foundation.URL
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
   }
   @objc override dynamic public init()
   @objc deinit
@@ -956,6 +994,9 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var paymentOptionsHash: Swift.String?
   @objc public var paymentHash: Swift.String?
   @objc public var validateVPAHash: Swift.String?
+  @objc public var checkTransactionStatusHash: Swift.String?
+  @objc public var date: Swift.String?
+  @objc public var body: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1116,6 +1157,9 @@ extension PayUParamsKit.PayULanguageCode : Swift.RawRepresentable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.Equatable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.Hashable {}
 extension PayUParamsKit.PayUBillingCycle : Swift.RawRepresentable {}
+extension PayUParamsKit.Constants.URLs : Swift.Equatable {}
+extension PayUParamsKit.Constants.URLs : Swift.Hashable {}
+extension PayUParamsKit.Constants.URLs : Swift.RawRepresentable {}
 extension PayUParamsKit.PayUPaymentNavigationType : Swift.Equatable {}
 extension PayUParamsKit.PayUPaymentNavigationType : Swift.Hashable {}
 extension PayUParamsKit.PayUPaymentNavigationType : Swift.RawRepresentable {}

@@ -10,6 +10,7 @@ import PayUCrashReporter
 @_exported import PayUNativeOtpAssist
 import PayUNetworkReachability
 import PayUParamsKit
+import SafariServices
 import Swift
 import SystemConfiguration
 import UIKit
@@ -36,6 +37,8 @@ extension PayUParamsKit.PayUError {
   @objc func submitOTP(otp: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
   @objc func resendOTP(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
   @objc func cancelTransaction(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
+  @objc func cancelWebViewTransaction(cookies: [Foundation.HTTPCookie], completion: @escaping (_ response: Any?, _ error: Swift.Error?) -> Swift.Void)
+  @objc func checkTransactionStatus(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUModelAPIResponse?, _ error: Swift.Error?) -> Swift.Void)
 }
 @objc public protocol PayUOtpAssistDelegate {
   @objc func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
@@ -43,6 +46,7 @@ extension PayUParamsKit.PayUError {
   @objc func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
   @objc optional func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
+  @objc func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping (_ hashDict: [Swift.String : Swift.String]) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssistConfig : ObjectiveC.NSObject {
   @objc public var themeColor: UIKit.UIColor
@@ -51,7 +55,9 @@ extension PayUParamsKit.PayUError {
   @objc public var shouldShowMerchantSummary: Swift.Bool
   @objc public var merchantResponseTimeout: Swift.Int64
   @objc public var merchantLanguage: PayUParamsKit.PayULanguageCode
+  @objc public var shouldShowSecureWebView: Swift.Bool
   @objc final public let showUserCancellationDialogue: Swift.Bool
+  @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -63,6 +69,14 @@ extension UIKit.UIDevice {
   @objc public static func open(parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
   @objc public static func open(parentVC: UIKit.UIViewController, postData: Swift.String, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
   public static func start()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class PayUOtpAssistHashConstants : ObjectiveC.NSObject {
+  @objc public static let hashString: Swift.String
+  @objc public static let hashType: Swift.String
+  @objc public static let hashName: Swift.String
+  @objc public static let postSalt: Swift.String
   @objc override dynamic public init()
   @objc deinit
 }
