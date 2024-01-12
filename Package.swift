@@ -45,8 +45,8 @@ let package = Package(
     ],
 
     targets: [
-        .binaryTarget(name: "PayUCheckoutProBaseKit", path: "./PayUCheckoutProBaseKit/PayUCheckoutProBaseKit.xcframework"),
-        .binaryTarget(name: "PayUCheckoutProKit", path: "./PayUCheckoutProKit/PayUCheckoutProKit.xcframework"),
+        .binaryTarget(name: "PayUCheckoutProBaseKit", path: "./PayUCheckoutPro/PayUCheckoutProBaseKit.xcframework"),
+        .binaryTarget(name: "PayUCheckoutProKit", path: "./PayUCheckoutPro/PayUCheckoutProKit.xcframework"),
         .target(
             name: "PayUIndia-CheckoutProBaseTarget",
             dependencies: [
