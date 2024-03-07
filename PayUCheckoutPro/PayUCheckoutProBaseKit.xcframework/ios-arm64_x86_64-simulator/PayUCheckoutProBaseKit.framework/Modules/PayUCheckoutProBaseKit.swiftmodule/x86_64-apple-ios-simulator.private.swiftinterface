@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import PayUCheckoutProBaseKit
 import PayUCommonUI
@@ -9,6 +9,7 @@ import Swift
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc @_inheritsConvenienceInitializers @objcMembers open class OnePayUBaseConfig : ObjectiveC.NSObject, Foundation.NSCopying {
   @objc public var merchantName: Swift.String?
   @objc public var merchantLogo: UIKit.UIImage?
@@ -36,7 +37,7 @@ import _StringProcessing
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class BaseAPIResponse : ObjectiveC.NSObject {
-  public var error: Swift.Error?
+  public var error: (any Swift.Error)?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -74,15 +75,16 @@ import _StringProcessing
 public typealias DictOfString = [Swift.String : Swift.String]
 public typealias PayUHashGenerationCompletion = (_ hashDict: PayUCheckoutProBaseKit.DictOfString) -> Swift.Void
 public typealias FetchPaymentOptionCompletion = (_ response: PayUCheckoutProBaseKit.FetchPaymentOptionResponse) -> Swift.Void
-public typealias GetBinInfoOfCard = (_ cardBinInfo: PayUParamsKit.CardBinInfo?, _ error: Swift.Error?) -> Swift.Void
-public typealias GetBinInfo = (_ cardBinInfo: [PayUParamsKit.CardBinInfo]?, _ error: Swift.Error?) -> Swift.Void
-public typealias ErrorCompletion = (_ error: Swift.Error?) -> Swift.Void
+public typealias EMICalculationCompletion = (_ response: [PayUParamsKit.PayUEmiCalculationDetails]?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias GetBinInfoOfCard = (_ cardBinInfo: PayUParamsKit.CardBinInfo?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias GetBinInfo = (_ cardBinInfo: [PayUParamsKit.CardBinInfo]?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias ErrorCompletion = (_ error: (any Swift.Error)?) -> Swift.Void
 public typealias ImageCompletion = (_ image: UIKit.UIImage?) -> Swift.Void
 public typealias CheckEligibilityCompletion = (_ response: PayUCheckoutProBaseKit.CheckEligibilityResponse) -> Swift.Void
-public typealias EMICompletion = (_ emi: PayUParamsKit.PaymentMode?, _ error: Swift.Error?) -> Swift.Void
-public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOfferDetail?, _ error: Swift.Error?) -> Swift.Void
-public typealias OfferCompletion = (_ offerDetail: PayUParamsKit.PayUModelOfferDetail?, _ error: Swift.Error?) -> Swift.Void
-public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMultiCurrencyPayment?, _ error: Swift.Error?) -> Swift.Void
+public typealias EMICompletion = (_ emi: PayUParamsKit.PaymentMode?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOfferDetail?, _ extraParams: Any?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias OfferCompletion = (_ offerDetail: PayUParamsKit.PayUModelOfferDetail?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias MCPLookUpCompletion = (_ response: PayUParamsKit.PayUModelMultiCurrencyPayment?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias VerifyIFSCCompletion = (_ ifscInfo: PayUParamsKit.PayUModelIFSCInfo?, _ errorMessage: Swift.String?) -> Swift.Void
 public typealias FetchAssetCompletion = (_ assets: PayUParamsKit.PayUModelFetchAssets?, _ error: Swift.String?) -> Swift.Void
 public typealias GetStringCompletion = (_ successString: Swift.String?, _ error: Swift.String?) -> Swift.Void
@@ -93,7 +95,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc func paymentSuccess(response: Any?)
   @objc func paymentFailure(response: Any?)
   @objc func paymentCancelled(response: Any?, fromPaymentScreen: Swift.Bool)
-  @objc func error(_ error: Swift.Error?)
+  @objc func error(_ error: (any Swift.Error)?)
   @objc func getHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
   @objc func nextStep(_ nextStep: PayUCheckoutProBaseKit.NextStep?)
   @objc func loadRetryPaymentOption(_ fetchPaymentOptionResponse: PayUCheckoutProBaseKit.FetchPaymentOptionResponse)
@@ -104,9 +106,10 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
 @objc @objcMembers open class BaseLayer : ObjectiveC.NSObject {
   @objc open var basePaymentParam: PayUParamsKit.PayUPaymentParam
   @objc open var config: PayUCheckoutProBaseKit.OnePayUBaseConfig
-  @objc weak open var delegate: PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate?
-  @objc weak open var individualPaymentDelegate: PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate?
+  @objc weak open var delegate: (any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate)?
+  @objc weak open var individualPaymentDelegate: (any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate)?
   @objc public init(paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.OnePayUBaseConfig?)
+  @objc open func fetchEMICalculation(emi: PayUParamsKit.EMI, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc open func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc open func makePayment(paymentOption: PayUParamsKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc open func cancelCurrentPayment() -> Swift.Bool
@@ -117,10 +120,10 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func getBalanceFromCLW(mobile: Swift.String, bankCode: Swift.String)
   @objc open func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc open func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc open func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
+  @objc open func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc open func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc open func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
-  @objc open func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc open func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc open func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc open func postAdsImpressionEvent(requestId: Swift.String?)
   @objc open func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc open func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)

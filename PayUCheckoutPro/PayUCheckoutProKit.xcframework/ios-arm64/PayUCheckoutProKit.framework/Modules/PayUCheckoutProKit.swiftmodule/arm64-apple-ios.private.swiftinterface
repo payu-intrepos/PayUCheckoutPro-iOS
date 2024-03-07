@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
 import Foundation
 import PayUAssetLibraryKit
 import PayUBizCoreKit
@@ -22,9 +23,11 @@ import SwiftUI
 import UIKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc extension Foundation.NSNotification {
   @objc public static let payuRefreshSodexoView: Foundation.Notification.Name
   @objc public static let payuSelectedOffer: Foundation.Notification.Name
+  @objc public static let payuFetchedOffer: Foundation.Notification.Name
   @objc public static let payuFetchedAsset: Foundation.Notification.Name
   @objc public static let payuQuickFetchLoading: Foundation.Notification.Name
 }
@@ -185,12 +188,12 @@ public enum PopTipActionAnimation {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseTransformer : ObjectiveC.NSObject {
-  @objc public func onError(_ error: Swift.Error?) -> Any?
+  @objc public func onError(_ error: (any Swift.Error)?) -> Any?
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool) -> Any?
   @objc public func onPaymentFailure(response: Any?) -> Any?
   @objc public func onPaymentSuccess(response: Any?) -> Any?
   @objc public func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion) -> PayUCheckoutProBaseKit.DictOfString
-  @objc public func hashGenerated(args: Any?, errorCallback: @escaping ((Swift.Error?) -> Swift.Void))
+  @objc public func hashGenerated(args: Any?, errorCallback: @escaping (((any Swift.Error)?) -> Swift.Void))
   @objc override dynamic public init()
   @objc deinit
 }
@@ -198,14 +201,14 @@ public enum PopTipActionAnimation {
   @objc func onPaymentSuccess(response: Any?)
   @objc func onPaymentFailure(response: Any?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
-  @objc func onError(_ error: Swift.Error?)
+  @objc func onError(_ error: (any Swift.Error)?)
   @objc func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
-  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
-  @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc public static func start()
-  @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: PayUCheckoutProKit.PayUCheckoutProDelegate)
+  @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -225,9 +228,10 @@ public enum PopTipActionAnimation {
   @objc override public func getBalanceFromCLW(mobile: Swift.String, bankCode: Swift.String)
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc override public func emiDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
+  @objc override public func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
+  @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
-  @objc override public func offerDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)
   @objc override public func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
@@ -235,7 +239,7 @@ public enum PopTipActionAnimation {
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
   @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
-  @objc override public func validateOfferDetail(category: Swift.String, paymentCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc override public func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
   @objc public func payUConnectionError(_ notification: [Swift.AnyHashable : Any]!)
