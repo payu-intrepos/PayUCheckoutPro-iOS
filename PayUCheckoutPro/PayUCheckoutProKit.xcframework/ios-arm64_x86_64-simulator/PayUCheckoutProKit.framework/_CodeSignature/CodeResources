@@ -198,7 +198,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		J5fFo4a64fKN6QlL5/biOthB1xM=
+		5pO338rp1oCGYDZ+QfAQeKoxxpM=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0utOAcXLRE7nGeZRnF3iLhnBxBY=
+		Z06Eflwe7Os2t+dZGpBBJVX9BwE=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		J5fFo4a64fKN6QlL5/biOthB1xM=
+		5pO338rp1oCGYDZ+QfAQeKoxxpM=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		J33TbDfAsb55a/7rBIMx8oaQoFw=
+		aOI4PvU2Ep9iUWNvg7dNblL1Bwk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -864,7 +864,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UQjOefr7zPfVsfeyDZSWhow8OwHOZLDjibh+oBEyXw8=
+			j99B5tgwtAmKOEaTxvvARiIafOHHDSiK8/xsXBxBOX4=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -892,14 +892,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tq09XGkEYa5s1jl1hTvWwjV88qF11+Qlt+LelVejhhg=
+			U6PVGj5da80baTZR4zMxz61sNbUh2XOs79cBPhionSI=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UQjOefr7zPfVsfeyDZSWhow8OwHOZLDjibh+oBEyXw8=
+			j99B5tgwtAmKOEaTxvvARiIafOHHDSiK8/xsXBxBOX4=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -927,7 +927,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uP3b3GMnE9+x/IIxcom95yTbp6+HZFN3E4Nw/o6TAMM=
+			LMAAqWcCV7UXvUyePKZ2Ja6fjeniic683oDuEHToTdA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
