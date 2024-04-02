@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-CheckoutProBase"
-  s.version             = "7.5.1"
+  s.version             = "7.6.0"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -15,6 +15,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "12.0"
   s.vendored_frameworks = 'PayUCheckoutPro/PayUCheckoutProBaseKit.xcframework'
 
-  s.dependency            'PayUIndia-PayUParams', '~> 5.3'
+  s.dependency            'PayUIndia-PayUParams', '~> 5.4'
 
 end
