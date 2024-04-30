@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                = "PayUIndia-CheckoutPro"
-  s.version             = "7.6.0"
+  s.version             = "7.6.1"
   s.license             = "MIT"
   s.homepage            = "https://github.com/payu-intrepos/PayUCheckoutPro-iOS"
   s.author              = { "PayUbiz" => "contact@payu.in"  }
@@ -26,6 +26,6 @@ Pod::Spec.new do |s|
   s.dependency            'PayUIndia-NativeOtpAssist', '~> 3.3'
   s.dependency            'PayUIndia-CardScanner', '~> 1.0'
   s.dependency            'PayUIndia-Analytics', '3.0'
-  s.dependency            'PayUIndia-CommonUI', '~>1.1'
+  s.dependency            'PayUIndia-CommonUI', '~>1.2'
 
 end
