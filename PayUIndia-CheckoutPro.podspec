@@ -25,7 +25,6 @@ Pod::Spec.new do |s|
   s.dependency            'PayUIndia-NetworkReachability', '~> 1.0'
   s.dependency            'PayUIndia-NativeOtpAssist', '~> 3.3'
   s.dependency            'PayUIndia-CardScanner', '~> 1.0'
-  s.dependency            'PayUIndia-Analytics', '3.0'
   s.dependency            'PayUIndia-CommonUI', '~>1.2'
 
 end
