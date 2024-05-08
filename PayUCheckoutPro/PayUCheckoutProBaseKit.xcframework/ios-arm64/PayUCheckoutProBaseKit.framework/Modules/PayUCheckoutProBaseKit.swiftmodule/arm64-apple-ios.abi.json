@@ -3658,92 +3658,6 @@
           },
           {
             "kind": "Var",
-            "name": "index",
-            "printedName": "index",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:22PayUCheckoutProBaseKit10ImageParamC5indexSivp",
-            "mangledName": "$s22PayUCheckoutProBaseKit10ImageParamC5indexSivp",
-            "moduleName": "PayUCheckoutProBaseKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit10ImageParamC5indexSivg",
-                "mangledName": "$s22PayUCheckoutProBaseKit10ImageParamC5indexSivg",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit10ImageParamC5indexSivs",
-                "mangledName": "$s22PayUCheckoutProBaseKit10ImageParamC5indexSivs",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit10ImageParamC5indexSivM",
-                "mangledName": "$s22PayUCheckoutProBaseKit10ImageParamC5indexSivM",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "imageURL",
             "printedName": "imageURL",
             "children": [
@@ -4458,17 +4372,23 @@
           {
             "kind": "Function",
             "name": "loadRetryPaymentOption",
-            "printedName": "loadRetryPaymentOption()",
+            "printedName": "loadRetryPaymentOption(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FetchPaymentOptionResponse",
+                "printedName": "PayUCheckoutProBaseKit.FetchPaymentOptionResponse",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)FetchPaymentOptionResponse"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseLayerDelegate(im)loadRetryPaymentOption",
-            "mangledName": "$s22PayUCheckoutProBaseKit03OneA18UBaseLayerDelegateP22loadRetryPaymentOptionyyF",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseLayerDelegate(im)loadRetryPaymentOption:",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA18UBaseLayerDelegateP22loadRetryPaymentOptionyyAA05FetchlM8ResponseCF",
             "moduleName": "PayUCheckoutProBaseKit",
             "genericSig": "<τ_0_0 where τ_0_0 : PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate>",
             "sugared_genericSig": "<Self where Self : PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate>",
@@ -5494,7 +5414,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(UIKit.UIImage?, Swift.Int) -> ()",
+                "printedName": "(UIKit.UIImage?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5503,37 +5423,24 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(UIKit.UIImage?, Swift.Int)",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "UIKit.UIImage?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIImage",
-                            "printedName": "UIKit.UIImage",
-                            "usr": "c:objc(cs)UIImage"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
                       }
-                    ]
+                    ],
+                    "usr": "s:Sq"
                   }
                 ]
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)imageOf:onCompletion:",
-            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC5image2of12onCompletionyAA10ImageParamC_ySo7UIImageCSg_SitctF",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC5image2of12onCompletionyAA10ImageParamC_ySo7UIImageCSgctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -8388,142 +8295,135 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
-      "kind": "IntegerLiteral",
-      "offset": 427,
-      "length": 1,
-      "value": "0"
-    },
-    {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "BooleanLiteral",
-      "offset": 3444,
+      "offset": 3486,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "StringLiteral",
-      "offset": 2602,
+      "offset": 2644,
       "length": 9,
       "value": "\"PayUCheckoutProBaseKit.BaseLayer\""
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5158,
+      "offset": 5200,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5185,
+      "offset": 5227,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 5245,
       "length": 19,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5232,
+      "offset": 5274,
       "length": 20,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5262,
+      "offset": 5304,
       "length": 17,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5289,
+      "offset": 5331,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5348,
       "length": 11,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5327,
+      "offset": 5369,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5158,
+      "offset": 5200,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5185,
+      "offset": 5227,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 5245,
       "length": 19,
       "value": "3"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5232,
+      "offset": 5274,
       "length": 20,
       "value": "4"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5262,
+      "offset": 5304,
       "length": 17,
       "value": "5"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5289,
+      "offset": 5331,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5348,
       "length": 11,
       "value": "7"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5327,
+      "offset": 5369,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "Array",
-      "offset": 5478,
+      "offset": 5520,
       "length": 2,
       "value": "[]"
     }

@@ -343,7 +343,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
 - (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
 - (void)getBalanceFromCLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode;
-- (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSInteger))onCompletion;
+- (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable))onCompletion;
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
@@ -426,7 +426,7 @@ SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit24OnePayUBaseLayerDelegate_")
 - (void)error:(NSError * _Nullable)error;
 - (void)getHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
 - (void)nextStep:(NextStep * _Nullable)nextStep;
-- (void)loadRetryPaymentOption;
+- (void)loadRetryPaymentOption:(FetchPaymentOptionResponse * _Nonnull)fetchPaymentOptionResponse;
 @end
 
 @class PayUCustomNote;

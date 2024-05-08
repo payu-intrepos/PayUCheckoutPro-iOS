@@ -66,7 +66,6 @@ import _SwiftConcurrencyShims
   public var isForCardScheme: Swift.Bool
   public var isForCurrency: Swift.Bool
   public var objectHash: Swift.Int
-  public var index: Swift.Int
   public var imageURL: Foundation.URL?
   public var imageUpdatedOn: Swift.Double?
   public var imageName: Swift.String?
@@ -80,7 +79,7 @@ public typealias EMICalculationCompletion = (_ response: [PayUParamsKit.PayUEmiC
 public typealias GetBinInfoOfCard = (_ cardBinInfo: PayUParamsKit.CardBinInfo?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias GetBinInfo = (_ cardBinInfo: [PayUParamsKit.CardBinInfo]?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias ErrorCompletion = (_ error: (any Swift.Error)?) -> Swift.Void
-public typealias ImageCompletion = (_ image: UIKit.UIImage?, _ index: Swift.Int) -> Swift.Void
+public typealias ImageCompletion = (_ image: UIKit.UIImage?) -> Swift.Void
 public typealias CheckEligibilityCompletion = (_ response: PayUCheckoutProBaseKit.CheckEligibilityResponse) -> Swift.Void
 public typealias EMICompletion = (_ emi: PayUParamsKit.PaymentMode?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOfferDetail?, _ extraParams: Any?, _ error: (any Swift.Error)?) -> Swift.Void
@@ -99,7 +98,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc func error(_ error: (any Swift.Error)?)
   @objc func getHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
   @objc func nextStep(_ nextStep: PayUCheckoutProBaseKit.NextStep?)
-  @objc func loadRetryPaymentOption()
+  @objc func loadRetryPaymentOption(_ fetchPaymentOptionResponse: PayUCheckoutProBaseKit.FetchPaymentOptionResponse)
 }
 @objc public protocol OnePayUBaseIndividualPaymentDelegate {
   @objc func upiCollectTransactionRemainingTime(_ remainingTime: Swift.Int)
