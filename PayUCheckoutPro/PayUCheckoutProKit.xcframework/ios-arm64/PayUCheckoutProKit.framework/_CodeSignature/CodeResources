@@ -198,7 +198,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		uEqPtqicavMudxpC4Oc3aBqAm1g=
+		qxRS4rsNqHSUCSCbbh9WTjoYWQE=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -214,7 +214,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		esTl7WJqAFHNTy9dwIfqVrPlTcc=
+		eDNqZ+W9CHVnwhmZc8WD13oQl4Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -848,7 +848,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JQOh0nGaRsUNwEtY/UMVYYa+ViQLDIQQpiOIsp0cfcw=
+			ClB3SHZZ5yC1wW+Oj489dqJUStTj1FH6Tcv9dmhw4vo=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -876,7 +876,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			um2TQ5cAsEHEYsfxjYnmIvpNOp8qeORYs5S+XNoWlWw=
+			zcdxWQBR8WFcd+iOi9ZvudTwZbsJxSsZy85wA7rbVPk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

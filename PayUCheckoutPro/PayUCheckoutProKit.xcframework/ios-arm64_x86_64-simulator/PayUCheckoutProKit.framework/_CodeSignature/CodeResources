@@ -198,7 +198,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		HLySkAwo0BOqK2VY0P1Sx+eUsQ4=
+		lQJ5TSzBdNLt093ciMCZyfv336c=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -214,11 +214,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		0x1X0WIQMkJxeaTxaG3TcvEtG4s=
+		Fs/8hiWXeIzrfJnXcjgxkoZrPHM=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		HLySkAwo0BOqK2VY0P1Sx+eUsQ4=
+		lQJ5TSzBdNLt093ciMCZyfv336c=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -234,7 +234,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wb0ze7ZIsyPxOxhoO7xdZkN4rMs=
+		s6w6F4PivJgm4PsTkTQLY10okL4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -868,7 +868,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TOmI2kVKJ7ltth1JvqnweP3Q11NLvUucN76QQuBLO5U=
+			oR8pXFAZOYMX0ftz/E6J6LQ/JEbl9aYDBrrxBbHdf3A=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -896,14 +896,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qq2vuUR8JLVuvTKLww7MqydoUN7WjMtbxeFwKY8iUoQ=
+			q9Nc37RSzH83fzaLEv/gOXLrzv3Rl2qKPB9Sg0MQOrg=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TOmI2kVKJ7ltth1JvqnweP3Q11NLvUucN76QQuBLO5U=
+			oR8pXFAZOYMX0ftz/E6J6LQ/JEbl9aYDBrrxBbHdf3A=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -931,7 +931,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6NzYKd9pTbEixrD0gPIWKIIeYtBCRcSROI5Pk7+Hmc=
+			4pGLkzXqi0v/g7skaJWKIaNLzAdDCcLs2xIhBC9s0Ac=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
