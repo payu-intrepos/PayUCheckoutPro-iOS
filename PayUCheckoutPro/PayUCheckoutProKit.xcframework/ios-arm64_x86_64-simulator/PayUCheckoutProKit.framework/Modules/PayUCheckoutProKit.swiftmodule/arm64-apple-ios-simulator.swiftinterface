@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import DeveloperToolsSupport
 import Foundation
@@ -212,7 +212,7 @@ public enum PopTipActionAnimation {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate, PayUNativeOtpAssist.PayUOtpAssistDelegate {
+@objc @_inheritsConvenienceInitializers @objcMembers public class BizWrapper : PayUCheckoutProBaseKit.BaseLayer, PayUCustomBrowser.PUCBWebVCDelegate, PayUNativeOtpAssist.PayUOtpAssistDelegate {
   @objc public var mcpAPIResponse: PayUParamsKit.PayUModelMultiCurrencyPayment?
   @objc public var onViewController: UIKit.UIViewController?
   @objc public var onError: PayUCheckoutProBaseKit.ErrorCompletion?

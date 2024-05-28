@@ -3,21 +3,21 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "5.4.1"
-let VERSION_ANALYTICS_KIT: PackageDescription.Version = "3.0.1"
-let VERSION_CRASH_REPORTER: PackageDescription.Version = "3.0.1"
-let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.0.2"
-let VERSION_ASSET_LIBRARY: PackageDescription.Version = "3.3.3"
-let VERSION_PG_SDK: PackageDescription.Version = "10.4.2"
-let VERSION_CUSTOM_BROWSER: PackageDescription.Version = "10.2.2"
-let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "3.3.1"
-let VERSION_UPI_KIT: PackageDescription.Version = "9.2.1"
-let VERSION_CARD_SCANNER: PackageDescription.Version = "1.0.1"
-let VERSION_COMMON_UI: PackageDescription.Version = "1.2.1"
+let VERSION_PARAM_KIT: PackageDescription.Version = "6.0.0"
+let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.0"
+let VERSION_CRASH_REPORTER: PackageDescription.Version = "4.0.0"
+let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.1.0"
+let VERSION_ASSET_LIBRARY: PackageDescription.Version = "4.0.0"
+let VERSION_PG_SDK: PackageDescription.Version = "11.0.0"
+let VERSION_CUSTOM_BROWSER: PackageDescription.Version = "11.0.0"
+let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "4.0.0"
+let VERSION_UPI_KIT: PackageDescription.Version = "10.0.0"
+let VERSION_CARD_SCANNER: PackageDescription.Version = "2.0.0"
+let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
 
 let package = Package(
     name: "PayUCheckoutProKit",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS(.v13)],
 
     products: [
         .library(

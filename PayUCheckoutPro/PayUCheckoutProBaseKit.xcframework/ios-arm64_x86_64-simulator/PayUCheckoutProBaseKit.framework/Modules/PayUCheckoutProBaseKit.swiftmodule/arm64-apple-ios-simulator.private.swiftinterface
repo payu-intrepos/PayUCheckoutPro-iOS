@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUCheckoutProBaseKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import PayUCheckoutProBaseKit
 import PayUCommonUI
@@ -66,6 +66,7 @@ import _SwiftConcurrencyShims
   public var isForCardScheme: Swift.Bool
   public var isForCurrency: Swift.Bool
   public var objectHash: Swift.Int
+  public var index: Swift.Int
   public var imageURL: Foundation.URL?
   public var imageUpdatedOn: Swift.Double?
   public var imageName: Swift.String?
@@ -79,7 +80,7 @@ public typealias EMICalculationCompletion = (_ response: [PayUParamsKit.PayUEmiC
 public typealias GetBinInfoOfCard = (_ cardBinInfo: PayUParamsKit.CardBinInfo?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias GetBinInfo = (_ cardBinInfo: [PayUParamsKit.CardBinInfo]?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias ErrorCompletion = (_ error: (any Swift.Error)?) -> Swift.Void
-public typealias ImageCompletion = (_ image: UIKit.UIImage?) -> Swift.Void
+public typealias ImageCompletion = (_ image: UIKit.UIImage?, _ index: Swift.Int) -> Swift.Void
 public typealias CheckEligibilityCompletion = (_ response: PayUCheckoutProBaseKit.CheckEligibilityResponse) -> Swift.Void
 public typealias EMICompletion = (_ emi: PayUParamsKit.PaymentMode?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias OffersCompletion = (_ offerDetail: PayUParamsKit.PayUModelAllOfferDetail?, _ extraParams: Any?, _ error: (any Swift.Error)?) -> Swift.Void
@@ -98,7 +99,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc func error(_ error: (any Swift.Error)?)
   @objc func getHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
   @objc func nextStep(_ nextStep: PayUCheckoutProBaseKit.NextStep?)
-  @objc func loadRetryPaymentOption(_ fetchPaymentOptionResponse: PayUCheckoutProBaseKit.FetchPaymentOptionResponse)
+  @objc func loadRetryPaymentOption()
 }
 @objc public protocol OnePayUBaseIndividualPaymentDelegate {
   @objc func upiCollectTransactionRemainingTime(_ remainingTime: Swift.Int)

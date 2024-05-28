@@ -280,6 +280,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import PayUCheckoutProBaseKit;
+@import PayUCustomBrowser;
+@import PayUNativeOtpAssist;
+@import PayUParamsKit;
 @import UIKit;
 #endif
 
@@ -315,6 +319,70 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)intent SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
+
+@class PayUModelMultiCurrencyPayment;
+@class UIViewController;
+@class PayUPaymentParam;
+@class OnePayUBaseConfig;
+@class FetchPaymentOptionResponse;
+@class PaymentOption;
+@class CardBinInfo;
+@class PayUModelIFSCInfo;
+@class ImageParam;
+@class UIImage;
+@class CheckEligibilityResponse;
+@class PaymentMode;
+@class EMI;
+@class PayUEmiCalculationDetails;
+@class PayUModelAllOfferDetail;
+@class PayULanguage;
+@class PayUModelOfferDetail;
+@class PayUAcsRequest;
+
+SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
+@interface BizWrapper : BaseLayer <PUCBWebVCDelegate, PayUOtpAssistDelegate>
+@property (nonatomic, strong) PayUModelMultiCurrencyPayment * _Nullable mcpAPIResponse;
+@property (nonatomic, strong) UIViewController * _Nullable onViewController;
+@property (nonatomic, copy) void (^ _Nullable onError)(NSError * _Nullable);
+- (nonnull instancetype)initWithPaymentParam:(PayUPaymentParam * _Nonnull)paymentParam config:(OnePayUBaseConfig * _Nullable)config OBJC_DESIGNATED_INITIALIZER;
+- (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
+- (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
+- (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
+- (void)getBinInfoOfCardNumber:(NSString * _Nonnull)cardNumber onCompletion:(void (^ _Nonnull)(CardBinInfo * _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchMCPLookupDataWithCardBinInfo:(CardBinInfo * _Nonnull)cardBinInfo onCompletion:(void (^ _Nonnull)(void))onCompletion;
+- (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
+- (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
+- (void)getBalanceFromCLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode;
+- (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSInteger))onCompletion;
+- (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
+- (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
+- (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
+- (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;
+- (void)sendMobileVerificationCodeWithMobileNumber:(NSString * _Nullable)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
+- (void)verifyOtpWithMobileNumber:(NSString * _Nonnull)mobileNumber otp:(NSString * _Nonnull)otp uuid:(NSString * _Nonnull)uuid onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
+- (void)resendMobileVerificationCodeWithUuid:(NSString * _Nonnull)uuid mobileNumber:(NSString * _Nonnull)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
+- (void)logout;
+- (void)fetchRecommendedAndQuickPayOptionsWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
+- (void)validateOfferDetailWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
+- (void)PayUSuccessResponse:(id _Null_unspecified)response;
+- (void)PayUFailureResponse:(id _Null_unspecified)response;
+- (void)PayUConnectionError:(NSDictionary * _Null_unspecified)notification;
+- (void)PayUTransactionCancel;
+- (void)PayUSuccessResponse:(id _Null_unspecified)payUResponse SURLResponse:(id _Null_unspecified)surlResponse;
+- (void)PayUFailureResponse:(id _Null_unspecified)payUResponse FURLResponse:(id _Null_unspecified)furlResponse;
+- (BOOL)shouldShowCancelAlert SWIFT_WARN_UNUSED_RESULT;
+- (void)loadInitialData;
+- (void)onPaymentSuccessWithMerchantResponse:(NSString * _Nullable)merchantResponse payUResponse:(NSString * _Nullable)payUResponse;
+- (void)onPaymentFailureWithMerchantResponse:(NSString * _Nullable)merchantResponse payUResponse:(NSString * _Nullable)payUResponse;
+- (void)onPaymentCancelWithIsTxnInitiated:(BOOL)isTxnInitiated;
+- (void)onErrorWithErrorCode:(NSString * _Nullable)errorCode errorMessage:(NSString * _Nullable)errorMessage;
+- (BOOL)shouldHandleFallbackWithPayUAcsRequest:(PayUAcsRequest * _Nonnull)payUAcsRequest SWIFT_WARN_UNUSED_RESULT;
+- (void)generateHashFor:(NSDictionary<NSString *, NSString *> * _Nonnull)param onCompletion:(void (^ _Nonnull)(NSDictionary<NSString *, NSString *> * _Nonnull))onCompletion;
+@end
+
 
 
 
@@ -382,11 +450,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 
 
 
-@class UIViewController;
-@class PayUPaymentParam;
 @class PayUCheckoutProConfig;
 @protocol PayUCheckoutProDelegate;
-@class BaseLayer;
 
 SWIFT_CLASS("_TtC18PayUCheckoutProKit15PayUCheckoutPro")
 @interface PayUCheckoutPro : NSObject
