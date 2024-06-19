@@ -3,15 +3,15 @@
 
 import PackageDescription
 
-let VERSION_PARAM_KIT: PackageDescription.Version = "6.0.0"
+let VERSION_PARAM_KIT: PackageDescription.Version = "6.1.0"
 let VERSION_ANALYTICS_KIT: PackageDescription.Version = "4.0.0"
 let VERSION_CRASH_REPORTER: PackageDescription.Version = "4.0.0"
 let VERSION_NETWORK_REACHABILITY: PackageDescription.Version = "2.1.0"
 let VERSION_ASSET_LIBRARY: PackageDescription.Version = "4.0.0"
-let VERSION_PG_SDK: PackageDescription.Version = "11.0.0"
+let VERSION_PG_SDK: PackageDescription.Version = "11.1.0"
 let VERSION_CUSTOM_BROWSER: PackageDescription.Version = "11.0.0"
 let VERSION_NATIVE_OTP_ASSIST: PackageDescription.Version = "4.0.0"
-let VERSION_UPI_KIT: PackageDescription.Version = "10.0.0"
+let VERSION_UPI_KIT: PackageDescription.Version = "10.1.0"
 let VERSION_CARD_SCANNER: PackageDescription.Version = "2.0.0"
 let VERSION_COMMON_UI: PackageDescription.Version = "2.0.0"
 
