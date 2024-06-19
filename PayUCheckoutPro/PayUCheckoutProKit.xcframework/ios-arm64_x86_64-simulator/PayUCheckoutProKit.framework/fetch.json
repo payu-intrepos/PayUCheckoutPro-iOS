@@ -1,0 +1,671 @@
+{
+    "savedPaymentOptions": {
+        "cashcard": [
+            {
+                "pgId": 1,
+                "pgTitle": "Airtel",
+                "pgDetails": "-",
+                "ibiboCode": "AMON",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "cashcard",
+                "phoneNumber": "8437123405"
+            },
+            {
+                "pgId": 2,
+                "pgTitle": "Amazon Pay",
+                "pgDetails": "-",
+                "ibiboCode": "AMZPAY",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "cashcard",
+                "phoneNumber": "8437123405"
+            }
+        ],
+        "bnpl": [
+            {
+                "pgId": 1,
+                "pgTitle": "LAZYPAY",
+                "pgDetails": "8437123405",
+                "ibiboCode": "LAZYPAY",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "bnpl",
+                "phoneNumber": "8437123405"
+            }
+        ],
+        "pg_recency": [
+            1,
+            2,
+            4,
+            5,
+            3,
+            9,
+            12,
+            6,
+            7,
+            10,
+            11,
+            13
+        ],
+        "upi": [
+            {
+                "pgId": 3,
+                "pgTitle": "GooglePay-kk@okhdfcbank",
+                "pgDetails": "kk@okhdfcbank",
+                "ibiboCode": "INTENT",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "upi"
+            },
+            {
+                "pgId": 12,
+                "pgTitle": "Paytm-ps@paytm",
+                "pgDetails": "ps@paytm",
+                "ibiboCode": "UPI",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "upi"
+            }
+        ],
+        "nb": [
+            {
+                "pgId": 7,
+                "pgTitle": "Airtel Payments Bank",
+                "pgDetails": "-",
+                "ibiboCode": "AIRNB",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "nb"
+            },
+            {
+                "pgId": 10,
+                "pgTitle": "Axis Bank",
+                "pgDetails": "-",
+                "ibiboCode": "AXIB",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "nb"
+            },
+            {
+                "pgId": 11,
+                "pgTitle": "Punjab National Bank",
+                "pgDetails": "-",
+                "ibiboCode": "PNBB",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "nb"
+            }
+        ],
+        "cc": [
+            {
+                "pgId": 13,
+                "pgTitle": "HDFC-XXXXXXXXXXXX1258",
+                "pgDetails": "XXXXXXXXXXXX1258",
+                "ibiboCode": "CC",
+                "pgDisplay": true,
+                "userCredentials": "umang:arya123",
+                "pgUP": true,
+                "tokenTxn": true,
+                "paymentMode": "cc"
+            }
+        ]
+    },
+    "savedPaymentOptions_P": {
+        "cc": [
+            {
+                "pgId": 5,
+                "pgTitle": "HDFC-559540XXXXXX9536",
+                "pgDetails": "3eaf9c268eb22a570230ae",
+                "ibiboCode": "CC",
+                "pgDisplay": true,
+                "userCredentials": "8235901:7974230567",
+                "pgUP": true,
+                "tokenTxn": true,
+                "paymentMode": "cc"
+            }
+        ],
+        "pg_recency": [
+            5,
+            2,
+            4,
+            1,
+            3
+        ],
+        "nb": [
+            {
+                "pgId": 2,
+                "pgTitle": "State Bank of India",
+                "pgDetails": "-",
+                "ibiboCode": "SBIB",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "nb"
+            },
+            {
+                "pgId": 4,
+                "pgTitle": "HDFC Bank",
+                "pgDetails": "-",
+                "ibiboCode": "HDFB",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "nb"
+            }
+        ],
+        "upi": [
+            {
+                "pgId": 1,
+                "pgTitle": "PhonePe-9424692026@ybl",
+                "pgDetails": "9424692026@ybl",
+                "ibiboCode": "UPI",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "upi"
+            },
+            {
+                "pgId": 3,
+                "pgTitle": "MyAirtelApp-7411175167@airtel",
+                "pgDetails": "7411175167@airtel",
+                "ibiboCode": "UPI",
+                "pgDisplay": true,
+                "userCredentials": null,
+                "pgUP": true,
+                "paymentMode": "upi"
+            }
+        ]
+    },
+    "paymentOptions": {
+        "sbqr": [
+            "UPISBQR"
+        ],
+        "dc": [
+            "VISA",
+            "RUPAY",
+            "MAST"
+        ],
+        "cc": [
+            "AMEX",
+            "RUPAYCC",
+            "CC"
+        ],
+        "upi": [
+            "googlepay",
+            "paytm",
+            "phonepe",
+            "slice"
+        ],
+        "emi": [
+            {
+                "cc": [
+                    "ONEC",
+                    "ICIC",
+                    "CITI",
+                    "YESB",
+                    "AUSF",
+                    "SBIN",
+                    "UTIB",
+                    "HDFC",
+                    "IDFC",
+                    "BARB",
+                    "HSBC",
+                    "SCBL",
+                    "RATN",
+                    "KKBK",
+                    "AMEX",
+                    "INDB",
+                    "IDBI",
+                    "CANARA",
+                    "FDRL",
+                    "HMECDT",
+                    "DBS",
+                    "AXIO",
+                    "HDFCDC",
+                    "KOTAK"
+                ],
+                "dc": [
+                    "KKBK",
+                    "SBIN",
+                    "ICIC",
+                    "FDRL",
+                    "BARB"
+                ],
+                "cardless": [
+                    "LIQUIL",
+                    "ICICI_CL",
+                    "HDFC_CL"
+                ]
+            }
+        ],
+        "nb": [
+            "162B",
+            "AXIB",
+            "YESB",
+            "KRVBC",
+            "HDFB",
+            "ICICICNB",
+            "INIB",
+            "KRVB",
+            "IDBB",
+            "INDB",
+            "TMBB",
+            "CBIB",
+            "FEDB",
+            "BOMB",
+            "INOB",
+            "SBNCORP",
+            "AXISCNB",
+            "UCOCNB",
+            "PNBB",
+            "CABB",
+            "BOIB",
+            "SRSWT",
+            "IDFCNB",
+            "CSBN",
+            "CPNB",
+            "BBRB",
+            "KRKB",
+            "UCOB",
+            "CSMSNB",
+            "OBCB",
+            "JAKB",
+            "SOIB",
+            "RBLNB",
+            "DCBB",
+            "AIRNB",
+            "SCBNB",
+            "DSHB",
+            "SVCNB",
+            "AUSFCNB",
+            "ICIB",
+            "SBIB",
+            "UNIB",
+            "DLSB",
+            "SYNDB",
+            "JSBNB",
+            "PSBNB",
+            "TBON",
+            "AXNBTPV",
+            "SBINBTPV",
+            "HDFNBTPV",
+            "JANANB",
+            "HDFCCONB",
+            "PNBNBTPV",
+            "SCBNBTPV",
+            "BBRNBTPV",
+            "ALLB",
+            "IDFNBTPV",
+            "CITNB",
+            "AUSFNB",
+            "UCONBTPV",
+            "INDPOST",
+            "INIBTPV",
+            "PAYTMNB",
+            "IDBICORP",
+            "CSFBR",
+            "INDBTPV",
+            "RBLCNB",
+            "CBITPV"
+        ],
+        "dbqr": [
+            "DQRRCC",
+            "DBQR",
+            "DQRPPI",
+            "UPIDBQR"
+        ],
+        "cashcard": [
+            "PHONEPE",
+            "PAYTM",
+            "PPINTENT",
+            "YESW",
+            "AMZPAY",
+            "AMON",
+            "OLAM",
+            "FREC",
+            "JIOM",
+            "PPINAPP",
+            "TWID",
+            "MOBIKWIK",
+            "CITRUSW",
+            "BFL",
+            "PPSDKLES"
+        ],
+        "bnpl": [
+            "LAZYPAY",
+            "ICICPL",
+            "MOBIZIP",
+            "POSTPE"
+        ],
+        "loyaltyservice": [
+            "FKSC"
+        ],
+        "upiccemi": [
+            "INTAX03",
+            "INTAX06",
+            "INTAX09",
+            "INTAX12",
+            "INTAX24",
+            "UPIAX03",
+            "UPIAX06",
+            "UPIAX09",
+            "UPIAX12",
+            "UPIAX24"
+        ],
+        "cnt": [
+            "CNTCASH",
+            "CNTCC",
+            "CNTDC",
+            "CNTNB",
+            "CNTUPI"
+        ],
+        "neftrtgs": [
+            "EFTHDFCV",
+            "EFTAXIS",
+            "EFTAXTPV"
+        ],
+        "clw": [
+            "PAY"
+        ],
+        "codnew": [
+            "CODN"
+        ],
+        "pos": [
+            "POS"
+        ],
+        "mc": [
+            "SODEXO"
+        ],
+        "ofupi": [
+            "OFINTENT"
+        ],
+        "enach": [
+            "KKBKENCC",
+            "PUNBENCC",
+            "SBINENCC",
+            "UTIBENCC",
+            "HDFCENCC",
+            "AUBLENCC",
+            "BARBENCC",
+            "BDBLENCC",
+            "CBINENCC",
+            "CITIENCC",
+            "CIUBENCC",
+            "CNRBENCC",
+            "COSBENCC",
+            "DBSSENCC",
+            "DCBLENCC",
+            "DEUTENCC",
+            "DLXBENCC",
+            "ESFBENCC",
+            "FDRLENCC",
+            "HSBCENCC",
+            "IBKLENCC",
+            "IDFBENCC",
+            "INDBENCC",
+            "IOBAENCC",
+            "JSFBENCC",
+            "KARBENCC",
+            "KVBLENCC",
+            "MAHBENCC",
+            "PSIBENCC",
+            "PYTMENCC",
+            "RATNENCC",
+            "SCBLENCC",
+            "SIBLENCC",
+            "TMBLENCC",
+            "UBINENCC",
+            "UCBAENCC",
+            "USFBENCC",
+            "YESBENCC",
+            "ACUXENCC",
+            "AIRPENCC",
+            "APGBENCC",
+            "BKIDENCC",
+            "CLBLENCC",
+            "CNSXENCC",
+            "CSBKENCC",
+            "ESAFENCC",
+            "IDIBENCC",
+            "JAKAENCC",
+            "JUCXENCC",
+            "KCCBENCC",
+            "KNSBENCC",
+            "KVGBENCC",
+            "MHSXENCC",
+            "NCBLENCC",
+            "SHIXENCC",
+            "SPCBENCC",
+            "STCBENCC",
+            "SURYENCC",
+            "VARAENCC",
+            "ZCBLENCC",
+            "NSPBENCC",
+            "RSSXENCC"
+        ],
+        "standinginstruction": [
+            "KKBKENCR",
+            "PUNBENCR",
+            "SBINENCR",
+            "UTIBENCR",
+            "HDFCENCR",
+            "UPISI",
+            "YESBENCR",
+            "AUBLENCR",
+            "BARBENCR",
+            "BDBLENCR",
+            "CBINENCR",
+            "CITIENCR",
+            "CIUBENCR",
+            "CNRBENCR",
+            "COSBENCR",
+            "DBSSENCR",
+            "DCBLENCR",
+            "DEUTENCR",
+            "DLXBENCR",
+            "ESFBENCR",
+            "FDRLENCR",
+            "HSBCENCR",
+            "IBKLENCR",
+            "IDFBENCR",
+            "INDBENCR",
+            "IOBAENCR",
+            "JSFBENCR",
+            "KARBENCR",
+            "KVBLENCR",
+            "MAHBENCR",
+            "PSIBENCR",
+            "PYTMENCR",
+            "RATNENCR",
+            "SCBLENCR",
+            "SIBLENCR",
+            "TMBLENCR",
+            "UBINENCR",
+            "UCBAENCR",
+            "USFBENCR",
+            "AMEXSI",
+            "INTENTSI",
+            "ACUXENCR",
+            "AIRPENCR",
+            "APGBENCR",
+            "BKIDENCR",
+            "CLBLENCR",
+            "CNSXENCR",
+            "CSBKENCR",
+            "ESAFENCR",
+            "IDIBENCR",
+            "JAKAENCR",
+            "JUCXENCR",
+            "KCCBENCR",
+            "KNSBENCR",
+            "KVGBENCR",
+            "MHSXENCR",
+            "NCBLENCR",
+            "SHIXENCR",
+            "SPCBENCR",
+            "STCBENCR",
+            "SURYENCR",
+            "VARAENCR",
+            "ZCBLENCR",
+            "CCSI",
+            "NSPBENCR",
+            "RSSXENCR"
+        ],
+        "qr": [
+            "RCCQR",
+            "RDCQR",
+            "VCCQR",
+            "VDCQR",
+            "BQR"
+        ],
+        "dbt": [
+            "DBT",
+            "IMPS",
+            "NEFT",
+            "RTGS"
+        ],
+        "isbqr": [
+            "ISBQR"
+        ]
+    },
+    "tiles": [
+        {
+            "id": 1,
+            "paymentMode": "cc",
+            "ibiboCode": "AMEX",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "Pay with Amex",
+            "msg": "Use your American Express card",
+            "bankCode": "AMEX"
+        },
+        {
+            "id": 1,
+            "paymentMode": "SODEXO",
+            "ibiboCode": "SODEXO",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "Pay with SODEXO",
+            "msg": "Use your SODEXO card",
+            "bankCode": "SODEXO"
+        },
+        {
+            "id": 1,
+            "paymentMode": "upi",
+            "ibiboCode": "UPI",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": true,
+            "eligibleAmount": null,
+            "title": "Pay with UPI",
+            "msg": "Use your upi card",
+            "bankCode": "UPI"
+        },
+        {
+            "id": 2,
+            "paymentMode": "emi",
+            "ibiboCode": "ONEC03",
+            "action": "Redirect to L3",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": "cc",
+            "eligibilityCheck": true,
+            "eligibleAmount": null,
+            "title": "OneCard",
+            "msg": "NA",
+            "bankCode": "ONEC"
+        },
+        {
+            "id": 3,
+            "paymentMode": "nb",
+            "ibiboCode": "AIRNB",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "state bank AIRNB bank",
+            "msg": "Pay using AIRNB Bank netbanking Pay using SBIB Bank netbankingPay using SBIB Bank netbankingPay using SBIB Bank netbanking",
+            "bankCode": "SBIB"
+        },
+        {
+            "id": 4,
+            "paymentMode": "nb",
+            "ibiboCode": "CSBN",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "catholic bank",
+            "msg": "Pay using catholic netbanking",
+            "bankCode": "CSBN"
+        },
+        {
+            "id": 5,
+            "paymentMode": "cashcard",
+            "ibiboCode": "PHONEPE",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "PhonePe/BHIM UPI",
+            "msg": "Pay using PhonePe/BHIM UPI",
+            "bankCode": "PHONEPE"
+        },
+        {
+            "id": 5,
+            "paymentMode": "bnpl",
+            "ibiboCode": "LAZYPAY",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "BNPL",
+            "msg": "Pay using BNPL",
+            "bankCode": "LAZYPAY"
+        },
+        {
+            "id": 5,
+            "paymentMode": "NEFTRTGS",
+            "ibiboCode": "NEFTRTGS",
+            "action": "Redirect to L2",
+            "tag": "offer",
+            "userInfo": null,
+            "paymentInfo": null,
+            "eligibilityCheck": false,
+            "eligibleAmount": null,
+            "title": "NEFTRTGS",
+            "msg": "Pay using NEFTRTGS UPI",
+            "bankCode": "NEFTRTGS"
+        }
+    ],
+    "l2Tiles": [
+        
+    ]
+}
