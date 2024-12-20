@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PayUCheckoutProBaseKit",
+    "printedName": "PayUCheckoutProBaseKit",
     "children": [
       {
         "kind": "Import",
@@ -1764,6 +1764,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1836,12 +1850,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1867,12 +1881,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1899,12 +1913,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1979,6 +1993,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2382,6 +2410,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3334,6 +3376,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4232,6 +4288,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4433,12 +4503,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -4606,6 +4676,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4653,6 +4739,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4860,7 +4962,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate?"
+                "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -4886,12 +4988,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate?",
+                    "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "OnePayUBaseLayerDelegate",
-                        "printedName": "PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate",
+                        "printedName": "any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate",
                         "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseLayerDelegate"
                       }
                     ],
@@ -4922,12 +5024,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate?",
+                    "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "OnePayUBaseLayerDelegate",
-                        "printedName": "PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate",
+                        "printedName": "any PayUCheckoutProBaseKit.OnePayUBaseLayerDelegate",
                         "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseLayerDelegate"
                       }
                     ],
@@ -4974,7 +5076,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate?"
+                "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate)?"
               }
             ],
             "declKind": "Var",
@@ -5000,12 +5102,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate?",
+                    "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "OnePayUBaseIndividualPaymentDelegate",
-                        "printedName": "PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate",
+                        "printedName": "any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate",
                         "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseIndividualPaymentDelegate"
                       }
                     ],
@@ -5036,12 +5138,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate?",
+                    "printedName": "(any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "OnePayUBaseIndividualPaymentDelegate",
-                        "printedName": "PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate",
+                        "printedName": "any PayUCheckoutProBaseKit.OnePayUBaseIndividualPaymentDelegate",
                         "usr": "c:@M@PayUCheckoutProBaseKit@objc(pl)OnePayUBaseIndividualPaymentDelegate"
                       }
                     ],
@@ -5141,7 +5243,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "([PayUParamsKit.PayUEmiCalculationDetails]?, Swift.Error?) -> ()",
+                "printedName": "([PayUParamsKit.PayUEmiCalculationDetails]?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5151,7 +5253,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "([PayUParamsKit.PayUEmiCalculationDetails]?, Swift.Error?)",
+                    "printedName": "([PayUParamsKit.PayUEmiCalculationDetails]?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5178,12 +5280,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -5277,7 +5379,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.Error?) -> ()",
+                "printedName": "((any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5287,12 +5389,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -5354,7 +5456,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PayUParamsKit.CardBinInfo?, Swift.Error?) -> ()",
+                "printedName": "(PayUParamsKit.CardBinInfo?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5364,7 +5466,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(PayUParamsKit.CardBinInfo?, Swift.Error?)",
+                    "printedName": "(PayUParamsKit.CardBinInfo?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5383,12 +5485,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -5718,7 +5820,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PayUParamsKit.PaymentMode?, Swift.Error?) -> ()",
+                "printedName": "(PayUParamsKit.PaymentMode?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5728,7 +5830,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(PayUParamsKit.PaymentMode?, Swift.Error?)",
+                    "printedName": "(PayUParamsKit.PaymentMode?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5747,12 +5849,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -5833,7 +5935,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, Swift.Error?) -> ()",
+                "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5843,7 +5945,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, Swift.Error?)",
+                    "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5875,12 +5977,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -5921,7 +6023,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PayUParamsKit.PayUModelOfferDetail?, Swift.Error?) -> ()",
+                "printedName": "(PayUParamsKit.PayUModelOfferDetail?, (any Swift.Error)?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -5931,7 +6033,7 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(PayUParamsKit.PayUModelOfferDetail?, Swift.Error?)",
+                    "printedName": "(PayUParamsKit.PayUModelOfferDetail?, (any Swift.Error)?)",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -5950,12 +6052,12 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
-                        "printedName": "Swift.Error?",
+                        "printedName": "(any Swift.Error)?",
                         "children": [
                           {
                             "kind": "TypeNominal",
                             "name": "Error",
-                            "printedName": "Swift.Error",
+                            "printedName": "any Swift.Error",
                             "usr": "s:s5ErrorP"
                           }
                         ],
@@ -6423,6 +6525,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -6933,6 +7049,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7318,6 +7448,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8009,6 +8153,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8360,6 +8518,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8414,231 +8586,161 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 445,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 608,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 672,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 878,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 468,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 516,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 690,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 397,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3444,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "StringLiteral",
-      "offset": 2602,
-      "length": 9,
-      "value": "\"PayUCheckoutProBaseKit.BaseLayer\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5158,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5185,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5203,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5232,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5262,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5289,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5306,
       "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
       "offset": 5327,
       "length": 10,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5158,
-      "length": 17,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5185,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5203,
-      "length": 19,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5232,
-      "length": 20,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5262,
-      "length": 17,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5289,
-      "length": 7,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5306,
-      "length": 11,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5327,
-      "length": 10,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "Array",
       "offset": 5478,
       "length": 2,
