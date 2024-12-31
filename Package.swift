@@ -15,6 +15,7 @@ let VERSION_UPI_KIT: PackageDescription.Version = "10.2.0-alpha"
 let VERSION_CARD_SCANNER: PackageDescription.Version = "2.0.0"
 let VERSION_COMMON_UI: PackageDescription.Version = "2.0.1"
 
+
 let package = Package(
     name: "PayUCheckoutProKit",
     platforms: [.iOS(.v13)],
