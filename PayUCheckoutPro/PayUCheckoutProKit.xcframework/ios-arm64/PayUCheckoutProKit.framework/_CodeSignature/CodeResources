@@ -150,7 +150,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		aPMKJ0aEz78/5tfo5kXTHkJXPdk=
+		wuosrEUwQ8A/t0WC9QmeOIKpA5E=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		yDiFTvky4eKrrq5UMUrPYG0mVWw=
+		olAx/XeAdg9KIQic+oqwtcTJcW0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -664,7 +664,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dkkW8zP1RzcXT6FCUP0ZBJBqCxPgNxxMILa2QQtPI48=
+			54ICTPnzixEyl2LTw2KO0HmiiHPyjhftueehekojD+Q=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -692,7 +692,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Avc7Xve9KjhxX4PVnqCfQ3yeN4Ov3XlmBCfcA6GdDLs=
+			PH2ncESMPoW5N0hBRtNET+msrNiT9czJexfh7wUqjSA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
