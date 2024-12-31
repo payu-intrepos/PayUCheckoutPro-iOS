@@ -1,7 +1,7 @@
 framework module PayUCheckoutProKit {
   umbrella header "PayUCheckoutProKit.h"
-
   export *
+
   module * { export * }
 }
 

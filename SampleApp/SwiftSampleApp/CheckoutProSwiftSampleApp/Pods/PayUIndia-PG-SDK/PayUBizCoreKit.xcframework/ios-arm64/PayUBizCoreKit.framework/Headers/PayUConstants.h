@@ -50,7 +50,7 @@
 #define CITRUS_WEBSERVICE_PRODUCTION_URL                        @"https://mercury.citruspay.com/"
 #define CITRUS_WEBSERVICE_TEST_URL                              @"https://sboxmercury.citruspay.com/"
 #define CITRUS_MCP_LOOKUP_URL                                   @"multi-currency-pricing/mcp/lookup"
-#define CHECKOUTX_IFSC_URL                                      @"checkoutx/verifyIFSC"
+#define CHECKOUTX_IFSC_URL                                      @"sdk/verifyIFSC"
 #define PAYU_WEBSERVICE_V2_PRODUCTION_URL                       @"https://api.payu.in"
 #define PAYU_WEBSERVICE_V2_SANDBOX_URL                          @"https://sandbox.payu.in"
 
@@ -65,6 +65,13 @@
 #define ERROR                                                   @"Error"
 
 //Mandatory params error list
+#define ERROR_SUPPORTED_PAYMENT_OPTION_IS_MISSING               @"supportedPaymentOptions param is missing, "
+#define ERROR_PAYMENT_MODE_IS_MISSING                           @"paymentMode is missing, "
+#define ERROR_PG_TITLE_IS_MISSING                               @"pgTitle is missing, "
+#define ERROR_PG_DETAIL_IS_MISSING                              @"pgDetails is missing, "
+#define ERROR_IBIBO_CODE_IS_MISSING                             @"ibiboCode is missing, "
+#define ERROR_USER_CREDENTAIL_IS_MISSING                        @"userCredential is missing, "
+
 #define ERROR_PAYU_ID_IS_MISSING                                @"PayU id is missing, "
 #define ERROR_REQUEST_ID_IS_MISSING                             @"Request id is missing, "
 #define ERROR_OTP_IS_MISSING                                    @"OTP is missing, "
@@ -74,7 +81,6 @@
 #define ERROR_TRANSACTIONID_IS_MISSING                          @"Transaction ID is missing, "
 #define ERROR_TRANSACTIONID_GREATER_THAN_25                     @"Transaction ID greater than 25 character, "
 
-#define ERROR_AMOUNT_IS_MISSING                                 @"Amount is missing, "
 #define ERROR_AMOUNT_IS_NONNUMERIC                              @" is non-numeric, "
 #define ERROR_AMOUNT_CONTAIN_MORE_THAN_ONE_DECIMAL              @"Amount contain more than one decimal, "
 #define ERROR_AMOUNT_IS_LESS_THAN_MINIMUM_AMOUNT                @" is less than minimum amount, "
@@ -148,6 +154,7 @@
 #define ERROR_PAYMENT_CODE_IS_MISSING                           @"Payment code is missing, "
 #define ERROR_CATEGORY_IS_MISSING                               @"Category is missing, "
 #define ERROR_OFFER_KEYS_ARE_MISSING                            @"Offer keys are missing, "
+#define ERROR_OFFER_PARAMS_ARE_MISSING                          @"Offer params are missing, "
 
 #define ERROR_ONE_TAP_STORED_CARD_TOKEN_MISSING                 @"Stored card Dictionary missing, "
 #define ERROR_ONE_TAP_MERCHANY_HASH_IS_MISSING                  @"Merchant hash is missing, "
@@ -244,7 +251,7 @@
 #define COMMAND_CANCEL_REFUND_TRANSACTION                       @"cancel_refund_transaction"
 #define COMMAND_GET_TRANSACTION_INFO                            @"get_transaction_info"
 #define COMMAND_GET_CHECKOUT_DETAILS                            @"get_checkout_details"
-#define COMMAND_CHECKOUTX_IFSC                                  @"checkoutx_IFSC"
+#define COMMAND_CHECKOUTX_IFSC                                  @"fetch_IFSC"
 #define COMMAND_CHECK_BALANCE                                   @"check_balance"
 #define COMMAND_GET_PAYMENT_INSTRUMENT                          @"get_payment_instrument"
 #define COMMAND_DELETE_PAYMENT_INSTRUMENT                       @"delete_payment_instrument"
@@ -258,6 +265,8 @@
 #define COMMAND_VERIFY_SIGN_IN_OTP                              @"verify_sign_in_otp"
 #define COMMAND_RESEND_SIGN_IN_OTP                              @"resend_sign_in_otp"
 #define COMMAND_FETCH_QUICK_PAY_OPTION                          @"fetch_quick_pay_option"
+#define COMMAND_DELETE_QUICK_PAY_OPTION                         @"delete_quick_pay_option"
+#define COMMAND_FETCH_EMI_CALCULATOR                            @"fetch_emi_calculator"
 
 // Endpoints for webservice
 
@@ -271,10 +280,12 @@
 #define FETCH_ASSETS                                            @"/ads/FetchAssets"
 #define POST_ADS_IMPRESSION                                     @"/ads/impression"
 #define UPDATE_PAYU_ID                                          @"/ads/update_payuId"
-#define SIGNIN_REQUEST_FOR_MOBILE                               @"/otp/send"
-#define VERIFY_MOBILE_OTP                                       @"/otp/verify"
-#define RESEND_REQUEST_FOR_OTP                                  @"/otp/resend"
+#define SIGNIN_REQUEST_FOR_MOBILE                               @"/otp/sdk/send"
+#define VERIFY_MOBILE_OTP                                       @"/otp/sdk/verify"
+#define RESEND_REQUEST_FOR_OTP                                  @"/otp/sdk/resend"
 #define QUICK_PAY_FETCH_REQUEST                                 @"/recommendation/v1/fetch"
+#define QUICK_PAY_UPDATE_CONSENT_REQUEST                        @"/sdk/instrumentDetail/consent"
+#define EMI_CALCULATOR                                          @"/calculateEmi/v3"
 // HTTP MEthods
 #define HTTP_METHOD_GET                                         @"GET"
 #define HTTP_METHOD_POST                                        @"POST"
@@ -326,9 +337,10 @@
 #define     PARAM_MOBILE_FOOTER                                 @"mobile_footer"
 #define     PARAM_ASSETS                                        @"assets"
 //merchant param
-
+#define     PARAM_IS_OFFER_ENABLE                               @"isOfferEnabled"
 #define     PARAM_IS_AD_ENABLE                                  @"isAdsEnabled"
 #define     PARAM_IS_QUICKPAY_ENABLE                            @"isQuickPayEnabled"
+#define     PARAM_IS_QUICKPAY_BOTTOMSHEET_ENABLE                @"isQuickPayBottomSheetEnabled"
 #define     PARAM_MERCHANT                                      @"merchant_param"
 
 //Global vault
@@ -390,6 +402,7 @@
 #define     PARAM_SUBVENTION_AMOUNT                             @"subvention_amount"
 #define     PARAM_NOTIFYURL                                     @"notifyurl"
 
+#define     PARAM_DEVICE_ID                                     @"deviceId"
 #define     PARAM_DEVICE_TYPE                                   @"device_type"
 #define     PARAM_INSTRUMENT_TYPE                               @"instrument_type"
 #define     PARAM_INSTRUMENT_ID                                 @"instrument_id"
@@ -458,6 +471,7 @@
 #define     KEY_VERIFICATION_MODE                               @"verificationMode"
 #define     KEY_IBIBOCODE                                       @"ibiboCode"
 #define     KEY_IMAGE_URL                                       @"imageURL"
+#define     KEY_PAYMENT_CODE                                    @"paymentCode"
 #define     KEY_UPI_APP_NAME                                    @"upiAppName"
 
 //EMI parsing elements
@@ -539,6 +553,8 @@
 #define     KEY_OWNERNAME                                       @"ownerName"
 #define     KEY_VALIDTHROUGH                                    @"validThrough"
 #define     KEY_USERCREDENTIAL                                  @"userCredential"
+#define     KEY_SKU_ID                                          @"skuId"
+#define     KEY_SKU_AMOUNT                                      @"skuAmount"
 
 #define     NO_NETBANKING                                       @"NetBanking is unavailable"
 #define     NO_STORED_CARDS                                     @"No Stored cards available"
@@ -623,6 +639,7 @@
 #define     PAYMENT_PG_PAY                                       @"PAY"
 #define     PAYMENT_PG_EFTAXIS                                  @"EFTAXIS"
 #define     PAYMENT_PG_BNPL                                     @"BNPL"
+#define     PAYMENT_PG_GPAY                                     @"googlepay"
 
 // PG Type
 
@@ -696,6 +713,7 @@
 #define     KEY_MERCHANT_SUBVENTION_AMOUNT                      @"merchant_subvention_amount"
 // SaveUserCard & EditUserCard API parsing elements
 #define     KEY_CARDTOKEN                                       @"cardToken"
+#define     KEY_CARDTOKENTYPE                                   @"cardTokenType"
 #define     KEY_CARD_LABEL                                      @"card_label"
 #define     KEY_CARD_NUMBER                                     @"card_number"
 
@@ -867,9 +885,28 @@ typedef NS_ENUM(NSUInteger, PayUAPIVersion) {
 #define     PARAM_PLATFORM_ID                                   @"platformId"
 #define     PARAM_USER_DETAILS                                  @"userDetail"
 #define     PARAM_PHONE_NO                                      @"phoneNo"
+#define     PARAM_SKU_DETAILS                                   @"skusDetail"
 
 // Has String Constants
 #define     KEY_HASH_NAME                                       @"hashName"
 #define     KEY_HASH_STRING                                     @"hashString"
+
+//EMI calculator
+#define     PARAM_TXN_AMOUNT                                    @"txnAmount"
+#define     PARAM_AUTO_APPLY                                    @"autoApply"
+#define     PARAM_AUTO_APPLY_OFFER                              @"autoApplyOffer"
+#define     PARAM_EMI_CODES                                     @"emiCodes"
+#define     PARAM_ADDITIONAL_CHARGES                            @"additionalCharges"
+#define     PARAM_BANK_CODES                                    @"bankCodes"
+#define     PARAM_DISABLE_OVERRIDE_NCE_CONFIG                   @"disableOverrideNceConfig"
+#define     PARAM_SKUS                                          @"skus"
+
+#define     VALUE_TRUE                                          @"true"
+#define     VALUE_FALSE                                         @"false"
+
+#define     PARAM_CONSENT                                       @"consent"
+#define     PARAM_PAYMENT_MODE                                  @"paymentMode"
+#define     PARAM_PG_TITLE                                      @"pgTitle"
+#define     PARAM_PG_DETAILS                                    @"pgDetails"
 
 #endif /* PayUConstants_h */

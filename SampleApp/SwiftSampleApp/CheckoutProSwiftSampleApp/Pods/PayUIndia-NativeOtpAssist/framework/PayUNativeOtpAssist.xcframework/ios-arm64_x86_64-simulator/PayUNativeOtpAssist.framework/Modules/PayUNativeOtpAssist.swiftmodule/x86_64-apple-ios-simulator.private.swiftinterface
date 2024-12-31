@@ -1,10 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUNativeOtpAssist
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUNativeOtpAssist
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreTelephony
+import DeveloperToolsSupport
 import Foundation
-import PayUAnalytics
+import PayUAnalyticsKit
 import PayUCommonUI
 import PayUCrashReporter
 @_exported import PayUNativeOtpAssist
@@ -12,33 +13,35 @@ import PayUNetworkReachability
 import PayUParamsKit
 import SafariServices
 import Swift
+import SwiftUI
 import SystemConfiguration
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 extension PayUParamsKit.PayUError {
-  public var formattedErrorCode: Swift.String {
-    get
+  @objc dynamic public var formattedErrorCode: Swift.String {
+    @objc get
   }
-  public var formattedErrorDescription: Swift.String {
-    get
+  @objc dynamic public var formattedErrorDescription: Swift.String {
+    @objc get
   }
-  public var isKindOfPaymentFailure: Swift.Bool {
-    get
+  @objc dynamic public var isKindOfPaymentFailure: Swift.Bool {
+    @objc get
   }
-  public var isKnownError: Swift.Bool {
-    get
+  @objc dynamic public var isKnownError: Swift.Bool {
+    @objc get
   }
 }
 @objc public protocol PayUOtpAssistAPIProtocol {
-  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func initiatePayment(postData: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func submitOTP(otp: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func resendOTP(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func cancelTransaction(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func cancelWebViewTransaction(cookies: [Foundation.HTTPCookie], completion: @escaping (_ response: Any?, _ error: Swift.Error?) -> Swift.Void)
-  @objc func checkTransactionStatus(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUModelAPIResponse?, _ error: Swift.Error?) -> Swift.Void)
+  @objc func initiatePayment(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func initiatePayment(postData: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func submitOTP(otp: Swift.String, completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func resendOTP(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func cancelTransaction(completion: @escaping (_ response: PayUParamsKit.PayUVerifyPayment?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func cancelWebViewTransaction(cookies: [Foundation.HTTPCookie], completion: @escaping (_ response: Any?, _ error: (any Swift.Error)?) -> Swift.Void)
+  @objc func checkTransactionStatus(paymentParam: PayUParamsKit.PayUPaymentParam, completion: @escaping (_ response: PayUParamsKit.PayUModelAPIResponse?, _ error: (any Swift.Error)?) -> Swift.Void)
 }
 @objc public protocol PayUOtpAssistDelegate {
   @objc func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
@@ -46,7 +49,7 @@ extension PayUParamsKit.PayUError {
   @objc func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
   @objc optional func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
-  @objc func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping (_ hashDict: [Swift.String : Swift.String]) -> Swift.Void)
+  @objc optional func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping (_ hashDict: [Swift.String : Swift.String]) -> Swift.Void)
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssistConfig : ObjectiveC.NSObject {
   @objc public var themeColor: UIKit.UIColor
@@ -62,12 +65,12 @@ extension PayUParamsKit.PayUError {
   @objc deinit
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public static let modelName: Swift.String
-  @_Concurrency.MainActor(unsafe) public static let signalStrength: Swift.Int?
+  @_Concurrency.MainActor @preconcurrency public static let modelName: Swift.String
+  @_Concurrency.MainActor @preconcurrency public static let signalStrength: Swift.Int?
 }
 @_inheritsConvenienceInitializers @objc public class PayUOtpAssist : ObjectiveC.NSObject {
-  @objc public static func open(parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
-  @objc public static func open(parentVC: UIKit.UIViewController, postData: Swift.String, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: PayUNativeOtpAssist.PayUOtpAssistDelegate)
+  @objc public static func open(parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: any PayUNativeOtpAssist.PayUOtpAssistDelegate)
+  @objc public static func open(parentVC: UIKit.UIViewController, postData: Swift.String, config: PayUNativeOtpAssist.PayUOtpAssistConfig? = nil, delegate: any PayUNativeOtpAssist.PayUOtpAssistDelegate)
   public static func start()
   @objc override dynamic public init()
   @objc deinit

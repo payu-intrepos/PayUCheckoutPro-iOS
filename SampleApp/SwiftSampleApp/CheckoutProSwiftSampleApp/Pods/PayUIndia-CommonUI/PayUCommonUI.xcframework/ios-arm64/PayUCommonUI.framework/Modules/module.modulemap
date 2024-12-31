@@ -1,7 +1,7 @@
 framework module PayUCommonUI {
   umbrella header "PayUCommonUI.h"
-
   export *
+
   module * { export * }
 }
 

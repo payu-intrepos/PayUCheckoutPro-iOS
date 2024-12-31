@@ -1,6 +1,0 @@
-framework module PayUAnalytics {
-    umbrella header "PayUAnalytics.h"
-
-    export *
-    module * { export * }
-}

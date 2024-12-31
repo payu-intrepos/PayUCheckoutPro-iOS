@@ -1,7 +1,7 @@
 framework module PayUAssetLibraryKit {
   umbrella header "PayUAssetLibraryKit.h"
-
   export *
+
   module * { export * }
 }
 

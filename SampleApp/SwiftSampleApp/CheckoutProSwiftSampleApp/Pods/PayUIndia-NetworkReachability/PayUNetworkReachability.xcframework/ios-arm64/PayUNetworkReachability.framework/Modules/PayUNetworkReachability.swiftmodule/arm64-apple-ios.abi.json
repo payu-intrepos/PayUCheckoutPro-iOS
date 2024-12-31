@@ -1,0 +1,2171 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkReachability",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PayUNetworkReachability"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUReachabilityError",
+        "printedName": "PayUReachabilityError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "failedToCreateWithAddress",
+            "printedName": "failedToCreateWithAddress",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkReachability.PayUReachabilityError.Type) -> (Darwin.sockaddr, Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Darwin.sockaddr, Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Darwin.sockaddr, Swift.Int32)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "sockaddr",
+                            "printedName": "Darwin.sockaddr",
+                            "usr": "c:@S@sockaddr"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkReachability.PayUReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO25failedToCreateWithAddressyACSo8sockaddrV_s5Int32VtcACmF",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO25failedToCreateWithAddressyACSo8sockaddrV_s5Int32VtcACmF",
+            "moduleName": "PayUNetworkReachability"
+          },
+          {
+            "kind": "Var",
+            "name": "failedToCreateWithHostname",
+            "printedName": "failedToCreateWithHostname",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkReachability.PayUReachabilityError.Type) -> (Swift.String, Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String, Swift.Int32)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int32",
+                            "printedName": "Swift.Int32",
+                            "usr": "s:s5Int32V"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkReachability.PayUReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO26failedToCreateWithHostnameyACSS_s5Int32VtcACmF",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO26failedToCreateWithHostnameyACSS_s5Int32VtcACmF",
+            "moduleName": "PayUNetworkReachability"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToSetCallback",
+            "printedName": "unableToSetCallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkReachability.PayUReachabilityError.Type) -> (Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkReachability.PayUReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO19unableToSetCallbackyACs5Int32VcACmF",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO19unableToSetCallbackyACs5Int32VcACmF",
+            "moduleName": "PayUNetworkReachability"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToSetDispatchQueue",
+            "printedName": "unableToSetDispatchQueue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkReachability.PayUReachabilityError.Type) -> (Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkReachability.PayUReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO24unableToSetDispatchQueueyACs5Int32VcACmF",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO24unableToSetDispatchQueueyACs5Int32VcACmF",
+            "moduleName": "PayUNetworkReachability"
+          },
+          {
+            "kind": "Var",
+            "name": "unableToGetFlags",
+            "printedName": "unableToGetFlags",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUNetworkReachability.PayUReachabilityError.Type) -> (Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int32) -> PayUNetworkReachability.PayUReachabilityError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int32",
+                        "printedName": "Swift.Int32",
+                        "usr": "s:s5Int32V"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUNetworkReachability.PayUReachabilityError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilityError",
+                        "printedName": "PayUNetworkReachability.PayUReachabilityError",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO16unableToGetFlagsyACs5Int32VcACmF",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO16unableToGetFlagsyACs5Int32VcACmF",
+            "moduleName": "PayUNetworkReachability"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:23PayUNetworkReachability0A18UReachabilityErrorO",
+        "mangledName": "$s23PayUNetworkReachability0A18UReachabilityErrorO",
+        "moduleName": "PayUNetworkReachability",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Var",
+        "name": "kPayUNetworkReachabilityChangedNotification",
+        "printedName": "kPayUNetworkReachabilityChangedNotification",
+        "children": [
+          {
+            "kind": "TypeNominal",
+            "name": "String",
+            "printedName": "Swift.String",
+            "usr": "s:SS"
+          }
+        ],
+        "declKind": "Var",
+        "usr": "s:23PayUNetworkReachability01kabC19ChangedNotificationSSvp",
+        "mangledName": "$s23PayUNetworkReachability01kabC19ChangedNotificationSSvp",
+        "moduleName": "PayUNetworkReachability",
+        "declAttributes": [
+          "HasInitialValue",
+          "HasStorage",
+          "AccessControl"
+        ],
+        "isLet": true,
+        "hasStorage": true,
+        "accessors": [
+          {
+            "kind": "Accessor",
+            "name": "Get",
+            "printedName": "Get()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Accessor",
+            "usr": "s:23PayUNetworkReachability01kabC19ChangedNotificationSSvg",
+            "mangledName": "$s23PayUNetworkReachability01kabC19ChangedNotificationSSvg",
+            "moduleName": "PayUNetworkReachability",
+            "implicit": true,
+            "accessorKind": "get"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PayUReachabilitySwift",
+        "printedName": "PayUReachabilitySwift",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PayUReachabilitySwift",
+                    "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                    "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(cpy)shared",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC6sharedACSgvpZ",
+            "moduleName": "PayUNetworkReachability",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PayUNetworkReachability.PayUReachabilitySwift?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilitySwift",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                        "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(cm)shared",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC6sharedACSgvgZ",
+                "moduleName": "PayUNetworkReachability",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Connection",
+            "printedName": "Connection",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unavailable",
+                "printedName": "unavailable",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayUNetworkReachability.PayUReachabilitySwift.Connection.Type) -> PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11unavailableyA2EmF",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11unavailableyA2EmF",
+                "moduleName": "PayUNetworkReachability"
+              },
+              {
+                "kind": "Var",
+                "name": "wifi",
+                "printedName": "wifi",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayUNetworkReachability.PayUReachabilitySwift.Connection.Type) -> PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO4wifiyA2EmF",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO4wifiyA2EmF",
+                "moduleName": "PayUNetworkReachability"
+              },
+              {
+                "kind": "Var",
+                "name": "cellular",
+                "printedName": "cellular",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayUNetworkReachability.PayUReachabilitySwift.Connection.Type) -> PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Connection",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                        "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Connection",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO8cellularyA2EmF",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO8cellularyA2EmF",
+                "moduleName": "PayUNetworkReachability"
+              },
+              {
+                "kind": "Var",
+                "name": "description",
+                "printedName": "description",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11descriptionSSvp",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11descriptionSSvp",
+                "moduleName": "PayUNetworkReachability",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11descriptionSSvg",
+                    "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO11descriptionSSvg",
+                    "moduleName": "PayUNetworkReachability",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO2eeoiySbAE_AEtFZ",
+                "moduleName": "PayUNetworkReachability",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO9hashValueSivp",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO9hashValueSivp",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO9hashValueSivg",
+                    "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO9hashValueSivg",
+                    "moduleName": "PayUNetworkReachability",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO4hash4intoys6HasherVz_tF",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenReachable",
+            "printedName": "whenReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilitySwift",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                        "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvp",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUReachabilitySwift",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvg",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvg",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUReachabilitySwift",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvs",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvs",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvM",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC13whenReachableyACcSgvM",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "whenUnreachable",
+            "printedName": "whenUnreachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PayUReachabilitySwift",
+                        "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                        "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvp",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUReachabilitySwift",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvg",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvg",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "((PayUNetworkReachability.PayUReachabilitySwift) -> ())?",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(PayUNetworkReachability.PayUReachabilitySwift) -> ()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Void",
+                            "printedName": "()"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUReachabilitySwift",
+                            "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvs",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvs",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvM",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC15whenUnreachableyACcSgvM",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allowsCellularConnection",
+            "printedName": "allowsCellularConnection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvp",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvg",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvg",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvs",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvs",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvM",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC24allowsCellularConnectionSbvM",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notificationCenter",
+            "printedName": "notificationCenter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NotificationCenter",
+                "printedName": "Foundation.NotificationCenter",
+                "usr": "c:objc(cs)NSNotificationCenter"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvp",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationCenter",
+                    "printedName": "Foundation.NotificationCenter",
+                    "usr": "c:objc(cs)NSNotificationCenter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvg",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvg",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NotificationCenter",
+                    "printedName": "Foundation.NotificationCenter",
+                    "usr": "c:objc(cs)NSNotificationCenter"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvs",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0Cvs",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0CvM",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18notificationCenterSo014NSNotificationG0CvM",
+                "moduleName": "PayUNetworkReachability",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connection",
+            "printedName": "connection",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Connection",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10connectionAC10ConnectionOvp",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10connectionAC10ConnectionOvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Connection",
+                    "printedName": "PayUNetworkReachability.PayUReachabilitySwift.Connection",
+                    "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10ConnectionO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC10connectionAC10ConnectionOvg",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC10connectionAC10ConnectionOvg",
+                "moduleName": "PayUNetworkReachability",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(reachabilityRef:queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUReachabilitySwift",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SCNetworkReachability",
+                "printedName": "SystemConfiguration.SCNetworkReachability",
+                "usr": "c:@T@SCNetworkReachabilityRef"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC15reachabilityRef8queueQoS11targetQueue012notificationK0ACSo09SCNetworkcG0a_8Dispatch0nI1SVSo012OS_dispatch_H0CSgAOtcfc",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC15reachabilityRef8queueQoS11targetQueue012notificationK0ACSo09SCNetworkcG0a_8Dispatch0nI1SVSo012OS_dispatch_H0CSgAOtcfc",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "AccessControl",
+              "Required"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(hostname:queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUReachabilitySwift",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC8hostname8queueQoS11targetQueue012notificationJ0ACSS_8Dispatch0lH1SVSo012OS_dispatch_G0CSgAMtKcfc",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC8hostname8queueQoS11targetQueue012notificationJ0ACSS_8Dispatch0lH1SVSo012OS_dispatch_G0CSgAMtKcfc",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(queueQoS:targetQueue:notificationQueue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUReachabilitySwift",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQoS",
+                "printedName": "Dispatch.DispatchQoS",
+                "hasDefaultArg": true,
+                "usr": "s:8Dispatch0A3QoSV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Dispatch.DispatchQueue?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:23PayUNetworkReachability0A18UReachabilitySwiftC8queueQoS11targetQueue012notificationI0AC8Dispatch0kG1SV_So012OS_dispatch_F0CSgALtKcfc",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC8queueQoS11targetQueue012notificationI0AC8Dispatch0kG1SV_So012OS_dispatch_F0CSgALtKcfc",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PayUReachabilitySwift",
+                "printedName": "PayUNetworkReachability.PayUReachabilitySwift",
+                "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)init",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftCACycfc",
+            "moduleName": "PayUNetworkReachability",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "startNotifier",
+            "printedName": "startNotifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)startNotifier",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC13startNotifieryyF",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopNotifier",
+            "printedName": "stopNotifier()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)stopNotifier",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC12stopNotifieryyF",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isNotifierRunning",
+            "printedName": "isNotifierRunning()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)isNotifierRunning",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC17isNotifierRunningSbyF",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "isReachable",
+            "printedName": "isReachable",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(py)isReachable",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC11isReachableSbvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)isReachable",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC11isReachableSbvg",
+                "moduleName": "PayUNetworkReachability",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isReachableViaWWAN",
+            "printedName": "isReachableViaWWAN",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(py)isReachableViaWWAN",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18isReachableViaWWANSbvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)isReachableViaWWAN",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18isReachableViaWWANSbvg",
+                "moduleName": "PayUNetworkReachability",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isReachableViaWiFi",
+            "printedName": "isReachableViaWiFi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(py)isReachableViaWiFi",
+            "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18isReachableViaWiFiSbvp",
+            "moduleName": "PayUNetworkReachability",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@PayUNetworkReachability@objc(cs)PayUReachabilitySwift(im)isReachableViaWiFi",
+                "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC18isReachableViaWiFiSbvg",
+                "moduleName": "PayUNetworkReachability",
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@PayUNetworkReachability@objc(cs)PayUReachabilitySwift",
+        "mangledName": "$s23PayUNetworkReachability0A18UReachabilitySwiftC",
+        "moduleName": "PayUNetworkReachability",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Name",
+        "printedName": "Name",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "payuReachabilityChanged",
+            "printedName": "payuReachabilityChanged",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Name",
+                "printedName": "Foundation.NSNotification.Name",
+                "usr": "c:@T@NSNotificationName"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So18NSNotificationNamea23PayUNetworkReachabilityE04payuE7ChangedABvpZ",
+            "mangledName": "$sSo18NSNotificationNamea23PayUNetworkReachabilityE04payuE7ChangedABvpZ",
+            "moduleName": "PayUNetworkReachability",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "isFromExtension": true,
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Name",
+                    "printedName": "Foundation.NSNotification.Name",
+                    "usr": "c:@T@NSNotificationName"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So18NSNotificationNamea23PayUNetworkReachabilityE04payuE7ChangedABvgZ",
+                "mangledName": "$sSo18NSNotificationNamea23PayUNetworkReachabilityE04payuE7ChangedABvgZ",
+                "moduleName": "PayUNetworkReachability",
+                "static": true,
+                "implicit": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "c:@T@NSNotificationName",
+        "moduleName": "Foundation",
+        "declAttributes": [
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "SynthesizedProtocol",
+          "Sendable"
+        ],
+        "isFromExtension": true,
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSString",
+                    "printedName": "Foundation.NSString",
+                    "usr": "c:objc(cs)NSString"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_SwiftNewtypeWrapper",
+            "printedName": "_SwiftNewtypeWrapper",
+            "usr": "s:s20_SwiftNewtypeWrapperP",
+            "mangledName": "$ss20_SwiftNewtypeWrapperP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 1660,
+      "length": 45,
+      "value": "\"kPayUNetworkReachabilityChangedNotification\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 2316,
+      "length": 10,
+      "value": "\"Cellular\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 2358,
+      "length": 6,
+      "value": "\"WiFi\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 2403,
+      "length": 15,
+      "value": "\"No Connection\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3380,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3452,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4112,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 4224,
+      "length": 22,
+      "value": "\"com.payuReachability\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 1870,
+      "length": 21,
+      "value": "\"PayUNetworkReachability.PayUReachabilitySwift\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6714,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 7733,
+      "length": 5,
+      "value": "\"nil\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8379,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "BooleanLiteral",
+      "offset": 8457,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12107,
+      "length": 3,
+      "value": "\"W\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12113,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12154,
+      "length": 3,
+      "value": "\"R\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12160,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12210,
+      "length": 3,
+      "value": "\"c\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12216,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12267,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12273,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12325,
+      "length": 3,
+      "value": "\"i\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12331,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12382,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12388,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12438,
+      "length": 3,
+      "value": "\"D\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12444,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12488,
+      "length": 3,
+      "value": "\"l\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12494,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12532,
+      "length": 3,
+      "value": "\"d\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12538,
+      "length": 3,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12558,
+      "length": 39,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12563,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12567,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12572,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12576,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12580,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12584,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12588,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12592,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/payunetworkreachability\/PayUNetworkReachability\/PayUNetworkReachability\/PayUReachabilitySwift.swift",
+      "kind": "StringLiteral",
+      "offset": 12596,
+      "length": 1,
+      "value": "\"\""
+    }
+  ]
+}

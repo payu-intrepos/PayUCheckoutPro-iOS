@@ -1,0 +1,6 @@
+framework module PayUAnalyticsKit {
+  umbrella header "PayUAnalyticsKit.h"
+  export *
+
+  module * { export * }
+}

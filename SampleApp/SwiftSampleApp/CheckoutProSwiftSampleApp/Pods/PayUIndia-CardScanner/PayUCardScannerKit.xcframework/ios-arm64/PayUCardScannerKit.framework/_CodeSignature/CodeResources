@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		sm1Zm68QJ4AE7gLJxiDnB6skR6U=
+		dQeIfSzgiiJOV5Bdo2Rr/dCf2qo=
 		</data>
 		<key>Headers/PUCardScanner.h</key>
 		<data>
@@ -14,39 +14,39 @@
 		</data>
 		<key>Headers/PayUCardScannerKit-Swift.h</key>
 		<data>
-		XR/8X3bomsJQH/c4fmJ/mlJJue0=
+		nBLH863NwJwPrW4D0T3CkgdWtmY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uNz3QC7GCT0uZdFFO/nJdR1itYs=
+		mX1yNZtAuqvQqQwoHKhtux7pGus=
+		</data>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		PvrC3m8CdpVhvk5RoNUDnRBa5ug=
+		</data>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		3QL+u52Ww9Ed0m/NmmtOX46Z904=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		YPtdBXSYdNs9uDTllGXfNGY347o=
+		9ZmDZh6WhVtLJsDpq/5BggRD0sY=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AVHJXYLNHTdBJF4JcJxzAlJmpv8=
+		3QL+u52Ww9Ed0m/NmmtOX46Z904=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		4YsYMoq91b/Hg6Ofo2lJA+6szHE=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		YPtdBXSYdNs9uDTllGXfNGY347o=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftinterface</key>
-		<data>
-		AVHJXYLNHTdBJF4JcJxzAlJmpv8=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		4YsYMoq91b/Hg6Ofo2lJA+6szHE=
+		3aWTYDLeCvMSO784cHWSqn/kS+I=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		URepRSGSP4chx2/s7b53MQ4BNYQ=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fLNKp78ir2ecqc91+dX4xB2k4sLLYWC/0iBBNxdlrgo=
+			ZuJrFh5HWEbzamFrViEsKZVE55UJOtIVpGbh9lea2eY=
 			</data>
 		</dict>
 		<key>Headers/PUCardScanner.h</key>
@@ -69,49 +69,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jgqqZvH97UabP32qXn/fJWjMjGMCiLqcV1tdjlX7bv0=
+			bvkENIAADBkcFJujto8rN7F1KWkTqApHwkTPO0XdmXc=
+			</data>
+		</dict>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cEpYzCGhxYM4UbkAryqZSXzQTtDKefxZ9q8tmKnEP7o=
+			</data>
+		</dict>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			XEliD/y3paya2i4wZ/fhgEPBJSuH5YkxX/JsOuFybm8=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NMq40KCxx8kkbce0Lyunk9Y+HHtEx30aOcoapd7o2qw=
+			jyAPMH9+AcMumgVqkNw92myFAYNQSKFicT5MyzFPgBk=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/YzlxXtMZ+BxOoZbkVzsgQf4qQz8V+BN15O4UoXDBgg=
+			XEliD/y3paya2i4wZ/fhgEPBJSuH5YkxX/JsOuFybm8=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZXlrrTyC0Y8CeUq9mCTTlGSjAn9ac8MhxAJWVoDYDks=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NMq40KCxx8kkbce0Lyunk9Y+HHtEx30aOcoapd7o2qw=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/YzlxXtMZ+BxOoZbkVzsgQf4qQz8V+BN15O4UoXDBgg=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZXlrrTyC0Y8CeUq9mCTTlGSjAn9ac8MhxAJWVoDYDks=
+			DgI2RD7hHd9GakzWLiN83163ahqYMxMj712ag6g1WAQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -119,6 +112,13 @@
 			<key>hash2</key>
 			<data>
 			hlpcZkyyXyPxXvLwBtOhLiSs4CFtuQtWQ3eXrEwXDiI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
 			</data>
 		</dict>
 	</dict>

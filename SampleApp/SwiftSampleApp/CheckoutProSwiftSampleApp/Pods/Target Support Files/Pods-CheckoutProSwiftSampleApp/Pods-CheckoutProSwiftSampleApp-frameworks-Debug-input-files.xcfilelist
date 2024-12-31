@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-CheckoutProSwiftSampleApp/Pods-CheckoutProSwiftSampleApp-frameworks.sh
-${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalytics.framework/PayUAnalytics
+${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-Analytics/PayUAnalyticsKit.framework/PayUAnalyticsKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-AssetLibrary/PayUAssetLibraryKit.framework/PayUAssetLibraryKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CardScanner/PayUCardScannerKit.framework/PayUCardScannerKit
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/PayUIndia-CheckoutPro/PayUCheckoutProKit.framework/PayUCheckoutProKit

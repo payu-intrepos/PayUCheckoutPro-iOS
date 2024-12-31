@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		sm1Zm68QJ4AE7gLJxiDnB6skR6U=
+		dQeIfSzgiiJOV5Bdo2Rr/dCf2qo=
 		</data>
 		<key>Headers/PUCardScanner.h</key>
 		<data>
@@ -14,63 +14,59 @@
 		</data>
 		<key>Headers/PayUCardScannerKit-Swift.h</key>
 		<data>
-		JgYgkXCQ4MRxAH+LN9l2pNcWvz8=
+		FoPuqsZdpq3O0lQ/L+xIAVgsC/c=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		borF+yboXubIciqkNsBPmfY4PcM=
+		xezZlrwjr4b22dhx0pVyfqRkpOk=
+		</data>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		vOHSKs/FKS/MFdsCQUAfC5mZHEw=
+		</data>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		pGGVEsmh/8tYukShhc4VeTXwQ50=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		O6caxbTnobLTCoDKgWYnmlL0vZQ=
+		gBD3aDH3LAY+Sb6TjvZ9dhTcaPI=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		bTEX3sK9ICtWN+iqOMu0YJrdHUk=
+		pGGVEsmh/8tYukShhc4VeTXwQ50=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZNAXUYYP7d5ZklQD5otYZEUiQ2o=
+		upvust5SYsSUrD+Ey3zgfjIwOQw=
 		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		O6caxbTnobLTCoDKgWYnmlL0vZQ=
+		vOHSKs/FKS/MFdsCQUAfC5mZHEw=
 		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		bTEX3sK9ICtWN+iqOMu0YJrdHUk=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		ZNAXUYYP7d5ZklQD5otYZEUiQ2o=
+		lmH4wrEsmsTWls+CTt9ljWU/oAU=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		kcFH3zBL+wU5c4qGDq3RkF5S5Fk=
+		7ypBtSRvet05J/Oyb3/+Q2LMlvo=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		b40/Fz9XNDq1UFEm6cOdFG5pAGw=
+		lmH4wrEsmsTWls+CTt9ljWU/oAU=
 		</data>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KnHnQP1J4FugunntbzJiCeQ1vx8=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		kcFH3zBL+wU5c4qGDq3RkF5S5Fk=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		b40/Fz9XNDq1UFEm6cOdFG5pAGw=
-		</data>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		KnHnQP1J4FugunntbzJiCeQ1vx8=
+		Ld36IKtqVbL9fekzY9rxZnTriwg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		URepRSGSP4chx2/s7b53MQ4BNYQ=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		ZajnvEs/MYRS3X4TPLAhBWi8mc4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -79,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fLNKp78ir2ecqc91+dX4xB2k4sLLYWC/0iBBNxdlrgo=
+			ZuJrFh5HWEbzamFrViEsKZVE55UJOtIVpGbh9lea2eY=
 			</data>
 		</dict>
 		<key>Headers/PUCardScanner.h</key>
@@ -93,91 +89,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			bBYGXFPAouEHg5OrPCDflFcUD6xjSFHZ82kF21/+QQE=
+			24/3uYWFmcrOVXhLa+7ytOu8JF0zf//lFMpbIRiT66I=
+			</data>
+		</dict>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			d9gfU3yd41itw+mg6Z8U+H3pXDOSd9Bytz8VBukl4Dg=
+			</data>
+		</dict>
+		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1Zj+In8kP+4fJSRN0P05k3EV51DcTrhecMK9CvFCD0k=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qvDR3o0nayAVKdyIIMQKxnYFX2m5XtWz3PICnCcnMIA=
+			2043Vyk6VELJF+g5oqxpqGNjXyrhh3QgReHPBZp0R1U=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iHGs7Kf2YkL/LzJxPSFTmCaEs/VVh2f9JwqPea75Gxs=
+			1Zj+In8kP+4fJSRN0P05k3EV51DcTrhecMK9CvFCD0k=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vwh1SregHBdDK80OLgE9EptWJz+zTNP2e2BYQCGYP3c=
+			lgDEs5kwY3UeZiJ/HmkA3ntaiTInS0BTTOMXbU00GIU=
 			</data>
 		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftdoc</key>
+		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qvDR3o0nayAVKdyIIMQKxnYFX2m5XtWz3PICnCcnMIA=
+			d9gfU3yd41itw+mg6Z8U+H3pXDOSd9Bytz8VBukl4Dg=
 			</data>
 		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftinterface</key>
+		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iHGs7Kf2YkL/LzJxPSFTmCaEs/VVh2f9JwqPea75Gxs=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/arm64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vwh1SregHBdDK80OLgE9EptWJz+zTNP2e2BYQCGYP3c=
+			pMByQBEe2Dg6+vJvByiHlkEK9OMzT616iiuU2m5jY8s=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Mci7NTK4BL16NaOJ0XCcdvMD6Nzz4JXY5lUZeEGkbjY=
+			ItAjRz9KDK3TxQSiSVTRotkgCcN/W+9U423M1VO7olo=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R6O/JAT30v1XWz8D14rmCWtlQ63u3DTd1+QspKKvgW0=
+			pMByQBEe2Dg6+vJvByiHlkEK9OMzT616iiuU2m5jY8s=
 			</data>
 		</dict>
 		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/D+ZlbAaIKw9Pijuv/vDbn/CjTXnQ0WJhtOnZTCt7Yw=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			Mci7NTK4BL16NaOJ0XCcdvMD6Nzz4JXY5lUZeEGkbjY=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			R6O/JAT30v1XWz8D14rmCWtlQ63u3DTd1+QspKKvgW0=
-			</data>
-		</dict>
-		<key>Modules/PayUCardScannerKit.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			/D+ZlbAaIKw9Pijuv/vDbn/CjTXnQ0WJhtOnZTCt7Yw=
+			RTbdDbl6ZTqLga21ef2s8Mt5gmp+ctRao5wBWCcsles=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -185,6 +167,13 @@
 			<key>hash2</key>
 			<data>
 			hlpcZkyyXyPxXvLwBtOhLiSs4CFtuQtWQ3eXrEwXDiI=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dLDNcvwjwe8wLyLuJ1P2GBfNxa8P96fy0GMrUk+4rOo=
 			</data>
 		</dict>
 	</dict>

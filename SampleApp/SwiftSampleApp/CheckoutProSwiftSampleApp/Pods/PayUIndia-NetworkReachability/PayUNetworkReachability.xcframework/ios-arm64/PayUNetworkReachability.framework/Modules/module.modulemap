@@ -1,0 +1,11 @@
+framework module PayUNetworkReachability {
+  umbrella header "PayUNetworkReachability.h"
+  export *
+
+  module * { export * }
+}
+
+module PayUNetworkReachability.Swift {
+  header "PayUNetworkReachability-Swift.h"
+  requires objc
+}
