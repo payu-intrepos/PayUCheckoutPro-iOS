@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name PayUParamsKit
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUParamsKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 @_exported import PayUParamsKit
 import Swift
@@ -54,6 +54,7 @@ import _SwiftConcurrencyShims
   @objc public var savedOptionObj: PayUParamsKit.PayUSupportedPaymentOptions?
   public var apiStatus: PayUParamsKit.ApiStatus?
   @objc public var id: Swift.Double
+  @objc public var ifscCode: Swift.String?
   @objc public var paymentType: PayUParamsKit.PaymentType {
     @objc get
   }
@@ -647,6 +648,7 @@ import _SwiftConcurrencyShims
   @objc public var beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType
   @objc public var verficationMode: Swift.String?
   @objc public init(beneficiaryName: Swift.String, beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String, beneficiaryAccountType: PayUParamsKit.BeneficiaryAccountType, verficationMode: Swift.String? = nil)
+  @objc public init(beneficiaryAccountNumber: Swift.String, beneficiaryIFSC: Swift.String)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
@@ -656,7 +658,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.BeneficiaryAccountType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
+  nonisolated public static var allCases: [PayUParamsKit.BeneficiaryAccountType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -669,7 +671,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.VerificationModeType]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.VerificationModeType] {
+  nonisolated public static var allCases: [PayUParamsKit.VerificationModeType] {
     get
   }
   public var rawValue: Swift.Int {
@@ -783,7 +785,7 @@ import _SwiftConcurrencyShims
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.PayULanguageCode]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.PayULanguageCode] {
+  nonisolated public static var allCases: [PayUParamsKit.PayULanguageCode] {
     get
   }
   public var rawValue: Swift.Int {
@@ -825,7 +827,7 @@ extension PayUParamsKit.PayULanguageCode {
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [PayUParamsKit.PayUBillingCycle]
   public typealias RawValue = Swift.Int
-  public static var allCases: [PayUParamsKit.PayUBillingCycle] {
+  nonisolated public static var allCases: [PayUParamsKit.PayUBillingCycle] {
     get
   }
   public var rawValue: Swift.Int {
@@ -1056,7 +1058,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [PayUParamsKit.PayUPaymentNavigationType]
   public typealias RawValue = Swift.String
-  public static var allCases: [PayUParamsKit.PayUPaymentNavigationType] {
+  nonisolated public static var allCases: [PayUParamsKit.PayUPaymentNavigationType] {
     get
   }
   public var rawValue: Swift.String {
@@ -1109,6 +1111,7 @@ public enum PayUPaymentNavigationType : Swift.String, Swift.CaseIterable {
   @objc public var subventionAmount: Swift.String?
   @objc public var skuDetail: PayUParamsKit.PayUSkuDetails?
   @objc public var skuCartDetail: Swift.String?
+  @objc public var payuBeneficieryDetails: [PayUParamsKit.PayUBeneficiaryParams]?
   @objc public init(key: Swift.String, transactionId: Swift.String, amount: Swift.String, productInfo: Swift.String, firstName: Swift.String, email: Swift.String, phone: Swift.String, surl: Swift.String, furl: Swift.String, environment: PayUParamsKit.Environment)
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit

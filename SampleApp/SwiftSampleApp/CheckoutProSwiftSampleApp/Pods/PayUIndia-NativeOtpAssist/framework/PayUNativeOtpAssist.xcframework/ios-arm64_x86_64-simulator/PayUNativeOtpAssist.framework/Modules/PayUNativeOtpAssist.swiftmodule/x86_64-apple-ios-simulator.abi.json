@@ -4385,1477 +4385,1477 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 226,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 246,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPCustomTextField.swift",
       "kind": "IntegerLiteral",
       "offset": 264,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 248,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 310,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 4,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 376,
       "length": 4,
       "value": "4864"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 435,
       "length": 4,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 494,
       "length": 4,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 553,
       "length": 4,
       "value": "1006"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 754,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 760,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 827,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 833,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 904,
       "length": 4,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 910,
       "length": 4,
       "value": "4864"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 980,
       "length": 4,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1050,
       "length": 4,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1120,
       "length": 4,
       "value": "1006"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1290,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1310,
       "length": 4,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1391,
       "length": 4,
       "value": "1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1397,
       "length": 4,
       "value": "1002"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1403,
       "length": 4,
       "value": "1003"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1409,
       "length": 4,
       "value": "1004"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1415,
       "length": 4,
       "value": "1005"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1421,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1426,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "IntegerLiteral",
       "offset": 1433,
       "length": 4,
       "value": "4864"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "BooleanLiteral",
       "offset": 1446,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/PayUError.swift",
       "kind": "BooleanLiteral",
       "offset": 1475,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
       "offset": 2041,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
       "kind": "FloatLiteral",
       "offset": 2073,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIView.swift",
       "kind": "IntegerLiteral",
       "offset": 2115,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Web View\/PayUWebViewPresenter.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Web View\/PayUWebViewPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 634,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Base\/PayUExpandingViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Base\/PayUExpandingViewController.swift",
       "kind": "Array",
       "offset": 466,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 487,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 546,
       "length": 5,
       "value": "10000"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 691,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 755,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 424,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "IntegerLiteral",
       "offset": 516,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 903,
       "length": 22,
       "value": "\"createLocalStatusBar\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1001,
       "length": 11,
       "value": "\"statusBar\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1084,
       "length": 12,
       "value": "\"_statusBar\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1168,
       "length": 13,
       "value": "\"currentData\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1252,
       "length": 15,
       "value": "\"cellularEntry\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1341,
       "length": 14,
       "value": "\"displayValue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1646,
       "length": 11,
       "value": "\"statusBar\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1773,
       "length": 20,
       "value": "\"UIStatusBar_Modern\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1922,
       "length": 11,
       "value": "\"statusBar\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 1962,
       "length": 16,
       "value": "\"foregroundView\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2069,
       "length": 16,
       "value": "\"foregroundView\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "Array",
       "offset": 2164,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2241,
       "length": 32,
       "value": "\"UIStatusBarDataNetworkItemView\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 2395,
       "length": 17,
       "value": "\"wifiStrengthRaw\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPColor.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPColor.swift",
       "kind": "FloatLiteral",
       "offset": 294,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
       "kind": "IntegerLiteral",
       "offset": 376,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
       "kind": "BooleanLiteral",
       "offset": 411,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewInteractor.swift",
       "kind": "BooleanLiteral",
       "offset": 449,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewPresenter.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewPresenter.swift",
       "kind": "StringLiteral",
       "offset": 494,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewPresenter.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/OTP\/PayUOTPViewPresenter.swift",
       "kind": "BooleanLiteral",
       "offset": 544,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Loader\/PayULoaderViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/Loader\/PayULoaderViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 306,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 25,
       "value": "\"check_secure_txn_status\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 3,
       "value": "\" \""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 1740,
       "length": 12,
       "value": "\"hashString\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 1792,
       "length": 10,
       "value": "\"hashType\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 1842,
       "length": 10,
       "value": "\"hashName\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
       "offset": 1892,
       "length": 10,
       "value": "\"postSalt\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/SFSafariViewController\/PayUSFSafariViewPresenter.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/SFSafariViewController\/PayUSFSafariViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 635,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/SFSafariViewController\/PayUSFSafariViewPresenter.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Modules\/SFSafariViewController\/PayUSFSafariViewPresenter.swift",
       "kind": "IntegerLiteral",
       "offset": 678,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 288,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "FloatLiteral",
       "offset": 348,
       "length": 3,
       "value": "0.4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 522,
       "length": 3,
       "value": "180"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 699,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 764,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 841,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 913,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 973,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1029,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 1080,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1130,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1188,
       "length": 12,
       "value": "\"otp_assist\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1242,
       "length": 21,
       "value": "\"PayUNativeOtpAssist\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1322,
       "length": 15,
       "value": "\"Please Wait..\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1381,
       "length": 25,
       "value": "\"Processing your request\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1450,
       "length": 25,
       "value": "\"Cancelling your payment\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1519,
       "length": 25,
       "value": "\"Confirming your payment\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1606,
       "length": 55,
       "value": "\"Confirming your payment. It is taking a little longer\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 34,
       "value": "\"Confirm Redirection to Bank Page\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1801,
       "length": 62,
       "value": "\"Do you want to complete OTP authentication on the bank page?\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1910,
       "length": 16,
       "value": "\"Cancel Payment\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 1975,
       "length": 50,
       "value": "\"Are you sure you want to cancel the transaction?\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2057,
       "length": 12,
       "value": "\"OTP Resent\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2101,
       "length": 12,
       "value": "\"Resend OTP\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2148,
       "length": 15,
       "value": "\"Resending OTP\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2188,
       "length": 4,
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2220,
       "length": 7,
       "value": "\"Alert\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2312,
       "length": 114,
       "value": "\"No Internet connection. Make sure you are connected to a Wifi network or mobile data is turned on and try again.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2467,
       "length": 22,
       "value": "\"Something went wrong\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2516,
       "length": 6,
       "value": "\"Back\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2557,
       "length": 17,
       "value": "\"Error Message \""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2602,
       "length": 7,
       "value": "\"apple\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2642,
       "length": 15,
       "value": "\"OTP invalid. \""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2696,
       "length": 32,
       "value": "\" retry attempts left out of 3.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2761,
       "length": 13,
       "value": "\"No Internet\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2807,
       "length": 13,
       "value": "\"Credit Card\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2852,
       "length": 12,
       "value": "\"Debit Card\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2896,
       "length": 12,
       "value": "\"Submit OTP\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2939,
       "length": 11,
       "value": "\"Enter OTP\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 2979,
       "length": 8,
       "value": "\"SUBMIT\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3045,
       "length": 43,
       "value": "\"Complete the transaction on the bank page\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3116,
       "length": 7,
       "value": "\"close\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3155,
       "length": 5,
       "value": "\"YES\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3191,
       "length": 4,
       "value": "\"NO\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3224,
       "length": 8,
       "value": "\"Paying\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3307,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3352,
       "length": 12,
       "value": "\"cb_version\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3397,
       "length": 12,
       "value": "\"os_version\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3443,
       "length": 14,
       "value": "\"network_info\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3495,
       "length": 18,
       "value": "\"network_strength\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3546,
       "length": 12,
       "value": "\"resolution\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3593,
       "length": 21,
       "value": "\"device_manufacturer\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3642,
       "length": 14,
       "value": "\"device_model\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3690,
       "length": 14,
       "value": "\"merchant_key\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3732,
       "length": 7,
       "value": "\"txnid\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3773,
       "length": 14,
       "value": "\"package_name\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3856,
       "length": 14,
       "value": "\"payuResponse\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3909,
       "length": 18,
       "value": "\"merchantResponse\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3957,
       "length": 9,
       "value": "\"observe\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 3998,
       "length": 11,
       "value": "\"onSuccess\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4041,
       "length": 11,
       "value": "\"onFailure\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4088,
       "length": 15,
       "value": "\"onPayuFailure\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4139,
       "length": 15,
       "value": "\"onPayuSuccess\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4185,
       "length": 10,
       "value": "\"response\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4226,
       "length": 10,
       "value": "\"Enrolled\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4270,
       "length": 14,
       "value": "\"Not_Enrolled\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4314,
       "length": 9,
       "value": "\"success\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4353,
       "length": 9,
       "value": "\"failure\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4391,
       "length": 8,
       "value": "\"failed\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4469,
       "length": 18,
       "value": "\"otp_assist_event\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4521,
       "length": 28,
       "value": "\"trxn_status_otp_assist_sdk\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4638,
       "length": 18,
       "value": "\"otp_assist_event\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4679,
       "length": 15,
       "value": "\"fragment_init\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4727,
       "length": 20,
       "value": "\"resend_otp_clicked\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4785,
       "length": 26,
       "value": "\"bank_redirect_confirm_no\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4850,
       "length": 27,
       "value": "\"bank_redirect_confirm_yes\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4909,
       "length": 19,
       "value": "\"cancel_confirm_no\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 4961,
       "length": 20,
       "value": "\"cancel_confirm_yes\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5015,
       "length": 21,
       "value": "\"cancel_dialog_shown\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5076,
       "length": 27,
       "value": "\"confirmation_dialog_shown\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5191,
       "length": 24,
       "value": "\"should_handle_fallback\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5255,
       "length": 44,
       "value": "\"payment_option_web_flow_through_issuer_url\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5341,
       "length": 46,
       "value": "\"payment_option_web_flow_through_acs_template\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5414,
       "length": 13,
       "value": "\"native_flow\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5461,
       "length": 21,
       "value": "\"otp_submit_manually\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5508,
       "length": 12,
       "value": "\"otp_resend\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5547,
       "length": 13,
       "value": "\"otp_fetched\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5594,
       "length": 22,
       "value": "\"secure_web_view_flow\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5650,
       "length": 21,
       "value": "\"secure_browser_flow\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5753,
       "length": 19,
       "value": "\"cancelTransaction\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5806,
       "length": 13,
       "value": "\"referenceId\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5845,
       "length": 5,
       "value": "\"otp\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5882,
       "length": 11,
       "value": "\"resendOtp\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5920,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5955,
       "length": 8,
       "value": "\"amount\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 5991,
       "length": 7,
       "value": "\"ccnum\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6031,
       "length": 12,
       "value": "\"creditcard\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6074,
       "length": 11,
       "value": "\"event_key\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6118,
       "length": 13,
       "value": "\"event_value\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6165,
       "length": 13,
       "value": "\"payUSdkName\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6215,
       "length": 16,
       "value": "\"payUSdkVersion\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6256,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6291,
       "length": 10,
       "value": "\"mihpayid\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6329,
       "length": 7,
       "value": "\"txnId\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6392,
       "length": 6,
       "value": "\"1001\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6426,
       "length": 6,
       "value": "\"1002\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6460,
       "length": 6,
       "value": "\"1003\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6494,
       "length": 6,
       "value": "\"1004\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6528,
       "length": 6,
       "value": "\"1005\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6562,
       "length": 6,
       "value": "\"1006\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6608,
       "length": 13,
       "value": "\"No Internet\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6660,
       "length": 50,
       "value": "\"Network timeout, please verify with your server.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6749,
       "length": 50,
       "value": "\"Gateway timeout, please verify with your server.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6838,
       "length": 52,
       "value": "\"User cancelled it, please verify with your server.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 6929,
       "length": 56,
       "value": "\"Something went wrong , please verify with your server.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7024,
       "length": 54,
       "value": "\"Bank page timed out, please verify with your server.\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 7106,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7173,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7214,
       "length": 6,
       "value": "\"Date\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7256,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7311,
       "length": 35,
       "value": "\"application\/x-www-form-urlencoded\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7384,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOTPConstants.swift",
       "kind": "StringLiteral",
       "offset": 7446,
       "length": 50,
       "value": "\"application\/x-www-form-urlencoded; charset=utf-8\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 616,
       "length": 6,
       "value": "\"blue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 748,
       "length": 10,
       "value": "\"blueGrey\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 888,
       "length": 12,
       "value": "\"buttonBlue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1034,
       "length": 14,
       "value": "\"darkBlueGrey\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1174,
       "length": 10,
       "value": "\"errorRed\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1302,
       "length": 6,
       "value": "\"pink\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1436,
       "length": 11,
       "value": "\"royalBlue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1587,
       "length": 17,
       "value": "\"veryLightPurple\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 12,
       "value": "\"backButton\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 1971,
       "length": 7,
       "value": "\"close\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2108,
       "length": 12,
       "value": "\"noInternet\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bjfibozcksbqmddjubpsmycsowca\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUNativeOtpAssist\/IntermediateBuildFilesPath\/PayUNativeOtpAssist.build\/Release-iphonesimulator\/PayUNativeOtpAssist.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 2254,
       "length": 14,

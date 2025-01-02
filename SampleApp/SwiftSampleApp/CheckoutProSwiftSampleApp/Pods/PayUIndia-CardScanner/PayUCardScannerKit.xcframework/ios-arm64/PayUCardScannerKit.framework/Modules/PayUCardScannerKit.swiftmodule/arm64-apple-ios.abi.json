@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PayUCardScannerKit",
+    "printedName": "PayUCardScannerKit",
     "children": [
       {
         "kind": "Import",
@@ -530,6 +530,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -803,6 +817,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1063,6 +1091,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1476,6 +1518,20 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -1612,12 +1668,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1644,12 +1700,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1679,12 +1735,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -1801,12 +1857,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -1870,6 +1926,20 @@
             "printedName": "LocalizedError",
             "usr": "s:10Foundation14LocalizedErrorP",
             "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -2344,6 +2414,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "ExpressibleByStringLiteral",
             "printedName": "ExpressibleByStringLiteral",
             "children": [
@@ -2625,6 +2709,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2740,6 +2838,7 @@
         "intro_iOS": "9.0",
         "objc_name": "NSLayoutDimension",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -2754,6 +2853,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2818,6 +2931,7 @@
         "intro_iOS": "9.0",
         "objc_name": "NSLayoutAnchor",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -2831,6 +2945,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2887,1148 +3015,224 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
-      "kind": "StringLiteral",
-      "offset": 379,
-      "length": 16,
-      "value": "\"PayUCardScannerKit.PUTextRecognizer\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
       "kind": "IntegerLiteral",
       "offset": 726,
       "length": 3,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
       "kind": "IntegerLiteral",
       "offset": 739,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 3,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUCardRecognizer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 739,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 920,
-      "length": 5,
-      "value": "352.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 971,
-      "length": 5,
-      "value": "640.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1025,
-      "length": 5,
-      "value": "960.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1080,
-      "length": 6,
-      "value": "1280.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1132,
-      "length": 6,
-      "value": "1280.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1185,
-      "length": 6,
-      "value": "1920.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1240,
-      "length": 6,
-      "value": "3840.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1361,
-      "length": 5,
-      "value": "288.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1412,
-      "length": 5,
-      "value": "480.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1466,
-      "length": 5,
-      "value": "540.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1517,
-      "length": 5,
-      "value": "720.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1572,
-      "length": 5,
-      "value": "720.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1624,
-      "length": 6,
-      "value": "1080.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Models&Enums\/PUImageRatio.swift",
-      "kind": "FloatLiteral",
-      "offset": 1679,
-      "length": 6,
-      "value": "2160.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
       "kind": "IntegerLiteral",
       "offset": 211,
       "length": 15,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
       "kind": "IntegerLiteral",
       "offset": 228,
       "length": 19,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
       "kind": "IntegerLiteral",
       "offset": 249,
       "length": 7,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
       "kind": "IntegerLiteral",
       "offset": 258,
       "length": 13,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
       "kind": "IntegerLiteral",
       "offset": 273,
       "length": 26,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 211,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 19,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 249,
-      "length": 7,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 258,
-      "length": 13,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "IntegerLiteral",
-      "offset": 273,
-      "length": 26,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUError.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 7,
-      "value": "\"PayUCardScannerKit.PUError\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1282,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
       "kind": "StringLiteral",
       "offset": 1431,
       "length": 10,
       "value": "\"Add card\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
       "kind": "StringLiteral",
       "offset": 1478,
       "length": 41,
       "value": "\"Place your card within the card's frame\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 7,
       "value": "\"Close\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
       "kind": "FloatLiteral",
       "offset": 1861,
       "length": 3,
       "value": "0.7"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 1325,
-      "length": 27,
-      "value": "\"PayUCardScannerKit.PUCardScannerViewController\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4326,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4782,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4876,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5298,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5471,
-      "length": 3,
-      "value": "-20"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5578,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5673,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5856,
-      "length": 3,
-      "value": "-20"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5974,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6074,
-      "length": 4,
-      "value": "16.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6140,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6260,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6274,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6287,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 6302,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6924,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "StringLiteral",
-      "offset": 7213,
-      "length": 10,
-      "value": "\"payUlogo\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCardScannerViewController.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9578,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 666,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 774,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 1158,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
       "kind": "StringLiteral",
       "offset": 1466,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 1635,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 1895,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "Array",
-      "offset": 1974,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2004,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PURegex.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2304,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
       "kind": "FloatLiteral",
       "offset": 426,
       "length": 12,
       "value": "0.6180469716"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
       "kind": "StringLiteral",
       "offset": 718,
       "length": 50,
       "value": "\"com.payu.credit-card-scanner.captureSessionQueue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
       "kind": "StringLiteral",
       "offset": 874,
       "length": 48,
       "value": "\"com.payu.credit-card-scanner.sampleBufferQueue\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1514,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "StringLiteral",
-      "offset": 2008,
-      "length": 100,
-      "value": "\"Expected `AVCaptureVideoPreviewLayer` type for layer. Check PreviewView.layerClass implementation.\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
       "kind": "IntegerLiteral",
       "offset": 2411,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3683,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4738,
-      "length": 4,
-      "value": "40.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4877,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4946,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 4982,
-      "length": 4,
-      "value": "20.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5293,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5569,
-      "length": 3,
-      "value": "3.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 5721,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6287,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6312,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUCameraView.swift",
-      "kind": "StringLiteral",
-      "offset": 348,
-      "length": 12,
-      "value": "\"PayUCardScannerKit.PUCameraView\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUConstant.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUConstant.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 26,
       "value": "\"NSCameraUsageDescription\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUConstant.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Validations\/PUConstant.swift",
       "kind": "StringLiteral",
       "offset": 199,
       "length": 55,
       "value": "\"Please add NSCameraUsageDescription key in info.plist\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/PUCardScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 698,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/PUCardScanner.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1659,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "Dictionary",
       "offset": 613,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 1021,
-      "length": 7,
-      "value": "\"MM\/YY\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 1106,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 1155,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1162,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 1210,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1217,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "Dictionary",
-      "offset": 1520,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "Array",
       "offset": 1975,
       "length": 78,
       "value": "[\"mastercard\", \"jcb\", \"visa\", \"express\", \"bank\", \"card\", \"platinum\", \"reward\"]"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 2308,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "FloatLiteral",
       "offset": 2506,
       "length": 3,
       "value": "0.1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 3452,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 3464,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "StringLiteral",
       "offset": 3476,
       "length": 30,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
       "kind": "IntegerLiteral",
       "offset": 4114,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 4602,
-      "length": 3,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 4613,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 4655,
-      "length": 3,
-      "value": "\"-\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 4666,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 4834,
-      "length": 23,
-      "value": "\"(?:\\d[ -]*?){13,19}\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5387,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5431,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 5545,
-      "length": 19,
-      "value": "\"(\\d{2})\\\/\\d{2}$\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 5598,
-      "length": 19,
-      "value": "\"\\d{2}\\\/(\\d{2})$\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5715,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "Array",
-      "offset": 6035,
-      "length": 66,
-      "value": "[\"expiration\", \"valid\", \"since\", \"from\", \"until\", \"month\", \"year\"]"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 6135,
-      "length": 38,
-      "value": "\"([A-z]{2,}\\h([A-z.]+\\h)?[A-z]{2,})\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6493,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 6523,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6713,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6871,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6896,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7133,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7138,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7235,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7270,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7304,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7308,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7352,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7357,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7500,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7506,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7533,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "BooleanLiteral",
-      "offset": 7577,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7736,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7782,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8033,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8117,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8189,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8337,
-      "length": 3,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8388,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8394,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8429,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8435,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8483,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8488,
-      "length": 11,
-      "value": "\"0\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8498,
-      "length": 5,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8502,
-      "length": 10,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8511,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8546,
-      "length": 9,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "StringLiteral",
-      "offset": 8554,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8673,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUImageAnalyzer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8779,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 237,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 476,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 828,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2130,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
       "kind": "FloatLiteral",
       "offset": 2231,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
       "kind": "FloatLiteral",
       "offset": 2265,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2397,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 3134,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 3348,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "FloatLiteral",
-      "offset": 3576,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
       "kind": "FloatLiteral",
       "offset": 3779,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3880,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
       "kind": "FloatLiteral",
       "offset": 3991,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4105,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
       "kind": "FloatLiteral",
       "offset": 4213,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/payu\/one-payu-ui-sdk-ios\/Dependency\/CardScanner\/PUCardScanner\/Source\/Core\/PUUIViewExtension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4324,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/shubham.garg\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-cenltnqitrywnrapcpzlttjuvpfg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUCardScannerKit\/IntermediateBuildFilesPath\/PayUCardScannerKit.build\/Release-iphoneos\/PayUCardScannerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "filePath": "\/Users\/amit.salaria\/Library\/Developer\/Xcode\/DerivedData\/OnePayU-bvvmlbzatphaqgahbzcnhekgtlyu\/Build\/Intermediates.noindex\/ArchiveIntermediates\/PayUCardScannerKit\/IntermediateBuildFilesPath\/PayUCardScannerKit.build\/Release-iphoneos\/PayUCardScannerKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
       "offset": 729,
       "length": 10,
