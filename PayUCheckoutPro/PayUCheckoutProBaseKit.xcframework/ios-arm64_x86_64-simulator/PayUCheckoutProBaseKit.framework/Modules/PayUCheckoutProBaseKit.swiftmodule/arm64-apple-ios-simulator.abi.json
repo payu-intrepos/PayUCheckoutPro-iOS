@@ -1343,6 +1343,99 @@
           },
           {
             "kind": "Var",
+            "name": "isProtectedScreen",
+            "printedName": "isProtectedScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)isProtectedScreen",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)isProtectedScreen",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)setIsProtectedScreen:",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "upiAppsOrder",
             "printedName": "upiAppsOrder",
             "children": [
@@ -8753,6 +8846,13 @@
       "offset": 878,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 924,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",

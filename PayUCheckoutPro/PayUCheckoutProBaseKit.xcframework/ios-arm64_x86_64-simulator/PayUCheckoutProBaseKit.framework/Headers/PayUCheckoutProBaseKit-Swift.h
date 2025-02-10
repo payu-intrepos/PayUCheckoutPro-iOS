@@ -406,6 +406,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
 @property (nonatomic) BOOL enableSavedCard;
+@property (nonatomic) BOOL isProtectedScreen;
 @property (nonatomic, copy) NSString * _Nullable upiAppsOrder;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;
@@ -883,6 +884,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 @property (nonatomic, readonly) BOOL showUserCancellationDialogue;
 @property (nonatomic, strong) PayUFontFamily * _Nullable fontfamily;
 @property (nonatomic) BOOL enableSavedCard;
+@property (nonatomic) BOOL isProtectedScreen;
 @property (nonatomic, copy) NSString * _Nullable upiAppsOrder;
 @property (nonatomic, readonly, strong) UIColor * _Nullable primaryColor;
 @property (nonatomic, readonly, strong) UIColor * _Nullable secondaryColor;

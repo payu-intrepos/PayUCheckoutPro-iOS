@@ -23,6 +23,7 @@ import _SwiftConcurrencyShims
   @objc final public let showUserCancellationDialogue: Swift.Bool
   @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
   @objc public var enableSavedCard: Swift.Bool
+  @objc public var isProtectedScreen: Swift.Bool
   @objc public var upiAppsOrder: Swift.String?
   @objc public var primaryColor: UIKit.UIColor? {
     @objc get
