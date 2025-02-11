@@ -89,7 +89,10 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var customFontSwitchesStackView: UIStackView!
     @IBOutlet weak var customFontSwitch1: UISwitch!
     @IBOutlet weak var customFontSwitch2: UISwitch!
-
+    //CF
+    @IBOutlet weak var addtionalChargeTextField: UITextField!
+    @IBOutlet weak var perAdditionalChargeTextField: UITextField!
+    @IBOutlet weak var cfSwitch: UISwitch!
     //TPV
     @IBOutlet weak var tpvSwitch: UISwitch!
     @IBOutlet weak var tpvAccountNumberField: UITextField!
@@ -390,6 +393,13 @@ extension MerchantViewController {
 //        payuBeneficieryDetailsList.append(beneficiaryDetails2)
 //        paymentParam.payuBeneficieryDetails = payuBeneficieryDetailsList
         
+        if cfSwitch.isOn {
+            paymentParam.additionalCharges = addtionalChargeTextField.text ?? ""
+            paymentParam.percentageAdditionalCharges = perAdditionalChargeTextField.text ?? ""
+        }
+//        paymentParam.additionalCharges = "SBIB:20,NB:10,cash:30,CC:15,UPI:25"
+//        paymentParam.percentageAdditionalCharges = "DC:20,NB:15,SBIB:20,INTENT:20"
+        
         return paymentParam
     }
     
@@ -450,7 +460,7 @@ extension MerchantViewController {
         paymentParamDict["sourceId"] = sodexoCardSourceIdTextField.text
         paymentParamDict["walletUrn"] = walletURN
         paymentParamDict["subventionAmount"] = subventionAmountTextField.text
-        
+ 
         // For TPV
         var payuBeneficieryDetailsList = [[String: Any]]()
         let beneficiaryDetails1 = ["beneficiaryAccount":"12345678900","beneficiaryIfsc":"UTIB1234"]
