@@ -6,15 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		M1uqXPgdsogm/DbP5c2Dhj9YKoA=
+		TCVMY0HXCIajlTmhZ9QfKg/WWlw=
 		</data>
 		<key>AuthenticationViewController.nib/objects-14.0+.nib</key>
 		<data>
-		Xg/7izcAAHFzE+Sx1xkU7RbXkog=
+		KeeANZdJ18qJqa+fjXp7KoBxYUM=
 		</data>
 		<key>AuthenticationViewController.nib/runtime.nib</key>
 		<data>
-		pYfZvfLkCJCMOWeiuOIJBes9fM8=
+		inD7V3/tj3TT2cExwYjarQ38tQY=
 		</data>
 		<key>Base.lproj/PaymentOptions.storyboardc/21z-6s-Le6-view-qaV-6Y-SsX.nib</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Headers/PayUCheckoutProKit-Swift.h</key>
 		<data>
-		yLptuTebHLCk148XdQDtMUM8KCQ=
+		eGswWIPTNAGV3OHtFshYiU+WCLE=
 		</data>
 		<key>Headers/PayUCheckoutProKit.h</key>
 		<data>
@@ -166,7 +166,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Gmum8HuX9Fd8qC7us0Lef0+bfaA=
+		R2BI9pRTbRrryxrRYT94bCMaTnE=
 		</data>
 		<key>ItemHeaderCollectionView.nib</key>
 		<data>
@@ -194,23 +194,23 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		f0RKEEt28yuXnoti1KKU0nuL08o=
+		Y2h3jqcehW96PhxSxQrGnWPk3Cw=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		Imq17lzml1YKnPDHG+MReRev53E=
+		ppTmXKksBwo62dzPM5o9nv4sMlk=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		lvkgv5hRyutTs+6iDixcWzwGMNs=
+		yu3SGQD3JytopeNfsgSvE9fY7Rs=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		Imq17lzml1YKnPDHG+MReRev53E=
+		ppTmXKksBwo62dzPM5o9nv4sMlk=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		j0R/V60/nbd7hoHnCo9j9AHvJuU=
+		xXz86T9oVTNTQRUbpJBdcgb+b4w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -227,6 +227,10 @@
 		<key>NoteTableViewCell.nib</key>
 		<data>
 		kP2Ley4DMPG9WBEsSe0/P90S+uE=
+		</data>
+		<key>OTMBreakupView.nib</key>
+		<data>
+		Ygxu5eq3VkpDJaNg9rUXfjGPsb8=
 		</data>
 		<key>OfferAppliedView.nib</key>
 		<data>
@@ -479,21 +483,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eTp1gxdrQ/JhnxwIeXj1/InSdjUNMgtbT6r3CKeTYLE=
+			TkjqCbsGC7dMRRidLiEM4eEWUaO8sovchf++mGESsJg=
 			</data>
 		</dict>
 		<key>AuthenticationViewController.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ScEfD/6wKMoHlmt7T7O/uLsVP1QZkJoQ1hlHu4V3rVA=
+			fxSgbp1L6gPNCtL10fi+S+6+pb6qf5B8qxGzP03fo/c=
 			</data>
 		</dict>
 		<key>AuthenticationViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XwOJQzc71lP/COmPoovHQAEwFqSRRpY6UcAvSFP4f8c=
+			wUiazBV+F65HhdH6JJVz7Gak8vIQUYe6lrHVZctKrKk=
 			</data>
 		</dict>
 		<key>Base.lproj/PaymentOptions.storyboardc/21z-6s-Le6-view-qaV-6Y-SsX.nib</key>
@@ -745,7 +749,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zzR+xGCnzWyYxC/W1qWiaPprAX/aIZ2hoY1nMaUvTjE=
+			aURXDfDH87q9r9kvSy00vQLFFnfYAdtGVxx/b3FNhyk=
 			</data>
 		</dict>
 		<key>Headers/PayUCheckoutProKit.h</key>
@@ -801,35 +805,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkNZZ5LslRu3zCehlXr3cDI+I+zi/YWS95qHOT3EaZw=
+			ie2nc3jMRdkEdz/8n1MbVATPgAdWudu4nlqKBNjsyGk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			acDzX08COq6vd8zxrEC+FdgiRKgHEuOfwN3rv/GsTgE=
+			EacBVXXB+kKubCGPaWwcDMVxgpjUs9W0roCOhENOSiA=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/lV3feOMNqyTttWBMOyKNHjBFdrKbMjoe2aNE68/mMw=
+			zy05rSrQK551mhljj32nlEwnrkMQnLlutqNO2AcrAjk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			acDzX08COq6vd8zxrEC+FdgiRKgHEuOfwN3rv/GsTgE=
+			EacBVXXB+kKubCGPaWwcDMVxgpjUs9W0roCOhENOSiA=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GonyO1pn1/dylir770R1lgSST/rBZPuLKZHIazCbyIw=
+			psAu2Kb0wCckcXrnRObwkm0f82Le19zCz8a93tfUYT4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -858,6 +862,13 @@
 			<key>hash2</key>
 			<data>
 			QnMJEg7bbz5dxPvpbcG7W1AQom6w0NvLdCuF6+3kEUo=
+			</data>
+		</dict>
+		<key>OTMBreakupView.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZxjJU4yQtRPxJ/Uu/CLZVeUHN0cp2kPWNemW0VYiB4k=
 			</data>
 		</dict>
 		<key>OfferAppliedView.nib</key>

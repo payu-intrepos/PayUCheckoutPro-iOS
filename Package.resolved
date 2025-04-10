@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK.git",
         "state": {
           "branch": null,
-          "revision": "88fdaba0f85ef6ae3897a5e2f9abcb14002bbf43",
-          "version": "11.3.0"
+          "revision": "f589734f067b2f88d64dca9a24eb9e32faf408d3",
+          "version": "11.4.0"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "2a39c0543886a231afa96dbdc02f6805aecc6270",
-          "version": "6.3.0"
+          "revision": "69f677c09dd6d6f3622d4868b1a98c6d545e5066",
+          "version": "6.5.0"
         }
       },
       {
