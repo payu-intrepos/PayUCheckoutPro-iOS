@@ -352,7 +352,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
-- (void)getBinInfoOfCardNumber:(NSString * _Nonnull)cardNumber onCompletion:(void (^ _Nonnull)(CardBinInfo * _Nullable, NSError * _Nullable))onCompletion;
+- (void)getBinInfoOfCardNumber:(NSString * _Nonnull)cardNumber paymentOption:(PaymentOption * _Nullable)paymentOption onCompletion:(void (^ _Nonnull)(CardBinInfo * _Nullable, NSError * _Nullable))onCompletion;
 - (void)fetchMCPLookupDataWithCardBinInfo:(CardBinInfo * _Nonnull)cardBinInfo onCompletion:(void (^ _Nonnull)(void))onCompletion;
 - (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
 - (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
@@ -363,7 +363,9 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchConvenienceFeeWithPaymentMode:(PaymentMode * _Nonnull)paymentMode;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
+- (void)validateCouponOfferDetailWithCouponCode:(NSString * _Nonnull)couponCode onCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;
 - (void)sendMobileVerificationCodeWithMobileNumber:(NSString * _Nullable)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
 - (void)verifyOtpWithMobileNumber:(NSString * _Nonnull)mobileNumber otp:(NSString * _Nonnull)otp uuid:(NSString * _Nonnull)uuid onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
@@ -1000,7 +1002,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchPaymentOptionsOnCompletion:(void (^ _Nonnull)(FetchPaymentOptionResponse * _Nonnull))onCompletion;
 - (void)makePaymentWithPaymentOption:(PaymentOption * _Nonnull)paymentOption screenState:(enum ScreenState)screenState onViewController:(UIViewController * _Nonnull)onViewController onError:(void (^ _Nonnull)(NSError * _Nullable))onError;
 - (BOOL)cancelCurrentPayment SWIFT_WARN_UNUSED_RESULT;
-- (void)getBinInfoOfCardNumber:(NSString * _Nonnull)cardNumber onCompletion:(void (^ _Nonnull)(CardBinInfo * _Nullable, NSError * _Nullable))onCompletion;
+- (void)getBinInfoOfCardNumber:(NSString * _Nonnull)cardNumber paymentOption:(PaymentOption * _Nullable)paymentOption onCompletion:(void (^ _Nonnull)(CardBinInfo * _Nullable, NSError * _Nullable))onCompletion;
 - (void)fetchMCPLookupDataWithCardBinInfo:(CardBinInfo * _Nonnull)cardBinInfo onCompletion:(void (^ _Nonnull)(void))onCompletion;
 - (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
 - (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
@@ -1011,7 +1013,9 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchConvenienceFeeWithPaymentMode:(PaymentMode * _Nonnull)paymentMode;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
+- (void)validateCouponOfferDetailWithCouponCode:(NSString * _Nonnull)couponCode onCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;
 - (void)sendMobileVerificationCodeWithMobileNumber:(NSString * _Nullable)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
 - (void)verifyOtpWithMobileNumber:(NSString * _Nonnull)mobileNumber otp:(NSString * _Nonnull)otp uuid:(NSString * _Nonnull)uuid onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;

@@ -2451,140 +2451,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "tpvPaymentModes",
-            "printedName": "tpvPaymentModes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[PayUParamsKit.PaymentOption]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[PayUParamsKit.PaymentOption]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaymentOption",
-                        "printedName": "PayUParamsKit.PaymentOption",
-                        "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvp",
-            "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvp",
-            "moduleName": "PayUCheckoutProBaseKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[PayUParamsKit.PaymentOption]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PayUParamsKit.PaymentOption]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PaymentOption",
-                            "printedName": "PayUParamsKit.PaymentOption",
-                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvg",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvg",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[PayUParamsKit.PaymentOption]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PayUParamsKit.PaymentOption]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PaymentOption",
-                            "printedName": "PayUParamsKit.PaymentOption",
-                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvs",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvs",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvM",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvM",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "copy",
             "printedName": "copy(with:)",
@@ -5667,7 +5533,7 @@
           {
             "kind": "Function",
             "name": "getBinInfoOf",
-            "printedName": "getBinInfoOf(cardNumber:onCompletion:)",
+            "printedName": "getBinInfoOf(cardNumber:paymentOption:onCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5679,6 +5545,20 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PaymentOption?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentOption",
+                    "printedName": "PayUParamsKit.PaymentOption",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -5729,8 +5609,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBinInfoOfCardNumber:onCompletion:",
-            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC12getBinInfoOf10cardNumber12onCompletionySS_y0a7UParamsE004CardhI0CSg_s5Error_pSgtctF",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBinInfoOfCardNumber:paymentOption:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC12getBinInfoOf10cardNumber13paymentOption12onCompletionySS_0a7UParamsE007PaymentN0CSgyAH04CardhI0CSg_s5Error_pSgtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -6233,6 +6113,34 @@
           },
           {
             "kind": "Function",
+            "name": "fetchConvenienceFee",
+            "printedName": "fetchConvenienceFee(paymentMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaymentMode",
+                "printedName": "PayUParamsKit.PaymentMode",
+                "usr": "c:@M@PayUParamsKit@objc(cs)PaymentMode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)fetchConvenienceFeeWithPaymentMode:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19fetchConvenienceFee11paymentModey0a7UParamsE007PaymentK0C_tF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "validateOfferDetail",
             "printedName": "validateOfferDetail(paymentOption:onCompletion:)",
             "children": [
@@ -6298,6 +6206,94 @@
             "declKind": "Func",
             "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)validateOfferDetailWithPaymentOption:onCompletion:",
             "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19validateOfferDetail13paymentOption12onCompletiony0a7UParamsE007PaymentK0C_yAG0a6UModelhI0CSg_s5Error_pSgtctF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateCouponOfferDetail",
+            "printedName": "validateCouponOfferDetail(couponCode:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUParamsKit.PayUModelAllOfferDetail?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUModelAllOfferDetail",
+                            "printedName": "PayUParamsKit.PayUModelAllOfferDetail",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)validateCouponOfferDetailWithCouponCode:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC25validateCouponOfferDetail10couponCode12onCompletionySS_y0a7UParamsE00a9UModelAlliJ0CSg_ypSgs5Error_pSgtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -8920,63 +8916,63 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5158,
+      "offset": 5608,
       "length": 17,
       "value": "1"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5185,
+      "offset": 5635,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 5653,
       "length": 19,
       "value": "3"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5232,
+      "offset": 5682,
       "length": 20,
       "value": "4"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5262,
+      "offset": 5712,
       "length": 17,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5289,
+      "offset": 5739,
       "length": 7,
       "value": "6"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5756,
       "length": 11,
       "value": "7"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5327,
+      "offset": 5777,
       "length": 10,
       "value": "8"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "Array",
-      "offset": 5478,
+      "offset": 5928,
       "length": 2,
       "value": "[]"
     }

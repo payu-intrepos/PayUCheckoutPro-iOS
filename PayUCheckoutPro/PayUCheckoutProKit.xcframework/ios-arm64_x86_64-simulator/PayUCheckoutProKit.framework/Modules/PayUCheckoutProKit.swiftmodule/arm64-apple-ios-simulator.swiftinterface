@@ -221,7 +221,7 @@ public enum PopTipActionAnimation {
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUParamsKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc override public func cancelCurrentPayment() -> Swift.Bool
-  @objc override public func getBinInfoOf(cardNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
+  @objc override public func getBinInfoOf(cardNumber: Swift.String, paymentOption: PayUParamsKit.PaymentOption?, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
   @objc override public func fetchMCPLookupData(cardBinInfo: PayUParamsKit.CardBinInfo, onCompletion: @escaping () -> Swift.Void)
   @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc override public func getBalanceFromSodexo(_ sourceId: Swift.String)
@@ -232,7 +232,9 @@ public enum PopTipActionAnimation {
   @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc override public func fetchConvenienceFee(paymentMode: PayUParamsKit.PaymentMode)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
+  @objc override public func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)
   @objc override public func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
