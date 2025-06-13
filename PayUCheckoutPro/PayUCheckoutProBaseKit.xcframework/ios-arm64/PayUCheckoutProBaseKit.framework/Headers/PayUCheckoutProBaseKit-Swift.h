@@ -352,7 +352,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
-- (void)fetchConvenienceFeeWithPaymentMode:(PaymentMode * _Nonnull)paymentMode;
+- (void)fetchConvenienceFeeWithPaymentOptions:(NSArray<PaymentOption *> * _Nullable)paymentOptions;
 - (void)validateOfferDetailWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
 - (void)validateCouponOfferDetailWithCouponCode:(NSString * _Nonnull)couponCode onCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;

@@ -363,7 +363,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
-- (void)fetchConvenienceFeeWithPaymentMode:(PaymentMode * _Nonnull)paymentMode;
+- (void)fetchConvenienceFeeWithPaymentOptions:(NSArray<PaymentOption *> * _Nullable)paymentOptions;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
 - (void)validateCouponOfferDetailWithCouponCode:(NSString * _Nonnull)couponCode onCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;
@@ -1013,7 +1013,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
-- (void)fetchConvenienceFeeWithPaymentMode:(PaymentMode * _Nonnull)paymentMode;
+- (void)fetchConvenienceFeeWithPaymentOptions:(NSArray<PaymentOption *> * _Nullable)paymentOptions;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
 - (void)validateCouponOfferDetailWithCouponCode:(NSString * _Nonnull)couponCode onCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)postAdsImpressionEventWithRequestId:(NSString * _Nullable)requestId;

@@ -6114,7 +6114,7 @@
           {
             "kind": "Function",
             "name": "fetchConvenienceFee",
-            "printedName": "fetchConvenienceFee(paymentMode:)",
+            "printedName": "fetchConvenienceFee(paymentOptions:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6123,14 +6123,30 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "PaymentMode",
-                "printedName": "PayUParamsKit.PaymentMode",
-                "usr": "c:@M@PayUParamsKit@objc(cs)PaymentMode"
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PaymentOption]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PaymentOption]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentOption",
+                        "printedName": "PayUParamsKit.PaymentOption",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)fetchConvenienceFeeWithPaymentMode:",
-            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19fetchConvenienceFee11paymentModey0a7UParamsE007PaymentK0C_tF",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)fetchConvenienceFeeWithPaymentOptions:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19fetchConvenienceFee14paymentOptionsySay0a7UParamsE013PaymentOptionCGSg_tF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -8809,170 +8825,170 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 445,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 608,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 672,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 878,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 924,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 398,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 468,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 516,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 582,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
       "offset": 690,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 397,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5608,
+      "offset": 5616,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5635,
+      "offset": 5643,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5653,
+      "offset": 5661,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5682,
+      "offset": 5690,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5712,
+      "offset": 5720,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5739,
+      "offset": 5747,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5756,
+      "offset": 5764,
       "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5777,
+      "offset": 5785,
       "length": 10,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "Array",
-      "offset": 5928,
+      "offset": 5936,
       "length": 2,
       "value": "[]"
     }

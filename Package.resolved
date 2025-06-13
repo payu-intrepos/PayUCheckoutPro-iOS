@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/iOS-SDK.git",
         "state": {
           "branch": null,
-          "revision": "0d124274cf4c15cac86a7e3bc9de88d3dd5aadb7",
-          "version": "11.6.0"
+          "revision": "6fc333f3fe27101cabc5f531f7cfb87c9fd18d13",
+          "version": "11.7.0-alpha.1"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-params-iOS.git",
         "state": {
           "branch": null,
-          "revision": "d033e7f295b128cf956fc37f9b679a61144a7476",
-          "version": "6.6.0"
+          "revision": "9ba15b015fe62834b2395443ed45a8e8e163ec03",
+          "version": "6.6.1-alpha.1"
         }
       },
       {
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/payu-intrepos/payu-upi-ios-sdk.git",
         "state": {
           "branch": null,
-          "revision": "3008fce2da80c4083c0454c54968acce857b13e5",
-          "version": "10.5.0"
+          "revision": "fa4c2fe18ef4ead240a49f537a7b59139d97bf75",
+          "version": "10.5.1-alpha.1"
         }
       },
       {
@@ -87,7 +87,7 @@
         "repositoryURL": "https://github.com/payu-intrepos/PayUNativeOtpAssist-iOS.git",
         "state": {
           "branch": null,
-          "revision": "444b3c14a33a8e9b5cf578a458c3652fecd4fe42",
+          "revision": "cbd1e038e729f6f72fddd09eded60831c0377646",
           "version": "4.2.0"
         }
       },

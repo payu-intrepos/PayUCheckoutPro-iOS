@@ -232,7 +232,7 @@ public enum PopTipActionAnimation {
   @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
-  @objc override public func fetchConvenienceFee(paymentMode: PayUParamsKit.PaymentMode)
+  @objc override public func fetchConvenienceFee(paymentOptions: [PayUParamsKit.PaymentOption]?)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
   @objc override public func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)

@@ -127,7 +127,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc open func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
-  @objc open func fetchConvenienceFee(paymentMode: PayUParamsKit.PaymentMode)
+  @objc open func fetchConvenienceFee(paymentOptions: [PayUParamsKit.PaymentOption]?)
   @objc open func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc open func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc open func postAdsImpressionEvent(requestId: Swift.String?)
