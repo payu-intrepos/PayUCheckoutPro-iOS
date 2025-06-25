@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCheckoutProKit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import CryptoKit
 import DeveloperToolsSupport
 import Foundation
 import PayUAssetLibraryKit
@@ -18,6 +19,7 @@ import PayUNetworkReachability
 import PayUNetworkingKit
 import PayUParamsKit
 import PayUUPICoreKit
+import Security
 import Swift
 import SwiftUI
 import UIKit
@@ -30,6 +32,7 @@ import _SwiftConcurrencyShims
   @objc public static let payuFetchedOffer: Foundation.Notification.Name
   @objc public static let payuFetchedAsset: Foundation.Notification.Name
   @objc public static let payuQuickFetchLoading: Foundation.Notification.Name
+  @objc public static let payuWalletL2Login: Foundation.Notification.Name
 }
 extension PayUCheckoutProKit.PayUPopTip {
   @_Concurrency.MainActor @preconcurrency public func performEntranceAnimation(completion: @escaping () -> Swift.Void)
@@ -226,6 +229,7 @@ public enum PopTipActionAnimation {
   @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc override public func getBalanceFromSodexo(_ sourceId: Swift.String)
   @objc override public func getBalanceFromCLW(mobile: Swift.String, bankCode: Swift.String)
+  @objc override public func getBalanceForOLW(mobile: Swift.String, bankCode: Swift.String, completion: @escaping PayUCheckoutProKit.CheckBalanceCompletion)
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
@@ -242,6 +246,9 @@ public enum PopTipActionAnimation {
   @objc override public func logout()
   @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc override public func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc override public func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc override public func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc override public func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc public func payUSuccessResponse(_ response: Any!)
   @objc public func payUFailureResponse(_ response: Any!)
   @objc public func payUConnectionError(_ notification: [Swift.AnyHashable : Any]!)

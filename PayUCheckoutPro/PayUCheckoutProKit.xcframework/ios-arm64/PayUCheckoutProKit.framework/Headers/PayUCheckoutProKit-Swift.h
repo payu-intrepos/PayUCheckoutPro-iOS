@@ -333,6 +333,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PaymentOption;
 @class CardBinInfo;
 @class PayUModelIFSCInfo;
+@class PayUModelSodexoCardDetail;
 @class ImageParam;
 @class UIImage;
 @class CheckEligibilityResponse;
@@ -342,6 +343,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @class PayUModelAllOfferDetail;
 @class PayULanguage;
 @class PayUModelOfferDetail;
+@class PayUOLWMpinOtpResponse;
 @class PayUAcsRequest;
 SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 @interface BizWrapper : BaseLayer <PUCBWebVCDelegate, PayUOtpAssistDelegate>
@@ -357,6 +359,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
 - (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
 - (void)getBalanceFromCLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode;
+- (void)getBalanceForOLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode completion:(void (^ _Nonnull)(PayUModelSodexoCardDetail * _Nullable, NSString * _Nullable))completion;
 - (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSInteger))onCompletion;
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
@@ -373,6 +376,9 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)logout;
 - (void)fetchRecommendedAndQuickPayOptionsWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
 - (void)validateOfferDetailWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
+- (void)olwSendOTPOnCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
+- (void)olwSetResetMpinWithOtp:(NSString * _Nullable)otp newMpin:(NSString * _Nullable)newMpin action:(NSString * _Nonnull)action aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
+- (void)olwVerifyMpinDeviceIdTokenWithMPin:(NSString * _Nullable)mPin aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
 - (void)PayUSuccessResponse:(id _Null_unspecified)response;
 - (void)PayUFailureResponse:(id _Null_unspecified)response;
 - (void)PayUConnectionError:(NSDictionary * _Null_unspecified)notification;
@@ -447,6 +453,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _
 + (NSNotificationName _Nonnull)payuFetchedAsset SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuQuickFetchLoading;)
 + (NSNotificationName _Nonnull)payuQuickFetchLoading SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull payuWalletL2Login;)
++ (NSNotificationName _Nonnull)payuWalletL2Login SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class PayUCheckoutProConfig;

@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCheckoutProBaseKit
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import PayUBizCoreKit
 @_exported import PayUCheckoutProBaseKit
 import PayUCommonUI
 import PayUParamsKit
@@ -95,6 +96,8 @@ public typealias GetStringCompletion = (_ successString: Swift.String?, _ error:
 public typealias FetchQuickPayAndRecommendationOptionsCompletion = (_ savedOptions: PayUParamsKit.PayUSavedPaymentOptions?, _ recommendationOptions: [PayUParamsKit.PayUTiles]?, _ error: Swift.String?) -> Swift.Void
 public typealias EnableCompletion = (_ isEnable: Swift.Bool?) -> Swift.Void
 public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayULanguage], _ selectedLanguage: PayUParamsKit.PayULanguageCode) -> Swift.Void
+public typealias GetOLWMpinOtpCompletion = (_ response: PayUParamsKit.PayUOLWMpinOtpResponse?, _ errorMessage: Swift.String?) -> Swift.Void
+public typealias CheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.PayUModelSodexoCardDetail?, _ errorMessage: Swift.String?) -> Swift.Void
 @objc public protocol OnePayUBaseLayerDelegate {
   @objc func paymentSuccess(response: Any?)
   @objc func paymentFailure(response: Any?)
@@ -122,6 +125,7 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc open func getBalanceFromSodexo(_ sourceId: Swift.String)
   @objc open func getBalanceFromCLW(mobile: Swift.String, bankCode: Swift.String)
+  @objc open func getBalanceForOLW(mobile: Swift.String, bankCode: Swift.String, completion: @escaping PayUCheckoutProBaseKit.CheckBalanceCompletion)
   @objc open func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc open func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
@@ -137,6 +141,9 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func logout()
   @objc open func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc open func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
+  @objc open func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc open func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc open func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc deinit
 }
 @objc public enum ScreenState : Swift.Int {
@@ -149,6 +156,12 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   case addCard
   case bankDetails
   case loadAmount
+  case nonLogin
+  case loggedin
+  case olwLogin
+  case balanceDetails
+  case sufficientBalance
+  case olwMpinStatus
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

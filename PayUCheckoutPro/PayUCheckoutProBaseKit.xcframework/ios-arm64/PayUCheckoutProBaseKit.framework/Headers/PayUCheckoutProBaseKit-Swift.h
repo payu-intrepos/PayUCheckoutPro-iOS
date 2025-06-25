@@ -324,6 +324,7 @@ enum ScreenState : NSInteger;
 @class NSString;
 @class CardBinInfo;
 @class PayUModelIFSCInfo;
+@class PayUModelSodexoCardDetail;
 @class ImageParam;
 @class UIImage;
 @class CheckEligibilityResponse;
@@ -331,6 +332,7 @@ enum ScreenState : NSInteger;
 @class PayUModelAllOfferDetail;
 @class PayUModelOfferDetail;
 @class PayULanguage;
+@class PayUOLWMpinOtpResponse;
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 @interface BaseLayer : NSObject
 @property (nonatomic, strong) PayUPaymentParam * _Nonnull basePaymentParam;
@@ -347,6 +349,7 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)fetchIFSCDetails:(NSString * _Nonnull)ifscCode onCompletion:(void (^ _Nonnull)(PayUModelIFSCInfo * _Nullable, NSString * _Nullable))onCompletion;
 - (void)getBalanceFromSodexo:(NSString * _Nonnull)sourceId;
 - (void)getBalanceFromCLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode;
+- (void)getBalanceForOLWWithMobile:(NSString * _Nonnull)mobile bankCode:(NSString * _Nonnull)bankCode completion:(void (^ _Nonnull)(PayUModelSodexoCardDetail * _Nullable, NSString * _Nullable))completion;
 - (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSInteger))onCompletion;
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
@@ -362,6 +365,9 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit9BaseLayer")
 - (void)logout;
 - (void)fetchRecommendedAndQuickPayOptionsWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
+- (void)olwSendOTPOnCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
+- (void)olwSetResetMpinWithOtp:(NSString * _Nullable)otp newMpin:(NSString * _Nullable)newMpin action:(NSString * _Nonnull)action aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
+- (void)olwVerifyMpinDeviceIdTokenWithMPin:(NSString * _Nullable)mPin aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -459,6 +465,12 @@ typedef SWIFT_ENUM(NSInteger, ScreenState, open) {
   ScreenStateAddCard = 6,
   ScreenStateBankDetails = 7,
   ScreenStateLoadAmount = 8,
+  ScreenStateNonLogin = 9,
+  ScreenStateLoggedin = 10,
+  ScreenStateOlwLogin = 11,
+  ScreenStateBalanceDetails = 12,
+  ScreenStateSufficientBalance = 13,
+  ScreenStateOlwMpinStatus = 14,
 };
 
 #endif
