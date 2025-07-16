@@ -250,7 +250,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qapgILZRx6CXKlx91CDXyZ9shfg=
+		aY3v5YK8nE+2rClonvbnYXUnVzg=
 		</data>
 		<key>ItemHeaderCollectionView.nib</key>
 		<data>
@@ -278,7 +278,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		97jQc+OzTtC+tK9lpL8SWJkqjc0=
+		3lBnLwBdiygv7enwlyzwAYwa/WQ=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -294,11 +294,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZISEOIWkoKdp54DI/NRMA4hYXqo=
+		29b0gBrL0MGqV+V3bTMCBnWT3mw=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		97jQc+OzTtC+tK9lpL8SWJkqjc0=
+		3lBnLwBdiygv7enwlyzwAYwa/WQ=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -314,7 +314,7 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HsmqagpWTrV8REtg6Dp/Gi2r/CU=
+		uTLuCjBRwv/Erbp92CiHQ+sHB3M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -1064,7 +1064,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			auAnkY/Z03Vz5LiCCsOeYgGUQYmLUsuPsj4gQWPuFvE=
+			Qr5ToW5Q4d5dNZg5glOm1MdrSRkTte7uiuFB5fi4+Lk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -1092,14 +1092,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RPS3usySel1beKqZp0ZxzrCGKsQezAvLaPe935rufak=
+			ggRfNVqi8mluOW112ZxJGpPUYxQaSU0PfppqgC0HwxQ=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			auAnkY/Z03Vz5LiCCsOeYgGUQYmLUsuPsj4gQWPuFvE=
+			Qr5ToW5Q4d5dNZg5glOm1MdrSRkTte7uiuFB5fi4+Lk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -1127,7 +1127,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z96rIuQcszCrSCCQ4CVBMDe+kx+6IuzcbONLHzV6yN8=
+			BmH9/QaDIbFGYkzvCuAGweKbFxu34FNZ+Uh+juMxynw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
