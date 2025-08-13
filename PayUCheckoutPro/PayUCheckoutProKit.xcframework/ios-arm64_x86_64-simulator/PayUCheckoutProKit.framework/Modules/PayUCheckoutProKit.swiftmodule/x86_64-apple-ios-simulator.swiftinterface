@@ -280,7 +280,6 @@ extension Foundation.NSNumber {
   @objc public static let sourceId: Swift.String
   @objc public static let paymentType: Swift.String
   @objc public static let cardType: Swift.String
-  @objc public static let cardSchemaType: Swift.String
   @objc public static let cc: Swift.String
   @objc public static let dc: Swift.String
   @objc public static let card: Swift.String
