@@ -420,6 +420,11 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit17OnePayUBaseConfig")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@interface OnePayUBaseConfig (SWIFT_EXTENSION(PayUCheckoutProBaseKit))
+/// Converts OnePayUBaseConfig to a dictionary format suitable for logging
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toLoggableDictionary SWIFT_WARN_UNUSED_RESULT;
+@end
+
 SWIFT_PROTOCOL("_TtP22PayUCheckoutProBaseKit36OnePayUBaseIndividualPaymentDelegate_")
 @protocol OnePayUBaseIndividualPaymentDelegate
 - (void)upiCollectTransactionRemainingTime:(NSInteger)remainingTime;
@@ -448,6 +453,10 @@ SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit21PayUCheckoutProConfig")
 @property (nonatomic, copy) NSArray<NSDictionary<NSString *, id> *> * _Nullable enforcePaymentList;
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)zone SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface PayUCheckoutProConfig (SWIFT_EXTENSION(PayUCheckoutProBaseKit))
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toLoggableDictionary SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_CLASS("_TtC22PayUCheckoutProBaseKit14PayUCustomNote")

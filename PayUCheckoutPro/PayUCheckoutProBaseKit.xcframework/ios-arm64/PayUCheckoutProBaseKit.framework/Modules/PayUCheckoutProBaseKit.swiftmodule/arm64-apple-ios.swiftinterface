@@ -39,6 +39,9 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+extension PayUCheckoutProBaseKit.OnePayUBaseConfig {
+  @objc dynamic public func toLoggableDictionary() -> [Swift.String : Swift.String]
+}
 @objc @_inheritsConvenienceInitializers public class BaseAPIResponse : ObjectiveC.NSObject {
   public var error: (any Swift.Error)?
   @objc override dynamic public init()
@@ -63,6 +66,9 @@ import _SwiftConcurrencyShims
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
+}
+extension PayUCheckoutProBaseKit.PayUCheckoutProConfig {
+  @objc override dynamic public func toLoggableDictionary() -> [Swift.String : Swift.String]
 }
 @objc @_inheritsConvenienceInitializers public class ImageParam : ObjectiveC.NSObject {
   public var paymentOption: PayUParamsKit.PaymentOption?

@@ -1837,6 +1837,45 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toLoggableDictionary",
+            "printedName": "toLoggableDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)toLoggableDictionary",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC20toLoggableDictionarySDyS2SGyF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2582,6 +2621,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProBaseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProBaseKit"
       },
@@ -3450,6 +3496,47 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toLoggableDictionary",
+            "printedName": "toLoggableDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUCheckoutProBaseKit@objc(cs)PayUCheckoutProConfig(im)toLoggableDictionary",
+            "mangledName": "$s22PayUCheckoutProBaseKit0abC6ConfigC20toLoggableDictionarySDyS2SGyF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "overriding": true,
+            "objc_name": "toLoggableDictionary",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9470,35 +9557,35 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 418,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 468,
+      "offset": 488,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 516,
+      "offset": 536,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 582,
+      "offset": 602,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 690,
+      "offset": 710,
       "length": 1,
       "value": "4"
     },
@@ -9634,6 +9721,300 @@
       "offset": 6819,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 15,
+      "value": "\"autoSelectOtp\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
+      "length": 15,
+      "value": "\"autoSubmitOtp\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 25,
+      "value": "\"merchantResponseTimeout\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 29,
+      "value": "\"sodexoCardBalanceAPITimeout\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
+      "length": 16,
+      "value": "\"enforcePayment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 14,
+      "value": "\"merchantName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 38,
+      "value": "\"showExitConfirmationOnCheckoutScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 37,
+      "value": "\"showExitConfirmationOnPaymentScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 936,
+      "length": 30,
+      "value": "\"showUserCancellationDialogue\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 17,
+      "value": "\"enableSavedCard\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1061,
+      "length": 19,
+      "value": "\"isProtectedScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1115,
+      "length": 14,
+      "value": "\"upiAppsOrder\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1244,
+      "length": 5,
+      "value": "\"key\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 15,
+      "value": "\"transactionId\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1329,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
+      "length": 13,
+      "value": "\"productInfo\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1416,
+      "length": 11,
+      "value": "\"firstName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1524,
+      "length": 6,
+      "value": "\"surl\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1557,
+      "length": 6,
+      "value": "\"furl\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 20,
+      "value": "\"paymentEnvironment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1661,
+      "length": 16,
+      "value": "\"isRetryPayment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1754,
+      "length": 16,
+      "value": "\"userCredential\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1802,
+      "length": 11,
+      "value": "\"userToken\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1845,
+      "length": 11,
+      "value": "\"notifyURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1885,
+      "length": 8,
+      "value": "\"codURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1920,
+      "length": 6,
+      "value": "\"cURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1961,
+      "length": 14,
+      "value": "\"dropCategory\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2014,
+      "length": 18,
+      "value": "\"enforcePayMethod\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2065,
+      "length": 12,
+      "value": "\"customNote\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2112,
+      "length": 14,
+      "value": "\"noteCategory\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2168,
+      "length": 21,
+      "value": "\"splitPaymentDetails\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2228,
+      "length": 18,
+      "value": "\"subventionAmount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2282,
+      "length": 15,
+      "value": "\"skuCartDetail\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2337,
+      "length": 19,
+      "value": "\"additionalCharges\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2406,
+      "length": 29,
+      "value": "\"percentageAdditionalCharges\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2466,
+      "length": 10,
+      "value": "\"flowType\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2545,
+      "length": 9,
+      "value": "\"skipCVV\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2592,
+      "length": 17,
+      "value": "\"enableNativeOTP\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2646,
+      "length": 16,
+      "value": "\"enableOneClick\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2742,
+      "length": 22,
+      "value": "\"enforcementOfferKeys\""
     }
   ]
 }
