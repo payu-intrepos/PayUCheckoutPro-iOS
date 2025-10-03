@@ -43,7 +43,7 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var recurringAmountTf: UITextField!
     @IBOutlet weak var remarksTextField: UITextField!
     @IBOutlet weak var freeTrialSwitch: UISwitch!
-    
+    @IBOutlet weak var billingDateTf: UITextField!
     // Customization
     @IBOutlet weak var primaryColorTextField: UITextField!
     @IBOutlet weak var secondaryColorTextField: UITextField!
@@ -79,9 +79,11 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var enforceNeftRtgsSwitch: UISwitch!
     @IBOutlet weak var enforceBNPLSwitch: UISwitch!
     @IBOutlet weak var enforceCardTypeTextField: UITextField!
+    @IBOutlet weak var enforceCardSchemaTypeTextField: UITextField!
     @IBOutlet weak var subventionAmountTextField: UITextField!
     @IBOutlet weak var enableEnforcementSwitch: UISwitch!
     @IBOutlet weak var enforcementSwitchesStackView: UIStackView!
+    @IBOutlet weak var enforcementOfferKeyTextField: UITextField!
     // User Cancellation View
     @IBOutlet weak var showUserCancellationDialogueSwitch: UISwitch!
     // Font
@@ -97,6 +99,18 @@ class MerchantViewController: UIViewController {
     @IBOutlet weak var tpvSwitch: UISwitch!
     @IBOutlet weak var tpvAccountNumberField: UITextField!
     @IBOutlet weak var tpvIfscCodes: UITextField!
+    @IBOutlet weak var tpvAccountHoldersField: UITextField!
+    @IBOutlet weak var tpvAccountTypeField: UITextField!
+    @IBOutlet weak var tpvVerificationModeField: UITextField!
+   
+    @IBOutlet weak var isWealthTxnSwitch: UISwitch!
+    @IBOutlet weak var isProtectSenstiveScreen: UISwitch!
+    @IBOutlet weak var isOpgspMerchant: UISwitch!
+
+    @IBOutlet weak var otmSwitch: UISwitch!
+    @IBOutlet weak var multiCaptureSwitch: UISwitch!
+    
+    @IBOutlet weak var revokeSwitch: UISwitch!
     // MARK: - Variables -
 
     let keySalt = [
@@ -143,7 +157,8 @@ class MerchantViewController: UIViewController {
     let sodexoSourceId = "src_5521693f-56b6-4102-8af7-cf716610f04a"
     let walletURN = "1000001"
     var selectFontFamily: String = ""
-    let skuOfferDetail = "{\"items\":2,\"sku_details\":[{\"sku_id\":\"Boat123\",\"sku_name\":\"Protein 1\",\"amount_per_sku\":\"10000\",\"quantity\":1,\"offer_key\":[]},{\"sku_id\":\"1112\",\"sku_name\":\"Protein 2\",\"amount_per_sku\":\"5000\",\"quantity\":1,\"offer_key\":[]}]}"
+    var offerKeys: [String] = [""]
+    let skuOfferDetail = "{\"items\":3,\"sku_details\":[{\"sku_id\":\"SKU123\",\"sku_name\":\"Sku123Name\",\"amount_per_sku\":\"2\",\"quantity\":1,\"offer_key\":[]},{\"sku_id\":\"SKU234\",\"sku_name\":\"Sku234Name\",\"amount_per_sku\":\"1000\",\"quantity\":1,\"offer_key\":[]}]}"
 
     @IBOutlet weak var nextButton: UIButton!
     // MARK: - View Controller Lifecycle Methods -
@@ -293,6 +308,8 @@ extension MerchantViewController {
         sodexoCardSourceIdTextField.text = sodexoSourceId
         splitPayTF.text = splitPayRequest
         subventionAmountTextField.text = subventionAmount
+        addtionalChargeTextField.text = "SBIB:20,NB:10,cash:30,CC:15,UPI:25,EMI:20"
+        enforcementOfferKeyTextField.text = offerKeys.joined(separator: ",")
     }
     
     private func getPaymentParam() -> PayUPaymentParam{
@@ -305,7 +322,7 @@ extension MerchantViewController {
         let paymentParam = PayUPaymentParam(key: key,
                                             transactionId: txnIDTextField.text ?? "",
                                             amount: amountTextField.text ?? "",
-                                            productInfo:  productInfo,
+                                            productInfo:  productInfoTextField.text ?? "",
                                             firstName: firstNameTextField.text ?? "",
                                             email: emailTextField.text ?? "",
                                             phone: phoneTextField.text ?? "",
@@ -326,7 +343,7 @@ extension MerchantViewController {
             
             siInfo.billingLimit = "ON"
             siInfo.billingRule = "MAX"
-            
+            siInfo.billingDate = billingDateTf.text?.isEmpty ?? true ? nil : billingDateTf.text
             paymentParam.siParam = siInfo
         }
         if splitPaySwitch.isOn {
@@ -334,73 +351,106 @@ extension MerchantViewController {
         }
         paymentParam.userCredential = userCredentialTextField.text
         paymentParam.enableNativeOTP = self.enableNativeOTPSwitch.isOn
-        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf11"
-        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf22"
-        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf33"
-        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf44"
-        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf55"
+        paymentParam.additionalParam[PaymentParamConstant.udf1] = "udf1"
+        paymentParam.additionalParam[PaymentParamConstant.udf2] = "udf2"
+        paymentParam.additionalParam[PaymentParamConstant.udf3] = "udf3"
+        paymentParam.additionalParam[PaymentParamConstant.udf4] = "udf4"
+        paymentParam.additionalParam[PaymentParamConstant.udf5] = "udf5"
         paymentParam.additionalParam[PaymentParamConstant.merchantAccessKey] = merchantAccessKeyTextField.text ?? ""
         paymentParam.userToken = userTokenTextField.text
         
         paymentParam.additionalParam[PaymentParamConstant.sourceId] = sodexoCardSourceIdTextField.text
         paymentParam.additionalParam[PaymentParamConstant.walletURN] = walletURN
         paymentParam.subventionAmount = subventionAmountTextField.text
-
+      //  paymentParam.skuDetail = Utils.getSKUSOffer(from: skuOfferDetailTextView.text)
+        paymentParam.enforcementOfferKeys = enforcementOfferKeyTextField.text?.components(separatedBy: ",")
+        
         // For TPV
         if tpvSwitch.isOn {
             let accountNumbers : [Substring] = tpvAccountNumberField?.text?.split(separator: ",") ?? []
             let ifscCodes: [Substring] = (tpvIfscCodes?.text?.split(separator: ",")) ?? []
+            let accountNames: [Substring] = (tpvAccountHoldersField?.text?.split(separator: ",")) ?? []
+            let accountTypes: [Substring] = (tpvAccountTypeField?.text?.split(separator: ",")) ?? []
+            let verificationModes: [Substring] = (tpvVerificationModeField?.text?.split(separator: ",")) ?? []
             
             var payuBeneficieryDetailsList = [PayUBeneficiaryParams]()
-            
-            if !ifscCodes.isEmpty {
-                for (index, data) in ifscCodes.enumerated() {
-                    var accountNum = ""
-                    if accountNumbers.indices.contains(index) {
-                        accountNum = String(accountNumbers[index])
-                    }
-                    let ifscCode = String(ifscCodes[index])
-                    
-                    let beneficiaryDetails1 = PayUBeneficiaryParams(
-                        beneficiaryAccountNumber: accountNum,
-                        beneficiaryIFSC: ifscCode)
-                    
+            for (index, data) in accountNumbers.enumerated() {
+                var ifscCode = ""
+                if ifscCodes.indices.contains(index) {
+                    ifscCode = String(ifscCodes[index])
+                }
+                let accountNum = String(accountNumbers[index])
+                var beneficiaryName = ""
+                if accountNames.indices.contains(index) {
+                    beneficiaryName = String(accountNames[index])
+                }
+                var verficationMode: VerificationModeType?
+                if verificationModes.indices.contains(index) {
+                    verficationMode = VerificationModeType.typeFrom(String(verificationModes[index]))
+                }
+                var beneficiaryAccountType = BeneficiaryAccountType.savings
+                if accountTypes.indices.contains(index) {
+                    beneficiaryAccountType = accountTypeFrom(String(accountTypes[index])) ?? .savings
+                }
+                if let verficationMode = verficationMode {
+                    let beneficiaryDetails1 = PayUBeneficiaryParams(beneficiaryName: beneficiaryName, beneficiaryAccountNumber: accountNum, beneficiaryIFSC: ifscCode, beneficiaryAccountType: beneficiaryAccountType, verficationMode: verficationMode
+                    )
+                    payuBeneficieryDetailsList.append(beneficiaryDetails1)
+                } else {
+                    let beneficiaryDetails1 = PayUBeneficiaryParams(beneficiaryName: beneficiaryName, beneficiaryAccountNumber: accountNum, beneficiaryIFSC: ifscCode, beneficiaryAccountType: beneficiaryAccountType
+                    )
                     payuBeneficieryDetailsList.append(beneficiaryDetails1)
                 }
-            } else {
-                for (index, data) in accountNumbers.enumerated() {
-                    var ifscCode = ""
-                    if ifscCodes.indices.contains(index) {
-                        ifscCode = String(ifscCodes[index])
-                    }
-                    let accountNum = String(accountNumbers[index])
-                    
-                    let beneficiaryDetails1 = PayUBeneficiaryParams(
-                        beneficiaryAccountNumber: accountNum,
-                        beneficiaryIFSC: ifscCode)
-                    
-                    payuBeneficieryDetailsList.append(beneficiaryDetails1)
-                }
+                
             }
             paymentParam.payuBeneficieryDetails = payuBeneficieryDetailsList
         }
-//        var payuBeneficieryDetailsList = [PayUBeneficiaryParams]()
-//        let beneficiaryDetails1 = PayUBeneficiaryParams(beneficiaryAccountNumber: "12345678900",
-//                                                       beneficiaryIFSC: "UTIB1234")
-//        let beneficiaryDetails2 = PayUBeneficiaryParams(beneficiaryAccountNumber: "12345678901",
-//                                                       beneficiaryIFSC: "HDFC1234")
-//        payuBeneficieryDetailsList.append(beneficiaryDetails1)
-//        payuBeneficieryDetailsList.append(beneficiaryDetails2)
-//        paymentParam.payuBeneficieryDetails = payuBeneficieryDetailsList
         
         if cfSwitch.isOn {
             paymentParam.additionalCharges = addtionalChargeTextField.text ?? ""
             paymentParam.percentageAdditionalCharges = perAdditionalChargeTextField.text ?? ""
         }
-//        paymentParam.additionalCharges = "SBIB:20,NB:10,cash:30,CC:15,UPI:25"
-//        paymentParam.percentageAdditionalCharges = "DC:20,NB:15,SBIB:20,INTENT:20"
+
+        
+        if otmSwitch.isOn {
+            let siInfo = PayUSIParams(paymentStartDate: self.siStartDate,
+                                      paymentEndDate: self.siEndDate,
+                                      isPreAuthTxn: true)
+            
+            paymentParam.siParam = siInfo
+        }
+        if isOpgspMerchant.isOn {
+            let address = PayUAddressDetails()
+            address.lastName = "Kumar"
+            address.city = "Muzaffarnagar"
+            address.address1 = "Muzaffarnagar"
+            address.address2 = "Muzaffarnagar"
+            address.state = "UP"
+            address.country = "IN"
+            address.zipcode = "251001"
+            paymentParam.address = address
+            
+        }
+        if isWealthTxnSwitch.isOn {
+            let products = PayUWealthProducts(type: "mutual_fund", amount: "1000", receipt: "77407", mfMemberID: "123445", mfUserID: "77407", mfPartner: "cams", mfInvestmentType: "L")
+            products.scheme = "LT"
+            products.mfAMCCode = "LT"
+            paymentParam.products = [products]
+            
+        }
         
         return paymentParam
+    }
+    
+    func accountTypeFrom(_ string: String) -> BeneficiaryAccountType? {
+        switch string {
+        case "Savings Account":
+            return .savings
+        case "Current Account":
+            return .current
+        default:
+            return nil
+        }
     }
     
     private func getPaymentParamDict() -> [String: Any]{
@@ -417,13 +467,13 @@ extension MerchantViewController {
         paymentParamDict["key"] = key
         paymentParamDict["transactionId"] = txnIDTextField.text ?? ""
         paymentParamDict["amount"] = amountTextField.text ?? ""
-        paymentParamDict["productInfo"] = productInfo
+        paymentParamDict["productInfo"] = productInfoTextField.text ?? ""
         paymentParamDict["firstName"] = firstNameTextField.text ?? ""
         paymentParamDict["email"] = emailTextField.text ?? ""
         paymentParamDict["phone"] = phoneTextField.text ?? ""
         paymentParamDict["ios_surl"] = surlTextField.text ?? ""
         paymentParamDict["ios_furl"] = furlTextField.text ?? ""
-        paymentParamDict["environment"] = "1"
+        paymentParamDict["environment"] = environmentTextField.text
         
         if let recurringAmount = self.recurringAmountTf.text,
            let frequency = billingIntervalTf.text,
@@ -440,6 +490,7 @@ extension MerchantViewController {
             siInfoDict["isFreeTrial"] = freeTrialSwitch.isOn
             siInfoDict["billingLimit"] = "ON"
             siInfoDict["billingRule"] = "MAX"
+            siInfoDict["billingDate"] = billingDateTf.text ?? ""
          
             
             paymentParamDict["payUSIParams"] =  siInfoDict
@@ -450,25 +501,42 @@ extension MerchantViewController {
         }
         paymentParamDict["userCredential"] = userCredentialTextField.text
         paymentParamDict["enableNativeOTP"] = self.enableNativeOTPSwitch.isOn
-        paymentParamDict["udf1"] = "udf11"
-        paymentParamDict["udf2"] = "udf22"
-        paymentParamDict["udf3"] = "udf33"
-        paymentParamDict["udf4"] = "udf44"
-        paymentParamDict["udf5"] = "udf55"
+        
+        var additionalDict = [String: Any]()
+        additionalDict["udf1"] = "udf11"
+        additionalDict["udf2"] = "udf22"
+        additionalDict["udf3"] = "udf33"
+        additionalDict["udf4"] = "udf44"
+        additionalDict["udf5"] = "udf55"
+        additionalDict["walletUrn"] = walletURN
+        
+        paymentParamDict["additionalParam"] = additionalDict
         paymentParamDict["merchantAccessKey"] = merchantAccessKeyTextField.text ?? ""
         paymentParamDict["userToken"] = userTokenTextField.text
         paymentParamDict["sourceId"] = sodexoCardSourceIdTextField.text
-        paymentParamDict["walletUrn"] = walletURN
         paymentParamDict["subventionAmount"] = subventionAmountTextField.text
- 
-        // For TPV
-        var payuBeneficieryDetailsList = [[String: Any]]()
-        let beneficiaryDetails1 = ["beneficiaryAccount":"12345678900","beneficiaryIfsc":"UTIB1234"]
-        let beneficiaryDetails2 = ["beneficiaryAccount":"12345678901","beneficiaryIfsc":"HDFC1234"]
-        payuBeneficieryDetailsList.append(beneficiaryDetails1)
-        payuBeneficieryDetailsList.append(beneficiaryDetails2)
+        let skusInJson = "{\"items\":3,\"sku_details\":[{\"skuId\":\"SKU123\",\"skuName\":\"Sku123Name\",\"skuAmount\":\"2\",\"quantity\":1,\"offerKeys\":[]},{\"skuId\":\"SKU234\",\"skuName\":\"Sku234Name\",\"skuAmount\":\"1000\",\"quantity\":1,\"offerKeys\":[]}]}"
+        if let jsonSku = PPKUtils.getJSON(from: skusInJson) {
+            paymentParamDict["skuDetails"] = ["skus": jsonSku["sku_details"]]
+        }
+        paymentParamDict["enforcementOfferKeys"] = enforcementOfferKeyTextField.text?.components(separatedBy: ",")
         
-        paymentParamDict["beneficiaryDetails"] = payuBeneficieryDetailsList
+        // For TPV
+        if tpvSwitch.isOn {
+            var payuBeneficieryDetailsList = [[String: Any]]()
+            let beneficiaryDetails1 = ["beneficiaryAccount":"12345678900","beneficiaryIfsc":"UTIB1234"]
+            let beneficiaryDetails2 = ["beneficiaryAccount":"12345678901","beneficiaryIfsc":"HDFC1234"]
+            payuBeneficieryDetailsList.append(beneficiaryDetails1)
+            payuBeneficieryDetailsList.append(beneficiaryDetails2)
+            
+            paymentParamDict["beneficiaryDetails"] = payuBeneficieryDetailsList
+        }
+        
+        // For MBCF
+        if cfSwitch.isOn {
+            paymentParamDict["additionalCharges"] = addtionalChargeTextField.text ?? ""
+            paymentParamDict["percentageAdditionalCharges"] = perAdditionalChargeTextField.text ?? ""
+        }
         
         params["payUPaymentParams"] = paymentParamDict
         return params
@@ -497,6 +565,7 @@ extension MerchantViewController {
     }
 
     private func addCheckoutProConfigurations(config: PayUCheckoutProConfig) {
+        config.isProtectedScreen = isProtectSenstiveScreen.isOn
         config.merchantName = merchantNameTextField.text
         config.merchantLogo = UIImage(named: logoNameTextField.text ?? "")
         config.showMerchantLogo = showMerchantLogoSwitch.isOn
@@ -522,6 +591,7 @@ extension MerchantViewController {
         // CB Configurations
         config.autoSelectOtp = autoOTPSelectSwitch.isOn
         config.autoSubmitOtp = autoOTPSubmitSwitch.isOn
+        config.isProtectedScreen = isProtectSenstiveScreen.isOn
         if let merchantResponseTimeoutStr = merchantResponseTimeoutTextField.text,
            let merchantResponseTimeout = TimeInterval(merchantResponseTimeoutStr) {
             config.merchantResponseTimeout = merchantResponseTimeout
@@ -572,6 +642,7 @@ extension MerchantViewController {
         if let cardType = enforceCardTypeTextField.text, !cardType.isEmpty {
             let cardType = cardType.uppercased() == PaymentParamConstant.cc ? PaymentParamConstant.cc : PaymentParamConstant.dc
             ccdcEnforcement[PaymentParamConstant.cardType] = cardType
+            ccdcEnforcement[PaymentParamConstant.cardSchemaType] = enforceCardSchemaTypeTextField.text ?? ""
         }
         
         var upiEnforcement = [String: Any]()
@@ -733,8 +804,8 @@ extension MerchantViewController: PayUCheckoutProDelegate {
     }
     
     func refundTransactions() {
-        var txnIds:[String] = []
-        var payuIds:[String] = []
+        let txnIds:[String] = []
+        let payuIds:[String] = []
         for id in 0 ..< txnIds.count {
             let param = PayUModelPaymentParams()
             param.transactionID = txnIds[id]
@@ -786,7 +857,11 @@ extension MerchantViewController: UIGestureRecognizerDelegate {
             if constraint.firstAttribute == .bottom {
                 // If first item is self's view then constant should be positive else it should be negative
                 let multiplier = constraint.firstItem as? UIView == self.view ? 1 : -1
-                constraint.constant =  CGFloat(multiplier) * keyboardVisibleHeight
+                if #available(iOS 14.0, *), UIAccessibility.prefersCrossFadeTransitions {
+                    constraint.constant = endFrame.height > 0 ? keyboardVisibleHeight : 0
+                } else {
+                    constraint.constant =  CGFloat(multiplier) * keyboardVisibleHeight
+                }
             }
         }
         

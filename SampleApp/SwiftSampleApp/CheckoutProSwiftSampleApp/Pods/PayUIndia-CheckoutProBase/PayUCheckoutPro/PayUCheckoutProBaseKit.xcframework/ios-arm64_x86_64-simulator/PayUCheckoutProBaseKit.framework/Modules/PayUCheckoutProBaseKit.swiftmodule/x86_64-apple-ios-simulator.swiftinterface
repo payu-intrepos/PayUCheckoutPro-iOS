@@ -1,7 +1,8 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUCheckoutProBaseKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCheckoutProBaseKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+import PayUBizCoreKit
 @_exported import PayUCheckoutProBaseKit
 import PayUCommonUI
 import PayUParamsKit
@@ -23,6 +24,7 @@ import _SwiftConcurrencyShims
   @objc final public let showUserCancellationDialogue: Swift.Bool
   @objc public var fontfamily: PayUCommonUI.PayUFontFamily?
   @objc public var enableSavedCard: Swift.Bool
+  @objc public var isProtectedScreen: Swift.Bool
   @objc public var upiAppsOrder: Swift.String?
   @objc public var primaryColor: UIKit.UIColor? {
     @objc get
@@ -37,6 +39,9 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+extension PayUCheckoutProBaseKit.OnePayUBaseConfig {
+  @objc dynamic public func toLoggableDictionary() -> [Swift.String : Swift.String]
+}
 @objc @_inheritsConvenienceInitializers public class BaseAPIResponse : ObjectiveC.NSObject {
   public var error: (any Swift.Error)?
   @objc override dynamic public init()
@@ -46,7 +51,6 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   public var quickPaymentModes: [PayUParamsKit.PaymentMode]?
   public var otherPaymentModes: [PayUParamsKit.PaymentMode]?
-  public var tpvPaymentModes: [PayUParamsKit.PaymentOption]?
   @objc public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc deinit
 }
@@ -62,6 +66,9 @@ import _SwiftConcurrencyShims
   @objc override public func copy(with zone: ObjectiveC.NSZone? = nil) -> Any
   @objc override dynamic public init()
   @objc deinit
+}
+extension PayUCheckoutProBaseKit.PayUCheckoutProConfig {
+  @objc override dynamic public func toLoggableDictionary() -> [Swift.String : Swift.String]
 }
 @objc @_inheritsConvenienceInitializers public class ImageParam : ObjectiveC.NSObject {
   public var paymentOption: PayUParamsKit.PaymentOption?
@@ -81,6 +88,7 @@ public typealias FetchPaymentOptionCompletion = (_ response: PayUCheckoutProBase
 public typealias EMICalculationCompletion = (_ response: [PayUParamsKit.PayUEmiCalculationDetails]?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias GetBinInfoOfCard = (_ cardBinInfo: PayUParamsKit.CardBinInfo?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias GetBinInfo = (_ cardBinInfo: [PayUParamsKit.CardBinInfo]?, _ error: (any Swift.Error)?) -> Swift.Void
+public typealias GetConvenienceFeeCompletion = (_ response: [Swift.String : [PayUParamsKit.PayUCharges]]?, _ error: (any Swift.Error)?) -> Swift.Void
 public typealias ErrorCompletion = (_ error: (any Swift.Error)?) -> Swift.Void
 public typealias ImageCompletion = (_ image: UIKit.UIImage?, _ index: Swift.Int) -> Swift.Void
 public typealias CheckEligibilityCompletion = (_ response: PayUCheckoutProBaseKit.CheckEligibilityResponse) -> Swift.Void
@@ -94,6 +102,8 @@ public typealias GetStringCompletion = (_ successString: Swift.String?, _ error:
 public typealias FetchQuickPayAndRecommendationOptionsCompletion = (_ savedOptions: PayUParamsKit.PayUSavedPaymentOptions?, _ recommendationOptions: [PayUParamsKit.PayUTiles]?, _ error: Swift.String?) -> Swift.Void
 public typealias EnableCompletion = (_ isEnable: Swift.Bool?) -> Swift.Void
 public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayULanguage], _ selectedLanguage: PayUParamsKit.PayULanguageCode) -> Swift.Void
+public typealias GetOLWMpinOtpCompletion = (_ response: PayUParamsKit.PayUOLWMpinOtpResponse?, _ errorMessage: Swift.String?) -> Swift.Void
+public typealias CheckBalanceCompletion = (_ cardDetails: PayUBizCoreKit.PayUModelSodexoCardDetail?, _ errorMessage: Swift.String?) -> Swift.Void
 @objc public protocol OnePayUBaseLayerDelegate {
   @objc func paymentSuccess(response: Any?)
   @objc func paymentFailure(response: Any?)
@@ -116,17 +126,20 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc open func makePayment(paymentOption: PayUParamsKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc open func cancelCurrentPayment() -> Swift.Bool
-  @objc open func getBinInfoOf(cardNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
+  @objc open func getBinInfoOf(cardNumber: Swift.String, paymentOption: PayUParamsKit.PaymentOption?, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
   @objc open func fetchMCPLookupData(cardBinInfo: PayUParamsKit.CardBinInfo, onCompletion: @escaping () -> Swift.Void)
   @objc open func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc open func getBalanceFromSodexo(_ sourceId: Swift.String)
   @objc open func getBalanceFromCLW(mobile: Swift.String, bankCode: Swift.String)
+  @objc open func getBalanceForOLW(mobile: Swift.String, bankCode: Swift.String, completion: @escaping PayUCheckoutProBaseKit.CheckBalanceCompletion)
   @objc open func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc open func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
   @objc open func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc open func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  @objc open func fetchConvenienceFee(paymentOptions: [PayUParamsKit.PaymentOption]?)
   @objc open func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc open func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc open func postAdsImpressionEvent(requestId: Swift.String?)
   @objc open func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc open func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
@@ -134,6 +147,9 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   @objc open func logout()
   @objc open func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc open func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
+  @objc open func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc open func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  @objc open func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc deinit
 }
 @objc public enum ScreenState : Swift.Int {
@@ -146,6 +162,12 @@ public typealias FetchLanguagesCompletion = (_ allLanguages: [PayUParamsKit.PayU
   case addCard
   case bankDetails
   case loadAmount
+  case nonLogin
+  case loggedin
+  case olwLogin
+  case balanceDetails
+  case sufficientBalance
+  case olwMpinStatus
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

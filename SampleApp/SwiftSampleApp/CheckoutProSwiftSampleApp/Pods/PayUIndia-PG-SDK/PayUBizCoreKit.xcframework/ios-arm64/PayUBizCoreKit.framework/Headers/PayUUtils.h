@@ -155,6 +155,8 @@ typedef void (^completionBlockForWebServiceResponse)(id JSON ,NSString *errorMes
 
 +(id)getValue:(NSDictionary *) dict forKey:(NSString *)key;
 
++(NSDictionary *)getDictionaryValue:(NSDictionary *) dict forKey:(NSString *)key;
+    
 +(NSString *)getStringValue:(NSDictionary *) dict forKey:(NSString *)key;
 
 +(NSArray *)getArrayValue:(NSDictionary *) dict forKey:(NSString *)key ;
@@ -168,6 +170,8 @@ typedef void (^completionBlockForWebServiceResponse)(id JSON ,NSString *errorMes
 + (BOOL)isForAllBin:(PayUModelPaymentParams *) param;
 
 +(BOOL)isSITxn:(PayUModelPaymentParams *) paymentParam;
+
++(BOOL)isOTMTxn:(PayUModelPaymentParams *) paymentParam;
 
 + (NSDate*)getFormattedDate:(NSString *) dateString;
 
@@ -197,6 +201,12 @@ typedef void (^completionBlockForWebServiceResponse)(id JSON ,NSString *errorMes
 
 + (NSString *)getCurrentTimeMiliSecond;
 
++ (NSString *)getCurrentTimeFormatYYYYMMDDHHMMSS;
+
++ (NSString *)mobileNumberWithCountryCode: (NSString *)phone;
+
++ (NSString *)generateUniqueValue;
+
 +(BOOL)isKindOfNSNumber:(id) value;
 
 + (NSMutableDictionary *)getMCPRequestDict:(PayUModelPaymentParams *)paymentParam;
@@ -216,5 +226,7 @@ typedef void (^completionBlockForWebServiceResponse)(id JSON ,NSString *errorMes
 + (NSString*)getDigestForString:(NSString*)input;
 
 + (PayURequestHeaderParams *)getV2APIHeaderParams:(NSString *)body;
+
++ (NSString*)removeWhiteSpaceNewline:(NSString*) originalString;
 
 @end

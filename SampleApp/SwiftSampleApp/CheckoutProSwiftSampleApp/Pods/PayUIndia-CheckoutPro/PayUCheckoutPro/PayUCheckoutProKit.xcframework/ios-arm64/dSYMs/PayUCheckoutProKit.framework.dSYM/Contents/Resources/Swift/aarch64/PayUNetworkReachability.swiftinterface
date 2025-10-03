@@ -1,0 +1,65 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUNetworkReachability
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Foundation
+@_exported import PayUNetworkReachability
+import Swift
+import SystemConfiguration
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum PayUReachabilityError : Swift.Error {
+  case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
+  case failedToCreateWithHostname(Swift.String, Swift.Int32)
+  case unableToSetCallback(Swift.Int32)
+  case unableToSetDispatchQueue(Swift.Int32)
+  case unableToGetFlags(Swift.Int32)
+}
+public let kPayUNetworkReachabilityChangedNotification: Swift.String
+extension Foundation.NSNotification.Name {
+  public static let payuReachabilityChanged: Foundation.Notification.Name
+}
+@objc public class PayUReachabilitySwift : ObjectiveC.NSObject {
+  @objc public static let shared: PayUNetworkReachability.PayUReachabilitySwift?
+  public typealias NetworkReachable = (PayUNetworkReachability.PayUReachabilitySwift) -> ()
+  public typealias NetworkUnreachable = (PayUNetworkReachability.PayUReachabilitySwift) -> ()
+  public enum Connection : Swift.CustomStringConvertible {
+    case unavailable, wifi, cellular
+    public var description: Swift.String {
+      get
+    }
+    public static func == (a: PayUNetworkReachability.PayUReachabilitySwift.Connection, b: PayUNetworkReachability.PayUReachabilitySwift.Connection) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public var whenReachable: PayUNetworkReachability.PayUReachabilitySwift.NetworkReachable?
+  public var whenUnreachable: PayUNetworkReachability.PayUReachabilitySwift.NetworkUnreachable?
+  public var allowsCellularConnection: Swift.Bool
+  public var notificationCenter: Foundation.NotificationCenter
+  public var connection: PayUNetworkReachability.PayUReachabilitySwift.Connection {
+    get
+  }
+  required public init(reachabilityRef: SystemConfiguration.SCNetworkReachability, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main)
+  convenience public init(hostname: Swift.String, queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
+  @objc deinit
+}
+extension PayUNetworkReachability.PayUReachabilitySwift {
+  @objc dynamic public func startNotifier()
+  @objc dynamic public func stopNotifier()
+  @objc dynamic public func isNotifierRunning() -> Swift.Bool
+  @objc dynamic public var isReachable: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isReachableViaWWAN: Swift.Bool {
+    @objc get
+  }
+  @objc dynamic public var isReachableViaWiFi: Swift.Bool {
+    @objc get
+  }
+}
+extension PayUNetworkReachability.PayUReachabilitySwift.Connection : Swift.Equatable {}
+extension PayUNetworkReachability.PayUReachabilitySwift.Connection : Swift.Hashable {}

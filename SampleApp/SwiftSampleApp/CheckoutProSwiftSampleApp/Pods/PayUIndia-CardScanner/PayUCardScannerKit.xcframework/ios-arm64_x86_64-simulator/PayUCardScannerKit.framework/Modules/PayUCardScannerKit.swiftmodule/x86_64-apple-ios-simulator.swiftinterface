@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUCardScannerKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCardScannerKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import DeveloperToolsSupport
 import Foundation
@@ -77,7 +77,7 @@ extension PayUCardScannerKit.PURegex {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 13, *)
 @objc public class PUCardScanner : ObjectiveC.NSObject {
   @objc public static let shared: PayUCardScannerKit.PUCardScanner
-  @objc public func openScanner(from vc: UIKit.UIViewController, completion: @escaping ((PayUCardScannerKit.PUCardRecognizer?, PayUCardScannerKit.PUError?) -> Swift.Void))
+  @objc public func openScanner(from vc: UIKit.UIViewController, completion: @escaping (PayUCardScannerKit.PUCardRecognizer?, PayUCardScannerKit.PUError?) -> Swift.Void)
   @objc deinit
 }
 extension PayUCardScannerKit.PUTextConfidence : Swift.Equatable {}

@@ -131,13 +131,20 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUNativeOtpAssist",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUNativeOtpAssist"
       },
       {
         "kind": "Import",
@@ -2141,6 +2148,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isProtectedScreen",
+            "printedName": "isProtectedScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUNativeOtpAssist@objc(cs)PayUOtpAssistConfig(py)isProtectedScreen",
+            "mangledName": "$s19PayUNativeOtpAssist0a4UOtpD6ConfigC17isProtectedScreenSbvp",
+            "moduleName": "PayUNativeOtpAssist",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUNativeOtpAssist@objc(cs)PayUOtpAssistConfig(im)isProtectedScreen",
+                "mangledName": "$s19PayUNativeOtpAssist0a4UOtpD6ConfigC17isProtectedScreenSbvg",
+                "moduleName": "PayUNativeOtpAssist",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUNativeOtpAssist@objc(cs)PayUOtpAssistConfig(im)setIsProtectedScreen:",
+                "mangledName": "$s19PayUNativeOtpAssist0a4UOtpD6ConfigC17isProtectedScreenSbvs",
+                "moduleName": "PayUNativeOtpAssist",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:19PayUNativeOtpAssist0a4UOtpD6ConfigC17isProtectedScreenSbvM",
+                "mangledName": "$s19PayUNativeOtpAssist0a4UOtpD6ConfigC17isProtectedScreenSbvM",
+                "moduleName": "PayUNativeOtpAssist",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -3253,6 +3353,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
+        "declKind": "Import",
+        "moduleName": "PayUNativeOtpAssist"
       },
       {
         "kind": "Import",
@@ -4686,6 +4793,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Public Files\/PayUOtpAssistConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 857,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Extensions\/UIDevice.swift",
       "kind": "StringLiteral",
       "offset": 424,
@@ -4870,28 +4984,28 @@
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1740,
+      "offset": 1741,
       "length": 12,
       "value": "\"hashString\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1792,
+      "offset": 1793,
       "length": 10,
       "value": "\"hashType\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1842,
+      "offset": 1843,
       "length": 10,
       "value": "\"hashName\""
     },
     {
       "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/PayUNativeOtpAssist\/PayUNativeOtpAssistFiles\/Supporting Files\/Utils\/PayUOtpAssistHashUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1892,
+      "offset": 1893,
       "length": 10,
       "value": "\"postSalt\""
     },
