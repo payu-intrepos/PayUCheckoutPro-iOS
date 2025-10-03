@@ -32,7 +32,7 @@ typedef void (^completionBlock)(NSDictionary *hashDict);
 
 typedef void (^completionBlockForHashGeneration)(NSDictionary *parameters ,completionBlock completionBlock);
 
-typedef void (^completionBlockForUpdatedPaymentParam)(NSString *paymentType ,NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForUpdatedPaymentParam)(NSString *paymentType ,NSString *errorMessage, id extraParamm, NSMutableURLRequest* urlRequest, NSString* postParam);
 
 typedef void (^completionBlockForGetTokenizedPaymentDetails)(PayUModelTokenizedPaymentDetails *tokenizedPaymentdetails ,NSString *errorMessage, id extraParam);
 
@@ -66,6 +66,7 @@ typedef void (^completionBlockForVerifyPayment)(NSDictionary *dictVerifyPayment 
 typedef void (^completionBlockForDeleteOneTapToken)(NSString *deleteOneTapTokenMsg ,NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForCheckIsDomestic)(PayUModelCheckIsDomestic *checkIsDomestic , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForGetBinInfo)(NSArray<PayUModelCheckIsDomestic*> *allBin , NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForConvenienceFee)(NSMutableDictionary<NSString *, NSMutableArray<PayUCharges *> *> *cfJSON, NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForRefund)(NSString *message , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForGetTransactionInfo)(NSArray *arrOfGetTxnInfo , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForSaveUserCard)(PayUModelStoredCard *objStoredCard , NSString *errorMessage, id extraParam);
@@ -77,6 +78,7 @@ typedef void (^completionBlockForString)(NSString* responseString ,NSString *err
 typedef void (^completionBlockForQuickPayOption)(PayUQuickPayResult *otpVerifyModel ,NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForDeleteQuickPayOption)(PayUDeleteQuickPayResponse *response ,NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetails*> *emiCalculatorModel ,NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForOLWMpinOtp)(PayUOLWMpinOtpResponse *olwMpinOTPResponse, NSString *errorMessage, id extraParam);
 //MARK:- initailizer
 -(id)init;
 //MARK:- This method is to start crash reporting
@@ -218,6 +220,9 @@ typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetai
  */
 -(void)getBinInfo:(PayUModelPaymentParams *) paymentParam withCompletionBlock:(completionBlockForGetBinInfo) paramCompletionBlock;
 
+-(void)getBinBasedDetail:(PayUModelPaymentParams *) paymentParam withCompletionBlock:(completionBlockForCheckIsDomestic) paramCompletionBlock
+    completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock;
+
 -(void)getTransactionInfo:(PayUModelPaymentParams *) paymentParam withCompletionBlock:(completionBlockForGetTransactionInfo) paramCompletionBlock;
 
 -(void)saveUserCard:(PayUModelPaymentParams *) paymentParam withCompletionBlock:(completionBlockForSaveUserCard) paramCompletionBlock DEPRECATED_MSG_ATTRIBUTE("The \"saveUserCard:withCompletionBlock\" method is not supported because of RBI guidelines, in order to save or edit the card, please save card by authenticating it doing an actual payment.");
@@ -257,6 +262,7 @@ typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetai
  */
 -(void)getAllOfferDetails:(PayUModelPaymentParams *) paymentParam completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock completionBlockForAPIResponse:(completionBlockForAllOfferDetails) responseCompletionBlock;
 
+-(void)getConvenienceFee:(PayUModelPaymentParams *) paymentParam completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock completionBlockForAPIResponse:(completionBlockForConvenienceFee) responseCompletionBlock;
 /*!
  * This method gives webService response callback for ValidateOfferDetails.
  * @param paymentParam PayUModelPaymentParams
@@ -285,4 +291,6 @@ completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompleti
 completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock completionBlockForAPIResponse:(completionBlockForDeleteQuickPayOption)responseCompletionBlock;
 - (void)fetchEMICalculation:(PayUModelPaymentParams *)paymentParam
 completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock completionBlockForAPIResponse:(completionBlockForEmiCalculation)responseCompletionBlock;
+-(void)fetchOLWDetailForActionType:(NSString *)actionType paymentParam:(PayUModelPaymentParams *) paymentParam  completionBlockForHashGeneration:(completionBlockForHashGeneration) hashCompletionBlock completionBlockForAPIResponse:(completionBlockForOLWMpinOtp) responseCompletionBlock;
+
 @end

@@ -80,6 +80,7 @@
 #define ERROR_SODEXO_SOURCE_ID_IS_MISSING                       @"Sodexo sourde id is missing, "
 #define ERROR_TRANSACTIONID_IS_MISSING                          @"Transaction ID is missing, "
 #define ERROR_TRANSACTIONID_GREATER_THAN_25                     @"Transaction ID greater than 25 character, "
+#define ERROR_PAYMENT_OBJECT_IS_INVALID                         @"Payment Object is not valid."
 
 #define ERROR_AMOUNT_IS_NONNUMERIC                              @" is non-numeric, "
 #define ERROR_AMOUNT_CONTAIN_MORE_THAN_ONE_DECIMAL              @"Amount contain more than one decimal, "
@@ -150,7 +151,6 @@
 #define ERROR_STORED_CARD_TYPE_IS_MISSING                       @"Stored card type is missing, "
 #define ERROR_STORED_CARD_MODE_IS_MISSING                       @"Stored card mode is missing, "
 
-#define ERROR_USER_TOKEN_IS_MISSING                             @"User token is missing, "
 #define ERROR_PAYMENT_CODE_IS_MISSING                           @"Payment code is missing, "
 #define ERROR_CATEGORY_IS_MISSING                               @"Category is missing, "
 #define ERROR_OFFER_KEYS_ARE_MISSING                            @"Offer keys are missing, "
@@ -194,10 +194,14 @@
 #define ERROR_INVALID_BILLING_CYCLE                             @"Invalid billing cycle value passed, "
 #define ERROR_INVALID_BILLING_AMOUNT_FOR_ADHOC                  @"Billing amount should not be greater than amount passed in subscription call."
 #define ERROR_INVALID_START_DATE                                @"Invalid SI start date, "
+#define ERROR_INVALID_OTM_START_DATE                            @"Invalid OTM start date, "
 #define ERROR_INVALID_END_DATE                                  @"Invalid SI end date, "
+#define ERROR_INVALID_OTM_END_DATE                              @"Invalid OTM end date, "
 
 #define ERROR_BENFECIARY_DETAIL_PARAM_MISSING                   @"Beneficiary details missing, "
+#define ERROR_CONVENIENCE_FEE_DETAIL_PARAM_MISSING              @"convenienceFee details missing, "
 #define ERROR_BENFECIARY_ACCOUNT_NAME_PARAM_MISSING             @"Beneficiary account holder name is missing, "
+#define ERROR_CONVENIENCE_FEE_MERCHANT_NAME_PARAM_MISSING       @"convenienceFee merchant name is missing, "
 #define ERROR_ACCOUNT_NAME_PARAM_MISSING                        @"Account holder name is missing, "
 #define ERROR_BENFECIARY_ACCOUNT_NUMBER_PARAM_MISSING           @"Beneficiary account holder number is missing, "
 #define ERROR_INVALID_ACCOUNT_NUMBER                            @"Please enter atleast 8 digit account number, "
@@ -212,7 +216,10 @@
 #define MIN_TXN_AMOUNT                                          @"Min transaction amount"
 #define TRANSACTION_AMOUNT                                      @"Transaction Amount"
 #define ERROR_IFSC_IS_MISSING                                   @"IFSC is missing, "
-
+//OLW
+#define ERROR_OLW_DETAIL_PARAM_MISSING                          @"OLW details missing"
+// OTM Errors
+#define ERROR_OTM_PARAM_MISSING                                  @"OTM Param missing, "
 // Regex
 
 #define EMAIL_REGEX                                             @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
@@ -267,6 +274,11 @@
 #define COMMAND_FETCH_QUICK_PAY_OPTION                          @"fetch_quick_pay_option"
 #define COMMAND_DELETE_QUICK_PAY_OPTION                         @"delete_quick_pay_option"
 #define COMMAND_FETCH_EMI_CALCULATOR                            @"fetch_emi_calculator"
+#define COMMAND_SEND_OLW_OTP                                    @"sendOLWOtp"
+#define COMMAND_SET_RESET_OLW_MPIN                              @"setResetOLWMpin"
+#define COMMAND_VERIFY_OLW_MPIN_DEVICEID_TOKEN                  @"verifyOLWMpinDeviceIdToken"
+#define COMMAND_GET_BIN_BASED_DETAILS                           @"getBinBasedDetails"
+#define COMMAND_GET_CONVENIENCE_FEE                             @"getConvenienceFee"
 
 // Endpoints for webservice
 
@@ -286,6 +298,12 @@
 #define QUICK_PAY_FETCH_REQUEST                                 @"/recommendation/v1/fetch"
 #define QUICK_PAY_UPDATE_CONSENT_REQUEST                        @"/sdk/instrumentDetail/consent"
 #define EMI_CALCULATOR                                          @"/calculateEmi/v3"
+// OLW
+#define SEND_OTP                                                @"/loyalty-points/ppi/v1/otp/send"
+#define SET_RESET_MPIN                                          @"/loyalty-points/ppi/v1/set-reset/mpin"
+#define VERIFY_MPIN_DEVICEID_TOKEN                              @"/loyalty-points/ppi/v1/verifyMpinDeviceIdToken"
+#define BIN_DETAILS                                             @"/sdk/card/binDetails"
+#define FETCH_CONVENIENCE                                       @"/sdk/checkoutx/fetchConvenienceFee"
 // HTTP MEthods
 #define HTTP_METHOD_GET                                         @"GET"
 #define HTTP_METHOD_POST                                        @"POST"
@@ -342,6 +360,7 @@
 #define     PARAM_IS_QUICKPAY_ENABLE                            @"isQuickPayEnabled"
 #define     PARAM_IS_QUICKPAY_BOTTOMSHEET_ENABLE                @"isQuickPayBottomSheetEnabled"
 #define     PARAM_MERCHANT                                      @"merchant_param"
+#define     PARAM_CUSTOMER_REVENUE_ENABLED                      @"customerRevenueEnabled"
 
 //Global vault
 #define     PARAM_CLIENT_PAYU                                   @"payu"
@@ -401,6 +420,7 @@
 #define     PARAM_USER_CREDENTIALS                              @"user_credentials"
 #define     PARAM_SUBVENTION_AMOUNT                             @"subvention_amount"
 #define     PARAM_NOTIFYURL                                     @"notifyurl"
+#define     PARAM_OLW_WALLET_IDENTIFIER                         @"OLW"
 
 #define     PARAM_DEVICE_ID                                     @"deviceId"
 #define     PARAM_DEVICE_TYPE                                   @"device_type"
@@ -456,6 +476,7 @@
 #define     KEY_LAZYPAY                                         @"lazypay"
 #define     KEY_NO_COST_EMI                                     @"no_cost_emi"
 #define     KEY_UPI                                             @"upi"
+#define     KEY_UPI_OTM                                         @"upiotm"
 #define     KEY_ALL                                             @"all"
 #define     KEY_TENURE_OPTIONS                                  @"tenureOptions"
 #define     KEY_SUPPORTED_APPS                                  @"supportedApps"
@@ -510,6 +531,8 @@
 #define     KEY_RETRY_ALLOWED                                 @"retryAllowed"
 #define     KEY_DISPLAY_NAME                                  @"displayName"
 #define     KEY_LOGO                                          @"logo"
+#define     KEY_OPGSP_MERCHANT                                @"opgsp_merchant"
+#define     KEY_IS_INSURANCE_MERCHANT                         @"isInsuranceMerchant"
 #define     KEY_IFSC_BANK_NAME_MAPPING                        @"ifscBankNameMapping"
 
 // OfferStatus parsing elements
@@ -528,7 +551,8 @@
 #define     KEY_ALLOWED_ON                                      @"allowed_on"
 #define     KEY_DATA                                            @"data"
 #define     KEY_BINS_DATA                                       @"bins_data"
-#define     KEY_OFFER_DATA                                      @"offer_data"
+#define     KEY_OFFER_DATA                                      @"validate_offer_data"
+#define     KEY_PRICING_CF_DATA                                 @"pricing_cf_data"
 #define     KEY_CARD_DATA                                       @"card_data"
 #define     KEY_CARD_TOKENS                                     @"card_tokens"
 #define     KEY_HTTP_STATUS                                     @"http_status"
@@ -539,6 +563,7 @@
 #define     KEY_NETWORK_TOKEN                                   @"network_token"
 #define     KEY_CARD_PAR                                        @"card_PAR"
 #define     KEY_CRYPTOGRAM                                      @"cryptogram"
+#define     KEY_ERROR_MSG                                       @"errorMessage"
 
 // Payment Param for Stored Card
 #define     KEY_STORE_CARD_TOKEN                                @"store_card_token"
@@ -579,6 +604,7 @@
 #define     PARAM_BILLING_RULE                                  @"billingRule"
 #define     PARAM_BILLING_LIMIT                                 @"billingLimit"
 #define     PARAM_REMARKS                                       @"remarks"
+#define     PARAM_BILLING_DATE                                  @"billingDate"
 #define     PARAM_FREE_TRIAL                                    @"free_trial"
 #define     PARAM_IFSC_CODE                                     @"ifscCode"
 
@@ -618,6 +644,16 @@
 #define     KEY_TRANSACTION_AMOUNT                              @"transaction_amount"
 #define     KEY_UNMAPPEDSTATUS                                  @"unmappedstatus"
 
+// Keys for Bin Info V2
+#define     KEY_INSTRUMENT_ID                                   @"instrument_id"
+#define     KEY_INSTRUMENT_TYPE                                 @"instrument_type"
+#define     KEY_DEVICE_TYPE                                     @"device_type"
+#define     KEY_DEVICE_TYPE                                     @"device_type"
+#define     KEY_TXN_ID                                          @"txnId"
+#define     KEY_IS_PRICING_CF_ENABLE                            @"isPricingCFEnable"
+#define     KEY_VALIDATE_OFFER_REQUEST                          @"validateOfferRequest"
+#define     KEY_IS_SI_TXN                                       @"isSITxn"
+
 // Available Payment Option
 
 #define     PAYMENT_PG_ONE_TAP_STOREDCARD                       @"One Tap Stored Card"
@@ -642,7 +678,9 @@
 #define     PAYMENT_PG_BNPL                                     @"BNPL"
 #define     PAYMENT_PG_GPAY                                     @"googlepay"
 #define     PAYMENT_PG_UPI_TPV                                  @"UPITPV"
+#define     PAYMENT_PG_UPI_OTM                                  @"UPIOTM"
 #define     PAYMENT_PG_UPI_INTENT_TPV                           @"INTTPV"
+#define     PAYMENT_PG_UPI_INTENT_OTM                           @"INTOTM"
 
 // PG Type
 
@@ -772,6 +810,8 @@ typedef NS_ENUM(NSUInteger, PayUAPIVersion) {
 #define     KEY_BRAND                                           @"brand"
 #define     KEY_ISSUER                                          @"issuer"
 #define     KEY_BIN                                             @"bin"
+#define     KEY_CONVENIENCE_FEE_DATA                            @"convenienceFeeData"
+#define     KEY_OLW                                             @"olw"
 #define     KEY_LAST4DIGITS                                     @"last4Digits"
 #define     KEY_CARD_HASH                                       @"cardHash"
 #define     KEY_ORDERED_ITEM                                    @"orderedItem"
@@ -888,6 +928,7 @@ typedef NS_ENUM(NSUInteger, PayUAPIVersion) {
 #define     PARAM_PLATFORM_ID                                   @"platformId"
 #define     PARAM_USER_DETAILS                                  @"userDetail"
 #define     PARAM_PHONE_NO                                      @"phoneNo"
+#define     PARAM_LOGGED_IN_PHONE_NO                            @"loggedInPhoneNumber"
 #define     PARAM_SKU_DETAILS                                   @"skusDetail"
 
 // Has String Constants
@@ -900,16 +941,44 @@ typedef NS_ENUM(NSUInteger, PayUAPIVersion) {
 #define     PARAM_AUTO_APPLY_OFFER                              @"autoApplyOffer"
 #define     PARAM_EMI_CODES                                     @"emiCodes"
 #define     PARAM_ADDITIONAL_CHARGES                            @"additionalCharges"
+#define     PARAM_PERCENTAGE_ADDITIONAL_CHARGES                 @"percentageAdditionalCharges"
+#define     PARAM_MERCHANT_ADDITIONAL_CHARGES                   @"merchantAdditionalCharges"
 #define     PARAM_BANK_CODES                                    @"bankCodes"
 #define     PARAM_DISABLE_OVERRIDE_NCE_CONFIG                   @"disableOverrideNceConfig"
 #define     PARAM_SKUS                                          @"skus"
 
 #define     VALUE_TRUE                                          @"true"
 #define     VALUE_FALSE                                         @"false"
+#define     VALUE_SOURCE                                        @"IOS_SDK"
 
 #define     PARAM_CONSENT                                       @"consent"
 #define     PARAM_PAYMENT_MODE                                  @"paymentMode"
 #define     PARAM_PG_TITLE                                      @"pgTitle"
 #define     PARAM_PG_DETAILS                                    @"pgDetails"
+// OLW
+#define     PARAM_CLIENT_TXN_ID                                 @"clientTxnId"
+#define     PARAM_ORIGINAL_CLIENT_TXN_ID                        @"originalClientTxnId"
+#define     PARAM_REQUEST_DATE_TIME                             @"requestDateTime"
+#define     PARAM_CUSTOMER_MOBILE                               @"customerMobile"
+#define     PARAM_MPIN                                          @"mpin"
+#define     PARAM_NEW_MPIN                                      @"newMpin"
+
+//Convenience FEE
+#define     PARAM_SUB_CLIENT_ID                                 @"subClientId"
+#define     PARAM_ENTITY_ID                                     @"entityId"
+#define     PARAM_TIME_STAMP                                    @"timeStamp"
+#define     PARAM_FETCH_TYPE                                    @"fetchType"
+#define     PARAM_COMMON_DYNAMIC_ATTRIBUTES                     @"commonDynamicAttributes"
+#define     PARAM_VARIABLE_DYNAMIC_ATTRIBUTES                   @"variableDynamicAttributes"
+#define     PARAM_COMBINATION_KEY                               @"combinationKey"
+#define     KEY_COMBINATIONS                                    @"combinations"
+#define     KEY_CHARGES                                         @"charges"
+#define     KEY_CHARGES_UUID                                    @"chargeUuid"
+#define     KEY_CHARGE_NAME                                     @"chargeName"
+#define     KEY_BASE_FEE                                        @"baseFee"
+#define     KEY_TAX_AMOUNT                                      @"taxAmount"
+#define     KEY_RULE_ID                                         @"ruleId"
+#define     KEY_COMBINATION_UUID                                @"combinationUUID"
+#define     KEY_REQUEST_UUID                                    @"requestUUID"
 
 #endif /* PayUConstants_h */

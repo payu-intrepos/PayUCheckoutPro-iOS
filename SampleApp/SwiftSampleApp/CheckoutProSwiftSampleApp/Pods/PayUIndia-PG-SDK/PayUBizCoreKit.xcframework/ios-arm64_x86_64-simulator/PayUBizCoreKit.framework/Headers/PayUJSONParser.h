@@ -43,6 +43,8 @@ typedef void (^completionBlockForJSONParserForVerifyPayment)(NSDictionary *dictV
 typedef void (^completionBlockForJSONParserForDeleteOneTapToken)(NSString *deleteOneTapTokenMsg ,NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForJSONParserForCheckIsDomestic)(PayUModelCheckIsDomestic *checkIsDomestic , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForJSONParserForGetBinInfo)(NSArray<PayUModelCheckIsDomestic*> *arrAllBin , NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForJSONParserForGetBinBased)(PayUModelCheckIsDomestic *binBased , NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForJSONParserForConvenienceFee)( NSMutableDictionary<NSString *, NSMutableArray<PayUCharges *> *> *cfJSON, NSString *errorMessage, id extraParam);
 
 typedef void (^completionBlockForJSONParserForGetTransactionInfo)(NSArray *arrOfGetTxnInfo , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForJSONParserForSaveUserCard)(PayUModelStoredCard *objStoredCard , NSString *errorMessage, id extraParam);
@@ -50,6 +52,8 @@ typedef void (^completionBlockForJSONParserForMCPLookup)(PayUModelMultiCurrencyP
 typedef void (^completionBlockForJSONParserForRefund)(NSString *message , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForJSONParserForVerifyIFSC)(PayUModelIFSCInfo *ifscInfo , NSString *errorMessage, id extraParam);
 typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetails*> *emiCalculatorModel ,NSString *errorMessage, id extraParam);
+typedef void (^completionBlockForJSONParserForOLWMpinOtp)(PayUOLWMpinOtpResponse *olwMpinOtpResponse, NSString *errorMessage, id extraParam);
+
 
 /*!
  * This method parse the JSON for CCDC/NetBanking Offer.
@@ -112,6 +116,8 @@ typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetai
 
 -(void)JSONParserForGetBinInfo:(id) JSON of: (BOOL) isAllBin withCompletionBlock:(completionBlockForJSONParserForGetBinInfo) paramCompletionBlock;
 
+-(void)JSONParserForGetBinBased:(id) JSON withCompletionBlock:(completionBlockForJSONParserForGetBinBased) paramCompletionBlock;
+
 -(void)JSONParserForGetTransactionInfo:(id) JSON withCompletionBlock:(completionBlockForJSONParserForGetTransactionInfo) paramCompletionBlock;
 
 -(void)JSONParserForSaveUserCard:(id) JSON withCompletionBlock:(completionBlockForJSONParserForSaveUserCard) paramCompletionBlock;
@@ -128,6 +134,8 @@ typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetai
 
 -(void)JSONParserforAllOfferDetails:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForAllOfferDetails) paramCompletionBlock;
 
+-(void)JSONParserforConvenienceFee:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForConvenienceFee) paramCompletionBlock;
+
 -(void)JSONParserforValidateOfferDetails:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForValidateOfferDetails) paramCompletionBlock;
 
 -(void)JSONParserForGetSDKConfiguration:(id) JSON withCompletionBlock:(completionBlockForJSONParserForGETSDKConfiguration) paramCompletionBlock;
@@ -136,4 +144,5 @@ typedef void (^completionBlockForEmiCalculation)(NSArray<PayUEmiCalculationDetai
 -(void)JSONParserforAdPostImpression:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForAddImpression) paramCompletionBlock;
 -(void)JSONParserforUpdatePayUId:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForUpdatePayUId) paramCompletionBlock ;
 -(void)JSONParserforEmiCalculator:(id) JSON andCompletionBlock:(completionBlockForEmiCalculation) paramCompletionBlock ;
+-(void)JSONParserforOLWMpinOtp:(id) JSON withPaymentType:(NSString *) paymentType andCompletionBlock:(completionBlockForJSONParserForOLWMpinOtp) paramCompletionBlock;
 @end

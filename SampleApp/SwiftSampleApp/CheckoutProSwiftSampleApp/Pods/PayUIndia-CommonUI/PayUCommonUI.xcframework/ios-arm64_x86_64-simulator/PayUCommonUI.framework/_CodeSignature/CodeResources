@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		r+OaiBBHCE8STwShfhLEv4HngiU=
+		O3ajOmu/DPjh3d8xyLof3Uz3fuk=
 		</data>
 		<key>Headers/PayUCommonUI-Swift.h</key>
 		<data>
-		UDMSPvzNNNVSjVyV1YwzeCYAOAU=
+		v9JpuIhT9zXgNBblZR2Jt0VNeBs=
 		</data>
 		<key>Headers/PayUCommonUI.h</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9m/jacJ3qqXS18tISqoyiuwtzHs=
+		QdiWyC0pTmfQaK6luzOr7moESJE=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		yEP/uRRULtXgzkCi+dVX0w0urhw=
+		F1NAHBAl/00zc2KKMFYUXQQYd3c=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ykRhtYncKrJwpIvd4S9ajerk5h8=
+		WA4+V4IaqXnWcA/9Lm0gVzpxFW8=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		0YlS1Gs2Pw/LVNeNux9sUjGcwCw=
+		G/+SUNIzpIC/ODGSn6CrqO644Ds=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ykRhtYncKrJwpIvd4S9ajerk5h8=
+		WA4+V4IaqXnWcA/9Lm0gVzpxFW8=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uBw9A+r33v0ur68A+p0gHmtR9+Y=
+		fltyKLb2K6BvlgsyCpP7cVg2gGE=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		yEP/uRRULtXgzkCi+dVX0w0urhw=
+		F1NAHBAl/00zc2KKMFYUXQQYd3c=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ltpcCP5xsTqtip6sE9S1Le+lh+E=
+		jHHpROyjNYUjgSFec2P74OMeASE=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		/9nn7HD3uTLp7fdcTFJVLNx3IAA=
+		jki3Ylmru5J+zJplKGxDhXKK2gU=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ltpcCP5xsTqtip6sE9S1Le+lh+E=
+		jHHpROyjNYUjgSFec2P74OMeASE=
 		</data>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OdoKDywvRGZCNCFeZ2a/Zkt+seY=
+		hO92esw6EZFeJ3NdbTALJvoT0p0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>PayULoaderView.nib</key>
 		<data>
-		MPGNe46dbCcuKPcDXuSMMuUeqAM=
+		ahZQmHI1J//oWiXKGg/FX+HyDEE=
 		</data>
 		<key>PayUUserCancellationFooterView.nib</key>
 		<data>
@@ -99,14 +99,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UhKFNXTmYwpRywwvb+TY8Hn/cY/X1MA7Qh7EdJplGz4=
+			R3v7OWb5pqVT3Hk9290j+T+HaV6aLo984N0F04KY7m8=
 			</data>
 		</dict>
 		<key>Headers/PayUCommonUI-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GmoBJfR5oX9ZNaUSKlRget2tVOjiJ1zf3K5shTWwnT8=
+			LYOTf7XiRX+eD71cxdTa5XAfjbJ5+N+rU1JorpScjtg=
 			</data>
 		</dict>
 		<key>Headers/PayUCommonUI.h</key>
@@ -120,70 +120,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qYdFbm8s5jKH+gF1eB3JOwgK+P/WdxK9jFQCMKFDp8g=
+			ZXSbegS1zz8qVYlFlAATQJc6//W4PIzBm3gdxRtXH00=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61tYzaocJIF3lss2nrs3BtiTrATOxQwM/E9DHu/R/Uw=
+			59Rac8OmLFlMGGv4NO4ZCEBzL9j0cuCwE97bNr8cbT8=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hH32y6/NNHZ4EX2mxT5NvwXhAgOgcUT9FKCQ/ed/Mqk=
+			GwDy4M/Q62cPrHVO1Y7+cG8uzH+72nxi7cXtzieYxxM=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			61tYzaocJIF3lss2nrs3BtiTrATOxQwM/E9DHu/R/Uw=
+			59Rac8OmLFlMGGv4NO4ZCEBzL9j0cuCwE97bNr8cbT8=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ssrt9HyvXBll8rRi5HkPUCE1qUBvfU1iP6ppdPa5boA=
+			TXg7dVdsCsyJtvtBlJ9R4F/LmUWhj43d6tw4CHD3J98=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qYdFbm8s5jKH+gF1eB3JOwgK+P/WdxK9jFQCMKFDp8g=
+			ZXSbegS1zz8qVYlFlAATQJc6//W4PIzBm3gdxRtXH00=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCgGVbOw5xPLKwjauDR5xzEp6Nys2AZGAcN2A+BMm64=
+			UVSpedRHiPq/i9j/+kv4hRsMrpKsIvNVenzTgsIbGEM=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mpkXYoHPKlGf6ltIslnPDy4AOscrP6BVV5ftMMWyV1U=
+			UbSw1cNR5aEjQnT+VjQRZhgnmTJZLl5Z8JfghUkqMKk=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FCgGVbOw5xPLKwjauDR5xzEp6Nys2AZGAcN2A+BMm64=
+			UVSpedRHiPq/i9j/+kv4hRsMrpKsIvNVenzTgsIbGEM=
 			</data>
 		</dict>
 		<key>Modules/PayUCommonUI.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3N8p7fKhGvG8OjsaOeijeWbfQb3YSVhS20eXEkxUqqQ=
+			qXJC85dnG1bY6Z0g0SnxrNpS3ONIFddLzc0LCpwjlz0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -204,7 +204,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+Vj+Fg2Ra9Ce14xPpHWeA3CdxI9FFI4uWhyhwzH/Qcg=
+			mTH/5yRomsMrXrzsiaWX37C6CY3o5CVXzjTkY2tKrXw=
 			</data>
 		</dict>
 		<key>PayUUserCancellationFooterView.nib</key>

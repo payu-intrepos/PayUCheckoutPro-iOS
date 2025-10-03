@@ -2,5 +2,5 @@ platform :ios, '13.0'
 
 target 'CheckoutProSwiftSampleApp' do
 	use_frameworks!
-	pod 'PayUIndia-CheckoutPro', '8.4.0'
+	pod 'PayUIndia-CheckoutPro'
 end

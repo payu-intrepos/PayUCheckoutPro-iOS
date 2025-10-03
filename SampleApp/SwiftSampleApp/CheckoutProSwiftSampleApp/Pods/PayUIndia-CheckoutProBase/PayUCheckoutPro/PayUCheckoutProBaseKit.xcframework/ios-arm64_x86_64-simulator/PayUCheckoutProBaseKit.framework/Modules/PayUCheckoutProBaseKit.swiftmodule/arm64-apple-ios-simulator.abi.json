@@ -1343,6 +1343,99 @@
           },
           {
             "kind": "Var",
+            "name": "isProtectedScreen",
+            "printedName": "isProtectedScreen",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(py)isProtectedScreen",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvp",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)isProtectedScreen",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvg",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)setIsProtectedScreen:",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvs",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvM",
+                "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC17isProtectedScreenSbvM",
+                "moduleName": "PayUCheckoutProBaseKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "upiAppsOrder",
             "printedName": "upiAppsOrder",
             "children": [
@@ -1744,6 +1837,45 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toLoggableDictionary",
+            "printedName": "toLoggableDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUCheckoutProBaseKit@objc(cs)OnePayUBaseConfig(im)toLoggableDictionary",
+            "mangledName": "$s22PayUCheckoutProBaseKit03OneA11UBaseConfigC20toLoggableDictionarySDyS2SGyF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -2358,140 +2490,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "tpvPaymentModes",
-            "printedName": "tpvPaymentModes",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[PayUParamsKit.PaymentOption]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[PayUParamsKit.PaymentOption]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "PaymentOption",
-                        "printedName": "PayUParamsKit.PaymentOption",
-                        "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvp",
-            "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvp",
-            "moduleName": "PayUCheckoutProBaseKit",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[PayUParamsKit.PaymentOption]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PayUParamsKit.PaymentOption]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PaymentOption",
-                            "printedName": "PayUParamsKit.PaymentOption",
-                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvg",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvg",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[PayUParamsKit.PaymentOption]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Array",
-                        "printedName": "[PayUParamsKit.PaymentOption]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "PaymentOption",
-                            "printedName": "PayUParamsKit.PaymentOption",
-                            "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
-                          }
-                        ],
-                        "usr": "s:Sa"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvs",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvs",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvM",
-                "mangledName": "$s22PayUCheckoutProBaseKit26FetchPaymentOptionResponseC03tpvG5ModesSay0a7UParamsE00gH0CGSgvM",
-                "moduleName": "PayUCheckoutProBaseKit",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "copy",
             "printedName": "copy(with:)",
@@ -2623,6 +2621,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProBaseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUCommonUI",
+        "printedName": "PayUCommonUI",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProBaseKit"
       },
@@ -3491,6 +3496,47 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "toLoggableDictionary",
+            "printedName": "toLoggableDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@PayUCheckoutProBaseKit@objc(cs)PayUCheckoutProConfig(im)toLoggableDictionary",
+            "mangledName": "$s22PayUCheckoutProBaseKit0abC6ConfigC20toLoggableDictionarySDyS2SGyF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "overriding": true,
+            "objc_name": "toLoggableDictionary",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -4499,6 +4545,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PayUCheckoutProBaseKit"
+      },
+      {
+        "kind": "Import",
+        "name": "PayUBizCoreKit",
+        "printedName": "PayUBizCoreKit",
         "declKind": "Import",
         "moduleName": "PayUCheckoutProBaseKit"
       },
@@ -5574,7 +5627,7 @@
           {
             "kind": "Function",
             "name": "getBinInfoOf",
-            "printedName": "getBinInfoOf(cardNumber:onCompletion:)",
+            "printedName": "getBinInfoOf(cardNumber:paymentOption:onCompletion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5586,6 +5639,20 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PayUParamsKit.PaymentOption?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaymentOption",
+                    "printedName": "PayUParamsKit.PaymentOption",
+                    "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeFunc",
@@ -5636,8 +5703,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBinInfoOfCardNumber:onCompletion:",
-            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC12getBinInfoOf10cardNumber12onCompletionySS_y0a7UParamsE004CardhI0CSg_s5Error_pSgtctF",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBinInfoOfCardNumber:paymentOption:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC12getBinInfoOf10cardNumber13paymentOption12onCompletionySS_0a7UParamsE007PaymentN0CSgyAH04CardhI0CSg_s5Error_pSgtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -5820,6 +5887,87 @@
             "declKind": "Func",
             "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBalanceFromCLWWithMobile:bankCode:",
             "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC17getBalanceFromCLW6mobile8bankCodeySS_SStF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBalanceForOLW",
+            "printedName": "getBalanceForOLW(mobile:bankCode:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUBizCoreKit.PayUModelSodexoCardDetail?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUBizCoreKit.PayUModelSodexoCardDetail?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUBizCoreKit.PayUModelSodexoCardDetail?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUModelSodexoCardDetail",
+                            "printedName": "PayUBizCoreKit.PayUModelSodexoCardDetail",
+                            "usr": "c:objc(cs)PayUModelSodexoCardDetail"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)getBalanceForOLWWithMobile:bankCode:completion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC16getBalanceForOLW6mobile8bankCode10completionySS_SSySo0A22UModelSodexoCardDetailCSg_SSSgtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -6140,6 +6288,50 @@
           },
           {
             "kind": "Function",
+            "name": "fetchConvenienceFee",
+            "printedName": "fetchConvenienceFee(paymentOptions:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[PayUParamsKit.PaymentOption]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PayUParamsKit.PaymentOption]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaymentOption",
+                        "printedName": "PayUParamsKit.PaymentOption",
+                        "usr": "c:@M@PayUParamsKit@objc(cs)PaymentOption"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)fetchConvenienceFeeWithPaymentOptions:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19fetchConvenienceFee14paymentOptionsySay0a7UParamsE013PaymentOptionCGSg_tF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "validateOfferDetail",
             "printedName": "validateOfferDetail(paymentOption:onCompletion:)",
             "children": [
@@ -6205,6 +6397,94 @@
             "declKind": "Func",
             "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)validateOfferDetailWithPaymentOption:onCompletion:",
             "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC19validateOfferDetail13paymentOption12onCompletiony0a7UParamsE007PaymentK0C_yAG0a6UModelhI0CSg_s5Error_pSgtctF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "validateCouponOfferDetail",
+            "printedName": "validateCouponOfferDetail(couponCode:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUParamsKit.PayUModelAllOfferDetail?, Any?, (any Swift.Error)?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUParamsKit.PayUModelAllOfferDetail?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUModelAllOfferDetail",
+                            "printedName": "PayUParamsKit.PayUModelAllOfferDetail",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUModelAllOfferDetail"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)validateCouponOfferDetailWithCouponCode:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC25validateCouponOfferDetail10couponCode12onCompletionySS_y0a7UParamsE00a9UModelAlliJ0CSg_ypSgs5Error_pSgtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -6609,6 +6889,273 @@
             "declKind": "Func",
             "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)fetchLanguageOptionsOnCompletion:",
             "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC20fetchLanguageOptions12onCompletionyySay0a7UParamsE00A9ULanguageCG_AF0aM4CodeOtc_tF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "olwSendOTP",
+            "printedName": "olwSendOTP(onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUOLWMpinOtpResponse",
+                            "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUOLWMpinOtpResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)olwSendOTPOnCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC10olwSendOTP12onCompletionyy0a7UParamsE00A19UOLWMpinOtpResponseCSg_SSSgtc_tF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "olwSetResetMpin",
+            "printedName": "olwSetResetMpin(otp:newMpin:action:aesEncryptedKey:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUOLWMpinOtpResponse",
+                            "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUOLWMpinOtpResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)olwSetResetMpinWithOtp:newMpin:action:aesEncryptedKey:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC15olwSetResetMpin3otp03newJ06action15aesEncryptedKey12onCompletionySSSg_AJS2Sy0a7UParamsE00A19UOLWMpinOtpResponseCSg_AJtctF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "olwVerifyMpinDeviceIdToken",
+            "printedName": "olwVerifyMpinDeviceIdToken(mPin:aesEncryptedKey:onCompletion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(PayUParamsKit.PayUOLWMpinOtpResponse?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "PayUOLWMpinOtpResponse",
+                            "printedName": "PayUParamsKit.PayUOLWMpinOtpResponse",
+                            "usr": "c:@M@PayUParamsKit@objc(cs)PayUOLWMpinOtpResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@PayUCheckoutProBaseKit@objc(cs)BaseLayer(im)olwVerifyMpinDeviceIdTokenWithMPin:aesEncryptedKey:onCompletion:",
+            "mangledName": "$s22PayUCheckoutProBaseKit0D5LayerC26olwVerifyMpinDeviceIdToken4mPin15aesEncryptedKey12onCompletionySSSg_SSy0a7UParamsE00A19UOLWMpinOtpResponseCSg_AHtctF",
             "moduleName": "PayUCheckoutProBaseKit",
             "isOpen": true,
             "declAttributes": [
@@ -7097,6 +7644,252 @@
               "ObjC"
             ],
             "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "nonLogin",
+            "printedName": "nonLogin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateNonLogin",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO8nonLoginyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "loggedin",
+            "printedName": "loggedin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateLoggedin",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO8loggedinyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "olwLogin",
+            "printedName": "olwLogin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateOlwLogin",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO8olwLoginyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "balanceDetails",
+            "printedName": "balanceDetails",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateBalanceDetails",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO14balanceDetailsyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "sufficientBalance",
+            "printedName": "sufficientBalance",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateSufficientBalance",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO17sufficientBalanceyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "olwMpinStatus",
+            "printedName": "olwMpinStatus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PayUCheckoutProBaseKit.ScreenState.Type) -> PayUCheckoutProBaseKit.ScreenState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ScreenState",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                    "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PayUCheckoutProBaseKit.ScreenState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScreenState",
+                        "printedName": "PayUCheckoutProBaseKit.ScreenState",
+                        "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@PayUCheckoutProBaseKit@E@ScreenState@ScreenStateOlwMpinStatus",
+            "mangledName": "$s22PayUCheckoutProBaseKit11ScreenStateO13olwMpinStatusyA2CmF",
+            "moduleName": "PayUCheckoutProBaseKit",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Constructor",
@@ -8720,165 +9513,508 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 445,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 608,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 672,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 790,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
       "kind": "BooleanLiteral",
       "offset": 878,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/OnePayUBaseConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 924,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 398,
+      "offset": 418,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 468,
+      "offset": 488,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 516,
+      "offset": 536,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 582,
+      "offset": 602,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/PayUCheckoutProConfig.swift",
       "kind": "IntegerLiteral",
-      "offset": 690,
+      "offset": 710,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 315,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 397,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/Models\/ImageParam.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5158,
+      "offset": 6371,
       "length": 17,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5185,
+      "offset": 6398,
       "length": 8,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5203,
+      "offset": 6416,
       "length": 19,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5232,
+      "offset": 6445,
       "length": 20,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5262,
+      "offset": 6475,
       "length": 17,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5289,
+      "offset": 6502,
       "length": 7,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 6519,
       "length": 11,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "IntegerLiteral",
-      "offset": 5327,
+      "offset": 6540,
       "length": 10,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/shubham.garg\/Documents\/PayU\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6560,
+      "length": 8,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6578,
+      "length": 8,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6596,
+      "length": 8,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6614,
+      "length": 14,
+      "value": "12"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6638,
+      "length": 17,
+      "value": "13"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6665,
+      "length": 13,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/OnePayUBaseLayer.swift",
       "kind": "Array",
-      "offset": 5478,
+      "offset": 6819,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 316,
+      "length": 15,
+      "value": "\"autoSelectOtp\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 367,
+      "length": 15,
+      "value": "\"autoSubmitOtp\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 428,
+      "length": 25,
+      "value": "\"merchantResponseTimeout\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 503,
+      "length": 29,
+      "value": "\"sodexoCardBalanceAPITimeout\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 569,
+      "length": 16,
+      "value": "\"enforcePayment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 14,
+      "value": "\"merchantName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 38,
+      "value": "\"showExitConfirmationOnCheckoutScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 848,
+      "length": 37,
+      "value": "\"showExitConfirmationOnPaymentScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 936,
+      "length": 30,
+      "value": "\"showUserCancellationDialogue\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1004,
+      "length": 17,
+      "value": "\"enableSavedCard\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1061,
+      "length": 19,
+      "value": "\"isProtectedScreen\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1115,
+      "length": 14,
+      "value": "\"upiAppsOrder\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1244,
+      "length": 5,
+      "value": "\"key\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1285,
+      "length": 15,
+      "value": "\"transactionId\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1329,
+      "length": 8,
+      "value": "\"amount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1371,
+      "length": 13,
+      "value": "\"productInfo\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1416,
+      "length": 11,
+      "value": "\"firstName\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1455,
+      "length": 7,
+      "value": "\"email\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1490,
+      "length": 7,
+      "value": "\"phone\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1524,
+      "length": 6,
+      "value": "\"surl\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1557,
+      "length": 6,
+      "value": "\"furl\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1604,
+      "length": 20,
+      "value": "\"paymentEnvironment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1661,
+      "length": 16,
+      "value": "\"isRetryPayment\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1754,
+      "length": 16,
+      "value": "\"userCredential\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1802,
+      "length": 11,
+      "value": "\"userToken\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1845,
+      "length": 11,
+      "value": "\"notifyURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1885,
+      "length": 8,
+      "value": "\"codURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1920,
+      "length": 6,
+      "value": "\"cURL\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 1961,
+      "length": 14,
+      "value": "\"dropCategory\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2014,
+      "length": 18,
+      "value": "\"enforcePayMethod\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2065,
+      "length": 12,
+      "value": "\"customNote\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2112,
+      "length": 14,
+      "value": "\"noteCategory\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2168,
+      "length": 21,
+      "value": "\"splitPaymentDetails\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2228,
+      "length": 18,
+      "value": "\"subventionAmount\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2282,
+      "length": 15,
+      "value": "\"skuCartDetail\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2337,
+      "length": 19,
+      "value": "\"additionalCharges\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2406,
+      "length": 29,
+      "value": "\"percentageAdditionalCharges\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2466,
+      "length": 10,
+      "value": "\"flowType\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2545,
+      "length": 9,
+      "value": "\"skipCVV\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2592,
+      "length": 17,
+      "value": "\"enableNativeOTP\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2646,
+      "length": 16,
+      "value": "\"enableOneClick\""
+    },
+    {
+      "filePath": "\/Users\/amit.salaria\/Documents\/Gitlab\/one-payu-ui-sdk-ios\/Dependency\/OnePayUBaseSDK\/OnePayUBaseSDK\/PayUBaseKitConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2742,
+      "length": 22,
+      "value": "\"enforcementOfferKeys\""
     }
   ]
 }

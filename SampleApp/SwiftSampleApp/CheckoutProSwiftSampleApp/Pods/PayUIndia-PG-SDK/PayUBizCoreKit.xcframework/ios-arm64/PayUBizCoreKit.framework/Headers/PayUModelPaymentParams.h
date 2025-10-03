@@ -11,6 +11,7 @@
  */
 #import <Foundation/Foundation.h>
 #import "PayUModelHashes.h"
+#import "PayUModelHashes.h"
 #import "PayUModelStoredCard.h"
 #import "PayUConstants.h"
 #import "PayUModelGetCheckoutAPIFilters.h"
@@ -161,6 +162,13 @@
 @property (strong, nonatomic) NSString * last4Digits;
 @property (strong, nonatomic) NSString * cardHash;
 @property (strong, nonatomic) NSString * twidCustomerHash;
+//For CF
+@property (strong, nonatomic) NSString * additionalCharges;
+@property (strong, nonatomic) NSString * percentageAdditionalCharges;
+@property (strong, nonatomic) NSArray<PayUCharges *> *charges;
+@property (strong, nonatomic) NSArray<PayUWealthProducts *> *products;
+@property (strong, nonatomic) NSString *dateTime;
+
 
 /*
  //In array of orderItem, the array contains objects. Each object has this format
@@ -227,20 +235,26 @@
 +(BOOL)isValidPayUModelPaymentParams:(PayUModelPaymentParams *)paymentParam;
 +(BOOL)isValidPayUSIParams:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUBeneficiaryParams:(PayUModelPaymentParams*)paymentParam;
++(BOOL)isValidConvenienceFeeParams:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUModelOfferParams:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUModelEmiCalculationParams:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUAdditionalInfo:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUModelHashes:(PayUModelPaymentParams*)paymentParam;
 +(BOOL)isValidPayUModelGetCheckoutAPIFilters:(PayUModelPaymentParams*)paymentParam;
++(BOOL)isValidPayUModelOLWParams:(PayUModelPaymentParams*)paymentParam;
 
 @property (strong, nonatomic) PayUSIParams *siParams;
 @property (strong, nonatomic) PayUBeneficiaryParams *beneficiaryParams;
+@property (strong, nonatomic) PayUFetchConvFeeRequest *convenienceFeeParams;
 
 @property (strong, nonatomic) NSString * merchantResponseTimeout;
 @property BOOL isRetryPayment;
 
 // Offer Parameters
 @property (strong, nonatomic) PayUModelOfferParams *offerParams;
+
+// Updated Bin Info Request // need to check / remove
+@property BOOL isPricingCFEnable;
 
 //Ads impression paramters
 @property (strong, nonatomic) NSString * requestId;
@@ -253,6 +267,10 @@
 
 // Get Checkout API Filters
 @property (strong, nonatomic) PayUModelGetCheckoutAPIFilters * getCheckoutAPIFilters;
+
+// OLW
+@property (strong, nonatomic) PayUModelOLWParams * olwParams;
+@property (strong, nonatomic) NSString * flowType;
 
 @end
 
