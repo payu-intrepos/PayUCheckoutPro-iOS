@@ -9,25 +9,29 @@ Refer integration doc : https://docs.payu.in/docs/android-checkoutpro-sdk
  
 The PayUCheckoutPro iOS SDK offers the following key capabilities:
  
-## Payment Options
+### Payment Options
  
-Cards — All major card providers (Visa, Mastercard, Rupay, Amex, and more)
+#### Cards 
+All major card providers (Visa, Mastercard, Rupay, Amex, DINR and more)
  
-Netbanking — 150+ Indian banks supported
+#### Netbanking 
+150+ Indian banks supported
  
-UPI Payments
- 
-Intent and Collect flows
- 
+#### UPI Payments 
+Intent and Collect flows 
 Google Pay™, PhonePe (InApp & Intent)
  
-Wallets — Prepaid Wallets supported
+#### Wallets 
+Prepaid Wallets supported
  
-BNPL — LazyPay, Mobikwik, Simple, ICICI PayLater
+#### BNPL 
+LazyPay, Mobikwik, Simple, ICICI PayLater
  
-EMI — Credit/Debit Card EMI & No Cost EMI options
+#### EMI 
+Credit/Debit Card EMI & No Cost EMI options
  
-Recurring Payments — Card, eNACH & UPI AutoPay (Collect & Intent)
+#### Recurring Payments 
+Card, eNACH & UPI AutoPay (Collect & Intent)
  
 NEFT/RTGS Payments
  
