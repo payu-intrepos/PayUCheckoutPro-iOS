@@ -33,34 +33,22 @@ Credit/Debit Card EMI & No Cost EMI options
 #### Recurring Payments 
 Card, eNACH & UPI AutoPay (Collect & Intent)
  
-NEFT/RTGS Payments
- 
+#### NEFT/RTGS Payments
+
+### Others 
 Multi-Currency Payments
- 
 Closed Loop Wallets
- 
 Checkout Experience
- 
 Ready-to-use native checkout UI
- 
 Customizable payment experience
- 
 Saved Cards Support
- 
-Convenience Fee Support
- 
+Convenience Fee Support 
 Offers & Discounts
- 
 Cashback, Instant Offer, Coupon-based discounts
- 
 Recommendation Engine Support
- 
 TPV Support (NB & UPI)
- 
 SI TPV Support (UPI Intent & Collect)
- 
-OTP Assist — Faster and reliable OTP authentication
- 
+OTP Assist — Faster and reliable OTP authentication 
 Cross-border Payment Support
  
 ## Hash Generation:-
@@ -69,7 +57,7 @@ For security, hash values must be generated on your server before starting a tra
  
 hash generation doc:- https://docs.payu.in/docs/hash-generation-for-checkoutpro-sdk
  
-Test Credentials:-
+## Test Credentials:-
  
 Use these for integration testing:
 Test Cards, UPI IDs & Wallets
