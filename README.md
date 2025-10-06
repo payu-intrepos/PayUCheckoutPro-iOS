@@ -5,11 +5,11 @@ It enables seamless integration with PayU Payment Gateway (PG) with minimal effo
  
 Refer integration doc : https://docs.payu.in/docs/android-checkoutpro-sdk
  
-Features
+## Features
  
 The PayUCheckoutPro iOS SDK offers the following key capabilities:
  
-Payment Options
+## Payment Options
  
 Cards — All major card providers (Visa, Mastercard, Rupay, Amex, and more)
  
@@ -35,7 +35,7 @@ Multi-Currency Payments
  
 Closed Loop Wallets
  
-⚙️ Checkout Experience
+Checkout Experience
  
 Ready-to-use native checkout UI
  
@@ -59,7 +59,7 @@ OTP Assist — Faster and reliable OTP authentication
  
 Cross-border Payment Support
  
-Hash Generation:-
+## Hash Generation:-
  
 For security, hash values must be generated on your server before starting a transaction.
  
@@ -72,7 +72,6 @@ Test Cards, UPI IDs & Wallets
  
 Test credentials doc:- https://docs.payu.in/docs/test-cards-upi-id-and-wallets
  
-Support:-
+## Support:-
  
-For technical support or queries, contact
-mobile.integration@payu.in
+For technical support or queries, contact mobile.integration@payu.in
