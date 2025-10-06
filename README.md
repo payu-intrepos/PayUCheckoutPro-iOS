@@ -37,18 +37,31 @@ Card, eNACH & UPI AutoPay (Collect & Intent)
 
 ### Others 
 Multi-Currency Payments
+
 Closed Loop Wallets
+
 Checkout Experience
+
 Ready-to-use native checkout UI
+
 Customizable payment experience
+
 Saved Cards Support
-Convenience Fee Support 
+
+Convenience Fee Support
+
 Offers & Discounts
+
 Cashback, Instant Offer, Coupon-based discounts
+
 Recommendation Engine Support
+
 TPV Support (NB & UPI)
+
 SI TPV Support (UPI Intent & Collect)
+
 OTP Assist — Faster and reliable OTP authentication 
+
 Cross-border Payment Support
  
 ## Hash Generation:-
