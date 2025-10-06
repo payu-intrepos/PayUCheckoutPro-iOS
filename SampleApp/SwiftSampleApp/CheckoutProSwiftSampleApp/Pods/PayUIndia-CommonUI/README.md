@@ -1,1 +1,0 @@
-# PayUCommonUI-iOS
