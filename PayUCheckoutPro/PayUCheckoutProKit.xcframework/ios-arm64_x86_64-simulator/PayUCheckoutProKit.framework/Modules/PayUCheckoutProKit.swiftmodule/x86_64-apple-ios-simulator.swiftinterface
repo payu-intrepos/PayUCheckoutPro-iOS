@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCheckoutProKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PayUCheckoutProKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
@@ -196,7 +196,7 @@ public enum PopTipActionAnimation {
   @objc public func onPaymentFailure(response: Any?) -> Any?
   @objc public func onPaymentSuccess(response: Any?) -> Any?
   @objc public func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion) -> PayUCheckoutProBaseKit.DictOfString
-  @objc public func hashGenerated(args: Any?, errorCallback: @escaping ((any Swift.Error)?) -> Swift.Void)
+  @objc public func hashGenerated(args: Any?, errorCallback: @escaping (((any Swift.Error)?) -> Swift.Void))
   @objc override dynamic public init()
   @objc deinit
 }
@@ -224,7 +224,7 @@ public enum PopTipActionAnimation {
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUParamsKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc override public func cancelCurrentPayment() -> Swift.Bool
-  @objc override public func getBinInfoOf(cardNumber: Swift.String, paymentOption: PayUParamsKit.PaymentOption?, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
+  @objc override public func getBinInfoOf(cardNumber: Swift.String, paymentOption: PayUParamsKit.PaymentOption?, shouldAutoApplyOffer: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
   @objc override public func fetchMCPLookupData(cardBinInfo: PayUParamsKit.CardBinInfo, onCompletion: @escaping () -> Swift.Void)
   @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc override public func getBalanceFromSodexo(_ sourceId: Swift.String)
@@ -233,10 +233,9 @@ public enum PopTipActionAnimation {
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
-  @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
+  @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, pricingDataNeeded: Swift.Bool, shouldAutoApplyOffer: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
-  @objc override public func fetchConvenienceFee(paymentOptions: [PayUParamsKit.PaymentOption]?)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
   @objc override public func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)
@@ -245,7 +244,7 @@ public enum PopTipActionAnimation {
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
   @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
-  @objc override public func validateOfferDetail(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc override public func validateOfferDetailByPricingEngine(paymentOption: PayUParamsKit.PaymentOption, shouldIncludeOfferRequest: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc override public func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc override public func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc override public func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
