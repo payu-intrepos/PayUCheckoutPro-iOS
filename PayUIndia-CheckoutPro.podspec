@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency            'PayUIndia-PayUParams', '~> 7.0'
   s.dependency            'PayUIndia-CrashReporter', '~> 4.0'
   s.dependency            'PayUIndia-NetworkReachability', '~> 2.0'
-  s.dependency            'PayUIndia-NativeOtpAssist', '~> 4.2'
+  s.dependency            'PayUIndia-NativeOtpAssist', '~> 5.0'
   s.dependency            'PayUIndia-CardScanner', '~> 2.1'
   s.dependency            'PayUIndia-CommonUI', '~>2.3'
 
