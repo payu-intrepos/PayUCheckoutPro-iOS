@@ -98,7 +98,7 @@
 		</data>
 		<key>CustomSectionHeaderView.nib</key>
 		<data>
-		/zZgyw5UPH8V8XGrfHOHjPB0vvI=
+		GHcP3E3j4OR6qFc3M7YpkZCJBlg=
 		</data>
 		<key>FooterView.nib</key>
 		<data>
@@ -242,7 +242,7 @@
 		</data>
 		<key>Headers/PayUCheckoutProKit-Swift.h</key>
 		<data>
-		lleEWwl89XvGqU5NstOWBPUGrLQ=
+		My9VRFsijIvFK8wSApxibOrR9Vc=
 		</data>
 		<key>Headers/PayUCheckoutProKit.h</key>
 		<data>
@@ -250,7 +250,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0lA1TvuYH/qEL+4nud3HHL9FB/A=
+		INxdKyWWE2Xq4/QCeECu4LLM3XY=
 		</data>
 		<key>ItemHeaderCollectionView.nib</key>
 		<data>
@@ -278,11 +278,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		4yDTTkv3ATwUskojI1t3+No4nX4=
+		N/azWZW25xkdDaNNyQZYnKlAgYc=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		AiyXxnh7rk9jGZ4LTFAJMgtdx1c=
+		CS5hbR4VNFTJZKX92EypiFcaRNo=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -290,11 +290,11 @@
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		AiyXxnh7rk9jGZ4LTFAJMgtdx1c=
+		CS5hbR4VNFTJZKX92EypiFcaRNo=
 		</data>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		mfZKPOYSLCaXnfFy+HSIPspcilc=
+		t5vi28V/hYhkkXpBEpp1K5Q3/yI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -736,7 +736,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1yn6wVZGBks2LW1tZVfcAsYuXX1OjgTJyTPoAn3XuBc=
+			MTbszGqdijbmgRG5h3J6tv/6LBLBJpvZhOlHQ/kHdrw=
 			</data>
 		</dict>
 		<key>FooterView.nib</key>
@@ -988,7 +988,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OCh2QQODK9+N7Ilf8qURRBRsL84ghhkEy139bcvrs28=
+			1T0eM7ZChmOHFxquVoICXyQhS406UY8DTMZGE4YHXsA=
 			</data>
 		</dict>
 		<key>Headers/PayUCheckoutProKit.h</key>
@@ -1044,14 +1044,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Km6okhwnjWIX0FbU8S5eF6oZkojpJnNLtqIQQMdDaMA=
+			T9qS0hPfTwPhlarej3fujSiuHuN6R64+ww/QTCIuR00=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OcLpPNVwUX9sQ3OyLEMRYL0pijkx5eS/KDuSIOfLDak=
+			f9jT8dSZcjNhBzRGzgQjw//DvMP01HSSUpZkdjNHetg=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -1065,14 +1065,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OcLpPNVwUX9sQ3OyLEMRYL0pijkx5eS/KDuSIOfLDak=
+			f9jT8dSZcjNhBzRGzgQjw//DvMP01HSSUpZkdjNHetg=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zRpYvqVY7JlRrRg7jumlDZJUWZz05qFJrsu5PIs4wLM=
+			sX2WG2mXVQO4u1lq/PyjLffFmUD2WROsgr5lObNzUNc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

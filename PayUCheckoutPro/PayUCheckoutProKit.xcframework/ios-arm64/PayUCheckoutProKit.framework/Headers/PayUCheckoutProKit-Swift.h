@@ -363,7 +363,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)imageOf:(ImageParam * _Nonnull)imageParam onCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSInteger))onCompletion;
 - (void)checkEligibilityWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchEMIDetailsOnCompletion:(void (^ _Nonnull)(PaymentMode * _Nullable, NSError * _Nullable))onCompletion;
-- (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi pricingDataNeeded:(BOOL)pricingDataNeeded shouldAutoApplyOffer:(BOOL)shouldAutoApplyOffer onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
+- (void)fetchEMICalculationWithEmi:(EMI * _Nonnull)emi isOfferNeeded:(BOOL)isOfferNeeded shouldAutoApplyOffer:(BOOL)shouldAutoApplyOffer onCompletion:(void (^ _Nonnull)(NSArray<PayUEmiCalculationDetails *> * _Nullable, NSError * _Nullable))onCompletion;
 - (void)deleteSavedOptionWithPaymentOption:(PaymentOption * _Nonnull)paymentOption onCompletion:(void (^ _Nonnull)(CheckEligibilityResponse * _Nonnull))onCompletion;
 - (void)fetchOfferDetailOnCompletion:(void (^ _Nonnull)(PayUModelAllOfferDetail * _Nullable, id _Nullable, NSError * _Nullable))onCompletion;
 - (void)fetchLanguageOptionsOnCompletion:(void (^ _Nonnull)(NSArray<PayULanguage *> * _Nonnull, enum PayULanguageCode))onCompletion;
@@ -374,7 +374,7 @@ SWIFT_RESILIENT_CLASS("_TtC18PayUCheckoutProKit10BizWrapper")
 - (void)resendMobileVerificationCodeWithUuid:(NSString * _Nonnull)uuid mobileNumber:(NSString * _Nonnull)mobileNumber onCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSString * _Nullable))onCompletion;
 - (void)logout;
 - (void)fetchRecommendedAndQuickPayOptionsWithToken:(NSString * _Nonnull)token mobileNumber:(NSString * _Nonnull)mobileNumber;
-- (void)validateOfferDetailByPricingEngineWithPaymentOption:(PaymentOption * _Nonnull)paymentOption shouldIncludeOfferRequest:(BOOL)shouldIncludeOfferRequest onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
+- (void)validateOfferDetailAndGetCFWithPaymentOption:(PaymentOption * _Nonnull)paymentOption shouldIncludeOfferRequest:(BOOL)shouldIncludeOfferRequest onCompletion:(void (^ _Nonnull)(PayUModelOfferDetail * _Nullable, NSError * _Nullable))onCompletion;
 - (void)olwSendOTPOnCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
 - (void)olwSetResetMpinWithOtp:(NSString * _Nullable)otp newMpin:(NSString * _Nullable)newMpin action:(NSString * _Nonnull)action aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
 - (void)olwVerifyMpinDeviceIdTokenWithMPin:(NSString * _Nullable)mPin aesEncryptedKey:(NSString * _Nonnull)aesEncryptedKey onCompletion:(void (^ _Nonnull)(PayUOLWMpinOtpResponse * _Nullable, NSString * _Nullable))onCompletion;
@@ -619,6 +619,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 + (NSString * _Nonnull)card SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull nb;)
 + (NSString * _Nonnull)nb SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull enach;)
++ (NSString * _Nonnull)enach SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull upi;)
 + (NSString * _Nonnull)upi SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull wallet;)

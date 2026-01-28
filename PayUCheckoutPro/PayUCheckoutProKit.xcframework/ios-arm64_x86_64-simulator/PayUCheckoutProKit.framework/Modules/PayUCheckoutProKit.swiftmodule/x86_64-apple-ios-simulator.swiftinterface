@@ -233,7 +233,7 @@ public enum PopTipActionAnimation {
   @objc override public func image(of imageParam: PayUCheckoutProBaseKit.ImageParam, onCompletion: @escaping PayUCheckoutProBaseKit.ImageCompletion)
   @objc override public func checkEligibility(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchEMIDetails(onCompletion: @escaping PayUCheckoutProBaseKit.EMICompletion)
-  @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, pricingDataNeeded: Swift.Bool, shouldAutoApplyOffer: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
+  @objc override public func fetchEMICalculation(emi: PayUParamsKit.EMI, isOfferNeeded: Swift.Bool, shouldAutoApplyOffer: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.EMICalculationCompletion)
   @objc override public func deleteSavedOption(paymentOption: PayUParamsKit.PaymentOption, onCompletion: @escaping PayUCheckoutProBaseKit.CheckEligibilityCompletion)
   @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
@@ -244,7 +244,7 @@ public enum PopTipActionAnimation {
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
   @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
-  @objc override public func validateOfferDetailByPricingEngine(paymentOption: PayUParamsKit.PaymentOption, shouldIncludeOfferRequest: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
+  @objc override public func validateOfferDetailAndGetCF(paymentOption: PayUParamsKit.PaymentOption, shouldIncludeOfferRequest: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc override public func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc override public func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
   @objc override public func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
@@ -284,6 +284,7 @@ extension Foundation.NSNumber {
   @objc public static let dc: Swift.String
   @objc public static let card: Swift.String
   @objc public static let nb: Swift.String
+  @objc public static let enach: Swift.String
   @objc public static let upi: Swift.String
   @objc public static let wallet: Swift.String
   @objc public static let walletURN: Swift.String
