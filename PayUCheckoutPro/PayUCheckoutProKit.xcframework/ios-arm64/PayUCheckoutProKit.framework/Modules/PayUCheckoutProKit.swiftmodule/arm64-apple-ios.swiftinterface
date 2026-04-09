@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PayUCheckoutProKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 import CryptoKit
 import DeveloperToolsSupport
 import Foundation
@@ -166,20 +166,32 @@ public enum PopTipActionAnimation {
     get
   }
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func draw(_ rect: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func show(text: Swift.String, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreFoundation.CGFloat, in view: UIKit.UIView, from frame: CoreFoundation.CGRect, duration: Foundation.TimeInterval? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func show(attributedText: Foundation.NSAttributedString, direction: PayUCheckoutProKit.PopTipDirection, maxWidth: CoreFoundation.CGFloat, in view: UIKit.UIView, from frame: CoreFoundation.CGRect, duration: Foundation.TimeInterval? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func show(customView: UIKit.UIView, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreFoundation.CGRect, duration: Foundation.TimeInterval? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 13.0, *)
   @_Concurrency.MainActor @preconcurrency open func show<V>(rootView: V, direction: PayUCheckoutProKit.PopTipDirection, in view: UIKit.UIView, from frame: CoreFoundation.CGRect, parent: UIKit.UIViewController, duration: Foundation.TimeInterval? = nil) where V : SwiftUICore.View
+  #endif
   @_Concurrency.MainActor @preconcurrency open func update(text: Swift.String)
   @_Concurrency.MainActor @preconcurrency open func update(attributedText: Foundation.NSAttributedString)
   @_Concurrency.MainActor @preconcurrency open func update(customView: UIKit.UIView)
   @objc @_Concurrency.MainActor @preconcurrency open func hide(forced: Swift.Bool = false)
   @_Concurrency.MainActor @preconcurrency open func startActionAnimation()
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency open func stopActionAnimation(_ completion: (() -> Swift.Void)? = nil)
+  #endif
   @objc deinit
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
 }
 @_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseMethodName : ObjectiveC.NSObject {
   @objc public static let onPaymentSuccess: Swift.String
@@ -191,25 +203,45 @@ public enum PopTipActionAnimation {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class PayUHybridCheckoutProDelegateResponseTransformer : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onError(_ error: (any Swift.Error)?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onPaymentFailure(response: Any?) -> Any?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onPaymentSuccess(response: Any?) -> Any?
+  #endif
   @objc public func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion) -> PayUCheckoutProBaseKit.DictOfString
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func hashGenerated(args: Any?, errorCallback: @escaping ((any Swift.Error)?) -> Swift.Void)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol PayUCheckoutProDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onPaymentSuccess(response: Any?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onPaymentFailure(response: Any?)
+  #endif
   @objc func onPaymentCancel(isTxnInitiated: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc func onError(_ error: (any Swift.Error)?)
+  #endif
   @objc func generateHash(for param: PayUCheckoutProBaseKit.DictOfString, onCompletion: @escaping PayUCheckoutProBaseKit.PayUHashGenerationCompletion)
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class PayUCheckoutPro : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(on parentVC: UIKit.UIViewController, paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.PayUCheckoutProConfig? = nil, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func open(on parentVC: UIKit.UIViewController, params: Any?, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
+  #endif
   @objc public static func start()
   @objc public static func open(on parentVC: UIKit.UIViewController, apiLayer: PayUCheckoutProBaseKit.BaseLayer, delegate: any PayUCheckoutProKit.PayUCheckoutProDelegate)
   @objc override dynamic public init()
@@ -219,12 +251,16 @@ public enum PopTipActionAnimation {
   @objc public var mcpAPIResponse: PayUParamsKit.PayUModelMultiCurrencyPayment?
   @objc public var onViewController: UIKit.UIViewController?
   @objc public var onError: PayUCheckoutProBaseKit.ErrorCompletion?
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public init(paymentParam: PayUParamsKit.PayUPaymentParam, config: PayUCheckoutProBaseKit.OnePayUBaseConfig?)
+  #endif
   @objc deinit
   @objc override public func fetchPaymentOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchPaymentOptionCompletion)
   @objc override public func makePayment(paymentOption: PayUParamsKit.PaymentOption, screenState: PayUCheckoutProBaseKit.ScreenState = .none, onViewController: UIKit.UIViewController, onError: @escaping PayUCheckoutProBaseKit.ErrorCompletion)
   @objc override public func cancelCurrentPayment() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public func getBinInfoOf(cardNumber: Swift.String, paymentOption: PayUParamsKit.PaymentOption?, shouldAutoApplyOffer: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.GetBinInfoOfCard)
+  #endif
   @objc override public func fetchMCPLookupData(cardBinInfo: PayUParamsKit.CardBinInfo, onCompletion: @escaping () -> Swift.Void)
   @objc override public func fetchIFSCDetails(_ ifscCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.VerifyIFSCCompletion)
   @objc override public func getBalanceFromSodexo(_ sourceId: Swift.String)
@@ -238,28 +274,52 @@ public enum PopTipActionAnimation {
   @objc override public func fetchOfferDetail(onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
   @objc override public func fetchLanguageOptions(onCompletion: @escaping PayUCheckoutProBaseKit.FetchLanguagesCompletion)
   @objc override public func validateCouponOfferDetail(couponCode: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.OffersCompletion)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public func postAdsImpressionEvent(requestId: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public func sendMobileVerificationCode(mobileNumber: Swift.String?, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
+  #endif
   @objc override public func verifyOtp(mobileNumber: Swift.String, otp: Swift.String, uuid: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func resendMobileVerificationCode(uuid: Swift.String, mobileNumber: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetStringCompletion)
   @objc override public func logout()
   @objc override public func fetchRecommendedAndQuickPayOptions(token: Swift.String, mobileNumber: Swift.String)
   @objc override public func validateOfferDetailAndGetCF(paymentOption: PayUParamsKit.PaymentOption, shouldIncludeOfferRequest: Swift.Bool, onCompletion: @escaping PayUCheckoutProBaseKit.OfferCompletion)
   @objc override public func olwSendOTP(onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public func olwSetResetMpin(otp: Swift.String?, newMpin: Swift.String?, action: Swift.String, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override public func olwVerifyMpinDeviceIdToken(mPin: Swift.String?, aesEncryptedKey: Swift.String, onCompletion: @escaping PayUCheckoutProBaseKit.GetOLWMpinOtpCompletion)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func payUSuccessResponse(_ response: Any!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func payUFailureResponse(_ response: Any!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func payUConnectionError(_ notification: [Swift.AnyHashable : Any]!)
+  #endif
   @objc public func payUTransactionCancel()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func payUSuccessResponse(_ payUResponse: Any!, surlResponse: Any!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func payUFailureResponse(_ payUResponse: Any!, furlResponse: Any!)
+  #endif
   @objc public func shouldShowCancelAlert() -> Swift.Bool
   @objc public func loadInitialData()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onPaymentSuccess(merchantResponse: Swift.String?, payUResponse: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onPaymentFailure(merchantResponse: Swift.String?, payUResponse: Swift.String?)
+  #endif
   @objc public func onPaymentCancel(isTxnInitiated: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func onError(errorCode: Swift.String?, errorMessage: Swift.String?)
+  #endif
   @objc public func shouldHandleFallback(payUAcsRequest: PayUNativeOtpAssist.PayUAcsRequest) -> Swift.Bool
   @objc public func generateHash(for param: [Swift.String : Swift.String], onCompletion: @escaping ([Swift.String : Swift.String]) -> Swift.Void)
 }
