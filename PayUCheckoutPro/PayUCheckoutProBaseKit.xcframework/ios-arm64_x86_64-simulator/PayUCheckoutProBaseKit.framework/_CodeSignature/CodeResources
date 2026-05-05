@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/PayUCheckoutProBaseKit-Swift.h</key>
 		<data>
-		c5F3NSB279BmYQfkEZzLk5NXoFI=
+		LbmNSpzopYC16usI9NX9/xVbN48=
 		</data>
 		<key>Headers/PayUCheckoutProBaseKit.h</key>
 		<data>
@@ -14,51 +14,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		T825uHqMMBUU26WJ+kfGhKHDZcE=
+		wgpta5DhlzE0kYPgqyDaGsJKVHg=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		/5mudzReyI0MvsEOsJVBQ2jw8GM=
+		myQTamcn5ajwfVaMlpwWyRvWuEU=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		r82g8nRasPg1EigrKr9aXcl7dDo=
+		WPeVRE6jBOcg6UkqpFRUILMjyJw=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		o8Mm0/31qfAxTiBobt344Ul+qFY=
+		giWOu6mnm0qC5aRiVfkU3cSfRvk=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		r82g8nRasPg1EigrKr9aXcl7dDo=
+		WPeVRE6jBOcg6UkqpFRUILMjyJw=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		C0hLt5/nnyGRiK/OTiT/E3kJPi0=
+		TTZ+wZmDTFbPSupQiUrZmfDAeLY=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/5mudzReyI0MvsEOsJVBQ2jw8GM=
+		myQTamcn5ajwfVaMlpwWyRvWuEU=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IKaQbx2M+Clw318bG6EH0bxH+5I=
+		GNg1gLxQRCMef8w8/2pq04h0z14=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		h4IDO6rYg7FRTV8c2++UiwlOmrg=
+		Yz2rrig/GhFei45dWIbE8GfPMV4=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IKaQbx2M+Clw318bG6EH0bxH+5I=
+		GNg1gLxQRCMef8w8/2pq04h0z14=
 		</data>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nEyMv6dimhEuYD/WT/tkfqFiJI4=
+		uO9cYXWDTjG/d5f5A1zvnOmRqD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Q8S5IHTFcxlptZrPMCFqJxSREoY=
+		WnNuQV5xyWEjhHVv+5AGCb0W1Bk=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FbeyaAw94a4qyLKr2hE8h6hgVVbOhE0qhqdPzWPMfws=
+			9Gn7bqtooEgnlmHZkmT6sNn4Ujoij036f2MCd8UDXAo=
 			</data>
 		</dict>
 		<key>Headers/PayUCheckoutProBaseKit.h</key>
@@ -85,77 +85,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ko7hcVGEQ76EB24E4qa0Mskd9qzl3BWUC+0s3SYBjcA=
+			IrYS0aRQBoNooRjn0/6BSHcV0Hek6T+USJKx8t7w2Gg=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WY458HBq++cjDiVH6goC7xb2nh1rK8n0vYvHkaFXPVQ=
+			HvxEe0m7Zoc/a1KRjrCjOjm/PlFEoRxztNs8BuyQbM8=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a4hPD2XssihJQvvpNTOT+r+wDi5DwmueWP98RaZp5JY=
+			6S/VsJorp6zwR7YoZ614lRGWsu7GEBRlLxB2s3CkJsM=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WY458HBq++cjDiVH6goC7xb2nh1rK8n0vYvHkaFXPVQ=
+			HvxEe0m7Zoc/a1KRjrCjOjm/PlFEoRxztNs8BuyQbM8=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xNUFdgd6wgxTRAp+yXRDRqd2BPpMy91DrJV16WmpLR0=
+			TjQ9b0hIglpP1LByD6bVr9xtmYycmMu6U4FMYJAHm4I=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ko7hcVGEQ76EB24E4qa0Mskd9qzl3BWUC+0s3SYBjcA=
+			IrYS0aRQBoNooRjn0/6BSHcV0Hek6T+USJKx8t7w2Gg=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V3Y9OasD/JCTIHY3L4TRsXrMuFSb2MsUBNB/LhCP0Ww=
+			Slfn4OwFnZsQ6yJOzta8xPrfYogQ7pOjTaTlb+WDvBk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZzR94p8+527I2+/P2s8aVM5gLpYjAWvAfNelGhaa8Bo=
+			GNvhrwEbGCAT44b+Fir+OdlphSEwy6Q8tCpF5WOW15s=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V3Y9OasD/JCTIHY3L4TRsXrMuFSb2MsUBNB/LhCP0Ww=
+			Slfn4OwFnZsQ6yJOzta8xPrfYogQ7pOjTaTlb+WDvBk=
 			</data>
 		</dict>
 		<key>Modules/PayUCheckoutProBaseKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cRUtWFX+pswDboQJ+oOLic41WAX+NJ1gsIgNL+dbGJ4=
+			/YTKg5PmALQm6E/sQrpjqzJJKrjQIbRsXmYgNpgxCKQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lt4n3yM4+44ob2XHXTa6w9a5JQj94kWt8oXItEpaKsk=
+			8y3C+P7q815ZBkfG587HBGGUKYM9JfqdcLe4rxK5rQQ=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>

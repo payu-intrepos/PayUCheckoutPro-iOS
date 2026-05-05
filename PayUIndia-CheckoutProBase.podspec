@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "13.0"
   s.vendored_frameworks = 'PayUCheckoutPro/PayUCheckoutProBaseKit.xcframework'
 
-  s.dependency            'PayUIndia-PayUParams', '~> 7.2'
-  s.dependency            'PayUIndia-PG-SDK', '~> 12.2'
+  s.dependency            'PayUIndia-PayUParams', '~> 7.3'
+  s.dependency            'PayUIndia-PG-SDK', '~> 12.3'
 
 end

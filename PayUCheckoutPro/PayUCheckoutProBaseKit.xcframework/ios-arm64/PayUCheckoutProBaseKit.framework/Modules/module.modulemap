@@ -7,5 +7,4 @@ framework module PayUCheckoutProBaseKit {
 
 module PayUCheckoutProBaseKit.Swift {
   header "PayUCheckoutProBaseKit-Swift.h"
-  requires objc
 }
