@@ -5,9 +5,9 @@
         "package": "PayUIndia-Custom-Browser",
         "repositoryURL": "https://github.com/payu-intrepos/iOS-Custom-Browser.git",
         "state": {
-          "branch": null,
-          "revision": "bad324f2952f96dbaa8c2ca3471268fdbc1b8c71",
-          "version": "11.3.0"
+          "branch": "alpha",
+          "revision": "63080bf29b0f661dcd92ee07ab9abaa4b9b0dfc7",
+          "version": null
         }
       },
       {
@@ -39,11 +39,11 @@
       },
       {
         "package": "PayUIndia-Analytics",
-        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS.git",
+        "repositoryURL": "https://github.com/payu-intrepos/PayUAnalytics-iOS",
         "state": {
-          "branch": null,
-          "revision": "2964afc21d089d05f4abef205cb3ed4c825d91dd",
-          "version": "4.1.0"
+          "branch": "alpha",
+          "revision": "1d0f4be5cfcdd026da04f3c0c28f5ecbd49e3e45",
+          "version": null
         }
       },
       {
@@ -59,9 +59,9 @@
         "package": "PayUIndia-CommonUI",
         "repositoryURL": "https://github.com/payu-intrepos/PayUCommonUI-iOS",
         "state": {
-          "branch": null,
-          "revision": "a53f36e6828d9a2b7228a140c5310cd3bb63cb58",
-          "version": "2.4.0"
+          "branch": "alpha",
+          "revision": "b763e1186a462a41c2e12ad8c213f93a9d27c2bc",
+          "version": null
         }
       },
       {
